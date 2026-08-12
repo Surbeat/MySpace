@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Space</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --magenta: #FF4D6D;
+    --orange: #E8B054;
+    --cyan: #FF8FA3;
+    --purple: #7A1F3D;
+    --deep: #2B0510;
+    --cream: #FFF3E9;
+    --slate: #E8B4C8;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { height: 100%; }
+
+  body {
+    font-family: 'Manrope', sans-serif;
+    min-height: 100vh;
+    width: 100%;
+    color: var(--cream);
+    position: relative;
+    overflow-x: hidden;
+    background: var(--deep);
+  }
+
+  /* Full-bleed romantic photo background. background-size:cover means the
+     photo always fills the entire viewport and crops intelligently to match
+     the site's aspect ratio (ultrawide, 16:9, etc.) -- no manual resizing needed. */
+  .bg-photo {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: var(--deep);
+    transition: background-image 1s ease-in-out;
+  }
+
+  /* Romantic-toned tint over the photo so text stays legible and the
+     palette stays consistent regardless of what photo loads */
+  .bg-tint {
+    position: fixed;
+    inset: 0;
+    z-index: 1;
+    background: linear-gradient(160deg, rgba(43, 5, 16, 0.82) 0%, rgba(122, 31, 61, 0.6) 55%, rgba(43, 5, 16, 0.85) 100%);
+  }
+
+  .bg-grain {
+    position: fixed;
+    inset: 0;
+    z-index: 1;
+    backdrop-filter: blur(2px);
+  }
+
+  /* Floating musical notes -- ambient, thematically relevant, no stock imagery needed */
+  .note {
+    position: fixed;
+    z-index: 1;
+    font-size: 1.6rem;
+    color: rgba(255,255,255,0.18);
+    animation: floatUp linear infinite;
+    pointer-events: none;
+  }
+  @keyframes floatUp {
+    0% { transform: translateY(0) rotate(0deg); opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 0.6; }
+    100% { transform: translateY(-110vh) rotate(25deg); opacity: 0; }
+  }
+
+  .page {
+    position: relative;
+    z-index: 2;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+    padding: 40px;
+  }
+
+  /* Decorative "posters" flanking the player -- desktop only.
+     Concert-poster style panels built from gradient + SVG, not photos,
+     so there's zero copyright risk while still feeling like real artwork. */
+  .poster {
+    width: 190px;
+    height: 460px;
+    border-radius: 18px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+    box-shadow: 0 25px 60px rgba(0,0,0,0.45);
+    display: none;
+  }
+  .poster-left {
+    background: linear-gradient(160deg, var(--magenta), var(--purple) 70%);
+  }
+  .poster-right {
+    background: linear-gradient(200deg, var(--cyan), var(--orange) 75%);
+  }
+  .poster-label {
+    position: absolute;
+    bottom: 26px;
+    left: 20px;
+    right: 20px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 1.15;
+    color: rgba(255,255,255,0.95);
+    text-shadow: 0 4px 14px rgba(0,0,0,0.35);
+  }
+  .poster-sub {
+    position: absolute;
+    top: 22px;
+    left: 20px;
+    font-size: 0.68rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.75);
+    font-weight: 500;
+  }
+  .poster-rings {
+    position: absolute;
+    top: -40px;
+    right: -40px;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    border: 1px solid rgba(255,255,255,0.25);
+  }
+  .poster-rings::before {
+    content: '';
+    position: absolute;
+    inset: 24px;
+    border-radius: 50%;
+    border: 1px solid rgba(255,255,255,0.18);
+  }
+  .poster-bars {
+    position: absolute;
+    bottom: 90px;
+    left: 20px;
+    right: 20px;
+    display: flex;
+    align-items: flex-end;
+    gap: 5px;
+    height: 46px;
+  }
+  .poster-bars span {
+    flex: 1;
+    background: rgba(255,255,255,0.75);
+    border-radius: 3px;
+    animation: barPulse 1.4s ease-in-out infinite;
+  }
+  .poster-bars span:nth-child(2) { animation-delay: 0.15s; }
+  .poster-bars span:nth-child(3) { animation-delay: 0.3s; }
+  .poster-bars span:nth-child(4) { animation-delay: 0.45s; }
+  .poster-bars span:nth-child(5) { animation-delay: 0.6s; }
+  @keyframes barPulse {
+    0%, 100% { height: 20%; }
+    50% { height: 100%; }
+  }
+
+  @media (min-width: 1100px) {
+    .poster { display: block; }
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 420px;
+    width: 100%;
+  }
+
+  header { margin-bottom: 8px; }
+
+  .eyebrow {
+    font-size: 0.72rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--cyan);
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  h1 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    letter-spacing: -0.5px;
+    background: linear-gradient(90deg, var(--magenta), var(--orange), var(--cyan));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .tagline {
+    font-size: 0.95rem;
+    color: var(--slate);
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-weight: 300;
+  }
+
+  #player-card {
+    width: 100%;
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 28px;
+    padding: 40px 28px 30px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 25px 70px rgba(0,0,0,0.45);
+  }
+
+  .disc-wrap {
+    position: relative;
+    width: 180px;
+    height: 180px;
+    margin: 0 auto 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .disc-ring {
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    border: 1px solid rgba(255,255,255,0.3);
+    animation: spin 40s linear infinite;
+  }
+  .disc-ring::before {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: 50%;
+    width: 7px;
+    height: 7px;
+    background: var(--orange);
+    border-radius: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 0 10px var(--orange);
+  }
+  @keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+
+  .disc-core {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background: conic-gradient(from 0deg, var(--magenta), var(--orange), var(--cyan), var(--purple), var(--magenta));
+    box-shadow: 0 0 60px rgba(255, 46, 158, 0.45);
+    animation: rotateDisc 12s linear infinite paused;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .disc-core.playing { animation-play-state: running; }
+  @keyframes rotateDisc { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+
+  .disc-core::after {
+    content: '';
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: var(--deep);
+  }
+
+  #playBtn {
+    background: linear-gradient(135deg, var(--magenta), var(--orange));
+    border: none;
+    color: white;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 600;
+    padding: 15px 36px;
+    font-size: 0.95rem;
+    letter-spacing: 0.3px;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 8px 26px rgba(255, 46, 158, 0.45);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  #playBtn:hover { transform: translateY(-2px); box-shadow: 0 12px 32px rgba(255, 46, 158, 0.6); }
+  #playBtn:disabled { opacity: 0.6; cursor: default; transform: none; }
+
+  #nowPlaying {
+    margin-top: 22px;
+    font-size: 0.9rem;
+    color: var(--cream);
+    opacity: 0.95;
+    min-height: 20px;
+  }
+  #nowPlaying .label {
+    display: block;
+    font-size: 0.68rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--slate);
+    margin-bottom: 4px;
+  }
+
+  .controls {
+    margin-top: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+  }
+
+  .controls button {
+    background: none;
+    border: none;
+    color: var(--cream);
+    cursor: pointer;
+    opacity: 0.8;
+    transition: opacity 0.2s ease, transform 0.2s ease, color 0.2s ease;
+  }
+  .controls button:hover { opacity: 1; transform: scale(1.12); }
+  .controls .icon-btn { width: 20px; height: 20px; }
+  #playPauseBtn .icon-btn { width: 25px; height: 25px; }
+  #stopBtn.active { color: var(--orange); opacity: 1; }
+  #likeBtn.liked { color: var(--magenta); opacity: 1; }
+
+  .seek-row {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .seek-row span {
+    font-size: 0.68rem;
+    color: var(--slate);
+    min-width: 34px;
+    font-variant-numeric: tabular-nums;
+  }
+  #seekSlider {
+    -webkit-appearance: none;
+    appearance: none;
+    flex: 1;
+    height: 4px;
+    border-radius: 3px;
+    background: rgba(255,255,255,0.18);
+    outline: none;
+    cursor: pointer;
+  }
+  #seekSlider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 13px; height: 13px;
+    border-radius: 50%;
+    background: var(--magenta);
+    box-shadow: 0 0 8px rgba(255, 77, 109, 0.8);
+    cursor: pointer;
+  }
+  #seekSlider::-moz-range-thumb {
+    width: 13px; height: 13px;
+    border: none; border-radius: 50%;
+    background: var(--magenta);
+    box-shadow: 0 0 8px rgba(255, 77, 109, 0.8);
+    cursor: pointer;
+  }
+
+  .volume-row {
+    margin-top: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  .volume-row svg { width: 16px; height: 16px; color: var(--slate); flex-shrink: 0; }
+
+  #volumeSlider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 130px;
+    height: 3px;
+    border-radius: 3px;
+    background: linear-gradient(90deg, var(--magenta), var(--cyan));
+    outline: none;
+    cursor: pointer;
+  }
+  #volumeSlider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 13px; height: 13px;
+    border-radius: 50%;
+    background: white;
+    box-shadow: 0 0 8px rgba(255,255,255,0.8);
+    cursor: pointer;
+  }
+  #volumeSlider::-moz-range-thumb {
+    width: 13px; height: 13px;
+    border: none; border-radius: 50%;
+    background: white;
+    box-shadow: 0 0 8px rgba(255,255,255,0.8);
+    cursor: pointer;
+  }
+
+  .name-banner {
+    margin-top: 34px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 2.6rem;
+    letter-spacing: 0.5px;
+    line-height: 1.1;
+    background: linear-gradient(90deg, var(--orange), var(--magenta), var(--cyan));
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: shine 6s linear infinite;
+  }
+  .name-banner .by {
+    display: block;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    font-size: 0.7rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--slate);
+    -webkit-text-fill-color: var(--slate);
+    margin-bottom: 8px;
+  }
+  @keyframes shine {
+    0% { background-position: 0% center; }
+    100% { background-position: 200% center; }
+  }
+
+  footer {
+    margin-top: 18px;
+    font-size: 0.82rem;
+    color: var(--slate);
+    font-weight: 300;
+  }
+  footer span {
+    font-weight: 600;
+    background: linear-gradient(90deg, var(--orange), var(--magenta));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .top-left-info {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-family: 'Manrope', sans-serif;
+    background: rgba(255,255,255,0.07);
+    border: 1px solid rgba(255,255,255,0.15);
+    backdrop-filter: blur(14px);
+    border-radius: 14px;
+    padding: 12px 18px;
+  }
+  #liveClock {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 600;
+    font-size: 1.15rem;
+    color: var(--cream);
+    letter-spacing: 0.5px;
+  }
+  #visitorCount {
+    font-size: 0.72rem;
+    color: var(--slate);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  #visitorCount svg { width: 13px; height: 13px; flex-shrink: 0; }
+
+  @media (prefers-reduced-motion: reduce) {
+    .note, .disc-ring, .disc-core, .poster-bars span { animation: none !important; }
+  }
+</style>
+</head>
+<body>
+
+  <div class="bg-photo" id="bgPhoto"></div>
+  <div class="bg-tint"></div>
+  <div class="bg-grain"></div>
+
+  <div class="top-left-info">
+    <div id="liveClock">--:--:--</div>
+    <div id="visitorCount">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 11c1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3 1.34 3 3 3zm-8 0c1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3 1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+      <span id="visitorCountText">counting visitors...</span>
+    </div>
+  </div>
+
+  <div class="page">
+
+    <div class="poster poster-left">
+      <div class="poster-sub">side A</div>
+      <div class="poster-rings"></div>
+      <div class="poster-bars"><span></span><span></span><span></span><span></span><span></span></div>
+      <div class="poster-label">Golden Era<br>Romantic Hits</div>
+    </div>
+
+    <main>
+      <header>
+        <div class="eyebrow">your sound, your space</div>
+        <h1>My Space</h1>
+        <p class="tagline">A colorful corner where songs find you, old and new, one after another.</p>
+      </header>
+
+      <div id="player-card">
+        <div class="disc-wrap">
+          <div class="disc-ring"></div>
+          <div class="disc-core" id="discCore"></div>
+        </div>
+
+        <div id="player-hide"><div id="player"></div></div>
+
+        <button id="playBtn">Begin ▶</button>
+
+        <div id="nowPlaying"><span class="label">now playing</span><span id="nowPlayingText"></span></div>
+
+        <div class="seek-row" id="seekRow" style="display:none">
+          <span id="currentTimeLabel">0:00</span>
+          <input type="range" id="seekSlider" min="0" max="100" value="0">
+          <span id="durationLabel">0:00</span>
+        </div>
+
+        <div class="controls" id="controlsRow" style="display:none">
+          <button id="likeBtn" aria-label="Like">
+            <svg class="icon-btn" viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s-6.7-4.35-9.3-8.1C1 10.3 1.5 7 4.3 5.6c2.2-1.1 4.6-.3 5.9 1.4L12 8.9l1.8-1.9c1.3-1.7 3.7-2.5 5.9-1.4C22.5 7 23 10.3 21.3 12.9 18.7 16.65 12 21 12 21z"/></svg>
+          </button>
+          <button id="prevBtn" aria-label="Previous">
+            <svg class="icon-btn" viewBox="0 0 24 24" fill="currentColor"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"/></svg>
+          </button>
+          <button id="playPauseBtn" aria-label="Pause">
+            <svg class="icon-btn" id="playPauseIcon" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zm8 0h4v14h-4z"/></svg>
+          </button>
+          <button id="stopBtn" aria-label="Stop">
+            <svg class="icon-btn" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="6" width="12" height="12" rx="1.5"/></svg>
+          </button>
+          <button id="nextBtn" aria-label="Next">
+            <svg class="icon-btn" viewBox="0 0 24 24" fill="currentColor"><path d="M16 6h2v12h-2zm-2 6L5.5 6v12z"/></svg>
+          </button>
+        </div>
+
+        <div class="volume-row" id="volumeRow" style="display:none">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 9v6h4l5 5V4L7 9H3z"/></svg>
+          <input type="range" id="volumeSlider" min="0" max="100" value="80">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02z"/></svg>
+        </div>
+      </div>
+
+      <div class="name-banner">
+        <span class="by">created by</span>
+        Rishabh Pandey
+      </div>
+
+      <footer>
+        My Space — where every song tells a story.
+      </footer>
+    </main>
+
+    <div class="poster poster-right">
+      <div class="poster-sub">side B</div>
+      <div class="poster-rings"></div>
+      <div class="poster-bars"><span></span><span></span><span></span><span></span><span></span></div>
+      <div class="poster-label">New Age<br>Love Songs</div>
+    </div>
+
+  </div>
+
+  <script>
+    // ---------- Live clock, top-left ----------
+    function updateClock() {
+      const now = new Date();
+      document.getElementById('liveClock').innerText = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+    }
+    updateClock();
+    setInterval(updateClock, 1000);
+
+    // ---------- Visitor counter, top-left ----------
+    // Honest note: a static page with no server can't track true real-time
+    // "concurrent online users" -- that needs a live backend (websockets/Firebase).
+    // This uses a free, no-signup hit counter instead, showing total visits
+    // to this page, which updates for everyone who opens it.
+    async function loadVisitorCount() {
+      try {
+        const res = await fetch('https://countapi.mileshilliard.com/api/v1/hit/my_space_rishabh_pandey_2026');
+        const data = await res.json();
+        const count = data.value ?? data.count ?? '—';
+        document.getElementById('visitorCountText').innerText = count + ' people have visited My Space';
+      } catch (e) {
+        document.getElementById('visitorCountText').innerText = 'visitor count unavailable';
+      }
+    }
+    loadVisitorCount();
+
+    // ---------- Free copyright-safe romantic background photo ----------
+    // Pexels License: free for personal & commercial use, no attribution required.
+    // Get your own free key at pexels.com/api (instant signup, generous free quota).
+    const PEXELS_API_KEY = "NWCn1SFTLkNVj5uSjdFEDf2Xa8t2pcwQjWkSrehwIUIkcjKf9PZ1oFP9";
+
+    const IMAGE_QUERIES = [
+      "romantic couple sunset",
+      "roses valentine bouquet",
+      "couple silhouette beach",
+      "candlelight dinner romantic",
+      "rose petals soft light"
+    ];
+
+    async function loadRomanticBackground() {
+      if (!PEXELS_API_KEY || PEXELS_API_KEY === "YOUR_PEXELS_API_KEY_HERE") return;
+      try {
+        const q = IMAGE_QUERIES[Math.floor(Math.random() * IMAGE_QUERIES.length)];
+        // orientation=landscape keeps results already close to desktop's wide
+        // aspect ratio; background-size:cover in CSS handles the exact crop.
+        const res = await fetch(
+          `https://api.pexels.com/v1/search?query=${encodeURIComponent(q)}&orientation=landscape&size=large&per_page=15`,
+          { headers: { Authorization: PEXELS_API_KEY } }
+        );
+        const data = await res.json();
+        if (data.photos && data.photos.length) {
+          const photo = data.photos[Math.floor(Math.random() * data.photos.length)];
+          const url = photo.src.landscape || photo.src.large2x || photo.src.original;
+          document.getElementById('bgPhoto').style.backgroundImage = `url('${url}')`;
+        }
+      } catch (e) {
+        console.error("Background photo fetch failed:", e);
+      }
+    }
+
+    loadRomanticBackground();
+    // Refresh the photo with each new song for a slowly changing romantic backdrop
+    window.addEventListener('DOMContentLoaded', loadRomanticBackground);
+
+    // Scatter floating musical notes
+    const noteChars = ['♪','♫','♬','♩','❤','💕'];
+    for (let i = 0; i < 16; i++) {
+      const n = document.createElement('div');
+      n.className = 'note';
+      n.innerText = noteChars[Math.floor(Math.random() * noteChars.length)];
+      n.style.left = Math.random() * 100 + 'vw';
+      n.style.fontSize = (1 + Math.random() * 1.4) + 'rem';
+      n.style.animationDuration = (12 + Math.random() * 14) + 's';
+      n.style.animationDelay = (Math.random() * 14) + 's';
+      document.body.appendChild(n);
+    }
+
+    // ---------- STEP 1: PUT YOUR FREE YOUTUBE DATA API KEY HERE ----------
+    // Get it free from console.cloud.google.com -> enable "YouTube Data API v3" -> Credentials -> API key
+    const API_KEY = "AIzaSyCr_j1AevC8Y3oFs9IPHTqZRiQjbQjcryA";
+
+    const SEARCH_QUERIES = [
+      "bollywood romantic hit songs 2026",
+      "arijit singh romantic songs",
+      "english romantic love songs hits",
+      "old bollywood romantic songs evergreen",
+      "sad hits romantic hindi songs",
+      "latest insta viral songs"
+    ];
+
+    let player;
+    let queue = [];
+    let currentIndex = 0;
+    let isMuted = true;
+    let isLiked = false;
+
+    const tag = document.createElement('script');
+    tag.src = "https://www.youtube.com/iframe_api";
+    document.body.appendChild(tag);
+
+    async function fetchSongs(query, maxResults = 5) {
+      const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&type=video&videoCategoryId=10&maxResults=${maxResults}&q=${encodeURIComponent(query)}&key=${API_KEY}`;
+      const res = await fetch(url);
+      const data = await res.json();
+      if (!data.items) return [];
+      return data.items.map(item => item.id.videoId).filter(Boolean);
+    }
+
+    function shuffle(arr) {
+      for (let i = arr.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [arr[i], arr[j]] = [arr[j], arr[i]];
+      }
+      return arr;
+    }
+
+    async function buildQueue() {
+      document.getElementById('nowPlayingText').innerText = "finding songs for you...";
+      let allIds = [];
+      for (const q of SEARCH_QUERIES) {
+        const ids = await fetchSongs(q, 5);
+        allIds = allIds.concat(ids);
+      }
+      queue = shuffle(allIds);
+    }
+
+    function onYouTubeIframeAPIReady() {
+      player = new YT.Player('player', {
+        height: '1',
+        width: '1',
+        playerVars: { autoplay: 0, mute: 1, controls: 0, playsinline: 1 },
+        events: { onStateChange: onPlayerStateChange }
+      });
+    }
+
+    function updateNowPlaying() {
+      try {
+        const data = player.getVideoData();
+        document.getElementById('nowPlayingText').innerText = data.title;
+      } catch (e) {}
+    }
+
+    function resetLike() {
+      isLiked = false;
+      document.getElementById('likeBtn').classList.remove('liked');
+    }
+
+    function playCurrent() {
+      if (!queue.length) return;
+      if (currentIndex >= queue.length) currentIndex = 0;
+      player.loadVideoById(queue[currentIndex]);
+      resetLike();
+      loadRomanticBackground();
+      setTimeout(updateNowPlaying, 800);
+    }
+
+    function playNext() { currentIndex++; playCurrent(); }
+    function playPrev() { currentIndex = Math.max(0, currentIndex - 1); playCurrent(); }
+
+    let isSeeking = false;
+    let progressTimer = null;
+
+    function formatTime(sec) {
+      if (!isFinite(sec) || sec < 0) sec = 0;
+      const m = Math.floor(sec / 60);
+      const s = Math.floor(sec % 60).toString().padStart(2, '0');
+      return `${m}:${s}`;
+    }
+
+    // Runs every 500ms while a song plays -- keeps the seek bar and time
+    // labels in sync with actual playback (aage/pichhe part sunne ke liye)
+    function startProgressTracking() {
+      if (progressTimer) clearInterval(progressTimer);
+      progressTimer = setInterval(() => {
+        if (!player || isSeeking) return;
+        try {
+          const duration = player.getDuration();
+          const current = player.getCurrentTime();
+          if (duration > 0) {
+            document.getElementById('seekSlider').max = duration;
+            document.getElementById('seekSlider').value = current;
+            document.getElementById('currentTimeLabel').innerText = formatTime(current);
+            document.getElementById('durationLabel').innerText = formatTime(duration);
+          }
+        } catch (e) {}
+      }, 500);
+    }
+
+    const seekSlider = document.getElementById('seekSlider');
+    seekSlider.addEventListener('mousedown', () => { isSeeking = true; });
+    seekSlider.addEventListener('touchstart', () => { isSeeking = true; });
+
+    // Live-update the time label while dragging, before releasing
+    seekSlider.addEventListener('input', (e) => {
+      document.getElementById('currentTimeLabel').innerText = formatTime(parseFloat(e.target.value));
+    });
+
+    // On release, actually jump the song to that point -- this is the core
+    // "go to any part of the song" seek function
+    function commitSeek(e) {
+      if (!player) return;
+      player.seekTo(parseFloat(e.target.value), true);
+      isSeeking = false;
+    }
+    seekSlider.addEventListener('mouseup', commitSeek);
+    seekSlider.addEventListener('touchend', commitSeek);
+    seekSlider.addEventListener('change', commitSeek);
+
+    const PAUSE_ICON = 'M6 5h4v14H6zm8 0h4v14h-4z';
+    const PLAY_ICON = 'M8 5v14l11-7z';
+
+    function setPlayPauseIcon(isPlaying) {
+      document.getElementById('playPauseIcon').setAttribute('d', isPlaying ? PAUSE_ICON : PLAY_ICON);
+      document.getElementById('playPauseBtn').setAttribute('aria-label', isPlaying ? 'Pause' : 'Play');
+    }
+
+    function onPlayerStateChange(event) {
+      const disc = document.getElementById('discCore');
+      if (event.data === YT.PlayerState.ENDED) playNext();
+      if (event.data === YT.PlayerState.PLAYING) {
+        updateNowPlaying();
+        disc.classList.add('playing');
+        setPlayPauseIcon(true);
+        document.getElementById('stopBtn').classList.remove('active');
+        document.getElementById('seekRow').style.display = 'flex';
+        startProgressTracking();
+      }
+      if (event.data === YT.PlayerState.PAUSED) {
+        disc.classList.remove('playing');
+        setPlayPauseIcon(false);
+      }
+    }
+
+    document.getElementById('playBtn').addEventListener('click', async () => {
+      const btn = document.getElementById('playBtn');
+      btn.innerText = "Loading...";
+      btn.disabled = true;
+      await buildQueue();
+      player.unMute();
+      isMuted = false;
+      player.setVolume(80);
+      playCurrent();
+      btn.style.display = 'none';
+      document.getElementById('controlsRow').style.display = 'flex';
+      document.getElementById('volumeRow').style.display = 'flex';
+    });
+
+    document.getElementById('nextBtn').addEventListener('click', playNext);
+    document.getElementById('prevBtn').addEventListener('click', playPrev);
+
+    document.getElementById('playPauseBtn').addEventListener('click', () => {
+      const state = player.getPlayerState();
+      if (state === YT.PlayerState.PLAYING) player.pauseVideo();
+      else player.playVideo();
+    });
+
+    document.getElementById('stopBtn').addEventListener('click', () => {
+      player.stopVideo();
+      document.getElementById('discCore').classList.remove('playing');
+      document.getElementById('nowPlayingText').innerText = "stopped";
+      document.getElementById('stopBtn').classList.add('active');
+      setPlayPauseIcon(false);
+      if (progressTimer) clearInterval(progressTimer);
+      document.getElementById('seekSlider').value = 0;
+      document.getElementById('currentTimeLabel').innerText = "0:00";
+    });
+
+    document.getElementById('volumeSlider').addEventListener('input', (e) => {
+      const vol = parseInt(e.target.value, 10);
+      player.setVolume(vol);
+      if (vol === 0) { player.mute(); isMuted = true; }
+      else { player.unMute(); isMuted = false; }
+    });
+
+    // Like -- marks the current song as a favorite for this session
+    document.getElementById('likeBtn').addEventListener('click', () => {
+      isLiked = !isLiked;
+      document.getElementById('likeBtn').classList.toggle('liked', isLiked);
+    });
+  </script>
+
+</body>
+</html>
