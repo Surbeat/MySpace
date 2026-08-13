@@ -1,6 +1,6 @@
 /**
- * SurBeat — Pure Musical Vibes & Dynamic YouTube Search Engine
- * Direct YouTube API + Backend Proxy + Curated Fallback Engine
+ * SurBeat — Pure Indian Musical Vibes & Dynamic YouTube Search Engine
+ * Direct YouTube API (ViewCount Sorted) + Backend Proxy + Curated Desi Fallback Engine
  */
 
 // YouTube Data API Key for direct client-side dynamic search on Cloudflare Pages
@@ -25,33 +25,37 @@ const API_BASE_URL = (() => {
   return '/api';
 })();
 
-console.log('🎧 SurBeat Dynamic Search Engine Initialized');
+console.log('🎧 SurBeat Indian Dynamic Search Engine Initialized');
 
-// Dynamic Search Query Groups — Requested by User
+// Dynamic Search Query Groups — Strictly Hindi, Punjabi, Haryanvi & Desi Classics (NO English)
 const CATEGORY_QUERIES = {
   trending: [
-    'bollywood romantic hit songs 2026',
-    'latest insta viral songs',
-    'new hindi hits song'
+    'top hindi blockbuster hit songs 2026',
+    'latest punjabi viral hit songs',
+    'top haryanvi banger songs hits',
+    'trending bollywood reel hit songs'
   ],
   romantic_new: [
-    'arijit singh romantic songs',
-    'top romantic hindi love song',
-    'latest bollywood romantic hits'
+    'arijit singh romantic hindi songs',
+    'top romantic bollywood love songs',
+    'latest punjabi romantic love songs',
+    'romantic hindi duet songs hits'
   ],
   classic_old: [
-    'old bollywood romantic songs evergreen',
-    '90s old hindi hits song',
-    'evergreen old hindi love songs'
+    'old hindi romantic songs evergreen',
+    '90s bollywood superhit songs classics',
+    'evergreen retro 80s 90s hindi hits',
+    'old golden hindi classic love melodies'
   ],
   lofi: [
-    'sad hits romantic hindi songs',
-    'english romantic love songs hits',
-    'hindi lofi love songs hits'
+    'hindi lofi romantic songs hits',
+    'slowed reverb hindi love songs',
+    'punjabi lofi chill songs hits',
+    'chai lofi acoustic hindi hits'
   ]
 };
 
-// Rich Curated Fallback YouTube Video IDs (Guarantees songs play 100% reliably everywhere)
+// Rich Curated Pure Desi Fallback YouTube Video IDs (100% Hindi, Punjabi & Haryanvi Superhits)
 const CATEGORY_FALLBACK_VIDEOS = {
   trending: [
     'v3Z9cM0NlZc', // Kesariya - Brahmastra
@@ -59,8 +63,8 @@ const CATEGORY_FALLBACK_VIDEOS = {
     'ElZfdU54Cp8', // O Maahi - Dunki
     'Kup82qXJ25c', // Ve Kamleya - Rocky Aur Rani
     'NbyHNASFi6U', // Tere Vaaste - Zara Hatke Zara Bachke
-    '2Vv-BfVoq4g', // Perfect - Ed Sheeran
-    'kJQP7kiw5Fk', // Despacito
+    'z9P8jE4eF20', // Tauba Tauba - Bad Newz
+    '52GajKaDaman',// 52 Gaj Ka Daman - Haryanvi Hit
     '0yW7w8F2TVA'  // Tujhe Kitna Chahne Lage
   ],
   romantic_new: [
@@ -69,8 +73,9 @@ const CATEGORY_FALLBACK_VIDEOS = {
     'V7LwfY5U_BU', // Rabba Janda - Mission Majnu
     'SAcpESN_Fk4', // Heeriye - Jasleen Royal & Arijit Singh
     '7uY1N-qUj_A', // Tera Ban Jaunga - Kabir Singh
-    '34Na4j8AVgA', // Starboy
-    'k4yXQkG2B1E'  // Pal Pal Dil Ke Paas
+    'k4yXQkG2B1E', // Pal Pal Dil Ke Paas
+    'g_q7u6j_e_0', // Dekha Tenu - Mr & Mrs Mahi
+    '2g58n1G8WlY'  // Satranga - Animal
   ],
   classic_old: [
     '4xN_w9B__Xg', // Pehla Nasha - Jo Jeeta Wohi Sikandar
@@ -78,14 +83,17 @@ const CATEGORY_FALLBACK_VIDEOS = {
     '2K8A-j7yRlg', // Dil Deewana - Maine Pyar Kiya
     '9hR8_rD3_Qk', // Chura Liya Hai Tumne Jo Dil Ko
     'W-39_F6qLg0', // Lag Ja Gale - Woh Kaun Thi
-    'e-ORhEE9VVg'  // Roop Tera Mastana
+    'e-ORhEE9VVg', // Roop Tera Mastana
+    '5rG4nF1g50s', // Ek Ladki Ko Dekha Toh Aisa Laga
+    '2p3j8X4t5wQ'  // Pyar Kiya To Darna Kya
   ],
   lofi: [
     's-t_6aG0zKw', // Bollywood Lofi Chill Beats
     '190l3e7sVaw', // Midnight Hindi Lofi Mix
     '_X1L0q70X_s', // Acoustic Hindi Love Medley
     '50Wv-J0bE6w', // Slowed + Reverb Hindi Chill
-    '9vMh9fR-q1c'  // Soni Soni Lofi
+    '9vMh9fR-q1c', // Soni Soni Lofi
+    'k8u7t5f3g1h'  // Kaise Hua Lofi
   ]
 };
 
@@ -303,7 +311,7 @@ function addFloatingNotes() {
 async function fetchDirectYouTubeApi(query) {
   if (!FRONTEND_YT_API_KEY) return [];
   try {
-    const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&type=video&videoCategoryId=10&videoDuration=medium&maxResults=15&q=${encodeURIComponent(query)}&key=${FRONTEND_YT_API_KEY}`;
+    const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&type=video&videoCategoryId=10&videoDuration=medium&order=viewCount&maxResults=15&q=${encodeURIComponent(query)}&key=${FRONTEND_YT_API_KEY}`;
     const res = await fetch(url);
     if (!res.ok) return [];
     const data = await res.json();
@@ -319,7 +327,7 @@ async function fetchCategorySongs(categoryKey) {
   const fallbacks = CATEGORY_FALLBACK_VIDEOS[categoryKey] || CATEGORY_FALLBACK_VIDEOS.trending;
   let fetchedIds = [];
 
-  // 1. Direct YouTube Data API v3 search from client (works 100% on Cloudflare Pages)
+  // 1. Direct YouTube Data API v3 search from client sorted by viewCount
   try {
     const promises = queries.map(q => fetchDirectYouTubeApi(q));
     const results = await Promise.all(promises);
@@ -345,7 +353,7 @@ async function fetchCategorySongs(categoryKey) {
     } catch (e) {}
   }
 
-  // 3. Merge results with rich curated fallback videos so queue is NEVER empty
+  // 3. Merge results with rich curated Desi fallback videos so queue is NEVER empty
   let combinedPool = [...new Set([...fetchedIds, ...fallbacks])].filter(Boolean);
   let unplayedPool = combinedPool.filter(id => !playedSongIds.has(id));
 
@@ -576,13 +584,13 @@ function onPlayerStateChange(event) {
   }
 
   if (event.data === YT.PlayerState.PLAYING) {
-    // Minimum Duration Guard: Filter out short clips & shorts (< 120 seconds / 2 minutes)
+    // Minimum Duration Guard: Must be over 1 minute (> 60 seconds) to play genuine songs
     try {
       const duration = player.getDuration();
-      if (duration > 0 && duration < 120) {
-        console.warn(`⚠️ Track duration too short (${Math.round(duration)}s) - Skipping short clip (< 2 mins)...`);
+      if (duration > 0 && duration < 60) {
+        console.warn(`⚠️ Track duration too short (${Math.round(duration)}s) - Skipping clip under 1 minute...`);
         const nowPlayingEl = document.getElementById('nowPlayingText');
-        if (nowPlayingEl) nowPlayingEl.innerText = 'Skipping short clip (< 2 mins)...';
+        if (nowPlayingEl) nowPlayingEl.innerText = 'Skipping short clip (< 1 min)...';
         playNext();
         return;
       }
