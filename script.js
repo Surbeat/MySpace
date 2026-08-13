@@ -28,7 +28,7 @@ const API_BASE_URL = (() => {
 console.log('🎧 SurBeat 100% Dynamic Hindi Search Engine Initialized');
 
 // 100% Dynamic Search Query Groups — Pure Hindi, Punjabi & Haryanvi Hits (NO Hardcoded Songs & NO English)
-const CATEGORY_QUERIES = {
+const categoryQueries = {
   trending: [
     'instagram trending hindi songs',
     'best hindi songs',
@@ -36,18 +36,21 @@ const CATEGORY_QUERIES = {
     'latest viral hindi song',
     'punjabi haryanvi hindi hits'
   ],
+
   romantic_new: [
     'romantic hindi hits songs',
     'bollywood romantic hindi songs',
     'arijit singh romantic hindi songs',
     'top hindi love songs hits'
   ],
+
   classic_old: [
     'old hindi romantic hits',
     'evergreen old hindi songs',
     'best old hindi hits songs',
     '90s bollywood hindi classics'
   ],
+
   lofi: [
     'sad hindi hits songs',
     'hindi lofi romantic songs',
@@ -56,9 +59,71 @@ const CATEGORY_QUERIES = {
   ]
 };
 
+// Aliased for internal consistency
+const CATEGORY_QUERIES = categoryQueries;
+
+// ========================================
+// Category Cache & State Management
+// ========================================
+
+const LOCAL_STORAGE_CACHE_KEY = 'surbeat_youtube_cache_v2';
+let youtubeCache = {
+  trending: [],
+  romantic_new: [],
+  classic_old: [],
+  lofi: []
+};
+
 let currentCategory = 'trending';
-const playedSongIds = new Set();
-let isFetchingMore = false;
+const recentlyPlayedHistory = []; // Tracks recent 15 played video IDs to prevent repetition
+const pendingSearchRequests = new Map(); // In-flight request deduplication
+let isQuotaExhausted = false;
+let isBackendAvailable = false;
+
+// Load persisted cache on launch
+function loadYoutubeCache() {
+  try {
+    const data = localStorage.getItem(LOCAL_STORAGE_CACHE_KEY);
+    if (data) {
+      const parsed = JSON.parse(data);
+      if (parsed && typeof parsed === 'object') {
+        for (const cat of ['trending', 'romantic_new', 'classic_old', 'lofi']) {
+          if (Array.isArray(parsed[cat]) && parsed[cat].length > 0) {
+            youtubeCache[cat] = parsed[cat];
+          }
+        }
+      }
+    }
+  } catch (e) {
+    console.warn('Cache load error:', e);
+  }
+}
+
+function saveYoutubeCache() {
+  try {
+    localStorage.setItem(LOCAL_STORAGE_CACHE_KEY, JSON.stringify(youtubeCache));
+  } catch (e) {
+    console.warn('Cache save error:', e);
+  }
+}
+
+function showSearchStatus(message, type = 'info') {
+  const statusEl = document.getElementById('searchStatus');
+  if (!statusEl) return;
+  statusEl.innerText = message;
+  statusEl.className = `search-status ${type}`;
+  statusEl.style.display = 'block';
+  if (type === 'info' || type === 'success') {
+    setTimeout(() => {
+      if (statusEl.innerText === message) statusEl.style.display = 'none';
+    }, 4000);
+  }
+}
+
+function hideSearchStatus() {
+  const statusEl = document.getElementById('searchStatus');
+  if (statusEl) statusEl.style.display = 'none';
+}
 
 // Background Audio Keep-Alive Element for Mobile Lock-Screen Playback
 let silentAudioEl = null;
@@ -77,7 +142,7 @@ function initLockScreenAudioKeepAlive() {
 function startLockScreenAudioSession() {
   if (!silentAudioEl) initLockScreenAudioKeepAlive();
   if (silentAudioEl && silentAudioEl.paused) {
-    silentAudioEl.play().catch(() => {});
+    silentAudioEl.play().catch(() => { });
   }
 }
 
@@ -140,7 +205,7 @@ function setupMediaSessionActionHandlers() {
     for (const [action, handler] of actionHandlers) {
       try {
         navigator.mediaSession.setActionHandler(action, handler);
-      } catch (e) {}
+      } catch (e) { }
     }
   }
 }
@@ -192,8 +257,26 @@ function updateOnlineListeners() {
   textEl.innerText = `${onlineListenersCount} Listeners Online`;
 }
 
+async function checkBackendHealth() {
+  if (!API_BASE_URL || isFileProtocol) {
+    isBackendAvailable = false;
+    return;
+  }
+  try {
+    const res = await fetch(`${API_BASE_URL}/health`);
+    if (res.ok) {
+      const data = await res.json().catch(() => null);
+      if (data && data.status === 'ok') {
+        isBackendAvailable = true;
+        return;
+      }
+    }
+  } catch (e) { }
+  isBackendAvailable = false;
+}
+
 async function safeJsonFetch(url, label) {
-  if (!url || isFileProtocol) {
+  if (!url || isFileProtocol || !isBackendAvailable) {
     return null;
   }
 
@@ -225,7 +308,7 @@ async function loadRomanticBackground() {
     'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=80'
   ];
 
-  if (!API_BASE_URL) {
+  if (!isBackendAvailable) {
     const randomUrl = localFallbacks[Math.floor(Math.random() * localFallbacks.length)];
     bgEl.style.backgroundImage = `url('${randomUrl}')`;
     return;
@@ -264,62 +347,175 @@ function addFloatingNotes() {
 }
 
 // ========================================
-// Live YouTube Search Query Execution (Strict Hindi Filter: relevanceLanguage=hi)
+// ONE Centralized YouTube Search Engine
 // ========================================
 
-async function fetchDirectYouTubeApi(query) {
-  if (!FRONTEND_YT_API_KEY) return [];
-  try {
-    const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&type=video&videoCategoryId=10&order=viewCount&relevanceLanguage=hi&maxResults=20&q=${encodeURIComponent(query)}&key=${FRONTEND_YT_API_KEY}`;
-    const res = await fetch(url);
-    if (!res.ok) return [];
-    const data = await res.json();
-    if (!data || !Array.isArray(data.items)) return [];
-    return data.items.map(item => item.id?.videoId).filter(Boolean);
-  } catch (e) {
-    return [];
+function isRelevantHindiMusic(item) {
+  if (!item || !item.id || !item.id.videoId) return false;
+  const title = (item.snippet?.title || '').toLowerCase();
+  const channelTitle = (item.snippet?.channelTitle || '').toLowerCase();
+  const description = (item.snippet?.description || '').toLowerCase();
+  const combined = `${title} ${channelTitle} ${description}`;
+
+  // Filter obvious non-music / irrelevant items
+  const irrelevantPattern = /\b(tutorial|how to|reaction|review|gameplay|walkthrough|podcast|news|trailer|teaser|full movie|unboxing|bgmi|pubg|vlog|episode)\b/i;
+  if (irrelevantPattern.test(combined)) {
+    return false;
   }
+
+  return true;
 }
 
-async function fetchCategorySongs(categoryKey) {
-  const baseQueries = CATEGORY_QUERIES[categoryKey] || CATEGORY_QUERIES.trending;
-  let fetchedIds = [];
+/**
+ * ONE Centralized API Search Function
+ * - Single request per invocation
+ * - In-flight request deduplication
+ * - 429 / Quota Exhaustion detection and graceful stop
+ * - Strictly Hindi/Desi music filtering
+ */
+async function performYouTubeSearch(query) {
+  const normKey = query.trim().toLowerCase();
+  if (!normKey) return [];
 
-  // 1. Direct YouTube Data API v3 search sorted strictly by viewCount with Hindi relevance filter
-  try {
-    const promises = baseQueries.map(q => fetchDirectYouTubeApi(q));
-    const results = await Promise.all(promises);
-    results.forEach(ids => {
-      if (Array.isArray(ids)) fetchedIds = fetchedIds.concat(ids);
-    });
-  } catch (e) {}
+  // 1. Check in-flight request (Deduplication)
+  if (pendingSearchRequests.has(normKey)) {
+    console.log(`🔄 Deduplicating in-flight search request for: "${normKey}"`);
+    return pendingSearchRequests.get(normKey);
+  }
 
-  // 2. If client API returns no results, try backend proxy if configured
-  if (fetchedIds.length === 0 && API_BASE_URL) {
+  // 2. Check Quota exhaustion flag
+  if (isQuotaExhausted) {
+    console.warn('⚠️ YouTube Search Quota is currently exhausted. Skipping search for:', normKey);
+    showSearchStatus('YouTube search quota is temporarily unavailable. Loaded cached songs.', 'warning');
+    return [];
+  }
+
+  const searchPromise = (async () => {
     try {
-      const promises = baseQueries.map(q => {
-        const url = `${API_BASE_URL}/youtube/search?query=${encodeURIComponent(q)}&maxResults=20`;
-        return safeJsonFetch(url, `Search: ${q}`);
-      });
+      if (!FRONTEND_YT_API_KEY) return [];
 
-      const results = await Promise.all(promises);
-      results.forEach(res => {
-        if (res && res.success && Array.isArray(res.data)) {
-          fetchedIds = fetchedIds.concat(res.data);
+      const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&type=video&videoCategoryId=10&order=viewCount&relevanceLanguage=hi&maxResults=25&q=${encodeURIComponent(normKey)}&key=${FRONTEND_YT_API_KEY}`;
+      const res = await fetch(url);
+
+      if (res.status === 429) {
+        console.error('🚫 YouTube API HTTP 429: Quota Limit Exceeded');
+        isQuotaExhausted = true;
+        showSearchStatus('YouTube search quota is temporarily unavailable. Please try again later.', 'warning');
+        return [];
+      }
+
+      if (res.status === 403) {
+        const errData = await res.json().catch(() => ({}));
+        const reason = errData?.error?.errors?.[0]?.reason || '';
+        if (reason === 'quotaExceeded' || reason === 'dailyLimitExceeded') {
+          console.error('🚫 YouTube API HTTP 403: Quota Limit Exceeded');
+          isQuotaExhausted = true;
+          showSearchStatus('YouTube search quota is temporarily unavailable. Please try again later.', 'warning');
+        } else {
+          console.warn('⚠️ YouTube API HTTP 403:', reason || 'Forbidden');
+          showSearchStatus('YouTube API access temporarily restricted.', 'warning');
         }
-      });
-    } catch (e) {}
+        return [];
+      }
+
+      if (!res.ok) {
+        console.warn(`YouTube Search HTTP Error ${res.status}`);
+        return [];
+      }
+
+      const data = await res.json();
+      if (!data || !Array.isArray(data.items)) return [];
+
+      const validItems = data.items.filter(isRelevantHindiMusic);
+      const videoIds = validItems.map(item => item.id.videoId).filter(Boolean);
+
+      return videoIds;
+    } catch (e) {
+      console.warn('YouTube Search Network Exception:', e.message);
+      return [];
+    } finally {
+      pendingSearchRequests.delete(normKey);
+    }
+  })();
+
+  pendingSearchRequests.set(normKey, searchPromise);
+  return searchPromise;
+}
+
+/**
+ * Ensures category has cached results.
+ * If cache ALREADY exists -> USE CACHE (0 API calls).
+ * If cache is EMPTY -> Picks ONE random query, executes ONE API call, saves results to cache.
+ */
+async function ensureCategoryCache(categoryKey) {
+  if (!youtubeCache[categoryKey]) {
+    youtubeCache[categoryKey] = [];
   }
 
-  let fullPool = [...new Set(fetchedIds)].filter(Boolean);
-  let unplayedPool = fullPool.filter(id => !playedSongIds.has(id));
-
-  if (unplayedPool.length < 2) {
-    playedSongIds.clear();
-    unplayedPool = fullPool;
+  // 1. Check cache (Instant HIT -> 0 API calls)
+  if (youtubeCache[categoryKey].length > 0) {
+    console.log(`⚡ Cache HIT for category "${categoryKey}": ${youtubeCache[categoryKey].length} cached songs.`);
+    return youtubeCache[categoryKey];
   }
 
-  return shuffle(unplayedPool);
+  // 2. Cache is EMPTY -> Select ONE query randomly from categoryQueries[categoryKey]
+  const queries = categoryQueries[categoryKey] || categoryQueries.trending;
+  if (!queries || queries.length === 0) return [];
+
+  const selectedQuery = queries[Math.floor(Math.random() * queries.length)];
+  console.log(`🔍 Cache MISS for category "${categoryKey}". Making 1 API search request with query: "${selectedQuery}"`);
+
+  const fetchedIds = await performYouTubeSearch(selectedQuery);
+
+  if (fetchedIds && fetchedIds.length > 0) {
+    const existingSet = new Set(youtubeCache[categoryKey]);
+    fetchedIds.forEach(id => existingSet.add(id));
+    youtubeCache[categoryKey] = Array.from(existingSet);
+    saveYoutubeCache();
+    showSearchStatus(`Discovered ${fetchedIds.length} tracks for ${categoryKey.replace('_', ' ')}`, 'success');
+  } else {
+    // Try one fallback query if first query returned no results
+    const fallbackQueries = queries.filter(q => q !== selectedQuery);
+    if (fallbackQueries.length > 0 && !isQuotaExhausted) {
+      const fallbackQuery = fallbackQueries[Math.floor(Math.random() * fallbackQueries.length)];
+      console.log(`🔄 Retrying with fallback single query: "${fallbackQuery}"`);
+      const fallbackIds = await performYouTubeSearch(fallbackQuery);
+      if (fallbackIds && fallbackIds.length > 0) {
+        const existingSet = new Set(youtubeCache[categoryKey]);
+        fallbackIds.forEach(id => existingSet.add(id));
+        youtubeCache[categoryKey] = Array.from(existingSet);
+        saveYoutubeCache();
+      }
+    }
+  }
+
+  return youtubeCache[categoryKey];
+}
+
+/**
+ * Randomly selects next song from category cache without API calls.
+ */
+function getNextRandomSongFromCache(categoryKey) {
+  const cachedList = youtubeCache[categoryKey] || [];
+  if (cachedList.length === 0) return null;
+
+  let unplayedCandidates = cachedList.filter(id => !recentlyPlayedHistory.includes(id));
+
+  // If all cached songs have been recently played, reshuffle cached list locally without API call
+  if (unplayedCandidates.length === 0) {
+    console.log(`🔁 All cached songs in "${categoryKey}" played. Reshuffling cached list locally (0 API requests)...`);
+    recentlyPlayedHistory.splice(0, Math.floor(recentlyPlayedHistory.length / 2));
+    unplayedCandidates = [...cachedList];
+  }
+
+  const selectedId = unplayedCandidates[Math.floor(Math.random() * unplayedCandidates.length)];
+
+  recentlyPlayedHistory.push(selectedId);
+  if (recentlyPlayedHistory.length > 15) {
+    recentlyPlayedHistory.shift();
+  }
+
+  return selectedId;
 }
 
 // ========================================
@@ -328,8 +524,6 @@ async function fetchCategorySongs(categoryKey) {
 
 let player = null;
 let isPlayerReady = false;
-let queue = [];
-let currentIndex = 0;
 let isMuted = false;
 let isLiked = false;
 let isSeeking = false;
@@ -339,49 +533,35 @@ const PAUSE_ICON = 'M6 5h4v14H6zm8 0h4v14h-4z';
 const PLAY_ICON = 'M8 5v14l11-7z';
 
 // ========================================
-// Endless Dynamic Auto-Play Queue Engine
+// Playback Engine
 // ========================================
 
-async function buildQueue(categoryKey = currentCategory) {
-  const nowPlayingEl = document.getElementById('nowPlayingText');
-  if (nowPlayingEl) nowPlayingEl.innerText = 'searching YouTube for Hindi hits...';
+async function playCategorySong(categoryKey = currentCategory) {
+  currentCategory = categoryKey;
 
-  queue = await fetchCategorySongs(categoryKey);
-  currentIndex = 0;
-}
+  // 1. Ensure cache exists (0 API calls if cache present)
+  await ensureCategoryCache(categoryKey);
 
-async function prefetchMoreSongs() {
-  if (isFetchingMore) return;
-  isFetchingMore = true;
-
-  try {
-    const freshSongs = await fetchCategorySongs(currentCategory);
-    const newSongs = freshSongs.filter(id => !queue.includes(id) && !playedSongIds.has(id));
-    if (newSongs.length > 0) {
-      queue = queue.concat(newSongs);
+  // 2. Select next random song locally from cache
+  const nextSongId = getNextRandomSongFromCache(categoryKey);
+  if (!nextSongId) {
+    console.warn(`No songs available in cache for category: ${categoryKey}`);
+    const nowPlayingEl = document.getElementById('nowPlayingText');
+    if (nowPlayingEl) {
+      if (isQuotaExhausted) {
+        nowPlayingEl.innerText = 'YouTube quota limit reached. Please try again later.';
+      } else {
+        nowPlayingEl.innerText = 'No songs found. Retrying...';
+      }
     }
-  } catch (e) {}
-
-  isFetchingMore = false;
-}
-
-function playCurrent() {
-  if (!queue || !queue.length) {
-    buildQueue(currentCategory).then(() => {
-      if (queue && queue.length) playCurrent();
-    });
     return;
   }
 
-  if (currentIndex >= queue.length) currentIndex = 0;
-  if (currentIndex < 0) currentIndex = queue.length - 1;
+  playVideoById(nextSongId);
+}
 
-  const videoId = queue[currentIndex];
-  playedSongIds.add(videoId);
-
-  if (queue.length - currentIndex < 3) {
-    prefetchMoreSongs();
-  }
+function playVideoById(videoId) {
+  if (!videoId) return;
 
   startLockScreenAudioSession();
 
@@ -402,30 +582,20 @@ function playCurrent() {
   }
 }
 
-// ENDLESS NON-STOP PLAYBACK ENGINE: Continuously loops through dynamic search queue
 function playNext() {
-  if (!queue || !queue.length) {
-    buildQueue(currentCategory).then(() => {
-      if (queue && queue.length) playCurrent();
-    });
-    return;
-  }
-
-  currentIndex++;
-  if (currentIndex >= queue.length) {
-    currentIndex = 0;
-    buildQueue(currentCategory).then(() => {
-      playCurrent();
-    });
-    return;
-  }
-  playCurrent();
+  playCategorySong(currentCategory);
 }
 
 function playPrev() {
-  if (!queue || !queue.length) return;
-  currentIndex = (currentIndex - 1 + queue.length) % queue.length;
-  playCurrent();
+  if (recentlyPlayedHistory.length > 1) {
+    recentlyPlayedHistory.pop();
+    const prevId = recentlyPlayedHistory[recentlyPlayedHistory.length - 1];
+    if (prevId) {
+      playVideoById(prevId);
+      return;
+    }
+  }
+  playCategorySong(currentCategory);
 }
 
 function updateNowPlaying() {
@@ -440,7 +610,7 @@ function updateNowPlaying() {
       if (data && data.title && data.title.trim() !== '') {
         trackTitle = data.title;
       }
-    } catch (e) {}
+    } catch (e) { }
   }
 
   nowPlayingEl.innerText = trackTitle;
@@ -453,7 +623,6 @@ function resetLike() {
   if (likeBtn) likeBtn.classList.remove('liked');
 }
 
-// Fixed Play/Pause SVG Path Toggle
 function setPlayPauseIcon(isPlaying) {
   const path = document.getElementById('playPausePath') || document.querySelector('#playPauseBtn path');
   const btn = document.getElementById('playPauseBtn');
@@ -469,7 +638,7 @@ function setPlayPauseIcon(isPlaying) {
   if ('mediaSession' in navigator) {
     try {
       navigator.mediaSession.playbackState = isPlaying ? 'playing' : 'paused';
-    } catch (e) {}
+    } catch (e) { }
   }
 }
 
@@ -504,11 +673,11 @@ function startProgressTracking() {
                 playbackRate: 1,
                 position: Math.min(duration, Math.max(0, current))
               });
-            } catch (e) {}
+            } catch (e) { }
           }
         }
       }
-    } catch (e) {}
+    } catch (e) { }
   }, 500);
 }
 
@@ -548,13 +717,14 @@ function onPlayerStateChange(event) {
   const ambientGlow = document.getElementById('ambientGlow');
 
   // ENDLESS CONTINUOUS AUTO-PLAY: Play next song automatically when current song ends
+  // Uses cached track without making a new YouTube search request
   if (event.data === YT.PlayerState.ENDED) {
-    console.log('🎵 Track ended — Playing next dynamic Hindi hit...');
+    console.log('🎵 Track ended — Playing next song from category cache...');
     playNext();
   }
 
   if (event.data === YT.PlayerState.PLAYING) {
-    // Minimum Duration Guard: Must be over 1 minute (> 60 seconds) to play genuine songs
+    // Minimum Duration Guard: Skip ultra short clips under 1 min
     try {
       const duration = player.getDuration();
       if (duration > 0 && duration < 60) {
@@ -564,7 +734,7 @@ function onPlayerStateChange(event) {
         playNext();
         return;
       }
-    } catch (e) {}
+    } catch (e) { }
 
     startLockScreenAudioSession();
     updateNowPlaying();
@@ -594,7 +764,7 @@ function onPlayerStateChange(event) {
 function onPlayerError(event) {
   console.warn('⚠️ YouTube Track Error Code:', event.data, '- Skipping unplayable video...');
   const nowPlayingEl = document.getElementById('nowPlayingText');
-  if (nowPlayingEl) nowPlayingEl.innerText = 'Track unavailable, skipping to next hit...';
+  if (nowPlayingEl) nowPlayingEl.innerText = 'Track unavailable, skipping to next track...';
   setTimeout(playNext, 600);
 }
 
@@ -602,7 +772,10 @@ function onPlayerError(event) {
 // Initialization & Event Listeners
 // ========================================
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', async () => {
+  loadYoutubeCache();
+  await checkBackendHealth();
+
   updateClock();
   setInterval(updateClock, 1000);
 
@@ -626,10 +799,7 @@ document.addEventListener('DOMContentLoaded', () => {
       btn.classList.add('active');
       currentCategory = btn.dataset.category || 'trending';
 
-      await buildQueue(currentCategory);
-      if (player && isPlayerReady) {
-        playCurrent();
-      }
+      await playCategorySong(currentCategory);
     });
   });
 
@@ -641,7 +811,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       try {
         startLockScreenAudioSession();
-        await buildQueue(currentCategory);
+        await ensureCategoryCache(currentCategory);
 
         let waitCount = 0;
         while ((!player || !isPlayerReady) && waitCount < 25) {
@@ -654,7 +824,7 @@ document.addEventListener('DOMContentLoaded', () => {
           player.setVolume(85);
         }
 
-        playCurrent();
+        await playCategorySong(currentCategory);
 
         playBtn.style.display = 'none';
         const controlsRow = document.getElementById('controlsRow');
