@@ -1,6 +1,6 @@
 /**
- * SurBeat — Pure Indian Musical Vibes & Dynamic YouTube Search Engine
- * Direct YouTube API (ViewCount Sorted) — 100% Dynamic Queries (No Hardcoded Songs)
+ * SurBeat — Pure Indian Musical Vibes & Endless Dynamic YouTube Player
+ * Strictly Hindi & Desi Hits (Zero English) + ViewCount Sorted + Endless Non-Stop Auto-Play
  */
 
 // YouTube Data API Key for direct client-side dynamic search on Cloudflare Pages
@@ -25,36 +25,47 @@ const API_BASE_URL = (() => {
   return '/api';
 })();
 
-console.log('🎧 SurBeat Indian Dynamic Search Engine Initialized');
+console.log('🎧 SurBeat Pure Hindi Endless Engine Initialized');
 
-// 100% Dynamic Search Query Groups — Broad Hits across Hindi, Punjabi & Haryanvi (NO Hardcoded Songs & NO English)
+// 100% Strictly Hindi & Desi Hits (ZERO English Songs allowed)
 const CATEGORY_QUERIES = {
   trending: [
-    'instagram trending hindi song',
-    'trending hindi hits song',
-    'latest viral hindi hits',
-    'trending punjabi hit songs',
-    'trending haryanvi hit songs'
+    'instagram trending hindi songs',
+    'best hindi songs',
+    'trending hindi hits songs',
+    'latest viral hindi song',
+    'punjabi haryanvi hindi hits'
   ],
   romantic_new: [
-    'romantic songs hits',
-    'love hits song',
-    'bollywood romantic songs hits',
-    'arijit singh love songs hits'
+    'romantic hindi hits songs',
+    'bollywood romantic hindi songs',
+    'arijit singh romantic hindi songs',
+    'top hindi love songs hits'
   ],
   classic_old: [
-    'old hindi hits song',
-    'evergreen old hindi romantic songs',
-    '90s bollywood hit songs',
-    'retro hindi love songs'
+    'old hindi romantic hits',
+    'evergreen old hindi songs',
+    'best old hindi hits songs',
+    '90s bollywood hindi classics'
   ],
   lofi: [
-    'hindi lofi love songs',
-    'lofi romantic songs hits',
-    'slowed reverb hindi hits',
-    'punjabi lofi songs'
+    'sad hindi hits songs',
+    'hindi lofi romantic songs',
+    'slowed reverb hindi hits songs',
+    'chai lofi hindi love songs'
   ]
 };
+
+// Dynamic search modifiers to ensure YouTube returns fresh new Hindi songs every request
+const QUERY_SUFFIXES = [
+  ' 2026',
+  ' jukebox hits',
+  ' viral tracks',
+  ' chartbusters',
+  ' golden collection',
+  ' popular playlist',
+  ' blockbuster'
+];
 
 let currentCategory = 'trending';
 const playedSongIds = new Set();
@@ -264,13 +275,16 @@ function addFloatingNotes() {
 }
 
 // ========================================
-// Live YouTube Search Query Execution
+// Live YouTube Search Query Execution (Strict Hindi Filter: relevanceLanguage=hi)
 // ========================================
 
 async function fetchDirectYouTubeApi(query) {
   if (!FRONTEND_YT_API_KEY) return [];
   try {
-    const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&type=video&videoCategoryId=10&videoDuration=medium&order=viewCount&maxResults=15&q=${encodeURIComponent(query)}&key=${FRONTEND_YT_API_KEY}`;
+    // Add relevanceLanguage=hi to force YouTube API to strictly return Hindi songs
+    const suffix = QUERY_SUFFIXES[Math.floor(Math.random() * QUERY_SUFFIXES.length)];
+    const fullQuery = query + suffix;
+    const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&type=video&videoCategoryId=10&videoDuration=medium&order=viewCount&relevanceLanguage=hi&maxResults=25&q=${encodeURIComponent(fullQuery)}&key=${FRONTEND_YT_API_KEY}`;
     const res = await fetch(url);
     if (!res.ok) return [];
     const data = await res.json();
@@ -282,12 +296,12 @@ async function fetchDirectYouTubeApi(query) {
 }
 
 async function fetchCategorySongs(categoryKey) {
-  const queries = CATEGORY_QUERIES[categoryKey] || CATEGORY_QUERIES.trending;
+  const baseQueries = CATEGORY_QUERIES[categoryKey] || CATEGORY_QUERIES.trending;
   let fetchedIds = [];
 
-  // 1. Direct YouTube Data API v3 search sorted strictly by viewCount
+  // 1. Direct YouTube Data API v3 search sorted strictly by viewCount with Hindi relevance filter
   try {
-    const promises = queries.map(q => fetchDirectYouTubeApi(q));
+    const promises = baseQueries.map(q => fetchDirectYouTubeApi(q));
     const results = await Promise.all(promises);
     results.forEach(ids => {
       if (Array.isArray(ids)) fetchedIds = fetchedIds.concat(ids);
@@ -297,8 +311,8 @@ async function fetchCategorySongs(categoryKey) {
   // 2. If client API returns no results, try backend proxy if configured
   if (fetchedIds.length === 0 && API_BASE_URL) {
     try {
-      const promises = queries.map(q => {
-        const url = `${API_BASE_URL}/youtube/search?query=${encodeURIComponent(q)}&maxResults=20`;
+      const promises = baseQueries.map(q => {
+        const url = `${API_BASE_URL}/youtube/search?query=${encodeURIComponent(q)}&maxResults=25`;
         return safeJsonFetch(url, `Search: ${q}`);
       });
 
@@ -314,6 +328,7 @@ async function fetchCategorySongs(categoryKey) {
   let fullPool = [...new Set(fetchedIds)].filter(Boolean);
   let unplayedPool = fullPool.filter(id => !playedSongIds.has(id));
 
+  // If played through most songs, clear history to loop back to fresh variations
   if (unplayedPool.length < 3) {
     playedSongIds.clear();
     unplayedPool = fullPool;
@@ -344,7 +359,7 @@ const PLAY_ICON = 'M8 5v14l11-7z';
 
 async function buildQueue(categoryKey = currentCategory) {
   const nowPlayingEl = document.getElementById('nowPlayingText');
-  if (nowPlayingEl) nowPlayingEl.innerText = 'searching YouTube for hits...';
+  if (nowPlayingEl) nowPlayingEl.innerText = 'searching YouTube for Hindi hits...';
 
   queue = await fetchCategorySongs(categoryKey);
   currentIndex = 0;
@@ -366,13 +381,21 @@ async function prefetchMoreSongs() {
 }
 
 function playCurrent() {
-  if (!queue.length) return;
-  if (currentIndex >= queue.length) currentIndex = 0;
+  if (!queue.length) {
+    buildQueue(currentCategory).then(() => playCurrent());
+    return;
+  }
+
+  if (currentIndex >= queue.length) {
+    buildQueue(currentCategory).then(() => playCurrent());
+    return;
+  }
   if (currentIndex < 0) currentIndex = queue.length - 1;
 
   const videoId = queue[currentIndex];
   playedSongIds.add(videoId);
 
+  // Auto-prefetch more fresh Hindi songs before queue reaches the end
   if (queue.length - currentIndex < 4) {
     prefetchMoreSongs();
   }
@@ -396,9 +419,8 @@ function playCurrent() {
   }
 }
 
-// Endless Auto-Play: Fetch new YouTube query results dynamically when queue finishes
+// ENDLESS NON-STOP PLAYBACK ENGINE: Never stops playing songs, continuously fetches fresh Hindi songs
 function playNext() {
-  if (!queue.length) return;
   currentIndex++;
   if (currentIndex >= queue.length) {
     buildQueue(currentCategory).then(() => {
@@ -419,7 +441,7 @@ function updateNowPlaying() {
   const nowPlayingEl = document.getElementById('nowPlayingText');
   if (!nowPlayingEl) return;
 
-  let trackTitle = 'SurBeat Dynamic Hit';
+  let trackTitle = 'SurBeat Dynamic Hindi Hit';
 
   if (player && typeof player.getVideoData === 'function') {
     try {
@@ -536,7 +558,7 @@ function onPlayerStateChange(event) {
 
   // ENDLESS CONTINUOUS AUTO-PLAY: Play next song automatically when current song ends
   if (event.data === YT.PlayerState.ENDED) {
-    console.log('🎵 Track ended — Playing next dynamic YouTube hit...');
+    console.log('🎵 Track ended — Playing next dynamic Hindi hit...');
     playNext();
   }
 
