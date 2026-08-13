@@ -1,6 +1,6 @@
 /**
  * SurBeat — Pure Indian Musical Vibes & Dynamic YouTube Search Engine
- * Direct YouTube API (ViewCount Sorted) + Backend Proxy + Curated Desi Fallback Engine
+ * Direct YouTube API (ViewCount Sorted) — 100% Dynamic Queries (No Hardcoded Songs)
  */
 
 // YouTube Data API Key for direct client-side dynamic search on Cloudflare Pages
@@ -27,73 +27,32 @@ const API_BASE_URL = (() => {
 
 console.log('🎧 SurBeat Indian Dynamic Search Engine Initialized');
 
-// Dynamic Search Query Groups — Strictly Hindi, Punjabi, Haryanvi & Desi Classics (NO English)
+// 100% Dynamic Search Query Groups — Broad Hits across Hindi, Punjabi & Haryanvi (NO Hardcoded Songs & NO English)
 const CATEGORY_QUERIES = {
   trending: [
-    'top hindi blockbuster hit songs 2026',
-    'latest punjabi viral hit songs',
-    'top haryanvi banger songs hits',
-    'trending bollywood reel hit songs'
+    'instagram trending hindi song',
+    'trending hindi hits song',
+    'latest viral hindi hits',
+    'trending punjabi hit songs',
+    'trending haryanvi hit songs'
   ],
   romantic_new: [
-    'arijit singh romantic hindi songs',
-    'top romantic bollywood love songs',
-    'latest punjabi romantic love songs',
-    'romantic hindi duet songs hits'
+    'romantic songs hits',
+    'love hits song',
+    'bollywood romantic songs hits',
+    'arijit singh love songs hits'
   ],
   classic_old: [
-    'old hindi romantic songs evergreen',
-    '90s bollywood superhit songs classics',
-    'evergreen retro 80s 90s hindi hits',
-    'old golden hindi classic love melodies'
+    'old hindi hits song',
+    'evergreen old hindi romantic songs',
+    '90s bollywood hit songs',
+    'retro hindi love songs'
   ],
   lofi: [
-    'hindi lofi romantic songs hits',
-    'slowed reverb hindi love songs',
-    'punjabi lofi chill songs hits',
-    'chai lofi acoustic hindi hits'
-  ]
-};
-
-// Rich Curated Pure Desi Fallback YouTube Video IDs (100% Hindi, Punjabi & Haryanvi Superhits)
-const CATEGORY_FALLBACK_VIDEOS = {
-  trending: [
-    'v3Z9cM0NlZc', // Kesariya - Brahmastra
-    'BddP6PYo2gs', // Apna Bana Le - Bhediya
-    'ElZfdU54Cp8', // O Maahi - Dunki
-    'Kup82qXJ25c', // Ve Kamleya - Rocky Aur Rani
-    'NbyHNASFi6U', // Tere Vaaste - Zara Hatke Zara Bachke
-    'z9P8jE4eF20', // Tauba Tauba - Bad Newz
-    '52GajKaDaman',// 52 Gaj Ka Daman - Haryanvi Hit
-    '0yW7w8F2TVA'  // Tujhe Kitna Chahne Lage
-  ],
-  romantic_new: [
-    'fHI8X4OXluQ', // Tum Hi Ho - Aashiqui 2
-    'YxWlaYCA8f0', // Raataan Lambiyan - Shershaah
-    'V7LwfY5U_BU', // Rabba Janda - Mission Majnu
-    'SAcpESN_Fk4', // Heeriye - Jasleen Royal & Arijit Singh
-    '7uY1N-qUj_A', // Tera Ban Jaunga - Kabir Singh
-    'k4yXQkG2B1E', // Pal Pal Dil Ke Paas
-    'g_q7u6j_e_0', // Dekha Tenu - Mr & Mrs Mahi
-    '2g58n1G8WlY'  // Satranga - Animal
-  ],
-  classic_old: [
-    '4xN_w9B__Xg', // Pehla Nasha - Jo Jeeta Wohi Sikandar
-    'g7w_c9G-j5c', // Tujhe Dekha To - DDLJ
-    '2K8A-j7yRlg', // Dil Deewana - Maine Pyar Kiya
-    '9hR8_rD3_Qk', // Chura Liya Hai Tumne Jo Dil Ko
-    'W-39_F6qLg0', // Lag Ja Gale - Woh Kaun Thi
-    'e-ORhEE9VVg', // Roop Tera Mastana
-    '5rG4nF1g50s', // Ek Ladki Ko Dekha Toh Aisa Laga
-    '2p3j8X4t5wQ'  // Pyar Kiya To Darna Kya
-  ],
-  lofi: [
-    's-t_6aG0zKw', // Bollywood Lofi Chill Beats
-    '190l3e7sVaw', // Midnight Hindi Lofi Mix
-    '_X1L0q70X_s', // Acoustic Hindi Love Medley
-    '50Wv-J0bE6w', // Slowed + Reverb Hindi Chill
-    '9vMh9fR-q1c', // Soni Soni Lofi
-    'k8u7t5f3g1h'  // Kaise Hua Lofi
+    'hindi lofi love songs',
+    'lofi romantic songs hits',
+    'slowed reverb hindi hits',
+    'punjabi lofi songs'
   ]
 };
 
@@ -324,10 +283,9 @@ async function fetchDirectYouTubeApi(query) {
 
 async function fetchCategorySongs(categoryKey) {
   const queries = CATEGORY_QUERIES[categoryKey] || CATEGORY_QUERIES.trending;
-  const fallbacks = CATEGORY_FALLBACK_VIDEOS[categoryKey] || CATEGORY_FALLBACK_VIDEOS.trending;
   let fetchedIds = [];
 
-  // 1. Direct YouTube Data API v3 search from client sorted by viewCount
+  // 1. Direct YouTube Data API v3 search sorted strictly by viewCount
   try {
     const promises = queries.map(q => fetchDirectYouTubeApi(q));
     const results = await Promise.all(promises);
@@ -353,13 +311,12 @@ async function fetchCategorySongs(categoryKey) {
     } catch (e) {}
   }
 
-  // 3. Merge results with rich curated Desi fallback videos so queue is NEVER empty
-  let combinedPool = [...new Set([...fetchedIds, ...fallbacks])].filter(Boolean);
-  let unplayedPool = combinedPool.filter(id => !playedSongIds.has(id));
+  let fullPool = [...new Set(fetchedIds)].filter(Boolean);
+  let unplayedPool = fullPool.filter(id => !playedSongIds.has(id));
 
   if (unplayedPool.length < 3) {
     playedSongIds.clear();
-    unplayedPool = combinedPool;
+    unplayedPool = fullPool;
   }
 
   return shuffle(unplayedPool);
