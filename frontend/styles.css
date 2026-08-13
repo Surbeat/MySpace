@@ -961,6 +961,17 @@ h1 {
   box-shadow: 0 8px 25px rgba(255, 255, 255, 0.15);
 }
 
+.gmail-card {
+  background: linear-gradient(135deg, rgba(234, 67, 53, 0.25), rgba(187, 0, 27, 0.2));
+  border: 1px solid rgba(234, 67, 53, 0.4);
+}
+
+.gmail-card:hover {
+  background: linear-gradient(135deg, rgba(234, 67, 53, 0.45), rgba(187, 0, 27, 0.4));
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(234, 67, 53, 0.45);
+}
+
 /* Official YouTube API Attribution Card */
 .youtube-attribution-card {
   background: linear-gradient(135deg, rgba(255, 23, 68, 0.1), rgba(20, 5, 15, 0.6));
