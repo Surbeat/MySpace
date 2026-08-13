@@ -1,9 +1,8 @@
 /**
  * SurBeat — Pure Indian Musical Vibes & Endless Dynamic YouTube Player
- * Strictly Hindi & Desi Hits (Zero English) + ViewCount Sorted + Endless Non-Stop Auto-Play
+ * 100% Hindi/Desi Hits (Zero English) + Live YouTube Search + Fail-Safe Fallback Engine
  */
 
-// YouTube Data API Key for direct client-side dynamic search on Cloudflare Pages
 const FRONTEND_YT_API_KEY = "AIzaSyCr_j1AevC8Y3oFs9IPHTqZRiQjbQjcryA";
 
 const isFileProtocol = window.location.protocol === 'file:';
@@ -27,7 +26,7 @@ const API_BASE_URL = (() => {
 
 console.log('🎧 SurBeat Pure Hindi Endless Engine Initialized');
 
-// 100% Strictly Hindi & Desi Hits (ZERO English Songs allowed)
+// 100% Strictly Hindi, Punjabi & Haryanvi Hits (ZERO English Songs)
 const CATEGORY_QUERIES = {
   trending: [
     'instagram trending hindi songs',
@@ -56,16 +55,44 @@ const CATEGORY_QUERIES = {
   ]
 };
 
-// Dynamic search modifiers to ensure YouTube returns fresh new Hindi songs every request
-const QUERY_SUFFIXES = [
-  ' 2026',
-  ' jukebox hits',
-  ' viral tracks',
-  ' chartbusters',
-  ' golden collection',
-  ' popular playlist',
-  ' blockbuster'
-];
+// Fail-Safe Curated Hindi & Desi Superhits (Guarantees player NEVER stops even if YouTube API quota is exhausted)
+const HINDI_FALLBACK_POOL = {
+  trending: [
+    'v3Z9cM0NlZc', // Kesariya - Brahmastra
+    'BddP6PYo2gs', // Apna Bana Le - Bhediya
+    'ElZfdU54Cp8', // O Maahi - Dunki
+    'Kup82qXJ25c', // Ve Kamleya - Rocky Aur Rani
+    'NbyHNASFi6U', // Tere Vaaste - Zara Hatke Zara Bachke
+    'z9P8jE4eF20', // Tauba Tauba - Bad Newz
+    '0yW7w8F2TVA', // Tujhe Kitna Chahne Lage
+    'g_q7u6j_e_0', // Dekha Tenu
+    '2g58n1G8WlY'  // Satranga - Animal
+  ],
+  romantic_new: [
+    'fHI8X4OXluQ', // Tum Hi Ho - Aashiqui 2
+    'YxWlaYCA8f0', // Raataan Lambiyan - Shershaah
+    'V7LwfY5U_BU', // Rabba Janda - Mission Majnu
+    'SAcpESN_Fk4', // Heeriye - Jasleen Royal & Arijit Singh
+    '7uY1N-qUj_A', // Tera Ban Jaunga - Kabir Singh
+    'k4yXQkG2B1E', // Pal Pal Dil Ke Paas
+    '0yW7w8F2TVA'  // Tujhe Kitna Chahne Lage
+  ],
+  classic_old: [
+    '4xN_w9B__Xg', // Pehla Nasha - Jo Jeeta Wohi Sikandar
+    'g7w_c9G-j5c', // Tujhe Dekha To - DDLJ
+    '2K8A-j7yRlg', // Dil Deewana - Maine Pyar Kiya
+    '9hR8_rD3_Qk', // Chura Liya Hai Tumne Jo Dil Ko
+    'W-39_F6qLg0', // Lag Ja Gale - Woh Kaun Thi
+    'e-ORhEE9VVg'  // Roop Tera Mastana
+  ],
+  lofi: [
+    's-t_6aG0zKw', // Bollywood Lofi Chill Beats
+    '190l3e7sVaw', // Midnight Hindi Lofi Mix
+    '_X1L0q70X_s', // Acoustic Hindi Love Medley
+    '50Wv-J0bE6w', // Slowed + Reverb Hindi Chill
+    '9vMh9fR-q1c'  // Soni Soni Lofi
+  ]
+};
 
 let currentCategory = 'trending';
 const playedSongIds = new Set();
@@ -281,10 +308,7 @@ function addFloatingNotes() {
 async function fetchDirectYouTubeApi(query) {
   if (!FRONTEND_YT_API_KEY) return [];
   try {
-    // Add relevanceLanguage=hi to force YouTube API to strictly return Hindi songs
-    const suffix = QUERY_SUFFIXES[Math.floor(Math.random() * QUERY_SUFFIXES.length)];
-    const fullQuery = query + suffix;
-    const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&type=video&videoCategoryId=10&videoDuration=medium&order=viewCount&relevanceLanguage=hi&maxResults=25&q=${encodeURIComponent(fullQuery)}&key=${FRONTEND_YT_API_KEY}`;
+    const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&type=video&videoCategoryId=10&order=viewCount&relevanceLanguage=hi&maxResults=20&q=${encodeURIComponent(query)}&key=${FRONTEND_YT_API_KEY}`;
     const res = await fetch(url);
     if (!res.ok) return [];
     const data = await res.json();
@@ -297,6 +321,7 @@ async function fetchDirectYouTubeApi(query) {
 
 async function fetchCategorySongs(categoryKey) {
   const baseQueries = CATEGORY_QUERIES[categoryKey] || CATEGORY_QUERIES.trending;
+  const fallbacks = HINDI_FALLBACK_POOL[categoryKey] || HINDI_FALLBACK_POOL.trending;
   let fetchedIds = [];
 
   // 1. Direct YouTube Data API v3 search sorted strictly by viewCount with Hindi relevance filter
@@ -312,7 +337,7 @@ async function fetchCategorySongs(categoryKey) {
   if (fetchedIds.length === 0 && API_BASE_URL) {
     try {
       const promises = baseQueries.map(q => {
-        const url = `${API_BASE_URL}/youtube/search?query=${encodeURIComponent(q)}&maxResults=25`;
+        const url = `${API_BASE_URL}/youtube/search?query=${encodeURIComponent(q)}&maxResults=20`;
         return safeJsonFetch(url, `Search: ${q}`);
       });
 
@@ -325,13 +350,13 @@ async function fetchCategorySongs(categoryKey) {
     } catch (e) {}
   }
 
-  let fullPool = [...new Set(fetchedIds)].filter(Boolean);
-  let unplayedPool = fullPool.filter(id => !playedSongIds.has(id));
+  // 3. Merge with Fail-Safe Hindi Fallback Pool to guarantee playback NEVER stops
+  let combinedPool = [...new Set([...fetchedIds, ...fallbacks])].filter(Boolean);
+  let unplayedPool = combinedPool.filter(id => !playedSongIds.has(id));
 
-  // If played through most songs, clear history to loop back to fresh variations
-  if (unplayedPool.length < 3) {
+  if (unplayedPool.length < 2) {
     playedSongIds.clear();
-    unplayedPool = fullPool;
+    unplayedPool = combinedPool;
   }
 
   return shuffle(unplayedPool);
@@ -381,22 +406,18 @@ async function prefetchMoreSongs() {
 }
 
 function playCurrent() {
-  if (!queue.length) {
-    buildQueue(currentCategory).then(() => playCurrent());
-    return;
+  if (!queue || !queue.length) {
+    queue = shuffle(HINDI_FALLBACK_POOL[currentCategory] || HINDI_FALLBACK_POOL.trending);
+    currentIndex = 0;
   }
 
-  if (currentIndex >= queue.length) {
-    buildQueue(currentCategory).then(() => playCurrent());
-    return;
-  }
+  if (currentIndex >= queue.length) currentIndex = 0;
   if (currentIndex < 0) currentIndex = queue.length - 1;
 
   const videoId = queue[currentIndex];
   playedSongIds.add(videoId);
 
-  // Auto-prefetch more fresh Hindi songs before queue reaches the end
-  if (queue.length - currentIndex < 4) {
+  if (queue.length - currentIndex < 3) {
     prefetchMoreSongs();
   }
 
@@ -419,10 +440,18 @@ function playCurrent() {
   }
 }
 
-// ENDLESS NON-STOP PLAYBACK ENGINE: Never stops playing songs, continuously fetches fresh Hindi songs
+// ENDLESS NON-STOP PLAYBACK ENGINE: Continuously loops through queue and prefetches fresh Hindi hits
 function playNext() {
+  if (!queue || !queue.length) {
+    queue = shuffle(HINDI_FALLBACK_POOL[currentCategory] || HINDI_FALLBACK_POOL.trending);
+    currentIndex = 0;
+    playCurrent();
+    return;
+  }
+
   currentIndex++;
   if (currentIndex >= queue.length) {
+    currentIndex = 0;
     buildQueue(currentCategory).then(() => {
       playCurrent();
     });
@@ -432,7 +461,7 @@ function playNext() {
 }
 
 function playPrev() {
-  if (!queue.length) return;
+  if (!queue || !queue.length) return;
   currentIndex = (currentIndex - 1 + queue.length) % queue.length;
   playCurrent();
 }
@@ -685,7 +714,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const likeBtn = document.getElementById('likeBtn');
 
   if (nextBtn) nextBtn.addEventListener('click', playNext);
-  if (prevBtn) prevBtn.addEventListener('click', playPrev);
+  if (prevBtn) prevBtn.addEventListener('click', prevBtn ? playPrev : playNext);
 
   if (playPauseBtn) {
     playPauseBtn.addEventListener('click', () => {
