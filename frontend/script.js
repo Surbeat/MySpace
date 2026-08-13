@@ -245,13 +245,40 @@ function updateClock() {
   });
 }
 
-// Real Active Session Presence Tracker (Zero Fake Random Math)
+// Real Active Session Presence Tracker (Stable Tab ID via sessionStorage)
+function getStableTabId() {
+  try {
+    let id = sessionStorage.getItem('surbeat_tab_id');
+    if (!id) {
+      id = 'tab_' + Math.random().toString(36).substring(2, 9) + '_' + Date.now().toString(36);
+      sessionStorage.setItem('surbeat_tab_id', id);
+    }
+    return id;
+  } catch (e) {
+    if (!window.__SURBEAT_TAB_ID__) {
+      window.__SURBEAT_TAB_ID__ = 'tab_' + Math.random().toString(36).substring(2, 9);
+    }
+    return window.__SURBEAT_TAB_ID__;
+  }
+}
+
+function removeTabFromPresence() {
+  try {
+    const tabId = getStableTabId();
+    const presenceKey = 'surbeat_active_presence_v1';
+    const raw = localStorage.getItem(presenceKey);
+    if (raw) {
+      const presenceMap = JSON.parse(raw);
+      delete presenceMap[tabId];
+      localStorage.setItem(presenceKey, JSON.stringify(presenceMap));
+    }
+  } catch (e) { }
+}
+
 function getRealActiveListenersCount() {
   const now = Date.now();
   const presenceKey = 'surbeat_active_presence_v1';
-  if (!window.__SURBEAT_TAB_ID__) {
-    window.__SURBEAT_TAB_ID__ = 'tab_' + Math.random().toString(36).substr(2, 9);
-  }
+  const tabId = getStableTabId();
 
   let presenceMap = {};
   try {
@@ -259,14 +286,14 @@ function getRealActiveListenersCount() {
     if (raw) presenceMap = JSON.parse(raw);
   } catch (e) { }
 
-  // Heartbeat for current active browser session tab
-  presenceMap[window.__SURBEAT_TAB_ID__] = now;
+  // Heartbeat for current active browser tab (reuses stable tabId across refreshes)
+  presenceMap[tabId] = now;
 
-  // Prune tabs inactive for > 25 seconds
+  // Prune tabs inactive for > 15 seconds
   let activeCount = 0;
   const updatedMap = {};
   for (const [id, ts] of Object.entries(presenceMap)) {
-    if (now - ts < 25000) {
+    if (now - ts < 15000) {
       updatedMap[id] = ts;
       activeCount++;
     }
@@ -279,24 +306,16 @@ function getRealActiveListenersCount() {
   return Math.max(1, activeCount);
 }
 
-async function updateOnlineListeners() {
+function updateOnlineListeners() {
   const textEl = document.getElementById('visitorCountText');
   if (!textEl) return;
 
   const activeCount = getRealActiveListenersCount();
-
-  // Register session hit once on real count API
-  if (!sessionStorage.getItem('surbeat_counted')) {
-    try {
-      const res = await fetch('https://countapi.mileshilliard.com/api/v1/hit/surbeat_rishabh_pandey_2026');
-      if (res.ok) {
-        sessionStorage.setItem('surbeat_counted', 'true');
-      }
-    } catch (e) { }
-  }
-
   textEl.innerText = `${activeCount} Active Listener${activeCount === 1 ? '' : 's'} Online`;
 }
+
+window.addEventListener('beforeunload', removeTabFromPresence);
+window.addEventListener('pagehide', removeTabFromPresence);
 
 async function checkBackendHealth() {
   if (!API_BASE_URL || isFileProtocol) {
