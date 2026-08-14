@@ -1359,8 +1359,7 @@ async function performYouTubeSearch(query) {
 
 /**
  * Ensures category has cached results.
- * If quota is healthy -> Pick random query from categoryQueries and search YouTube API.
- * If cache is EMPTY -> Loads stored database songs (100+ tracks per category).
+ * Runs live search asynchronously in the background so song playback is never delayed.
  */
 async function ensureCategoryCache(categoryKey) {
   if (!youtubeCache[categoryKey] || youtubeCache[categoryKey].length === 0) {
@@ -1368,20 +1367,19 @@ async function ensureCategoryCache(categoryKey) {
     saveYoutubeCache();
   }
 
-  // If quota is NOT exhausted, execute 1 random live query search to discover fresh tracks
+  // If quota is NOT exhausted, execute 1 random live query search asynchronously in background
   if (!isQuotaExhausted) {
     const queries = categoryQueries[categoryKey] || categoryQueries.trending;
     if (queries && queries.length > 0) {
       const selectedQuery = queries[Math.floor(Math.random() * queries.length)];
-      console.log(`🔍 Executing live search for category "${categoryKey}" with query: "${selectedQuery}"`);
-      const fetchedIds = await performYouTubeSearch(selectedQuery);
-
-      if (fetchedIds && fetchedIds.length > 0) {
-        const existingSet = new Set(youtubeCache[categoryKey]);
-        fetchedIds.forEach(id => existingSet.add(id));
-        youtubeCache[categoryKey] = Array.from(existingSet);
-        saveYoutubeCache();
-      }
+      performYouTubeSearch(selectedQuery).then(fetchedIds => {
+        if (fetchedIds && fetchedIds.length > 0) {
+          const existingSet = new Set(youtubeCache[categoryKey]);
+          fetchedIds.forEach(id => existingSet.add(id));
+          youtubeCache[categoryKey] = Array.from(existingSet);
+          saveYoutubeCache();
+        }
+      }).catch(() => {});
     }
   }
 
@@ -1435,16 +1433,13 @@ const PAUSE_ICON = 'M6 5h4v14H6zm8 0h4v14h-4z';
 const PLAY_ICON = 'M8 5v14l11-7z';
 
 // ========================================
-// Playback Engine
+// Playback Engine (Instant Track Launch)
 // ========================================
 
-async function playCategorySong(categoryKey = currentCategory) {
+function playCategorySong(categoryKey = currentCategory) {
   currentCategory = categoryKey;
 
-  // 1. Fetch fresh tracks if YT API is healthy, or ensure DB fallback cache is loaded
-  await ensureCategoryCache(categoryKey);
-
-  // 2. Select next random song locally from cache/database without looping
+  // 1. Select next random song locally from cache/database (INSTANT - 0ms delay)
   const nextSongId = getNextRandomSongFromCache(categoryKey);
   if (!nextSongId) {
     console.warn(`No songs available in cache/database for category: ${categoryKey}`);
@@ -1455,7 +1450,11 @@ async function playCategorySong(categoryKey = currentCategory) {
     return;
   }
 
+  // 2. Play immediately without blocking
   playVideoById(nextSongId);
+
+  // 3. Trigger fresh background search asynchronously without delaying song change
+  ensureCategoryCache(categoryKey).catch(() => {});
 }
 
 function playVideoById(videoId) {
