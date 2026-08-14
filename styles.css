@@ -1259,6 +1259,7 @@ h1 {
 
 /* Touch Device Touch-Target Optimizations */
 @media (hover: none) and (pointer: coarse) {
+
   .control-btn,
   .genre-btn,
   .glow-button,

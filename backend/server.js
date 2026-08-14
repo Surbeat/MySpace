@@ -3,6 +3,7 @@ const cors = require('cors');
 const axios = require('axios');
 const rateLimit = require('express-rate-limit');
 require('dotenv').config();
+const songsDb = require('./songsDatabase');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -73,8 +74,37 @@ app.get('/api/health', (req, res) => {
 });
 
 /**
- * DYNAMIC YOUTUBE SEARCH ENDPOINT (NO HARDCODED VIDEO IDs)
- * YouTube chooses videos automatically based on live search query
+ * DATABASE SONGS ENDPOINT
+ * Directly retrieve or store songs in the database
+ */
+app.get('/api/songs/database', (req, res) => {
+  const { category = 'trending' } = req.query;
+  const songs = songsDb.getSongs(category);
+  return res.json({
+    success: true,
+    data: songs,
+    total: songs.length,
+    category
+  });
+});
+
+app.post('/api/songs/database', (req, res) => {
+  const { category = 'trending', videoIds = [] } = req.body;
+  if (!Array.isArray(videoIds) || videoIds.length === 0) {
+    return res.status(400).json({ success: false, error: 'videoIds must be a non-empty array' });
+  }
+  const updatedSongs = songsDb.addSongs(category, videoIds);
+  return res.json({
+    success: true,
+    data: updatedSongs,
+    total: updatedSongs.length,
+    category
+  });
+});
+
+/**
+ * DYNAMIC YOUTUBE SEARCH ENDPOINT (WITH DATABASE FALLBACK & PERSISTENCE)
+ * Never displays quota limit reached error. Plays stored database songs when YouTube API is limited.
  */
 app.get('/api/youtube/search', async (req, res) => {
   const { query, maxResults = 25 } = req.query;
@@ -86,6 +116,8 @@ app.get('/api/youtube/search', async (req, res) => {
       error: 'Query parameter is required'
     });
   }
+
+  let fetchedIds = [];
 
   // 1. Official YouTube Data API if API Key exists
   if (process.env.YOUTUBE_API_KEY) {
@@ -104,27 +136,43 @@ app.get('/api/youtube/search', async (req, res) => {
         timeout: 8000
       });
 
-      const videoIds = response.data.items
+      fetchedIds = response.data.items
         ?.map(item => item.id?.videoId)
         .filter(Boolean) || [];
 
-      if (videoIds.length > 0) {
+      if (fetchedIds.length > 0) {
+        songsDb.addSongs(query, fetchedIds);
         return res.json({
           success: true,
-          data: videoIds
+          data: fetchedIds,
+          source: 'youtube_api'
         });
       }
     } catch (error) {
-      console.warn('YouTube API call warning:', error.message);
+      console.warn('YouTube API call warning (falling back to scraper/database):', error.message);
     }
   }
 
   // 2. Scrape live YouTube search results automatically for the exact query
   const scrapedIds = await scrapeYouTubeSearch(query, limit);
+  if (scrapedIds.length > 0) {
+    songsDb.addSongs(query, scrapedIds);
+    return res.json({
+      success: true,
+      data: scrapedIds,
+      source: 'youtube_scraper'
+    });
+  }
+
+  // 3. FALLBACK TO STORED DATABASE (100-200 songs per category)
+  console.log(`📀 YouTube API/Scrape rate-limited or unavailable. Loading stored database songs for query: "${query}"`);
+  const storedSongs = songsDb.getSongs(query);
 
   return res.json({
     success: true,
-    data: scrapedIds
+    data: storedSongs,
+    source: 'stored_database',
+    fallback: true
   });
 });
 
