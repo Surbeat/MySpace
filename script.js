@@ -204,77 +204,123 @@ function updateClock() {
   });
 }
 
-// Real Active Session Presence Tracker (Stable Tab ID via sessionStorage)
-function getStableTabId() {
+// ========================================
+// Real-Time Online Presence Engine (SSE Stream + Heartbeat + Beacon)
+// ========================================
+
+function getPersistentVisitorId() {
   try {
-    let id = sessionStorage.getItem('surbeat_tab_id');
-    if (!id) {
-      id = 'tab_' + Math.random().toString(36).substring(2, 9) + '_' + Date.now().toString(36);
-      sessionStorage.setItem('surbeat_tab_id', id);
+    let vid = localStorage.getItem('surbeat_visitor_id_v2');
+    if (!vid) {
+      vid = 'v_' + Math.random().toString(36).substring(2, 10) + '_' + Date.now().toString(36);
+      localStorage.setItem('surbeat_visitor_id_v2', vid);
     }
-    return id;
+    return vid;
   } catch (e) {
-    if (!window.__SURBEAT_TAB_ID__) {
-      window.__SURBEAT_TAB_ID__ = 'tab_' + Math.random().toString(36).substring(2, 9);
-    }
-    return window.__SURBEAT_TAB_ID__;
+    return 'v_' + Math.random().toString(36).substring(2, 10);
   }
 }
 
-function removeTabFromPresence() {
+function getTabSessionId() {
   try {
-    const tabId = getStableTabId();
-    const presenceKey = 'surbeat_active_presence_v1';
-    const raw = localStorage.getItem(presenceKey);
-    if (raw) {
-      const presenceMap = JSON.parse(raw);
-      delete presenceMap[tabId];
-      localStorage.setItem(presenceKey, JSON.stringify(presenceMap));
+    let tid = sessionStorage.getItem('surbeat_tab_id_v2');
+    if (!tid) {
+      tid = 't_' + Math.random().toString(36).substring(2, 9);
+      sessionStorage.setItem('surbeat_tab_id_v2', tid);
     }
-  } catch (e) { }
-}
-
-function getRealActiveListenersCount() {
-  const now = Date.now();
-  const presenceKey = 'surbeat_active_presence_v1';
-  const tabId = getStableTabId();
-
-  let presenceMap = {};
-  try {
-    const raw = localStorage.getItem(presenceKey);
-    if (raw) presenceMap = JSON.parse(raw);
-  } catch (e) { }
-
-  // Heartbeat for current active browser tab (reuses stable tabId across refreshes)
-  presenceMap[tabId] = now;
-
-  // Prune tabs inactive for > 15 seconds
-  let activeCount = 0;
-  const updatedMap = {};
-  for (const [id, ts] of Object.entries(presenceMap)) {
-    if (now - ts < 15000) {
-      updatedMap[id] = ts;
-      activeCount++;
-    }
+    return tid;
+  } catch (e) {
+    return 't_' + Math.random().toString(36).substring(2, 9);
   }
-
-  try {
-    localStorage.setItem(presenceKey, JSON.stringify(updatedMap));
-  } catch (e) { }
-
-  return Math.max(1, activeCount);
 }
 
-function updateOnlineListeners() {
+let presenceEventSource = null;
+let heartbeatIntervalTimer = null;
+
+function updateOnlineCounterUI(count) {
   const textEl = document.getElementById('visitorCountText');
   if (!textEl) return;
-
-  const activeCount = getRealActiveListenersCount();
-  textEl.innerText = `${activeCount} Active Listener${activeCount === 1 ? '' : 's'} Online`;
+  const num = (typeof count === 'number' && count >= 0) ? count : 1;
+  const label = num === 1 ? 'Active Listener Online' : 'Active Listeners Online';
+  textEl.innerText = `${num} ${label}`;
 }
 
-window.addEventListener('beforeunload', removeTabFromPresence);
-window.addEventListener('pagehide', removeTabFromPresence);
+async function sendPresenceHeartbeat() {
+  if (!API_BASE_URL || isFileProtocol || !isBackendAvailable) {
+    return;
+  }
+  const visitorId = getPersistentVisitorId();
+  const tabId = getTabSessionId();
+
+  try {
+    const res = await fetch(`${API_BASE_URL}/presence/heartbeat`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ visitorId, tabId })
+    });
+    if (res.ok) {
+      const data = await res.json().catch(() => null);
+      if (data && data.success && typeof data.count === 'number') {
+        updateOnlineCounterUI(data.count);
+      }
+    }
+  } catch (e) { }
+}
+
+function sendPresenceLeaveBeacon() {
+  if (!API_BASE_URL || isFileProtocol || !isBackendAvailable) return;
+  const visitorId = getPersistentVisitorId();
+  const tabId = getTabSessionId();
+  const payload = JSON.stringify({ visitorId, tabId });
+
+  try {
+    if (navigator.sendBeacon) {
+      navigator.sendBeacon(`${API_BASE_URL}/presence/leave`, payload);
+    } else {
+      fetch(`${API_BASE_URL}/presence/leave`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: payload,
+        keepalive: true
+      }).catch(() => { });
+    }
+  } catch (e) { }
+}
+
+function initRealtimePresence() {
+  // 1. Send initial heartbeat ping
+  sendPresenceHeartbeat();
+
+  // 2. Periodic Heartbeat every 6 seconds
+  if (heartbeatIntervalTimer) clearInterval(heartbeatIntervalTimer);
+  heartbeatIntervalTimer = setInterval(sendPresenceHeartbeat, 6000);
+
+  // 3. Server-Sent Events (SSE) Stream for Instant Live Updates across all clients
+  if (API_BASE_URL && !isFileProtocol && isBackendAvailable && typeof EventSource !== 'undefined') {
+    try {
+      if (presenceEventSource) presenceEventSource.close();
+      const sseUrl = `${API_BASE_URL}/presence/stream`;
+      presenceEventSource = new EventSource(sseUrl);
+
+      presenceEventSource.onmessage = (event) => {
+        try {
+          const data = JSON.parse(event.data);
+          if (data && typeof data.count === 'number') {
+            updateOnlineCounterUI(data.count);
+          }
+        } catch (e) { }
+      };
+
+      presenceEventSource.onerror = () => {
+        // EventSource automatically retries on connection error
+      };
+    } catch (e) { }
+  }
+
+  // 4. Instant disconnect beacon on tab close / navigation
+  window.addEventListener('beforeunload', sendPresenceLeaveBeacon);
+  window.addEventListener('pagehide', sendPresenceLeaveBeacon);
+}
 
 async function checkBackendHealth() {
   if (!API_BASE_URL || isFileProtocol) {
@@ -1701,8 +1747,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   updateClock();
   setInterval(updateClock, 1000);
 
-  updateOnlineListeners();
-  setInterval(updateOnlineListeners, 8000);
+  initRealtimePresence();
 
   loadRomanticBackground();
   addFloatingNotes();

@@ -232,29 +232,130 @@ app.get('/api/photos/romantic', async (req, res) => {
 });
 
 /**
- * VISITOR COUNTER ENDPOINT
+ * REAL-TIME ONLINE PRESENCE ENGINE (SSE + HEARTBEAT + BEACON)
+ * Synchronizes live active user count across all connected devices and browsers
  */
-app.get('/api/visitors/count', async (req, res) => {
-  try {
-    const response = await axios.get(
-      'https://countapi.mileshilliard.com/api/v1/hit/surbeat_rishabh_pandey_2026',
-      { timeout: 5000 }
-    );
 
-    const count = response.data?.value ?? response.data?.count ?? null;
+// Map<visitorId, { lastSeen: number, tabs: Set<tabId> }>
+const activeVisitors = new Map();
+const sseClients = new Set();
 
-    res.json({
-      success: true,
-      data: { count }
-    });
-  } catch (error) {
-    console.warn('Visitor counter warning:', error.message);
-    res.json({
-      success: true,
-      data: { count: null },
-      message: 'Visitor count temporarily unavailable'
-    });
+function getActiveCount() {
+  const now = Date.now();
+  const TTL = 15000; // 15s inactivity threshold
+  let count = 0;
+
+  for (const [visitorId, data] of activeVisitors.entries()) {
+    if (now - data.lastSeen < TTL && data.tabs && data.tabs.size > 0) {
+      count++;
+    }
   }
+  return count;
+}
+
+function broadcastPresenceCount() {
+  const count = getActiveCount();
+  const data = JSON.stringify({ count, timestamp: Date.now() });
+
+  for (const client of sseClients) {
+    try {
+      client.write(`data: ${data}\n\n`);
+    } catch (e) {
+      sseClients.delete(client);
+    }
+  }
+}
+
+function cleanupStaleVisitors() {
+  const now = Date.now();
+  const TTL = 15000;
+  let changed = false;
+
+  for (const [visitorId, data] of activeVisitors.entries()) {
+    if (now - data.lastSeen >= TTL || !data.tabs || data.tabs.size === 0) {
+      activeVisitors.delete(visitorId);
+      changed = true;
+    }
+  }
+
+  if (changed) {
+    broadcastPresenceCount();
+  }
+}
+
+// Background cleanup every 4 seconds
+setInterval(cleanupStaleVisitors, 4000);
+
+// SSE Stream Endpoint for Live Count Updates
+app.get('/api/presence/stream', (req, res) => {
+  res.setHeader('Content-Type', 'text/event-stream');
+  res.setHeader('Cache-Control', 'no-cache, no-transform');
+  res.setHeader('Connection', 'keep-alive');
+  res.setHeader('X-Accel-Buffering', 'no');
+
+  const count = getActiveCount();
+  res.write(`data: ${JSON.stringify({ count, timestamp: Date.now() })}\n\n`);
+
+  sseClients.add(res);
+
+  req.on('close', () => {
+    sseClients.delete(res);
+  });
+});
+
+// Heartbeat Endpoint
+app.post('/api/presence/heartbeat', (req, res) => {
+  const { visitorId, tabId } = req.body || {};
+  if (!visitorId || !tabId) {
+    return res.status(400).json({ success: false, error: 'visitorId and tabId are required' });
+  }
+
+  const now = Date.now();
+  let visitor = activeVisitors.get(visitorId);
+
+  if (!visitor) {
+    visitor = { lastSeen: now, tabs: new Set() };
+    activeVisitors.set(visitorId, visitor);
+  }
+
+  const prevCount = getActiveCount();
+  visitor.lastSeen = now;
+  visitor.tabs.add(tabId);
+
+  const newCount = getActiveCount();
+  if (newCount !== prevCount) {
+    broadcastPresenceCount();
+  }
+
+  return res.json({ success: true, count: newCount });
+});
+
+// Leave / Beacon Endpoint for Tab/Browser Close
+app.post('/api/presence/leave', (req, res) => {
+  let body = req.body;
+  if (typeof body === 'string') {
+    try { body = JSON.parse(body); } catch (e) { body = {}; }
+  }
+
+  const { visitorId, tabId } = body || {};
+  if (visitorId && activeVisitors.has(visitorId)) {
+    const visitor = activeVisitors.get(visitorId);
+    if (tabId) {
+      visitor.tabs.delete(tabId);
+    }
+
+    if (!tabId || visitor.tabs.size === 0) {
+      activeVisitors.delete(visitorId);
+    }
+    broadcastPresenceCount();
+  }
+
+  return res.json({ success: true });
+});
+
+// Active Online Count Endpoint
+app.get('/api/presence/count', (req, res) => {
+  return res.json({ success: true, count: getActiveCount() });
 });
 
 // 404 Handler
