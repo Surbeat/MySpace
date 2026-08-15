@@ -356,7 +356,7 @@ function addFloatingNotes() {
   for (let i = 0; i < 20; i++) {
     const n = document.createElement('div');
     n.className = 'note';
-n.innerText = sargamNotes[Math.floor(Math.random() * sargamNotes.length)];
+    n.innerText = sargamNotes[Math.floor(Math.random() * sargamNotes.length)];
     n.style.left = Math.random() * 100 + 'vw';
     n.style.fontSize = (1.1 + Math.random() * 1.5) + 'rem';
     n.style.animationDuration = (12 + Math.random() * 14) + 's';
@@ -1248,7 +1248,7 @@ function syncSongToBackendDatabase(categoryKey, videoIds) {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ category: categoryKey, videoIds })
-  }).catch(() => {});
+  }).catch(() => { });
 }
 
 function showSearchStatus(message, type = 'info') {
@@ -1379,7 +1379,7 @@ async function ensureCategoryCache(categoryKey) {
           youtubeCache[categoryKey] = Array.from(existingSet);
           saveYoutubeCache();
         }
-      }).catch(() => {});
+      }).catch(() => { });
     }
   }
 
@@ -1426,6 +1426,7 @@ let player = null;
 let isPlayerReady = false;
 let isMuted = false;
 let isLiked = false;
+let isLoopEnabled = false;
 let isSeeking = false;
 let progressTimer = null;
 
@@ -1454,7 +1455,7 @@ function playCategorySong(categoryKey = currentCategory) {
   playVideoById(nextSongId);
 
   // 3. Trigger fresh background search asynchronously without delaying song change
-  ensureCategoryCache(categoryKey).catch(() => {});
+  ensureCategoryCache(categoryKey).catch(() => { });
 }
 
 function playVideoById(videoId) {
@@ -1613,11 +1614,20 @@ function onPlayerStateChange(event) {
   const eqBars = document.getElementById('eqBars');
   const ambientGlow = document.getElementById('ambientGlow');
 
-  // ENDLESS CONTINUOUS AUTO-PLAY: Play next song automatically when current song ends
-  // Uses cached track without making a new YouTube search request
+  // ENDLESS CONTINUOUS AUTO-PLAY OR INFINITE REPEAT
   if (event.data === YT.PlayerState.ENDED) {
-    console.log('🎵 Track ended — Playing next song from category cache...');
-    playNext();
+    if (isLoopEnabled) {
+      console.log('🔁 Loop ON — Repeating current track from 0:00...');
+      if (player && typeof player.seekTo === 'function') {
+        player.seekTo(0, true);
+        player.playVideo();
+      } else {
+        playNext();
+      }
+    } else {
+      console.log('🎵 Track ended — Playing next song from category cache...');
+      playNext();
+    }
   }
 
   if (event.data === YT.PlayerState.PLAYING) {
@@ -1811,6 +1821,18 @@ document.addEventListener('DOMContentLoaded', async () => {
     likeBtn.addEventListener('click', () => {
       isLiked = !isLiked;
       likeBtn.classList.toggle('liked', isLiked);
+    });
+  }
+
+  const repeatBtn = document.getElementById('repeatBtn');
+  if (repeatBtn) {
+    repeatBtn.addEventListener('click', () => {
+      isLoopEnabled = !isLoopEnabled;
+      repeatBtn.classList.toggle('active', isLoopEnabled);
+      const labelText = `Repeat song: ${isLoopEnabled ? 'On' : 'Off'}`;
+      repeatBtn.setAttribute('aria-label', labelText);
+      repeatBtn.setAttribute('title', labelText);
+      showSearchStatus(isLoopEnabled ? '🔂 Repeat Mode: ON (Looping current song)' : '➡️ Repeat Mode: OFF (Auto-queue next songs)', 'info');
     });
   }
 

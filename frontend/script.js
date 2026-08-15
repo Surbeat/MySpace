@@ -1426,6 +1426,7 @@ let player = null;
 let isPlayerReady = false;
 let isMuted = false;
 let isLiked = false;
+let isLoopEnabled = false;
 let isSeeking = false;
 let progressTimer = null;
 
@@ -1613,10 +1614,20 @@ function onPlayerStateChange(event) {
   const eqBars = document.getElementById('eqBars');
   const ambientGlow = document.getElementById('ambientGlow');
 
-  // ENDLESS CONTINUOUS AUTO-PLAY: Play next song automatically when current song ends
+  // ENDLESS CONTINUOUS AUTO-PLAY OR INFINITE REPEAT
   if (event.data === YT.PlayerState.ENDED) {
-    console.log('🎵 Track ended — Playing next song from category cache...');
-    playNext();
+    if (isLoopEnabled) {
+      console.log('🔁 Loop ON — Repeating current track from 0:00...');
+      if (player && typeof player.seekTo === 'function') {
+        player.seekTo(0, true);
+        player.playVideo();
+      } else {
+        playNext();
+      }
+    } else {
+      console.log('🎵 Track ended — Playing next song from category cache...');
+      playNext();
+    }
   }
 
   if (event.data === YT.PlayerState.PLAYING) {
@@ -1810,6 +1821,18 @@ document.addEventListener('DOMContentLoaded', async () => {
     likeBtn.addEventListener('click', () => {
       isLiked = !isLiked;
       likeBtn.classList.toggle('liked', isLiked);
+    });
+  }
+
+  const repeatBtn = document.getElementById('repeatBtn');
+  if (repeatBtn) {
+    repeatBtn.addEventListener('click', () => {
+      isLoopEnabled = !isLoopEnabled;
+      repeatBtn.classList.toggle('active', isLoopEnabled);
+      const labelText = `Repeat song: ${isLoopEnabled ? 'On' : 'Off'}`;
+      repeatBtn.setAttribute('aria-label', labelText);
+      repeatBtn.setAttribute('title', labelText);
+      showSearchStatus(isLoopEnabled ? '🔂 Repeat Mode: ON (Looping current song)' : '➡️ Repeat Mode: OFF (Auto-queue next songs)', 'info');
     });
   }
 

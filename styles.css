@@ -765,6 +765,13 @@ h1 {
   box-shadow: 0 0 14px rgba(255, 23, 68, 0.4);
 }
 
+#repeatBtn.active {
+  color: var(--peacock-cyan);
+  border-color: var(--peacock-cyan);
+  background: rgba(0, 229, 255, 0.18);
+  box-shadow: 0 0 14px rgba(0, 229, 255, 0.4);
+}
+
 /* Volume Slider */
 .volume-row {
   margin-top: 18px;
@@ -1254,29 +1261,50 @@ h1 {
 }
 
 /* ========================================
-   RESPONSIVE DESIGN BREAKPOINTS
+   RESPONSIVE DESIGN BREAKPOINTS & FLUID LAYOUT
    ======================================== */
 
 /* Touch Device Touch-Target Optimizations */
 @media (hover: none) and (pointer: coarse) {
-
   .control-btn,
   .genre-btn,
   .glow-button,
-  .social-card {
+  .social-card,
+  .mute-toggle-btn {
     min-height: 44px;
     touch-action: manipulation;
   }
 }
 
-/* Tablet & Phablet Breakpoints (max-width: 1024px) */
+/* Wide Screens & Large Desktops (min-width: 1440px) */
+@media (min-width: 1440px) {
+  .page {
+    gap: 60px;
+  }
+  main {
+    max-width: 520px;
+  }
+  #player-card {
+    padding: 40px 36px 36px;
+  }
+}
+
+/* Laptops & Mid-Size Desktops (max-width: 1200px) */
+@media (max-width: 1200px) {
+  .poster {
+    width: 170px;
+    height: 440px;
+  }
+}
+
+/* Tablets (max-width: 1024px) */
 @media (max-width: 1024px) {
   .poster {
     display: none;
   }
 
   main {
-    max-width: 680px;
+    max-width: 580px;
     width: 100%;
   }
 
@@ -1290,20 +1318,52 @@ h1 {
   }
 }
 
-/* Mobile Breakpoints (max-width: 640px) */
+/* Phablets & Small Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  .page {
+    padding: 16px 16px 32px;
+    gap: 0;
+  }
+
+  main {
+    max-width: 100%;
+  }
+
+  h1 {
+    font-size: clamp(2.4rem, 7vw, 3.2rem);
+  }
+
+  .turntable-deck {
+    width: 185px;
+    height: 185px;
+    margin-bottom: 20px;
+  }
+
+  .disc-wrap {
+    width: 165px;
+    height: 165px;
+  }
+
+  .controls {
+    gap: clamp(8px, 2.5vw, 14px);
+  }
+}
+
+/* Mobile Devices (max-width: 640px) */
 @media (max-width: 640px) {
   .top-left-info {
     position: relative;
     top: 0;
     left: 0;
-    margin: 10px auto 0;
-    max-width: 95%;
+    margin: 8px auto 0;
+    max-width: 98%;
+    width: fit-content;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 8px 12px;
-    gap: 6px 12px;
+    padding: 6px 14px;
+    gap: 4px 10px;
     border-radius: var(--radius-pill);
-    font-size: 0.78rem;
+    font-size: 0.76rem;
   }
 
   .info-divider {
@@ -1311,17 +1371,17 @@ h1 {
   }
 
   .page {
-    padding: 12px 12px 28px;
+    padding: 10px 10px 24px;
     gap: 0;
   }
 
   main {
     max-width: 100%;
-    padding: 0 4px;
+    padding: 0;
   }
 
   h1 {
-    font-size: 2.4rem;
+    font-size: 2.3rem;
     letter-spacing: -0.5px;
   }
 
@@ -1339,8 +1399,10 @@ h1 {
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
     padding: 4px 2px 10px;
-    margin-bottom: 18px;
+    margin-bottom: 16px;
     gap: 8px;
+    width: 100%;
+    scrollbar-width: none;
   }
 
   .genre-pills::-webkit-scrollbar {
@@ -1350,8 +1412,8 @@ h1 {
   .genre-btn {
     flex: 0 0 auto;
     scroll-snap-align: start;
-    font-size: 0.8rem;
-    padding: 8px 16px;
+    font-size: 0.78rem;
+    padding: 8px 14px;
     white-space: nowrap;
   }
 
@@ -1361,14 +1423,14 @@ h1 {
   }
 
   .turntable-deck {
-    width: 165px;
-    height: 165px;
+    width: 160px;
+    height: 160px;
     margin-bottom: 14px;
   }
 
   .disc-wrap {
-    width: 145px;
-    height: 145px;
+    width: 140px;
+    height: 140px;
   }
 
   .tonearm {
@@ -1385,17 +1447,31 @@ h1 {
   }
 
   .controls {
-    gap: 12px;
+    gap: 8px;
+    justify-content: center;
+    width: 100%;
   }
 
   .control-btn {
-    width: 44px;
-    height: 44px;
+    width: 42px;
+    height: 42px;
+    flex-shrink: 0;
   }
 
   .control-btn.play-pause-main {
-    width: 52px;
-    height: 52px;
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+  }
+
+  .controls .icon-btn {
+    width: 20px;
+    height: 20px;
+  }
+
+  .play-pause-main .icon-btn {
+    width: 24px;
+    height: 24px;
   }
 
   .seek-row {
@@ -1405,9 +1481,17 @@ h1 {
     width: 100%;
   }
 
-  .time-label {
+  .seek-row span {
     font-size: 0.7rem;
     min-width: 32px;
+  }
+
+  .volume-row {
+    margin-top: 14px;
+  }
+
+  #volumeSlider {
+    width: clamp(100px, 35vw, 130px);
   }
 
   .social-grid {
@@ -1470,36 +1554,163 @@ h1 {
   }
 }
 
-/* Extra Small Mobile Devices (max-width: 360px) */
-@media (max-width: 360px) {
+/* Compact Mobile Devices (max-width: 414px) */
+@media (max-width: 414px) {
   h1 {
-    font-size: 2.1rem;
+    font-size: 2.15rem;
+  }
+
+  #player-card {
+    padding: 18px 12px 16px;
+    border-radius: 20px;
   }
 
   .turntable-deck {
-    width: 145px;
-    height: 145px;
+    width: 148px;
+    height: 148px;
   }
 
   .disc-wrap {
-    width: 125px;
-    height: 125px;
+    width: 128px;
+    height: 128px;
+  }
+
+  .disc-center-label {
+    width: 52px;
+    height: 52px;
+  }
+
+  .label-brand {
+    font-size: 0.62rem;
+  }
+
+  .label-sub {
+    font-size: 0.4rem;
+  }
+
+  .tonearm {
+    width: 44px;
+    height: 66px;
+    right: 2px;
+  }
+
+  .controls {
+    gap: 6px;
   }
 
   .control-btn {
-    width: 40px;
-    height: 40px;
+    width: 38px;
+    height: 38px;
   }
 
   .control-btn.play-pause-main {
-    width: 48px;
-    height: 48px;
+    width: 46px;
+    height: 46px;
+  }
+
+  .controls .icon-btn {
+    width: 18px;
+    height: 18px;
+  }
+
+  .play-pause-main .icon-btn {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+/* Ultra Small Mobile Devices (max-width: 350px / 320px) */
+@media (max-width: 350px) {
+  .top-left-info {
+    padding: 4px 8px;
+    font-size: 0.7rem;
+    gap: 4px;
+  }
+
+  h1 {
+    font-size: 1.85rem;
+  }
+
+  .tagline {
+    font-size: 0.78rem;
+  }
+
+  #player-card {
+    padding: 14px 8px 14px;
+    border-radius: 18px;
+  }
+
+  .turntable-deck {
+    width: 132px;
+    height: 132px;
+    margin-bottom: 10px;
+  }
+
+  .disc-wrap {
+    width: 114px;
+    height: 114px;
+  }
+
+  .disc-center-label {
+    width: 44px;
+    height: 44px;
+  }
+
+  .label-brand {
+    font-size: 0.55rem;
+  }
+
+  .label-sub {
+    font-size: 0.36rem;
+  }
+
+  .tonearm {
+    width: 38px;
+    height: 58px;
+    right: 0px;
+  }
+
+  .controls {
+    gap: 4px;
+    justify-content: space-between;
+  }
+
+  .control-btn {
+    width: 34px;
+    height: 34px;
+  }
+
+  .control-btn.play-pause-main {
+    width: 42px;
+    height: 42px;
+  }
+
+  .controls .icon-btn {
+    width: 16px;
+    height: 16px;
+  }
+
+  .play-pause-main .icon-btn {
+    width: 20px;
+    height: 20px;
+  }
+
+  .seek-row {
+    gap: 4px;
+  }
+
+  .seek-row span {
+    font-size: 0.65rem;
+    min-width: 28px;
+  }
+
+  #volumeSlider {
+    width: 80px;
   }
 }
 
 /* Accessibility */
 @media (prefers-reduced-motion: reduce) {
-
   .note,
   .disc-ring,
   .disc-core,
