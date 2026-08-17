@@ -236,6 +236,21 @@ body {
   gap: 6px;
 }
 
+#visitorCountText {
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+
+#visitorCountText.pulse-update {
+  animation: counterPulse 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes counterPulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.06); color: #ffffff; }
+  100% { transform: scale(1); }
+}
+
 .online-dot {
   width: 7px;
   height: 7px;

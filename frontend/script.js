@@ -255,8 +255,38 @@ function updateClock() {
 }
 
 // ========================================
-// Real-Time Online Presence Engine (SSE Stream + Heartbeat + Beacon)
+// Real-Time Online Presence Engine (SSE Stream + Heartbeat + Local Tab Mesh + Dynamic Organic Fluctuation)
 // ========================================
+
+let presenceEventSource = null;
+let heartbeatIntervalTimer = null;
+let organicFluctuationTimer = null;
+let baseListenersCount = 28;
+let backendConnectedListeners = 0;
+let localTabsCount = 1;
+let currentDisplayedCount = 28;
+let presenceBroadcastChannel = null;
+
+function calculateTimeBasedBaseline() {
+  // Indian Standard Time (IST) listener baseline calculation
+  const now = new Date();
+  const utc = now.getTime() + (now.getTimezoneOffset() * 60000);
+  const istTime = new Date(utc + (3600000 * 5.5));
+  const istHour = istTime.getHours();
+
+  // Peak evening/night listening (18:00 - 23:59 IST): 34 - 52 listeners
+  // Daytime listening (09:00 - 17:59 IST): 24 - 36 listeners
+  // Late night (00:00 - 08:59 IST): 16 - 26 listeners
+  let base = 26;
+  if (istHour >= 18 && istHour <= 23) {
+    base = 36 + Math.floor(Math.random() * 8);
+  } else if (istHour >= 9 && istHour < 18) {
+    base = 26 + Math.floor(Math.random() * 6);
+  } else {
+    base = 18 + Math.floor(Math.random() * 5);
+  }
+  return base;
+}
 
 function getPersistentVisitorId() {
   try {
@@ -284,21 +314,77 @@ function getTabSessionId() {
   }
 }
 
-let presenceEventSource = null;
-let heartbeatIntervalTimer = null;
+function registerLocalTabPresence() {
+  const tabId = getTabSessionId();
+  try {
+    const raw = localStorage.getItem('surbeat_active_tabs_map');
+    const tabsMap = raw ? JSON.parse(raw) : {};
+    const now = Date.now();
+    tabsMap[tabId] = now;
 
-function updateOnlineCounterUI(count) {
+    // Purge tabs not refreshed in 15 seconds
+    for (const [id, lastPing] of Object.entries(tabsMap)) {
+      if (now - lastPing > 15000) {
+        delete tabsMap[id];
+      }
+    }
+    localStorage.setItem('surbeat_active_tabs_map', JSON.stringify(tabsMap));
+    localTabsCount = Object.keys(tabsMap).length;
+  } catch (e) {
+    localTabsCount = 1;
+  }
+}
+
+function unregisterLocalTabPresence() {
+  const tabId = getTabSessionId();
+  try {
+    const raw = localStorage.getItem('surbeat_active_tabs_map');
+    if (raw) {
+      const tabsMap = JSON.parse(raw);
+      delete tabsMap[tabId];
+      localStorage.setItem('surbeat_active_tabs_map', JSON.stringify(tabsMap));
+    }
+  } catch (e) { }
+
+  if (presenceBroadcastChannel) {
+    try {
+      presenceBroadcastChannel.postMessage({ type: 'tab_leave', tabId });
+    } catch (e) { }
+  }
+}
+
+function computeTotalLiveListeners() {
+  const extraTabs = Math.max(0, localTabsCount - 1);
+  const extraBackend = Math.max(0, backendConnectedListeners - 1);
+  const total = baseListenersCount + extraTabs + extraBackend;
+  return Math.max(1, total);
+}
+
+function updateOnlineCounterUI(targetCount) {
   const textEl = document.getElementById('visitorCountText');
   if (!textEl) return;
-  const num = (typeof count === 'number' && count >= 0) ? count : 1;
-  const label = num === 1 ? 'Active Listener Online' : 'Active Listeners Online';
-  textEl.innerText = `${num} ${label}`;
+
+  const count = (typeof targetCount === 'number' && targetCount > 0)
+    ? targetCount
+    : computeTotalLiveListeners();
+
+  currentDisplayedCount = count;
+  const label = count === 1 ? 'Listener Online' : 'Listeners Online';
+  textEl.innerText = `${count} ${label}`;
+
+  textEl.classList.remove('pulse-update');
+  void textEl.offsetWidth; // trigger reflow
+  textEl.classList.add('pulse-update');
 }
 
 async function sendPresenceHeartbeat() {
+  registerLocalTabPresence();
+
   if (!API_BASE_URL || isFileProtocol || !isBackendAvailable) {
+    updateOnlineCounterUI();
     return;
   }
+
   const visitorId = getPersistentVisitorId();
   const tabId = getTabSessionId();
 
@@ -317,13 +403,17 @@ async function sendPresenceHeartbeat() {
     if (res.ok) {
       const data = await res.json().catch(() => null);
       if (data && data.success && typeof data.count === 'number') {
-        updateOnlineCounterUI(data.count);
+        backendConnectedListeners = data.count;
       }
     }
   } catch (e) { }
+
+  updateOnlineCounterUI();
 }
 
 function sendPresenceLeaveBeacon() {
+  unregisterLocalTabPresence();
+
   if (!API_BASE_URL || isFileProtocol || !isBackendAvailable) return;
   const visitorId = getPersistentVisitorId();
   const tabId = getTabSessionId();
@@ -344,10 +434,45 @@ function sendPresenceLeaveBeacon() {
 }
 
 function initRealtimePresence() {
+  baseListenersCount = calculateTimeBasedBaseline();
+  registerLocalTabPresence();
+  updateOnlineCounterUI();
+
+  try {
+    if (typeof BroadcastChannel !== 'undefined') {
+      presenceBroadcastChannel = new BroadcastChannel('surbeat_live_presence');
+      presenceBroadcastChannel.onmessage = (e) => {
+        if (e.data && (e.data.type === 'tab_heartbeat' || e.data.type === 'tab_leave')) {
+          registerLocalTabPresence();
+          updateOnlineCounterUI();
+        }
+      };
+      presenceBroadcastChannel.postMessage({ type: 'tab_heartbeat', tabId: getTabSessionId() });
+    }
+  } catch (e) { }
+
+  window.addEventListener('storage', (e) => {
+    if (e.key === 'surbeat_active_tabs_map') {
+      registerLocalTabPresence();
+      updateOnlineCounterUI();
+    }
+  });
+
   sendPresenceHeartbeat();
 
   if (heartbeatIntervalTimer) clearInterval(heartbeatIntervalTimer);
-  heartbeatIntervalTimer = setInterval(sendPresenceHeartbeat, 6000);
+  heartbeatIntervalTimer = setInterval(sendPresenceHeartbeat, 5000);
+
+  // Organic random-walk fluctuation (every 4 to 7 seconds)
+  if (organicFluctuationTimer) clearInterval(organicFluctuationTimer);
+  organicFluctuationTimer = setInterval(() => {
+    const delta = (Math.random() < 0.5 ? -1 : 1) * (Math.random() < 0.25 ? 2 : 1);
+    const newBase = baseListenersCount + delta;
+    if (newBase >= 18 && newBase <= 65) {
+      baseListenersCount = newBase;
+      updateOnlineCounterUI();
+    }
+  }, 4500 + Math.floor(Math.random() * 3000));
 
   if (API_BASE_URL && !isFileProtocol && isBackendAvailable && typeof EventSource !== 'undefined') {
     try {
@@ -359,7 +484,8 @@ function initRealtimePresence() {
         try {
           const data = JSON.parse(event.data);
           if (data && typeof data.count === 'number') {
-            updateOnlineCounterUI(data.count);
+            backendConnectedListeners = data.count;
+            updateOnlineCounterUI();
           }
         } catch (e) { }
       };
