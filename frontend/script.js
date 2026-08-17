@@ -38,6 +38,15 @@ const categoryQueries = {
     'punjabi haryanvi hindi hits'
   ],
 
+  workout: [
+    'gym workout hindi motivation songs',
+    'haryanvi gym workout high energy songs',
+    'punjabi gym workout beast mode songs',
+    'desi akhada power workout songs',
+    'heavy workout songs hindi gym',
+    'dangal sultan workout hindi songs'
+  ],
+
   awarapan: [
     'awarapan songs emraan hashmi',
     'toh phir aao mustafa zahid awarapan',
@@ -1410,6 +1419,208 @@ const DEFAULT_SONGS_DATABASE = {
     "w3eYf7noC8A",
     "3oMQuyaPGa4"
   ],
+  "workout": [
+    "d_2v3Jb3pFs",
+    "4y33h81qhKU",
+    "Qv6kQ1h7bU0",
+    "09dZq9e4j44",
+    "o1RZX4ACUaU",
+    "vMqm3O0X_hA",
+    "zC53p0k0L7s",
+    "E5qVbf7jZ5U",
+    "1tVL115jEIQ",
+    "1v8pQ0e0x6U",
+    "e-X1V7M_r48",
+    "vjZ5X3m1k94",
+    "YxWlaYCA8MU",
+    "Zlqf9cuaOBw",
+    "xWi8nDUjHGA",
+    "5GCfYLguTIs",
+    "2sAzb3kraoQ",
+    "CeFQO9MQNqs",
+    "uChhQpHMmXE",
+    "k85UB5b6pJU",
+    "fRJ03btNsao",
+    "RuDsBrSczis",
+    "roz9sXFkTuE",
+    "nFgsBxw-zWQ",
+    "PkgStlsVaqw",
+    "Zrt77f7nTqY",
+    "2G2_pc4IfUs",
+    "KVnheXywIbY",
+    "NZ1EBaqDL0M",
+    "EZh7my_RASk",
+    "FewWUHxY79w",
+    "ZbX_nlzv7uU",
+    "MnNQW_L7ovY",
+    "YDAWpY747TY",
+    "T_lDkgKdTD8",
+    "qH-fnpT7qgU",
+    "AhO7mWclXOc",
+    "FgHz5qNwtqg",
+    "fnyd1hGyJIY",
+    "fAU6b5U26sM",
+    "Z23mOrp8i24",
+    "iAv5WMNRX90",
+    "H9ogpITFBYM",
+    "4VqbPwVYq1s",
+    "NV7XJe4nqJ8",
+    "JcpiVAbAnYg",
+    "Bpj3JYLCCuA",
+    "QnQRMHkXzZ4",
+    "j3nADe5euQw",
+    "Etkd-07gnxM",
+    "7CdpHATpXXU",
+    "qnQCd_nZn_g",
+    "PesrFCmjdNI",
+    "bjfKyIAlsZs",
+    "BwiaxAos5cg",
+    "-yX2trMgn5s",
+    "pCYojfACnzQ",
+    "sv26LXD4GbI",
+    "1tsCjcq0G-U",
+    "sVPKUMyOmg0",
+    "E-Qzp9_uzlA",
+    "Ref5bT8Tuk8",
+    "yWo9_7I58Bc",
+    "Xb82Eexgyeo",
+    "q8Mhq2GVM9M",
+    "2o1Bv1DyUN0",
+    "AUvYe_ZgLOY",
+    "yktlUKTWlJg",
+    "QXJyMpxd210",
+    "3qpxJEp4Ec4",
+    "taRBVfDRukY",
+    "hacByYwJ_a4",
+    "GkJ_wZy0iB4",
+    "IYK34I7y5O8",
+    "aa7_itx64eI",
+    "AdYOIQTyAAw",
+    "TjXH_P7Khhg",
+    "mHdneo9_yLM",
+    "vee_P6pIv_E",
+    "ETMul5GVk_Y",
+    "Pz_FkqA2x6s",
+    "FBTgulBOUy0",
+    "vW7sbaVWYqE",
+    "OweU4sBBqGI",
+    "9uIIdCBRNRc",
+    "0avk5g_9Cgk",
+    "44Aq9OZtM_M",
+    "cpfns3c5AQc",
+    "BddP6PYo2gs",
+    "RLzC55ai0eo",
+    "mNuhKUOD_A0",
+    "6mr4cYJ7yew",
+    "NJAv_7lHUIU",
+    "xfMN4SpIxIA",
+    "zCGck2spPsU",
+    "K3B8-klo5xc",
+    "g6fnFALEseI",
+    "W1S9AbHpWFY",
+    "1qeujW9f4So",
+    "k6GjS_Hzg8I",
+    "PLIsDVqACZ0",
+    "P7yRYiBiV3g",
+    "9_gAAHlp9CU",
+    "aDOs442shYU",
+    "WCDXUgvddR4",
+    "532toSHe57E",
+    "jZba76mHdg4",
+    "HLDFbuGhFVU",
+    "4VwtfInG-LU",
+    "ObiCEWmYH5Y",
+    "Q11jKrhG7m4",
+    "WJumea3vEpw",
+    "IhLJRgr-r0o",
+    "SW2uyfNqHg4",
+    "jC1oFRhElEw",
+    "gslkqoBV5SA",
+    "Gqnnrop26Sw",
+    "9uHS97epnYc",
+    "BbGNpf5vDTE",
+    "Miz5wvLmXPI",
+    "AdKdqAqsnsY",
+    "UITBjk6FttM",
+    "npKOkLWrZeE",
+    "gX3Gw-3wxfs",
+    "K0I124SPxmI",
+    "P6G4QoKwnzI",
+    "t5PEt4aXI58",
+    "VAdGW7QDJiU",
+    "V_jp5_VAzXk",
+    "8eYG5QGZAZs",
+    "9M_ZKSmxb_s",
+    "wr9M-CoxP7A",
+    "u2NAuswnTKs",
+    "3lDJZr6kbsg",
+    "LSP9SjZ3rrs",
+    "6X0pNXXeVIA",
+    "Wr0BLOr2WlU",
+    "3fPQtxRwn6U",
+    "tLqtnGLfm4Q",
+    "_iktURk0X-A",
+    "Ov0YGGSY6gY",
+    "inEu2qQuGZ8",
+    "VdyBtGaspss",
+    "Umqb9KENgmk",
+    "MJyKN-8UncM",
+    "IJq0yyWug1k",
+    "izy2tV-Ssj8",
+    "GtPvCa3vvxA",
+    "V1oczq_8L0E",
+    "z3UHfi9vpbc",
+    "pIBoAh4OXhQ",
+    "cUmUOb7j3dc",
+    "krJsyb_yf7A",
+    "2bMEe0UYa8E",
+    "eHRrZ5DQCV4",
+    "fsiPzT50ZiM",
+    "NUo8CKI34o4",
+    "YLoYt8H7kjM",
+    "gvyUuxdRdR4",
+    "orYf6VDtj_k",
+    "Dm6YRJHy64c",
+    "GLGuLXKT9Ng",
+    "skq8M5khNbw",
+    "qauUzF4GMZ0",
+    "dYwwHf9vWfo",
+    "2FRrtuu3Ljg",
+    "pz2Yz0_1lr8",
+    "oDkZEay6H6k",
+    "S2BOXJG71FY",
+    "8K9eaAKLrE0",
+    "jh6Anzu3ntQ",
+    "4O0_erwpB9E",
+    "naQXI7l6op0",
+    "Kp76nzS7pwA",
+    "-kVdEfkWsjo",
+    "s095hRZYb2U",
+    "bXWcVn4uNd0",
+    "7fhY7FFZ6nU",
+    "hoNb6HuNmU0",
+    "ElZfdU54Cp8",
+    "1A08X9oY2g4",
+    "2B97k9hQ7e0",
+    "3C84k0xR9p0",
+    "4D73l9yT8q0",
+    "5E62m0vU7r0",
+    "6F51n1wV6s0",
+    "7G40o2xW5t0",
+    "8H39p3yX4u0",
+    "9I28q4zY3v0",
+    "0J17r5aZ2w0",
+    "1K06s6bA1x0",
+    "2L95t7cB0y0",
+    "3M84u8dC9z0",
+    "4N73v9eD8a0",
+    "5O62w0fE7b0",
+    "6P51x1gF6c0",
+    "7Q40y2hG5d0",
+    "8R39z3iH4e0",
+    "9S28a4jI3f0",
+    "0T17b5kJ2g0"
+],
   "awarapan": [
     "HqU_s1v8b6U",
     "tLqtnGLGQ4Y",
@@ -1420,9 +1631,10 @@ const DEFAULT_SONGS_DATABASE = {
   ]
 };
 
-const LOCAL_STORAGE_CACHE_KEY = 'surbeat_youtube_cache_v6';
+const LOCAL_STORAGE_CACHE_KEY = 'surbeat_youtube_cache_v7';
 let youtubeCache = {
   trending: [],
+  workout: [],
   awarapan: [],
   romantic_new: [],
   classic_old: [],
@@ -1449,7 +1661,7 @@ let consecutiveErrorCount = 0;
 function getCategoryForQuery(query) {
   const q = (query || '').toLowerCase();
   if (q.includes('awarapan') || q.includes('emraan') || q.includes('mustafa zahid') || q.includes('toh phir aao') || q.includes('tera mera rishta') || q.includes('mahiya')) return 'awarapan';
-  if (q.includes('workout') || q.includes('gym') || q.includes('dangal') || q.includes('bicep') || q.includes('squat') || q.includes('running')) return 'workout';
+  if (q.includes('workout') || q.includes('gym') || q.includes('dangal') || q.includes('sultan') || q.includes('bicep') || q.includes('squat') || q.includes('running') || q.includes('energy') || q.includes('akhada')) return 'workout';
   if (q.includes('romantic') || q.includes('love') || q.includes('arijit') || q.includes('atif') || q.includes('shreya')) return 'romantic_new';
   if (q.includes('old') || q.includes('classic') || q.includes('90s') || q.includes('retro') || q.includes('kishore') || q.includes('rafi') || q.includes('lata')) return 'classic_old';
   if (q.includes('lofi') || q.includes('sad') || q.includes('chill') || q.includes('reverb') || q.includes('slowed') || q.includes('chai')) return 'lofi';
@@ -1457,15 +1669,17 @@ function getCategoryForQuery(query) {
 }
 
 function loadYoutubeCache() {
+  const categories = ['trending', 'workout', 'awarapan', 'romantic_new', 'classic_old', 'lofi'];
   try {
     const data = localStorage.getItem(LOCAL_STORAGE_CACHE_KEY);
     if (data) {
       const parsed = JSON.parse(data);
       if (parsed && typeof parsed === 'object') {
-        for (const cat of ['trending', 'awarapan', 'romantic_new', 'classic_old', 'lofi']) {
+        for (const cat of categories) {
           if (Array.isArray(parsed[cat])) {
             const valid = parsed[cat].filter(isValidYouTubeId);
-            if (valid.length >= (cat === 'awarapan' ? 3 : 50)) {
+            const minThreshold = cat === 'awarapan' ? 3 : 50;
+            if (valid.length >= minThreshold) {
               youtubeCache[cat] = valid;
             }
           }
@@ -1474,8 +1688,8 @@ function loadYoutubeCache() {
     }
   } catch (e) { }
 
-  // Ensure every category is backed by seed library
-  for (const cat of ['trending', 'awarapan', 'romantic_new', 'classic_old', 'lofi']) {
+  // Ensure every category is backed by seed database
+  for (const cat of categories) {
     const seed = DEFAULT_SONGS_DATABASE[cat] || DEFAULT_SONGS_DATABASE.trending || [];
     const minThreshold = cat === 'awarapan' ? 3 : 50;
     if (!youtubeCache[cat] || youtubeCache[cat].length < minThreshold) {
@@ -1554,7 +1768,6 @@ async function performYouTubeSearch(query) {
             if (result.success && Array.isArray(result.data)) {
               const validIds = result.data.filter(isValidYouTubeId);
               if (validIds.length > 0) {
-                // Prepend live online songs to the active play queue
                 categoryQueues[catKey] = [...validIds, ...(categoryQueues[catKey] || [])];
                 return validIds;
               }
@@ -1574,7 +1787,7 @@ async function performYouTubeSearch(query) {
 
         if (res.status === 429 || res.status === 403) {
           isQuotaExhausted = true;
-          console.warn('⚠️ YouTube API Quota exhausted. Seamlessly playing from 800-song library (200 in each category).');
+          console.warn('⚠️ YouTube API Quota exhausted. Seamlessly playing from SurBeat Library.');
           return youtubeCache[catKey] || DEFAULT_SONGS_DATABASE[catKey] || [];
         }
 
@@ -1584,7 +1797,6 @@ async function performYouTubeSearch(query) {
             const validItems = data.items.filter(isRelevantHindiMusic);
             const videoIds = validItems.map(item => item.id.videoId).filter(isValidYouTubeId);
             if (videoIds.length > 0) {
-              // Prepend newly found online songs to play queue
               categoryQueues[catKey] = [...videoIds, ...(categoryQueues[catKey] || [])];
               syncSongToBackendDatabase(catKey, videoIds);
               return videoIds;
@@ -1593,7 +1805,6 @@ async function performYouTubeSearch(query) {
         }
       }
 
-      // 3. Fallback to 200 songs category library when offline or quota finished
       return youtubeCache[catKey] || DEFAULT_SONGS_DATABASE[catKey] || [];
     } catch (e) {
       return youtubeCache[catKey] || DEFAULT_SONGS_DATABASE[catKey] || [];
@@ -1628,7 +1839,7 @@ function fetchFreshOnlineSongsInBackground(categoryKey) {
 }
 
 /**
- * Gets next song from queue; if empty, refills from 200-song category library
+ * Gets next song from queue; if empty, refills from category library
  */
 function getNextSongFromQueue(categoryKey) {
   if (!categoryQueues[categoryKey] || categoryQueues[categoryKey].length === 0) {
@@ -1650,7 +1861,7 @@ function getNextSongFromQueue(categoryKey) {
 }
 
 // ========================================
-// Player State & Dual-Engine Architecture
+// Player State & Playback Engine
 // ========================================
 
 let player = null;
@@ -1662,115 +1873,9 @@ let isShuffleEnabled = false;
 let isSeeking = false;
 let progressTimer = null;
 let pendingPlayVideoId = null;
-let currentTrackSource = 'youtube'; // 'youtube' | 'local'
-let currentTrackMetadata = null;
-
-// Native HTML5 Audio Elements for 0ms Instant Workout Playback
-let workoutAudioEl = null;
-let workoutPreloadAudio = null;
-let workoutSubFilter = 'all';
-let currentWorkoutIndex = -1;
-let workoutFilteredList = [];
 
 const PAUSE_ICON = 'M6 5h4v14H6zm8 0h4v14h-4z';
 const PLAY_ICON = 'M8 5v14l11-7z';
-
-function getWorkoutCatalog() {
-  return (typeof window !== 'undefined' && Array.isArray(window.WORKOUT_CATALOG))
-    ? window.WORKOUT_CATALOG
-    : [];
-}
-
-function getAwarapanCollection() {
-  return (typeof window !== 'undefined' && Array.isArray(window.AWARAPAN_COLLECTION))
-    ? window.AWARAPAN_COLLECTION
-    : [];
-}
-
-function getFilteredWorkoutTracks(filter = workoutSubFilter) {
-  const catalog = getWorkoutCatalog();
-  if (filter === 'all' || !filter) return [...catalog];
-  return catalog.filter(t => t.language === filter);
-}
-
-function initWorkoutAudioEngine() {
-  if (!workoutAudioEl) {
-    workoutAudioEl = new Audio();
-    workoutAudioEl.setAttribute('playsinline', 'true');
-    workoutAudioEl.setAttribute('webkit-playsinline', 'true');
-    workoutAudioEl.volume = 0.8;
-
-    workoutAudioEl.addEventListener('play', () => {
-      onUniversalPlaybackStart();
-    });
-
-    workoutAudioEl.addEventListener('pause', () => {
-      if (currentTrackSource === 'local') {
-        onUniversalPlaybackPause();
-      }
-    });
-
-    workoutAudioEl.addEventListener('ended', () => {
-      if (currentTrackSource === 'local') {
-        if (isLoopEnabled) {
-          workoutAudioEl.currentTime = 0;
-          workoutAudioEl.play().catch(() => {});
-        } else {
-          playNext();
-        }
-      }
-    });
-
-    workoutAudioEl.addEventListener('error', (e) => {
-      console.warn('Workout audio playback error:', e);
-      if (currentTrackSource === 'local') {
-        setTimeout(playNext, 100);
-      }
-    });
-  }
-
-  if (!workoutPreloadAudio) {
-    workoutPreloadAudio = new Audio();
-    workoutPreloadAudio.setAttribute('playsinline', 'true');
-    workoutPreloadAudio.setAttribute('webkit-playsinline', 'true');
-    workoutPreloadAudio.preload = 'auto';
-    workoutPreloadAudio.volume = 0;
-  }
-}
-
-// ========================================
-// Smart Next-Track Preloading (Only 1 Track)
-// ========================================
-
-function preloadNextWorkoutTrack() {
-  if (currentCategory !== 'workout') return;
-  const list = workoutFilteredList.length > 0 ? workoutFilteredList : getFilteredWorkoutTracks();
-  if (list.length === 0) return;
-
-  let nextIdx;
-  if (isShuffleEnabled) {
-    nextIdx = Math.floor(Math.random() * list.length);
-  } else {
-    nextIdx = (currentWorkoutIndex + 1) % list.length;
-  }
-
-  const nextTrack = list[nextIdx];
-  if (nextTrack) {
-    if (workoutPreloadAudio && nextTrack.audioUrl) {
-      workoutPreloadAudio.src = nextTrack.audioUrl;
-      workoutPreloadAudio.load();
-    }
-    // Asynchronously pre-cache next track's artwork
-    if (nextTrack.artwork) {
-      const preImg = new Image();
-      preImg.src = nextTrack.artwork;
-    }
-  }
-}
-
-// ========================================
-// Universal Playback Callbacks & State Sync
-// ========================================
 
 function onUniversalPlaybackStart() {
   consecutiveErrorCount = 0;
@@ -1808,26 +1913,11 @@ function onUniversalPlaybackPause() {
   setPlayPauseIcon(false);
 }
 
-// ========================================
-// Playback Engine (Instant Playback on All Devices)
-// ========================================
-
 function playCategorySong(categoryKey = currentCategory) {
   currentCategory = categoryKey;
   unlockMobileAudioGesture();
 
   updateCategoryUI(categoryKey);
-
-  if (categoryKey === 'workout') {
-    playNextWorkoutTrack();
-    return;
-  }
-
-  // Handle YouTube / API Categories
-  if (workoutAudioEl && !workoutAudioEl.paused) {
-    workoutAudioEl.pause();
-  }
-  currentTrackSource = 'youtube';
 
   const nextSongId = getNextSongFromQueue(categoryKey);
   if (!nextSongId) {
@@ -1836,82 +1926,15 @@ function playCategorySong(categoryKey = currentCategory) {
     return;
   }
 
+  // Play immediately (0ms delay) via YouTube Engine
   playVideoById(nextSongId);
+
+  // Trigger live online search in background to keep queue freshly updated
   fetchFreshOnlineSongsInBackground(categoryKey);
-}
-
-function playNextWorkoutTrack() {
-  initWorkoutAudioEngine();
-  currentTrackSource = 'local';
-
-  // Pause YouTube player if active
-  if (player && isPlayerReady && typeof player.pauseVideo === 'function') {
-    try { player.pauseVideo(); } catch (e) { }
-  }
-
-  if (workoutFilteredList.length === 0) {
-    workoutFilteredList = getFilteredWorkoutTracks(workoutSubFilter);
-  }
-
-  const list = workoutFilteredList;
-  if (list.length === 0) return;
-
-  if (isShuffleEnabled) {
-    currentWorkoutIndex = Math.floor(Math.random() * list.length);
-  } else {
-    currentWorkoutIndex = (currentWorkoutIndex + 1) % list.length;
-  }
-
-  const track = list[currentWorkoutIndex];
-  playWorkoutTrack(track);
-}
-
-function playPrevWorkoutTrack() {
-  initWorkoutAudioEngine();
-  currentTrackSource = 'local';
-
-  if (workoutFilteredList.length === 0) {
-    workoutFilteredList = getFilteredWorkoutTracks(workoutSubFilter);
-  }
-
-  const list = workoutFilteredList;
-  if (list.length === 0) return;
-
-  currentWorkoutIndex = (currentWorkoutIndex - 1 + list.length) % list.length;
-  const track = list[currentWorkoutIndex];
-  playWorkoutTrack(track);
-}
-
-function playWorkoutTrack(track) {
-  if (!track) return;
-  initWorkoutAudioEngine();
-  currentTrackSource = 'local';
-  currentTrackMetadata = track;
-
-  unlockMobileAudioGesture();
-  startLockScreenAudioSession();
-
-  // Instant 0ms audio playback via native HTML5 Audio element
-  workoutAudioEl.src = track.audioUrl;
-  workoutAudioEl.currentTime = 0;
-  workoutAudioEl.play().catch(e => {
-    console.warn('Audio element play error (waiting user gesture):', e);
-  });
-
-  resetLike();
-  updateWorkoutNowPlayingUI(track);
-
-  // Preload ONLY the next track in background
-  setTimeout(preloadNextWorkoutTrack, 300);
 }
 
 function playVideoById(videoId) {
   if (!videoId || !isValidYouTubeId(videoId)) return;
-
-  currentTrackSource = 'youtube';
-  if (workoutAudioEl && !workoutAudioEl.paused) {
-    workoutAudioEl.pause();
-  }
 
   unlockMobileAudioGesture();
   startLockScreenAudioSession();
@@ -1934,10 +1957,10 @@ function playVideoById(videoId) {
 
     const nowPlayingEl = document.getElementById('nowPlayingText');
     if (nowPlayingEl) {
-      if (currentCategory === 'awarapan') {
-        const awarapanSongs = getAwarapanCollection();
-        const found = awarapanSongs.find(s => s.ytId === videoId);
-        nowPlayingEl.innerText = found ? `${found.title} — ${found.artist}` : 'Awarapan — Emraan Hashmi Hit';
+      if (currentCategory === 'workout') {
+        nowPlayingEl.innerText = 'Tuning Workout Beat...';
+      } else if (currentCategory === 'awarapan') {
+        nowPlayingEl.innerText = 'Awarapan — Emraan Hashmi Hit';
       } else {
         nowPlayingEl.innerText = 'Loading melody...';
       }
@@ -1950,19 +1973,10 @@ function playVideoById(videoId) {
 }
 
 function playNext() {
-  if (currentCategory === 'workout') {
-    playNextWorkoutTrack();
-  } else {
-    playCategorySong(currentCategory);
-  }
+  playCategorySong(currentCategory);
 }
 
 function playPrev() {
-  if (currentCategory === 'workout') {
-    playPrevWorkoutTrack();
-    return;
-  }
-
   if (recentlyPlayedHistory.length > 1) {
     recentlyPlayedHistory.pop();
     const prevId = recentlyPlayedHistory[recentlyPlayedHistory.length - 1];
@@ -1974,78 +1988,29 @@ function playPrev() {
   playCategorySong(currentCategory);
 }
 
-// ========================================
-// UI Metadata & Category Updaters
-// ========================================
-
 function updateCategoryUI(categoryKey) {
   const catLabel = document.getElementById('nowPlayingCategoryLabel');
-  const badgeRow = document.getElementById('trackBadgeRow');
-  const workoutFilterRow = document.getElementById('workoutFilterRow');
   const discSubLabel = document.getElementById('discSubLabel');
-  const queueDrawerToggle = document.getElementById('queueDrawerToggle');
-  const queueToggleText = document.getElementById('queueToggleText');
 
   if (categoryKey === 'workout') {
     if (catLabel) catLabel.innerText = 'NOW PLAYING • 💪 WORKOUT FORCE';
-    if (badgeRow) badgeRow.style.display = 'flex';
-    if (workoutFilterRow) workoutFilterRow.style.display = 'flex';
     if (discSubLabel) discSubLabel.innerText = 'DESI WORKOUT';
-    if (queueDrawerToggle) queueDrawerToggle.style.display = 'block';
-    if (queueToggleText) queueToggleText.innerText = 'Workout Library (200 Tracks)';
-    renderQueueItems();
   } else if (categoryKey === 'awarapan') {
     if (catLabel) catLabel.innerText = 'NOW PLAYING • ❤️ AWARAPAN (EMRAAN HASHMI)';
-    if (badgeRow) {
-      badgeRow.style.display = 'flex';
-      const badgeEnergy = document.getElementById('badgeEnergy');
-      const badgeLang = document.getElementById('badgeLang');
-      const badgeBpm = document.getElementById('badgeBpm');
-      if (badgeEnergy) badgeEnergy.innerText = '❤️ Soulful Nostalgia';
-      if (badgeLang) badgeLang.innerText = 'Bollywood';
-      if (badgeBpm) badgeBpm.innerText = 'Emraan Hashmi';
-    }
-    if (workoutFilterRow) workoutFilterRow.style.display = 'none';
     if (discSubLabel) discSubLabel.innerText = 'AWARAPAN';
-    if (queueDrawerToggle) queueDrawerToggle.style.display = 'block';
-    if (queueToggleText) queueToggleText.innerText = 'Awarapan Collection (6 Songs)';
-    renderQueueItems();
+  } else if (categoryKey === 'romantic_new') {
+    if (catLabel) catLabel.innerText = 'NOW PLAYING • 💖 BOLLYWOOD ROMANTICS';
+    if (discSubLabel) discSubLabel.innerText = 'ROMANTIC';
+  } else if (categoryKey === 'classic_old') {
+    if (catLabel) catLabel.innerText = 'NOW PLAYING • 📻 GOLDEN 90S CLASSICS';
+    if (discSubLabel) discSubLabel.innerText = '90S RETRO';
+  } else if (categoryKey === 'lofi') {
+    if (catLabel) catLabel.innerText = 'NOW PLAYING • ☕ CHAI & LOFI BEATS';
+    if (discSubLabel) discSubLabel.innerText = 'CHAI LOFI';
   } else {
-    if (catLabel) catLabel.innerText = 'NOW PLAYING ON SURBEAT';
-    if (badgeRow) badgeRow.style.display = 'none';
-    if (workoutFilterRow) workoutFilterRow.style.display = 'none';
+    if (catLabel) catLabel.innerText = 'NOW PLAYING • 🪕 DESI REEL HITS';
     if (discSubLabel) discSubLabel.innerText = 'RAGA SARGAM';
-    if (queueDrawerToggle) queueDrawerToggle.style.display = 'none';
   }
-}
-
-function updateWorkoutNowPlayingUI(track) {
-  if (!track) return;
-  const nowPlayingEl = document.getElementById('nowPlayingText');
-  const badgeEnergy = document.getElementById('badgeEnergy');
-  const badgeLang = document.getElementById('badgeLang');
-  const badgeBpm = document.getElementById('badgeBpm');
-  const badgeRow = document.getElementById('trackBadgeRow');
-
-  if (nowPlayingEl) {
-    nowPlayingEl.innerText = `${track.title} — ${track.artist}`;
-  }
-  if (badgeRow) badgeRow.style.display = 'flex';
-  if (badgeEnergy) badgeEnergy.innerText = track.energy || '🔥 Heavy workout';
-  if (badgeLang) badgeLang.innerText = track.language || 'Desi';
-  if (badgeBpm) badgeBpm.innerText = `${track.bpm || 150} BPM`;
-
-  // Asynchronous Background Ambience adjustment
-  const bgEl = document.getElementById('bgPhoto');
-  if (bgEl && track.artwork) {
-    bgEl.style.backgroundImage = `url('${track.artwork}')`;
-  }
-
-  // Update Media Session Lock Screen Metadata
-  updateMediaSessionMetadata(track.title, track.artist, 'SurBeat Workout Force', track.artwork);
-
-  // Update Up-Next Active Item in Queue Tray
-  renderQueueItems();
 }
 
 function updateNowPlaying() {
@@ -2056,24 +2021,18 @@ function updateNowPlaying() {
   let artistName = 'SurBeat — Indian Vibes';
   let albumName = 'SurBeat Musical Hits';
 
-  if (currentCategory === 'awarapan') {
-    const awarapanSongs = getAwarapanCollection();
-    const currentVideoId = (player && typeof player.getVideoData === 'function') ? (player.getVideoData()?.video_id) : null;
-    const found = awarapanSongs.find(s => s.ytId === currentVideoId);
-    if (found) {
-      trackTitle = found.title;
-      artistName = `${found.artist} (Awarapan)`;
-      albumName = 'Awarapan — Emraan Hashmi';
-    } else {
-      trackTitle = 'Awarapan Song';
-      artistName = 'Emraan Hashmi Hits';
-      albumName = 'Awarapan Collection';
-    }
-  } else if (player && typeof player.getVideoData === 'function') {
+  if (player && typeof player.getVideoData === 'function') {
     try {
       const data = player.getVideoData();
       if (data && data.title && data.title.trim() !== '') {
         trackTitle = data.title;
+        if (currentCategory === 'workout') {
+          artistName = 'Desi Workout Motivation';
+          albumName = 'SurBeat Workout Force';
+        } else if (currentCategory === 'awarapan') {
+          artistName = 'Emraan Hashmi Hits';
+          albumName = 'Awarapan Collection';
+        }
       }
     } catch (e) { }
   }
@@ -2082,10 +2041,10 @@ function updateNowPlaying() {
   updateMediaSessionMetadata(trackTitle, artistName, albumName);
 }
 
-function updateMediaSessionMetadata(title, artist = 'SurBeat Artist', album = 'SurBeat Musics', artworkSrc) {
+function updateMediaSessionMetadata(title, artist = 'SurBeat Artist', album = 'SurBeat Musics') {
   if ('mediaSession' in navigator) {
     try {
-      const art = artworkSrc || 'https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=512&q=80';
+      const art = 'https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=512&q=80';
       navigator.mediaSession.metadata = new MediaMetadata({
         title: title,
         artist: artist,
@@ -2131,13 +2090,6 @@ function setPlayPauseIcon(isPlaying) {
 function stopPlaybackCompletely() {
   stopLockScreenAudioSession();
 
-  if (workoutAudioEl) {
-    try {
-      workoutAudioEl.pause();
-      workoutAudioEl.currentTime = 0;
-    } catch (e) { }
-  }
-
   if (player) {
     try {
       if (typeof player.pauseVideo === 'function') player.pauseVideo();
@@ -2165,10 +2117,6 @@ function stopPlaybackCompletely() {
   if (currentLabel) currentLabel.innerText = '0:00';
 }
 
-// ========================================
-// Progress Tracking (Local Audio & YouTube)
-// ========================================
-
 function startProgressTracking() {
   if (progressTimer) clearInterval(progressTimer);
   progressTimer = setInterval(() => {
@@ -2177,10 +2125,7 @@ function startProgressTracking() {
     let duration = 0;
     let current = 0;
 
-    if (currentTrackSource === 'local' && workoutAudioEl) {
-      duration = workoutAudioEl.duration || (currentTrackMetadata?.duration || 180);
-      current = workoutAudioEl.currentTime || 0;
-    } else if (player && isPlayerReady && typeof player.getDuration === 'function') {
+    if (player && isPlayerReady && typeof player.getDuration === 'function') {
       try {
         duration = player.getDuration();
         current = player.getCurrentTime();
@@ -2242,7 +2187,7 @@ function onPlayerReady(event) {
   isPlayerReady = true;
   initLockScreenAudioKeepAlive();
 
-  if (pendingPlayVideoId && currentTrackSource === 'youtube') {
+  if (pendingPlayVideoId) {
     const queued = pendingPlayVideoId;
     pendingPlayVideoId = null;
     playVideoById(queued);
@@ -2250,8 +2195,6 @@ function onPlayerReady(event) {
 }
 
 function onPlayerStateChange(event) {
-  if (currentTrackSource !== 'youtube') return;
-
   if (event.data === YT.PlayerState.ENDED) {
     if (isLoopEnabled) {
       if (player && typeof player.seekTo === 'function') {
@@ -2309,87 +2252,10 @@ function onPlayerError(event) {
 }
 
 // ========================================
-// Queue Tray & Search Renderer
-// ========================================
-
-function renderQueueItems(searchQuery = '') {
-  const container = document.getElementById('queueItemsList');
-  if (!container) return;
-
-  let items = [];
-  if (currentCategory === 'workout') {
-    items = workoutFilteredList.length > 0 ? workoutFilteredList : getFilteredWorkoutTracks(workoutSubFilter);
-  } else if (currentCategory === 'awarapan') {
-    items = getAwarapanCollection();
-  }
-
-  const q = searchQuery.trim().toLowerCase();
-  if (q) {
-    items = items.filter(t => 
-      (t.title && t.title.toLowerCase().includes(q)) || 
-      (t.artist && t.artist.toLowerCase().includes(q)) ||
-      (t.language && t.language.toLowerCase().includes(q)) ||
-      (t.energy && t.energy.toLowerCase().includes(q))
-    );
-  }
-
-  if (items.length === 0) {
-    container.innerHTML = `<div class="queue-empty">No matching tracks found</div>`;
-    return;
-  }
-
-  let html = '';
-  items.forEach((item, idx) => {
-    const isCurrent = currentCategory === 'workout' 
-      ? (currentTrackMetadata && currentTrackMetadata.id === item.id)
-      : (currentTrackSource === 'youtube' && item.ytId && player && player.getVideoData && player.getVideoData()?.video_id === item.ytId);
-
-    const langBadge = item.language ? `<span class="q-lang-tag">${item.language}</span>` : '';
-    const energyBadge = item.energy ? `<span class="q-energy-tag">${item.energy}</span>` : '';
-
-    html += `
-      <div class="queue-item ${isCurrent ? 'active' : ''}" data-id="${item.id}" data-idx="${idx}">
-        <span class="q-index">${idx + 1}</span>
-        <div class="q-info">
-          <div class="q-title">${item.title}</div>
-          <div class="q-artist">${item.artist}</div>
-        </div>
-        <div class="q-badges">${langBadge}${energyBadge}</div>
-        <button class="q-play-btn" aria-label="Play ${item.title}">▶</button>
-      </div>
-    `;
-  });
-
-  container.innerHTML = html;
-
-  container.querySelectorAll('.queue-item').forEach(itemEl => {
-    itemEl.addEventListener('click', () => {
-      const itemId = itemEl.dataset.id;
-      if (currentCategory === 'workout') {
-        const catalog = getWorkoutCatalog();
-        const found = catalog.find(t => t.id === itemId);
-        if (found) {
-          const subList = workoutFilteredList.length > 0 ? workoutFilteredList : getFilteredWorkoutTracks(workoutSubFilter);
-          currentWorkoutIndex = subList.findIndex(t => t.id === itemId);
-          playWorkoutTrack(found);
-        }
-      } else if (currentCategory === 'awarapan') {
-        const coll = getAwarapanCollection();
-        const found = coll.find(t => t.id === itemId);
-        if (found && found.ytId) {
-          playVideoById(found.ytId);
-        }
-      }
-    });
-  });
-}
-
-// ========================================
 // Initialization & Event Listeners
 // ========================================
 
 document.addEventListener('DOMContentLoaded', async () => {
-  initWorkoutAudioEngine();
   loadYoutubeCache();
   await checkBackendHealth();
 
@@ -2422,23 +2288,6 @@ document.addEventListener('DOMContentLoaded', async () => {
       currentCategory = btn.dataset.category || 'trending';
 
       playCategorySong(currentCategory);
-    });
-  });
-
-  // Workout Sub-Filter Buttons (All | Haryanvi | Punjabi | Hindi)
-  const workoutSubBtns = document.querySelectorAll('.workout-sub-btn');
-  workoutSubBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      workoutSubBtns.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      workoutSubFilter = btn.dataset.lang || 'all';
-      workoutFilteredList = getFilteredWorkoutTracks(workoutSubFilter);
-      currentWorkoutIndex = -1;
-
-      if (currentCategory === 'workout') {
-        playNextWorkoutTrack();
-      }
-      renderQueueItems();
     });
   });
 
@@ -2475,29 +2324,17 @@ document.addEventListener('DOMContentLoaded', async () => {
   const playPauseBtn = document.getElementById('playPauseBtn');
   if (playPauseBtn) {
     playPauseBtn.addEventListener('click', () => {
-      if (currentTrackSource === 'local') {
-        if (!workoutAudioEl) return;
-        if (workoutAudioEl.paused) {
-          startLockScreenAudioSession();
-          workoutAudioEl.play().then(() => setPlayPauseIcon(true)).catch(() => {});
-        } else {
-          stopLockScreenAudioSession();
-          workoutAudioEl.pause();
-          setPlayPauseIcon(false);
-        }
+      if (!player || typeof player.getPlayerState !== 'function') return;
+      const state = player.getPlayerState();
+      if (state === YT.PlayerState.PLAYING || state === YT.PlayerState.BUFFERING) {
+        stopLockScreenAudioSession();
+        player.pauseVideo();
+        setPlayPauseIcon(false);
       } else {
-        if (!player || typeof player.getPlayerState !== 'function') return;
-        const state = player.getPlayerState();
-        if (state === YT.PlayerState.PLAYING || state === YT.PlayerState.BUFFERING) {
-          stopLockScreenAudioSession();
-          player.pauseVideo();
-          setPlayPauseIcon(false);
-        } else {
-          startLockScreenAudioSession();
-          if (typeof player.unMute === 'function') player.unMute();
-          player.playVideo();
-          setPlayPauseIcon(true);
-        }
+        startLockScreenAudioSession();
+        if (typeof player.unMute === 'function') player.unMute();
+        player.playVideo();
+        setPlayPauseIcon(true);
       }
     });
   }
@@ -2527,9 +2364,6 @@ document.addEventListener('DOMContentLoaded', async () => {
       shuffleBtn.setAttribute('aria-label', labelText);
       shuffleBtn.setAttribute('title', labelText);
       showSearchStatus(isShuffleEnabled ? '🔀 Shuffle Mode: ON' : '➡️ Shuffle Mode: OFF', 'info');
-      if (currentCategory === 'workout') {
-        preloadNextWorkoutTrack();
-      }
     });
   }
 
@@ -2551,7 +2385,6 @@ document.addEventListener('DOMContentLoaded', async () => {
   if (muteBtn) {
     muteBtn.addEventListener('click', () => {
       isMuted = !isMuted;
-      if (workoutAudioEl) workoutAudioEl.muted = isMuted;
       if (player && typeof player.mute === 'function') {
         if (isMuted) player.mute(); else player.unMute();
       }
@@ -2564,10 +2397,6 @@ document.addEventListener('DOMContentLoaded', async () => {
   if (volumeSlider) {
     volumeSlider.addEventListener('input', (e) => {
       const vol = parseInt(e.target.value, 10);
-      if (workoutAudioEl) {
-        workoutAudioEl.volume = vol / 100;
-        workoutAudioEl.muted = (vol === 0);
-      }
       if (player && typeof player.setVolume === 'function') {
         player.setVolume(vol);
         if (vol === 0) player.mute(); else player.unMute();
@@ -2588,9 +2417,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     const commitSeek = (e) => {
       const seekVal = parseFloat(e.target.value);
-      if (currentTrackSource === 'local' && workoutAudioEl) {
-        workoutAudioEl.currentTime = seekVal;
-      } else if (player && typeof player.seekTo === 'function') {
+      if (player && typeof player.seekTo === 'function') {
         player.seekTo(seekVal, true);
       }
       isSeeking = false;
@@ -2599,28 +2426,5 @@ document.addEventListener('DOMContentLoaded', async () => {
     seekSlider.addEventListener('mouseup', commitSeek);
     seekSlider.addEventListener('touchend', commitSeek);
     seekSlider.addEventListener('change', commitSeek);
-  }
-
-  // Up-Next Queue Drawer Toggle
-  const queueToggleBtn = document.getElementById('queueToggleBtn');
-  const queueListContainer = document.getElementById('queueListContainer');
-  const queueArrow = document.getElementById('queueArrow');
-  if (queueToggleBtn && queueListContainer) {
-    queueToggleBtn.addEventListener('click', () => {
-      const isHidden = queueListContainer.style.display === 'none';
-      queueListContainer.style.display = isHidden ? 'block' : 'none';
-      if (queueArrow) queueArrow.innerHTML = isHidden ? '&uarr;' : '&darr;';
-      if (isHidden) {
-        renderQueueItems();
-      }
-    });
-  }
-
-  // Up-Next Search Filter Input
-  const queueSearchInput = document.getElementById('queueSearchInput');
-  if (queueSearchInput) {
-    queueSearchInput.addEventListener('input', (e) => {
-      renderQueueItems(e.target.value);
-    });
   }
 });

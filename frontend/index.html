@@ -75,14 +75,6 @@
         <button class="genre-btn" data-category="lofi" id="genre-lofi">☕ Chai & Lofi Beats</button>
       </div>
 
-      <!-- Workout Sub-Filter Pills (Active during Workout Mode) -->
-      <div class="workout-filter-row" id="workoutFilterRow" style="display:none">
-        <button class="workout-sub-btn active" data-lang="all">🔥 All Workout (200)</button>
-        <button class="workout-sub-btn" data-lang="Haryanvi">🟢 Haryanvi (68)</button>
-        <button class="workout-sub-btn" data-lang="Punjabi">🟡 Punjabi (66)</button>
-        <button class="workout-sub-btn" data-lang="Hindi">🇮🇳 Hindi (66)</button>
-      </div>
-
       <!-- Player Console Card -->
       <div id="player-card">
 
@@ -197,22 +189,6 @@
             </svg>
           </button>
           <input type="range" id="volumeSlider" min="0" max="100" value="80" aria-label="Volume level">
-        </div>
-
-        <!-- Collapsible Up Next / Workout Catalog Drawer -->
-        <div class="queue-drawer-toggle" id="queueDrawerToggle" style="display:none">
-          <button class="queue-toggle-btn" id="queueToggleBtn" aria-label="Toggle Up Next List">
-            <span class="queue-icon">📋</span>
-            <span id="queueToggleText">Up Next Queue (200 Tracks)</span>
-            <span class="queue-arrow" id="queueArrow">&darr;</span>
-          </button>
-          <div class="queue-list-container" id="queueListContainer" style="display:none">
-            <div class="queue-search-wrap">
-              <input type="text" id="queueSearchInput" class="queue-search-input"
-                placeholder="🔍 Search track or artist...">
-            </div>
-            <div class="queue-items-list" id="queueItemsList"></div>
-          </div>
         </div>
 
       </div>
@@ -339,7 +315,6 @@
 
   </div>
 
-  <script src="workoutCatalog.js"></script>
   <script src="script.js"></script>
 </body>
 

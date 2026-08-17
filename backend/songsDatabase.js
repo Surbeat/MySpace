@@ -29,7 +29,7 @@ function loadDatabase() {
       const data = fs.readFileSync(DB_PATH, 'utf8');
       const parsed = JSON.parse(data);
       const cleaned = {};
-      for (const cat of ['trending', 'romantic_new', 'classic_old', 'lofi', 'awarapan']) {
+      for (const cat of ['trending', 'workout', 'awarapan', 'romantic_new', 'classic_old', 'lofi']) {
         const rawList = Array.isArray(parsed[cat]) ? parsed[cat] : [];
         const validList = rawList.filter(isValidYouTubeId);
         cleaned[cat] = validList.length > 0 ? validList : [...(SEED_DATABASE[cat] || [])];
@@ -63,6 +63,9 @@ function saveDatabase(db) {
 function mapQueryToCategory(query) {
   if (!query) return 'trending';
   const q = query.toLowerCase();
+  if (q.includes('workout') || q.includes('gym') || q.includes('dangal') || q.includes('sultan') || q.includes('bicep') || q.includes('squat') || q.includes('running') || q.includes('energy') || q.includes('akhada')) {
+    return 'workout';
+  }
   if (q.includes('awarapan') || q.includes('emraan') || q.includes('mustafa zahid') || q.includes('toh phir aao') || q.includes('tera mera rishta') || q.includes('mahiya')) {
     return 'awarapan';
   }
