@@ -1,6 +1,8 @@
 const express = require('express');
 const cors = require('cors');
 const axios = require('axios');
+const path = require('path');
+const fs = require('fs');
 const rateLimit = require('express-rate-limit');
 require('dotenv').config();
 const songsDb = require('./songsDatabase');
@@ -85,6 +87,23 @@ app.get('/api/songs/database', (req, res) => {
     total: songs.length,
     category
   });
+});
+
+/**
+ * WORKOUT CATALOG ENDPOINT
+ * Serves the 200 curated Workout tracks catalog
+ */
+app.get('/api/workout/tracks', (req, res) => {
+  const workoutPath = path.join(__dirname, 'data', 'workout_catalog.json');
+  try {
+    if (fs.existsSync(workoutPath)) {
+      const data = JSON.parse(fs.readFileSync(workoutPath, 'utf8'));
+      const { language } = req.query;
+      const filtered = language && language !== 'all' ? data.filter(t => t.language === language) : data;
+      return res.json({ success: true, count: filtered.length, data: filtered });
+    }
+  } catch (e) {}
+  return res.json({ success: true, count: 0, data: [] });
 });
 
 app.post('/api/songs/database', (req, res) => {

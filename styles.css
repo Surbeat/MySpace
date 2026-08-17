@@ -361,6 +361,60 @@ h1 {
   box-shadow: 0 4px 20px rgba(255, 170, 0, 0.35);
 }
 
+.genre-btn[data-category="workout"].active {
+  background: linear-gradient(135deg, rgba(255, 61, 0, 0.45), rgba(255, 170, 0, 0.35));
+  border-color: #ff3d00;
+  color: #ffffff;
+  box-shadow: 0 4px 22px rgba(255, 61, 0, 0.45);
+}
+
+.genre-btn[data-category="awarapan"].active {
+  background: linear-gradient(135deg, rgba(255, 23, 68, 0.45), rgba(255, 170, 0, 0.35));
+  border-color: #ff1744;
+  color: #ffffff;
+  box-shadow: 0 4px 22px rgba(255, 23, 68, 0.45);
+}
+
+/* Workout Sub-Filter Pills (All | Haryanvi | Punjabi | Hindi) */
+.workout-filter-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px;
+  margin-bottom: 20px;
+  width: 100%;
+  padding: 0 4px;
+}
+
+.workout-sub-btn {
+  background: rgba(22, 6, 17, 0.7);
+  border: 1px solid rgba(255, 61, 0, 0.3);
+  color: #ffccaa;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 0.72rem;
+  padding: 6px 14px;
+  border-radius: var(--radius-pill);
+  cursor: pointer;
+  backdrop-filter: blur(10px);
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.workout-sub-btn:hover {
+  border-color: #ff6d00;
+  color: #ffffff;
+  transform: translateY(-1px);
+  background: rgba(255, 61, 0, 0.2);
+}
+
+.workout-sub-btn.active {
+  background: linear-gradient(135deg, #ff3d00, #ff9100);
+  border-color: #ffea00;
+  color: #12040b;
+  font-weight: 800;
+  box-shadow: 0 2px 14px rgba(255, 61, 0, 0.5);
+}
+
 /* ========================================
    Player Console Card
    ======================================== */
@@ -774,11 +828,243 @@ h1 {
   box-shadow: 0 0 14px rgba(255, 23, 68, 0.4);
 }
 
+#shuffleBtn.active {
+  color: var(--saffron-gold);
+  border-color: var(--saffron-gold);
+  background: rgba(255, 170, 0, 0.18);
+  box-shadow: 0 0 14px rgba(255, 170, 0, 0.45);
+}
+
 #repeatBtn.active {
   color: var(--peacock-cyan);
   border-color: var(--peacock-cyan);
   background: rgba(0, 229, 255, 0.18);
   box-shadow: 0 0 14px rgba(0, 229, 255, 0.4);
+}
+
+/* Dynamic Track Metadata Badges */
+.track-badge-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.t-badge {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: var(--radius-pill);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.05);
+  color: #fff;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+}
+
+.t-badge-energy {
+  background: rgba(255, 61, 0, 0.15);
+  border-color: rgba(255, 61, 0, 0.4);
+  color: #ffaa77;
+}
+
+.t-badge-lang {
+  background: rgba(0, 229, 255, 0.12);
+  border-color: rgba(0, 229, 255, 0.35);
+  color: #80f0ff;
+}
+
+.t-badge-bpm {
+  background: rgba(255, 170, 0, 0.12);
+  border-color: rgba(255, 170, 0, 0.35);
+  color: #ffd688;
+}
+
+/* Collapsible Up Next / Workout Catalog Drawer */
+.queue-drawer-toggle {
+  margin-top: 20px;
+  width: 100%;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: 14px;
+}
+
+.queue-toggle-btn {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 170, 0, 0.2);
+  border-radius: 14px;
+  color: var(--text-sub);
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 700;
+  font-size: 0.78rem;
+  padding: 9px 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.queue-toggle-btn:hover {
+  background: rgba(255, 170, 0, 0.12);
+  border-color: var(--saffron-gold);
+  color: #ffffff;
+}
+
+.queue-arrow {
+  font-size: 0.85rem;
+  color: var(--saffron-gold);
+  font-weight: 900;
+}
+
+.queue-list-container {
+  margin-top: 10px;
+  background: rgba(14, 3, 11, 0.9);
+  border: 1px solid rgba(255, 170, 0, 0.25);
+  border-radius: 16px;
+  padding: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  max-height: 250px;
+  display: flex;
+  flex-direction: column;
+}
+
+.queue-search-wrap {
+  margin-bottom: 8px;
+}
+
+.queue-search-input {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  padding: 7px 12px;
+  color: #fff;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 0.76rem;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.queue-search-input:focus {
+  border-color: var(--saffron-gold);
+  box-shadow: 0 0 10px rgba(255, 170, 0, 0.3);
+}
+
+.queue-items-list {
+  overflow-y: auto;
+  max-height: 190px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding-right: 4px;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 170, 0, 0.4) transparent;
+}
+
+.queue-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  text-align: left;
+}
+
+.queue-item:hover {
+  background: rgba(255, 170, 0, 0.1);
+  border-color: rgba(255, 170, 0, 0.3);
+  transform: translateX(2px);
+}
+
+.queue-item.active {
+  background: linear-gradient(90deg, rgba(255, 61, 0, 0.25), rgba(255, 170, 0, 0.15));
+  border-color: var(--saffron-gold);
+}
+
+.q-index {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.65rem;
+  color: var(--text-muted);
+  width: 20px;
+  flex-shrink: 0;
+}
+
+.q-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.q-title {
+  font-size: 0.76rem;
+  font-weight: 700;
+  color: #fff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.q-artist {
+  font-size: 0.65rem;
+  color: var(--text-muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.q-badges {
+  display: flex;
+  gap: 4px;
+  flex-shrink: 0;
+}
+
+.q-lang-tag {
+  font-size: 0.58rem;
+  font-weight: 700;
+  background: rgba(0, 229, 255, 0.15);
+  color: #00e5ff;
+  padding: 1px 5px;
+  border-radius: 4px;
+}
+
+.q-energy-tag {
+  font-size: 0.58rem;
+  font-weight: 700;
+  background: rgba(255, 61, 0, 0.15);
+  color: #ffaa77;
+  padding: 1px 5px;
+  border-radius: 4px;
+}
+
+.q-play-btn {
+  background: none;
+  border: none;
+  color: var(--saffron-gold);
+  font-size: 0.72rem;
+  cursor: pointer;
+  padding: 2px 4px;
+  opacity: 0.7;
+}
+
+.queue-item:hover .q-play-btn {
+  opacity: 1;
+  transform: scale(1.15);
+}
+
+.queue-empty {
+  font-size: 0.76rem;
+  color: var(--text-muted);
+  text-align: center;
+  padding: 20px 0;
 }
 
 /* Volume Slider */
@@ -1243,7 +1529,6 @@ h1 {
 }
 
 @keyframes barPulse {
-
   0%,
   100% {
     height: 20%;
@@ -1271,7 +1556,6 @@ h1 {
 
 /* Touch Device Touch-Target Optimizations */
 @media (hover: none) and (pointer: coarse) {
-
   .control-btn,
   .genre-btn,
   .glow-button,
@@ -1288,11 +1572,9 @@ h1 {
     max-width: 1400px;
     gap: 50px;
   }
-
   main {
     max-width: 500px;
   }
-
   #player-card {
     padding: 38px 32px 34px;
   }
@@ -1322,13 +1604,8 @@ h1 {
     justify-content: center;
   }
 
-  .poster-left {
-    order: 2;
-  }
-
-  .poster-right {
-    order: 3;
-  }
+  .poster-left { order: 2; }
+  .poster-right { order: 3; }
 
   .poster {
     display: flex;
@@ -1610,8 +1887,8 @@ h1 {
   }
 }
 
-/* Compact Mobile Devices (max-width: 414px) */
-@media (max-width: 414px) {
+/* Compact Mobile Devices (max-width: 430px) */
+@media (max-width: 430px) {
   h1 {
     font-size: 2.05rem;
   }
@@ -1651,17 +1928,19 @@ h1 {
   }
 
   .controls {
-    gap: 5px;
+    gap: clamp(4px, 1.8vw, 8px);
   }
 
   .control-btn {
-    width: 38px;
-    height: 38px;
+    width: clamp(34px, 8.8vw, 40px);
+    height: clamp(34px, 8.8vw, 40px);
+    flex-shrink: 1;
   }
 
   .control-btn.play-pause-main {
-    width: 46px;
-    height: 46px;
+    width: clamp(44px, 11.5vw, 50px);
+    height: clamp(44px, 11.5vw, 50px);
+    flex-shrink: 0;
   }
 
   .controls .icon-btn {
@@ -1673,10 +1952,20 @@ h1 {
     width: 22px;
     height: 22px;
   }
+
+  .workout-sub-btn {
+    font-size: 0.66rem;
+    padding: 5px 10px;
+  }
+
+  .t-badge {
+    font-size: 0.62rem;
+    padding: 2px 7px;
+  }
 }
 
-/* Ultra Small Mobile Devices (max-width: 350px / 320px) */
-@media (max-width: 350px) {
+/* Ultra Small Mobile Devices (max-width: 360px / 320px) */
+@media (max-width: 360px) {
   .top-left-info {
     padding: 4px 8px;
     font-size: 0.68rem;
@@ -1684,7 +1973,7 @@ h1 {
   }
 
   h1 {
-    font-size: 1.8rem;
+    font-size: 1.75rem;
   }
 
   .tagline {
@@ -1692,58 +1981,60 @@ h1 {
   }
 
   #player-card {
-    padding: 14px 8px 14px;
+    padding: 14px 6px 14px;
     border-radius: 18px;
   }
 
   .turntable-deck {
-    width: 128px;
-    height: 128px;
+    width: 124px;
+    height: 124px;
     margin-bottom: 10px;
   }
 
   .disc-wrap {
-    width: 110px;
-    height: 110px;
+    width: 106px;
+    height: 106px;
   }
 
   .disc-center-label {
-    width: 42px;
-    height: 42px;
+    width: 40px;
+    height: 40px;
   }
 
   .label-brand {
-    font-size: 0.55rem;
+    font-size: 0.52rem;
   }
 
   .label-sub {
-    font-size: 0.36rem;
+    font-size: 0.34rem;
   }
 
   .tonearm {
-    width: 36px;
-    height: 54px;
+    width: 34px;
+    height: 50px;
     right: 0px;
   }
 
   .controls {
     gap: 3px;
-    justify-content: space-between;
+    justify-content: center;
   }
 
   .control-btn {
-    width: 34px;
-    height: 34px;
+    width: 33px;
+    height: 33px;
+    flex-shrink: 1;
   }
 
   .control-btn.play-pause-main {
     width: 40px;
     height: 40px;
+    flex-shrink: 0;
   }
 
   .controls .icon-btn {
-    width: 16px;
-    height: 16px;
+    width: 15px;
+    height: 15px;
   }
 
   .play-pause-main .icon-btn {
@@ -1763,26 +2054,72 @@ h1 {
   #volumeSlider {
     width: 75px;
   }
+
+  .workout-sub-btn {
+    font-size: 0.6rem;
+    padding: 4px 8px;
+  }
+
+  .t-badge {
+    font-size: 0.58rem;
+    padding: 2px 6px;
+  }
+}
+
+/* Large Displays (min-width: 1920px) */
+@media (min-width: 1920px) {
+  .page {
+    max-width: 1560px;
+    gap: 60px;
+    padding-top: 100px;
+  }
+
+  main {
+    max-width: 540px;
+  }
+
+  h1 {
+    font-size: 4.2rem;
+  }
+
+  .poster {
+    width: 260px;
+    height: 380px;
+  }
+
+  .turntable-deck {
+    width: 240px;
+    height: 240px;
+  }
+
+  .disc-wrap {
+    width: 215px;
+    height: 215px;
+  }
+
+  #player-card {
+    padding: 42px 36px 38px;
+  }
 }
 
 /* Mobile Landscape Mode (height <= 520px) */
 @media (max-height: 520px) and (orientation: landscape) {
   .page {
-    padding: 10px 10px 20px;
+    padding: 8px 10px 20px;
     gap: 10px;
   }
 
   .top-left-info {
-    margin: 4px auto 8px;
-    padding: 4px 10px;
+    margin: 2px auto 6px;
+    padding: 3px 10px;
   }
 
   header {
-    margin-bottom: 8px;
+    margin-bottom: 6px;
   }
 
   h1 {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
   }
 
   .tagline {
@@ -1790,48 +2127,77 @@ h1 {
   }
 
   .genre-pills {
-    margin-bottom: 10px;
-  }
-
-  #player-card {
-    padding: 14px 12px;
-  }
-
-  .turntable-deck {
-    width: 110px;
-    height: 110px;
     margin-bottom: 8px;
   }
 
-  .disc-wrap {
+  .workout-filter-row {
+    margin-bottom: 8px;
+  }
+
+  #player-card {
+    padding: 12px 10px;
+  }
+
+  .turntable-deck {
     width: 95px;
     height: 95px;
+    margin-bottom: 6px;
+  }
+
+  .disc-wrap {
+    width: 82px;
+    height: 82px;
+  }
+
+  .disc-center-label {
+    width: 32px;
+    height: 32px;
+  }
+
+  .label-brand {
+    font-size: 0.44rem;
+  }
+
+  .label-sub {
+    font-size: 0.28rem;
   }
 
   .tonearm {
-    width: 32px;
-    height: 50px;
+    width: 28px;
+    height: 42px;
     right: 0;
   }
 
   #nowPlaying {
-    margin-top: 8px;
-    min-height: 38px;
+    margin-top: 6px;
+    min-height: 32px;
+  }
+
+  #nowPlayingText {
+    font-size: 0.82rem;
+  }
+
+  .track-badge-row {
+    margin-top: 4px;
   }
 
   .seek-row {
-    margin-top: 10px;
+    margin-top: 8px;
   }
 
   .controls {
-    margin-top: 10px;
+    margin-top: 8px;
     gap: 6px;
+  }
+
+  .queue-drawer-toggle {
+    margin-top: 10px;
+    padding-top: 8px;
   }
 }
 
 /* Accessibility */
 @media (prefers-reduced-motion: reduce) {
-
   .note,
   .disc-ring,
   .disc-core,
