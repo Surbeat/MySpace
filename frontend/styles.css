@@ -146,8 +146,7 @@ input { border: none; outline: none; background: none; }
 
 /* ── CONTAINER ──────────────────────────────────────────────────── */
 .header-inner,
-.section-inner,
-.footer-inner {
+.section-inner {
   max-width: var(--max-width);
   margin: 0 auto;
   padding: 0 var(--space-lg);
@@ -1600,25 +1599,37 @@ input { border: none; outline: none; background: none; }
 .site-footer {
   position: relative;
   z-index: 10;
-  padding: var(--space-lg);
+  width: 100%;
+  overflow: hidden;
 }
 
 .footer-divider {
   height: 1px;
   background: linear-gradient(to right, transparent, var(--border-wine), transparent);
-  margin-bottom: var(--space-lg);
+  width: 100%;
   max-width: var(--max-width);
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto var(--space-lg);
 }
 
 .footer-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--space-lg) var(--space-lg);
+  width: 100%;
+  box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: var(--space-md);
-  padding-bottom: var(--space-lg);
+}
+
+.footer-left {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+  min-width: 0;
 }
 
 .footer-brand {
@@ -1629,17 +1640,21 @@ input { border: none; outline: none; background: none; }
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  white-space: nowrap;
 }
 
 .footer-copy {
   font-size: 0.82rem;
   color: var(--text-muted);
-  margin-left: 6px;
+  white-space: nowrap;
 }
 
 .footer-right {
   font-size: 0.82rem;
   color: var(--text-muted);
+  min-width: 0;
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 
 .footer-right strong {
@@ -1896,7 +1911,15 @@ input { border: none; outline: none; background: none; }
   .social-grid { grid-template-columns: 1fr 1fr; }
 
   /* Footer */
-  .footer-inner { flex-direction: column; align-items: center; text-align: center; }
+  .footer-inner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 var(--space-md) var(--space-lg);
+    gap: var(--space-sm);
+  }
+  .footer-left { justify-content: center; }
+  .footer-right { text-align: center; font-size: 0.78rem; }
 
   /* Hide mobile bar body padding */
   body { padding-bottom: 60px; }
