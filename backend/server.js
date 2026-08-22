@@ -74,6 +74,23 @@ app.get('/api/health', (req, res) => {
   res.json({ status: 'ok', message: 'SurBeat Backend is running smoothly' });
 });
 
+app.get('/api/songs/:category', (req, res) => {
+  const { category = 'trending' } = req.params;
+  let catalogSongs = [];
+  try {
+    const catalogModule = require('../songsDatabaseCatalog');
+    if (catalogModule && typeof catalogModule.getDatabaseSongs === 'function') {
+      catalogSongs = catalogModule.getDatabaseSongs(category);
+    }
+  } catch (e) {}
+
+  return res.json({
+    success: true,
+    category,
+    tracks: catalogSongs
+  });
+});
+
 /**
  * DATABASE SONGS ENDPOINT
  * Directly retrieve or store songs in the database

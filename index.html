@@ -7,6 +7,16 @@
   <title>SurBeat — Feel the Soul of Indian Music</title>
   <meta name="description" content="SurBeat — Feel the soul of Indian music. Trending Hindi hits, evergreen classics & viral reel melodies playing one track at a time. Free, instant, premium.">
   <meta name="theme-color" content="#0a0208">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="SurBeat">
+  <meta name="application-name" content="SurBeat">
+  <meta name="format-detection" content="telephone=no">
+
+  <link rel="icon" type="image/svg+xml" href="icons/icon.svg">
+  <link rel="apple-touch-icon" href="icons/icon.svg">
+  <link rel="manifest" href="manifest.webmanifest">
 
   <!-- Open Graph -->
   <meta property="og:title" content="SurBeat — Indian Music, Reimagined">
@@ -511,7 +521,8 @@
     </div>
   </div>
 
-  <!-- Scripts — workoutCatalog first as it's referenced by script.js -->
+  <!-- Scripts — Database catalogs first as they provide fallback tracks -->
+  <script src="songsDatabaseCatalog.js"></script>
   <script src="workoutCatalog.js"></script>
   <script src="script.js"></script>
 

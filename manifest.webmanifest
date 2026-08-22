@@ -1,0 +1,55 @@
+{
+  "name": "SurBeat — Feel the Soul of Indian Music",
+  "short_name": "SurBeat",
+  "description": "Trending Hindi hits, evergreen classics & viral reel melodies with persistent background playback and lock-screen controls.",
+  "start_url": "./index.html",
+  "id": "/?source=pwa",
+  "scope": "./",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui", "browser"],
+  "orientation": "portrait-primary",
+  "background_color": "#0a0208",
+  "theme_color": "#0a0208",
+  "categories": [
+    "music",
+    "entertainment",
+    "lifestyle"
+  ],
+  "icons": [
+    {
+      "src": "icons/icon.svg",
+      "sizes": "192x192 256x256 384x384 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon.svg",
+      "sizes": "192x192 256x256 384x384 512x512",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Desi Reel Hits",
+      "short_name": "Reel Hits",
+      "description": "Play trending viral Hindi reel songs",
+      "url": "./index.html?cat=trending",
+      "icons": [{ "src": "icons/icon.svg", "sizes": "192x192", "type": "image/svg+xml" }]
+    },
+    {
+      "name": "Beast Mode Workout",
+      "short_name": "Workout",
+      "description": "Heavy gym motivation & desi workout beats",
+      "url": "./index.html?cat=workout",
+      "icons": [{ "src": "icons/icon.svg", "sizes": "192x192", "type": "image/svg+xml" }]
+    },
+    {
+      "name": "Awarapan Classics",
+      "short_name": "Awarapan",
+      "description": "Emraan Hashmi & Mustafa Zahid golden hits",
+      "url": "./index.html?cat=awarapan",
+      "icons": [{ "src": "icons/icon.svg", "sizes": "192x192", "type": "image/svg+xml" }]
+    }
+  ]
+}
