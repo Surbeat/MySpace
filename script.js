@@ -217,6 +217,8 @@ function escapeHtml(str) {
 // 5. LIVE CLOCK & LISTENER SIMULATION
 // ════════════════════════════════════════════════════════════════
 
+let clockTimer = null;
+
 function updateClock() {
   const el = document.getElementById('liveClock');
   if (!el) return;
@@ -224,6 +226,12 @@ function updateClock() {
   el.textContent = now.toLocaleTimeString([], {
     hour: '2-digit', minute: '2-digit', second: '2-digit'
   });
+}
+
+function startClock() {
+  updateClock();
+  if (clockTimer) clearInterval(clockTimer);
+  clockTimer = setInterval(updateClock, 1000);
 }
 
 let baseListeners = 28;
@@ -1669,6 +1677,7 @@ async function init() {
   DiscoverFeedManager.init();
 
   // Start real-time clock & organic listener count
+  startClock();
   startListenerFluctuation();
 
   // Check backend availability
