@@ -114,7 +114,8 @@ function normalizeTrack(raw) {
     artist: raw.artist || 'SurBeat Artist',
     album: raw.album || (CATEGORY_META[cat]?.name || cat),
     category: cat,
-    thumbnail: raw.thumbnail || raw.artwork || getYouTubeThumbnail(ytid, 'hqdefault')
+    thumbnail: raw.thumbnail || raw.artwork || getYouTubeThumbnail(ytid, 'hqdefault'),
+    audioUrl: raw.audioUrl || null
   };
 }
 
@@ -171,7 +172,8 @@ function savePersistedSettings() {
         artist: STATE.currentTrack.artist,
         album: STATE.currentTrack.album,
         category: STATE.currentTrack.category,
-        thumbnail: STATE.currentTrack.thumbnail
+        thumbnail: STATE.currentTrack.thumbnail,
+        audioUrl: STATE.currentTrack.audioUrl
       } : null,
       currentYoutubeId: STATE.currentTrack ? (STATE.currentTrack.youtubeId || STATE.currentTrack.videoId) : null
     };
@@ -380,13 +382,19 @@ function onTrackEnded() {
     return;
   }
 
-  const queue = STATE.playbackQueue.length > 0 ? STATE.playbackQueue : STATE.discoverTracks;
+  let queue = STATE.playbackQueue;
+  if (!queue || queue.length === 0) {
+    const cat = STATE.currentTrack?.category || STATE.currentCategory || 'trending';
+    queue = DiscoverFeedManager.getCategoryTracks(cat);
+    STATE.playbackQueue = queue;
+  }
+
   const currentId = STATE.currentTrack ? (STATE.currentTrack.youtubeId || STATE.currentTrack.videoId) : null;
   const currentIdx = queue.findIndex(t => (t.youtubeId || t.videoId) === currentId);
   const isLastTrack = currentIdx >= queue.length - 1;
 
   if (isLastTrack && STATE.repeatMode === 'off' && !STATE.isShuffle) {
-    // End of playlist with repeat off
+    // End of 200-song playlist with repeat off
     STATE.isPlaying = false;
     updatePlaybackUI(false);
     return;
@@ -405,21 +413,22 @@ function playTrack(track, queue = null) {
   const canonical = normalizeTrack(track);
   const ytid = canonical.youtubeId || canonical.videoId;
 
-  if (!isValidYouTubeId(ytid)) {
-    console.warn('❌ [SurBeat] Invalid track youtubeId:', canonical);
+  if (!isValidYouTubeId(ytid) && !canonical.audioUrl) {
+    console.warn('❌ [SurBeat] Invalid track youtubeId & audioUrl:', canonical);
     showError('This track is currently unavailable.');
     autoSkipNext();
     return;
   }
 
   // Developer Logging & Verification
-  console.log(`🎵 [DISCOVER CLICK] Title: "${canonical.title}" | Artist: "${canonical.artist}" | YouTube ID: ${ytid}`);
+  console.log(`🎵 [DISCOVER CLICK] Title: "${canonical.title}" | Artist: "${canonical.artist}" | Database ID: ${canonical.id} | YouTube ID: ${ytid}`);
 
-  // Update active playback queue if provided (e.g. from Discover batch)
+  // Maintain complete 200-song category catalog as active playback queue
+  const targetCategory = canonical.category || STATE.currentCategory || 'trending';
   if (Array.isArray(queue) && queue.length > 0) {
     STATE.playbackQueue = queue.map(normalizeTrack);
-  } else if (STATE.playbackQueue.length === 0 || !STATE.playbackQueue.some(t => (t.youtubeId || t.videoId) === ytid)) {
-    STATE.playbackQueue.push(canonical);
+  } else if (!STATE.playbackQueue || STATE.playbackQueue.length === 0 || (STATE.playbackQueue[0] && STATE.playbackQueue[0].category !== targetCategory)) {
+    STATE.playbackQueue = DiscoverFeedManager.getCategoryTracks(targetCategory);
   }
 
   // Store exact canonical track
@@ -437,10 +446,10 @@ function playTrack(track, queue = null) {
   showLoading(true);
   hideError();
 
-  console.log(`▶️ [PLAYER START] Title: "${canonical.title}" | Artist: "${canonical.artist}" | YouTube ID: ${ytid}`);
+  console.log(`▶️ [PLAYER START] Title: "${canonical.title}" | Artist: "${canonical.artist}" | Database ID: ${canonical.id} | YouTube ID: ${ytid}`);
 
   // Developer Assertion Check
-  if (ytid !== (STATE.currentTrack.youtubeId || STATE.currentTrack.videoId)) {
+  if (ytid && ytid !== (STATE.currentTrack.youtubeId || STATE.currentTrack.videoId)) {
     console.error('🚨 [CRITICAL TRACK MISMATCH ASSERTION FAILED]', canonical, STATE.currentTrack);
   }
 
@@ -471,7 +480,7 @@ function togglePlayPause() {
 
   if (!STATE.currentTrack) {
     if (STATE.discoverTracks.length > 0) {
-      playTrack(STATE.discoverTracks[0], STATE.discoverTracks);
+      playTrack(STATE.discoverTracks[0]);
     } else {
       loadCategoryAndPlay(STATE.currentCategory);
     }
@@ -494,7 +503,12 @@ function togglePlayPause() {
 }
 
 function playNext() {
-  const queue = STATE.playbackQueue.length > 0 ? STATE.playbackQueue : STATE.discoverTracks;
+  let queue = STATE.playbackQueue;
+  if (!queue || queue.length === 0) {
+    const cat = STATE.currentTrack?.category || STATE.currentCategory || 'trending';
+    queue = DiscoverFeedManager.getCategoryTracks(cat);
+    STATE.playbackQueue = queue;
+  }
   if (!queue || queue.length === 0) return;
 
   const currentId = STATE.currentTrack ? (STATE.currentTrack.youtubeId || STATE.currentTrack.videoId) : null;
@@ -515,7 +529,7 @@ function playNext() {
 
   const nextTrack = queue[nextIdx];
   if (nextTrack) {
-    playTrack(nextTrack, queue);
+    playTrack(nextTrack);
   }
 }
 
@@ -529,7 +543,12 @@ function playPrev() {
     return;
   }
 
-  const queue = STATE.playbackQueue.length > 0 ? STATE.playbackQueue : STATE.discoverTracks;
+  let queue = STATE.playbackQueue;
+  if (!queue || queue.length === 0) {
+    const cat = STATE.currentTrack?.category || STATE.currentCategory || 'trending';
+    queue = DiscoverFeedManager.getCategoryTracks(cat);
+    STATE.playbackQueue = queue;
+  }
   if (!queue || queue.length === 0) return;
 
   const currentId = STATE.currentTrack ? (STATE.currentTrack.youtubeId || STATE.currentTrack.videoId) : null;
@@ -545,7 +564,7 @@ function playPrev() {
 
   const prevTrack = queue[prevIdx];
   if (prevTrack) {
-    playTrack(prevTrack, queue);
+    playTrack(prevTrack);
   }
 }
 
@@ -1337,12 +1356,12 @@ function createTrackCard(track, index, categoryName, batchTracks) {
   `;
 
   card.addEventListener('click', () => {
-    playTrack(track, batchTracks || STATE.discoverTracks);
+    playTrack(track);
   });
   card.addEventListener('keydown', e => {
     if (e.key === 'Enter' || e.key === ' ') {
       e.preventDefault();
-      playTrack(track, batchTracks || STATE.discoverTracks);
+      playTrack(track);
     }
   });
 

@@ -18,7 +18,8 @@
       "artist": "Bad Newz | Vicky Kaushal | Triptii Dim…",
       "album": "Bad Newz",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/LK7-_dgAVQE/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/LK7-_dgAVQE/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-002",
@@ -28,7 +29,8 @@
       "artist": "IKKY | LATEST PUNJABI SONGS 2023",
       "album": "IKKY",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/cWMxCE2HTag/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/cWMxCE2HTag/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-003",
@@ -38,7 +40,8 @@
       "artist": "LATEST PUNJABI SONGS 2024",
       "album": "Desi Reel Hits",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/XTp5jaRU3Ws/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/XTp5jaRU3Ws/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-004",
@@ -48,7 +51,8 @@
       "artist": "Karan Aujla | Jaani | Amanninder Singh…",
       "album": "Karan Aujla",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/BtQp2U6hJII/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/BtQp2U6hJII/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-005",
@@ -58,7 +62,8 @@
       "artist": "Deep jandu | Punjabi Songs 2019",
       "album": "Deep jandu",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/o9PY6NsB3_E/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/o9PY6NsB3_E/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-006",
@@ -68,7 +73,8 @@
       "artist": "Tania | Ikky | Latest Punjabi Songs 2025",
       "album": "Tania",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/-YlmnPh-6rE/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/-YlmnPh-6rE/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-007",
@@ -78,7 +84,8 @@
       "artist": "Desi Crew | Latest Punjabi Songs",
       "album": "Desi Crew",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/x-KbnJ9fvJc/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/x-KbnJ9fvJc/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-008",
@@ -88,7 +95,8 @@
       "artist": "Mxrci | Latest Punjabi Songs 2024",
       "album": "Mxrci",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/vsWxs1tuwDk/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/vsWxs1tuwDk/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-009",
@@ -98,7 +106,8 @@
       "artist": "IKKY | Latest Punjabi Songs 2025",
       "album": "IKKY",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/5GCfYLguTIs/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/5GCfYLguTIs/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-010",
@@ -108,7 +117,8 @@
       "artist": "Karan Aujla, Nora Fatehi, Neha Kakkar,…",
       "album": "Desi Reel Hits",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/uChhQpHMmXE/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/uChhQpHMmXE/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-011",
@@ -118,7 +128,8 @@
       "artist": "3:00 AM Sessions",
       "album": "Desi Reel Hits",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/CeFQO9MQNqs/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/CeFQO9MQNqs/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-012",
@@ -128,7 +139,8 @@
       "artist": "Yeah Proof | New Punjabi Songs 2022",
       "album": "Yeah Proof",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/aFWDOFg7X2A/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/aFWDOFg7X2A/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-013",
@@ -138,7 +150,8 @@
       "artist": "Ikky | Making Memories | Latest Punjab…",
       "album": "Ikky",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/k85UB5b6pJU/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/k85UB5b6pJU/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-014",
@@ -148,7 +161,8 @@
       "artist": "Karan Aujla Mahira Sharma Latest Punja…",
       "album": "Desi Reel Hits",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/2sAzb3kraoQ/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/2sAzb3kraoQ/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-015",
@@ -158,7 +172,8 @@
       "artist": "Rupan Bal | Jay Trak | Latest Punjabi …",
       "album": "Rupan Bal",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/cHwQowOzAf0/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/cHwQowOzAf0/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-016",
@@ -168,7 +183,8 @@
       "artist": "Ikky | Four You EP | Latest Punjabi So…",
       "album": "Ikky",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/Guq9Vl8dK30/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/Guq9Vl8dK30/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-017",
@@ -178,7 +194,8 @@
       "artist": "Latest Punjabi Songs 2023",
       "album": "Desi Reel Hits",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/fRJ03btNsao/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/fRJ03btNsao/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-018",
@@ -188,7 +205,8 @@
       "artist": "New Punjabi Songs 2022",
       "album": "Desi Reel Hits",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/RuDsBrSczis/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/RuDsBrSczis/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-019",
@@ -198,7 +216,8 @@
       "artist": "Latest Punjabi Songs 2023",
       "album": "Desi Reel Hits",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/BXNxrT59MzQ/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/BXNxrT59MzQ/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-020",
@@ -208,7 +227,8 @@
       "artist": "Karan Aujla - Topic",
       "album": "Desi Reel Hits",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/U4qD41gPQMU/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/U4qD41gPQMU/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-021",
@@ -218,7 +238,8 @@
       "artist": "Stree 2 | Tamannaah Bhatia | Sachin–Ji…",
       "album": "Stree 2",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/roz9sXFkTuE/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/roz9sXFkTuE/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-022",
@@ -228,7 +249,8 @@
       "artist": "Stree 2| Tamannaah Bhatia, Rajkummar R…",
       "album": "Stree 2",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/hxMNYkLN7tI/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/hxMNYkLN7tI/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-023",
@@ -238,7 +260,8 @@
       "artist": "Shraddha Kapoor | Rajkummar Rao | Sach…",
       "album": "Shraddha Kapoor",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/nFgsBxw-zWQ/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/nFgsBxw-zWQ/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-024",
@@ -248,7 +271,8 @@
       "artist": "Dhurandhar | Ranveer, Aditya Dhar, Sha…",
       "album": "Dhurandhar",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/YyepU5ztLf4/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/YyepU5ztLf4/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-025",
@@ -258,7 +282,8 @@
       "artist": "Hans Raj Hans | Sonu Ke Titu Ki Sweety",
       "album": "Hans Raj Hans",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/xWi8nDUjHGA/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/xWi8nDUjHGA/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-026",
@@ -268,7 +293,8 @@
       "artist": "STREE | Mika Singh | Sachin-Jigar | Ra…",
       "album": "STREE",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/1xYZeDReUz4/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/1xYZeDReUz4/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-027",
@@ -278,7 +304,8 @@
       "artist": "Stree 2 | Tamannaah Bhatia, Rajkummar …",
       "album": "Stree 2",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/ri1Ar5nEq4s/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/ri1Ar5nEq4s/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-028",
@@ -288,7 +315,8 @@
       "artist": "STREE | Kriti Sanon | Badshah, Nikhita…",
       "album": "STREE",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/PkgStlsVaqw/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/PkgStlsVaqw/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-029",
@@ -298,7 +326,8 @@
       "artist": "Stree 2 | Varun Dhawan | Shraddha Kapo…",
       "album": "Stree 2",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/1-nnEM8chwo/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/1-nnEM8chwo/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-030",
@@ -308,7 +337,8 @@
       "artist": "Badshah | Sharvi Yadav | Preity Mukhun…",
       "album": "Badshah",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/Zrt77f7nTqY/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/Zrt77f7nTqY/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-031",
@@ -318,7 +348,8 @@
       "artist": "Sachin-Jigar - Topic",
       "album": "Desi Reel Hits",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/XtZTpxnrHAc/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/XtZTpxnrHAc/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-032",
@@ -328,7 +359,8 @@
       "artist": "Stree 2 | Shraddha Kapoor | Rajkummar …",
       "album": "Stree 2",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/cxKAtmvf-uM/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/cxKAtmvf-uM/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-033",
@@ -338,7 +370,8 @@
       "artist": "Dhurandhar | Ranveer Singh, Shashwat S…",
       "album": "Dhurandhar",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/v5jVX0QYwQo/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/v5jVX0QYwQo/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-034",
@@ -348,7 +381,8 @@
       "artist": "AKB FUNTUBE",
       "album": "Desi Reel Hits",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/2G2_pc4IfUs/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/2G2_pc4IfUs/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-035",
@@ -358,7 +392,8 @@
       "artist": "Lyrical, Stree 2, Tamannaah Bhatia,Raj…",
       "album": "Desi Reel Hits",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/tA3Cv-rYcy4/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/tA3Cv-rYcy4/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-036",
@@ -368,7 +403,8 @@
       "artist": "Official Trailer | Shraddha K | Rajkum…",
       "album": "Official Trailer",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/KVnheXywIbY/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/KVnheXywIbY/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-037",
@@ -378,7 +414,8 @@
       "artist": "Jasmine S, Sachet T, Jaani | Bhushan K…",
       "album": "Jasmine S, Sachet T, Jaani",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/NZ1EBaqDL0M/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/NZ1EBaqDL0M/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-038",
@@ -388,7 +425,8 @@
       "artist": "Stree 2 | Shraddha Kapoor | Rajkummar …",
       "album": "Stree 2",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/eehSZgV-ovc/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/eehSZgV-ovc/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-039",
@@ -398,7 +436,8 @@
       "artist": "Official Trailer | Shraddha K | Rajkum…",
       "album": "Official Trailer",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/VlvOgk5BHS4/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/VlvOgk5BHS4/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-040",
@@ -408,7 +447,8 @@
       "artist": "Stree 2 | Shraddha Kapoor, Rajkummar, …",
       "album": "Stree 2",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/0nrvPVnTWlc/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/0nrvPVnTWlc/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-041",
@@ -418,7 +458,8 @@
       "artist": "Udta Punjab | Amit Trivedi",
       "album": "Udta Punjab",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/EZh7my_RASk/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/EZh7my_RASk/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-042",
@@ -428,7 +469,8 @@
       "artist": "Jigra | Diljit Dosanjh | Alia Bhatt | …",
       "album": "Jigra",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/FewWUHxY79w/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/FewWUHxY79w/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-043",
@@ -438,7 +480,8 @@
       "artist": "Diljit Dosanjh | Alia Bhatt | Amit Tri…",
       "album": "Diljit Dosanjh",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/ZbX_nlzv7uU/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/ZbX_nlzv7uU/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-044",
@@ -448,7 +491,8 @@
       "artist": "Diljit Dosanjh - Topic",
       "album": "Desi Reel Hits",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/MnNQW_L7ovY/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/MnNQW_L7ovY/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-045",
@@ -458,7 +502,8 @@
       "artist": "Navneet Sumohan & Simran | Official Mu…",
       "album": "Navneet Sumohan & Simran",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/YDAWpY747TY/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/YDAWpY747TY/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-046",
@@ -468,7 +513,8 @@
       "artist": "Alia Bhatt |Vedang Raina | Chal Kudiye…",
       "album": "Alia Bhatt",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/T_lDkgKdTD8/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/T_lDkgKdTD8/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-047",
@@ -478,7 +524,8 @@
       "artist": "Jigra | Diljit Dosanjh | Alia Bhatt | …",
       "album": "Jigra",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/qH-fnpT7qgU/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/qH-fnpT7qgU/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-048",
@@ -488,7 +535,8 @@
       "artist": "What Jhumka | Tum Kya Mile | Ve Kamley…",
       "album": "What Jhumka",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/AhO7mWclXOc/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/AhO7mWclXOc/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-049",
@@ -498,7 +546,8 @@
       "artist": "Jigra | Diljit Dosanjh | Alia Bhatt | …",
       "album": "Jigra",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/FgHz5qNwtqg/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/FgHz5qNwtqg/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-050",
@@ -508,7 +557,8 @@
       "artist": "Jigra | Diljit Dosanjh | Alia Bhatt | …",
       "album": "Jigra",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/fnyd1hGyJIY/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/fnyd1hGyJIY/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-051",
@@ -518,7 +568,8 @@
       "artist": "Chal Kudiye, Dholida, Jhume Re Gori, A…",
       "album": "Desi Reel Hits",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/fAU6b5U26sM/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/fAU6b5U26sM/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-052",
@@ -528,7 +579,8 @@
       "artist": "What Jhumka | Ve Kamleya | Kudmayi | D…",
       "album": "What Jhumka",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/Z23mOrp8i24/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/Z23mOrp8i24/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-053",
@@ -538,7 +590,8 @@
       "artist": "Bhairava Anthem | Love Ya | Chal Kudiye",
       "album": "Bhairava Anthem",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/iAv5WMNRX90/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/iAv5WMNRX90/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-054",
@@ -548,7 +601,8 @@
       "artist": "Arthat - Topic",
       "album": "Desi Reel Hits",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/H9ogpITFBYM/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/H9ogpITFBYM/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-055",
@@ -558,7 +612,8 @@
       "artist": "Jigra | Alia Bhatt, Diljit Dosanjh | C…",
       "album": "Jigra",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/4VqbPwVYq1s/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/4VqbPwVYq1s/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-056",
@@ -568,7 +623,8 @@
       "artist": "Diljit Dosanjh | Alia Bhatt | Manpreet…",
       "album": "Diljit Dosanjh",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/NV7XJe4nqJ8/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/NV7XJe4nqJ8/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-057",
@@ -578,7 +634,8 @@
       "artist": "Diljit Dosanjh | Alia Bhatt | Jigra | …",
       "album": "Diljit Dosanjh",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/JcpiVAbAnYg/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/JcpiVAbAnYg/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-058",
@@ -588,7 +645,8 @@
       "artist": "Alia Bhatt | Vedang Raina | Tenu Sang …",
       "album": "Alia Bhatt",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/Bpj3JYLCCuA/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/Bpj3JYLCCuA/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-059",
@@ -598,7 +656,8 @@
       "artist": "Alia Bhatt|Vedang Raina|Tenu Sang Rakh…",
       "album": "Alia Bhatt",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/QnQRMHkXzZ4/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/QnQRMHkXzZ4/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-060",
@@ -608,7 +667,8 @@
       "artist": "Jigra | Diljit Dosanjh | Alia Bhatt | …",
       "album": "Jigra",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/j3nADe5euQw/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/j3nADe5euQw/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-061",
@@ -618,7 +678,8 @@
       "artist": "Shah Rukh Khan | Taapsee Pannu | Prita…",
       "album": "Shah Rukh Khan",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/Etkd-07gnxM/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/Etkd-07gnxM/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-062",
@@ -628,7 +689,8 @@
       "artist": "Shah Rukh Khan | Taapsee Pannu | Prita…",
       "album": "Shah Rukh Khan",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/Zlqf9cuaOBw/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/Zlqf9cuaOBw/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-063",
@@ -638,7 +700,8 @@
       "artist": "Dunki",
       "album": "Desi Reel Hits",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/7CdpHATpXXU/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/7CdpHATpXXU/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-064",
@@ -648,7 +711,8 @@
       "artist": "Arijit Singh - Topic",
       "album": "Desi Reel Hits",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/qnQCd_nZn_g/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/qnQCd_nZn_g/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-065",
@@ -658,7 +722,8 @@
       "artist": "Jay Guldekar | Arijit Singh | Tum Tak …",
       "album": "Jay Guldekar",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/PesrFCmjdNI/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/PesrFCmjdNI/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-066",
@@ -668,7 +733,8 @@
       "artist": "Taapsee Pannu | Pritam | Arijit Singh …",
       "album": "Taapsee Pannu",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/bjfKyIAlsZs/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/bjfKyIAlsZs/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-067",
@@ -678,7 +744,8 @@
       "artist": "Pritam, Arijit Singh | Dunki | SR Lofi",
       "album": "Pritam, Arijit Singh",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/BwiaxAos5cg/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/BwiaxAos5cg/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-068",
@@ -688,7 +755,8 @@
       "artist": "Slowed + Reverb | Arijit Singh, Pritam…",
       "album": "Slowed + Reverb",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/-yX2trMgn5s/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/-yX2trMgn5s/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-069",
@@ -698,7 +766,8 @@
       "artist": "Dunki | Shah Rukh Khan, Taapsee Pannu …",
       "album": "Dunki",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/pCYojfACnzQ/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/pCYojfACnzQ/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-070",
@@ -708,7 +777,8 @@
       "artist": "Lisda Music",
       "album": "Desi Reel Hits",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/sv26LXD4GbI/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/sv26LXD4GbI/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-071",
@@ -718,7 +788,8 @@
       "artist": "Rajkumar Hirani | Taapsee Pannu | Prit…",
       "album": "Rajkumar Hirani",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/1tsCjcq0G-U/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/1tsCjcq0G-U/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-072",
@@ -728,7 +799,8 @@
       "artist": "Pritam | Irshad Kamil | Shah Rukh Khan…",
       "album": "Pritam",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/sVPKUMyOmg0/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/sVPKUMyOmg0/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-073",
@@ -738,7 +810,8 @@
       "artist": "Shah Rukh Khan | Taapsee Pannu | Prita…",
       "album": "Shah Rukh Khan",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/E-Qzp9_uzlA/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/E-Qzp9_uzlA/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-074",
@@ -748,7 +821,8 @@
       "artist": "Shah Rukh Khan | Taapsee Pannu | Prita…",
       "album": "Shah Rukh Khan",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/Ref5bT8Tuk8/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/Ref5bT8Tuk8/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-075",
@@ -758,7 +832,8 @@
       "artist": "Shah Rukh Khan | Taapsee Pannu | Prita…",
       "album": "Shah Rukh Khan",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/yWo9_7I58Bc/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/yWo9_7I58Bc/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-076",
@@ -768,7 +843,8 @@
       "artist": "Dunki | Arijit Singh | [ Slowed + reve…",
       "album": "Dunki",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/Xb82Eexgyeo/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/Xb82Eexgyeo/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-077",
@@ -778,7 +854,8 @@
       "artist": "Shah Rukh Khan, Taapsee Pannu | Arijit…",
       "album": "Shah Rukh Khan, Taapsee Pannu",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/q8Mhq2GVM9M/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/q8Mhq2GVM9M/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-078",
@@ -788,7 +865,8 @@
       "artist": "Shah Rukh Khan | Taapsee Pannu | Prita…",
       "album": "Shah Rukh Khan",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/2o1Bv1DyUN0/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/2o1Bv1DyUN0/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-079",
@@ -798,7 +876,8 @@
       "artist": "Shah Rukh Khan | Taapsee Pannu | Prita…",
       "album": "Shah Rukh Khan",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/AUvYe_ZgLOY/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/AUvYe_ZgLOY/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-080",
@@ -808,7 +887,8 @@
       "artist": "Dunki | Raanjhanaa | Pritam | Arijit S…",
       "album": "Dunki",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/yktlUKTWlJg/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/yktlUKTWlJg/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-081",
@@ -818,7 +898,8 @@
       "artist": "Rocky Aur Rani Kii Prem Kahaani | Ranv…",
       "album": "Rocky Aur Rani Kii Prem Kahaani",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/QXJyMpxd210/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/QXJyMpxd210/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-082",
@@ -828,7 +909,8 @@
       "artist": "Rocky Aur Rani Kii Prem Kahaani | Ranv…",
       "album": "Rocky Aur Rani Kii Prem Kahaani",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/3qpxJEp4Ec4/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/3qpxJEp4Ec4/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-083",
@@ -838,7 +920,8 @@
       "artist": "Ranveer | Alia | Pritam | Amitabh | Ar…",
       "album": "Ranveer",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/taRBVfDRukY/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/taRBVfDRukY/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-084",
@@ -848,7 +931,8 @@
       "artist": "Rocky Aur Rani Kii Prem Kahaani, Ranve…",
       "album": "Desi Reel Hits",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/hacByYwJ_a4/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/hacByYwJ_a4/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-085",
@@ -858,7 +942,8 @@
       "artist": "Pritam - Topic",
       "album": "Desi Reel Hits",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/GkJ_wZy0iB4/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/GkJ_wZy0iB4/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-086",
@@ -868,7 +953,8 @@
       "artist": "Ranveer, Alia | Pritam",
       "album": "Ranveer, Alia",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/IYK34I7y5O8/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/IYK34I7y5O8/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-087",
@@ -878,7 +964,8 @@
       "artist": "#aseeskaur #biggboss",
       "album": "Desi Reel Hits",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/aa7_itx64eI/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/aa7_itx64eI/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-088",
@@ -888,7 +975,8 @@
       "artist": "Rocky Aur Rani Kii Prem Kahaani | Ranv…",
       "album": "Rocky Aur Rani Kii Prem Kahaani",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/AdYOIQTyAAw/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/AdYOIQTyAAw/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-089",
@@ -898,7 +986,8 @@
       "artist": "Lyrical 7",
       "album": "Desi Reel Hits",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/TjXH_P7Khhg/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/TjXH_P7Khhg/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-090",
@@ -908,7 +997,8 @@
       "artist": "Rocky Aur Rani Kii Prem Kahaani | Ranv…",
       "album": "Rocky Aur Rani Kii Prem Kahaani",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/mHdneo9_yLM/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/mHdneo9_yLM/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-091",
@@ -918,7 +1008,8 @@
       "artist": "Rocky Aur Rani Kii Prem Kahaani | Ranv…",
       "album": "Rocky Aur Rani Kii Prem Kahaani",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/vee_P6pIv_E/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/vee_P6pIv_E/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-092",
@@ -928,7 +1019,8 @@
       "artist": "Rocky Aur Rani Kii Prem Kahaani | Ranv…",
       "album": "Rocky Aur Rani Kii Prem Kahaani",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/ETMul5GVk_Y/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/ETMul5GVk_Y/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-093",
@@ -938,7 +1030,8 @@
       "artist": "Rocky Aur Rani Kii Prem Kahaani, Ranve…",
       "album": "Desi Reel Hits",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/Pz_FkqA2x6s/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/Pz_FkqA2x6s/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-094",
@@ -948,7 +1041,8 @@
       "artist": "Rocky Aur Rani Kii Prem Kahaani | Ranv…",
       "album": "Rocky Aur Rani Kii Prem Kahaani",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/FBTgulBOUy0/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/FBTgulBOUy0/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-095",
@@ -958,7 +1052,8 @@
       "artist": "Pritam' s Version (From \"Rocky Aur Ran…",
       "album": "Desi Reel Hits",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/OweU4sBBqGI/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/OweU4sBBqGI/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-096",
@@ -968,7 +1063,8 @@
       "artist": "Daler Mehndi, Pritam | Dangal",
       "album": "Daler Mehndi, Pritam",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/2Vv-BfVoq4g/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/2Vv-BfVoq4g/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-097",
@@ -978,7 +1074,8 @@
       "artist": "Arijit Singh, Shreya Ghoshal | SR Lofi",
       "album": "Arijit Singh, Shreya Ghoshal",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/9uIIdCBRNRc/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/9uIIdCBRNRc/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-098",
@@ -988,7 +1085,8 @@
       "artist": "Arijit Singh, Shreya Ghoshal |",
       "album": "Arijit Singh, Shreya Ghoshal",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/0avk5g_9Cgk/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/0avk5g_9Cgk/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-099",
@@ -998,7 +1096,8 @@
       "artist": "Rocky Aur Rani Kii Prem Kahaani | Ranv…",
       "album": "Rocky Aur Rani Kii Prem Kahaani",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/44Aq9OZtM_M/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/44Aq9OZtM_M/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-100",
@@ -1008,7 +1107,8 @@
       "artist": "Rocky Aur Rani Kii Prem Kahaani | Ranv…",
       "album": "Rocky Aur Rani Kii Prem Kahaani",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/cpfns3c5AQc/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/cpfns3c5AQc/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-101",
@@ -1018,7 +1118,8 @@
       "artist": "Ranbir Kapoor, Alia Bhatt | Pritam | A…",
       "album": "Ranbir Kapoor, Alia Bhatt",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/BddP6PYo2gs/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/BddP6PYo2gs/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-102",
@@ -1028,7 +1129,8 @@
       "artist": "Jasleen Royal",
       "album": "Desi Reel Hits",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/RLzC55ai0eo/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/RLzC55ai0eo/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-103",
@@ -1038,7 +1140,8 @@
       "artist": "Extended Film Version|Brahmāstra|Amita…",
       "album": "Extended Film Version",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/mNuhKUOD_A0/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/mNuhKUOD_A0/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-104",
@@ -1048,7 +1151,8 @@
       "artist": "Brahmāstra | Ranbir | Alia | Pritam | …",
       "album": "Brahmāstra",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/6mr4cYJ7yew/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/6mr4cYJ7yew/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-105",
@@ -1058,7 +1162,8 @@
       "artist": "Arijit Singh - Topic",
       "album": "Desi Reel Hits",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/NJAv_7lHUIU/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/NJAv_7lHUIU/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-106",
@@ -1068,7 +1173,8 @@
       "artist": "Ranbir Kapoor | Alia Bhatt | Pritam | …",
       "album": "Ranbir Kapoor",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/xfMN4SpIxIA/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/xfMN4SpIxIA/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-107",
@@ -1078,7 +1184,8 @@
       "artist": "Chillout Heart | Arijit Singh, Shreya …",
       "album": "Chillout Heart",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/zCGck2spPsU/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/zCGck2spPsU/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-108",
@@ -1088,7 +1195,8 @@
       "artist": "Amitabh B | Ranbir | Alia | Pritam | S…",
       "album": "Amitabh B",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/K3B8-klo5xc/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/K3B8-klo5xc/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-109",
@@ -1098,7 +1206,8 @@
       "artist": "Official Lyric|Brahmāstra|Ranbir, Alia…",
       "album": "Official Lyric",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/g6fnFALEseI/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/g6fnFALEseI/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-110",
@@ -1108,7 +1217,8 @@
       "artist": "Arijit Singh | Kesariya Tera Ishq Hai …",
       "album": "Arijit Singh",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/W1S9AbHpWFY/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/W1S9AbHpWFY/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-111",
@@ -1118,7 +1228,8 @@
       "artist": "Kesariya Teaser | Ranbir | Alia | Arij…",
       "album": "Kesariya Teaser",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/1qeujW9f4So/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/1qeujW9f4So/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-112",
@@ -1128,7 +1239,8 @@
       "artist": "Arijit Singh | Kesariya Tera Ishq Hai …",
       "album": "Arijit Singh",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/k6GjS_Hzg8I/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/k6GjS_Hzg8I/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-113",
@@ -1138,7 +1250,8 @@
       "artist": "Film Version |Brahmāstra |Amitabh B|Ra…",
       "album": "Film Version",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/PLIsDVqACZ0/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/PLIsDVqACZ0/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-114",
@@ -1148,7 +1261,8 @@
       "artist": "Arijit Singh | Ranbir Kapoor | Alia Bh…",
       "album": "Arijit Singh",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/P7yRYiBiV3g/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/P7yRYiBiV3g/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-115",
@@ -1158,7 +1272,8 @@
       "artist": "Kesariya Rangu | Ranbir | Alia | Prita…",
       "album": "Kesariya Rangu",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/WCDXUgvddR4/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/WCDXUgvddR4/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-116",
@@ -1168,7 +1283,8 @@
       "artist": "Amitabh B | Ranbir | Alia | Pritam | A…",
       "album": "Amitabh B",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/aDOs442shYU/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/aDOs442shYU/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-117",
@@ -1178,7 +1294,8 @@
       "artist": "Sukhwinder Singh, Shadab Faridi | Sultan",
       "album": "Sukhwinder Singh, Shadab Faridi",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/W0dmYnZ9_hE/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/W0dmYnZ9_hE/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-118",
@@ -1188,7 +1305,8 @@
       "artist": "Brahmastra",
       "album": "Desi Reel Hits",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/532toSHe57E/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/532toSHe57E/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-119",
@@ -1198,7 +1316,8 @@
       "artist": "Deva Deva | Amitabh B | Ranbir | Alia …",
       "album": "Deva Deva",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/jZba76mHdg4/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/jZba76mHdg4/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-120",
@@ -1208,7 +1327,8 @@
       "artist": "Arijit Singh | Kesariya Tera Ishq Hai …",
       "album": "Arijit Singh",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/HLDFbuGhFVU/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/HLDFbuGhFVU/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-121",
@@ -1218,7 +1338,8 @@
       "artist": "Jasleen Royal - Topic",
       "album": "Desi Reel Hits",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/4VwtfInG-LU/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/4VwtfInG-LU/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-122",
@@ -1228,7 +1349,8 @@
       "artist": "Indie India",
       "album": "Desi Reel Hits",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/ObiCEWmYH5Y/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/ObiCEWmYH5Y/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-123",
@@ -1238,7 +1360,8 @@
       "artist": "Arijit Singh, Jasleen Royal | SR Lofi",
       "album": "Arijit Singh, Jasleen Royal",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/Q11jKrhG7m4/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/Q11jKrhG7m4/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-124",
@@ -1248,7 +1371,8 @@
       "artist": "Ps Official",
       "album": "Desi Reel Hits",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/WJumea3vEpw/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/WJumea3vEpw/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-125",
@@ -1258,7 +1382,8 @@
       "artist": "Dulquer Salmaan | Aditya| Taani | Memo…",
       "album": "Dulquer Salmaan",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/IhLJRgr-r0o/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/IhLJRgr-r0o/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-126",
@@ -1268,7 +1393,8 @@
       "artist": "Jasleen Royal - Topic",
       "album": "Desi Reel Hits",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/SW2uyfNqHg4/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/SW2uyfNqHg4/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-127",
@@ -1278,7 +1404,8 @@
       "artist": "funny taught",
       "album": "Desi Reel Hits",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/jC1oFRhElEw/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/jC1oFRhElEw/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-128",
@@ -1288,7 +1415,8 @@
       "artist": "Dj Sunny | Arijit Singh & Jasleen Roya…",
       "album": "Dj Sunny",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/gslkqoBV5SA/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/gslkqoBV5SA/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-129",
@@ -1298,7 +1426,8 @@
       "artist": "Shubham Vlog Dehati",
       "album": "Desi Reel Hits",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/Gqnnrop26Sw/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/Gqnnrop26Sw/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-130",
@@ -1308,7 +1437,8 @@
       "artist": "Winnner Boy",
       "album": "Desi Reel Hits",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/9uHS97epnYc/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/9uHS97epnYc/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-131",
@@ -1318,7 +1448,8 @@
       "artist": "CK Communication",
       "album": "Desi Reel Hits",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/BbGNpf5vDTE/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/BbGNpf5vDTE/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-132",
@@ -1328,7 +1459,8 @@
       "artist": "Flute Siva | Jasleen Royal | Arijit Si…",
       "album": "Flute Siva",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/Miz5wvLmXPI/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/Miz5wvLmXPI/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-133",
@@ -1338,7 +1470,8 @@
       "artist": "Dulquer Salmaan | Aditya| Taani | Memo…",
       "album": "Dulquer Salmaan",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/AdKdqAqsnsY/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/AdKdqAqsnsY/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-134",
@@ -1348,7 +1481,8 @@
       "artist": "GP VIDEOS",
       "album": "Desi Reel Hits",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/K0I124SPxmI/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/K0I124SPxmI/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-135",
@@ -1358,7 +1492,8 @@
       "artist": "vlog video ",
       "album": "Desi Reel Hits",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/npKOkLWrZeE/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/npKOkLWrZeE/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-136",
@@ -1368,7 +1503,8 @@
       "artist": "Marwadi Madam",
       "album": "Desi Reel Hits",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/gX3Gw-3wxfs/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/gX3Gw-3wxfs/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-137",
@@ -1378,7 +1514,8 @@
       "artist": "Siddharth Mahadevan | Bhaag Milkha Bhaag",
       "album": "Siddharth Mahadevan",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/k4q7Yg_Z49U/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/k4q7Yg_Z49U/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-138",
@@ -1388,7 +1525,8 @@
       "artist": "Arijit Singh, Jasleen Royal, Aditya Sh…",
       "album": "Desi Reel Hits",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/P6G4QoKwnzI/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/P6G4QoKwnzI/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-139",
@@ -1398,7 +1536,8 @@
       "artist": "Singer Suresh bhati official ",
       "album": "Desi Reel Hits",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/t5PEt4aXI58/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/t5PEt4aXI58/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-140",
@@ -1408,7 +1547,8 @@
       "artist": "Shah Rukh Khan, Deepika | Vishal & She…",
       "album": "Shah Rukh Khan, Deepika",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/YxWlaYCA8MU/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/YxWlaYCA8MU/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-141",
@@ -1418,7 +1558,8 @@
       "artist": "Shah Rukh Khan | Nayanthara | Atlee | …",
       "album": "Shah Rukh Khan",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/VAdGW7QDJiU/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/VAdGW7QDJiU/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-142",
@@ -1428,7 +1569,8 @@
       "artist": "Arijit Singh - Topic",
       "album": "Desi Reel Hits",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/V_jp5_VAzXk/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/V_jp5_VAzXk/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-143",
@@ -1438,7 +1580,8 @@
       "artist": "Shahrukh Khan | Atlee | Anirudh | Naya…",
       "album": "Shahrukh Khan",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/8eYG5QGZAZs/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/8eYG5QGZAZs/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-144",
@@ -1448,7 +1591,8 @@
       "artist": "revibe | Viral Insta Reels, TikTok Rem…",
       "album": "revibe",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/9M_ZKSmxb_s/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/9M_ZKSmxb_s/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-145",
@@ -1458,7 +1602,8 @@
       "artist": "Shah Rukh Khan | Nayanthara | Atlee | …",
       "album": "Shah Rukh Khan",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/wr9M-CoxP7A/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/wr9M-CoxP7A/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-146",
@@ -1468,7 +1613,8 @@
       "artist": "Shah Rukh Khan | Deepika | Atlee | Ani…",
       "album": "Shah Rukh Khan",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/RpC85RO0okA/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/RpC85RO0okA/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-147",
@@ -1478,7 +1624,8 @@
       "artist": "Shah Rukh Khan | Nayanthara | Atlee, A…",
       "album": "Shah Rukh Khan",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/Bi7sSC046dk/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/Bi7sSC046dk/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-148",
@@ -1488,7 +1635,8 @@
       "artist": "Shah Rukh Khan |Atlee |Anirudh |Nayant…",
       "album": "Shah Rukh Khan",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/LdHe2NCj3JE/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/LdHe2NCj3JE/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-149",
@@ -1498,7 +1646,8 @@
       "artist": "Choreography - Skool of hip hop",
       "album": "Desi Reel Hits",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/wwYiyxR7c3c/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/wwYiyxR7c3c/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-150",
@@ -1508,7 +1657,8 @@
       "artist": "nine lofi | Lofi Music",
       "album": "nine lofi",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/obMNB-n6PE4/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/obMNB-n6PE4/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-151",
@@ -1518,7 +1668,8 @@
       "artist": "T-Series",
       "album": "Desi Reel Hits",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/FNoNmaWGoRg/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/FNoNmaWGoRg/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-152",
@@ -1528,7 +1679,8 @@
       "artist": "Shah Rukh Khan | Nayanthara | Atlee | …",
       "album": "Shah Rukh Khan",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/F_jU1KI82kw/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/F_jU1KI82kw/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-153",
@@ -1538,7 +1690,8 @@
       "artist": "JAWAN | Dance Cover | Nainika & Thanaya",
       "album": "JAWAN",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/oiSIKKlvqVE/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/oiSIKKlvqVE/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-154",
@@ -1548,7 +1701,8 @@
       "artist": "Shahrukh Khan | Anirudh | Arijit Singh…",
       "album": "Shahrukh Khan",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/s4yy40jRTu4/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/s4yy40jRTu4/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-155",
@@ -1558,7 +1712,8 @@
       "artist": "Arijit Singh, Shilpa Rao | Jawan | SR …",
       "album": "Arijit Singh, Shilpa Rao",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/g98mwbjcmwU/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/g98mwbjcmwU/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-156",
@@ -1568,7 +1723,8 @@
       "artist": "SSA Creation",
       "album": "Desi Reel Hits",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/yAe3qndvs7k/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/yAe3qndvs7k/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-157",
@@ -1578,7 +1734,8 @@
       "artist": "Shah Rukh Khan | Nayanthara | Atlee | …",
       "album": "Shah Rukh Khan",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/Ah6dEARljtE/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/Ah6dEARljtE/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-158",
@@ -1588,7 +1745,8 @@
       "artist": "Bhavya Singh Kushwah",
       "album": "Desi Reel Hits",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/EZ470Lj1MAQ/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/EZ470Lj1MAQ/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-159",
@@ -1598,7 +1756,8 @@
       "artist": "8D JS Creation",
       "album": "Desi Reel Hits",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/WqfCQ93c9TY/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/WqfCQ93c9TY/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-160",
@@ -1608,7 +1767,8 @@
       "artist": "Pathaan | Shah Rukh Khan, Deepika Padu…",
       "album": "Pathaan",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/huxhqphtDrM/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/huxhqphtDrM/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-161",
@@ -1618,7 +1778,8 @@
       "artist": "Full Song | Tiger Zinda Hai, Salman Kh…",
       "album": "Full Song",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/7TRFf7uUfhQ/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/7TRFf7uUfhQ/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-162",
@@ -1628,7 +1789,8 @@
       "artist": "Arijit Singh - Topic",
       "album": "Desi Reel Hits",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/AU9AdGIdWZs/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/AU9AdGIdWZs/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-163",
@@ -1638,7 +1800,8 @@
       "artist": "Deepak Tulsyan Choreography | G M Danc…",
       "album": "Deepak Tulsyan Choreography",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/uUGew2W87cU/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/uUGew2W87cU/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-164",
@@ -1648,7 +1811,8 @@
       "artist": "Shah Rukh Khan, Deepika | Vishal & She…",
       "album": "Shah Rukh Khan, Deepika",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/EoKOuVGYMSw/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/EoKOuVGYMSw/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-165",
@@ -1658,7 +1822,8 @@
       "artist": "YRF",
       "album": "Desi Reel Hits",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/bODY50rqPZg/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/bODY50rqPZg/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-166",
@@ -1668,7 +1833,8 @@
       "artist": "Pathaan | Shah Rukh Khan, Deepika Padu…",
       "album": "Pathaan",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/7n562hVNKDc/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/7n562hVNKDc/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-167",
@@ -1678,7 +1844,8 @@
       "artist": "Vina Fan Version Parodi Recreate",
       "album": "Desi Reel Hits",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/VtThmt2paH8/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/VtThmt2paH8/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-168",
@@ -1688,7 +1855,8 @@
       "artist": "Live dance | Nainika & Thanaya",
       "album": "Live dance",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/C1524HGvznI/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/C1524HGvznI/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-169",
@@ -1698,7 +1866,8 @@
       "artist": "Jhoome Jo Pathaan | Shah Rukh Khan, De…",
       "album": "Jhoome Jo Pathaan",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/mvdsiQ5fl24/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/mvdsiQ5fl24/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-170",
@@ -1708,7 +1877,8 @@
       "artist": "Pathaan | Shah Rukh Khan | Deepika Pad…",
       "album": "Pathaan",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/MXCHqAEgnN4/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/MXCHqAEgnN4/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-171",
@@ -1718,7 +1888,8 @@
       "artist": "Neha Kakkar | Vishal Dadlani | Perform…",
       "album": "Neha Kakkar",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/y4QVHzYHiU0/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/y4QVHzYHiU0/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-172",
@@ -1728,7 +1899,8 @@
       "artist": "Shah Rukh Khan, Deepika | Arijit Singh",
       "album": "Shah Rukh Khan, Deepika",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/QtTM9X26bTk/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/QtTM9X26bTk/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-173",
@@ -1738,7 +1910,8 @@
       "artist": "Pathaan | Shah Rukh Khan | Deepika Pad…",
       "album": "Pathaan",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/uSSFACVucbs/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/uSSFACVucbs/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-174",
@@ -1748,7 +1921,8 @@
       "artist": "Shah Rukh Khan,Deepika Vishal & Sheykh…",
       "album": "Desi Reel Hits",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/OIjbVS9CFL4/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/OIjbVS9CFL4/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-175",
@@ -1758,7 +1932,8 @@
       "artist": "Jhoome Jo Pathaan | Pathaan | Shah Ruk…",
       "album": "Jhoome Jo Pathaan",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/dzKSxDEAMDY/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/dzKSxDEAMDY/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-176",
@@ -1768,7 +1943,8 @@
       "artist": "Dance cover | Nainika & Thanaya",
       "album": "Dance cover",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/UeH6_2qNaq8/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/UeH6_2qNaq8/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-177",
@@ -1778,7 +1954,8 @@
       "artist": "Shahrukh Khan, Deepika | Vishal & Shek…",
       "album": "Shahrukh Khan, Deepika",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/NBgA2OxWt9k/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/NBgA2OxWt9k/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-178",
@@ -1788,7 +1965,8 @@
       "artist": "Shah Rukh Khan, Deepika Padukone",
       "album": "Desi Reel Hits",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/pacvj3n-RLw/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/pacvj3n-RLw/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-179",
@@ -1798,7 +1976,8 @@
       "artist": "Besharam | Ranbir Kapoor | Abhijeet Bh…",
       "album": "Besharam",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/udgrClXV26Y/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/udgrClXV26Y/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-180",
@@ -1808,7 +1987,8 @@
       "artist": "Shilpa Rao - Topic",
       "album": "Desi Reel Hits",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/Uo_OSlQZlgY/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/Uo_OSlQZlgY/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-181",
@@ -1818,7 +1998,8 @@
       "artist": "Pathaan | Shah Rukh Khan, Deepika Padu…",
       "album": "Pathaan",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/Bu_89PkVqew/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/Bu_89PkVqew/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-182",
@@ -1828,7 +2009,8 @@
       "artist": "Is Bollywood Hinduphobic? | Shah Rukh …",
       "album": "Is Bollywood Hinduphobic?",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/Hu-Bdubnnj0/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/Hu-Bdubnnj0/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-183",
@@ -1838,7 +2020,8 @@
       "artist": "shahrukh khan, deepika p | Besharam Ra…",
       "album": "shahrukh khan, deepika p",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/U5yCBCWGbBw/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/U5yCBCWGbBw/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-184",
@@ -1848,7 +2031,8 @@
       "artist": "Shah Rukh Khan, Deepika Padukone | Vis…",
       "album": "Shah Rukh Khan, Deepika Padukone",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/8eDZpQpxnTU/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/8eDZpQpxnTU/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-185",
@@ -1858,7 +2042,8 @@
       "artist": "Pathaan | SRK & Deepika Padukone | Shi…",
       "album": "Pathaan",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/P0dk_SF7Eao/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/P0dk_SF7Eao/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-186",
@@ -1868,7 +2053,8 @@
       "artist": "Shilpa Rao , Shahrukh Khan, Deepika Pa…",
       "album": "Desi Reel Hits",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/MkkG-7HL7Bg/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/MkkG-7HL7Bg/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-187",
@@ -1878,7 +2064,8 @@
       "artist": "Shah Rukh Khan, Deepika P | Vishal & S…",
       "album": "Shah Rukh Khan, Deepika P",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/cI9iguIX87Y/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/cI9iguIX87Y/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-188",
@@ -1888,7 +2075,8 @@
       "artist": "Pathaan | Shah Rukh Khan | Deepika Pad…",
       "album": "Pathaan",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/p7f685ljJL8/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/p7f685ljJL8/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-189",
@@ -1898,7 +2086,8 @@
       "artist": "Pathaan | SHUFFLE - RAVE | Elif Karama…",
       "album": "Pathaan",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/o8-Gc4h4yVY/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/o8-Gc4h4yVY/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-190",
@@ -1908,7 +2097,8 @@
       "artist": "Deepika Padukone (Pathaan) Moj Viral S…",
       "album": "Desi Reel Hits",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/poMt_tQAjEg/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/poMt_tQAjEg/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-191",
@@ -1918,7 +2108,8 @@
       "artist": "Pathaan | Shah Rukh Khan, Deepika Padu…",
       "album": "Pathaan",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/pqoLQWf7Ync/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/pqoLQWf7Ync/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-192",
@@ -1928,7 +2119,8 @@
       "artist": "Deeksha Sharma",
       "album": "Desi Reel Hits",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/0Vpv8JEX_Ao/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/0Vpv8JEX_Ao/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-193",
@@ -1938,7 +2130,8 @@
       "artist": "Varun Dhawan, Kriti Sanon| Sachin-Jiga…",
       "album": "Varun Dhawan, Kriti Sanon",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/ElZfdU54Cp8/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/ElZfdU54Cp8/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-194",
@@ -1948,7 +2141,8 @@
       "artist": "Arijit Singh - Topic",
       "album": "Desi Reel Hits",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/YALvuUpY_b0/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/YALvuUpY_b0/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-195",
@@ -1958,7 +2152,8 @@
       "artist": "Bhediya | Varun Dhawan, Kriti Sanon| S…",
       "album": "Bhediya",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/u2NAuswnTKs/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/u2NAuswnTKs/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-196",
@@ -1968,7 +2163,8 @@
       "artist": "Varun Dhawan & Kriti Sanon | Sachin-Ji…",
       "album": "Varun Dhawan & Kriti Sanon",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/3lDJZr6kbsg/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/3lDJZr6kbsg/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-197",
@@ -1978,7 +2174,8 @@
       "artist": "Arijit Singh Hits Songs | Arijit Singh…",
       "album": "Arijit Singh Hits Songs",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/LSP9SjZ3rrs/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/LSP9SjZ3rrs/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-198",
@@ -1988,7 +2185,8 @@
       "artist": "Zee TV",
       "album": "Desi Reel Hits",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/6X0pNXXeVIA/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/6X0pNXXeVIA/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-199",
@@ -1998,7 +2196,8 @@
       "artist": "Bhediya | Varun Dhawan, Kriti Sanon| A…",
       "album": "Bhediya",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/Wr0BLOr2WlU/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/Wr0BLOr2WlU/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "trending-200",
@@ -2008,7 +2207,8 @@
       "artist": "Nonstop Romantic Songs | Valentine Spe…",
       "album": "Nonstop Romantic Songs",
       "category": "trending",
-      "thumbnail": "https://i.ytimg.com/vi/3fPQtxRwn6U/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/3fPQtxRwn6U/hqdefault.jpg",
+      "audioUrl": null
     }
   ],
   "workout": [
@@ -2020,7 +2220,8 @@
       "artist": "Shah Rukh Khan, Deepika | Vishal & She…",
       "album": "Shah Rukh Khan, Deepika",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/YxWlaYCA8MU/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/YxWlaYCA8MU/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-002",
@@ -2030,7 +2231,8 @@
       "artist": "Shah Rukh Khan | Taapsee Pannu | Prita…",
       "album": "Shah Rukh Khan",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/Zlqf9cuaOBw/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/Zlqf9cuaOBw/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-003",
@@ -2040,7 +2242,8 @@
       "artist": "Hans Raj Hans | Sonu Ke Titu Ki Sweety",
       "album": "Hans Raj Hans",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/xWi8nDUjHGA/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/xWi8nDUjHGA/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-004",
@@ -2050,7 +2253,8 @@
       "artist": "IKKY | Latest Punjabi Songs 2025",
       "album": "IKKY",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/5GCfYLguTIs/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/5GCfYLguTIs/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-005",
@@ -2060,7 +2264,8 @@
       "artist": "Karan Aujla Mahira Sharma Latest Punja…",
       "album": "Workout & Gym",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/2sAzb3kraoQ/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/2sAzb3kraoQ/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-006",
@@ -2070,7 +2275,8 @@
       "artist": "3:00 AM Sessions",
       "album": "Workout & Gym",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/CeFQO9MQNqs/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/CeFQO9MQNqs/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-007",
@@ -2080,7 +2286,8 @@
       "artist": "Karan Aujla, Nora Fatehi, Neha Kakkar,…",
       "album": "Workout & Gym",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/uChhQpHMmXE/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/uChhQpHMmXE/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-008",
@@ -2090,7 +2297,8 @@
       "artist": "Ikky | Making Memories | Latest Punjab…",
       "album": "Ikky",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/k85UB5b6pJU/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/k85UB5b6pJU/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-009",
@@ -2100,7 +2308,8 @@
       "artist": "Latest Punjabi Songs 2023",
       "album": "Workout & Gym",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/fRJ03btNsao/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/fRJ03btNsao/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-010",
@@ -2110,7 +2319,8 @@
       "artist": "New Punjabi Songs 2022",
       "album": "Workout & Gym",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/RuDsBrSczis/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/RuDsBrSczis/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-011",
@@ -2120,7 +2330,8 @@
       "artist": "Stree 2 | Tamannaah Bhatia | Sachin–Ji…",
       "album": "Stree 2",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/roz9sXFkTuE/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/roz9sXFkTuE/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-012",
@@ -2130,7 +2341,8 @@
       "artist": "Shraddha Kapoor | Rajkummar Rao | Sach…",
       "album": "Shraddha Kapoor",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/nFgsBxw-zWQ/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/nFgsBxw-zWQ/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-013",
@@ -2140,7 +2352,8 @@
       "artist": "Daler Mehndi, Pritam | Dangal",
       "album": "Daler Mehndi, Pritam",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/2Vv-BfVoq4g/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/2Vv-BfVoq4g/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-014",
@@ -2150,7 +2363,8 @@
       "artist": "Sukhwinder Singh, Shadab Faridi | Sultan",
       "album": "Sukhwinder Singh, Shadab Faridi",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/W0dmYnZ9_hE/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/W0dmYnZ9_hE/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-015",
@@ -2160,7 +2374,8 @@
       "artist": "Siddharth Mahadevan | Bhaag Milkha Bhaag",
       "album": "Siddharth Mahadevan",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/k4q7Yg_Z49U/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/k4q7Yg_Z49U/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-016",
@@ -2170,7 +2385,8 @@
       "artist": "Vishal Dadlani, Ajay-Atul | Brothers",
       "album": "Vishal Dadlani, Ajay-Atul",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/tK9w_01p9zE/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/tK9w_01p9zE/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-017",
@@ -2180,7 +2396,8 @@
       "artist": "Sukhwinder Singh, Shreya Ghoshal | Sanju",
       "album": "Sukhwinder Singh, Shreya Ghoshal",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/0Y_q1i0w9aQ/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/0Y_q1i0w9aQ/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-018",
@@ -2190,7 +2407,8 @@
       "artist": "Sukhwinder Singh, Sapna Awasthi | Dil Se",
       "album": "Sukhwinder Singh, Sapna Awasthi",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/8lG1rK94qWE/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/8lG1rK94qWE/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-019",
@@ -2200,7 +2418,8 @@
       "artist": "Kailash Kher | Chandni Chowk To China",
       "album": "Kailash Kher",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/7CdpHATpXXU/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/7CdpHATpXXU/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-020",
@@ -2210,7 +2429,8 @@
       "artist": "Benny Dayal, Vishal Mishra | Baaghi",
       "album": "Benny Dayal, Vishal Mishra",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/qnQCd_nZn_g/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/qnQCd_nZn_g/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-021",
@@ -2220,7 +2440,8 @@
       "artist": "Vishal Dadlani | Bajirao Mastani",
       "album": "Vishal Dadlani",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/PesrFCmjdNI/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/PesrFCmjdNI/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-022",
@@ -2230,7 +2451,8 @@
       "artist": "Sukhwinder Singh, Ajay-Atul | Singham",
       "album": "Sukhwinder Singh, Ajay-Atul",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/bjfKyIAlsZs/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/bjfKyIAlsZs/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-023",
@@ -2240,7 +2462,8 @@
       "artist": "Vishal Dadlani | Mary Kom",
       "album": "Vishal Dadlani",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/BwiaxAos5cg/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/BwiaxAos5cg/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-024",
@@ -2250,7 +2473,8 @@
       "artist": "Divya Kumar, Sachin-Jigar | Badlapur",
       "album": "Divya Kumar, Sachin-Jigar",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/-yX2trMgn5s/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/-yX2trMgn5s/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-025",
@@ -2260,7 +2484,8 @@
       "artist": "STREE | Kriti Sanon | Badshah, Nikhita…",
       "album": "STREE",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/PkgStlsVaqw/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/PkgStlsVaqw/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-026",
@@ -2270,7 +2495,8 @@
       "artist": "Badshah | Sharvi Yadav | Preity Mukhun…",
       "album": "Badshah",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/Zrt77f7nTqY/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/Zrt77f7nTqY/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-027",
@@ -2280,7 +2506,8 @@
       "artist": "AKB FUNTUBE",
       "album": "Workout & Gym",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/2G2_pc4IfUs/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/2G2_pc4IfUs/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-028",
@@ -2290,7 +2517,8 @@
       "artist": "Official Trailer | Shraddha K | Rajkum…",
       "album": "Official Trailer",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/KVnheXywIbY/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/KVnheXywIbY/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-029",
@@ -2300,7 +2528,8 @@
       "artist": "Jasmine S, Sachet T, Jaani | Bhushan K…",
       "album": "Jasmine S, Sachet T, Jaani",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/NZ1EBaqDL0M/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/NZ1EBaqDL0M/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-030",
@@ -2310,7 +2539,8 @@
       "artist": "Udta Punjab | Amit Trivedi",
       "album": "Udta Punjab",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/EZh7my_RASk/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/EZh7my_RASk/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-031",
@@ -2320,7 +2550,8 @@
       "artist": "Jigra | Diljit Dosanjh | Alia Bhatt | …",
       "album": "Jigra",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/FewWUHxY79w/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/FewWUHxY79w/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-032",
@@ -2330,7 +2561,8 @@
       "artist": "Diljit Dosanjh | Alia Bhatt | Amit Tri…",
       "album": "Diljit Dosanjh",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/ZbX_nlzv7uU/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/ZbX_nlzv7uU/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-033",
@@ -2340,7 +2572,8 @@
       "artist": "Diljit Dosanjh - Topic",
       "album": "Workout & Gym",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/MnNQW_L7ovY/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/MnNQW_L7ovY/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-034",
@@ -2350,7 +2583,8 @@
       "artist": "Navneet Sumohan & Simran | Official Mu…",
       "album": "Navneet Sumohan & Simran",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/YDAWpY747TY/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/YDAWpY747TY/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-035",
@@ -2360,7 +2594,8 @@
       "artist": "Alia Bhatt |Vedang Raina | Chal Kudiye…",
       "album": "Alia Bhatt",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/T_lDkgKdTD8/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/T_lDkgKdTD8/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-036",
@@ -2370,7 +2605,8 @@
       "artist": "Jigra | Diljit Dosanjh | Alia Bhatt | …",
       "album": "Jigra",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/qH-fnpT7qgU/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/qH-fnpT7qgU/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-037",
@@ -2380,7 +2616,8 @@
       "artist": "What Jhumka | Tum Kya Mile | Ve Kamley…",
       "album": "What Jhumka",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/AhO7mWclXOc/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/AhO7mWclXOc/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-038",
@@ -2390,7 +2627,8 @@
       "artist": "Jigra | Diljit Dosanjh | Alia Bhatt | …",
       "album": "Jigra",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/FgHz5qNwtqg/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/FgHz5qNwtqg/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-039",
@@ -2400,7 +2638,8 @@
       "artist": "Jigra | Diljit Dosanjh | Alia Bhatt | …",
       "album": "Jigra",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/fnyd1hGyJIY/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/fnyd1hGyJIY/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-040",
@@ -2410,7 +2649,8 @@
       "artist": "Chal Kudiye, Dholida, Jhume Re Gori, A…",
       "album": "Workout & Gym",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/fAU6b5U26sM/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/fAU6b5U26sM/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-041",
@@ -2420,7 +2660,8 @@
       "artist": "What Jhumka | Ve Kamleya | Kudmayi | D…",
       "album": "What Jhumka",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/Z23mOrp8i24/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/Z23mOrp8i24/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-042",
@@ -2430,7 +2671,8 @@
       "artist": "Bhairava Anthem | Love Ya | Chal Kudiye",
       "album": "Bhairava Anthem",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/iAv5WMNRX90/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/iAv5WMNRX90/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-043",
@@ -2440,7 +2682,8 @@
       "artist": "Arthat - Topic",
       "album": "Workout & Gym",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/H9ogpITFBYM/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/H9ogpITFBYM/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-044",
@@ -2450,7 +2693,8 @@
       "artist": "Jigra | Alia Bhatt, Diljit Dosanjh | C…",
       "album": "Jigra",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/4VqbPwVYq1s/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/4VqbPwVYq1s/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-045",
@@ -2460,7 +2704,8 @@
       "artist": "Diljit Dosanjh | Alia Bhatt | Manpreet…",
       "album": "Diljit Dosanjh",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/NV7XJe4nqJ8/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/NV7XJe4nqJ8/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-046",
@@ -2470,7 +2715,8 @@
       "artist": "Diljit Dosanjh | Alia Bhatt | Jigra | …",
       "album": "Diljit Dosanjh",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/JcpiVAbAnYg/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/JcpiVAbAnYg/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-047",
@@ -2480,7 +2726,8 @@
       "artist": "Alia Bhatt | Vedang Raina | Tenu Sang …",
       "album": "Alia Bhatt",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/Bpj3JYLCCuA/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/Bpj3JYLCCuA/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-048",
@@ -2490,7 +2737,8 @@
       "artist": "Alia Bhatt|Vedang Raina|Tenu Sang Rakh…",
       "album": "Alia Bhatt",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/QnQRMHkXzZ4/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/QnQRMHkXzZ4/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-049",
@@ -2500,7 +2748,8 @@
       "artist": "Jigra | Diljit Dosanjh | Alia Bhatt | …",
       "album": "Jigra",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/j3nADe5euQw/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/j3nADe5euQw/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-050",
@@ -2510,7 +2759,8 @@
       "artist": "Shah Rukh Khan | Taapsee Pannu | Prita…",
       "album": "Shah Rukh Khan",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/Etkd-07gnxM/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/Etkd-07gnxM/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-051",
@@ -2520,7 +2770,8 @@
       "artist": "Romy, Vivek Hariharan | Uri",
       "album": "Romy, Vivek Hariharan",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/pCYojfACnzQ/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/pCYojfACnzQ/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-052",
@@ -2530,7 +2781,8 @@
       "artist": "Vishal Dadlani, Benny Dayal | War",
       "album": "Vishal Dadlani, Benny Dayal",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/sv26LXD4GbI/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/sv26LXD4GbI/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-053",
@@ -2540,7 +2792,8 @@
       "artist": "Piyush Mishra | Gulaal",
       "album": "Piyush Mishra",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/1tsCjcq0G-U/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/1tsCjcq0G-U/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-054",
@@ -2550,7 +2803,8 @@
       "artist": "Kishore Kumar | Kalaakaar",
       "album": "Kishore Kumar",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/F5W9370GZ9s/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/F5W9370GZ9s/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-055",
@@ -2560,7 +2814,8 @@
       "artist": "Kishore Kumar | Aradhana",
       "album": "Kishore Kumar",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/henP_m2wUqg/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/henP_m2wUqg/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-056",
@@ -2570,7 +2825,8 @@
       "artist": "Kishore Kumar | Kati Patang",
       "album": "Kishore Kumar",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/gA62xK4BqQE/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/gA62xK4BqQE/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-057",
@@ -2580,7 +2836,8 @@
       "artist": "Kishore Kumar | Aradhana",
       "album": "Kishore Kumar",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/P_jKk7a-pXw/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/P_jKk7a-pXw/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-058",
@@ -2590,7 +2847,8 @@
       "artist": "Kishore Kumar | Mere Jeevan Saathi",
       "album": "Kishore Kumar",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/o2F8_90L1b0/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/o2F8_90L1b0/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-059",
@@ -2600,7 +2858,8 @@
       "artist": "Kishore Kumar | Blackmail",
       "album": "Kishore Kumar",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/dG928sWk0_U/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/dG928sWk0_U/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-060",
@@ -2610,7 +2869,8 @@
       "artist": "Pritam | Irshad Kamil | Shah Rukh Khan…",
       "album": "Pritam",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/sVPKUMyOmg0/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/sVPKUMyOmg0/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-061",
@@ -2620,7 +2880,8 @@
       "artist": "Shah Rukh Khan | Taapsee Pannu | Prita…",
       "album": "Shah Rukh Khan",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/E-Qzp9_uzlA/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/E-Qzp9_uzlA/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-062",
@@ -2630,7 +2891,8 @@
       "artist": "Shah Rukh Khan | Taapsee Pannu | Prita…",
       "album": "Shah Rukh Khan",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/Ref5bT8Tuk8/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/Ref5bT8Tuk8/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-063",
@@ -2640,7 +2902,8 @@
       "artist": "Shah Rukh Khan | Taapsee Pannu | Prita…",
       "album": "Shah Rukh Khan",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/yWo9_7I58Bc/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/yWo9_7I58Bc/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-064",
@@ -2650,7 +2913,8 @@
       "artist": "Dunki | Arijit Singh | [ Slowed + reve…",
       "album": "Dunki",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/Xb82Eexgyeo/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/Xb82Eexgyeo/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-065",
@@ -2660,7 +2924,8 @@
       "artist": "Shah Rukh Khan, Taapsee Pannu | Arijit…",
       "album": "Shah Rukh Khan, Taapsee Pannu",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/q8Mhq2GVM9M/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/q8Mhq2GVM9M/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-066",
@@ -2670,7 +2935,8 @@
       "artist": "Shah Rukh Khan | Taapsee Pannu | Prita…",
       "album": "Shah Rukh Khan",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/2o1Bv1DyUN0/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/2o1Bv1DyUN0/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-067",
@@ -2680,7 +2946,8 @@
       "artist": "Shah Rukh Khan | Taapsee Pannu | Prita…",
       "album": "Shah Rukh Khan",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/AUvYe_ZgLOY/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/AUvYe_ZgLOY/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-068",
@@ -2690,7 +2957,8 @@
       "artist": "Dunki | Raanjhanaa | Pritam | Arijit S…",
       "album": "Dunki",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/yktlUKTWlJg/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/yktlUKTWlJg/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-069",
@@ -2700,7 +2968,8 @@
       "artist": "Rocky Aur Rani Kii Prem Kahaani | Ranv…",
       "album": "Rocky Aur Rani Kii Prem Kahaani",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/QXJyMpxd210/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/QXJyMpxd210/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-070",
@@ -2710,7 +2979,8 @@
       "artist": "Rocky Aur Rani Kii Prem Kahaani | Ranv…",
       "album": "Rocky Aur Rani Kii Prem Kahaani",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/3qpxJEp4Ec4/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/3qpxJEp4Ec4/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-071",
@@ -2720,7 +2990,8 @@
       "artist": "Ranveer | Alia | Pritam | Amitabh | Ar…",
       "album": "Ranveer",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/taRBVfDRukY/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/taRBVfDRukY/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-072",
@@ -2730,7 +3001,8 @@
       "artist": "Rocky Aur Rani Kii Prem Kahaani, Ranve…",
       "album": "Workout & Gym",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/hacByYwJ_a4/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/hacByYwJ_a4/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-073",
@@ -2740,7 +3012,8 @@
       "artist": "Pritam - Topic",
       "album": "Workout & Gym",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/GkJ_wZy0iB4/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/GkJ_wZy0iB4/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-074",
@@ -2750,7 +3023,8 @@
       "artist": "Ranveer, Alia | Pritam",
       "album": "Ranveer, Alia",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/IYK34I7y5O8/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/IYK34I7y5O8/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-075",
@@ -2760,7 +3034,8 @@
       "artist": "#aseeskaur #biggboss",
       "album": "Workout & Gym",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/aa7_itx64eI/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/aa7_itx64eI/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-076",
@@ -2770,7 +3045,8 @@
       "artist": "Rocky Aur Rani Kii Prem Kahaani | Ranv…",
       "album": "Rocky Aur Rani Kii Prem Kahaani",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/AdYOIQTyAAw/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/AdYOIQTyAAw/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-077",
@@ -2780,7 +3056,8 @@
       "artist": "Lyrical 7",
       "album": "Workout & Gym",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/TjXH_P7Khhg/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/TjXH_P7Khhg/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-078",
@@ -2790,7 +3067,8 @@
       "artist": "Rocky Aur Rani Kii Prem Kahaani | Ranv…",
       "album": "Rocky Aur Rani Kii Prem Kahaani",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/mHdneo9_yLM/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/mHdneo9_yLM/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-079",
@@ -2800,7 +3078,8 @@
       "artist": "Rocky Aur Rani Kii Prem Kahaani | Ranv…",
       "album": "Rocky Aur Rani Kii Prem Kahaani",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/vee_P6pIv_E/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/vee_P6pIv_E/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-080",
@@ -2810,7 +3089,8 @@
       "artist": "Rocky Aur Rani Kii Prem Kahaani | Ranv…",
       "album": "Rocky Aur Rani Kii Prem Kahaani",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/ETMul5GVk_Y/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/ETMul5GVk_Y/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-081",
@@ -2820,7 +3100,8 @@
       "artist": "Rocky Aur Rani Kii Prem Kahaani, Ranve…",
       "album": "Workout & Gym",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/Pz_FkqA2x6s/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/Pz_FkqA2x6s/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-082",
@@ -2830,7 +3111,8 @@
       "artist": "Rocky Aur Rani Kii Prem Kahaani | Ranv…",
       "album": "Rocky Aur Rani Kii Prem Kahaani",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/FBTgulBOUy0/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/FBTgulBOUy0/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-083",
@@ -2840,7 +3122,8 @@
       "artist": "Amitabh B | Ranbir | Alia | Pritam | S…",
       "album": "Amitabh B",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/K3B8-klo5xc/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/K3B8-klo5xc/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-084",
@@ -2850,7 +3133,8 @@
       "artist": "Pritam' s Version (From \"Rocky Aur Ran…",
       "album": "Workout & Gym",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/OweU4sBBqGI/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/OweU4sBBqGI/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-085",
@@ -2860,7 +3144,8 @@
       "artist": "Arijit Singh, Shreya Ghoshal | SR Lofi",
       "album": "Arijit Singh, Shreya Ghoshal",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/9uIIdCBRNRc/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/9uIIdCBRNRc/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-086",
@@ -2870,7 +3155,8 @@
       "artist": "Arijit Singh, Shreya Ghoshal |",
       "album": "Arijit Singh, Shreya Ghoshal",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/0avk5g_9Cgk/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/0avk5g_9Cgk/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-087",
@@ -2880,7 +3166,8 @@
       "artist": "Rocky Aur Rani Kii Prem Kahaani | Ranv…",
       "album": "Rocky Aur Rani Kii Prem Kahaani",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/44Aq9OZtM_M/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/44Aq9OZtM_M/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-088",
@@ -2890,7 +3177,8 @@
       "artist": "Rocky Aur Rani Kii Prem Kahaani | Ranv…",
       "album": "Rocky Aur Rani Kii Prem Kahaani",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/cpfns3c5AQc/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/cpfns3c5AQc/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-089",
@@ -2900,7 +3188,8 @@
       "artist": "Ranbir Kapoor, Alia Bhatt | Pritam | A…",
       "album": "Ranbir Kapoor, Alia Bhatt",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/BddP6PYo2gs/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/BddP6PYo2gs/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-090",
@@ -2910,7 +3199,8 @@
       "artist": "Jasleen Royal",
       "album": "Workout & Gym",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/RLzC55ai0eo/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/RLzC55ai0eo/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-091",
@@ -2920,7 +3210,8 @@
       "artist": "Extended Film Version|Brahmāstra|Amita…",
       "album": "Extended Film Version",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/mNuhKUOD_A0/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/mNuhKUOD_A0/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-092",
@@ -2930,7 +3221,8 @@
       "artist": "Brahmāstra | Ranbir | Alia | Pritam | …",
       "album": "Brahmāstra",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/6mr4cYJ7yew/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/6mr4cYJ7yew/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-093",
@@ -2940,7 +3232,8 @@
       "artist": "Arijit Singh - Topic",
       "album": "Workout & Gym",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/NJAv_7lHUIU/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/NJAv_7lHUIU/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-094",
@@ -2950,7 +3243,8 @@
       "artist": "Ranbir Kapoor | Alia Bhatt | Pritam | …",
       "album": "Ranbir Kapoor",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/xfMN4SpIxIA/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/xfMN4SpIxIA/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-095",
@@ -2960,7 +3254,8 @@
       "artist": "Chillout Heart | Arijit Singh, Shreya …",
       "album": "Chillout Heart",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/zCGck2spPsU/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/zCGck2spPsU/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-096",
@@ -2970,7 +3265,8 @@
       "artist": "Kumar Sanu | 1942 A Love Story",
       "album": "Kumar Sanu",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/4-iO6c-JmN8/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/4-iO6c-JmN8/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-097",
@@ -2980,7 +3276,8 @@
       "artist": "Official Lyric|Brahmāstra|Ranbir, Alia…",
       "album": "Official Lyric",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/g6fnFALEseI/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/g6fnFALEseI/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-098",
@@ -2990,7 +3287,8 @@
       "artist": "Arijit Singh | Kesariya Tera Ishq Hai …",
       "album": "Arijit Singh",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/W1S9AbHpWFY/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/W1S9AbHpWFY/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-099",
@@ -3000,7 +3298,8 @@
       "artist": "Kesariya Teaser | Ranbir | Alia | Arij…",
       "album": "Kesariya Teaser",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/1qeujW9f4So/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/1qeujW9f4So/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-100",
@@ -3010,7 +3309,8 @@
       "artist": "Arijit Singh | Kesariya Tera Ishq Hai …",
       "album": "Arijit Singh",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/k6GjS_Hzg8I/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/k6GjS_Hzg8I/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-101",
@@ -3020,7 +3320,8 @@
       "artist": "Film Version |Brahmāstra |Amitabh B|Ra…",
       "album": "Film Version",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/PLIsDVqACZ0/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/PLIsDVqACZ0/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-102",
@@ -3030,7 +3331,8 @@
       "artist": "Arijit Singh | Ranbir Kapoor | Alia Bh…",
       "album": "Arijit Singh",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/P7yRYiBiV3g/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/P7yRYiBiV3g/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-103",
@@ -3040,7 +3342,8 @@
       "artist": "Shubham Vlog Dehati",
       "album": "Workout & Gym",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/Gqnnrop26Sw/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/Gqnnrop26Sw/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-104",
@@ -3050,7 +3353,8 @@
       "artist": "Amitabh B | Ranbir | Alia | Pritam | A…",
       "album": "Amitabh B",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/aDOs442shYU/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/aDOs442shYU/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-105",
@@ -3060,7 +3364,8 @@
       "artist": "Kesariya Rangu | Ranbir | Alia | Prita…",
       "album": "Kesariya Rangu",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/WCDXUgvddR4/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/WCDXUgvddR4/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-106",
@@ -3070,7 +3375,8 @@
       "artist": "Brahmastra",
       "album": "Workout & Gym",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/532toSHe57E/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/532toSHe57E/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-107",
@@ -3080,7 +3386,8 @@
       "artist": "Deva Deva | Amitabh B | Ranbir | Alia …",
       "album": "Deva Deva",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/jZba76mHdg4/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/jZba76mHdg4/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-108",
@@ -3090,7 +3397,8 @@
       "artist": "Arijit Singh | Kesariya Tera Ishq Hai …",
       "album": "Arijit Singh",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/HLDFbuGhFVU/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/HLDFbuGhFVU/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-109",
@@ -3100,7 +3408,8 @@
       "artist": "Jasleen Royal - Topic",
       "album": "Workout & Gym",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/4VwtfInG-LU/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/4VwtfInG-LU/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-110",
@@ -3110,7 +3419,8 @@
       "artist": "Indie India",
       "album": "Workout & Gym",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/ObiCEWmYH5Y/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/ObiCEWmYH5Y/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-111",
@@ -3120,7 +3430,8 @@
       "artist": "Arijit Singh, Jasleen Royal | SR Lofi",
       "album": "Arijit Singh, Jasleen Royal",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/Q11jKrhG7m4/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/Q11jKrhG7m4/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-112",
@@ -3130,7 +3441,8 @@
       "artist": "Ps Official",
       "album": "Workout & Gym",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/WJumea3vEpw/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/WJumea3vEpw/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-113",
@@ -3140,7 +3452,8 @@
       "artist": "Dulquer Salmaan | Aditya| Taani | Memo…",
       "album": "Dulquer Salmaan",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/IhLJRgr-r0o/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/IhLJRgr-r0o/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-114",
@@ -3150,7 +3463,8 @@
       "artist": "Jasleen Royal - Topic",
       "album": "Workout & Gym",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/SW2uyfNqHg4/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/SW2uyfNqHg4/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-115",
@@ -3160,7 +3474,8 @@
       "artist": "funny taught",
       "album": "Workout & Gym",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/jC1oFRhElEw/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/jC1oFRhElEw/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-116",
@@ -3170,7 +3485,8 @@
       "artist": "Dj Sunny | Arijit Singh & Jasleen Roya…",
       "album": "Dj Sunny",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/gslkqoBV5SA/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/gslkqoBV5SA/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-117",
@@ -3180,7 +3496,8 @@
       "artist": "Udit Narayan, Sadhana Sargam | JJWS",
       "album": "Udit Narayan, Sadhana Sargam",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/T8Y8c1iQ_uE/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/T8Y8c1iQ_uE/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-118",
@@ -3190,7 +3507,8 @@
       "artist": "Winnner Boy",
       "album": "Workout & Gym",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/9uHS97epnYc/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/9uHS97epnYc/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-119",
@@ -3200,7 +3518,8 @@
       "artist": "CK Communication",
       "album": "Workout & Gym",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/BbGNpf5vDTE/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/BbGNpf5vDTE/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-120",
@@ -3210,7 +3529,8 @@
       "artist": "Flute Siva | Jasleen Royal | Arijit Si…",
       "album": "Flute Siva",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/Miz5wvLmXPI/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/Miz5wvLmXPI/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-121",
@@ -3220,7 +3540,8 @@
       "artist": "Dulquer Salmaan | Aditya| Taani | Memo…",
       "album": "Dulquer Salmaan",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/AdKdqAqsnsY/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/AdKdqAqsnsY/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-122",
@@ -3230,7 +3551,8 @@
       "artist": "Bhediya | Varun Dhawan, Kriti Sanon| A…",
       "album": "Bhediya",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/Wr0BLOr2WlU/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/Wr0BLOr2WlU/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-123",
@@ -3240,7 +3562,8 @@
       "artist": "vlog video ",
       "album": "Workout & Gym",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/npKOkLWrZeE/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/npKOkLWrZeE/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-124",
@@ -3250,7 +3573,8 @@
       "artist": "Marwadi Madam",
       "album": "Workout & Gym",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/gX3Gw-3wxfs/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/gX3Gw-3wxfs/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-125",
@@ -3260,7 +3584,8 @@
       "artist": "GP VIDEOS",
       "album": "Workout & Gym",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/K0I124SPxmI/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/K0I124SPxmI/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-126",
@@ -3270,7 +3595,8 @@
       "artist": "Arijit Singh, Jasleen Royal, Aditya Sh…",
       "album": "Workout & Gym",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/P6G4QoKwnzI/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/P6G4QoKwnzI/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-127",
@@ -3280,7 +3606,8 @@
       "artist": "Singer Suresh bhati official ",
       "album": "Workout & Gym",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/t5PEt4aXI58/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/t5PEt4aXI58/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-128",
@@ -3290,7 +3617,8 @@
       "artist": "Shah Rukh Khan | Nayanthara | Atlee | …",
       "album": "Shah Rukh Khan",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/VAdGW7QDJiU/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/VAdGW7QDJiU/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-129",
@@ -3300,7 +3628,8 @@
       "artist": "Arijit Singh - Topic",
       "album": "Workout & Gym",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/V_jp5_VAzXk/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/V_jp5_VAzXk/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-130",
@@ -3310,7 +3639,8 @@
       "artist": "Shahrukh Khan | Atlee | Anirudh | Naya…",
       "album": "Shahrukh Khan",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/8eYG5QGZAZs/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/8eYG5QGZAZs/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-131",
@@ -3320,7 +3650,8 @@
       "artist": "revibe | Viral Insta Reels, TikTok Rem…",
       "album": "revibe",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/9M_ZKSmxb_s/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/9M_ZKSmxb_s/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-132",
@@ -3330,7 +3661,8 @@
       "artist": "Shah Rukh Khan | Nayanthara | Atlee | …",
       "album": "Shah Rukh Khan",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/wr9M-CoxP7A/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/wr9M-CoxP7A/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-133",
@@ -3340,7 +3672,8 @@
       "artist": "Bhediya | Varun Dhawan, Kriti Sanon| S…",
       "album": "Bhediya",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/u2NAuswnTKs/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/u2NAuswnTKs/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-134",
@@ -3350,7 +3683,8 @@
       "artist": "Varun Dhawan & Kriti Sanon | Sachin-Ji…",
       "album": "Varun Dhawan & Kriti Sanon",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/3lDJZr6kbsg/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/3lDJZr6kbsg/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-135",
@@ -3360,7 +3694,8 @@
       "artist": "Arijit Singh Hits Songs | Arijit Singh…",
       "album": "Arijit Singh Hits Songs",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/LSP9SjZ3rrs/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/LSP9SjZ3rrs/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-136",
@@ -3370,7 +3705,8 @@
       "artist": "Zee TV",
       "album": "Workout & Gym",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/6X0pNXXeVIA/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/6X0pNXXeVIA/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-137",
@@ -3380,7 +3716,8 @@
       "artist": "Kumar Sanu, Lata Mangeshkar | DDLJ",
       "album": "Kumar Sanu, Lata Mangeshkar",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/QZ0F0l_oZ1U/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/QZ0F0l_oZ1U/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-138",
@@ -3390,7 +3727,8 @@
       "artist": "Nonstop Romantic Songs | Valentine Spe…",
       "album": "Nonstop Romantic Songs",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/3fPQtxRwn6U/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/3fPQtxRwn6U/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-139",
@@ -3400,7 +3738,8 @@
       "artist": "Marjaavaan | Riteish D, Sidharth M, Ta…",
       "album": "Marjaavaan",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/tLqtnGLfm4Q/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/tLqtnGLfm4Q/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-140",
@@ -3410,7 +3749,8 @@
       "artist": "𝐅𝐮𝐥𝐥 𝐒𝐨𝐧𝐠 | Arijit Singh | Arj…",
       "album": "𝐅𝐮𝐥𝐥 𝐒𝐨𝐧𝐠",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/_iktURk0X-A/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/_iktURk0X-A/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-141",
@@ -3420,7 +3760,8 @@
       "artist": "M.S. DHONI -THE UNTOLD STORY | Amaal M…",
       "album": "M.S. DHONI -THE UNTOLD STORY",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/Ov0YGGSY6gY/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/Ov0YGGSY6gY/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-142",
@@ -3430,7 +3771,8 @@
       "artist": "T-Series",
       "album": "Workout & Gym",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/inEu2qQuGZ8/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/inEu2qQuGZ8/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-143",
@@ -3440,7 +3782,8 @@
       "artist": "Aditya Roy Kapur, Shraddha Kapoor",
       "album": "Workout & Gym",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/VdyBtGaspss/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/VdyBtGaspss/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-144",
@@ -3450,7 +3793,8 @@
       "artist": "Aditya Roy Kapur, Shraddha Kapoor",
       "album": "Workout & Gym",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/Umqb9KENgmk/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/Umqb9KENgmk/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-145",
@@ -3460,7 +3804,8 @@
       "artist": "Kartik | Sara | Arushi | Pritam | Arij…",
       "album": "Kartik",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/MJyKN-8UncM/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/MJyKN-8UncM/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-146",
@@ -3470,7 +3815,8 @@
       "artist": "Aditya Roy Kapur, Shraddha Kapoor | Mu…",
       "album": "Aditya Roy Kapur, Shraddha Kapoor",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/IJq0yyWug1k/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/IJq0yyWug1k/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-147",
@@ -3480,7 +3826,8 @@
       "artist": "KIRAN KAMATH | BEST BOLLYWOOD MASHUPS",
       "album": "KIRAN KAMATH",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/izy2tV-Ssj8/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/izy2tV-Ssj8/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-148",
@@ -3490,7 +3837,8 @@
       "artist": "Aditya Roy Kapur, Shraddha Kapoor",
       "album": "Workout & Gym",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/GtPvCa3vvxA/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/GtPvCa3vvxA/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-149",
@@ -3500,7 +3848,8 @@
       "artist": "Neha Sharma, Aditya Seal & Aashim Gulati",
       "album": "Workout & Gym",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/V1oczq_8L0E/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/V1oczq_8L0E/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-150",
@@ -3510,7 +3859,8 @@
       "artist": "Aditya Roy Kapur, Shraddha Kapoor",
       "album": "Workout & Gym",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/z3UHfi9vpbc/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/z3UHfi9vpbc/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-151",
@@ -3520,7 +3870,8 @@
       "artist": "Dilwale | Shah Rukh Khan | Kajol | Pri…",
       "album": "Dilwale",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/pIBoAh4OXhQ/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/pIBoAh4OXhQ/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-152",
@@ -3530,7 +3881,8 @@
       "artist": "Saiyaara | Ahaan Panday, Aneet Padda |…",
       "album": "Saiyaara",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/cUmUOb7j3dc/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/cUmUOb7j3dc/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-153",
@@ -3540,7 +3892,8 @@
       "artist": "Aditya Roy Kapur, Shraddha Kapoor",
       "album": "Workout & Gym",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/krJsyb_yf7A/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/krJsyb_yf7A/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-154",
@@ -3550,7 +3903,8 @@
       "artist": "Aditya Roy Kapur, Shraddha Kapoor",
       "album": "Workout & Gym",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/2bMEe0UYa8E/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/2bMEe0UYa8E/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-155",
@@ -3560,7 +3914,8 @@
       "artist": "Aditya Roy Kapur, Shraddha Kapoor",
       "album": "Workout & Gym",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/eHRrZ5DQCV4/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/eHRrZ5DQCV4/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-156",
@@ -3570,7 +3925,8 @@
       "artist": "Arijit Singh - Topic",
       "album": "Workout & Gym",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/fsiPzT50ZiM/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/fsiPzT50ZiM/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-157",
@@ -3580,7 +3936,8 @@
       "artist": "Music By Mithoon | Aditya Roy Kapur, S…",
       "album": "Music By Mithoon",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/NUo8CKI34o4/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/NUo8CKI34o4/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-158",
@@ -3590,7 +3947,8 @@
       "artist": "6th Royal Stag Mirchi Music Awards | R…",
       "album": "6th Royal Stag Mirchi Music Awards",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/YLoYt8H7kjM/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/YLoYt8H7kjM/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-159",
@@ -3600,7 +3958,8 @@
       "artist": "Official Video | Shershaah | Sidharth …",
       "album": "Official Video",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/gvyUuxdRdR4/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/gvyUuxdRdR4/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-160",
@@ -3610,7 +3969,8 @@
       "artist": "Shershaah | Sidharth, Kiara | Tanishk …",
       "album": "Shershaah",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/orYf6VDtj_k/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/orYf6VDtj_k/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-161",
@@ -3620,7 +3980,8 @@
       "artist": "Jubin Nautiyal - Topic",
       "album": "Workout & Gym",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/Dm6YRJHy64c/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/Dm6YRJHy64c/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-162",
@@ -3630,7 +3991,8 @@
       "artist": "Full Song | Sidharth, Kiara | Tanishk …",
       "album": "Full Song",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/GLGuLXKT9Ng/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/GLGuLXKT9Ng/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-163",
@@ -3640,7 +4002,8 @@
       "artist": "Shershaah | Jubin Nautiyal | Asees Kau…",
       "album": "Shershaah",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/skq8M5khNbw/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/skq8M5khNbw/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-164",
@@ -3650,7 +4013,8 @@
       "artist": "RAATAAN LAMBIYAN - Shershaah | Violin …",
       "album": "RAATAAN LAMBIYAN - Shershaah",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/qauUzF4GMZ0/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/qauUzF4GMZ0/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-165",
@@ -3660,7 +4024,8 @@
       "artist": "Kiara || Raataan Lambiyan",
       "album": "Kiara",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/dYwwHf9vWfo/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/dYwwHf9vWfo/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-166",
@@ -3670,7 +4035,8 @@
       "artist": "Sidharth Malhotra, Kiara Advani | Jubi…",
       "album": "Sidharth Malhotra, Kiara Advani",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/2FRrtuu3Ljg/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/2FRrtuu3Ljg/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-167",
@@ -3680,7 +4046,8 @@
       "artist": "Shershaah | Lirik - Terjemahan Indonesia",
       "album": "Shershaah",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/pz2Yz0_1lr8/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/pz2Yz0_1lr8/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-168",
@@ -3690,7 +4057,8 @@
       "artist": "Shershaah|Sidharth-Kiara|Tanishk B| Ju…",
       "album": "Shershaah",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/oDkZEay6H6k/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/oDkZEay6H6k/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-169",
@@ -3700,7 +4068,8 @@
       "artist": "Jubin Nautiyal | Asees Kaur | Tanishk …",
       "album": "Jubin Nautiyal",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/S2BOXJG71FY/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/S2BOXJG71FY/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-170",
@@ -3710,7 +4079,8 @@
       "artist": "Tanishk Bagchi, Jubin Nautiyal, Asees …",
       "album": "Workout & Gym",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/8K9eaAKLrE0/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/8K9eaAKLrE0/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-171",
@@ -3720,7 +4090,8 @@
       "artist": "Shershaah | Siddharth | Jubin Nautiyal…",
       "album": "Shershaah",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/jh6Anzu3ntQ/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/jh6Anzu3ntQ/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-172",
@@ -3730,7 +4101,8 @@
       "artist": "Shershaah | Jubin Nautiyal, Asees Kaur…",
       "album": "Shershaah",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/4O0_erwpB9E/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/4O0_erwpB9E/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-173",
@@ -3740,7 +4112,8 @@
       "artist": "Asees Kaur | Shershaah | Sidhath M | T…",
       "album": "Asees Kaur",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/naQXI7l6op0/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/naQXI7l6op0/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-174",
@@ -3750,7 +4123,8 @@
       "artist": "Shershaah | Tanishk B | Jubin N | Asee…",
       "album": "Shershaah",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/Kp76nzS7pwA/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/Kp76nzS7pwA/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-175",
@@ -3760,7 +4134,8 @@
       "artist": "Shershah | Jubin Nautiyal | Asees Kaur…",
       "album": "Shershah",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/-kVdEfkWsjo/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/-kVdEfkWsjo/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-176",
@@ -3770,7 +4145,8 @@
       "artist": "Shershaah | Kiara - sidharth malhotra …",
       "album": "Shershaah",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/s095hRZYb2U/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/s095hRZYb2U/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-177",
@@ -3780,7 +4156,8 @@
       "artist": "Step By Step",
       "album": "Workout & Gym",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/bXWcVn4uNd0/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/bXWcVn4uNd0/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-178",
@@ -3790,7 +4167,8 @@
       "artist": "Shershaah | Tanishk B | Jubin Nautiyal…",
       "album": "Shershaah",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/7fhY7FFZ6nU/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/7fhY7FFZ6nU/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-179",
@@ -3800,7 +4178,8 @@
       "artist": "CHHICHHORE | Sushant, Shraddha | Prita…",
       "album": "CHHICHHORE",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/hoNb6HuNmU0/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/hoNb6HuNmU0/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-180",
@@ -3810,7 +4189,8 @@
       "artist": "Varun Dhawan, Kriti Sanon| Sachin-Jiga…",
       "album": "Varun Dhawan, Kriti Sanon",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/ElZfdU54Cp8/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/ElZfdU54Cp8/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-181",
@@ -3820,7 +4200,8 @@
       "artist": "Udit Narayan, Alka Yagnik | Mohra",
       "album": "Udit Narayan, Alka Yagnik",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/k1iOQ4u9eQk/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/k1iOQ4u9eQk/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-182",
@@ -3830,7 +4211,8 @@
       "artist": "Kumar Sanu | Pardes",
       "album": "Kumar Sanu",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/aY1aYt0x9sU/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/aY1aYt0x9sU/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-183",
@@ -3840,7 +4222,8 @@
       "artist": "Kumar Sanu, Anuradha Paudwal",
       "album": "Workout & Gym",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/r1j-o2_4e1Y/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/r1j-o2_4e1Y/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-184",
@@ -3850,7 +4233,8 @@
       "artist": "S.P. Balasubrahmanyam | Saajan",
       "album": "S.P. Balasubrahmanyam",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/wYqF_z7y3oA/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/wYqF_z7y3oA/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-185",
@@ -3860,7 +4244,8 @@
       "artist": "Kumar Sanu, Alka Yagnik",
       "album": "Workout & Gym",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/tK3e_k_9z1A/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/tK3e_k_9z1A/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-186",
@@ -3870,7 +4255,8 @@
       "artist": "Arijit Singh, Pritam | JHMS",
       "album": "Arijit Singh, Pritam",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/sK7riqg2mr4/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/sK7riqg2mr4/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-187",
@@ -3880,7 +4266,8 @@
       "artist": "Arijit Singh, Pritam | Love Aaj Kal",
       "album": "Arijit Singh, Pritam",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/Iltsoc3D3PY/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/Iltsoc3D3PY/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-188",
@@ -3890,7 +4277,8 @@
       "artist": "Arijit Singh, Alka Yagnik | Tamasha",
       "album": "Arijit Singh, Alka Yagnik",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/74c2e642k4Q/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/74c2e642k4Q/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-189",
@@ -3900,7 +4288,8 @@
       "artist": "Akhil Sachdeva, Tulsi Kumar | Kabir Singh",
       "album": "Akhil Sachdeva, Tulsi Kumar",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/zLtL045tG98/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/zLtL045tG98/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-190",
@@ -3910,7 +4299,8 @@
       "artist": "Ankit Tiwari | Ek Villain",
       "album": "Ankit Tiwari",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/kJQP7kiw5Fk/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/kJQP7kiw5Fk/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-191",
@@ -3920,7 +4310,8 @@
       "artist": "Palak Muchhal | M.S. Dhoni",
       "album": "Palak Muchhal",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/k4yXQkG2s1E/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/k4yXQkG2s1E/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-192",
@@ -3930,7 +4321,8 @@
       "artist": "KK, Pritam | Jannat",
       "album": "KK, Pritam",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/ZsAOnmByy38/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/ZsAOnmByy38/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-193",
@@ -3940,7 +4332,8 @@
       "artist": "KK, Pritam | Gangster",
       "album": "KK, Pritam",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/cGNcjqXe87U/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/cGNcjqXe87U/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-194",
@@ -3950,7 +4343,8 @@
       "artist": "Atif Aslam | Zeher",
       "album": "Atif Aslam",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/1DBhic8SSKs/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/1DBhic8SSKs/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-195",
@@ -3960,7 +4354,8 @@
       "artist": "Atif Aslam, Shreya Ghoshal",
       "album": "Workout & Gym",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/8fN_7w1tLzU/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/8fN_7w1tLzU/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-196",
@@ -3970,7 +4365,8 @@
       "artist": "Anuv Jain | Monsoon Lofi",
       "album": "Anuv Jain",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/3UwxjY_X47w/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/3UwxjY_X47w/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-197",
@@ -3980,7 +4376,8 @@
       "artist": "The Local Train | Night Drive",
       "album": "The Local Train",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/9nCjY_t1k2E/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/9nCjY_t1k2E/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-198",
@@ -3990,7 +4387,8 @@
       "artist": "Kavita Seth, Amit Trivedi",
       "album": "Workout & Gym",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/0n_9c_012e8/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/0n_9c_012e8/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-199",
@@ -4000,7 +4398,8 @@
       "artist": "Mustafa Zahid | Chai & Beats",
       "album": "Mustafa Zahid",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/w_Z0Wq1a4-c/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/w_Z0Wq1a4-c/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "workout-200",
@@ -4010,7 +4409,8 @@
       "artist": "Mustafa Zahid | Rainy Cafe",
       "album": "Mustafa Zahid",
       "category": "workout",
-      "thumbnail": "https://i.ytimg.com/vi/d0q6fJj5u6w/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/d0q6fJj5u6w/hqdefault.jpg",
+      "audioUrl": null
     }
   ],
   "awarapan": [
@@ -4022,7 +4422,8 @@
       "artist": "Awarapan | Emraan Hashmi Song | Mustaf…",
       "album": "Awarapan",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/n_VrRuNkbrE/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/n_VrRuNkbrE/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-002",
@@ -4032,7 +4433,8 @@
       "artist": "OST Awarapan",
       "album": "Awarapan Collection",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/P2kS3h46cIA/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/P2kS3h46cIA/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-003",
@@ -4042,7 +4444,8 @@
       "artist": "Awarapan | Emraan Hashmi Song | Mustaf…",
       "album": "Awarapan",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/g23pmazHwgE/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/g23pmazHwgE/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-004",
@@ -4052,7 +4455,8 @@
       "artist": "Awarapan | Emraan Hashmi, Mrinalini Sh…",
       "album": "Awarapan",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/FJzE1p3mvw8/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/FJzE1p3mvw8/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-005",
@@ -4062,7 +4466,8 @@
       "artist": "4K Music Video | Jannat | Emraan Hashm…",
       "album": "4K Music Video",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/ZsAOnmByy38/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/ZsAOnmByy38/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-006",
@@ -4072,7 +4477,8 @@
       "artist": "The Train | K.K. | Mithoon | Emraan Ha…",
       "album": "The Train",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/UlacMvx_VYk/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/UlacMvx_VYk/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-007",
@@ -4082,7 +4488,8 @@
       "artist": "Emraan Hashmi | Zeher (2005) | WorldFa…",
       "album": "Emraan Hashmi",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/1DBhic8SSKs/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/1DBhic8SSKs/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-008",
@@ -4092,7 +4499,8 @@
       "artist": "Emraan Hashmi, Disha Patani | Vishesh …",
       "album": "Emraan Hashmi, Disha Patani",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/I9tX-lFUTrw/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/I9tX-lFUTrw/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-009",
@@ -4102,7 +4510,8 @@
       "artist": "Pritam - Topic",
       "album": "Awarapan Collection",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/cGNcjqXe87U/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/cGNcjqXe87U/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-010",
@@ -4112,7 +4521,8 @@
       "artist": "The Killer | K K, Shreya Ghosal | Emra…",
       "album": "The Killer",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/fVeJ6sJERR4/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/fVeJ6sJERR4/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-011",
@@ -4122,7 +4532,8 @@
       "artist": "Awarapan 2 | Emraan, Disha | Mithoon, …",
       "album": "Awarapan 2",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/6rvUyBiBtik/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/6rvUyBiBtik/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-012",
@@ -4132,7 +4543,8 @@
       "artist": "Pritam - Topic",
       "album": "Awarapan Collection",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/XwDV5xldudU/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/XwDV5xldudU/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-013",
@@ -4142,7 +4554,8 @@
       "artist": "Need Of Humour Studios ; ",
       "album": "Awarapan Collection",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/oHmXALAdydI/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/oHmXALAdydI/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-014",
@@ -4152,7 +4565,8 @@
       "artist": "Official Music Video | Awarapan 2",
       "album": "Official Music Video",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/itoIHcocrZI/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/itoIHcocrZI/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-015",
@@ -4162,7 +4576,8 @@
       "artist": "Pritam - Topic",
       "album": "Awarapan Collection",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/_RZwGzElnIs/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/_RZwGzElnIs/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-016",
@@ -4172,7 +4587,8 @@
       "artist": "Kay Kay - Topic",
       "album": "Awarapan Collection",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/VMSNq_wtBDQ/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/VMSNq_wtBDQ/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-017",
@@ -4182,7 +4598,8 @@
       "artist": "Remembering the Golden Voice | T Serie…",
       "album": "Remembering the Golden Voice",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/r0c1f6XxRQg/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/r0c1f6XxRQg/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-018",
@@ -4192,7 +4609,8 @@
       "artist": "Himesh Reshammiya,Shreya Ghoshal | Emr…",
       "album": "Himesh Reshammiya,Shreya Ghoshal",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/0bAVd9jJE2Q/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/0bAVd9jJE2Q/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-019",
@@ -4202,7 +4620,8 @@
       "artist": "Mustafa Zahid",
       "album": "Awarapan Collection",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/aEeUuH0tyoA/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/aEeUuH0tyoA/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-020",
@@ -4212,7 +4631,8 @@
       "artist": "10 Years of Jannat | Emraan Hashmi | E…",
       "album": "10 Years of Jannat",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/eESg95AqmbA/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/eESg95AqmbA/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-021",
@@ -4222,7 +4642,8 @@
       "artist": "Marjaavaan | Riteish D, Sidharth M, Ta…",
       "album": "Marjaavaan",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/tLqtnGLfm4Q/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/tLqtnGLfm4Q/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-022",
@@ -4232,7 +4653,8 @@
       "artist": "𝐅𝐮𝐥𝐥 𝐒𝐨𝐧𝐠 | Arijit Singh | Arj…",
       "album": "𝐅𝐮𝐥𝐥 𝐒𝐨𝐧𝐠",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/_iktURk0X-A/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/_iktURk0X-A/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-023",
@@ -4242,7 +4664,8 @@
       "artist": "M.S. DHONI -THE UNTOLD STORY | Amaal M…",
       "album": "M.S. DHONI -THE UNTOLD STORY",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/Ov0YGGSY6gY/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/Ov0YGGSY6gY/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-024",
@@ -4252,7 +4675,8 @@
       "artist": "T-Series",
       "album": "Awarapan Collection",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/inEu2qQuGZ8/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/inEu2qQuGZ8/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-025",
@@ -4262,7 +4686,8 @@
       "artist": "Aditya Roy Kapur, Shraddha Kapoor",
       "album": "Awarapan Collection",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/VdyBtGaspss/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/VdyBtGaspss/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-026",
@@ -4272,7 +4697,8 @@
       "artist": "Aditya Roy Kapur, Shraddha Kapoor",
       "album": "Awarapan Collection",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/Umqb9KENgmk/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/Umqb9KENgmk/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-027",
@@ -4282,7 +4708,8 @@
       "artist": "Kartik | Sara | Arushi | Pritam | Arij…",
       "album": "Kartik",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/MJyKN-8UncM/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/MJyKN-8UncM/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-028",
@@ -4292,7 +4719,8 @@
       "artist": "Aditya Roy Kapur, Shraddha Kapoor | Mu…",
       "album": "Aditya Roy Kapur, Shraddha Kapoor",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/IJq0yyWug1k/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/IJq0yyWug1k/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-029",
@@ -4302,7 +4730,8 @@
       "artist": "KIRAN KAMATH | BEST BOLLYWOOD MASHUPS",
       "album": "KIRAN KAMATH",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/izy2tV-Ssj8/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/izy2tV-Ssj8/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-030",
@@ -4312,7 +4741,8 @@
       "artist": "Aditya Roy Kapur, Shraddha Kapoor",
       "album": "Awarapan Collection",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/GtPvCa3vvxA/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/GtPvCa3vvxA/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-031",
@@ -4322,7 +4752,8 @@
       "artist": "Neha Sharma, Aditya Seal & Aashim Gulati",
       "album": "Awarapan Collection",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/V1oczq_8L0E/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/V1oczq_8L0E/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-032",
@@ -4332,7 +4763,8 @@
       "artist": "Aditya Roy Kapur, Shraddha Kapoor",
       "album": "Awarapan Collection",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/z3UHfi9vpbc/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/z3UHfi9vpbc/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-033",
@@ -4342,7 +4774,8 @@
       "artist": "Dilwale | Shah Rukh Khan | Kajol | Pri…",
       "album": "Dilwale",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/pIBoAh4OXhQ/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/pIBoAh4OXhQ/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-034",
@@ -4352,7 +4785,8 @@
       "artist": "Saiyaara | Ahaan Panday, Aneet Padda |…",
       "album": "Saiyaara",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/cUmUOb7j3dc/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/cUmUOb7j3dc/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-035",
@@ -4362,7 +4796,8 @@
       "artist": "Aditya Roy Kapur, Shraddha Kapoor",
       "album": "Awarapan Collection",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/krJsyb_yf7A/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/krJsyb_yf7A/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-036",
@@ -4372,7 +4807,8 @@
       "artist": "Aditya Roy Kapur, Shraddha Kapoor",
       "album": "Awarapan Collection",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/2bMEe0UYa8E/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/2bMEe0UYa8E/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-037",
@@ -4382,7 +4818,8 @@
       "artist": "Aditya Roy Kapur, Shraddha Kapoor",
       "album": "Awarapan Collection",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/eHRrZ5DQCV4/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/eHRrZ5DQCV4/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-038",
@@ -4392,7 +4829,8 @@
       "artist": "Arijit Singh - Topic",
       "album": "Awarapan Collection",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/fsiPzT50ZiM/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/fsiPzT50ZiM/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-039",
@@ -4402,7 +4840,8 @@
       "artist": "Music By Mithoon | Aditya Roy Kapur, S…",
       "album": "Music By Mithoon",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/NUo8CKI34o4/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/NUo8CKI34o4/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-040",
@@ -4412,7 +4851,8 @@
       "artist": "6th Royal Stag Mirchi Music Awards | R…",
       "album": "6th Royal Stag Mirchi Music Awards",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/YLoYt8H7kjM/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/YLoYt8H7kjM/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-041",
@@ -4422,7 +4862,8 @@
       "artist": "Official Video | Shershaah | Sidharth …",
       "album": "Official Video",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/gvyUuxdRdR4/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/gvyUuxdRdR4/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-042",
@@ -4432,7 +4873,8 @@
       "artist": "Shershaah | Sidharth, Kiara | Tanishk …",
       "album": "Shershaah",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/orYf6VDtj_k/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/orYf6VDtj_k/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-043",
@@ -4442,7 +4884,8 @@
       "artist": "Jubin Nautiyal - Topic",
       "album": "Awarapan Collection",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/Dm6YRJHy64c/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/Dm6YRJHy64c/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-044",
@@ -4452,7 +4895,8 @@
       "artist": "Full Song | Sidharth, Kiara | Tanishk …",
       "album": "Full Song",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/GLGuLXKT9Ng/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/GLGuLXKT9Ng/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-045",
@@ -4462,7 +4906,8 @@
       "artist": "Shershaah | Jubin Nautiyal | Asees Kau…",
       "album": "Shershaah",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/skq8M5khNbw/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/skq8M5khNbw/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-046",
@@ -4472,7 +4917,8 @@
       "artist": "RAATAAN LAMBIYAN - Shershaah | Violin …",
       "album": "RAATAAN LAMBIYAN - Shershaah",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/qauUzF4GMZ0/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/qauUzF4GMZ0/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-047",
@@ -4482,7 +4928,8 @@
       "artist": "Kiara || Raataan Lambiyan",
       "album": "Kiara",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/dYwwHf9vWfo/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/dYwwHf9vWfo/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-048",
@@ -4492,7 +4939,8 @@
       "artist": "Sidharth Malhotra, Kiara Advani | Jubi…",
       "album": "Sidharth Malhotra, Kiara Advani",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/2FRrtuu3Ljg/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/2FRrtuu3Ljg/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-049",
@@ -4502,7 +4950,8 @@
       "artist": "Shershaah | Lirik - Terjemahan Indonesia",
       "album": "Shershaah",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/pz2Yz0_1lr8/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/pz2Yz0_1lr8/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-050",
@@ -4512,7 +4961,8 @@
       "artist": "Shershaah|Sidharth-Kiara|Tanishk B| Ju…",
       "album": "Shershaah",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/oDkZEay6H6k/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/oDkZEay6H6k/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-051",
@@ -4522,7 +4972,8 @@
       "artist": "Jubin Nautiyal | Asees Kaur | Tanishk …",
       "album": "Jubin Nautiyal",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/S2BOXJG71FY/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/S2BOXJG71FY/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-052",
@@ -4532,7 +4983,8 @@
       "artist": "Tanishk Bagchi, Jubin Nautiyal, Asees …",
       "album": "Awarapan Collection",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/8K9eaAKLrE0/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/8K9eaAKLrE0/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-053",
@@ -4542,7 +4994,8 @@
       "artist": "Shershaah | Siddharth | Jubin Nautiyal…",
       "album": "Shershaah",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/jh6Anzu3ntQ/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/jh6Anzu3ntQ/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-054",
@@ -4552,7 +5005,8 @@
       "artist": "Shershaah | Jubin Nautiyal, Asees Kaur…",
       "album": "Shershaah",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/4O0_erwpB9E/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/4O0_erwpB9E/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-055",
@@ -4562,7 +5016,8 @@
       "artist": "Asees Kaur | Shershaah | Sidhath M | T…",
       "album": "Asees Kaur",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/naQXI7l6op0/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/naQXI7l6op0/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-056",
@@ -4572,7 +5027,8 @@
       "artist": "Shershaah | Tanishk B | Jubin N | Asee…",
       "album": "Shershaah",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/Kp76nzS7pwA/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/Kp76nzS7pwA/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-057",
@@ -4582,7 +5038,8 @@
       "artist": "Shershah | Jubin Nautiyal | Asees Kaur…",
       "album": "Shershah",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/-kVdEfkWsjo/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/-kVdEfkWsjo/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-058",
@@ -4592,7 +5049,8 @@
       "artist": "Shershaah | Kiara - sidharth malhotra …",
       "album": "Shershaah",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/s095hRZYb2U/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/s095hRZYb2U/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-059",
@@ -4602,7 +5060,8 @@
       "artist": "Step By Step",
       "album": "Awarapan Collection",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/bXWcVn4uNd0/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/bXWcVn4uNd0/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-060",
@@ -4612,7 +5071,8 @@
       "artist": "Shershaah | Tanishk B | Jubin Nautiyal…",
       "album": "Shershaah",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/7fhY7FFZ6nU/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/7fhY7FFZ6nU/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-061",
@@ -4622,7 +5082,8 @@
       "artist": "CHHICHHORE | Sushant, Shraddha | Prita…",
       "album": "CHHICHHORE",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/hoNb6HuNmU0/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/hoNb6HuNmU0/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-062",
@@ -4632,7 +5093,8 @@
       "artist": "Varun Dhawan, Kriti Sanon| Sachin-Jiga…",
       "album": "Varun Dhawan, Kriti Sanon",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/ElZfdU54Cp8/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/ElZfdU54Cp8/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-063",
@@ -4642,7 +5104,8 @@
       "artist": "Jasleen Royal",
       "album": "Awarapan Collection",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/RLzC55ai0eo/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/RLzC55ai0eo/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-064",
@@ -4652,7 +5115,8 @@
       "artist": "Alia Bhatt , Varun Dhawan | Arijit Sin…",
       "album": "Alia Bhatt , Varun Dhawan",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/Grr0FlC8SQA/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/Grr0FlC8SQA/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-065",
@@ -4662,7 +5126,8 @@
       "artist": "Jalebi | Arijit Singh | Shreya Ghoshal…",
       "album": "Jalebi",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/w8LcxY43N5Y/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/w8LcxY43N5Y/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-066",
@@ -4672,7 +5137,8 @@
       "artist": "Kedarnath| Arijit Singh | Sushant Sing…",
       "album": "Kedarnath",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/vdbP_3o73qI/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/vdbP_3o73qI/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-067",
@@ -4682,7 +5148,8 @@
       "artist": "Kartik | Sara | Pritam | Darshan Raval…",
       "album": "Kartik",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/HYUpNJJELeE/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/HYUpNJJELeE/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-068",
@@ -4692,7 +5159,8 @@
       "artist": "Kartik, Sara | Pritam | Arijit Singh |…",
       "album": "Kartik, Sara",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/yRB0xbKDebo/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/yRB0xbKDebo/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-069",
@@ -4702,7 +5170,8 @@
       "artist": "Phantom",
       "album": "Awarapan Collection",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/CsOsmgUmT9U/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/CsOsmgUmT9U/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-070",
@@ -4712,7 +5181,8 @@
       "artist": "Anurag Basu | Pritam | Arijit Singh, S…",
       "album": "Anurag Basu",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/UEZm0U6KrfY/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/UEZm0U6KrfY/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-071",
@@ -4722,7 +5192,8 @@
       "artist": "Arijit Singh - Topic",
       "album": "Awarapan Collection",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/EQxEms7gnqs/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/EQxEms7gnqs/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-072",
@@ -4732,7 +5203,8 @@
       "artist": "Love Aaj Kal | Kartik | Sara | Pritam …",
       "album": "Love Aaj Kal",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/tdbD2naYwdo/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/tdbD2naYwdo/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-073",
@@ -4742,7 +5214,8 @@
       "artist": "Pritam - Topic",
       "album": "Awarapan Collection",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/SsOY0gZFfGs/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/SsOY0gZFfGs/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-074",
@@ -4752,7 +5225,8 @@
       "artist": "Love Aaj Kal | Saif Ali Khan, Deepika …",
       "album": "Love Aaj Kal",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/kPtn26x8TZM/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/kPtn26x8TZM/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-075",
@@ -4762,7 +5236,8 @@
       "artist": "Arijit Singh | Kartik Aaryan | Sara Al…",
       "album": "Arijit Singh",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/iZH_ydGn9i0/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/iZH_ydGn9i0/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-076",
@@ -4772,7 +5247,8 @@
       "artist": "Kartik Aaryan | Sara Ali Khan | Pritam…",
       "album": "Kartik Aaryan",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/tGs7iLem1cE/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/tGs7iLem1cE/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-077",
@@ -4782,7 +5258,8 @@
       "artist": "Pritam | Arijit Singh",
       "album": "Pritam",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/9-LH8ABADdo/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/9-LH8ABADdo/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-078",
@@ -4792,7 +5269,8 @@
       "artist": "Pritam | Amitabh Bhattacharya | Metro……",
       "album": "Pritam",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/QRwLbf3PwO8/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/QRwLbf3PwO8/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-079",
@@ -4802,7 +5280,8 @@
       "artist": "Kartik Aryan | Sara Ali Khan | Randeep…",
       "album": "Kartik Aryan",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/mF2BHtQh4EI/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/mF2BHtQh4EI/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-080",
@@ -4812,7 +5291,8 @@
       "artist": "Tiger Zinda Hai | Salman Khan, Katrina…",
       "album": "Tiger Zinda Hai",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/SAcpESN_Fk4/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/SAcpESN_Fk4/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-081",
@@ -4822,7 +5302,8 @@
       "artist": "Tiger Zinda Hai | Salman Khan, Katrina…",
       "album": "Tiger Zinda Hai",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/JtnPpxe8K7c/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/JtnPpxe8K7c/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-082",
@@ -4832,7 +5313,8 @@
       "artist": "Full Song Audio | Tiger Zinda Hai | At…",
       "album": "Full Song Audio",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/mevO4I0f5lg/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/mevO4I0f5lg/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-083",
@@ -4842,7 +5324,8 @@
       "artist": "Dil Diyan Gallan Song with Lyrics | Ti…",
       "album": "Dil Diyan Gallan Song with Lyrics",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/nqUbSvFS1e4/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/nqUbSvFS1e4/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-084",
@@ -4852,7 +5335,8 @@
       "artist": "Subscribe | Like 👍 | Share",
       "album": "Subscribe",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/5DiLiDaIemI/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/5DiLiDaIemI/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-085",
@@ -4862,7 +5346,8 @@
       "artist": "Vishal - Shekhar - Topic",
       "album": "Awarapan Collection",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/u5DCgnh8S9M/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/u5DCgnh8S9M/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-086",
@@ -4872,7 +5357,8 @@
       "artist": "Moviebox Record Label",
       "album": "Awarapan Collection",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/ca-hzALjrcY/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/ca-hzALjrcY/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-087",
@@ -4882,7 +5368,8 @@
       "artist": "Tiger Zinda Hai | Salman Khan, Katrina…",
       "album": "Tiger Zinda Hai",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/A2JaHCaVjrU/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/A2JaHCaVjrU/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-088",
@@ -4892,7 +5379,8 @@
       "artist": "Dil Diyan Gallan",
       "album": "Awarapan Collection",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/EsPrpf_vpi8/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/EsPrpf_vpi8/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-089",
@@ -4902,7 +5390,8 @@
       "artist": "Extra 3D Audio | Surround Sound | Use …",
       "album": "Extra 3D Audio",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/PsyNOOS5Xp4/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/PsyNOOS5Xp4/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-090",
@@ -4912,7 +5401,8 @@
       "artist": "Dil Diyan Gallan (Tiger Zinda Hai Soun…",
       "album": "Awarapan Collection",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/POvFEQaK634/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/POvFEQaK634/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-091",
@@ -4922,7 +5412,8 @@
       "artist": "Tiger Zinda Hai | Female Cover Version…",
       "album": "Tiger Zinda Hai",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/Pr86yMP_oZE/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/Pr86yMP_oZE/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-092",
@@ -4932,7 +5423,8 @@
       "artist": "Tiger Zinda Hai | Salman Khan | Katrin…",
       "album": "Tiger Zinda Hai",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/D8jKEaAyNcs/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/D8jKEaAyNcs/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-093",
@@ -4942,7 +5434,8 @@
       "artist": "Atif Aslam | SORY | Choreography By Ra…",
       "album": "Atif Aslam",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/k_Qe4846hSI/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/k_Qe4846hSI/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-094",
@@ -4952,7 +5445,8 @@
       "artist": "Tiger Zinda Hai | Salman Khan, Katrina…",
       "album": "Tiger Zinda Hai",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/EixnLHZ6QjA/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/EixnLHZ6QjA/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-095",
@@ -4962,7 +5456,8 @@
       "artist": "Tiger Zinda Hai | Salman Khan | Katrin…",
       "album": "Tiger Zinda Hai",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/XKmEVtVEMF0/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/XKmEVtVEMF0/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-096",
@@ -4972,7 +5467,8 @@
       "artist": "Lofi remix",
       "album": "Awarapan Collection",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/8sxzVtqoAnA/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/8sxzVtqoAnA/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-097",
@@ -4982,7 +5478,8 @@
       "artist": "DIL DIYAN GALLAN| UNPLUGGED| LIVE",
       "album": "DIL DIYAN GALLAN",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/MA9hbox27Zc/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/MA9hbox27Zc/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-098",
@@ -4992,7 +5489,8 @@
       "artist": "Atif Aslam Hindi Songs | Atif Aslam Be…",
       "album": "Atif Aslam Hindi Songs",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/h6O4esqraE0/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/h6O4esqraE0/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-099",
@@ -5002,7 +5500,8 @@
       "artist": "atif aslam",
       "album": "Awarapan Collection",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/VDzjgO7-pVI/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/VDzjgO7-pVI/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-100",
@@ -5012,7 +5511,8 @@
       "artist": "Aamir,Kareena | Arijit,Shilpa | Pritam…",
       "album": "Aamir,Kareena",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/KUpwupYj_tY/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/KUpwupYj_tY/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-101",
@@ -5022,7 +5522,8 @@
       "artist": "Aamir, Kareena | Arijit, Shilpa | Prit…",
       "album": "Aamir, Kareena",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/2CXSw1oPj3I/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/2CXSw1oPj3I/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-102",
@@ -5032,7 +5533,8 @@
       "artist": "Pritam - Topic",
       "album": "Awarapan Collection",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/Z0VbANbyH2o/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/Z0VbANbyH2o/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-103",
@@ -5042,7 +5544,8 @@
       "artist": "Arijit Singh, Shilpa Rao | SR Lofi",
       "album": "Arijit Singh, Shilpa Rao",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/eLjmQ0aGC1U/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/eLjmQ0aGC1U/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-104",
@@ -5052,7 +5555,8 @@
       "artist": "Laal Singh Chaddha | Aamir, Kareena | …",
       "album": "Laal Singh Chaddha",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/FiENDQapd4g/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/FiENDQapd4g/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-105",
@@ -5062,7 +5566,8 @@
       "artist": "Lyrics By GS",
       "album": "Awarapan Collection",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/Nm0qd0uhhhY/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/Nm0qd0uhhhY/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-106",
@@ -5072,7 +5577,8 @@
       "artist": "Arijit-Shreya Duet | Lyrical Video | L…",
       "album": "Arijit-Shreya Duet",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/PL0f3_ZuJts/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/PL0f3_ZuJts/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-107",
@@ -5082,7 +5588,8 @@
       "artist": "Laal Singh Chaddha (Extended)| Aamir, …",
       "album": "Laal Singh Chaddha (Extended)",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/-vzZ50Rijm8/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/-vzZ50Rijm8/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-108",
@@ -5092,7 +5599,8 @@
       "artist": "Laal Singh Chaddha | Arijit Singh Songs",
       "album": "Laal Singh Chaddha",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/JhjnnGuvI0c/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/JhjnnGuvI0c/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-109",
@@ -5102,7 +5610,8 @@
       "artist": "Aamir, Kareena | Pritam | Laal Singh C…",
       "album": "Aamir, Kareena",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/kIVgRHm2OKg/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/kIVgRHm2OKg/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-110",
@@ -5112,7 +5621,8 @@
       "artist": "Shreya Ghoshal | Pritam, Amitabh Bhatt…",
       "album": "Shreya Ghoshal",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/ico0Nfz2gfU/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/ico0Nfz2gfU/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-111",
@@ -5122,7 +5632,8 @@
       "artist": "Shilpa Rao | Zee TvPa Grand Finale",
       "album": "Shilpa Rao",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/yb584STwkTY/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/yb584STwkTY/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-112",
@@ -5132,7 +5643,8 @@
       "artist": "Shreya Duet)",
       "album": "Awarapan Collection",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/BGU1YL9LNr4/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/BGU1YL9LNr4/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-113",
@@ -5142,7 +5654,8 @@
       "artist": "Amir Khan,Kareena K | Arijit,Shilpa| P…",
       "album": "Amir Khan,Kareena K",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/XK7Crkcn7Z0/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/XK7Crkcn7Z0/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-114",
@@ -5152,7 +5665,8 @@
       "artist": "Abshomar",
       "album": "Awarapan Collection",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/gKioNQ1QwVA/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/gKioNQ1QwVA/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-115",
@@ -5162,7 +5676,8 @@
       "artist": "Aamir | Kareena | Pritam | Arijit Sing…",
       "album": "Aamir",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/LToDPzfwMoM/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/LToDPzfwMoM/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-116",
@@ -5172,7 +5687,8 @@
       "artist": "Arijit Singh",
       "album": "Awarapan Collection",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/6jS1rU4F4HA/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/6jS1rU4F4HA/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-117",
@@ -5182,7 +5698,8 @@
       "artist": "Aamir,Kareena | Arijit,Shilpa | Pritam…",
       "album": "Aamir,Kareena",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/sXRnSIcZVZ0/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/sXRnSIcZVZ0/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-118",
@@ -5192,7 +5709,8 @@
       "artist": "Khan Saab Records",
       "album": "Awarapan Collection",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/jy26LpiiGJA/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/jy26LpiiGJA/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-119",
@@ -5202,7 +5720,8 @@
       "artist": "Ranbir Kapoor,Tripti Dimri |Sandeep V …",
       "album": "Ranbir Kapoor,Tripti Dimri",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/iAIBF2ngbWY/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/iAIBF2ngbWY/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-120",
@@ -5212,7 +5731,8 @@
       "artist": "T-Series",
       "album": "Awarapan Collection",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/HrnrqYxYrbk/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/HrnrqYxYrbk/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-121",
@@ -5222,7 +5742,8 @@
       "artist": "Kabir Singh | Shahid K, Kiara A, Sande…",
       "album": "Kabir Singh",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/WWXm39leYew/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/WWXm39leYew/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-122",
@@ -5232,7 +5753,8 @@
       "artist": "Ranbir Kapoor,Tripti Dimri | Sandeep V…",
       "album": "Ranbir Kapoor,Tripti Dimri",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/lwv_0SEJ4NQ/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/lwv_0SEJ4NQ/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-123",
@@ -5242,7 +5764,8 @@
       "artist": "Vishal Mishra - Topic",
       "album": "Awarapan Collection",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/9cHq63r1vHQ/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/9cHq63r1vHQ/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-124",
@@ -5252,7 +5775,8 @@
       "artist": "Sandeep V | Vishal M | Bhushan K",
       "album": "Sandeep V",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/Xbizke4zftY/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/Xbizke4zftY/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-125",
@@ -5262,7 +5786,8 @@
       "artist": "Kaushal Kishore | VYRL Originals",
       "album": "Kaushal Kishore",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/NlRrGrrRyNo/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/NlRrGrrRyNo/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-126",
@@ -5272,7 +5797,8 @@
       "artist": "Ranbir Kapoor,Rashmika M | Sandeep V |…",
       "album": "Ranbir Kapoor,Rashmika M",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/KNXYonYD59w/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/KNXYonYD59w/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-127",
@@ -5282,7 +5808,8 @@
       "artist": "Vishal Mishra | Animal | SR Lofi",
       "album": "Vishal Mishra",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/kZGpkkfk2lA/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/kZGpkkfk2lA/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-128",
@@ -5292,7 +5819,8 @@
       "artist": "𝐒𝐅 𝐋𝐘𝐑𝐈𝐂𝐒 𝐇𝐔𝐁",
       "album": "Awarapan Collection",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/9UmoVnBSm5k/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/9UmoVnBSm5k/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-129",
@@ -5302,7 +5830,8 @@
       "artist": "T-Series",
       "album": "Awarapan Collection",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/Mv8yFE4-DA8/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/Mv8yFE4-DA8/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-130",
@@ -5312,7 +5841,8 @@
       "artist": "Hiren Chawda | Best of Vishal Mishra |…",
       "album": "Hiren Chawda",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/XaNgxnN6qEI/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/XaNgxnN6qEI/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-131",
@@ -5322,7 +5852,8 @@
       "artist": "T-Series",
       "album": "Awarapan Collection",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/QKMTreKTpug/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/QKMTreKTpug/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-132",
@@ -5332,7 +5863,8 @@
       "artist": "Jay Guldekar | Satranga | Pehle Bhi Me…",
       "album": "Jay Guldekar",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/6RlpNQiPhgY/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/6RlpNQiPhgY/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-133",
@@ -5342,7 +5874,8 @@
       "artist": "Jay Guldekar | Satranga | Pehle Bhi Mein",
       "album": "Jay Guldekar",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/3o7o4N_mEUY/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/3o7o4N_mEUY/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-134",
@@ -5352,7 +5885,8 @@
       "artist": "ANIMAL MASHUP | Ranbir Kapoor",
       "album": "ANIMAL MASHUP",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/kO4AU5yBp64/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/kO4AU5yBp64/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-135",
@@ -5362,7 +5896,8 @@
       "artist": "Vishal Mishra - Topic",
       "album": "Awarapan Collection",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/wqVGA-XDe1I/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/wqVGA-XDe1I/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-136",
@@ -5372,7 +5907,8 @@
       "artist": "Pehle Bhi Main | Janiye | Aaj Bhi | [B…",
       "album": "Pehle Bhi Main",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/YMAdgnh9VOI/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/YMAdgnh9VOI/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-137",
@@ -5382,7 +5918,8 @@
       "artist": "Vishal Mishra | Live | TKSS",
       "album": "Vishal Mishra",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/jBfR0bU82z8/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/jBfR0bU82z8/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-138",
@@ -5392,7 +5929,8 @@
       "artist": "vishal mishra live performance",
       "album": "Awarapan Collection",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/hpqvSU0Ynn0/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/hpqvSU0Ynn0/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-139",
@@ -5402,7 +5940,8 @@
       "artist": "Tamasha | Ranbir Kapoor, Deepika Paduk…",
       "album": "Tamasha",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/sK7riqg2mr4/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/sK7riqg2mr4/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-140",
@@ -5412,7 +5951,8 @@
       "artist": "Full Song",
       "album": "Awarapan Collection",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/OGI0fNvr4fo/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/OGI0fNvr4fo/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-141",
@@ -5422,7 +5962,8 @@
       "artist": "T-Series",
       "album": "Awarapan Collection",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/Q2S7CDuBTOc/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/Q2S7CDuBTOc/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-142",
@@ -5432,7 +5973,8 @@
       "artist": "Tamasha | Ranbir Kapoor, Deepika Paduk…",
       "album": "Tamasha",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/xRb8hxwN5zc/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/xRb8hxwN5zc/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-143",
@@ -5442,7 +5984,8 @@
       "artist": "Arijit Singh - Topic",
       "album": "Awarapan Collection",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/FOA9iyxsW_A/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/FOA9iyxsW_A/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-144",
@@ -5452,7 +5995,8 @@
       "artist": "Tamasha | Ranbir Kapoor, Deepika Paduk…",
       "album": "Tamasha",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/fQlhzY5UH6s/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/fQlhzY5UH6s/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-145",
@@ -5462,7 +6006,8 @@
       "artist": "Tamasha | Alka Yagnik Arijit Singh | L…",
       "album": "Tamasha",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/dhY8jRNELUc/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/dhY8jRNELUc/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-146",
@@ -5472,7 +6017,8 @@
       "artist": "Alka Yagnik, A.R. Rehman, Irshad Kamil",
       "album": "Awarapan Collection",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/fs7-8M1VbZU/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/fs7-8M1VbZU/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-147",
@@ -5482,7 +6028,8 @@
       "artist": "Tamasha | Ranbir Kapoor, Deepika Paduk…",
       "album": "Tamasha",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/6SGRn9OHtFY/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/6SGRn9OHtFY/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-148",
@@ -5492,7 +6039,8 @@
       "artist": "Tamasha | Ranbir Kapoor, Deepika Paduk…",
       "album": "Tamasha",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/pon8irRa8II/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/pon8irRa8II/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-149",
@@ -5502,7 +6050,8 @@
       "artist": "ARIJIT SINGH",
       "album": "Awarapan Collection",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/UsxERu1Vv08/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/UsxERu1Vv08/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-150",
@@ -5512,7 +6061,8 @@
       "artist": "Tamasha | Ranbir Kapoor, Deepika Paduk…",
       "album": "Tamasha",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/zCjRVABSHUs/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/zCjRVABSHUs/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-151",
@@ -5522,7 +6072,8 @@
       "artist": "MINE VIBE",
       "album": "Awarapan Collection",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/r-i8teGFG5g/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/r-i8teGFG5g/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-152",
@@ -5532,7 +6083,8 @@
       "artist": "Tamasha | Lirik - Terjemahan Indonesia",
       "album": "Tamasha",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/4vSIwdj6MEU/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/4vSIwdj6MEU/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-153",
@@ -5542,7 +6094,8 @@
       "artist": "Reprised | Cover by Tanya Gupta",
       "album": "Reprised",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/Ya_qVko-Xg0/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/Ya_qVko-Xg0/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-154",
@@ -5552,7 +6105,8 @@
       "artist": "Arijit Singh, Alka Yagnik",
       "album": "Awarapan Collection",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/KAskRVFhv-c/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/KAskRVFhv-c/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-155",
@@ -5562,7 +6116,8 @@
       "artist": "Charu's Music World",
       "album": "Awarapan Collection",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/8Y7bYQIWcuk/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/8Y7bYQIWcuk/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-156",
@@ -5572,7 +6127,8 @@
       "artist": "arijit singh | live performance | roya…",
       "album": "arijit singh",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/6AcUmOGMnak/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/6AcUmOGMnak/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-157",
@@ -5582,7 +6138,8 @@
       "artist": "Musiclovers | Textaudio",
       "album": "Musiclovers",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/njoL-CQt7H4/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/njoL-CQt7H4/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-158",
@@ -5592,7 +6149,8 @@
       "artist": "TAMASHA {SLOWED & REVERB}",
       "album": "Awarapan Collection",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/4mq5tyWfXDU/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/4mq5tyWfXDU/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-159",
@@ -5602,7 +6160,8 @@
       "artist": "Disney's ABCD 2 | Varun Dhawan , Shrad…",
       "album": "Disney's ABCD 2",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/TGpG56pg3UU/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/TGpG56pg3UU/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-160",
@@ -5612,7 +6171,8 @@
       "artist": "Priya Saraiya - Topic",
       "album": "Awarapan Collection",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/EtSAs6GD0Yk/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/EtSAs6GD0Yk/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-161",
@@ -5622,7 +6182,8 @@
       "artist": "Varun Dhawan - Shraddha Kapoor | Sachi…",
       "album": "Varun Dhawan - Shraddha Kapoor",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/_NWaYjsz3qY/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/_NWaYjsz3qY/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-162",
@@ -5632,7 +6193,8 @@
       "artist": "The Voice India Kids | Episode 34",
       "album": "The Voice India Kids",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/ltrstdEFaqg/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/ltrstdEFaqg/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-163",
@@ -5642,7 +6204,8 @@
       "artist": "Disney's ABCD 2 | Varun Dhawan, Shradd…",
       "album": "Disney's ABCD 2",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/UNs50T6EYwE/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/UNs50T6EYwE/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-164",
@@ -5652,7 +6215,8 @@
       "artist": "Sachin - Jigar",
       "album": "Awarapan Collection",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/txxAH9D2gZU/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/txxAH9D2gZU/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-165",
@@ -5662,7 +6226,8 @@
       "artist": "Vibe With VNM",
       "album": "Awarapan Collection",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/fKxEXm9qG4k/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/fKxEXm9qG4k/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-166",
@@ -5672,7 +6237,8 @@
       "artist": "Lyrics | Priya Saraiya | Divya Kumar |…",
       "album": "Lyrics",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/WIjra2HHRFM/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/WIjra2HHRFM/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-167",
@@ -5682,7 +6248,8 @@
       "artist": "Priya Saraiya, Divya Kumar | Srk Lofi …",
       "album": "Priya Saraiya, Divya Kumar",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/tnp8SRcXx-s/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/tnp8SRcXx-s/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-168",
@@ -5692,7 +6259,8 @@
       "artist": "Divya Kumar | Deeps Vibes",
       "album": "Divya Kumar",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/v9KvrMnnyb4/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/v9KvrMnnyb4/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-169",
@@ -5702,7 +6270,8 @@
       "artist": "P RAJ MUSIC",
       "album": "Awarapan Collection",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/uJlJBIBIbAU/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/uJlJBIBIbAU/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-170",
@@ -5712,7 +6281,8 @@
       "artist": "Varun Dhawan - Shraddha Kapoor | Sachi…",
       "album": "Varun Dhawan - Shraddha Kapoor",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/0n2G2SryMuY/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/0n2G2SryMuY/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-171",
@@ -5722,7 +6292,8 @@
       "artist": "Divya Kumar l SV Lofi",
       "album": "Awarapan Collection",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/bfzDXYW5fS0/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/bfzDXYW5fS0/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-172",
@@ -5732,7 +6303,8 @@
       "artist": "Priya Saraiya, Divya Kumar | ABCD 2 | …",
       "album": "Priya Saraiya, Divya Kumar",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/YrBE1Cd9UzA/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/YrBE1Cd9UzA/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-173",
@@ -5742,7 +6314,8 @@
       "artist": "Disney's ABCD 2 | Varun Dhawan , Shrad…",
       "album": "Disney's ABCD 2",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/Y35uCA-XVRM/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/Y35uCA-XVRM/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-174",
@@ -5752,7 +6325,8 @@
       "artist": "bllydxt",
       "album": "Awarapan Collection",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/UcmzeXxF4D4/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/UcmzeXxF4D4/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-175",
@@ -5762,7 +6336,8 @@
       "artist": "Sachin-Jigar | Priya Saraiya, Divya Ku…",
       "album": "Sachin-Jigar",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/P9OuseD4zdI/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/P9OuseD4zdI/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-176",
@@ -5772,7 +6347,8 @@
       "artist": "Disney's ABCD 2 | Varun Dhawan , Shrad…",
       "album": "Disney's ABCD 2",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/MYgIWSsOaSE/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/MYgIWSsOaSE/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-177",
@@ -5782,7 +6358,8 @@
       "artist": "ABCD 2",
       "album": "Awarapan Collection",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/CXlHYSiuW4U/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/CXlHYSiuW4U/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-178",
@@ -5792,7 +6369,8 @@
       "artist": "Ć𝕙@𝒓𝐦ⲓ𝖓𝐠𝕡ꪱxꪱɇ♡",
       "album": "Awarapan Collection",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/FYfYq2a-orA/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/FYfYq2a-orA/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-179",
@@ -5802,7 +6380,8 @@
       "artist": "Varun & Alia Bhatt | Akhil Sachdeva | …",
       "album": "Varun & Alia Bhatt",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/8v-TWxPWIWc/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/8v-TWxPWIWc/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-180",
@@ -5812,7 +6391,8 @@
       "artist": "Varun Dhawan, Alia Bhatt | Akhil Sachd…",
       "album": "Varun Dhawan, Alia Bhatt",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/jIqRbFQl-ds/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/jIqRbFQl-ds/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-181",
@@ -5822,7 +6402,8 @@
       "artist": "Akhil Sachdeva - Topic",
       "album": "Awarapan Collection",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/Aokj-w3COw0/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/Aokj-w3COw0/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-182",
@@ -5832,7 +6413,8 @@
       "artist": "Varun Dhawan , Alia Bhatt | Akhil Sach…",
       "album": "Varun Dhawan , Alia Bhatt",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/vIUp4CzOrpQ/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/vIUp4CzOrpQ/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-183",
@@ -5842,7 +6424,8 @@
       "artist": "Varun & Alia Bhatt | Akhil Sachdeva | …",
       "album": "Varun & Alia Bhatt",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/RzMmU4xvyCU/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/RzMmU4xvyCU/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-184",
@@ -5852,7 +6435,8 @@
       "artist": "Varun Dhawan , Alia Bhatt | Akhil Sach…",
       "album": "Varun Dhawan , Alia Bhatt",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/Jv03fM7LZgE/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/Jv03fM7LZgE/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-185",
@@ -5862,7 +6446,8 @@
       "artist": "Badrinath ki dulhania | Nexus Music",
       "album": "Badrinath ki dulhania",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/s_Ab720t_zo/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/s_Ab720t_zo/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-186",
@@ -5872,7 +6457,8 @@
       "artist": "Varun Dhawan, Alia Bhatt | Akhil Sachd…",
       "album": "Varun Dhawan, Alia Bhatt",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/5BAWcCxkMCs/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/5BAWcCxkMCs/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-187",
@@ -5882,7 +6468,8 @@
       "artist": "Lyrical Bam Hindi",
       "album": "Awarapan Collection",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/QMfLDyEoWkE/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/QMfLDyEoWkE/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-188",
@@ -5892,7 +6479,8 @@
       "artist": "Varun Dhawan, Alia Bhatt | \"Badrinath …",
       "album": "Varun Dhawan, Alia Bhatt",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/CSO5DhzK094/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/CSO5DhzK094/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-189",
@@ -5902,7 +6490,8 @@
       "artist": "Badrinath Ki Dulhania | Lofi Vibes",
       "album": "Badrinath Ki Dulhania",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/Vsxh7gEKuOE/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/Vsxh7gEKuOE/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-190",
@@ -5912,7 +6501,8 @@
       "artist": "Akhil Sachdeva",
       "album": "Awarapan Collection",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/-8DxXays6v8/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/-8DxXays6v8/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-191",
@@ -5922,7 +6512,8 @@
       "artist": "Akhil Nasha | BADRINATH KI DULAHNIA",
       "album": "Akhil Nasha",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/1AGVmQ5OwtM/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/1AGVmQ5OwtM/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-192",
@@ -5932,7 +6523,8 @@
       "artist": "Varun Dhawan | Alia Bhatt | Akhil Sach…",
       "album": "Varun Dhawan",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/tYgy4fF9iJA/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/tYgy4fF9iJA/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-193",
@@ -5942,7 +6534,8 @@
       "artist": "Varun Dhawan , Alia Bhatt",
       "album": "Awarapan Collection",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/4G6-fKG96Y8/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/4G6-fKG96Y8/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-194",
@@ -5952,7 +6545,8 @@
       "artist": "Badrinath Ki Dulhania | Vcofficial",
       "album": "Badrinath Ki Dulhania",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/TnnOyFHn0Xc/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/TnnOyFHn0Xc/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-195",
@@ -5962,7 +6556,8 @@
       "artist": "Female Cover By Pallavi Mukund",
       "album": "Awarapan Collection",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/pWJTiLL5PM8/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/pWJTiLL5PM8/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-196",
@@ -5972,7 +6567,8 @@
       "artist": "Varun & Alia Bhatt | Akhil Sachdeva | …",
       "album": "Varun & Alia Bhatt",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/nZpm-87y37Y/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/nZpm-87y37Y/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-197",
@@ -5982,7 +6578,8 @@
       "artist": "Full Song | Badrinath Ki Dulhania (201…",
       "album": "Full Song",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/RBTXo0Ai8_A/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/RBTXo0Ai8_A/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-198",
@@ -5992,7 +6589,8 @@
       "artist": "Badrinath Ki Dulhania | Alia bhatt, Va…",
       "album": "Badrinath Ki Dulhania",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/5qJNtsPJtKc/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/5qJNtsPJtKc/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-199",
@@ -6002,7 +6600,8 @@
       "artist": "2 States | Arijit Singh | Arjun Kapoor…",
       "album": "2 States",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/fXRvluHnjxE/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/fXRvluHnjxE/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "awarapan-200",
@@ -6012,7 +6611,8 @@
       "artist": "2 States | Arijit Singh | Arjun Kapoor…",
       "album": "2 States",
       "category": "awarapan",
-      "thumbnail": "https://i.ytimg.com/vi/xitd9mEZIHk/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/xitd9mEZIHk/hqdefault.jpg",
+      "audioUrl": null
     }
   ],
   "romantic_new": [
@@ -6024,7 +6624,8 @@
       "artist": "Marjaavaan | Riteish D, Sidharth M, Ta…",
       "album": "Marjaavaan",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/tLqtnGLfm4Q/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/tLqtnGLfm4Q/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-002",
@@ -6034,7 +6635,8 @@
       "artist": "𝐅𝐮𝐥𝐥 𝐒𝐨𝐧𝐠 | Arijit Singh | Arj…",
       "album": "𝐅𝐮𝐥𝐥 𝐒𝐨𝐧𝐠",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/_iktURk0X-A/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/_iktURk0X-A/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-003",
@@ -6044,7 +6646,8 @@
       "artist": "M.S. DHONI -THE UNTOLD STORY | Amaal M…",
       "album": "M.S. DHONI -THE UNTOLD STORY",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/Ov0YGGSY6gY/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/Ov0YGGSY6gY/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-004",
@@ -6054,7 +6657,8 @@
       "artist": "T-Series",
       "album": "Bollywood Romantics",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/inEu2qQuGZ8/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/inEu2qQuGZ8/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-005",
@@ -6064,7 +6668,8 @@
       "artist": "Aditya Roy Kapur, Shraddha Kapoor",
       "album": "Bollywood Romantics",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/VdyBtGaspss/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/VdyBtGaspss/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-006",
@@ -6074,7 +6679,8 @@
       "artist": "Aditya Roy Kapur, Shraddha Kapoor",
       "album": "Bollywood Romantics",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/Umqb9KENgmk/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/Umqb9KENgmk/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-007",
@@ -6084,7 +6690,8 @@
       "artist": "Kartik | Sara | Arushi | Pritam | Arij…",
       "album": "Kartik",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/MJyKN-8UncM/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/MJyKN-8UncM/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-008",
@@ -6094,7 +6701,8 @@
       "artist": "Aditya Roy Kapur, Shraddha Kapoor | Mu…",
       "album": "Aditya Roy Kapur, Shraddha Kapoor",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/IJq0yyWug1k/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/IJq0yyWug1k/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-009",
@@ -6104,7 +6712,8 @@
       "artist": "KIRAN KAMATH | BEST BOLLYWOOD MASHUPS",
       "album": "KIRAN KAMATH",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/izy2tV-Ssj8/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/izy2tV-Ssj8/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-010",
@@ -6114,7 +6723,8 @@
       "artist": "Aditya Roy Kapur, Shraddha Kapoor",
       "album": "Bollywood Romantics",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/GtPvCa3vvxA/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/GtPvCa3vvxA/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-011",
@@ -6124,7 +6734,8 @@
       "artist": "Neha Sharma, Aditya Seal & Aashim Gulati",
       "album": "Bollywood Romantics",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/V1oczq_8L0E/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/V1oczq_8L0E/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-012",
@@ -6134,7 +6745,8 @@
       "artist": "Aditya Roy Kapur, Shraddha Kapoor",
       "album": "Bollywood Romantics",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/z3UHfi9vpbc/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/z3UHfi9vpbc/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-013",
@@ -6144,7 +6756,8 @@
       "artist": "Dilwale | Shah Rukh Khan | Kajol | Pri…",
       "album": "Dilwale",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/pIBoAh4OXhQ/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/pIBoAh4OXhQ/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-014",
@@ -6154,7 +6767,8 @@
       "artist": "Saiyaara | Ahaan Panday, Aneet Padda |…",
       "album": "Saiyaara",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/cUmUOb7j3dc/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/cUmUOb7j3dc/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-015",
@@ -6164,7 +6778,8 @@
       "artist": "Aditya Roy Kapur, Shraddha Kapoor",
       "album": "Bollywood Romantics",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/krJsyb_yf7A/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/krJsyb_yf7A/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-016",
@@ -6174,7 +6789,8 @@
       "artist": "Aditya Roy Kapur, Shraddha Kapoor",
       "album": "Bollywood Romantics",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/2bMEe0UYa8E/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/2bMEe0UYa8E/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-017",
@@ -6184,7 +6800,8 @@
       "artist": "Aditya Roy Kapur, Shraddha Kapoor",
       "album": "Bollywood Romantics",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/eHRrZ5DQCV4/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/eHRrZ5DQCV4/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-018",
@@ -6194,7 +6811,8 @@
       "artist": "Arijit Singh - Topic",
       "album": "Bollywood Romantics",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/fsiPzT50ZiM/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/fsiPzT50ZiM/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-019",
@@ -6204,7 +6822,8 @@
       "artist": "Music By Mithoon | Aditya Roy Kapur, S…",
       "album": "Music By Mithoon",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/NUo8CKI34o4/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/NUo8CKI34o4/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-020",
@@ -6214,7 +6833,8 @@
       "artist": "6th Royal Stag Mirchi Music Awards | R…",
       "album": "6th Royal Stag Mirchi Music Awards",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/YLoYt8H7kjM/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/YLoYt8H7kjM/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-021",
@@ -6224,7 +6844,8 @@
       "artist": "Official Video | Shershaah | Sidharth …",
       "album": "Official Video",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/gvyUuxdRdR4/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/gvyUuxdRdR4/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-022",
@@ -6234,7 +6855,8 @@
       "artist": "Shershaah | Sidharth, Kiara | Tanishk …",
       "album": "Shershaah",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/orYf6VDtj_k/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/orYf6VDtj_k/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-023",
@@ -6244,7 +6866,8 @@
       "artist": "Jubin Nautiyal - Topic",
       "album": "Bollywood Romantics",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/Dm6YRJHy64c/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/Dm6YRJHy64c/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-024",
@@ -6254,7 +6877,8 @@
       "artist": "Full Song | Sidharth, Kiara | Tanishk …",
       "album": "Full Song",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/GLGuLXKT9Ng/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/GLGuLXKT9Ng/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-025",
@@ -6264,7 +6888,8 @@
       "artist": "Shershaah | Jubin Nautiyal | Asees Kau…",
       "album": "Shershaah",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/skq8M5khNbw/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/skq8M5khNbw/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-026",
@@ -6274,7 +6899,8 @@
       "artist": "RAATAAN LAMBIYAN - Shershaah | Violin …",
       "album": "RAATAAN LAMBIYAN - Shershaah",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/qauUzF4GMZ0/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/qauUzF4GMZ0/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-027",
@@ -6284,7 +6910,8 @@
       "artist": "Kiara || Raataan Lambiyan",
       "album": "Kiara",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/dYwwHf9vWfo/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/dYwwHf9vWfo/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-028",
@@ -6294,7 +6921,8 @@
       "artist": "Sidharth Malhotra, Kiara Advani | Jubi…",
       "album": "Sidharth Malhotra, Kiara Advani",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/2FRrtuu3Ljg/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/2FRrtuu3Ljg/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-029",
@@ -6304,7 +6932,8 @@
       "artist": "Shershaah | Lirik - Terjemahan Indonesia",
       "album": "Shershaah",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/pz2Yz0_1lr8/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/pz2Yz0_1lr8/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-030",
@@ -6314,7 +6943,8 @@
       "artist": "Shershaah|Sidharth-Kiara|Tanishk B| Ju…",
       "album": "Shershaah",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/oDkZEay6H6k/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/oDkZEay6H6k/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-031",
@@ -6324,7 +6954,8 @@
       "artist": "Jubin Nautiyal | Asees Kaur | Tanishk …",
       "album": "Jubin Nautiyal",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/S2BOXJG71FY/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/S2BOXJG71FY/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-032",
@@ -6334,7 +6965,8 @@
       "artist": "Tanishk Bagchi, Jubin Nautiyal, Asees …",
       "album": "Bollywood Romantics",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/8K9eaAKLrE0/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/8K9eaAKLrE0/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-033",
@@ -6344,7 +6976,8 @@
       "artist": "Shershaah | Siddharth | Jubin Nautiyal…",
       "album": "Shershaah",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/jh6Anzu3ntQ/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/jh6Anzu3ntQ/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-034",
@@ -6354,7 +6987,8 @@
       "artist": "Shershaah | Jubin Nautiyal, Asees Kaur…",
       "album": "Shershaah",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/4O0_erwpB9E/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/4O0_erwpB9E/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-035",
@@ -6364,7 +6998,8 @@
       "artist": "Asees Kaur | Shershaah | Sidhath M | T…",
       "album": "Asees Kaur",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/naQXI7l6op0/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/naQXI7l6op0/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-036",
@@ -6374,7 +7009,8 @@
       "artist": "Shershaah | Tanishk B | Jubin N | Asee…",
       "album": "Shershaah",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/Kp76nzS7pwA/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/Kp76nzS7pwA/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-037",
@@ -6384,7 +7020,8 @@
       "artist": "Shershah | Jubin Nautiyal | Asees Kaur…",
       "album": "Shershah",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/-kVdEfkWsjo/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/-kVdEfkWsjo/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-038",
@@ -6394,7 +7031,8 @@
       "artist": "Shershaah | Kiara - sidharth malhotra …",
       "album": "Shershaah",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/s095hRZYb2U/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/s095hRZYb2U/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-039",
@@ -6404,7 +7042,8 @@
       "artist": "Step By Step",
       "album": "Bollywood Romantics",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/bXWcVn4uNd0/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/bXWcVn4uNd0/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-040",
@@ -6414,7 +7053,8 @@
       "artist": "Shershaah | Tanishk B | Jubin Nautiyal…",
       "album": "Shershaah",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/7fhY7FFZ6nU/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/7fhY7FFZ6nU/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-041",
@@ -6424,7 +7064,8 @@
       "artist": "CHHICHHORE | Sushant, Shraddha | Prita…",
       "album": "CHHICHHORE",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/hoNb6HuNmU0/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/hoNb6HuNmU0/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-042",
@@ -6434,7 +7075,8 @@
       "artist": "Varun Dhawan, Kriti Sanon| Sachin-Jiga…",
       "album": "Varun Dhawan, Kriti Sanon",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/ElZfdU54Cp8/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/ElZfdU54Cp8/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-043",
@@ -6444,7 +7086,8 @@
       "artist": "Jasleen Royal",
       "album": "Bollywood Romantics",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/RLzC55ai0eo/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/RLzC55ai0eo/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-044",
@@ -6454,7 +7097,8 @@
       "artist": "Alia Bhatt , Varun Dhawan | Arijit Sin…",
       "album": "Alia Bhatt , Varun Dhawan",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/Grr0FlC8SQA/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/Grr0FlC8SQA/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-045",
@@ -6464,7 +7108,8 @@
       "artist": "Jalebi | Arijit Singh | Shreya Ghoshal…",
       "album": "Jalebi",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/w8LcxY43N5Y/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/w8LcxY43N5Y/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-046",
@@ -6474,7 +7119,8 @@
       "artist": "Kedarnath| Arijit Singh | Sushant Sing…",
       "album": "Kedarnath",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/vdbP_3o73qI/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/vdbP_3o73qI/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-047",
@@ -6484,7 +7130,8 @@
       "artist": "Kartik | Sara | Pritam | Darshan Raval…",
       "album": "Kartik",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/HYUpNJJELeE/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/HYUpNJJELeE/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-048",
@@ -6494,7 +7141,8 @@
       "artist": "Kartik, Sara | Pritam | Arijit Singh |…",
       "album": "Kartik, Sara",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/yRB0xbKDebo/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/yRB0xbKDebo/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-049",
@@ -6504,7 +7152,8 @@
       "artist": "Phantom",
       "album": "Bollywood Romantics",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/CsOsmgUmT9U/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/CsOsmgUmT9U/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-050",
@@ -6514,7 +7163,8 @@
       "artist": "Anurag Basu | Pritam | Arijit Singh, S…",
       "album": "Anurag Basu",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/UEZm0U6KrfY/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/UEZm0U6KrfY/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-051",
@@ -6524,7 +7174,8 @@
       "artist": "Arijit Singh - Topic",
       "album": "Bollywood Romantics",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/EQxEms7gnqs/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/EQxEms7gnqs/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-052",
@@ -6534,7 +7185,8 @@
       "artist": "Love Aaj Kal | Kartik | Sara | Pritam …",
       "album": "Love Aaj Kal",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/tdbD2naYwdo/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/tdbD2naYwdo/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-053",
@@ -6544,7 +7196,8 @@
       "artist": "Pritam - Topic",
       "album": "Bollywood Romantics",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/SsOY0gZFfGs/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/SsOY0gZFfGs/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-054",
@@ -6554,7 +7207,8 @@
       "artist": "Love Aaj Kal | Saif Ali Khan, Deepika …",
       "album": "Love Aaj Kal",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/kPtn26x8TZM/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/kPtn26x8TZM/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-055",
@@ -6564,7 +7218,8 @@
       "artist": "Arijit Singh | Kartik Aaryan | Sara Al…",
       "album": "Arijit Singh",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/iZH_ydGn9i0/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/iZH_ydGn9i0/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-056",
@@ -6574,7 +7229,8 @@
       "artist": "Kartik Aaryan | Sara Ali Khan | Pritam…",
       "album": "Kartik Aaryan",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/tGs7iLem1cE/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/tGs7iLem1cE/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-057",
@@ -6584,7 +7240,8 @@
       "artist": "Pritam | Arijit Singh",
       "album": "Pritam",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/9-LH8ABADdo/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/9-LH8ABADdo/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-058",
@@ -6594,7 +7251,8 @@
       "artist": "Pritam | Amitabh Bhattacharya | Metro……",
       "album": "Pritam",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/QRwLbf3PwO8/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/QRwLbf3PwO8/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-059",
@@ -6604,7 +7262,8 @@
       "artist": "Kartik Aryan | Sara Ali Khan | Randeep…",
       "album": "Kartik Aryan",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/mF2BHtQh4EI/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/mF2BHtQh4EI/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-060",
@@ -6614,7 +7273,8 @@
       "artist": "Tiger Zinda Hai | Salman Khan, Katrina…",
       "album": "Tiger Zinda Hai",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/SAcpESN_Fk4/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/SAcpESN_Fk4/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-061",
@@ -6624,7 +7284,8 @@
       "artist": "Tiger Zinda Hai | Salman Khan, Katrina…",
       "album": "Tiger Zinda Hai",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/JtnPpxe8K7c/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/JtnPpxe8K7c/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-062",
@@ -6634,7 +7295,8 @@
       "artist": "Full Song Audio | Tiger Zinda Hai | At…",
       "album": "Full Song Audio",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/mevO4I0f5lg/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/mevO4I0f5lg/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-063",
@@ -6644,7 +7306,8 @@
       "artist": "Dil Diyan Gallan Song with Lyrics | Ti…",
       "album": "Dil Diyan Gallan Song with Lyrics",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/nqUbSvFS1e4/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/nqUbSvFS1e4/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-064",
@@ -6654,7 +7317,8 @@
       "artist": "Subscribe | Like 👍 | Share",
       "album": "Subscribe",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/5DiLiDaIemI/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/5DiLiDaIemI/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-065",
@@ -6664,7 +7328,8 @@
       "artist": "Vishal - Shekhar - Topic",
       "album": "Bollywood Romantics",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/u5DCgnh8S9M/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/u5DCgnh8S9M/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-066",
@@ -6674,7 +7339,8 @@
       "artist": "Moviebox Record Label",
       "album": "Bollywood Romantics",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/ca-hzALjrcY/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/ca-hzALjrcY/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-067",
@@ -6684,7 +7350,8 @@
       "artist": "Tiger Zinda Hai | Salman Khan, Katrina…",
       "album": "Tiger Zinda Hai",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/A2JaHCaVjrU/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/A2JaHCaVjrU/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-068",
@@ -6694,7 +7361,8 @@
       "artist": "Dil Diyan Gallan",
       "album": "Bollywood Romantics",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/EsPrpf_vpi8/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/EsPrpf_vpi8/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-069",
@@ -6704,7 +7372,8 @@
       "artist": "Extra 3D Audio | Surround Sound | Use …",
       "album": "Extra 3D Audio",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/PsyNOOS5Xp4/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/PsyNOOS5Xp4/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-070",
@@ -6714,7 +7383,8 @@
       "artist": "Dil Diyan Gallan (Tiger Zinda Hai Soun…",
       "album": "Bollywood Romantics",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/POvFEQaK634/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/POvFEQaK634/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-071",
@@ -6724,7 +7394,8 @@
       "artist": "Tiger Zinda Hai | Female Cover Version…",
       "album": "Tiger Zinda Hai",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/Pr86yMP_oZE/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/Pr86yMP_oZE/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-072",
@@ -6734,7 +7405,8 @@
       "artist": "Tiger Zinda Hai | Salman Khan | Katrin…",
       "album": "Tiger Zinda Hai",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/D8jKEaAyNcs/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/D8jKEaAyNcs/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-073",
@@ -6744,7 +7416,8 @@
       "artist": "Atif Aslam | SORY | Choreography By Ra…",
       "album": "Atif Aslam",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/k_Qe4846hSI/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/k_Qe4846hSI/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-074",
@@ -6754,7 +7427,8 @@
       "artist": "Tiger Zinda Hai | Salman Khan, Katrina…",
       "album": "Tiger Zinda Hai",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/EixnLHZ6QjA/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/EixnLHZ6QjA/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-075",
@@ -6764,7 +7438,8 @@
       "artist": "Tiger Zinda Hai | Salman Khan | Katrin…",
       "album": "Tiger Zinda Hai",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/XKmEVtVEMF0/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/XKmEVtVEMF0/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-076",
@@ -6774,7 +7449,8 @@
       "artist": "Lofi remix",
       "album": "Bollywood Romantics",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/8sxzVtqoAnA/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/8sxzVtqoAnA/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-077",
@@ -6784,7 +7460,8 @@
       "artist": "DIL DIYAN GALLAN| UNPLUGGED| LIVE",
       "album": "DIL DIYAN GALLAN",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/MA9hbox27Zc/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/MA9hbox27Zc/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-078",
@@ -6794,7 +7471,8 @@
       "artist": "Atif Aslam Hindi Songs | Atif Aslam Be…",
       "album": "Atif Aslam Hindi Songs",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/h6O4esqraE0/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/h6O4esqraE0/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-079",
@@ -6804,7 +7482,8 @@
       "artist": "atif aslam",
       "album": "Bollywood Romantics",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/VDzjgO7-pVI/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/VDzjgO7-pVI/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-080",
@@ -6814,7 +7493,8 @@
       "artist": "Aamir,Kareena | Arijit,Shilpa | Pritam…",
       "album": "Aamir,Kareena",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/KUpwupYj_tY/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/KUpwupYj_tY/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-081",
@@ -6824,7 +7504,8 @@
       "artist": "Aamir, Kareena | Arijit, Shilpa | Prit…",
       "album": "Aamir, Kareena",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/2CXSw1oPj3I/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/2CXSw1oPj3I/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-082",
@@ -6834,7 +7515,8 @@
       "artist": "Pritam - Topic",
       "album": "Bollywood Romantics",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/Z0VbANbyH2o/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/Z0VbANbyH2o/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-083",
@@ -6844,7 +7526,8 @@
       "artist": "Arijit Singh, Shilpa Rao | SR Lofi",
       "album": "Arijit Singh, Shilpa Rao",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/eLjmQ0aGC1U/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/eLjmQ0aGC1U/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-084",
@@ -6854,7 +7537,8 @@
       "artist": "Laal Singh Chaddha | Aamir, Kareena | …",
       "album": "Laal Singh Chaddha",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/FiENDQapd4g/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/FiENDQapd4g/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-085",
@@ -6864,7 +7548,8 @@
       "artist": "Lyrics By GS",
       "album": "Bollywood Romantics",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/Nm0qd0uhhhY/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/Nm0qd0uhhhY/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-086",
@@ -6874,7 +7559,8 @@
       "artist": "Arijit-Shreya Duet | Lyrical Video | L…",
       "album": "Arijit-Shreya Duet",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/PL0f3_ZuJts/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/PL0f3_ZuJts/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-087",
@@ -6884,7 +7570,8 @@
       "artist": "Laal Singh Chaddha (Extended)| Aamir, …",
       "album": "Laal Singh Chaddha (Extended)",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/-vzZ50Rijm8/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/-vzZ50Rijm8/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-088",
@@ -6894,7 +7581,8 @@
       "artist": "Laal Singh Chaddha | Arijit Singh Songs",
       "album": "Laal Singh Chaddha",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/JhjnnGuvI0c/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/JhjnnGuvI0c/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-089",
@@ -6904,7 +7592,8 @@
       "artist": "Aamir, Kareena | Pritam | Laal Singh C…",
       "album": "Aamir, Kareena",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/kIVgRHm2OKg/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/kIVgRHm2OKg/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-090",
@@ -6914,7 +7603,8 @@
       "artist": "Shreya Ghoshal | Pritam, Amitabh Bhatt…",
       "album": "Shreya Ghoshal",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/ico0Nfz2gfU/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/ico0Nfz2gfU/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-091",
@@ -6924,7 +7614,8 @@
       "artist": "Shilpa Rao | Zee TvPa Grand Finale",
       "album": "Shilpa Rao",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/yb584STwkTY/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/yb584STwkTY/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-092",
@@ -6934,7 +7625,8 @@
       "artist": "Shreya Duet)",
       "album": "Bollywood Romantics",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/BGU1YL9LNr4/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/BGU1YL9LNr4/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-093",
@@ -6944,7 +7636,8 @@
       "artist": "Amir Khan,Kareena K | Arijit,Shilpa| P…",
       "album": "Amir Khan,Kareena K",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/XK7Crkcn7Z0/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/XK7Crkcn7Z0/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-094",
@@ -6954,7 +7647,8 @@
       "artist": "Abshomar",
       "album": "Bollywood Romantics",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/gKioNQ1QwVA/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/gKioNQ1QwVA/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-095",
@@ -6964,7 +7658,8 @@
       "artist": "Aamir | Kareena | Pritam | Arijit Sing…",
       "album": "Aamir",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/LToDPzfwMoM/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/LToDPzfwMoM/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-096",
@@ -6974,7 +7669,8 @@
       "artist": "Arijit Singh",
       "album": "Bollywood Romantics",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/6jS1rU4F4HA/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/6jS1rU4F4HA/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-097",
@@ -6984,7 +7680,8 @@
       "artist": "Aamir,Kareena | Arijit,Shilpa | Pritam…",
       "album": "Aamir,Kareena",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/sXRnSIcZVZ0/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/sXRnSIcZVZ0/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-098",
@@ -6994,7 +7691,8 @@
       "artist": "Khan Saab Records",
       "album": "Bollywood Romantics",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/jy26LpiiGJA/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/jy26LpiiGJA/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-099",
@@ -7004,7 +7702,8 @@
       "artist": "Ranbir Kapoor,Tripti Dimri |Sandeep V …",
       "album": "Ranbir Kapoor,Tripti Dimri",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/iAIBF2ngbWY/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/iAIBF2ngbWY/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-100",
@@ -7014,7 +7713,8 @@
       "artist": "T-Series",
       "album": "Bollywood Romantics",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/HrnrqYxYrbk/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/HrnrqYxYrbk/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-101",
@@ -7024,7 +7724,8 @@
       "artist": "Kabir Singh | Shahid K, Kiara A, Sande…",
       "album": "Kabir Singh",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/WWXm39leYew/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/WWXm39leYew/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-102",
@@ -7034,7 +7735,8 @@
       "artist": "Ranbir Kapoor,Tripti Dimri | Sandeep V…",
       "album": "Ranbir Kapoor,Tripti Dimri",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/lwv_0SEJ4NQ/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/lwv_0SEJ4NQ/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-103",
@@ -7044,7 +7746,8 @@
       "artist": "Vishal Mishra - Topic",
       "album": "Bollywood Romantics",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/9cHq63r1vHQ/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/9cHq63r1vHQ/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-104",
@@ -7054,7 +7757,8 @@
       "artist": "Sandeep V | Vishal M | Bhushan K",
       "album": "Sandeep V",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/Xbizke4zftY/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/Xbizke4zftY/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-105",
@@ -7064,7 +7768,8 @@
       "artist": "Kaushal Kishore | VYRL Originals",
       "album": "Kaushal Kishore",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/NlRrGrrRyNo/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/NlRrGrrRyNo/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-106",
@@ -7074,7 +7779,8 @@
       "artist": "Ranbir Kapoor,Rashmika M | Sandeep V |…",
       "album": "Ranbir Kapoor,Rashmika M",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/KNXYonYD59w/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/KNXYonYD59w/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-107",
@@ -7084,7 +7790,8 @@
       "artist": "Vishal Mishra | Animal | SR Lofi",
       "album": "Vishal Mishra",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/kZGpkkfk2lA/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/kZGpkkfk2lA/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-108",
@@ -7094,7 +7801,8 @@
       "artist": "𝐒𝐅 𝐋𝐘𝐑𝐈𝐂𝐒 𝐇𝐔𝐁",
       "album": "Bollywood Romantics",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/9UmoVnBSm5k/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/9UmoVnBSm5k/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-109",
@@ -7104,7 +7812,8 @@
       "artist": "T-Series",
       "album": "Bollywood Romantics",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/Mv8yFE4-DA8/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/Mv8yFE4-DA8/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-110",
@@ -7114,7 +7823,8 @@
       "artist": "Hiren Chawda | Best of Vishal Mishra |…",
       "album": "Hiren Chawda",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/XaNgxnN6qEI/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/XaNgxnN6qEI/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-111",
@@ -7124,7 +7834,8 @@
       "artist": "T-Series",
       "album": "Bollywood Romantics",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/QKMTreKTpug/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/QKMTreKTpug/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-112",
@@ -7134,7 +7845,8 @@
       "artist": "Jay Guldekar | Satranga | Pehle Bhi Me…",
       "album": "Jay Guldekar",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/6RlpNQiPhgY/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/6RlpNQiPhgY/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-113",
@@ -7144,7 +7856,8 @@
       "artist": "Jay Guldekar | Satranga | Pehle Bhi Mein",
       "album": "Jay Guldekar",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/3o7o4N_mEUY/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/3o7o4N_mEUY/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-114",
@@ -7154,7 +7867,8 @@
       "artist": "ANIMAL MASHUP | Ranbir Kapoor",
       "album": "ANIMAL MASHUP",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/kO4AU5yBp64/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/kO4AU5yBp64/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-115",
@@ -7164,7 +7878,8 @@
       "artist": "Vishal Mishra - Topic",
       "album": "Bollywood Romantics",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/wqVGA-XDe1I/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/wqVGA-XDe1I/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-116",
@@ -7174,7 +7889,8 @@
       "artist": "Pehle Bhi Main | Janiye | Aaj Bhi | [B…",
       "album": "Pehle Bhi Main",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/YMAdgnh9VOI/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/YMAdgnh9VOI/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-117",
@@ -7184,7 +7900,8 @@
       "artist": "Vishal Mishra | Live | TKSS",
       "album": "Vishal Mishra",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/jBfR0bU82z8/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/jBfR0bU82z8/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-118",
@@ -7194,7 +7911,8 @@
       "artist": "vishal mishra live performance",
       "album": "Bollywood Romantics",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/hpqvSU0Ynn0/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/hpqvSU0Ynn0/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-119",
@@ -7204,7 +7922,8 @@
       "artist": "Tamasha | Ranbir Kapoor, Deepika Paduk…",
       "album": "Tamasha",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/sK7riqg2mr4/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/sK7riqg2mr4/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-120",
@@ -7214,7 +7933,8 @@
       "artist": "Full Song",
       "album": "Bollywood Romantics",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/OGI0fNvr4fo/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/OGI0fNvr4fo/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-121",
@@ -7224,7 +7944,8 @@
       "artist": "T-Series",
       "album": "Bollywood Romantics",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/Q2S7CDuBTOc/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/Q2S7CDuBTOc/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-122",
@@ -7234,7 +7955,8 @@
       "artist": "Tamasha | Ranbir Kapoor, Deepika Paduk…",
       "album": "Tamasha",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/xRb8hxwN5zc/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/xRb8hxwN5zc/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-123",
@@ -7244,7 +7966,8 @@
       "artist": "Arijit Singh - Topic",
       "album": "Bollywood Romantics",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/FOA9iyxsW_A/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/FOA9iyxsW_A/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-124",
@@ -7254,7 +7977,8 @@
       "artist": "Tamasha | Ranbir Kapoor, Deepika Paduk…",
       "album": "Tamasha",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/fQlhzY5UH6s/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/fQlhzY5UH6s/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-125",
@@ -7264,7 +7988,8 @@
       "artist": "Tamasha | Alka Yagnik Arijit Singh | L…",
       "album": "Tamasha",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/dhY8jRNELUc/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/dhY8jRNELUc/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-126",
@@ -7274,7 +7999,8 @@
       "artist": "Alka Yagnik, A.R. Rehman, Irshad Kamil",
       "album": "Bollywood Romantics",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/fs7-8M1VbZU/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/fs7-8M1VbZU/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-127",
@@ -7284,7 +8010,8 @@
       "artist": "Tamasha | Ranbir Kapoor, Deepika Paduk…",
       "album": "Tamasha",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/6SGRn9OHtFY/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/6SGRn9OHtFY/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-128",
@@ -7294,7 +8021,8 @@
       "artist": "Tamasha | Ranbir Kapoor, Deepika Paduk…",
       "album": "Tamasha",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/pon8irRa8II/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/pon8irRa8II/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-129",
@@ -7304,7 +8032,8 @@
       "artist": "ARIJIT SINGH",
       "album": "Bollywood Romantics",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/UsxERu1Vv08/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/UsxERu1Vv08/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-130",
@@ -7314,7 +8043,8 @@
       "artist": "Tamasha | Ranbir Kapoor, Deepika Paduk…",
       "album": "Tamasha",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/zCjRVABSHUs/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/zCjRVABSHUs/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-131",
@@ -7324,7 +8054,8 @@
       "artist": "MINE VIBE",
       "album": "Bollywood Romantics",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/r-i8teGFG5g/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/r-i8teGFG5g/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-132",
@@ -7334,7 +8065,8 @@
       "artist": "Tamasha | Lirik - Terjemahan Indonesia",
       "album": "Tamasha",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/4vSIwdj6MEU/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/4vSIwdj6MEU/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-133",
@@ -7344,7 +8076,8 @@
       "artist": "Reprised | Cover by Tanya Gupta",
       "album": "Reprised",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/Ya_qVko-Xg0/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/Ya_qVko-Xg0/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-134",
@@ -7354,7 +8087,8 @@
       "artist": "Arijit Singh, Alka Yagnik",
       "album": "Bollywood Romantics",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/KAskRVFhv-c/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/KAskRVFhv-c/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-135",
@@ -7364,7 +8098,8 @@
       "artist": "Charu's Music World",
       "album": "Bollywood Romantics",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/8Y7bYQIWcuk/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/8Y7bYQIWcuk/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-136",
@@ -7374,7 +8109,8 @@
       "artist": "arijit singh | live performance | roya…",
       "album": "arijit singh",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/6AcUmOGMnak/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/6AcUmOGMnak/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-137",
@@ -7384,7 +8120,8 @@
       "artist": "Musiclovers | Textaudio",
       "album": "Musiclovers",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/njoL-CQt7H4/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/njoL-CQt7H4/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-138",
@@ -7394,7 +8131,8 @@
       "artist": "TAMASHA {SLOWED & REVERB}",
       "album": "Bollywood Romantics",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/4mq5tyWfXDU/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/4mq5tyWfXDU/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-139",
@@ -7404,7 +8142,8 @@
       "artist": "Disney's ABCD 2 | Varun Dhawan , Shrad…",
       "album": "Disney's ABCD 2",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/TGpG56pg3UU/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/TGpG56pg3UU/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-140",
@@ -7414,7 +8153,8 @@
       "artist": "Priya Saraiya - Topic",
       "album": "Bollywood Romantics",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/EtSAs6GD0Yk/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/EtSAs6GD0Yk/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-141",
@@ -7424,7 +8164,8 @@
       "artist": "Varun Dhawan - Shraddha Kapoor | Sachi…",
       "album": "Varun Dhawan - Shraddha Kapoor",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/_NWaYjsz3qY/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/_NWaYjsz3qY/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-142",
@@ -7434,7 +8175,8 @@
       "artist": "The Voice India Kids | Episode 34",
       "album": "The Voice India Kids",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/ltrstdEFaqg/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/ltrstdEFaqg/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-143",
@@ -7444,7 +8186,8 @@
       "artist": "Disney's ABCD 2 | Varun Dhawan, Shradd…",
       "album": "Disney's ABCD 2",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/UNs50T6EYwE/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/UNs50T6EYwE/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-144",
@@ -7454,7 +8197,8 @@
       "artist": "Sachin - Jigar",
       "album": "Bollywood Romantics",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/txxAH9D2gZU/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/txxAH9D2gZU/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-145",
@@ -7464,7 +8208,8 @@
       "artist": "Vibe With VNM",
       "album": "Bollywood Romantics",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/fKxEXm9qG4k/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/fKxEXm9qG4k/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-146",
@@ -7474,7 +8219,8 @@
       "artist": "Lyrics | Priya Saraiya | Divya Kumar |…",
       "album": "Lyrics",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/WIjra2HHRFM/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/WIjra2HHRFM/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-147",
@@ -7484,7 +8230,8 @@
       "artist": "Priya Saraiya, Divya Kumar | Srk Lofi …",
       "album": "Priya Saraiya, Divya Kumar",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/tnp8SRcXx-s/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/tnp8SRcXx-s/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-148",
@@ -7494,7 +8241,8 @@
       "artist": "Divya Kumar | Deeps Vibes",
       "album": "Divya Kumar",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/v9KvrMnnyb4/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/v9KvrMnnyb4/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-149",
@@ -7504,7 +8252,8 @@
       "artist": "P RAJ MUSIC",
       "album": "Bollywood Romantics",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/uJlJBIBIbAU/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/uJlJBIBIbAU/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-150",
@@ -7514,7 +8263,8 @@
       "artist": "Varun Dhawan - Shraddha Kapoor | Sachi…",
       "album": "Varun Dhawan - Shraddha Kapoor",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/0n2G2SryMuY/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/0n2G2SryMuY/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-151",
@@ -7524,7 +8274,8 @@
       "artist": "Divya Kumar l SV Lofi",
       "album": "Bollywood Romantics",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/bfzDXYW5fS0/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/bfzDXYW5fS0/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-152",
@@ -7534,7 +8285,8 @@
       "artist": "Priya Saraiya, Divya Kumar | ABCD 2 | …",
       "album": "Priya Saraiya, Divya Kumar",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/YrBE1Cd9UzA/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/YrBE1Cd9UzA/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-153",
@@ -7544,7 +8296,8 @@
       "artist": "Disney's ABCD 2 | Varun Dhawan , Shrad…",
       "album": "Disney's ABCD 2",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/Y35uCA-XVRM/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/Y35uCA-XVRM/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-154",
@@ -7554,7 +8307,8 @@
       "artist": "bllydxt",
       "album": "Bollywood Romantics",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/UcmzeXxF4D4/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/UcmzeXxF4D4/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-155",
@@ -7564,7 +8318,8 @@
       "artist": "Sachin-Jigar | Priya Saraiya, Divya Ku…",
       "album": "Sachin-Jigar",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/P9OuseD4zdI/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/P9OuseD4zdI/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-156",
@@ -7574,7 +8329,8 @@
       "artist": "Disney's ABCD 2 | Varun Dhawan , Shrad…",
       "album": "Disney's ABCD 2",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/MYgIWSsOaSE/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/MYgIWSsOaSE/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-157",
@@ -7584,7 +8340,8 @@
       "artist": "ABCD 2",
       "album": "Bollywood Romantics",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/CXlHYSiuW4U/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/CXlHYSiuW4U/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-158",
@@ -7594,7 +8351,8 @@
       "artist": "Ć𝕙@𝒓𝐦ⲓ𝖓𝐠𝕡ꪱxꪱɇ♡",
       "album": "Bollywood Romantics",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/FYfYq2a-orA/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/FYfYq2a-orA/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-159",
@@ -7604,7 +8362,8 @@
       "artist": "Varun & Alia Bhatt | Akhil Sachdeva | …",
       "album": "Varun & Alia Bhatt",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/8v-TWxPWIWc/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/8v-TWxPWIWc/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-160",
@@ -7614,7 +8373,8 @@
       "artist": "Varun Dhawan, Alia Bhatt | Akhil Sachd…",
       "album": "Varun Dhawan, Alia Bhatt",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/jIqRbFQl-ds/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/jIqRbFQl-ds/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-161",
@@ -7624,7 +8384,8 @@
       "artist": "Akhil Sachdeva - Topic",
       "album": "Bollywood Romantics",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/Aokj-w3COw0/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/Aokj-w3COw0/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-162",
@@ -7634,7 +8395,8 @@
       "artist": "Varun Dhawan , Alia Bhatt | Akhil Sach…",
       "album": "Varun Dhawan , Alia Bhatt",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/vIUp4CzOrpQ/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/vIUp4CzOrpQ/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-163",
@@ -7644,7 +8406,8 @@
       "artist": "Varun & Alia Bhatt | Akhil Sachdeva | …",
       "album": "Varun & Alia Bhatt",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/RzMmU4xvyCU/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/RzMmU4xvyCU/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-164",
@@ -7654,7 +8417,8 @@
       "artist": "Varun Dhawan , Alia Bhatt | Akhil Sach…",
       "album": "Varun Dhawan , Alia Bhatt",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/Jv03fM7LZgE/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/Jv03fM7LZgE/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-165",
@@ -7664,7 +8428,8 @@
       "artist": "Badrinath ki dulhania | Nexus Music",
       "album": "Badrinath ki dulhania",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/s_Ab720t_zo/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/s_Ab720t_zo/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-166",
@@ -7674,7 +8439,8 @@
       "artist": "Varun Dhawan, Alia Bhatt | Akhil Sachd…",
       "album": "Varun Dhawan, Alia Bhatt",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/5BAWcCxkMCs/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/5BAWcCxkMCs/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-167",
@@ -7684,7 +8450,8 @@
       "artist": "Lyrical Bam Hindi",
       "album": "Bollywood Romantics",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/QMfLDyEoWkE/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/QMfLDyEoWkE/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-168",
@@ -7694,7 +8461,8 @@
       "artist": "Varun Dhawan, Alia Bhatt | \"Badrinath …",
       "album": "Varun Dhawan, Alia Bhatt",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/CSO5DhzK094/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/CSO5DhzK094/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-169",
@@ -7704,7 +8472,8 @@
       "artist": "Badrinath Ki Dulhania | Lofi Vibes",
       "album": "Badrinath Ki Dulhania",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/Vsxh7gEKuOE/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/Vsxh7gEKuOE/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-170",
@@ -7714,7 +8483,8 @@
       "artist": "Akhil Sachdeva",
       "album": "Bollywood Romantics",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/-8DxXays6v8/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/-8DxXays6v8/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-171",
@@ -7724,7 +8494,8 @@
       "artist": "Akhil Nasha | BADRINATH KI DULAHNIA",
       "album": "Akhil Nasha",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/1AGVmQ5OwtM/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/1AGVmQ5OwtM/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-172",
@@ -7734,7 +8505,8 @@
       "artist": "Varun Dhawan | Alia Bhatt | Akhil Sach…",
       "album": "Varun Dhawan",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/tYgy4fF9iJA/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/tYgy4fF9iJA/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-173",
@@ -7744,7 +8516,8 @@
       "artist": "Varun Dhawan , Alia Bhatt",
       "album": "Bollywood Romantics",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/4G6-fKG96Y8/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/4G6-fKG96Y8/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-174",
@@ -7754,7 +8527,8 @@
       "artist": "Badrinath Ki Dulhania | Vcofficial",
       "album": "Badrinath Ki Dulhania",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/TnnOyFHn0Xc/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/TnnOyFHn0Xc/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-175",
@@ -7764,7 +8538,8 @@
       "artist": "Female Cover By Pallavi Mukund",
       "album": "Bollywood Romantics",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/pWJTiLL5PM8/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/pWJTiLL5PM8/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-176",
@@ -7774,7 +8549,8 @@
       "artist": "Varun & Alia Bhatt | Akhil Sachdeva | …",
       "album": "Varun & Alia Bhatt",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/nZpm-87y37Y/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/nZpm-87y37Y/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-177",
@@ -7784,7 +8560,8 @@
       "artist": "Full Song | Badrinath Ki Dulhania (201…",
       "album": "Full Song",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/RBTXo0Ai8_A/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/RBTXo0Ai8_A/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-178",
@@ -7794,7 +8571,8 @@
       "artist": "Badrinath Ki Dulhania | Alia bhatt, Va…",
       "album": "Badrinath Ki Dulhania",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/5qJNtsPJtKc/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/5qJNtsPJtKc/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-179",
@@ -7804,7 +8582,8 @@
       "artist": "2 States | Arijit Singh | Arjun Kapoor…",
       "album": "2 States",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/fXRvluHnjxE/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/fXRvluHnjxE/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-180",
@@ -7814,7 +8593,8 @@
       "artist": "2 States | Arijit Singh | Arjun Kapoor…",
       "album": "2 States",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/xitd9mEZIHk/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/xitd9mEZIHk/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-181",
@@ -7824,7 +8604,8 @@
       "artist": "Arijit Singh - Topic",
       "album": "Bollywood Romantics",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/eXkHvT--DBU/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/eXkHvT--DBU/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-182",
@@ -7834,7 +8615,8 @@
       "artist": "2 States (2014) | Full Song Story HD |…",
       "album": "2 States (2014)",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/n0L6uHhzWIw/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/n0L6uHhzWIw/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-183",
@@ -7844,7 +8626,8 @@
       "artist": "2 States | Arjun Kapoor | Alia Bhatt",
       "album": "2 States",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/P0KasU0HXD0/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/P0KasU0HXD0/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-184",
@@ -7854,7 +8637,8 @@
       "artist": "Arjun Kapoor, Alia Bhatt",
       "album": "Bollywood Romantics",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/tmWL-JxUGZc/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/tmWL-JxUGZc/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-185",
@@ -7864,7 +8648,8 @@
       "artist": "Lyrixcals",
       "album": "Bollywood Romantics",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/OMsrXBzSsUI/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/OMsrXBzSsUI/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-186",
@@ -7874,7 +8659,8 @@
       "artist": "Arijit Singh | 2 States | Arjun Kapoor…",
       "album": "Arijit Singh",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/bYy_bjsy8Y0/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/bYy_bjsy8Y0/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-187",
@@ -7884,7 +8670,8 @@
       "artist": "2 States | ArijitSingh | Arjun Kapoor,…",
       "album": "2 States",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/Cz7TfFrFojU/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/Cz7TfFrFojU/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-188",
@@ -7894,7 +8681,8 @@
       "artist": "chxrrybomb",
       "album": "Bollywood Romantics",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/2s93cqRcqAk/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/2s93cqRcqAk/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-189",
@@ -7904,7 +8692,8 @@
       "artist": "Chinmayi Sripada | Arjun Kapoor | Alia…",
       "album": "Chinmayi Sripada",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/lVpZaByCWUE/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/lVpZaByCWUE/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-190",
@@ -7914,7 +8703,8 @@
       "artist": "Arijit Singh |Alia Bhatt, Arjun Kapoor…",
       "album": "Arijit Singh",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/1BLF5dXRzlA/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/1BLF5dXRzlA/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-191",
@@ -7924,7 +8714,8 @@
       "artist": "Full Version | Rtek |",
       "album": "Full Version",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/Wh74IJ9xSxA/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/Wh74IJ9xSxA/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-192",
@@ -7934,7 +8725,8 @@
       "artist": "Arijit Singh | Arjun Kapoor, Alia Bhatt",
       "album": "Arijit Singh",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/Wo5nJJiJ8Cg/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/Wo5nJJiJ8Cg/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-193",
@@ -7944,7 +8736,8 @@
       "artist": "2 States",
       "album": "Bollywood Romantics",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/ZrhQCtQJ13s/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/ZrhQCtQJ13s/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-194",
@@ -7954,7 +8747,8 @@
       "artist": "Facebook Live Concert | Full HD",
       "album": "Facebook Live Concert",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/vmLGHNreScc/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/vmLGHNreScc/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-195",
@@ -7964,7 +8758,8 @@
       "artist": "Official Song | Arjun Kapoor, Alia Bhatt",
       "album": "Official Song",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/-j6F012HtAM/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/-j6F012HtAM/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-196",
@@ -7974,7 +8769,8 @@
       "artist": "2 States (2014) | Full Song HD | Ariji…",
       "album": "2 States (2014)",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/06pGYAQnqWQ/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/06pGYAQnqWQ/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-197",
@@ -7984,7 +8780,8 @@
       "artist": "Arijit Singh - Topic",
       "album": "Bollywood Romantics",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/SDQdGibJ9mE/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/SDQdGibJ9mE/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-198",
@@ -7994,7 +8791,8 @@
       "artist": "Terjemahan Indonesia |2 States",
       "album": "Terjemahan Indonesia",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/OOWvmeTTp7Y/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/OOWvmeTTp7Y/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-199",
@@ -8004,7 +8802,8 @@
       "artist": "Jab Harry Met Sejal | Shah Rukh Khan, …",
       "album": "Jab Harry Met Sejal",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/cYOB941gyXI/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/cYOB941gyXI/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "romantic_new-200",
@@ -8014,7 +8813,8 @@
       "artist": "Jab Harry Met Sejal | Anushka Sharma |…",
       "album": "Jab Harry Met Sejal",
       "category": "romantic_new",
-      "thumbnail": "https://i.ytimg.com/vi/cs1e0fRyI18/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/cs1e0fRyI18/hqdefault.jpg",
+      "audioUrl": null
     }
   ],
   "classic_old": [
@@ -8026,7 +8826,8 @@
       "artist": "Yeh Sham Mastani | Mere Sapnon Ki Rani…",
       "album": "Yeh Sham Mastani",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/CWHSNIpl7dg/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/CWHSNIpl7dg/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-002",
@@ -8036,7 +8837,8 @@
       "artist": "Daler Mehndi, Pritam | Dangal",
       "album": "Daler Mehndi, Pritam",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/2Vv-BfVoq4g/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/2Vv-BfVoq4g/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-003",
@@ -8046,7 +8848,8 @@
       "artist": "Happy Lucky Entertainment",
       "album": "Golden 90s Classics",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/Pa1UPI5STLk/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/Pa1UPI5STLk/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-004",
@@ -8056,7 +8859,8 @@
       "artist": "General Voice",
       "album": "Golden 90s Classics",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/huDnyuOBmfg/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/huDnyuOBmfg/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-005",
@@ -8066,7 +8870,8 @@
       "artist": "Sukhwinder Singh, Shadab Faridi | Sultan",
       "album": "Sukhwinder Singh, Shadab Faridi",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/W0dmYnZ9_hE/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/W0dmYnZ9_hE/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-006",
@@ -8076,7 +8881,8 @@
       "artist": "Rajesh Khanna | Sharmila | Mere Sapno …",
       "album": "Rajesh Khanna",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/z486h8Z8PME/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/z486h8Z8PME/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-007",
@@ -8086,7 +8892,8 @@
       "artist": "Lata Mangeshkar, Kishore Kumar | Roop …",
       "album": "Lata Mangeshkar, Kishore Kumar",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/WK1z5uJaI7Y/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/WK1z5uJaI7Y/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-008",
@@ -8096,7 +8903,8 @@
       "artist": "Sony Music India",
       "album": "Golden 90s Classics",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/zbvfAkJWntc/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/zbvfAkJWntc/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-009",
@@ -8106,7 +8914,8 @@
       "artist": "Super Hit Romantic Song By Kishore Kum…",
       "album": "Golden 90s Classics",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/6r8KvFpVrnk/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/6r8KvFpVrnk/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-010",
@@ -8116,7 +8925,8 @@
       "artist": "Siddharth Mahadevan | Bhaag Milkha Bhaag",
       "album": "Siddharth Mahadevan",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/k4q7Yg_Z49U/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/k4q7Yg_Z49U/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-011",
@@ -8126,7 +8936,8 @@
       "artist": "Suniye \"Roop Tera Mastana\" Gaane Ka Or…",
       "album": "Golden 90s Classics",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/cnvkr55Z0Ns/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/cnvkr55Z0Ns/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-012",
@@ -8136,7 +8947,8 @@
       "artist": "Kishore Kumar Karaoke | Hindi Sing Along",
       "album": "Kishore Kumar Karaoke",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/aFzH9rjOTVo/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/aFzH9rjOTVo/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-013",
@@ -8146,7 +8958,8 @@
       "artist": "Indipop Songs",
       "album": "Golden 90s Classics",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/cvEeqyQl1zw/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/cvEeqyQl1zw/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-014",
@@ -8156,7 +8969,8 @@
       "artist": "ALBUM CREATIONS",
       "album": "Golden 90s Classics",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/ddl9TR3a7DM/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/ddl9TR3a7DM/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-015",
@@ -8166,7 +8980,8 @@
       "artist": "Unplugged | Pehchan Music | Viral Frie…",
       "album": "Unplugged",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/Ca6dPcHgdFY/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/Ca6dPcHgdFY/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-016",
@@ -8176,7 +8991,8 @@
       "artist": "Vishal Dadlani, Ajay-Atul | Brothers",
       "album": "Vishal Dadlani, Ajay-Atul",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/tK9w_01p9zE/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/tK9w_01p9zE/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-017",
@@ -8186,7 +9002,8 @@
       "artist": "Prateek Kapoor",
       "album": "Golden 90s Classics",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/yPePNnCkfMs/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/yPePNnCkfMs/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-018",
@@ -8196,7 +9013,8 @@
       "artist": "ARADHANA SONGS | SHARMILA TAGORE, RAJE…",
       "album": "ARADHANA SONGS",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/DCR42fzL2Kk/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/DCR42fzL2Kk/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-019",
@@ -8206,7 +9024,8 @@
       "artist": "Sukhwinder Singh, Shreya Ghoshal | Sanju",
       "album": "Sukhwinder Singh, Shreya Ghoshal",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/0Y_q1i0w9aQ/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/0Y_q1i0w9aQ/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-020",
@@ -8216,7 +9035,8 @@
       "artist": "Aradhana | Kishore Kumar | Evergreen R…",
       "album": "Aradhana",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/_61aQJ4EEsk/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/_61aQJ4EEsk/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-021",
@@ -8226,7 +9046,8 @@
       "artist": "Sukhwinder Singh, Sapna Awasthi | Dil Se",
       "album": "Sukhwinder Singh, Sapna Awasthi",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/8lG1rK94qWE/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/8lG1rK94qWE/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-022",
@@ -8236,7 +9057,8 @@
       "artist": "Kailash Kher | Chandni Chowk To China",
       "album": "Kailash Kher",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/7CdpHATpXXU/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/7CdpHATpXXU/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-023",
@@ -8246,7 +9068,8 @@
       "artist": "ALBUM CREATIONS",
       "album": "Golden 90s Classics",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/gTlY-WV7wYU/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/gTlY-WV7wYU/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-024",
@@ -8256,7 +9079,8 @@
       "artist": "Sholay(1975)| Amitabh Bachchan | Dharm…",
       "album": "Sholay(1975)",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/1T8G_d5o5Gs/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/1T8G_d5o5Gs/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-025",
@@ -8266,7 +9090,8 @@
       "artist": "Sholay | Kishore Kumar | Amitabh Bachc…",
       "album": "Sholay",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/Bx5sqAE86e0/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/Bx5sqAE86e0/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-026",
@@ -8276,7 +9101,8 @@
       "artist": "Sholay | Amitabh Bachchan | Dharmendra…",
       "album": "Sholay",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/qRdoJJb_rrU/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/qRdoJJb_rrU/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-027",
@@ -8286,7 +9112,8 @@
       "artist": "Rahul Jain | Sholay | Tune Lyrico",
       "album": "Rahul Jain",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/vb9hvky8tc8/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/vb9hvky8tc8/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-028",
@@ -8296,7 +9123,8 @@
       "artist": "M. Dosti",
       "album": "Golden 90s Classics",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/_yC4IKZ76GA/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/_yC4IKZ76GA/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-029",
@@ -8306,7 +9134,8 @@
       "artist": "Yeh Dosti Hum Nahi Todenge",
       "album": "Golden 90s Classics",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/keyUyjT0f8A/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/keyUyjT0f8A/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-030",
@@ -8316,7 +9145,8 @@
       "artist": "Dharmendra | Amitabh | Sholay -HD Vide…",
       "album": "Dharmendra",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/qfCt1UZAXMQ/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/qfCt1UZAXMQ/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-031",
@@ -8326,7 +9156,8 @@
       "artist": "🎧 Lofi Slot 🎧",
       "album": "Golden 90s Classics",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/jki29sXNRNM/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/jki29sXNRNM/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-032",
@@ -8336,7 +9167,8 @@
       "artist": "Sholay Song | Amitabh bachchan | Dharm…",
       "album": "Sholay Song",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/pzfPccOlY_s/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/pzfPccOlY_s/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-033",
@@ -8346,7 +9178,8 @@
       "artist": "Kishore Kumar, Manna Dey | Sholay Song…",
       "album": "Kishore Kumar, Manna Dey",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/wFAU_duK0Jc/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/wFAU_duK0Jc/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-034",
@@ -8356,7 +9189,8 @@
       "artist": "Dj Jay Thakur",
       "album": "Golden 90s Classics",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/9_oTxNGcXR8/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/9_oTxNGcXR8/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-035",
@@ -8366,7 +9200,8 @@
       "artist": "Sholay Emotional Scene | Gabbar Singh …",
       "album": "Sholay Emotional Scene",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/IuZNgJMfEeI/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/IuZNgJMfEeI/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-036",
@@ -8376,7 +9211,8 @@
       "artist": "Manna Dey - Topic",
       "album": "Golden 90s Classics",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/T6Cie280Dq8/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/T6Cie280Dq8/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-037",
@@ -8386,7 +9222,8 @@
       "artist": "Benny Dayal, Vishal Mishra | Baaghi",
       "album": "Benny Dayal, Vishal Mishra",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/qnQCd_nZn_g/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/qnQCd_nZn_g/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-038",
@@ -8396,7 +9233,8 @@
       "artist": "Sholay Oxygen Mix | DJ Aira | 4K • 5.1",
       "album": "Sholay Oxygen Mix",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/JVQhw298b6g/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/JVQhw298b6g/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-039",
@@ -8406,7 +9244,8 @@
       "artist": "Sholay(1975)| Amitabh Bachchan | Dharm…",
       "album": "Sholay(1975)",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/KK2vimvZ3Dg/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/KK2vimvZ3Dg/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-040",
@@ -8416,7 +9255,8 @@
       "artist": "Sholey 1975 | BassBoosted Remix with J…",
       "album": "Sholey 1975",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/C4QBpS9fq4U/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/C4QBpS9fq4U/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-041",
@@ -8426,7 +9266,8 @@
       "artist": "Silsila | Amitabh Bachchan, Rekha | Ki…",
       "album": "Silsila",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/7dO_MS9tZ5E/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/7dO_MS9tZ5E/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-042",
@@ -8436,7 +9277,8 @@
       "artist": "Rajnish Nagar",
       "album": "Golden 90s Classics",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/OssRAVZhsRk/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/OssRAVZhsRk/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-043",
@@ -8446,7 +9288,8 @@
       "artist": "Kishore Kumar | Yaarana 1981 Songs | A…",
       "album": "Kishore Kumar",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/9dcBy2uXL7E/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/9dcBy2uXL7E/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-044",
@@ -8456,7 +9299,8 @@
       "artist": "Full Song | Rakhee, Amitabh Bachchan, …",
       "album": "Full Song",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/-W2dagktUp0/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/-W2dagktUp0/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-045",
@@ -8466,7 +9310,8 @@
       "artist": "ओ साथी रे गाने के बोल | Muqaddar ka Si…",
       "album": "ओ साथी रे गाने के बोल",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/Wy6ec9YTO8g/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/Wy6ec9YTO8g/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-046",
@@ -8476,7 +9321,8 @@
       "artist": "Amitabh Bachchan",
       "album": "Golden 90s Classics",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/BB6KvXQx090/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/BB6KvXQx090/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-047",
@@ -8486,7 +9332,8 @@
       "artist": "Full Song | Silsila | Amitabh Bachchan…",
       "album": "Full Song",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/43wT0xhvfsA/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/43wT0xhvfsA/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-048",
@@ -8496,7 +9343,8 @@
       "artist": "Kabhi Kabhie | Amitabh Bachchan, Rakhe…",
       "album": "Kabhi Kabhie",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/QkGqpVYjLUw/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/QkGqpVYjLUw/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-049",
@@ -8506,7 +9354,8 @@
       "artist": "Kabhi Kabhie |Cover by Vineet Dhingra|…",
       "album": "Kabhi Kabhie",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/Jkd0O1UqyOY/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/Jkd0O1UqyOY/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-050",
@@ -8516,7 +9365,8 @@
       "artist": "Amitabh Bachchan | Praveen Babi | Majb…",
       "album": "Amitabh Bachchan",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/-ArgZa-UsAM/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/-ArgZa-UsAM/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-051",
@@ -8526,7 +9376,8 @@
       "artist": "दिल तो है दिल दिल का ऐतबार | Muqadar K…",
       "album": "दिल तो है दिल दिल का ऐतबार",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/YT7crTHjCAo/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/YT7crTHjCAo/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-052",
@@ -8536,7 +9387,8 @@
       "artist": "Amitabh Bachchan's Poetry Recital | Ka…",
       "album": "Amitabh Bachchan's Poetry Recital",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/kxT-5glSScc/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/kxT-5glSScc/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-053",
@@ -8546,7 +9398,8 @@
       "artist": "Kabhi Kabhie | Rishi Kapoor, Neetu Sin…",
       "album": "Kabhi Kabhie",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/gejKrLu9N9c/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/gejKrLu9N9c/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-054",
@@ -8556,7 +9409,8 @@
       "artist": "Kishore Kumar | Yaarana 1981 Songs | A…",
       "album": "Kishore Kumar",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/K2K33TUE4rw/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/K2K33TUE4rw/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-055",
@@ -8566,7 +9420,8 @@
       "artist": "Amitabh Bachchan, Rakhee | Mukesh | Kh…",
       "album": "Amitabh Bachchan, Rakhee",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/BVnz6oSupUM/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/BVnz6oSupUM/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-056",
@@ -8576,7 +9431,8 @@
       "artist": "Sadhana Sargam | Udit Narayan | Kyun H…",
       "album": "Sadhana Sargam",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/G_x-UJNEmEU/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/G_x-UJNEmEU/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-057",
@@ -8586,7 +9442,8 @@
       "artist": "Amitabh Bachchan - Topic",
       "album": "Golden 90s Classics",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/IJRT8hcp53w/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/IJRT8hcp53w/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-058",
@@ -8596,7 +9453,8 @@
       "artist": "Kabhi Kabhie | Amitabh Bachchan, Wahee…",
       "album": "Kabhi Kabhie",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/COV1a8T5PDg/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/COV1a8T5PDg/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-059",
@@ -8606,7 +9464,8 @@
       "artist": "Amitabh Bachchan | Rakhee Gulzar | Kab…",
       "album": "Amitabh Bachchan",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/eMC7RJpMYhk/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/eMC7RJpMYhk/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-060",
@@ -8616,7 +9475,8 @@
       "artist": "MUKHTAR SHAH | KABHI KABHIE MOVIE | AM…",
       "album": "MUKHTAR SHAH",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/dqkmT6vLvZc/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/dqkmT6vLvZc/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-061",
@@ -8626,7 +9486,8 @@
       "artist": "Rakib Sultan Music",
       "album": "Golden 90s Classics",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/SBfPs-PMGTA/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/SBfPs-PMGTA/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-062",
@@ -8636,7 +9497,8 @@
       "artist": "Jo Jeeta Wohi Sikandar | Lata Mangeshk…",
       "album": "Jo Jeeta Wohi Sikandar",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/Oc9E71akp5M/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/Oc9E71akp5M/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-063",
@@ -8646,7 +9508,8 @@
       "artist": "Cover | Aamir Khan | Udit Narayan | Sa…",
       "album": "Cover",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/2yyNfCdiVug/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/2yyNfCdiVug/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-064",
@@ -8656,7 +9519,8 @@
       "artist": "Udit Narayan - Topic",
       "album": "Golden 90s Classics",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/1R8MGdgZDns/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/1R8MGdgZDns/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-065",
@@ -8666,7 +9530,8 @@
       "artist": "Udit Narayan , Sadhana Sargam | Jo Jee…",
       "album": "Udit Narayan , Sadhana Sargam",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/YoThngCrGGc/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/YoThngCrGGc/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-066",
@@ -8676,7 +9541,8 @@
       "artist": "Vishal Dadlani | Bajirao Mastani",
       "album": "Vishal Dadlani",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/PesrFCmjdNI/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/PesrFCmjdNI/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-067",
@@ -8686,7 +9552,8 @@
       "artist": "Pehla Nasha | Jaadu Teri Nazar | Ruk J…",
       "album": "Pehla Nasha",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/bydvSfemqcg/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/bydvSfemqcg/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-068",
@@ -8696,7 +9563,8 @@
       "artist": "Aamir Khan | Sadhana Sargam | Udit Nar…",
       "album": "Aamir Khan",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/Ki41AKu0iHc/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/Ki41AKu0iHc/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-069",
@@ -8706,7 +9574,8 @@
       "artist": "Full Song | Dilwale Dulhania Le Jayeng…",
       "album": "Full Song",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/hw_HpTI_Wkw/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/hw_HpTI_Wkw/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-070",
@@ -8716,7 +9585,8 @@
       "artist": "Mood 90's",
       "album": "Golden 90s Classics",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/PZ7mhXZSJ8c/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/PZ7mhXZSJ8c/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-071",
@@ -8726,7 +9596,8 @@
       "artist": "Uttarwar Pruthviraj",
       "album": "Golden 90s Classics",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/mdPrweVv7DE/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/mdPrweVv7DE/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-072",
@@ -8736,7 +9607,8 @@
       "artist": "Full Song | Jatin-Lalit | Shah Rukh Kh…",
       "album": "Full Song",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/BOBUVPrYf2s/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/BOBUVPrYf2s/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-073",
@@ -8746,7 +9618,8 @@
       "artist": "Aamir Khan | Sadhana Sargam | Udit Nar…",
       "album": "Aamir Khan",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/ODu7OyAqK-Q/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/ODu7OyAqK-Q/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-074",
@@ -8756,7 +9629,8 @@
       "artist": "Aamir Khan | Sadhana Sargam | Udit Nar…",
       "album": "Aamir Khan",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/iSUK1QoK9-E/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/iSUK1QoK9-E/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-075",
@@ -8766,7 +9640,8 @@
       "artist": "Sukhwinder Singh, Ajay-Atul | Singham",
       "album": "Sukhwinder Singh, Ajay-Atul",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/bjfKyIAlsZs/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/bjfKyIAlsZs/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-076",
@@ -8776,7 +9651,8 @@
       "artist": "Udit Narayan - Topic",
       "album": "Golden 90s Classics",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/dPkwe9AoOmY/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/dPkwe9AoOmY/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-077",
@@ -8786,7 +9662,8 @@
       "artist": "Udit Narayan , Sadhana Sargam | Jo Jee…",
       "album": "Udit Narayan , Sadhana Sargam",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/lIk5ZBlIByo/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/lIk5ZBlIByo/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-078",
@@ -8796,7 +9673,8 @@
       "artist": "Karaoke Song with Lyrics | Jo Jeeta Wo…",
       "album": "Karaoke Song with Lyrics",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/17bJ89Ht7zs/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/17bJ89Ht7zs/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-079",
@@ -8806,7 +9684,8 @@
       "artist": "My Hindi Songs Translation",
       "album": "Golden 90s Classics",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/Ed1WBWvxnSY/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/Ed1WBWvxnSY/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-080",
@@ -8816,7 +9695,8 @@
       "artist": "Dilwale Dulhania Le Jayenge - Kumar Sa…",
       "album": "Golden 90s Classics",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/TopgRkAtS3A/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/TopgRkAtS3A/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-081",
@@ -8826,7 +9706,8 @@
       "artist": "Shah Rukh Khan, Madhuri, Karisma, Aksh…",
       "album": "Golden 90s Classics",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/lZ2PhyBF3GQ/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/lZ2PhyBF3GQ/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-082",
@@ -8836,7 +9717,8 @@
       "artist": "Vishal Dadlani | Mary Kom",
       "album": "Vishal Dadlani",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/BwiaxAos5cg/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/BwiaxAos5cg/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-083",
@@ -8846,7 +9728,8 @@
       "artist": "Dilwale Dulhania Le Jayenge | Shah Ruk…",
       "album": "Dilwale Dulhania Le Jayenge",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/cNV5hLSa9H8/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/cNV5hLSa9H8/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-084",
@@ -8856,7 +9739,8 @@
       "artist": "Lyrical Song | Dilwale Dulhania Le Jay…",
       "album": "Lyrical Song",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/Zxgvob1Ew0c/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/Zxgvob1Ew0c/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-085",
@@ -8866,7 +9750,8 @@
       "artist": "Divya Kumar, Sachin-Jigar | Badlapur",
       "album": "Divya Kumar, Sachin-Jigar",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/-yX2trMgn5s/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/-yX2trMgn5s/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-086",
@@ -8876,7 +9761,8 @@
       "artist": "Kumar Sanu | Lata Mangeshkar | Salman …",
       "album": "Kumar Sanu",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/wBw9EPtDLw8/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/wBw9EPtDLw8/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-087",
@@ -8886,7 +9772,8 @@
       "artist": "Shahrukh Khan | Kajol | Full Songs | J…",
       "album": "Shahrukh Khan",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/-V4XWq_sRDw/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/-V4XWq_sRDw/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-088",
@@ -8896,7 +9783,8 @@
       "artist": "Dil To Pagal Hai | Full Song | Lata Ma…",
       "album": "Dil To Pagal Hai",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/ojCnlV1MA-k/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/ojCnlV1MA-k/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-089",
@@ -8906,7 +9794,8 @@
       "artist": "Shahrukh Khan | Madhuri Dixit | Kumar …",
       "album": "Shahrukh Khan",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/cUVUs7M9TS0/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/cUVUs7M9TS0/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-090",
@@ -8916,7 +9805,8 @@
       "artist": "Indian Idol Season 12",
       "album": "Golden 90s Classics",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/y33alFobQdA/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/y33alFobQdA/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-091",
@@ -8926,7 +9816,8 @@
       "artist": "Lyrical Song | Dilwale Dulhania Le Jay…",
       "album": "Lyrical Song",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/O3q6OZbjgKU/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/O3q6OZbjgKU/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-092",
@@ -8936,7 +9827,8 @@
       "artist": "Dilwale Dulhania Le Jayenge || Ranu Mo…",
       "album": "Dilwale Dulhania Le Jayenge",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/uBmdxtJ5c4o/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/uBmdxtJ5c4o/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-093",
@@ -8946,7 +9838,8 @@
       "artist": "Eagle",
       "album": "Golden 90s Classics",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/Ujl0rhUICGg/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/Ujl0rhUICGg/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-094",
@@ -8956,7 +9849,8 @@
       "artist": "Romy, Vivek Hariharan | Uri",
       "album": "Romy, Vivek Hariharan",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/pCYojfACnzQ/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/pCYojfACnzQ/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-095",
@@ -8966,7 +9860,8 @@
       "artist": "Shah Rukh Khan | Kajol | Kumar Sanu | …",
       "album": "Shah Rukh Khan",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/ay6pwhXPNvo/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/ay6pwhXPNvo/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-096",
@@ -8976,7 +9871,8 @@
       "artist": "|DDLJ | Kumar Sanu-Anuradha Ghosh | 55…",
       "album": "",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/4f9rJADDp2g/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/4f9rJADDp2g/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-097",
@@ -8986,7 +9882,8 @@
       "artist": "Lata Mangeshkar - Topic",
       "album": "Golden 90s Classics",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/Mf_0pDqZi50/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/Mf_0pDqZi50/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-098",
@@ -8996,7 +9893,8 @@
       "artist": "Lalat Harmony Events",
       "album": "Golden 90s Classics",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/hqtmwQ_5uCk/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/hqtmwQ_5uCk/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-099",
@@ -9006,7 +9904,8 @@
       "artist": "Instrumental Music Cover | Rinku Khan",
       "album": "Instrumental Music Cover",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/RU-k6NR2o8E/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/RU-k6NR2o8E/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-100",
@@ -9016,7 +9915,8 @@
       "artist": "Dilwale Dulhania Le Jayenge | Shah Ruk…",
       "album": "Dilwale Dulhania Le Jayenge",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/vCTW2GfcepQ/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/vCTW2GfcepQ/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-101",
@@ -9026,7 +9926,8 @@
       "artist": "Sridevi | Kishore Kumar",
       "album": "Sridevi",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/eVnG_Rqfgg4/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/eVnG_Rqfgg4/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-102",
@@ -9036,7 +9937,8 @@
       "artist": "Kishore Kumar - Topic",
       "album": "Golden 90s Classics",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/9Eg4d56rt-U/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/9Eg4d56rt-U/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-103",
@@ -9046,7 +9948,8 @@
       "artist": "Kishore Kumar Superhit Song | Sridevi …",
       "album": "Kishore Kumar Superhit Song",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/WzyBk0jKggw/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/WzyBk0jKggw/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-104",
@@ -9056,7 +9959,8 @@
       "artist": "Nackishore",
       "album": "Golden 90s Classics",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/ThHYiiZTB1Y/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/ThHYiiZTB1Y/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-105",
@@ -9066,7 +9970,8 @@
       "artist": "Kishore Kumar - Topic",
       "album": "Golden 90s Classics",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/PFHczgD-lGM/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/PFHczgD-lGM/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-106",
@@ -9076,7 +9981,8 @@
       "artist": "Abhijeet Kumar (Reverb Audio)",
       "album": "Golden 90s Classics",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/O-BBJgbNsv8/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/O-BBJgbNsv8/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-107",
@@ -9086,7 +9992,8 @@
       "artist": "Vishal Dadlani, Benny Dayal | War",
       "album": "Vishal Dadlani, Benny Dayal",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/sv26LXD4GbI/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/sv26LXD4GbI/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-108",
@@ -9096,7 +10003,8 @@
       "artist": "Slow Symphony",
       "album": "Golden 90s Classics",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/w_2wRMG1mH8/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/w_2wRMG1mH8/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-109",
@@ -9106,7 +10014,8 @@
       "artist": "Kalaakaar (1983) | Moner Retro Vibes",
       "album": "Kalaakaar (1983)",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/W78aOolYNwo/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/W78aOolYNwo/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-110",
@@ -9116,7 +10025,8 @@
       "artist": "Indian Idol | Journey Till Now",
       "album": "Indian Idol",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/fJCA1x-FtaA/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/fJCA1x-FtaA/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-111",
@@ -9126,7 +10036,8 @@
       "artist": "Kalakaar",
       "album": "Golden 90s Classics",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/S3RHzeOCFHQ/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/S3RHzeOCFHQ/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-112",
@@ -9136,7 +10047,8 @@
       "artist": "Eagle Home Entertainments",
       "album": "Golden 90s Classics",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/fruy3jllfes/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/fruy3jllfes/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-113",
@@ -9146,7 +10058,8 @@
       "artist": "Mere Sapno Ki Rani Cover - Mashup | Aa…",
       "album": "Mere Sapno Ki Rani Cover - Mashup",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/4gbvQNPCt-I/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/4gbvQNPCt-I/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-114",
@@ -9156,7 +10069,8 @@
       "artist": "Ek Ladki Bheegi Bhagi Si | Mere Mehboo…",
       "album": "Ek Ladki Bheegi Bhagi Si",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/CeO-2xTCDTU/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/CeO-2xTCDTU/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-115",
@@ -9166,7 +10080,8 @@
       "artist": "Acoustic Guitar instrumental",
       "album": "Golden 90s Classics",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/ZEgipMHnw6I/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/ZEgipMHnw6I/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-116",
@@ -9176,7 +10091,8 @@
       "artist": "Pag Ghunghroo Baandh | Aaj Rapat Jaaye…",
       "album": "Pag Ghunghroo Baandh",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/hL71wUbaHV4/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/hL71wUbaHV4/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-117",
@@ -9186,7 +10102,8 @@
       "artist": "Meraki Sax",
       "album": "Golden 90s Classics",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/LYLau8rZZws/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/LYLau8rZZws/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-118",
@@ -9196,7 +10113,8 @@
       "artist": "Old Songs Kishore Kumar|  Kishore Kuma…",
       "album": "Old Songs Kishore Kumar",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/mdPFcsZ7Pjc/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/mdPFcsZ7Pjc/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-119",
@@ -9206,7 +10124,8 @@
       "artist": "Kishore Kumar | Kalaakaar | Sargam",
       "album": "Kishore Kumar",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/LHlaLfujm_k/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/LHlaLfujm_k/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-120",
@@ -9216,7 +10135,8 @@
       "artist": "Old songs remix",
       "album": "Golden 90s Classics",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/EZIMrK0W7hs/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/EZIMrK0W7hs/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-121",
@@ -9226,7 +10146,8 @@
       "artist": "Mere Sapno Ki Rani",
       "album": "Golden 90s Classics",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/IrpRI8NyulE/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/IrpRI8NyulE/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-122",
@@ -9236,7 +10157,8 @@
       "artist": "Lyrical Video",
       "album": "Golden 90s Classics",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/7Ib33wy6OT4/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/7Ib33wy6OT4/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-123",
@@ -9246,7 +10168,8 @@
       "artist": "Mere Sapno Ki Rani Remix (Vidya Vox Ma…",
       "album": "Golden 90s Classics",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/lGkqNVrgFWE/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/lGkqNVrgFWE/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-124",
@@ -9256,7 +10179,8 @@
       "artist": "Retro Hit Songs | Kishore Kumar Romant…",
       "album": "Retro Hit Songs",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/mzIuhFx5W1o/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/mzIuhFx5W1o/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-125",
@@ -9266,7 +10190,8 @@
       "artist": "Kishore Kumar | Rajesh Khanna | Sumit …",
       "album": "Kishore Kumar",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/Q0LMeOmRUy8/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/Q0LMeOmRUy8/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-126",
@@ -9276,7 +10201,8 @@
       "artist": "O Mere Dil Ke Chain | Bheegi Bheegi Ra…",
       "album": "O Mere Dil Ke Chain",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/Fpu7OjcxYvY/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/Fpu7OjcxYvY/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-127",
@@ -9286,7 +10212,8 @@
       "artist": "Dj RawKing | Dj RawQueen | R S Visuals…",
       "album": "Dj RawKing",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/g_pi4e7lLwE/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/g_pi4e7lLwE/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-128",
@@ -9296,7 +10223,8 @@
       "artist": "film Instrumental by Veena Meerakrishna",
       "album": "Golden 90s Classics",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/09pE6IqT1ug/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/09pE6IqT1ug/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-129",
@@ -9306,7 +10234,8 @@
       "artist": "AddieBle Musics",
       "album": "Golden 90s Classics",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/IXIgs15Uqf0/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/IXIgs15Uqf0/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-130",
@@ -9316,7 +10245,8 @@
       "artist": "Dharmendra & Rakhi",
       "album": "Golden 90s Classics",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/_q7Wz-N4oaQ/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/_q7Wz-N4oaQ/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-131",
@@ -9326,7 +10256,8 @@
       "artist": "Piyush Mishra | Gulaal",
       "album": "Piyush Mishra",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/1tsCjcq0G-U/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/1tsCjcq0G-U/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-132",
@@ -9336,7 +10267,8 @@
       "artist": "राजेश खन्ना | शर्मिला टैगोर | किशोर कु…",
       "album": "राजेश खन्ना",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/6yL7e60G17c/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/6yL7e60G17c/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-133",
@@ -9346,7 +10278,8 @@
       "artist": "Kishore Kumar | Aradhana | Mere Sapno …",
       "album": "Kishore Kumar",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/rWsJ79-TDqM/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/rWsJ79-TDqM/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-134",
@@ -9356,7 +10289,8 @@
       "artist": "Lyrical | Suniel Shetty | Hunter | Sur…",
       "album": "Lyrical",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/_70tVb5Ij0U/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/_70tVb5Ij0U/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-135",
@@ -9366,7 +10300,8 @@
       "artist": "Lyrics | Aradhana | Kishore Kumar Hit …",
       "album": "Lyrics",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/ZyNXJSgEdGM/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/ZyNXJSgEdGM/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-136",
@@ -9376,7 +10311,8 @@
       "artist": "Aradhana",
       "album": "Golden 90s Classics",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/-2UcIC_s05I/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/-2UcIC_s05I/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-137",
@@ -9386,7 +10322,8 @@
       "artist": "Bijaya Official",
       "album": "Golden 90s Classics",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/C4o0maaZFWo/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/C4o0maaZFWo/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-138",
@@ -9396,7 +10333,8 @@
       "artist": "Kishore Kumar | Kalaakaar",
       "album": "Kishore Kumar",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/F5W9370GZ9s/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/F5W9370GZ9s/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-139",
@@ -9406,7 +10344,8 @@
       "artist": "Aaradhana (1969)",
       "album": "Golden 90s Classics",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/PdelyWYIayk/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/PdelyWYIayk/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-140",
@@ -9416,7 +10355,8 @@
       "artist": "Aradhana | music pieces(Prelude/Interl…",
       "album": "Aradhana",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/Rod6fjR3MIY/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/Rod6fjR3MIY/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-141",
@@ -9426,7 +10366,8 @@
       "artist": "Pal Pal Dil Ke Paas Tum Rehti Ho",
       "album": "Golden 90s Classics",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/AMuRRXCuy-4/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/AMuRRXCuy-4/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-142",
@@ -9436,7 +10377,8 @@
       "artist": "Kishore Kumar | Aradhana",
       "album": "Kishore Kumar",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/henP_m2wUqg/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/henP_m2wUqg/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-143",
@@ -9446,7 +10388,8 @@
       "artist": "Blackmail | Dharmendra & Rakhi | Bolly…",
       "album": "Blackmail",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/viKdF7sp_cY/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/viKdF7sp_cY/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-144",
@@ -9456,7 +10399,8 @@
       "artist": "Arijit Singh & Tulsi Kumar",
       "album": "Golden 90s Classics",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/vYGw1V2NSik/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/vYGw1V2NSik/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-145",
@@ -9466,7 +10410,8 @@
       "artist": "Dharmendra | Rakhee | Black Mail (1973…",
       "album": "Dharmendra",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/cvQWzlNIjt8/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/cvQWzlNIjt8/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-146",
@@ -9476,7 +10421,8 @@
       "artist": "Universally SANAM | Romantic Song",
       "album": "Universally SANAM",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/BulAS4su2CU/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/BulAS4su2CU/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-147",
@@ -9486,7 +10432,8 @@
       "artist": "Strumm Sound",
       "album": "Golden 90s Classics",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/cC6UGlKN3PA/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/cC6UGlKN3PA/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-148",
@@ -9496,7 +10443,8 @@
       "artist": "vishesh goyal",
       "album": "Golden 90s Classics",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/LsMEeJpFMD4/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/LsMEeJpFMD4/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-149",
@@ -9506,7 +10454,8 @@
       "artist": "Dharmendra,Rakhee,Shatrughan | Blackmail",
       "album": "Dharmendra,Rakhee,Shatrughan",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/QwLQ4_gkvsE/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/QwLQ4_gkvsE/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-150",
@@ -9516,7 +10465,8 @@
       "artist": "Kishore Kumar | Kati Patang",
       "album": "Kishore Kumar",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/gA62xK4BqQE/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/gA62xK4BqQE/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-151",
@@ -9526,7 +10476,8 @@
       "artist": "Blackmail | Kishore Kumar | Dharmendra…",
       "album": "Blackmail",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/Vabo2KVaEwA/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/Vabo2KVaEwA/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-152",
@@ -9536,7 +10487,8 @@
       "artist": "Blackmail | Dharmendra | Rakhee | Supe…",
       "album": "Blackmail",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/LjxNvViZxew/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/LjxNvViZxew/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-153",
@@ -9546,7 +10498,8 @@
       "artist": "Kishore Kumar - Topic",
       "album": "Golden 90s Classics",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/xB8bPYEFlPA/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/xB8bPYEFlPA/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-154",
@@ -9556,7 +10509,8 @@
       "artist": "Versatile - Melody TM",
       "album": "Golden 90s Classics",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/bwWprAAOyy8/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/bwWprAAOyy8/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-155",
@@ -9566,7 +10520,8 @@
       "artist": "Soham Oza",
       "album": "Golden 90s Classics",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/H60L40GbfFI/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/H60L40GbfFI/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-156",
@@ -9576,7 +10531,8 @@
       "artist": "MehboobChohanFanClub",
       "album": "Golden 90s Classics",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/NtrEXzHT4pU/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/NtrEXzHT4pU/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-157",
@@ -9586,7 +10542,8 @@
       "artist": "Kishore Kumar - Topic",
       "album": "Golden 90s Classics",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/d0JpdfOLXI0/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/d0JpdfOLXI0/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-158",
@@ -9596,7 +10553,8 @@
       "artist": "Lyrics | Kishore Kumar | Audio | Old S…",
       "album": "Lyrics",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/f5dw3nafOuo/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/f5dw3nafOuo/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-159",
@@ -9606,7 +10564,8 @@
       "artist": "पल पल दिल के पास | Dharmendra, Rakhee …",
       "album": "पल पल दिल के पास",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/Uw5_IzY_Ooc/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/Uw5_IzY_Ooc/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-160",
@@ -9616,7 +10575,8 @@
       "artist": "Neelam Pragya Geet",
       "album": "Golden 90s Classics",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/tJrdQmCHcKs/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/tJrdQmCHcKs/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-161",
@@ -9626,7 +10586,8 @@
       "artist": "Gulabi Aankhen",
       "album": "Golden 90s Classics",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/hgi2MYAFgE8/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/hgi2MYAFgE8/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-162",
@@ -9636,7 +10597,8 @@
       "artist": "Ashish Patil",
       "album": "Golden 90s Classics",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/vKrBHzhBGOQ/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/vKrBHzhBGOQ/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-163",
@@ -9646,7 +10608,8 @@
       "artist": "Rukh Se Zara Naqab Utha Do Mere Huzoor",
       "album": "Golden 90s Classics",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/MTwtrF243kY/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/MTwtrF243kY/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-164",
@@ -9656,7 +10619,8 @@
       "artist": "Rajesh Khanna, Nanda | The Train (1970…",
       "album": "Rajesh Khanna, Nanda",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/6Z3DO-OFIjQ/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/6Z3DO-OFIjQ/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-165",
@@ -9666,7 +10630,8 @@
       "artist": "Sanam Puri | Old Is Gold | Song | Dark…",
       "album": "Sanam Puri",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/g3kbONxTpIo/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/g3kbONxTpIo/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-166",
@@ -9676,7 +10641,8 @@
       "artist": "Mohammed Rafi - Topic",
       "album": "Golden 90s Classics",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/nWbBIf5_LTY/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/nWbBIf5_LTY/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-167",
@@ -9686,7 +10652,8 @@
       "artist": "गुलाबी आँखे जो तेरी देखी from The Trai…",
       "album": "Golden 90s Classics",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/ooeAxo1GMRw/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/ooeAxo1GMRw/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-168",
@@ -9696,7 +10663,8 @@
       "artist": "Kishore Kumar | Aradhana",
       "album": "Kishore Kumar",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/P_jKk7a-pXw/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/P_jKk7a-pXw/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-169",
@@ -9706,7 +10674,8 @@
       "artist": "गुलाबी आँखें जो तेरी देखी | Mohammed R…",
       "album": "गुलाबी आँखें जो तेरी देखी",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/Xsn0QjMN3fM/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/Xsn0QjMN3fM/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-170",
@@ -9716,7 +10685,8 @@
       "artist": "Kishore Kumar | Mere Jeevan Saathi",
       "album": "Kishore Kumar",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/o2F8_90L1b0/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/o2F8_90L1b0/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-171",
@@ -9726,7 +10696,8 @@
       "artist": "Chand Lamhe Fursat Ke",
       "album": "Golden 90s Classics",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/cIVkYSm7Orw/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/cIVkYSm7Orw/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-172",
@@ -9736,7 +10707,8 @@
       "artist": "Karwaan Official",
       "album": "Golden 90s Classics",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/fYPkIaIemAs/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/fYPkIaIemAs/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-173",
@@ -9746,7 +10718,8 @@
       "artist": "The Train (1970) | Rajesh Khanna, Nand…",
       "album": "The Train (1970)",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/SLT4HF7nHKc/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/SLT4HF7nHKc/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-174",
@@ -9756,7 +10729,8 @@
       "artist": "Mohammed Rafi Karaoke | Hindi Sing Along",
       "album": "Mohammed Rafi Karaoke",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/0clDXacCD9E/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/0clDXacCD9E/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-175",
@@ -9766,7 +10740,8 @@
       "artist": "गुलाबी आँखें जो| MOHD RAFI | SARVESH M…",
       "album": "गुलाबी आँखें जो",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/4Nki0dXGt_o/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/4Nki0dXGt_o/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-176",
@@ -9776,7 +10751,8 @@
       "artist": "Piano Cover | Mohammed Rafi | Aakash D…",
       "album": "Piano Cover",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/L6DgJVMzkZU/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/L6DgJVMzkZU/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-177",
@@ -9786,7 +10762,8 @@
       "artist": "Gulabi Aankhen Jo Teri Dekhi.",
       "album": "Golden 90s Classics",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/JkdHB8S15Co/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/JkdHB8S15Co/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-178",
@@ -9796,7 +10773,8 @@
       "artist": "Mohd. Rafi | R D Burman | Anand Bakshi…",
       "album": "Mohd. Rafi",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/p8Tu9oj2ydw/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/p8Tu9oj2ydw/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-179",
@@ -9806,7 +10784,8 @@
       "artist": "Kishore Kumar | Blackmail",
       "album": "Kishore Kumar",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/dG928sWk0_U/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/dG928sWk0_U/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-180",
@@ -9816,7 +10795,8 @@
       "artist": "The Train (1970) | Rajesh Khanna, Nand…",
       "album": "The Train (1970)",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/JlxYbAodnjU/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/JlxYbAodnjU/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-181",
@@ -9826,7 +10806,8 @@
       "artist": "bollywoodstyle",
       "album": "Golden 90s Classics",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/xDbK1eZYVzg/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/xDbK1eZYVzg/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-182",
@@ -9836,7 +10817,8 @@
       "artist": "क्या हुआ तेरा वादा | Hum Kisise kum na…",
       "album": "क्या हुआ तेरा वादा",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/Z5D1dhTMclI/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/Z5D1dhTMclI/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-183",
@@ -9846,7 +10828,8 @@
       "artist": "क्या हुआ तेरा वादा | Hum Kisise kum na…",
       "album": "क्या हुआ तेरा वादा",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/fyZ-sOHj-Vg/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/fyZ-sOHj-Vg/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-184",
@@ -9856,7 +10839,8 @@
       "artist": "Pranav Chandran Covers | Hum Kisise Ku…",
       "album": "Pranav Chandran Covers",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/4gtXTXWBK4o/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/4gtXTXWBK4o/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-185",
@@ -9866,7 +10850,8 @@
       "artist": "Kumar Sanu | 1942 A Love Story",
       "album": "Kumar Sanu",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/4-iO6c-JmN8/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/4-iO6c-JmN8/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-186",
@@ -9876,7 +10861,8 @@
       "artist": "Asha Bhosle | Mohammed Rafi | Hum Kisi…",
       "album": "Asha Bhosle",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/wHqKTmEkpBg/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/wHqKTmEkpBg/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-187",
@@ -9886,7 +10872,8 @@
       "artist": "Kya Hua Tera Wada Pt. 2",
       "album": "Golden 90s Classics",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/MGsw7CnqdJo/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/MGsw7CnqdJo/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-188",
@@ -9896,7 +10883,8 @@
       "artist": "Ah Kya Mahfil Hai | Tum Kya Jano | Mil…",
       "album": "Ah Kya Mahfil Hai",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/uyjiK9QCU5U/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/uyjiK9QCU5U/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-189",
@@ -9906,7 +10894,8 @@
       "artist": "Mohammed Rafi | Hum Kisise kum nahi | …",
       "album": "Mohammed Rafi",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/8psAZcIOzEA/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/8psAZcIOzEA/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-190",
@@ -9916,7 +10905,8 @@
       "artist": "Kya Hua Tera Vada | Tere Bina Zindagi …",
       "album": "Kya Hua Tera Vada",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/2beG3rwg2Ck/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/2beG3rwg2Ck/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-191",
@@ -9926,7 +10916,8 @@
       "artist": "masala music",
       "album": "Golden 90s Classics",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/m7qCWlHdnr8/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/m7qCWlHdnr8/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-192",
@@ -9936,7 +10927,8 @@
       "artist": "Full Album Jukebox | Rishi Kapoor | Ka…",
       "album": "Full Album Jukebox",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/yTlYMxf7K74/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/yTlYMxf7K74/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-193",
@@ -9946,7 +10938,8 @@
       "artist": "Atif Aslam (Ai Cover)",
       "album": "Golden 90s Classics",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/KcZ9C6vWMIs/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/KcZ9C6vWMIs/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-194",
@@ -9956,7 +10949,8 @@
       "artist": "Udit Narayan, Sadhana Sargam | JJWS",
       "album": "Udit Narayan, Sadhana Sargam",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/T8Y8c1iQ_uE/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/T8Y8c1iQ_uE/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-195",
@@ -9966,7 +10960,8 @@
       "artist": "Mohammad Rafi | Old song",
       "album": "Mohammad Rafi",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/13AaATy46YU/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/13AaATy46YU/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-196",
@@ -9976,7 +10971,8 @@
       "artist": "Mohammad Rafi | Hum Kisise Kum Nahi | …",
       "album": "Mohammad Rafi",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/h34CiqQ51zs/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/h34CiqQ51zs/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-197",
@@ -9986,7 +10982,8 @@
       "artist": "Hum Kisise Kum Naheen",
       "album": "Golden 90s Classics",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/W6dKaCV-mJQ/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/W6dKaCV-mJQ/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-198",
@@ -9996,7 +10993,8 @@
       "artist": "Gopi & Baby Gupta",
       "album": "Golden 90s Classics",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/7shxWODIwqs/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/7shxWODIwqs/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-199",
@@ -10006,7 +11004,8 @@
       "artist": "क्या हुआ तेरा वादा | Hum Kisise kum na…",
       "album": "क्या हुआ तेरा वादा",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/zVUKtXI7xTM/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/zVUKtXI7xTM/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "classic_old-200",
@@ -10016,7 +11015,8 @@
       "artist": "GEET SANGEET",
       "album": "Golden 90s Classics",
       "category": "classic_old",
-      "thumbnail": "https://i.ytimg.com/vi/g6C-GUy6a3s/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/g6C-GUy6a3s/hqdefault.jpg",
+      "audioUrl": null
     }
   ],
   "lofi": [
@@ -10028,7 +11028,8 @@
       "artist": "Varun Dhawan, Kriti Sanon| Sachin-Jiga…",
       "album": "Varun Dhawan, Kriti Sanon",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/ElZfdU54Cp8/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/ElZfdU54Cp8/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-002",
@@ -10038,7 +11039,8 @@
       "artist": "Ranbir Kapoor, Alia Bhatt | Pritam | A…",
       "album": "Ranbir Kapoor, Alia Bhatt",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/BddP6PYo2gs/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/BddP6PYo2gs/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-003",
@@ -10048,7 +11050,8 @@
       "artist": "Aamir,Kareena | Arijit,Shilpa | Pritam…",
       "album": "Aamir,Kareena",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/KUpwupYj_tY/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/KUpwupYj_tY/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-004",
@@ -10058,7 +11061,8 @@
       "artist": "Jasleen Royal",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/RLzC55ai0eo/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/RLzC55ai0eo/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-005",
@@ -10068,7 +11072,8 @@
       "artist": "Alia Bhatt , Varun Dhawan | Arijit Sin…",
       "album": "Alia Bhatt , Varun Dhawan",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/Grr0FlC8SQA/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/Grr0FlC8SQA/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-006",
@@ -10078,7 +11083,8 @@
       "artist": "T-Series",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/HrnrqYxYrbk/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/HrnrqYxYrbk/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-007",
@@ -10088,7 +11094,8 @@
       "artist": "Kesari | Akshay Kumar & Parineeti Chop…",
       "album": "Kesari",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/Z1-qmKn7DQY/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/Z1-qmKn7DQY/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-008",
@@ -10098,7 +11105,8 @@
       "artist": "Extended Film Version|Brahmāstra|Amita…",
       "album": "Extended Film Version",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/mNuhKUOD_A0/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/mNuhKUOD_A0/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-009",
@@ -10108,7 +11116,8 @@
       "artist": "Brahmāstra | Ranbir | Alia | Pritam | …",
       "album": "Brahmāstra",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/6mr4cYJ7yew/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/6mr4cYJ7yew/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-010",
@@ -10118,7 +11127,8 @@
       "artist": "Chillout Heart | Arijit Singh, Shreya …",
       "album": "Chillout Heart",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/zCGck2spPsU/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/zCGck2spPsU/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-011",
@@ -10128,7 +11138,8 @@
       "artist": "Amtee | Best Of Arijit Singh Songs | S…",
       "album": "Amtee",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/7Txv-r7ijT8/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/7Txv-r7ijT8/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-012",
@@ -10138,7 +11149,8 @@
       "artist": "Slowed + Reverb | Lyrics | Use Headpho…",
       "album": "Slowed + Reverb",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/UJ5J0cFZZTE/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/UJ5J0cFZZTE/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-013",
@@ -10148,7 +11160,8 @@
       "artist": "arijit singh",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/CTgdRyg8aVE/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/CTgdRyg8aVE/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-014",
@@ -10158,7 +11171,8 @@
       "artist": "Lyrical 7",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/TjXH_P7Khhg/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/TjXH_P7Khhg/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-015",
@@ -10168,7 +11182,8 @@
       "artist": "Arijit Singh | Kesariya Tera Ishq Hai …",
       "album": "Arijit Singh",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/W1S9AbHpWFY/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/W1S9AbHpWFY/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-016",
@@ -10178,7 +11193,8 @@
       "artist": "Pritam, Arijit Singh | Dunki | SR Lofi",
       "album": "Pritam, Arijit Singh",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/BwiaxAos5cg/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/BwiaxAos5cg/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-017",
@@ -10188,7 +11204,8 @@
       "artist": "Saif Ali Khan , Kareena Kapoor Khan.",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/vEe-UgJvUHE/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/vEe-UgJvUHE/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-018",
@@ -10198,7 +11215,8 @@
       "artist": "Arijit Singh, Shreya Ghoshal | SR Lofi",
       "album": "Arijit Singh, Shreya Ghoshal",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/9uIIdCBRNRc/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/9uIIdCBRNRc/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-019",
@@ -10208,7 +11226,8 @@
       "artist": "Arijit Singh, Shreya Ghoshal |",
       "album": "Arijit Singh, Shreya Ghoshal",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/0avk5g_9Cgk/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/0avk5g_9Cgk/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-020",
@@ -10218,7 +11237,8 @@
       "artist": "Lyrical Bam Hindi",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/k6dGN3azeqo/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/k6dGN3azeqo/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-021",
@@ -10228,7 +11248,8 @@
       "artist": "𝐅𝐮𝐥𝐥 𝐒𝐨𝐧𝐠 | Arijit Singh | Arj…",
       "album": "𝐅𝐮𝐥𝐥 𝐒𝐨𝐧𝐠",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/_iktURk0X-A/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/_iktURk0X-A/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-022",
@@ -10238,7 +11259,8 @@
       "artist": "Kartik | Sara | Arushi | Pritam | Arij…",
       "album": "Kartik",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/MJyKN-8UncM/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/MJyKN-8UncM/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-023",
@@ -10248,7 +11270,8 @@
       "artist": "Kartik | Sara | Pritam | Darshan Raval…",
       "album": "Kartik",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/HYUpNJJELeE/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/HYUpNJJELeE/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-024",
@@ -10258,7 +11281,8 @@
       "artist": "Kartik, Sara | Pritam | Arijit Singh |…",
       "album": "Kartik, Sara",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/yRB0xbKDebo/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/yRB0xbKDebo/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-025",
@@ -10268,7 +11292,8 @@
       "artist": "Arijit Singh - Topic",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/EQxEms7gnqs/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/EQxEms7gnqs/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-026",
@@ -10278,7 +11303,8 @@
       "artist": "Pal from \"Jalebi\"",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/97bFaxqvpnI/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/97bFaxqvpnI/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-027",
@@ -10288,7 +11314,8 @@
       "artist": "Lucky Edits",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/MtnsyzHoZGU/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/MtnsyzHoZGU/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-028",
@@ -10298,7 +11325,8 @@
       "artist": "Official",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/ceTSEVpRFnM/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/ceTSEVpRFnM/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-029",
@@ -10308,7 +11336,8 @@
       "artist": "Pritam | Arijit Singh",
       "album": "Pritam",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/9-LH8ABADdo/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/9-LH8ABADdo/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-030",
@@ -10318,7 +11347,8 @@
       "artist": "Arijit Singh | Hate Story 2 | SR Lofi",
       "album": "Arijit Singh",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/EEnlczCd1v4/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/EEnlczCd1v4/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-031",
@@ -10328,7 +11358,8 @@
       "artist": "Lockdown Version | Pritam | Arijit",
       "album": "Lockdown Version",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/vGHa_VcAIxM/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/vGHa_VcAIxM/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-032",
@@ -10338,7 +11369,8 @@
       "artist": "slowed + reverbed + rain | Arijit Sing…",
       "album": "slowed + reverbed + rain",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/KeSeFHfSqys/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/KeSeFHfSqys/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-033",
@@ -10348,7 +11380,8 @@
       "artist": "Love Aaj Kal | Kartik | Sara | Pritam …",
       "album": "Love Aaj Kal",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/XtBsUXGTVZ0/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/XtBsUXGTVZ0/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-034",
@@ -10358,7 +11391,8 @@
       "artist": "Armaan Malik | Hate Story 3 | SR Lofi",
       "album": "Armaan Malik",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/hk5IqAhOrnY/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/hk5IqAhOrnY/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-035",
@@ -10368,7 +11402,8 @@
       "artist": "1st soul",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/sK1v-XxbSyE/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/sK1v-XxbSyE/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-036",
@@ -10378,7 +11413,8 @@
       "artist": "Arijit Singh | SR Lofi",
       "album": "Arijit Singh",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/rTvVuLoOq0I/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/rTvVuLoOq0I/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-037",
@@ -10388,7 +11424,8 @@
       "artist": "[ Slowed+Reverb ] | Ek Villain | Ariji…",
       "album": "[ Slowed+Reverb ]",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/xSGL4bM2jC8/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/xSGL4bM2jC8/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-038",
@@ -10398,7 +11435,8 @@
       "artist": "Arijit Singh |",
       "album": "Arijit Singh",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/m-e6lZuf5wc/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/m-e6lZuf5wc/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-039",
@@ -10408,7 +11446,8 @@
       "artist": "Textaudio | Lyrics",
       "album": "Textaudio",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/zik32kzJBHc/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/zik32kzJBHc/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-040",
@@ -10418,7 +11457,8 @@
       "artist": "JO TUM MERE HO",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/ilNt2bikxDI/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/ilNt2bikxDI/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-041",
@@ -10428,7 +11468,8 @@
       "artist": "HUSN",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/gJLVTKhTnog/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/gJLVTKhTnog/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-042",
@@ -10438,7 +11479,8 @@
       "artist": "Coke Studio Bharat",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/bP8ATWCvqzw/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/bP8ATWCvqzw/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-043",
@@ -10448,7 +11490,8 @@
       "artist": "AFSOS ft. AP Dhillon (Official Visuali…",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/2FhgKp_lfJQ/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/2FhgKp_lfJQ/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-044",
@@ -10458,7 +11501,8 @@
       "artist": "Anuv Jain",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/PJWemSzExXs/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/PJWemSzExXs/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-045",
@@ -10468,7 +11512,8 @@
       "artist": "JO TUM MERE HO",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/wmUJwQNGK3k/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/wmUJwQNGK3k/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-046",
@@ -10478,7 +11523,8 @@
       "artist": "ALAG AASMAAN (a song on the ukulele)",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/vA86QFrXoho/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/vA86QFrXoho/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-047",
@@ -10488,7 +11534,8 @@
       "artist": "GUL (Studio)",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/SmaY7RfBgas/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/SmaY7RfBgas/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-048",
@@ -10498,7 +11545,8 @@
       "artist": "Anuv Jain",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/bL6dJjxm0x0/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/bL6dJjxm0x0/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-049",
@@ -10508,7 +11556,8 @@
       "artist": "Coke Studio Bharat",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/-BJt4fCAtZE/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/-BJt4fCAtZE/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-050",
@@ -10518,7 +11567,8 @@
       "artist": "Arko Feat. Atif Aslam  & Nushrat Bharu…",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/P0NfnFYpENo/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/P0NfnFYpENo/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-051",
@@ -10528,7 +11578,8 @@
       "artist": "HUSN",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/0IIJxkDtkHY/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/0IIJxkDtkHY/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-052",
@@ -10538,7 +11589,8 @@
       "artist": "BAARISHEIN (ACOUSTIC)",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/NLKwRW2y-sg/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/NLKwRW2y-sg/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-053",
@@ -10548,7 +11600,8 @@
       "artist": "Anuv Jain | Let Her Go X Husn X Choo L…",
       "album": "Anuv Jain",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/_mR6bY-ndso/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/_mR6bY-ndso/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-054",
@@ -10558,7 +11611,8 @@
       "artist": "DJ Sumit Rajwanshi",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/JuXuakMtsMQ/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/JuXuakMtsMQ/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-055",
@@ -10568,7 +11622,8 @@
       "artist": "Anuv Jain - Topic",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/tYqZK7bq5Bs/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/tYqZK7bq5Bs/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-056",
@@ -10578,7 +11633,8 @@
       "artist": "Gravero & TP",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/V_cZa8Ice2w/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/V_cZa8Ice2w/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-057",
@@ -10588,7 +11644,8 @@
       "artist": "With Translation | Coke Studio | Anuv …",
       "album": "With Translation",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/jKqCewZvECA/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/jKqCewZvECA/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-058",
@@ -10598,7 +11655,8 @@
       "artist": "Aise tu lagay ki gulaab hai 🌹, aur wa…",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/LIEiEwpEhWM/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/LIEiEwpEhWM/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-059",
@@ -10608,7 +11666,8 @@
       "artist": "Top 5 Songs of Anuv Jain | Husn | Jo T…",
       "album": "Top 5 Songs of Anuv Jain",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/8erle22S6x0/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/8erle22S6x0/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-060",
@@ -10618,7 +11677,8 @@
       "artist": "Anuv Jain - Topic",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/usvVGXFIpTM/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/usvVGXFIpTM/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-061",
@@ -10628,7 +11688,8 @@
       "artist": "Anuv Jain - Topic",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/_deqdZmKzyg/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/_deqdZmKzyg/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-062",
@@ -10638,7 +11699,8 @@
       "artist": "Ameen Fahim",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/uK7Ovgs44Uk/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/uK7Ovgs44Uk/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-063",
@@ -10648,7 +11710,8 @@
       "artist": "Official Lyric Video 🌻✨",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/iOIF74Hk80A/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/iOIF74Hk80A/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-064",
@@ -10658,7 +11721,8 @@
       "artist": "Daler Mehndi, Pritam | Dangal",
       "album": "Daler Mehndi, Pritam",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/2Vv-BfVoq4g/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/2Vv-BfVoq4g/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-065",
@@ -10668,7 +11732,8 @@
       "artist": "Kasoor (Acoustic) (Bashaar Remix) Lyri…",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/HhoNUPDVlbc/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/HhoNUPDVlbc/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-066",
@@ -10678,7 +11743,8 @@
       "artist": "prateek kuhad (slowed+reverb) (indian …",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/4gpZU24m3nQ/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/4gpZU24m3nQ/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-067",
@@ -10688,7 +11754,8 @@
       "artist": "Darsh D Shah - Topic",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/0fPStMCNSy8/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/0fPStMCNSy8/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-068",
@@ -10698,7 +11765,8 @@
       "artist": "Lofi Flip Cover | Nvneel",
       "album": "Lofi Flip Cover",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/93oRx73yfAs/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/93oRx73yfAs/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-069",
@@ -10708,7 +11776,8 @@
       "artist": "kasoor acoustic (slowed & reverb) LoFi…",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/LsIDBebTAa4/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/LsIDBebTAa4/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-070",
@@ -10718,7 +11787,8 @@
       "artist": "sad me",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/LPDLr4UiVIQ/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/LPDLr4UiVIQ/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-071",
@@ -10728,7 +11798,8 @@
       "artist": "Anuv Jain - Topic",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/i1IDh_ZoJgI/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/i1IDh_ZoJgI/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-072",
@@ -10738,7 +11809,8 @@
       "artist": "Anuv Jain | SR Lofi",
       "album": "Anuv Jain",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/1gEoVHEr_hU/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/1gEoVHEr_hU/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-073",
@@ -10748,7 +11820,8 @@
       "artist": "SID Gudlekar | Anuv Jain | Passenger |…",
       "album": "SID Gudlekar",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/GVQu3ym-Uf0/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/GVQu3ym-Uf0/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-074",
@@ -10758,7 +11831,8 @@
       "artist": "Alag Aasmaan (Acoustic)",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/J3m3uptDf0Q/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/J3m3uptDf0Q/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-075",
@@ -10768,7 +11842,8 @@
       "artist": "Anuv Jain - Topic",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/mEmwd17xpAk/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/mEmwd17xpAk/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-076",
@@ -10778,7 +11853,8 @@
       "artist": "Soulful Indie Vibes | Timeless Melodie…",
       "album": "Soulful Indie Vibes",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/vMtg9hbtvqM/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/vMtg9hbtvqM/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-077",
@@ -10788,7 +11864,8 @@
       "artist": "Anuv Jain - Topic",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/NWDOrQ1hGBE/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/NWDOrQ1hGBE/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-078",
@@ -10798,7 +11875,8 @@
       "artist": "ALAG AASMAAN ( Lyrics )",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/BmwiS-THm34/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/BmwiS-THm34/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-079",
@@ -10808,7 +11886,8 @@
       "artist": "Gul Lyrics Anuv Jain",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/TS84-uinbdc/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/TS84-uinbdc/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-080",
@@ -10818,7 +11897,8 @@
       "artist": "Anuv Jain.",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/6fTilfKvxbo/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/6fTilfKvxbo/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-081",
@@ -10828,7 +11908,8 @@
       "artist": "Anuv Jain , AP Dillon (slowed+reverb) …",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/5Gggsqvd4w4/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/5Gggsqvd4w4/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-082",
@@ -10838,7 +11919,8 @@
       "artist": "Slowed+Reverb | Anuv Jain| @srlofi71 @…",
       "album": "Slowed+Reverb",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/0GwYr5jrw48/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/0GwYr5jrw48/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-083",
@@ -10848,7 +11930,8 @@
       "artist": "MISHRI (Studio)",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/0P3Gt-60yLc/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/0P3Gt-60yLc/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-084",
@@ -10858,7 +11941,8 @@
       "artist": "Sound DOSE",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/YmUptL9VSdg/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/YmUptL9VSdg/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-085",
@@ -10868,7 +11952,8 @@
       "artist": "MISHRI (Slowed + Reverb)",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/n9W6WrDWQLU/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/n9W6WrDWQLU/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-086",
@@ -10878,7 +11963,8 @@
       "artist": "MISHRI (Live) @Bacardi NH7 Weekender 2…",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/2o7oC_A7TFU/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/2o7oC_A7TFU/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-087",
@@ -10888,7 +11974,8 @@
       "artist": "Unplugged Karaoke | Anuv Jain",
       "album": "Unplugged Karaoke",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/MIcZU1fobg4/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/MIcZU1fobg4/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-088",
@@ -10898,7 +11985,8 @@
       "artist": "Scribbled Music - Topic",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/LFiofrZKNJE/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/LFiofrZKNJE/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-089",
@@ -10908,7 +11996,8 @@
       "artist": "KARAOKE VERSION (with lyrics in the de…",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/JP9XJ7x3bEU/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/JP9XJ7x3bEU/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-090",
@@ -10918,7 +12007,8 @@
       "artist": "Anuv Jain But It's Lo-Fi HipHop Mix",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/oQPfpNzmXnM/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/oQPfpNzmXnM/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-091",
@@ -10928,7 +12018,8 @@
       "artist": "ZAKI FIRDAUSI",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/GZZovoe1dpM/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/GZZovoe1dpM/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-092",
@@ -10938,7 +12029,8 @@
       "artist": "Lofi Mix (Slowed + Reverb) | @anuvjain…",
       "album": "Lofi Mix (Slowed + Reverb)",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/LY1QEPLXAFk/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/LY1QEPLXAFk/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-093",
@@ -10948,7 +12040,8 @@
       "artist": "Swattrex - Topic",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/sm91cOlOodY/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/sm91cOlOodY/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-094",
@@ -10958,7 +12051,8 @@
       "artist": "one hour long soothing loop",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/p_K1HiTNZN8/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/p_K1HiTNZN8/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-095",
@@ -10968,7 +12062,8 @@
       "artist": "Share | Subscribe Us!!",
       "album": "Share",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/Bh5ZRBjgkTs/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/Bh5ZRBjgkTs/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-096",
@@ -10978,7 +12073,8 @@
       "artist": "(s l o w e d + r e v e r b e d) | spec…",
       "album": "(s l o w e d + r e v e r b e d)",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/FVfnQ3RHi-M/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/FVfnQ3RHi-M/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-097",
@@ -10988,7 +12084,8 @@
       "artist": "Top 5 songs of Anuv Jain |Husn | Jo tu…",
       "album": "Top 5 songs of Anuv Jain",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/ygMbkWRKme4/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/ygMbkWRKme4/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-098",
@@ -10998,7 +12095,8 @@
       "artist": "Anuv Jain (Lofi Flip) 🤍",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/_9QUykQ2xB8/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/_9QUykQ2xB8/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-099",
@@ -11008,7 +12106,8 @@
       "artist": "Anuv Jain - Topic",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/-3KT1f7WZIo/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/-3KT1f7WZIo/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-100",
@@ -11018,7 +12117,8 @@
       "artist": "Anuv Jain",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/9et5qzuzbQM/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/9et5qzuzbQM/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-101",
@@ -11028,7 +12128,8 @@
       "artist": "INAAM",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/9fKQJcbd-jY/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/9fKQJcbd-jY/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-102",
@@ -11038,7 +12139,8 @@
       "artist": "Anuv Jain",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/Y2zc2IeVX_g/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/Y2zc2IeVX_g/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-103",
@@ -11048,7 +12150,8 @@
       "artist": "Anuv Jain |Gravero Mashup",
       "album": "Anuv Jain",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/gfEKRoO-pOU/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/gfEKRoO-pOU/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-104",
@@ -11058,7 +12161,8 @@
       "artist": "Anuv Jain | Let Her Go X Husn X Choo L…",
       "album": "Anuv Jain",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/pdL1imksSqY/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/pdL1imksSqY/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-105",
@@ -11068,7 +12172,8 @@
       "artist": "تو ہے کہاں",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/AX6OrbgS8lI/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/AX6OrbgS8lI/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-106",
@@ -11078,7 +12183,8 @@
       "artist": "تو ہے کہاں feat. ZAYN",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/A7NDb0iDZd0/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/A7NDb0iDZd0/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-107",
@@ -11088,7 +12194,8 @@
       "artist": "(Lofi Remake)",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/aDlv2UX1lA8/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/aDlv2UX1lA8/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-108",
@@ -11098,7 +12205,8 @@
       "artist": "Slowed-Reverb | Lofi",
       "album": "Slowed-Reverb",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/sxCVdh2PHcM/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/sxCVdh2PHcM/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-109",
@@ -11108,7 +12216,8 @@
       "artist": "Tu jo nahin\" | Glenn John | Pritam",
       "album": "Tu jo nahin\"",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/TsBP6In4dtM/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/TsBP6In4dtM/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-110",
@@ -11118,7 +12227,8 @@
       "artist": "Zenitsuu",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/gf8H9gtD4JI/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/gf8H9gtD4JI/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-111",
@@ -11128,7 +12238,8 @@
       "artist": "Sukhwinder Singh, Shadab Faridi | Sultan",
       "album": "Sukhwinder Singh, Shadab Faridi",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/W0dmYnZ9_hE/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/W0dmYnZ9_hE/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-112",
@@ -11138,7 +12249,8 @@
       "artist": "Shreya Ghoshal | Krishna Cottage | SR …",
       "album": "Shreya Ghoshal",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/L2mSvBrq84E/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/L2mSvBrq84E/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-113",
@@ -11148,7 +12260,8 @@
       "artist": "LOFI FANS",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/euP-V53PZoc/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/euP-V53PZoc/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-114",
@@ -11158,7 +12271,8 @@
       "artist": "Tu Hai Kahan Lofi- SLOWED REVERB",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/UR-PAQRnrKw/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/UR-PAQRnrKw/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-115",
@@ -11168,7 +12282,8 @@
       "artist": "7sky Lofi",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/0llEfC5Stg0/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/0llEfC5Stg0/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-116",
@@ -11178,7 +12293,8 @@
       "artist": "Slowed-Reverb | Lofi #song #love #boll…",
       "album": "Slowed-Reverb",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/Wk-CpIkbUvo/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/Wk-CpIkbUvo/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-117",
@@ -11188,7 +12304,8 @@
       "artist": "Heal The Music",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/IWyd09C7brs/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/IWyd09C7brs/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-118",
@@ -11198,7 +12315,8 @@
       "artist": "LoFi Love Story",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/l8lamLpCabY/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/l8lamLpCabY/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-119",
@@ -11208,7 +12326,8 @@
       "artist": "keratic music",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/YIEAg-v-Pic/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/YIEAg-v-Pic/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-120",
@@ -11218,7 +12337,8 @@
       "artist": "New lyrics| Lofi |",
       "album": "New lyrics",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/uFbayWnLGxs/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/uFbayWnLGxs/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-121",
@@ -11228,7 +12348,8 @@
       "artist": "Lofi Mix [slowed + reverb] Pawan Singh",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/D0b7bAiXZJI/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/D0b7bAiXZJI/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-122",
@@ -11238,7 +12359,8 @@
       "artist": "Lofi Mix [slowed + reverb] Pawan Singh…",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/F3rN5MXtTL0/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/F3rN5MXtTL0/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-123",
@@ -11248,7 +12370,8 @@
       "artist": "Lofi Slowed + Reverb | PRIME Lofi World",
       "album": "Lofi Slowed + Reverb",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/Fegf8boqL_w/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/Fegf8boqL_w/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-124",
@@ -11258,7 +12381,8 @@
       "artist": "Raffey - Usama - Ahad | Leon lofi@jaan…",
       "album": "Raffey - Usama - Ahad",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/6-BiWZsjgR8/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/6-BiWZsjgR8/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-125",
@@ -11268,7 +12392,8 @@
       "artist": "Mansoob",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/KA4APfVz5I8/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/KA4APfVz5I8/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-126",
@@ -11278,7 +12403,8 @@
       "artist": "Season 14 | Kana Yaari | Kaifi Khalil …",
       "album": "Season 14",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/zQDAi8tI-cU/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/zQDAi8tI-cU/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-127",
@@ -11288,7 +12414,8 @@
       "artist": "Kaifi Khalil | Novice Records",
       "album": "Kaifi Khalil",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/CAHN1yO196M/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/CAHN1yO196M/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-128",
@@ -11298,7 +12425,8 @@
       "artist": "Siddharth Mahadevan | Bhaag Milkha Bhaag",
       "album": "Siddharth Mahadevan",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/k4q7Yg_Z49U/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/k4q7Yg_Z49U/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-129",
@@ -11308,7 +12436,8 @@
       "artist": "Jurmana",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/-fVtSHPg040/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/-fVtSHPg040/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-130",
@@ -11318,7 +12447,8 @@
       "artist": "Swati Mishra",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/_vRXnq3ISvs/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/_vRXnq3ISvs/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-131",
@@ -11328,7 +12458,8 @@
       "artist": "Golden Superstar",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/6c-10LBzsIk/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/6c-10LBzsIk/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-132",
@@ -11338,7 +12469,8 @@
       "artist": "Beat Sound",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/9_uPRv8HNqM/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/9_uPRv8HNqM/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-133",
@@ -11348,7 +12480,8 @@
       "artist": "Naresh Parmar | Kaifi Khalil | Rahat F…",
       "album": "Naresh Parmar",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/Jt7yvXSwyMA/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/Jt7yvXSwyMA/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-134",
@@ -11358,7 +12491,8 @@
       "artist": "Jay Guldekar | Kaifi Khail | Main Agar…",
       "album": "Jay Guldekar",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/NLAT7ljan8M/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/NLAT7ljan8M/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-135",
@@ -11368,7 +12502,8 @@
       "artist": "Dj NSYNK",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/rzkP0nwKiqM/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/rzkP0nwKiqM/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-136",
@@ -11378,7 +12513,8 @@
       "artist": "Kaifi Khalil I Slow Reverb Songs | Lof…",
       "album": "Kaifi Khalil I Slow Reverb Songs",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/LKXxNB8iAMo/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/LKXxNB8iAMo/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-137",
@@ -11388,7 +12524,8 @@
       "artist": "Mahesh Suthar",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/eoASHWddx7c/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/eoASHWddx7c/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-138",
@@ -11398,7 +12535,8 @@
       "artist": "Kaifi Khalil",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/0Wt6C_EzLls/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/0Wt6C_EzLls/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-139",
@@ -11408,7 +12546,8 @@
       "artist": "Top Bollywood Lofi Song| Love Lofi Mas…",
       "album": "Top Bollywood Lofi Song",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/d5b9UNdZfsw/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/d5b9UNdZfsw/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-140",
@@ -11418,7 +12557,8 @@
       "artist": "Kahani Suno 2.0",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/KgdBrGHviv4/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/KgdBrGHviv4/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-141",
@@ -11428,7 +12568,8 @@
       "artist": "Mansoob [Slowed+Reverb+Lofi+Lyric]",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/7oO-Y7t9I_s/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/7oO-Y7t9I_s/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-142",
@@ -11438,7 +12579,8 @@
       "artist": "Slowed & Reverb| OST | Floating Heart |",
       "album": "Slowed & Reverb",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/88Xhw-XTDb8/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/88Xhw-XTDb8/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-143",
@@ -11448,7 +12590,8 @@
       "artist": "Feat. Kinza Hashmi | Latest Song 2026",
       "album": "Feat. Kinza Hashmi",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/JokgM6-y9Ls/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/JokgM6-y9Ls/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-144",
@@ -11458,7 +12601,8 @@
       "artist": "Maan Meri Jaan (Afterlife)",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/ULcyLYD3o_M/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/ULcyLYD3o_M/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-145",
@@ -11468,7 +12612,8 @@
       "artist": "Official Video | Shayad Woh Sune | KING",
       "album": "Official Video",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/9lyPBa5Kd3I/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/9lyPBa5Kd3I/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-146",
@@ -11478,7 +12623,8 @@
       "artist": "KING 👑 | SLOWED-REVERB | NIGHT RLXX",
       "album": "KING 👑",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/Q3WfedW2i-s/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/Q3WfedW2i-s/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-147",
@@ -11488,7 +12634,8 @@
       "artist": "King X Bombay Vikings - Euphony Official",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/9aNUc4L_94U/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/9aNUc4L_94U/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-148",
@@ -11498,7 +12645,8 @@
       "artist": "Arijit Singh and King | love Mashup/lo…",
       "album": "Arijit Singh and King",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/MArLl3XbN8Y/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/MArLl3XbN8Y/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-149",
@@ -11508,7 +12656,8 @@
       "artist": "Maan Meri Jaan",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/3RAoczaBVP8/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/3RAoczaBVP8/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-150",
@@ -11518,7 +12667,8 @@
       "artist": "King | SR Lofi",
       "album": "King",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/ewuvBK5nax8/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/ewuvBK5nax8/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-151",
@@ -11528,7 +12678,8 @@
       "artist": "Ankhiyaan x Maan Meri Jaan x Tu Aake D…",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/ZP1lpOMsek4/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/ZP1lpOMsek4/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-152",
@@ -11538,7 +12689,8 @@
       "artist": "king smatchup | Arijit Singh | Sachin–…",
       "album": "king smatchup",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/Q5Sc8IsY-SQ/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/Q5Sc8IsY-SQ/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-153",
@@ -11548,7 +12700,8 @@
       "artist": "Slowed and Reverb | AP Bass Boosted",
       "album": "Slowed and Reverb",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/TZLo-TTnrfQ/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/TZLo-TTnrfQ/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-154",
@@ -11558,7 +12711,8 @@
       "artist": "Slowed and Reverb | Midnight Chill",
       "album": "Slowed and Reverb",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/qy1l5Wt_olw/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/qy1l5Wt_olw/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-155",
@@ -11568,7 +12722,8 @@
       "artist": "Champagne Talk | king | industry of Lo…",
       "album": "Champagne Talk",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/FysdiBYGJLI/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/FysdiBYGJLI/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-156",
@@ -11578,7 +12733,8 @@
       "artist": "Slowed+Reverb | King | Divyam Agarwal",
       "album": "Slowed+Reverb",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/etwc_LzYTFI/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/etwc_LzYTFI/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-157",
@@ -11588,7 +12744,8 @@
       "artist": "Slowed & Reverb | King",
       "album": "Slowed & Reverb",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/bE_hK9NZ2_A/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/bE_hK9NZ2_A/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-158",
@@ -11598,7 +12755,8 @@
       "artist": "Slowed + Reverb | King | Hindi |",
       "album": "Slowed + Reverb",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/_rGuNjq6fCE/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/_rGuNjq6fCE/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-159",
@@ -11608,7 +12766,8 @@
       "artist": "MR_Rohit_music",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/LWJU1kj1PaI/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/LWJU1kj1PaI/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-160",
@@ -11618,7 +12777,8 @@
       "artist": "Slowed & Reverb Lofi Mix",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/N-PHKu9FCVY/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/N-PHKu9FCVY/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-161",
@@ -11628,7 +12788,8 @@
       "artist": "Zrahn",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/_RFVSuDK9Eg/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/_RFVSuDK9Eg/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-162",
@@ -11638,7 +12799,8 @@
       "artist": "S H A H I D",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/n5Jqs1vMyzE/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/n5Jqs1vMyzE/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-163",
@@ -11648,7 +12810,8 @@
       "artist": "MAAN MERI JAAN SUPERMACY #king  #lofi …",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/9UpiVZDzXYc/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/9UpiVZDzXYc/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-164",
@@ -11658,7 +12821,8 @@
       "artist": "Ranbir Kapoor, Konkona Sen Sharma | Ka…",
       "album": "Ranbir Kapoor, Konkona Sen Sharma",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/fSS_R91Nimw/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/fSS_R91Nimw/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-165",
@@ -11668,7 +12832,8 @@
       "artist": "Amit Trivedi - Topic",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/1q65CU2JoXg/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/1q65CU2JoXg/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-166",
@@ -11678,7 +12843,8 @@
       "artist": "Ranbir Kapoor, Konkona Sen Sharma | Ka…",
       "album": "Ranbir Kapoor, Konkona Sen Sharma",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/ZlOZktsODpA/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/ZlOZktsODpA/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-167",
@@ -11688,7 +12854,8 @@
       "artist": "Ranbir Kapoor | Konkona Sen Sharma",
       "album": "Ranbir Kapoor",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/akjdj6iHttY/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/akjdj6iHttY/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-168",
@@ -11698,7 +12865,8 @@
       "artist": "[slowed + reverb]",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/nJcaU8bKpGs/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/nJcaU8bKpGs/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-169",
@@ -11708,7 +12876,8 @@
       "artist": "Amit Trivedi, Kavita Seth, Amitabh Bha…",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/JKSoBqnQ5I4/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/JKSoBqnQ5I4/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-170",
@@ -11718,7 +12887,8 @@
       "artist": "Amit Trivedi - Topic",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/EYgSirZikfw/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/EYgSirZikfw/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-171",
@@ -11728,7 +12898,8 @@
       "artist": "Male Version Best Video",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/fTtPg6CSeHk/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/fTtPg6CSeHk/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-172",
@@ -11738,7 +12909,8 @@
       "artist": "Wake Up Sid | Stone Boy Cover Version",
       "album": "Wake Up Sid",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/p8p0Pb5R-FA/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/p8p0Pb5R-FA/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-173",
@@ -11748,7 +12920,8 @@
       "artist": "Iktara (Lyrics video)| Ranbir Kapoor",
       "album": "Iktara (Lyrics video)",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/oTJxvlHcB-4/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/oTJxvlHcB-4/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-174",
@@ -11758,7 +12931,8 @@
       "artist": "VIBIE - Topic",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/0bRnXG4ytuM/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/0bRnXG4ytuM/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-175",
@@ -11768,7 +12942,8 @@
       "artist": "Perfectly Slowed | Wake Up Sid | Lofi",
       "album": "Perfectly Slowed",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/FvLlxpd4f7M/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/FvLlxpd4f7M/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-176",
@@ -11778,7 +12953,8 @@
       "artist": "VIBIE (Bollywood lofi)",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/Qqxb9lI6xLw/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/Qqxb9lI6xLw/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-177",
@@ -11788,7 +12964,8 @@
       "artist": "Wake Up Sid | Ranbir Kapoor | Konkona …",
       "album": "Wake Up Sid",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/4sMdGz8rbcs/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/4sMdGz8rbcs/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-178",
@@ -11798,7 +12975,8 @@
       "artist": "Wake Up Sid",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/3Kjj5UI9edw/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/3Kjj5UI9edw/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-179",
@@ -11808,7 +12986,8 @@
       "artist": "Sumonto Mukherjee | Wake Up Sid | Kavi…",
       "album": "Sumonto Mukherjee",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/fAB7HttsFpE/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/fAB7HttsFpE/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-180",
@@ -11818,7 +12997,8 @@
       "artist": "REJOICE",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/3lMww57WSzQ/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/3lMww57WSzQ/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-181",
@@ -11828,7 +13008,8 @@
       "artist": "VIBIE | Wake Up Sid | Ranbir Kapoor | …",
       "album": "VIBIE",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/8V8dOlyQj4Y/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/8V8dOlyQj4Y/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-182",
@@ -11838,7 +13019,8 @@
       "artist": "Love Lofi",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/czfRogz56cA/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/czfRogz56cA/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-183",
@@ -11848,7 +13030,8 @@
       "artist": "Slowed and Reverb | Peace Point 🕊️",
       "album": "Slowed and Reverb",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/U4e2UvC_YCo/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/U4e2UvC_YCo/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-184",
@@ -11858,7 +13041,8 @@
       "artist": "Pritam | Ranbir Kapoor, Deepika Padukone",
       "album": "Pritam",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/jHNNMj5bNQw/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/jHNNMj5bNQw/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-185",
@@ -11868,7 +13052,8 @@
       "artist": "Lofi Flip (Rewerbed) @hxrshyaa",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/yk2tHuIP59s/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/yk2tHuIP59s/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-186",
@@ -11878,7 +13063,8 @@
       "artist": "Ranbir Kapoor, Deepika Padukone",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/MuCfsZk9lbU/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/MuCfsZk9lbU/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-187",
@@ -11888,7 +13074,8 @@
       "artist": "Ranbir Kapoor, Deepika Padukone",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/ta-W16uw7zg/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/ta-W16uw7zg/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-188",
@@ -11898,7 +13085,8 @@
       "artist": "Pritam | Ranbir Kapoor, Deepika Padukone",
       "album": "Pritam",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/lwLVJ0E8gN4/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/lwLVJ0E8gN4/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-189",
@@ -11908,7 +13096,8 @@
       "artist": "s2 lofi",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/EK2Ol1ov0gk/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/EK2Ol1ov0gk/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-190",
@@ -11918,7 +13107,8 @@
       "artist": "TENNIS BALL CRICKET VIDEO ",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/7jZwAl0ArQw/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/7jZwAl0ArQw/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-191",
@@ -11928,7 +13118,8 @@
       "artist": "revibe | Viral Insta Reels, TikTok | R…",
       "album": "revibe",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/Ymcbjo6P1O0/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/Ymcbjo6P1O0/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-192",
@@ -11938,7 +13129,8 @@
       "artist": "Lofi",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/3F9r7xggi88/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/3F9r7xggi88/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-193",
@@ -11948,7 +13140,8 @@
       "artist": "Deppboi",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/-X2dsCQMLcs/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/-X2dsCQMLcs/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-194",
@@ -11958,7 +13151,8 @@
       "artist": "Ranbir Kapoor, Deepika Padukone",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/jJ4AsIV1FDI/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/jJ4AsIV1FDI/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-195",
@@ -11968,7 +13162,8 @@
       "artist": "Rts Lofi #Textaudio #slowedandreverb #…",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/PAjJAWrCAzU/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/PAjJAWrCAzU/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-196",
@@ -11978,7 +13173,8 @@
       "artist": "Rekha Bhardwaj, Tochi Raina | Yeh Jawa…",
       "album": "Rekha Bhardwaj, Tochi Raina",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/L-SgTplq2IQ/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/L-SgTplq2IQ/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-197",
@@ -11988,7 +13184,8 @@
       "artist": "happy-or-sad",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/GgOjecsKCww/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/GgOjecsKCww/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-198",
@@ -11998,7 +13195,8 @@
       "artist": "Beats Peacock | TextAudio Lyrics | Mus…",
       "album": "Beats Peacock",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/iAOA8TLgqG8/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/iAOA8TLgqG8/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-199",
@@ -12008,7 +13206,8 @@
       "artist": "Music Zone | Textaudio",
       "album": "Music Zone",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/w3eYf7noC8A/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/w3eYf7noC8A/hqdefault.jpg",
+      "audioUrl": null
     },
     {
       "id": "lofi-200",
@@ -12018,7 +13217,8 @@
       "artist": "Tochi Raina, Rekha Bhardwaj, Illenium",
       "album": "Chai & Lo-fi Beats",
       "category": "lofi",
-      "thumbnail": "https://i.ytimg.com/vi/3oMQuyaPGa4/hqdefault.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/3oMQuyaPGa4/hqdefault.jpg",
+      "audioUrl": null
     }
   ]
 };
