@@ -3,294 +3,357 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>SurBeat — Futuristic Indian Music Experience</title>
-  <meta name="description" content="SurBeat — Feel the soul of Indian music. Trending Hindi hits, Bollywood romantic blockbusters, 90s classics & lofi melodies. A futuristic 3D music platform by Rishabh Pandey.">
-  <meta name="theme-color" content="#0e030b">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SurBeat — Feel the Soul of Indian Music</title>
+  <meta name="description" content="SurBeat — Feel the soul of Indian music. Trending Hindi hits, evergreen classics & viral reel melodies playing one track at a time. Free, instant, premium.">
+  <meta name="theme-color" content="#0a0208">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="SurBeat — Futuristic Indian Music Experience">
-  <meta property="og:description" content="Feel the soul of Indian music. Trending hits, 90s classics & chai lofi beats.">
+  <meta property="og:title" content="SurBeat — Indian Music, Reimagined">
+  <meta property="og:description" content="Feel the soul of Indian music. Trending hits, 90s classics & chai lofi beats. Free & instant.">
   <meta property="og:type" content="website">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-  <!-- Three.js CDN -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-  <!-- ═══════════════════════════════════════════
-       BACKGROUND SYSTEM — Multi-layered cinematic
-       ═══════════════════════════════════════════ -->
-  <div class="bg-photo" id="bgPhoto" aria-hidden="true"></div>
-  <div class="bg-tint" aria-hidden="true"></div>
-  <div class="bg-glow-gold" aria-hidden="true"></div>
-  <div class="bg-glow-cyan" aria-hidden="true"></div>
-  <div class="bg-grain" aria-hidden="true"></div>
-  <div class="bg-ambient-glow" id="ambientGlow" aria-hidden="true"></div>
+  <!-- ═══════════════════════════════════════
+       BACKGROUND LAYERS
+       ═══════════════════════════════════════ -->
+  <div class="bg-layer bg-base" aria-hidden="true"></div>
+  <div class="bg-layer bg-glow-gold" aria-hidden="true"></div>
+  <div class="bg-layer bg-glow-burgundy" aria-hidden="true"></div>
+  <div class="bg-layer bg-glow-cyan" aria-hidden="true"></div>
+  <div class="bg-layer bg-grain" aria-hidden="true"></div>
 
-  <!-- ═══════════════════════════════════════════
-       TOP STATUS BAR — Floating glass capsule
-       ═══════════════════════════════════════════ -->
-  <header class="top-status-bar" role="banner">
-    <div class="status-pill" id="statusPill">
-      <div class="status-left">
-        <span class="live-dot" aria-hidden="true"></span>
-        <span class="brand-name-small">SurBeat</span>
-        <span class="badge-sargam">SARGAM</span>
+  <!-- ═══════════════════════════════════════
+       HEADER
+       ═══════════════════════════════════════ -->
+  <header class="site-header" role="banner" id="siteHeader">
+    <div class="header-inner">
+
+      <!-- Brand -->
+      <div class="header-brand">
+        <span class="header-live-dot" aria-hidden="true"></span>
+        <span class="header-brand-name">SurBeat</span>
+        <span class="header-badge">SARGAM</span>
       </div>
-      <div class="status-divider" aria-hidden="true"></div>
-      <div class="status-center">
-        <time id="liveClock" class="live-clock" aria-label="Current time">--:--:--</time>
+
+      <!-- Status -->
+      <div class="header-status">
+        <time id="liveClock" class="header-clock" aria-label="Current time">--:--:--</time>
+        <div class="header-divider" aria-hidden="true"></div>
+        <div class="header-listeners" id="listenerDisplay" aria-live="polite">
+          <span class="header-online-dot" aria-hidden="true"></span>
+          <span id="listenerCount">33 Listeners Online</span>
+        </div>
       </div>
-      <div class="status-divider" aria-hidden="true"></div>
-      <div class="status-right" id="visitorCount">
-        <span class="online-dot" aria-hidden="true"></span>
-        <span id="visitorCountText" class="listeners-label" aria-live="polite">33 Listeners Online</span>
-      </div>
+
     </div>
   </header>
 
-  <!-- ═══════════════════════════════════════════
-       SEARCH STATUS (used by script.js)
-       ═══════════════════════════════════════════ -->
-  <div id="searchStatus" class="search-status" style="display:none" aria-live="polite"></div>
+  <!-- ═══════════════════════════════════════
+       MAIN CONTENT
+       ═══════════════════════════════════════ -->
+  <main id="mainContent">
 
-  <!-- ═══════════════════════════════════════════
-       MAIN PAGE WRAPPER
-       ═══════════════════════════════════════════ -->
-  <div class="page-wrapper" id="pageWrapper">
-
-    <!-- ── LEFT SIDE PANEL (desktop) ─────────────────────── -->
-    <aside class="side-panel side-panel-left" aria-label="Desi Ragas Panel" id="sidePanelLeft">
-      <div class="panel-inner">
-        <div class="panel-badge">
-          <span class="panel-badge-dot" aria-hidden="true"></span>
-          SIDE A • DESI RAGAS
+    <!-- ── HERO ─────────────────────────────────────── -->
+    <section class="hero-section" id="heroSection" aria-label="Hero">
+      <div class="hero-inner">
+        <div class="sargam-notes" aria-label="Indian sargam notes">
+          <span>Sa</span><span class="dot">•</span>
+          <span>Re</span><span class="dot">•</span>
+          <span>Ga</span><span class="dot">•</span>
+          <span>Ma</span><span class="dot">•</span>
+          <span>Pa</span><span class="dot">•</span>
+          <span>Dha</span><span class="dot">•</span>
+          <span>Ni</span>
         </div>
-        <div class="panel-vinyl-art" aria-hidden="true">
-          <div class="panel-vinyl-ring pv-ring-1"></div>
-          <div class="panel-vinyl-ring pv-ring-2"></div>
-          <div class="panel-vinyl-ring pv-ring-3"></div>
-          <div class="panel-vinyl-center">
-            <span class="pv-label">SurBeat</span>
-          </div>
-        </div>
-        <div class="panel-eq-bars" aria-hidden="true">
-          <span></span><span></span><span></span><span></span><span></span><span></span>
-        </div>
-        <div class="panel-label">
-          <span class="panel-cat">Bollywood</span>
-          <span class="panel-sub">Love Harmonies</span>
-        </div>
-        <div class="panel-glow-line" aria-hidden="true"></div>
+        <h1 class="hero-logo" id="heroLogo">SurBeat</h1>
+        <p class="hero-tagline">
+          Feel the soul of Indian music. Trending Hindi hits, evergreen classics &amp; viral reel melodies playing one track at a time.
+        </p>
       </div>
-    </aside>
+    </section>
 
-    <!-- ── MAIN CENTER CONTENT ────────────────────────────── -->
-    <main class="main-content" id="mainContent">
+    <!-- ── CATEGORIES ────────────────────────────────── -->
+    <nav class="category-nav" id="categoryNav" aria-label="Music categories">
+      <div class="category-pills" id="categoryPills" role="tablist">
+        <button class="cat-btn active" data-category="trending" id="cat-trending"
+          role="tab" aria-selected="true" aria-controls="playerZone">
+          <span class="cat-icon" aria-hidden="true">🪕</span>
+          <span class="cat-label">Desi Reel Hits</span>
+        </button>
+        <button class="cat-btn" data-category="workout" id="cat-workout"
+          role="tab" aria-selected="false" aria-controls="playerZone">
+          <span class="cat-icon" aria-hidden="true">💪</span>
+          <span class="cat-label">Workout</span>
+        </button>
+        <button class="cat-btn" data-category="awarapan" id="cat-awarapan"
+          role="tab" aria-selected="false" aria-controls="playerZone">
+          <span class="cat-icon" aria-hidden="true">❤️</span>
+          <span class="cat-label">Awarapan</span>
+        </button>
+        <button class="cat-btn" data-category="romantic_new" id="cat-romantic"
+          role="tab" aria-selected="false" aria-controls="playerZone">
+          <span class="cat-icon" aria-hidden="true">💖</span>
+          <span class="cat-label">Bollywood Romantics</span>
+        </button>
+        <button class="cat-btn" data-category="classic_old" id="cat-classic"
+          role="tab" aria-selected="false" aria-controls="playerZone">
+          <span class="cat-icon" aria-hidden="true">📻</span>
+          <span class="cat-label">Golden 90s</span>
+        </button>
+        <button class="cat-btn" data-category="lofi" id="cat-lofi"
+          role="tab" aria-selected="false" aria-controls="playerZone">
+          <span class="cat-icon" aria-hidden="true">☕</span>
+          <span class="cat-label">Chai &amp; Lo‑fi</span>
+        </button>
+      </div>
+    </nav>
 
-      <!-- ▸ HERO SECTION ────────────────────────── -->
-      <section class="hero-section" id="heroSection" aria-label="Hero">
-        <div class="hero-inner">
-          <div class="sargam-eyebrow" aria-hidden="true">
-            <span>Sa</span><span class="sep">•</span>
-            <span>Re</span><span class="sep">•</span>
-            <span>Ga</span><span class="sep">•</span>
-            <span>Ma</span><span class="sep">•</span>
-            <span>Pa</span><span class="sep">•</span>
-            <span>Dha</span><span class="sep">•</span>
-            <span>Ni</span>
-          </div>
-          <h1 class="surbeat-logo" id="surbeatLogo">SurBeat</h1>
-          <p class="hero-tagline">Feel the soul of Indian music. Trending Hindi hits, evergreen classics &amp; viral reel melodies playing one track at a time.</p>
-        </div>
-      </section>
+    <!-- ── PLAYER ZONE ───────────────────────────────── -->
+    <section class="player-zone" id="playerZone" role="tabpanel" aria-label="Music player">
+      <div class="player-zone-inner">
 
-      <!-- ▸ CATEGORY NAVIGATION ────────────────── -->
-      <nav class="category-nav" id="categoryNav" aria-label="Music categories">
-        <div class="genre-pills" id="genrePills" role="tablist">
-          <button class="genre-btn active" data-category="trending" id="genre-trending" role="tab" aria-selected="true" aria-controls="playerCard">
-            <span class="genre-icon" aria-hidden="true">🪕</span>
-            <span class="genre-label">Desi Reel Hits</span>
-          </button>
-          <button class="genre-btn" data-category="workout" id="genre-workout" role="tab" aria-selected="false" aria-controls="playerCard">
-            <span class="genre-icon" aria-hidden="true">💪</span>
-            <span class="genre-label">Workout</span>
-          </button>
-          <button class="genre-btn" data-category="awarapan" id="genre-awarapan" role="tab" aria-selected="false" aria-controls="playerCard">
-            <span class="genre-icon" aria-hidden="true">❤️</span>
-            <span class="genre-label">Awarapan</span>
-          </button>
-          <button class="genre-btn" data-category="romantic_new" id="genre-romantic" role="tab" aria-selected="false" aria-controls="playerCard">
-            <span class="genre-icon" aria-hidden="true">💖</span>
-            <span class="genre-label">Bollywood Romantics</span>
-          </button>
-          <button class="genre-btn" data-category="classic_old" id="genre-classic" role="tab" aria-selected="false" aria-controls="playerCard">
-            <span class="genre-icon" aria-hidden="true">📻</span>
-            <span class="genre-label">Golden 90s</span>
-          </button>
-          <button class="genre-btn" data-category="lofi" id="genre-lofi" role="tab" aria-selected="false" aria-controls="playerCard">
-            <span class="genre-icon" aria-hidden="true">☕</span>
-            <span class="genre-label">Chai &amp; Lo‑fi</span>
-          </button>
-        </div>
-      </nav>
-
-      <!-- ▸ MAIN PLAYER CARD ────────────────────── -->
-      <section class="player-card" id="player-card" role="tabpanel" aria-label="Music player">
-
-        <!-- 3D Vinyl Canvas Container -->
-        <div class="vinyl-canvas-container" id="vinyl-canvas-container" aria-hidden="true">
-
-          <!-- CSS fallback turntable deck (visible if WebGL unavailable) -->
-          <div class="turntable-deck" id="turntableDeck">
-            <div class="tonearm" id="tonearm" aria-hidden="true">
-              <div class="tonearm-shaft"></div>
-              <div class="tonearm-head"></div>
+        <!-- Side A Card (desktop left) -->
+        <aside class="side-card side-card-a" id="sideCardA"
+          role="button" tabindex="0"
+          aria-label="Switch to Bollywood Romantics"
+          data-category="romantic_new">
+          <div class="side-card-inner">
+            <div class="side-badge">
+              <span class="side-dot side-dot-gold" aria-hidden="true"></span>
+              SIDE A • DESI RAGAS
             </div>
-            <div class="disc-wrap">
-              <div class="disc-ambient-ring ring-1" aria-hidden="true"></div>
-              <div class="disc-ambient-ring ring-2" aria-hidden="true"></div>
-              <div class="disc-ambient-ring ring-3" aria-hidden="true"></div>
-              <div class="disc-core" id="discCore">
-                <div class="disc-grooves" aria-hidden="true"></div>
-                <div class="disc-center-label">
-                  <span class="label-brand">SurBeat</span>
-                  <span class="label-sub" id="discSubLabel">RAGA SARGAM</span>
+            <div class="side-vinyl" aria-hidden="true">
+              <div class="sv-ring sv-ring-1"></div>
+              <div class="sv-ring sv-ring-2"></div>
+              <div class="sv-ring sv-ring-3"></div>
+              <div class="sv-center">
+                <span class="sv-label">SurBeat</span>
+              </div>
+            </div>
+            <div class="side-eq" aria-hidden="true" id="sideEqA">
+              <span></span><span></span><span></span><span></span><span></span><span></span>
+            </div>
+            <div class="side-info">
+              <span class="side-cat">Bollywood</span>
+              <span class="side-sub">Love Harmonies</span>
+            </div>
+          </div>
+        </aside>
+
+        <!-- Main Player -->
+        <div class="main-player" id="mainPlayer">
+
+          <!-- CSS Vinyl Turntable -->
+          <div class="vinyl-wrap" aria-hidden="true">
+            <div class="turntable-stage">
+              <!-- Ambient rings -->
+              <div class="ambient-ring ar-1"></div>
+              <div class="ambient-ring ar-2"></div>
+              <div class="ambient-ring ar-3"></div>
+
+              <!-- Tonearm -->
+              <div class="tonearm-pivot" id="tonearmPivot">
+                <div class="tonearm-shaft">
+                  <div class="tonearm-head"></div>
+                  <div class="tonearm-needle"></div>
+                </div>
+              </div>
+
+              <!-- Vinyl record -->
+              <div class="vinyl-disc" id="vinylDisc">
+                <div class="vinyl-grooves" aria-hidden="true"></div>
+                <div class="vinyl-label">
+                  <span class="vinyl-label-brand">SurBeat</span>
+                  <span class="vinyl-label-sub" id="vinylSubLabel">RAGA SARGAM</span>
                 </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <!-- Audio Visualizer -->
-        <div class="audio-visualizer" id="audioVisualizer" aria-hidden="true">
-          <span></span><span></span><span></span><span></span><span></span>
-          <span></span><span></span><span></span><span></span><span></span>
-          <span></span><span></span><span></span><span></span><span></span>
-          <span></span><span></span><span></span><span></span><span></span>
-          <span></span><span></span><span></span><span></span><span></span>
-          <span></span><span></span><span></span><span></span><span></span>
-          <span></span><span></span>
-        </div>
+          <!-- Hidden YouTube Player Container -->
+          <div id="yt-player-container"
+            style="position:absolute;width:1px;height:1px;overflow:hidden;opacity:0;pointer-events:none;top:0;left:0;"
+            aria-hidden="true">
+            <div id="yt-player"></div>
+          </div>
 
-        <!-- Hidden YouTube Player -->
-        <div id="player-hide" style="position:absolute;width:1px;height:1px;overflow:hidden;opacity:0;pointer-events:none;" aria-hidden="true">
-          <div id="player"></div>
-        </div>
+          <!-- Audio Visualizer -->
+          <div class="audio-visualizer" id="audioVisualizer" aria-hidden="true">
+            <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+          </div>
 
-        <!-- Play Trigger Button (pre-play state) -->
-        <button id="playBtn" class="play-trigger-btn" aria-label="Play SurBeat Melodies">
-          <span class="play-trigger-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28">
+          <!-- Now Playing -->
+          <div class="now-playing" id="nowPlaying">
+            <div class="now-playing-header">
+              <div class="np-eq-bars" id="npEqBars" aria-hidden="true">
+                <span></span><span></span><span></span><span></span><span></span>
+              </div>
+              <span class="np-label">NOW PLAYING</span>
+            </div>
+            <div class="np-info" id="npInfo">
+              <div class="np-track" id="npTrack">Select a vibe to start playing</div>
+              <div class="np-artist" id="npArtist"></div>
+              <div class="np-meta" id="npMeta"></div>
+            </div>
+          </div>
+
+          <!-- Loading State -->
+          <div class="player-loading" id="playerLoading" style="display:none" aria-live="polite">
+            <div class="loading-spinner" aria-hidden="true"></div>
+            <span>Loading track…</span>
+          </div>
+
+          <!-- Error State -->
+          <div class="player-error" id="playerError" style="display:none" aria-live="assertive">
+            <span>⚠️ Unable to load this track. Skipping…</span>
+          </div>
+
+          <!-- Seek Bar -->
+          <div class="seek-row" id="seekRow" style="display:none">
+            <span class="time-label" id="timeCurrentLabel">0:00</span>
+            <div class="seek-track-wrap">
+              <input type="range" class="seek-slider" id="seekSlider"
+                min="0" max="100" value="0"
+                aria-label="Seek track position">
+              <div class="seek-fill" id="seekFill"></div>
+            </div>
+            <span class="time-label" id="timeDurationLabel">0:00</span>
+          </div>
+
+          <!-- Controls -->
+          <div class="controls-row" id="controlsRow" style="display:none"
+            role="group" aria-label="Playback controls">
+
+            <button class="ctrl-btn ctrl-secondary" id="shuffleBtn"
+              aria-label="Shuffle: Off" title="Shuffle" aria-pressed="false">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true">
+                <path d="M10.59 9.17L5.41 4 4 5.41l5.17 5.17 1.42-1.41zM14.5 4l2.04 2.04L4 18.59 5.41 20 17.96 7.46 20 9.5V4h-5.5zm.33 9.41l-1.41 1.41 3.13 3.13L14.5 20H20v-5.5l-2.04 2.04-3.13-3.13z"/>
+              </svg>
+            </button>
+
+            <button class="ctrl-btn ctrl-secondary" id="prevBtn"
+              aria-label="Previous track" title="Previous">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22" aria-hidden="true">
+                <path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"/>
+              </svg>
+            </button>
+
+            <button class="ctrl-btn ctrl-primary" id="playPauseBtn"
+              aria-label="Play" title="Play / Pause">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28" aria-hidden="true">
+                <path id="playPausePath" d="M8 5v14l11-7z"/>
+              </svg>
+            </button>
+
+            <button class="ctrl-btn ctrl-secondary" id="nextBtn"
+              aria-label="Next track" title="Next">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22" aria-hidden="true">
+                <path d="M16 6h2v12h-2zm-2 6L5.5 6v12z"/>
+              </svg>
+            </button>
+
+            <button class="ctrl-btn ctrl-secondary" id="repeatBtn"
+              aria-label="Repeat: Off" title="Repeat" aria-pressed="false">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true">
+                <path d="M7 7h10v3l4-4-4-4v3H5v6h2V7zm10 10H7v-3l-4 4 4 4v-3h12v-6h-2v4z"/>
+              </svg>
+            </button>
+
+          </div>
+
+          <!-- Volume Row -->
+          <div class="volume-row" id="volumeRow" style="display:none"
+            role="group" aria-label="Volume control">
+            <button class="mute-btn" id="muteBtn" aria-label="Mute">
+              <svg id="volumeIcon" viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true">
+                <path id="volumeIconPath" d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/>
+              </svg>
+            </button>
+            <div class="volume-track-wrap">
+              <input type="range" class="volume-slider" id="volumeSlider"
+                min="0" max="100" value="80"
+                aria-label="Volume level">
+              <div class="volume-fill" id="volumeFill" style="width:80%"></div>
+            </div>
+          </div>
+
+          <!-- Initial Play Trigger (shown before first play) -->
+          <button class="play-trigger-btn" id="playTriggerBtn" aria-label="Play SurBeat Melodies">
+            <span class="play-trigger-glow" aria-hidden="true"></span>
+            <svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32" aria-hidden="true">
               <path d="M8 5v14l11-7z"/>
             </svg>
-          </span>
-          <span class="play-trigger-text">Play SurBeat Melodies</span>
-          <span class="play-trigger-glow" aria-hidden="true"></span>
-        </button>
+            <span>Play SurBeat Melodies</span>
+          </button>
 
-        <!-- Now Playing Info -->
-        <div id="nowPlaying" class="now-playing-section">
-          <div class="now-playing-header">
-            <div class="eq-bars" id="eqBars" aria-hidden="true">
-              <span></span><span></span><span></span><span></span><span></span>
+        </div>
+        <!-- /main-player -->
+
+        <!-- Side B Card (desktop right) -->
+        <aside class="side-card side-card-b" id="sideCardB"
+          role="button" tabindex="0"
+          aria-label="Switch to Golden 90s Classics"
+          data-category="classic_old">
+          <div class="side-card-inner">
+            <div class="side-badge side-badge-cyan">
+              <span class="side-dot side-dot-cyan" aria-hidden="true"></span>
+              SIDE B • RETRO LOVE
             </div>
-            <span class="now-playing-label" id="nowPlayingCategoryLabel">NOW PLAYING ON SURBEAT</span>
+            <div class="side-vinyl side-vinyl-cyan" aria-hidden="true">
+              <div class="sv-ring sv-ring-1 sv-cyan"></div>
+              <div class="sv-ring sv-ring-2 sv-cyan"></div>
+              <div class="sv-ring sv-ring-3 sv-cyan"></div>
+              <div class="sv-center sv-center-cyan">
+                <span class="sv-label">SurBeat</span>
+              </div>
+            </div>
+            <div class="side-eq side-eq-cyan" aria-hidden="true" id="sideEqB">
+              <span></span><span></span><span></span><span></span><span></span><span></span>
+            </div>
+            <div class="side-info">
+              <span class="side-cat">Golden Era</span>
+              <span class="side-sub">Love Melodies</span>
+            </div>
           </div>
-          <div class="now-playing-track" id="nowPlayingText">Select a vibe to start listening</div>
-          <div class="track-badge-row" id="trackBadgeRow" style="display:none">
-            <span class="t-badge t-badge-energy" id="badgeEnergy">⚡ High Energy</span>
-            <span class="t-badge t-badge-lang" id="badgeLang">Desi</span>
-            <span class="t-badge t-badge-bpm" id="badgeBpm">128 BPM</span>
+        </aside>
+
+      </div>
+      <!-- /player-zone-inner -->
+    </section>
+
+    <!-- ── DISCOVER SECTION ──────────────────────────── -->
+    <section class="discover-section" id="discoverSection" aria-label="Discover music">
+      <div class="section-inner">
+        <div class="section-header">
+          <h2 class="section-title">Discover <span class="gold">Music</span></h2>
+          <p class="section-sub" id="discoverSubtitle">Browse tracks from the current playlist</p>
+        </div>
+        <div class="track-grid" id="trackGrid" role="list" aria-label="Track list">
+          <!-- Populated by script.js -->
+          <div class="tracks-placeholder" id="tracksPlaceholder">
+            <div class="placeholder-icon" aria-hidden="true">🎵</div>
+            <p>Select a category above to discover music</p>
           </div>
         </div>
+      </div>
+    </section>
 
-        <!-- Seek Row -->
-        <div class="seek-row" id="seekRow" style="display:none">
-          <span class="time-label" id="currentTimeLabel">0:00</span>
-          <div class="seek-track">
-            <input type="range" id="seekSlider" class="seek-slider" min="0" max="100" value="0" aria-label="Seek track position">
-            <div class="seek-progress" id="seekProgress"></div>
-          </div>
-          <span class="time-label" id="durationLabel">0:00</span>
-        </div>
-
-        <!-- Main Controls Row -->
-        <div class="controls" id="controlsRow" style="display:none" role="group" aria-label="Playback controls">
-          <button id="likeBtn" class="control-btn control-btn-secondary" aria-label="Add to Favorites" title="Favorite">
-            <svg class="icon-btn" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-              <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
-            </svg>
-          </button>
-
-          <button id="shuffleBtn" class="control-btn control-btn-secondary" aria-label="Shuffle: Off" title="Shuffle: Off">
-            <svg class="icon-btn" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-              <path d="M10.59 9.17L5.41 4 4 5.41l5.17 5.17 1.42-1.41zM14.5 4l2.04 2.04L4 18.59 5.41 20 17.96 7.46 20 9.5V4h-5.5zm.33 9.41l-1.41 1.41 3.13 3.13L14.5 20H20v-5.5l-2.04 2.04-3.13-3.13z"/>
-            </svg>
-          </button>
-
-          <button id="prevBtn" class="control-btn control-btn-secondary" aria-label="Previous Track" title="Previous Track">
-            <svg class="icon-btn" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-              <path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"/>
-            </svg>
-          </button>
-
-          <button id="playPauseBtn" class="control-btn control-btn-primary" aria-label="Play or Pause" title="Play / Pause">
-            <svg class="icon-btn" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-              <path id="playPausePath" d="M8 5v14l11-7z"/>
-            </svg>
-          </button>
-
-          <button id="nextBtn" class="control-btn control-btn-secondary" aria-label="Next Track" title="Next Track">
-            <svg class="icon-btn" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-              <path d="M16 6h2v12h-2zm-2 6L5.5 6v12z"/>
-            </svg>
-          </button>
-
-          <button id="repeatBtn" class="control-btn control-btn-secondary" aria-label="Repeat: Off" title="Repeat: Off">
-            <svg class="icon-btn" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-              <path d="M7 7h10v3l4-4-4-4v3H5v6h2V7zm10 10H7v-3l-4 4 4 4v-3h12v-6h-2v4z"/>
-            </svg>
-          </button>
-
-          <button id="stopBtn" class="control-btn control-btn-secondary" aria-label="Stop Playback" title="Stop">
-            <svg class="icon-btn" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-              <rect x="6" y="6" width="12" height="12" rx="2"/>
-            </svg>
-          </button>
-        </div>
-
-        <!-- Volume Row -->
-        <div class="volume-row" id="volumeRow" style="display:none" role="group" aria-label="Volume control">
-          <button id="muteBtn" class="mute-btn" aria-label="Mute / Unmute">
-            <svg id="volumeIcon" viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true">
-              <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02z"/>
-            </svg>
-          </button>
-          <div class="volume-slider-wrap">
-            <input type="range" id="volumeSlider" class="volume-slider" min="0" max="100" value="80" aria-label="Volume level">
-          </div>
-          <span class="volume-icon-max" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
-              <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/>
-            </svg>
-          </span>
-        </div>
-
-      </section>
-      <!-- /player-card -->
-
-      <!-- ▸ CREATOR SECTION ───────────────────── -->
-      <section class="creator-section" id="creatorSection" aria-label="Creator and Tech Innovator">
+    <!-- ── CREATOR SECTION ───────────────────────────── -->
+    <section class="creator-section" id="creatorSection" aria-label="Creator">
+      <div class="section-inner">
         <div class="creator-card">
 
           <div class="creator-header">
@@ -301,7 +364,7 @@
             <div class="creator-intro">
               <div class="creator-badge">CREATOR &amp; TECH INNOVATOR</div>
               <h2 class="creator-name">Rishabh Pandey</h2>
-              <p class="creator-quote">"Where Indian Melodies Meet Modern Innovation"</p>
+              <p class="creator-tagline">"Where Indian Melodies Meet Modern Innovation"</p>
             </div>
           </div>
 
@@ -309,10 +372,14 @@
             Passionate developer &amp; creator of SurBeat. Building futuristic web apps, music platforms, and engaging content for thousands of music lovers. Connect with me across socials below!
           </p>
 
-          <!-- Social Cards Grid -->
-          <div class="social-grid" role="list">
-            <a href="https://www.instagram.com/__rishabh_pandey/" target="_blank" rel="noopener noreferrer"
-              class="social-card instagram-card" role="listitem" aria-label="Instagram: @__rishabh_pandey">
+          <!-- Social Cards -->
+          <div class="social-grid" role="list" aria-label="Social links">
+
+            <a href="https://www.instagram.com/__rishabh_pandey/"
+              target="_blank" rel="noopener noreferrer"
+              class="social-card social-instagram"
+              role="listitem"
+              aria-label="Instagram: @__rishabh_pandey">
               <div class="social-icon" aria-hidden="true">
                 <svg viewBox="0 0 24 24" fill="currentColor">
                   <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
@@ -325,8 +392,11 @@
               <span class="social-arrow" aria-hidden="true">→</span>
             </a>
 
-            <a href="https://www.youtube.com/@TheFactoSky" target="_blank" rel="noopener noreferrer"
-              class="social-card youtube-card" role="listitem" aria-label="YouTube: @TheFactoSky">
+            <a href="https://www.youtube.com/@TheFactoSky"
+              target="_blank" rel="noopener noreferrer"
+              class="social-card social-youtube"
+              role="listitem"
+              aria-label="YouTube: @TheFactoSky">
               <div class="social-icon" aria-hidden="true">
                 <svg viewBox="0 0 24 24" fill="currentColor">
                   <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
@@ -339,8 +409,11 @@
               <span class="social-arrow" aria-hidden="true">→</span>
             </a>
 
-            <a href="https://github.com/Surbeat/MySpace" target="_blank" rel="noopener noreferrer"
-              class="social-card github-card" role="listitem" aria-label="GitHub: Surbeat/MySpace">
+            <a href="https://github.com/Surbeat/MySpace"
+              target="_blank" rel="noopener noreferrer"
+              class="social-card social-github"
+              role="listitem"
+              aria-label="GitHub: Surbeat/MySpace">
               <div class="social-icon" aria-hidden="true">
                 <svg viewBox="0 0 24 24" fill="currentColor">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
@@ -354,7 +427,9 @@
             </a>
 
             <a href="mailto:rishabhpandey3288@gmail.com"
-              class="social-card gmail-card" role="listitem" aria-label="Email: rishabhpandey3288@gmail.com">
+              class="social-card social-gmail"
+              role="listitem"
+              aria-label="Email: rishabhpandey3288@gmail.com">
               <div class="social-icon" aria-hidden="true">
                 <svg viewBox="0 0 24 24" fill="currentColor">
                   <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
@@ -370,13 +445,13 @@
 
           <!-- YouTube Attribution -->
           <div class="yt-attribution">
-            <div class="yt-attr-header">
-              <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true">
+            <div class="yt-attr-row">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16" aria-hidden="true">
                 <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
               </svg>
-              <span>Powered by Official YouTube Data API v3 &amp; YouTube Player Services</span>
+              <span>Powered by YouTube Data API v3 &amp; YouTube IFrame Player</span>
             </div>
-            <p class="yt-attr-desc">SurBeat utilizes official YouTube API Services for music discovery and streaming via YouTube's official IFrame Player in compliance with YouTube Developer Policies.</p>
+            <p class="yt-attr-desc">SurBeat uses official YouTube API Services for music discovery and streaming, in compliance with YouTube Developer Policies.</p>
           </div>
 
           <!-- Feature Badges -->
@@ -387,174 +462,58 @@
           </div>
 
         </div>
-      </section>
-
-      <!-- ▸ FOOTER ─────────────────────────────── -->
-      <footer class="site-footer" role="contentinfo">
-        <div class="footer-divider" aria-hidden="true"></div>
-        <div class="footer-inner">
-          <div class="footer-left">
-            <span class="footer-brand">SurBeat</span>
-            <span class="footer-copy">&copy; 2026</span>
-          </div>
-          <div class="footer-right">
-            <span>Designed &amp; Engineered with <span class="heart" aria-label="love">❤️</span> by <strong>Rishabh Pandey</strong></span>
-          </div>
-        </div>
-      </footer>
-
-    </main>
-    <!-- /main-content -->
-
-    <!-- ── RIGHT SIDE PANEL (desktop) ────────────────────── -->
-    <aside class="side-panel side-panel-right" aria-label="Retro Love Panel" id="sidePanelRight">
-      <div class="panel-inner">
-        <div class="panel-badge">
-          <span class="panel-badge-dot panel-badge-dot-cyan" aria-hidden="true"></span>
-          SIDE B • RETRO LOVE
-        </div>
-        <div class="panel-vinyl-art" aria-hidden="true">
-          <div class="panel-vinyl-ring pv-ring-1 cyan"></div>
-          <div class="panel-vinyl-ring pv-ring-2 cyan"></div>
-          <div class="panel-vinyl-ring pv-ring-3 cyan"></div>
-          <div class="panel-vinyl-center cyan-center">
-            <span class="pv-label">SurBeat</span>
-          </div>
-        </div>
-        <div class="panel-eq-bars eq-cyan" aria-hidden="true">
-          <span></span><span></span><span></span><span></span><span></span><span></span>
-        </div>
-        <div class="panel-label">
-          <span class="panel-cat">Golden Era</span>
-          <span class="panel-sub">Love Melodies</span>
-        </div>
-        <div class="panel-glow-line panel-glow-line-cyan" aria-hidden="true"></div>
       </div>
-    </aside>
+    </section>
 
-  </div>
-  <!-- /page-wrapper -->
+  </main>
 
-  <!-- ═══════════════════════════════════════════
-       MOBILE BOTTOM MINI-PLAYER
-       ═══════════════════════════════════════════ -->
-  <div class="mobile-bottom-bar" id="mobileBottomBar" aria-label="Mini player" style="display:none">
-    <div class="mbb-track">
-      <div class="mbb-disc" aria-hidden="true">
-        <div class="mbb-disc-inner" id="mbbDisc"></div>
+  <!-- ═══════════════════════════════════════
+       FOOTER
+       ═══════════════════════════════════════ -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-divider" aria-hidden="true"></div>
+    <div class="footer-inner">
+      <div class="footer-left">
+        <span class="footer-brand">SurBeat</span>
+        <span class="footer-copy">&copy; 2026</span>
       </div>
-      <div class="mbb-info">
-        <span class="mbb-title" id="mbbTitle">SurBeat</span>
-        <span class="mbb-cat" id="mbbCat">Desi Reel Hits</span>
+      <div class="footer-right">
+        Designed &amp; Engineered with <span class="heart" aria-label="love">❤️</span> by <strong>Rishabh Pandey</strong>
       </div>
     </div>
-    <div class="mbb-controls">
-      <button class="mbb-btn" id="mbbPrev" aria-label="Previous">
+  </footer>
+
+  <!-- ═══════════════════════════════════════
+       MOBILE BOTTOM BAR
+       ═══════════════════════════════════════ -->
+  <div class="mobile-bar" id="mobileBar" style="display:none" aria-label="Mini player">
+    <div class="mbar-track">
+      <div class="mbar-disc" aria-hidden="true">
+        <div class="mbar-disc-inner" id="mbarDisc"></div>
+      </div>
+      <div class="mbar-info">
+        <span class="mbar-title" id="mbarTitle">SurBeat</span>
+        <span class="mbar-cat" id="mbarCat">Desi Reel Hits</span>
+      </div>
+    </div>
+    <div class="mbar-controls">
+      <button class="mbar-btn" id="mbarPrev" aria-label="Previous track">
         <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"/></svg>
       </button>
-      <button class="mbb-btn mbb-play" id="mbbPlay" aria-label="Play/Pause">
+      <button class="mbar-btn mbar-play-btn" id="mbarPlay" aria-label="Play / Pause">
         <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22">
-          <path id="mbbPlayPath" d="M8 5v14l11-7z"/>
+          <path id="mbarPlayPath" d="M8 5v14l11-7z"/>
         </svg>
       </button>
-      <button class="mbb-btn" id="mbbNext" aria-label="Next">
+      <button class="mbar-btn" id="mbarNext" aria-label="Next track">
         <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M16 6h2v12h-2zm-2 6L5.5 6v12z"/></svg>
       </button>
     </div>
   </div>
 
-  <!-- Scripts -->
-  <script src="vinyl3d.js" defer></script>
+  <!-- Scripts — workoutCatalog first as it's referenced by script.js -->
+  <script src="workoutCatalog.js"></script>
   <script src="script.js"></script>
-  <script>
-    // ── 3D/CSS sync hooks injected after script.js ──
-    // Patch onUniversalPlaybackStart & onUniversalPlaybackPause to call vinyl3d API
-    (function() {
-      var _origStart = window.onUniversalPlaybackStart;
-      var _origPause = window.onUniversalPlaybackPause;
-
-      // Wait for DOMContentLoaded before hooking (script.js defines these in DOMContentLoaded scope)
-      // Instead we intercept via MutationObserver on discCore class
-      var discCore = document.getElementById('discCore');
-      if (discCore) {
-        var observer = new MutationObserver(function(mutations) {
-          mutations.forEach(function(m) {
-            if (m.attributeName === 'class') {
-              var isNowPlaying = discCore.classList.contains('playing');
-              if (typeof window.setVinylPlaying === 'function') {
-                window.setVinylPlaying(isNowPlaying);
-              }
-              // Sync mobile bottom bar
-              var mbb = document.getElementById('mobileBottomBar');
-              var mbbDisc = document.getElementById('mbbDisc');
-              var mbbPlayPath = document.getElementById('mbbPlayPath');
-              if (mbb) mbb.style.display = 'flex';
-              if (mbbDisc) {
-                if (isNowPlaying) mbbDisc.classList.add('spinning');
-                else mbbDisc.classList.remove('spinning');
-              }
-              if (mbbPlayPath) {
-                mbbPlayPath.setAttribute('d', isNowPlaying
-                  ? 'M6 5h4v14H6zm8 0h4v14h-4z'
-                  : 'M8 5v14l11-7z');
-              }
-              // Audio visualizer
-              var viz = document.getElementById('audioVisualizer');
-              if (viz) {
-                if (isNowPlaying) viz.classList.add('playing');
-                else viz.classList.remove('playing');
-              }
-            }
-          });
-        });
-        observer.observe(discCore, { attributes: true });
-      }
-
-      // Sync mobile bottom bar track info from nowPlayingText
-      var nowPlayingEl = document.getElementById('nowPlayingText');
-      if (nowPlayingEl) {
-        var trackObserver = new MutationObserver(function() {
-          var mbbTitle = document.getElementById('mbbTitle');
-          if (mbbTitle) mbbTitle.textContent = nowPlayingEl.textContent || 'SurBeat';
-        });
-        trackObserver.observe(nowPlayingEl, { childList: true, characterData: true, subtree: true });
-      }
-
-      // Sync category label to mobile bar
-      var catLabel = document.getElementById('nowPlayingCategoryLabel');
-      if (catLabel) {
-        var catObserver = new MutationObserver(function() {
-          var mbbCat = document.getElementById('mbbCat');
-          if (mbbCat) mbbCat.textContent = catLabel.textContent || 'Desi Reel Hits';
-          // Also call setVinylCategory
-          var activeBtn = document.querySelector('.genre-btn.active');
-          if (activeBtn && typeof window.setVinylCategory === 'function') {
-            window.setVinylCategory(activeBtn.dataset.category || 'trending');
-          }
-        });
-        catObserver.observe(catLabel, { childList: true, characterData: true, subtree: true });
-      }
-
-      // Mobile bottom bar controls
-      document.addEventListener('DOMContentLoaded', function() {
-        var mbbPlay = document.getElementById('mbbPlay');
-        var mbbPrev = document.getElementById('mbbPrev');
-        var mbbNext = document.getElementById('mbbNext');
-        var playPauseBtn = document.getElementById('playPauseBtn');
-        var prevBtn = document.getElementById('prevBtn');
-        var nextBtn = document.getElementById('nextBtn');
-
-        if (mbbPlay && playPauseBtn) mbbPlay.addEventListener('click', function() { playPauseBtn.click(); });
-        if (mbbPrev && prevBtn) mbbPrev.addEventListener('click', function() { prevBtn.click(); });
-        if (mbbNext && nextBtn) mbbNext.addEventListener('click', function() { nextBtn.click(); });
-
-        // Entrance animations
-        setTimeout(function() {
-          document.body.classList.add('loaded');
-        }, 100);
-      });
-    })();
-  </script>
 
 </body>
 </html>

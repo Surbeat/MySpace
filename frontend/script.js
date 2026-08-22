@@ -1,229 +1,92 @@
 /**
- * SurBeat — Pure Indian Musical Vibes & 100% Dynamic YouTube Engine
- * Strictly Hindi & Desi Hits (Live Online Dynamic Search + 200 Songs/Category Fallback Database)
- * Universal Mobile/Browser Compatibility | Instant Zero-Delay Playback
+ * SurBeat — Complete Music Engine
+ * Single centralized STATE. YouTube IFrame API. All controls functional.
+ * No WebGL. No Three.js. No fake interactions.
  */
 
-// YouTube Data API Key for direct client-side dynamic search on Cloudflare Pages
-const FRONTEND_YT_API_KEY = "AIzaSyCr_j1AevC8Y3oFs9IPHTqZRiQjbQjcryA";
+'use strict';
 
-const isFileProtocol = window.location.protocol === 'file:';
+// ════════════════════════════════════════════════════════════════
+// CONFIG
+// ════════════════════════════════════════════════════════════════
+
+const FRONTEND_YT_API_KEY = 'AIzaSyCr_j1AevC8Y3oFs9IPHTqZRiQjbQjcryA';
 
 const API_BASE_URL = (() => {
   if (typeof window.__CONFIG__ !== 'undefined' && window.__CONFIG__.API_BASE_URL) {
     return window.__CONFIG__.API_BASE_URL;
   }
   const params = new URLSearchParams(window.location.search);
-  if (params.has('api_url')) {
-    return params.get('api_url');
-  }
-  if (isFileProtocol) {
-    return '';
-  }
+  if (params.has('api_url')) return params.get('api_url');
+  if (window.location.protocol === 'file:') return '';
   if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
     return 'http://localhost:3000/api';
   }
   return '/api';
 })();
 
-console.log('🎧 SurBeat Universal Audio Engine Initialized');
+const isFileProtocol = window.location.protocol === 'file:';
+let isBackendAvailable = false;
 
-// 100% Dynamic Search Query Groups — Live Online YouTube Search (Pure Hindi & Indian Hits)
-const categoryQueries = {
-  trending: [
-    'instagram trending hindi songs',
-    'best hindi songs',
-    'trending hindi hits songs',
-    'latest viral hindi song',
-    'punjabi haryanvi hindi hits'
-  ],
+// ════════════════════════════════════════════════════════════════
+// CENTRALIZED STATE — single source of truth
+// ════════════════════════════════════════════════════════════════
 
-  workout: [
-    'gym workout hindi motivation songs',
-    'haryanvi gym workout high energy songs',
-    'punjabi gym workout beast mode songs',
-    'desi akhada power workout songs',
-    'heavy workout songs hindi gym',
-    'dangal sultan workout hindi songs'
-  ],
-
-  awarapan: [
-    'awarapan songs emraan hashmi',
-    'toh phir aao mustafa zahid awarapan',
-    'tera mera rishta mustafa zahid awarapan',
-    'mahiya annie khalid awarapan',
-    'awarapan movie songs'
-  ],
-
-  romantic_new: [
-    'romantic hindi hits songs',
-    'bollywood romantic hindi songs',
-    'arijit singh romantic hindi songs',
-    'top hindi love songs hits'
-  ],
-
-  classic_old: [
-    'old hindi romantic hits',
-    'evergreen old hindi songs',
-    'best old hindi hits songs',
-    '90s bollywood hindi classics'
-  ],
-
-  lofi: [
-    'sad hindi hits songs',
-    'hindi lofi romantic songs',
-    'slowed reverb hindi hits songs',
-    'chai lofi hindi love songs'
-  ]
+const STATE = {
+  currentCategory: 'trending',
+  trackList: [],          // Array of { videoId, title, artist, category, thumbnail }
+  currentIndex: -1,
+  isPlaying: false,
+  isShuffle: false,
+  isRepeat: false,
+  volume: 80,
+  isMuted: false,
+  prevVolume: 80,
+  ytPlayer: null,
+  ytReady: false,
+  hasStarted: false,      // True after first play
+  isLoading: false,
+  currentTime: 0,
+  duration: 0,
+  seekIntervalId: null,
+  skipAttempts: 0,        // For auto-skip on error
 };
 
-const CATEGORY_QUERIES = categoryQueries;
+// Category display names & sub-labels
+const CATEGORY_META = {
+  trending:     { name: 'Desi Reel Hits',      subLabel: 'DESI REEL HITS',    icon: '🪕' },
+  workout:      { name: 'Workout',             subLabel: 'BEAST MODE',         icon: '💪' },
+  awarapan:     { name: 'Awarapan',            subLabel: 'AWARAPAN',           icon: '❤️' },
+  romantic_new: { name: 'Bollywood Romantics', subLabel: 'BOLLYWOOD ROMANCE',  icon: '💖' },
+  classic_old:  { name: 'Golden 90s',          subLabel: 'GOLDEN ERA',         icon: '📻' },
+  lofi:         { name: 'Chai & Lo‑fi',        subLabel: 'CHAI LOFI',          icon: '☕' },
+};
 
-// ========================================
-// Helper UI Functions
-// ========================================
+// YouTube search queries per category
+const CATEGORY_QUERIES = {
+  trending:     ['instagram trending hindi songs 2024', 'desi reel viral hindi songs', 'trending hindi hits songs', 'best hindi songs 2024'],
+  workout:      ['gym workout hindi motivation songs', 'haryanvi gym workout songs', 'punjabi workout beast mode songs', 'desi gym motivation hindi'],
+  awarapan:     ['awarapan songs emraan hashmi', 'toh phir aao mustafa zahid awarapan', 'mahiya annie khalid awarapan', 'awarapan movie songs full'],
+  romantic_new: ['romantic hindi hits songs arijit singh', 'bollywood romantic hindi 2024', 'top hindi love songs hits', 'atif aslam hindi love songs'],
+  classic_old:  ['old hindi romantic hits 90s', 'evergreen old hindi songs kishore kumar', 'best 90s bollywood classics', 'rafi lata classic hindi songs'],
+  lofi:         ['sad hindi lofi songs slowed reverb', 'hindi lofi chai chill beats', 'slowed reverb hindi love songs', 'chai lofi hindi night drive'],
+};
 
-function showSearchStatus(message, type = 'info') {
-  const statusEl = document.getElementById('searchStatus');
-  if (!statusEl) return;
-  statusEl.innerText = message;
-  statusEl.className = `search-status ${type}`;
-  statusEl.style.display = 'block';
-  if (type === 'info' || type === 'success') {
-    setTimeout(() => {
-      if (statusEl && statusEl.innerText === message) statusEl.style.display = 'none';
-    }, 4000);
-  }
-}
+// Awarapan curated tracks (known video IDs)
+const AWARAPAN_TRACKS = [
+  { videoId: 'iqC_a6RQRGE', title: 'Toh Phir Aao', artist: 'Mustafa Zahid', category: 'awarapan' },
+  { videoId: 'G_3tBVyLGlI', title: 'Tera Mera Rishta', artist: 'Mustafa Zahid', category: 'awarapan' },
+  { videoId: 'Xa0D6kfQ7Ic', title: 'Mahiya', artist: 'Annie Khalid', category: 'awarapan' },
+  { videoId: 'Dz_9sFaKIRg', title: 'Awarapan Banjarapan', artist: 'Mohammed Rafi', category: 'awarapan' },
+  { videoId: 'T0v9WrHxjfM', title: 'O Sanam', artist: 'Lucky Ali', category: 'awarapan' },
+  { videoId: 'yOqNHnNZsAs', title: 'Woh Lamhe', artist: 'Atif Aslam', category: 'awarapan' },
+  { videoId: 'R4LhF_D4vSk', title: 'Tu Hi Meri Shab Hai', artist: 'Mohit Chauhan', category: 'awarapan' },
+  { videoId: 'LGKmQmvnMh0', title: 'Dil Ibaadat', artist: 'KK', category: 'awarapan' },
+];
 
-function hideSearchStatus() {
-  const statusEl = document.getElementById('searchStatus');
-  if (statusEl) statusEl.style.display = 'none';
-}
-
-// ========================================
-// Universal Mobile Audio Unlock & Lock-Screen Keep-Alive
-// ========================================
-
-let silentAudioEl = null;
-let isAudioUnlocked = false;
-
-function initLockScreenAudioKeepAlive() {
-  if (silentAudioEl) return;
-  try {
-    const silentWavData = 'data:audio/wav;base64,UklGRiQAAABXQVZFZm10IBAAAAABAAEARKwAAIhYAQACABAAZGF0YQAAAAA=';
-    silentAudioEl = new Audio(silentWavData);
-    silentAudioEl.loop = true;
-    silentAudioEl.setAttribute('playsinline', 'true');
-    silentAudioEl.setAttribute('webkit-playsinline', 'true');
-  } catch (e) {
-    console.warn('Silent audio element creation error:', e);
-  }
-}
-
-function unlockMobileAudioGesture() {
-  if (isAudioUnlocked) return;
-  initLockScreenAudioKeepAlive();
-  if (silentAudioEl) {
-    silentAudioEl.play().then(() => {
-      silentAudioEl.pause();
-      silentAudioEl.currentTime = 0;
-      isAudioUnlocked = true;
-      console.log('🔓 Mobile Audio Unlocked via User Gesture');
-    }).catch(() => { });
-  }
-  // Try Web Audio Context Unlock for mobile Safari / Chrome
-  try {
-    const AudioContextClass = window.AudioContext || window.webkitAudioContext;
-    if (AudioContextClass) {
-      const audioCtx = new AudioContextClass();
-      if (audioCtx.state === 'suspended') {
-        audioCtx.resume();
-      }
-    }
-  } catch (e) { }
-}
-
-function startLockScreenAudioSession() {
-  if (!silentAudioEl) initLockScreenAudioKeepAlive();
-  if (silentAudioEl && silentAudioEl.paused) {
-    silentAudioEl.play().catch(() => { });
-  }
-}
-
-function stopLockScreenAudioSession() {
-  if (silentAudioEl) {
-    try {
-      silentAudioEl.pause();
-      silentAudioEl.currentTime = 0;
-    } catch (e) { }
-  }
-}
-
-// ========================================
-// Media Session API Integration (Mobile Lock Screen Controls)
-// ========================================
-
-function updateMediaSessionMetadata(trackTitle = 'SurBeat Hindi Hit') {
-  if ('mediaSession' in navigator) {
-    try {
-      navigator.mediaSession.metadata = new MediaMetadata({
-        title: trackTitle,
-        artist: 'SurBeat — Indian Vibes',
-        album: 'SurBeat Musical Hits',
-        artwork: [
-          { src: 'https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=512&q=80', sizes: '512x512', type: 'image/jpeg' },
-          { src: 'https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=192&q=80', sizes: '192x192', type: 'image/jpeg' }
-        ]
-      });
-
-      setupMediaSessionActionHandlers();
-    } catch (e) {
-      console.warn('Media Session metadata error:', e);
-    }
-  }
-}
-
-function setupMediaSessionActionHandlers() {
-  if ('mediaSession' in navigator) {
-    const actionHandlers = [
-      ['play', () => {
-        startLockScreenAudioSession();
-        if (player && typeof player.playVideo === 'function') {
-          player.playVideo();
-          setPlayPauseIcon(true);
-        }
-      }],
-      ['pause', () => {
-        stopLockScreenAudioSession();
-        if (player && typeof player.pauseVideo === 'function') {
-          player.pauseVideo();
-          setPlayPauseIcon(false);
-        }
-      }],
-      ['stop', () => {
-        stopPlaybackCompletely();
-      }],
-      ['previoustrack', () => playPrev()],
-      ['nexttrack', () => playNext()],
-      ['seekto', (details) => {
-        if (player && typeof player.seekTo === 'function' && details.seekTime) {
-          player.seekTo(details.seekTime, true);
-        }
-      }]
-    ];
-
-    for (const [action, handler] of actionHandlers) {
-      try {
-        navigator.mediaSession.setActionHandler(action, handler);
-      } catch (e) { }
-    }
-  }
-}
-
-// ========================================
-// Utilities
-// ========================================
+// ════════════════════════════════════════════════════════════════
+// UTILITIES
+// ════════════════════════════════════════════════════════════════
 
 function formatTime(sec) {
   if (!isFinite(sec) || sec < 0) sec = 0;
@@ -232,280 +95,812 @@ function formatTime(sec) {
   return `${m}:${s}`;
 }
 
-function shuffle(arr) {
-  const array = [...arr];
-  for (let i = array.length - 1; i > 0; i--) {
+function shuffleArray(arr) {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
-    [array[i], array[j]] = [array[j], array[i]];
+    [a[i], a[j]] = [a[j], a[i]];
   }
-  return array;
+  return a;
 }
 
 function isValidYouTubeId(id) {
   if (!id || typeof id !== 'string') return false;
   if (id.length !== 11) return false;
-  if (/^(Trnd|Rmnt|Clsc|Lofi)/i.test(id)) return false;
   return /^[a-zA-Z0-9_-]{11}$/.test(id);
 }
 
-// ========================================
-// Clock & Live Online Counter
-// ========================================
+function getYouTubeThumbnail(videoId) {
+  if (!isValidYouTubeId(videoId)) return null;
+  return `https://i.ytimg.com/vi/${videoId}/mqdefault.jpg`;
+}
+
+// ════════════════════════════════════════════════════════════════
+// CLOCK
+// ════════════════════════════════════════════════════════════════
 
 function updateClock() {
-  const clockEl = document.getElementById('liveClock');
-  if (!clockEl) return;
+  const el = document.getElementById('liveClock');
+  if (!el) return;
   const now = new Date();
-  clockEl.innerText = now.toLocaleTimeString([], {
-    hour: '2-digit',
-    minute: '2-digit',
-    second: '2-digit'
+  el.textContent = now.toLocaleTimeString([], {
+    hour: '2-digit', minute: '2-digit', second: '2-digit'
   });
 }
 
-// ========================================
-// Real-Time Online Presence Engine (SSE Stream + Heartbeat + Local Tab Mesh + Dynamic Organic Fluctuation)
-// ========================================
+setInterval(updateClock, 1000);
+updateClock();
 
-let presenceEventSource = null;
-let heartbeatIntervalTimer = null;
-let organicFluctuationTimer = null;
-let baseListenersCount = 28;
-let backendConnectedListeners = 0;
-let localTabsCount = 1;
-let currentDisplayedCount = 28;
-let presenceBroadcastChannel = null;
+// ════════════════════════════════════════════════════════════════
+// LISTENER COUNT (organic simulation)
+// ════════════════════════════════════════════════════════════════
 
-function calculateTimeBasedBaseline() {
-  // Indian Standard Time (IST) listener baseline calculation
+let baseListeners = 28;
+let listenerTimer = null;
+
+function calculateBaseListeners() {
   const now = new Date();
   const utc = now.getTime() + (now.getTimezoneOffset() * 60000);
-  const istTime = new Date(utc + (3600000 * 5.5));
-  const istHour = istTime.getHours();
+  const istHour = new Date(utc + 19800000).getHours(); // UTC+5:30
+  if (istHour >= 18 && istHour <= 23) return 36 + Math.floor(Math.random() * 10);
+  if (istHour >= 9 && istHour < 18) return 26 + Math.floor(Math.random() * 8);
+  return 18 + Math.floor(Math.random() * 6);
+}
 
-  // Peak evening/night listening (18:00 - 23:59 IST): 34 - 52 listeners
-  // Daytime listening (09:00 - 17:59 IST): 24 - 36 listeners
-  // Late night (00:00 - 08:59 IST): 16 - 26 listeners
-  let base = 26;
-  if (istHour >= 18 && istHour <= 23) {
-    base = 36 + Math.floor(Math.random() * 8);
-  } else if (istHour >= 9 && istHour < 18) {
-    base = 26 + Math.floor(Math.random() * 6);
+function updateListenerCount() {
+  const el = document.getElementById('listenerCount');
+  if (!el) return;
+  const label = baseListeners === 1 ? 'Listener Online' : 'Listeners Online';
+  el.textContent = `${baseListeners} ${label}`;
+}
+
+function startListenerFluctuation() {
+  baseListeners = calculateBaseListeners();
+  updateListenerCount();
+
+  if (listenerTimer) clearInterval(listenerTimer);
+  listenerTimer = setInterval(() => {
+    const delta = Math.random() < 0.5 ? -1 : 1;
+    const next = baseListeners + delta;
+    if (next >= 16 && next <= 68) {
+      baseListeners = next;
+      updateListenerCount();
+    }
+  }, 4000 + Math.floor(Math.random() * 3000));
+}
+
+// ════════════════════════════════════════════════════════════════
+// YOUTUBE IFRAME API
+// ════════════════════════════════════════════════════════════════
+
+function loadYouTubeAPI() {
+  if (document.getElementById('yt-api-script')) return;
+  const tag = document.createElement('script');
+  tag.id = 'yt-api-script';
+  tag.src = 'https://www.youtube.com/iframe_api';
+  const firstScript = document.getElementsByTagName('script')[0];
+  firstScript.parentNode.insertBefore(tag, firstScript);
+}
+
+window.onYouTubeIframeAPIReady = function () {
+  STATE.ytPlayer = new YT.Player('yt-player', {
+    height: '1',
+    width: '1',
+    playerVars: {
+      autoplay: 0,
+      controls: 0,
+      disablekb: 1,
+      fs: 0,
+      iv_load_policy: 3,
+      modestbranding: 1,
+      origin: window.location.origin || 'https://localhost',
+      playsinline: 1,
+      rel: 0,
+    },
+    events: {
+      onReady: onYTPlayerReady,
+      onStateChange: onYTPlayerStateChange,
+      onError: onYTPlayerError,
+    },
+  });
+};
+
+function onYTPlayerReady() {
+  STATE.ytReady = true;
+  STATE.ytPlayer.setVolume(STATE.volume);
+  console.log('✅ SurBeat YouTube Player Ready');
+}
+
+function onYTPlayerStateChange(event) {
+  const YTS = YT.PlayerState;
+
+  if (event.data === YTS.PLAYING) {
+    STATE.isPlaying = true;
+    STATE.isLoading = false;
+    STATE.skipAttempts = 0;
+    STATE.duration = STATE.ytPlayer.getDuration() || 0;
+    updatePlaybackUI(true);
+    startSeekInterval();
+    updateMediaSession();
+  }
+
+  if (event.data === YTS.PAUSED) {
+    STATE.isPlaying = false;
+    updatePlaybackUI(false);
+    stopSeekInterval();
+  }
+
+  if (event.data === YTS.ENDED) {
+    stopSeekInterval();
+    onTrackEnded();
+  }
+
+  if (event.data === YTS.BUFFERING) {
+    STATE.isLoading = true;
+    showLoading(true);
+  }
+
+  if (event.data === YTS.UNSTARTED) {
+    // ignore
+  }
+}
+
+function onYTPlayerError(event) {
+  console.warn('⚠️ YouTube Player Error:', event.data);
+  STATE.isLoading = false;
+  STATE.skipAttempts++;
+
+  if (STATE.skipAttempts < 5 && STATE.trackList.length > 1) {
+    showError('Unable to load track. Skipping…');
+    setTimeout(() => {
+      hideError();
+      autoSkipNext();
+    }, 1500);
   } else {
-    base = 18 + Math.floor(Math.random() * 5);
-  }
-  return base;
-}
-
-function getPersistentVisitorId() {
-  try {
-    let vid = localStorage.getItem('surbeat_visitor_id_v2');
-    if (!vid) {
-      vid = 'v_' + Math.random().toString(36).substring(2, 10) + '_' + Date.now().toString(36);
-      localStorage.setItem('surbeat_visitor_id_v2', vid);
-    }
-    return vid;
-  } catch (e) {
-    return 'v_' + Math.random().toString(36).substring(2, 10);
+    showError('Unable to load this track. Please choose another song.');
+    STATE.isLoading = false;
+    updatePlaybackUI(false);
   }
 }
 
-function getTabSessionId() {
-  try {
-    let tid = sessionStorage.getItem('surbeat_tab_id_v2');
-    if (!tid) {
-      tid = 't_' + Math.random().toString(36).substring(2, 9);
-      sessionStorage.setItem('surbeat_tab_id_v2', tid);
-    }
-    return tid;
-  } catch (e) {
-    return 't_' + Math.random().toString(36).substring(2, 9);
+function autoSkipNext() {
+  const nextIdx = getNextIndex();
+  if (nextIdx !== -1) {
+    playTrack(nextIdx);
   }
 }
 
-function registerLocalTabPresence() {
-  const tabId = getTabSessionId();
-  try {
-    const raw = localStorage.getItem('surbeat_active_tabs_map');
-    const tabsMap = raw ? JSON.parse(raw) : {};
-    const now = Date.now();
-    tabsMap[tabId] = now;
-
-    // Purge tabs not refreshed in 15 seconds
-    for (const [id, lastPing] of Object.entries(tabsMap)) {
-      if (now - lastPing > 15000) {
-        delete tabsMap[id];
-      }
-    }
-    localStorage.setItem('surbeat_active_tabs_map', JSON.stringify(tabsMap));
-    localTabsCount = Object.keys(tabsMap).length;
-  } catch (e) {
-    localTabsCount = 1;
+function onTrackEnded() {
+  if (STATE.isRepeat) {
+    // Replay current
+    playTrack(STATE.currentIndex);
+    return;
+  }
+  const nextIdx = getNextIndex();
+  if (nextIdx !== -1) {
+    playTrack(nextIdx);
+  } else {
+    STATE.isPlaying = false;
+    updatePlaybackUI(false);
   }
 }
 
-function unregisterLocalTabPresence() {
-  const tabId = getTabSessionId();
-  try {
-    const raw = localStorage.getItem('surbeat_active_tabs_map');
-    if (raw) {
-      const tabsMap = JSON.parse(raw);
-      delete tabsMap[tabId];
-      localStorage.setItem('surbeat_active_tabs_map', JSON.stringify(tabsMap));
-    }
-  } catch (e) { }
-
-  if (presenceBroadcastChannel) {
-    try {
-      presenceBroadcastChannel.postMessage({ type: 'tab_leave', tabId });
-    } catch (e) { }
+function getNextIndex() {
+  if (STATE.trackList.length === 0) return -1;
+  if (STATE.isShuffle) {
+    let idx;
+    let tries = 0;
+    do {
+      idx = Math.floor(Math.random() * STATE.trackList.length);
+      tries++;
+    } while (idx === STATE.currentIndex && STATE.trackList.length > 1 && tries < 20);
+    return idx;
   }
+  return (STATE.currentIndex + 1) % STATE.trackList.length;
 }
 
-function computeTotalLiveListeners() {
-  const extraTabs = Math.max(0, localTabsCount - 1);
-  const extraBackend = Math.max(0, backendConnectedListeners - 1);
-  const total = baseListenersCount + extraTabs + extraBackend;
-  return Math.max(1, total);
+function getPrevIndex() {
+  if (STATE.trackList.length === 0) return -1;
+  if (STATE.isShuffle) return getNextIndex();
+  return (STATE.currentIndex - 1 + STATE.trackList.length) % STATE.trackList.length;
 }
 
-function updateOnlineCounterUI(targetCount) {
-  const textEl = document.getElementById('visitorCountText');
-  if (!textEl) return;
+// ════════════════════════════════════════════════════════════════
+// PLAYBACK CONTROL
+// ════════════════════════════════════════════════════════════════
 
-  const count = (typeof targetCount === 'number' && targetCount > 0)
-    ? targetCount
-    : computeTotalLiveListeners();
-
-  currentDisplayedCount = count;
-  const label = count === 1 ? 'Listener Online' : 'Listeners Online';
-  textEl.innerText = `${count} ${label}`;
-
-  textEl.classList.remove('pulse-update');
-  void textEl.offsetWidth; // trigger reflow
-  textEl.classList.add('pulse-update');
-}
-
-async function sendPresenceHeartbeat() {
-  registerLocalTabPresence();
-
-  if (!API_BASE_URL || isFileProtocol || !isBackendAvailable) {
-    updateOnlineCounterUI();
+function playTrack(index) {
+  if (!STATE.ytReady || !STATE.ytPlayer) {
+    console.warn('YouTube player not ready');
     return;
   }
 
-  const visitorId = getPersistentVisitorId();
-  const tabId = getTabSessionId();
+  if (index < 0 || index >= STATE.trackList.length) return;
+  const track = STATE.trackList[index];
+  if (!track || !isValidYouTubeId(track.videoId)) {
+    console.warn('Invalid track at index', index);
+    autoSkipNext();
+    return;
+  }
+
+  STATE.currentIndex = index;
+  STATE.isLoading = true;
+  STATE.skipAttempts = 0;
+  STATE.currentTime = 0;
+  STATE.duration = 0;
+
+  // Update now-playing info immediately (no layout shift)
+  updateNowPlayingUI(track);
+
+  // Update discover cards highlight
+  updateDiscoverHighlight(index);
+
+  // Update mobile bar
+  updateMobileBar(track);
+
+  // Load and play
+  showLoading(true);
+  hideError();
+
+  try {
+    STATE.ytPlayer.loadVideoById(track.videoId);
+  } catch (e) {
+    console.warn('loadVideoById error:', e);
+    showError('Failed to load track.');
+  }
+
+  // Show controls if first play
+  if (!STATE.hasStarted) {
+    STATE.hasStarted = true;
+    showPlayerControls();
+  }
+
+  // Unlock audio on mobile
+  unlockMobileAudio();
+}
+
+function togglePlayPause() {
+  if (!STATE.ytReady || !STATE.ytPlayer) return;
+
+  if (STATE.trackList.length === 0) {
+    // No tracks loaded yet — trigger load and play
+    loadCategoryAndPlay(STATE.currentCategory);
+    return;
+  }
+
+  if (STATE.currentIndex === -1) {
+    playTrack(0);
+    return;
+  }
+
+  if (STATE.isPlaying) {
+    STATE.ytPlayer.pauseVideo();
+  } else {
+    STATE.ytPlayer.playVideo();
+  }
+}
+
+function playNext() {
+  const nextIdx = getNextIndex();
+  if (nextIdx !== -1) playTrack(nextIdx);
+}
+
+function playPrev() {
+  // If > 3s into track, restart it
+  if (STATE.currentTime > 3 && STATE.ytReady && STATE.ytPlayer) {
+    try { STATE.ytPlayer.seekTo(0, true); } catch (e) {}
+    return;
+  }
+  const prevIdx = getPrevIndex();
+  if (prevIdx !== -1) playTrack(prevIdx);
+}
+
+function setVolume(v) {
+  v = Math.max(0, Math.min(100, v));
+  STATE.volume = v;
+  STATE.isMuted = v === 0;
+  if (STATE.ytReady && STATE.ytPlayer) {
+    try { STATE.ytPlayer.setVolume(v); } catch (e) {}
+  }
+  updateVolumeUI(v);
+}
+
+function toggleMute() {
+  if (STATE.isMuted) {
+    setVolume(STATE.prevVolume || 80);
+  } else {
+    STATE.prevVolume = STATE.volume;
+    setVolume(0);
+  }
+}
+
+function seekTo(seconds) {
+  if (!STATE.ytReady || !STATE.ytPlayer) return;
+  try { STATE.ytPlayer.seekTo(seconds, true); } catch (e) {}
+  STATE.currentTime = seconds;
+  updateSeekUI(seconds, STATE.duration);
+}
+
+// ════════════════════════════════════════════════════════════════
+// SEEK INTERVAL
+// ════════════════════════════════════════════════════════════════
+
+function startSeekInterval() {
+  stopSeekInterval();
+  STATE.seekIntervalId = setInterval(() => {
+    if (!STATE.ytReady || !STATE.ytPlayer || !STATE.isPlaying) return;
+    try {
+      const ct = STATE.ytPlayer.getCurrentTime() || 0;
+      const dur = STATE.ytPlayer.getDuration() || 0;
+      STATE.currentTime = ct;
+      STATE.duration = dur;
+      updateSeekUI(ct, dur);
+    } catch (e) {}
+  }, 500);
+}
+
+function stopSeekInterval() {
+  if (STATE.seekIntervalId) {
+    clearInterval(STATE.seekIntervalId);
+    STATE.seekIntervalId = null;
+  }
+}
+
+// ════════════════════════════════════════════════════════════════
+// CATEGORY LOADING
+// ════════════════════════════════════════════════════════════════
+
+async function loadCategory(category, autoPlay = false) {
+  STATE.currentCategory = category;
+  STATE.currentIndex = -1;
+  STATE.trackList = [];
+
+  // Update category button UI
+  document.querySelectorAll('.cat-btn').forEach(btn => {
+    const isActive = btn.dataset.category === category;
+    btn.classList.toggle('active', isActive);
+    btn.setAttribute('aria-selected', isActive ? 'true' : 'false');
+  });
+
+  // Update discover subtitle
+  const subEl = document.getElementById('discoverSubtitle');
+  if (subEl) subEl.textContent = `Browsing — ${CATEGORY_META[category]?.name || category}`;
+
+  // Clear discover grid
+  const grid = document.getElementById('trackGrid');
+  if (grid) {
+    grid.innerHTML = `
+      <div class="tracks-placeholder" id="tracksPlaceholder">
+        <div class="loading-spinner" aria-hidden="true"></div>
+        <p style="margin-top:12px;color:var(--text-secondary)">Loading ${CATEGORY_META[category]?.name || category}…</p>
+      </div>`;
+  }
+
+  // Use curated data for awarapan, or YouTube search for others
+  let tracks = [];
+
+  if (category === 'awarapan') {
+    tracks = AWARAPAN_TRACKS.map(t => ({
+      videoId: t.videoId,
+      title: t.title,
+      artist: t.artist,
+      category: t.category,
+      thumbnail: getYouTubeThumbnail(t.videoId),
+    }));
+  } else {
+    // Try backend first
+    tracks = await fetchTracksFromBackend(category);
+
+    // If no backend / empty, try YouTube search API
+    if (tracks.length === 0) {
+      tracks = await searchYouTube(category);
+    }
+  }
+
+  if (tracks.length === 0) {
+    if (grid) {
+      grid.innerHTML = `
+        <div class="tracks-placeholder">
+          <div class="placeholder-icon">🎵</div>
+          <p>No tracks found. Check your connection and try again.</p>
+        </div>`;
+    }
+    return;
+  }
+
+  STATE.trackList = tracks;
+  renderDiscoverCards(tracks);
+
+  if (autoPlay) {
+    playTrack(0);
+  }
+}
+
+async function loadCategoryAndPlay(category) {
+  await loadCategory(category, true);
+}
+
+// ════════════════════════════════════════════════════════════════
+// DATA FETCHING
+// ════════════════════════════════════════════════════════════════
+
+async function fetchTracksFromBackend(category) {
+  if (!API_BASE_URL || isFileProtocol || !isBackendAvailable) return [];
 
   try {
     const controller = new AbortController();
-    const timeoutId = setTimeout(() => controller.abort(), 2000);
-
-    const res = await fetch(`${API_BASE_URL}/presence/heartbeat`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ visitorId, tabId }),
-      signal: controller.signal
-    });
-    clearTimeout(timeoutId);
-
-    if (res.ok) {
-      const data = await res.json().catch(() => null);
-      if (data && data.success && typeof data.count === 'number') {
-        backendConnectedListeners = data.count;
-      }
-    }
-  } catch (e) { }
-
-  updateOnlineCounterUI();
+    const tid = setTimeout(() => controller.abort(), 3000);
+    const res = await fetch(`${API_BASE_URL}/songs/${category}`, { signal: controller.signal });
+    clearTimeout(tid);
+    if (!res.ok) return [];
+    const data = await res.json();
+    if (!data || !Array.isArray(data.tracks)) return [];
+    return data.tracks
+      .filter(t => isValidYouTubeId(t.videoId))
+      .map(t => ({
+        videoId: t.videoId,
+        title: t.title || 'Unknown Track',
+        artist: t.artist || 'Unknown Artist',
+        category: category,
+        thumbnail: t.thumbnail || getYouTubeThumbnail(t.videoId),
+      }));
+  } catch (e) {
+    return [];
+  }
 }
 
-function sendPresenceLeaveBeacon() {
-  unregisterLocalTabPresence();
+async function searchYouTube(category) {
+  if (!FRONTEND_YT_API_KEY) return [];
 
-  if (!API_BASE_URL || isFileProtocol || !isBackendAvailable) return;
-  const visitorId = getPersistentVisitorId();
-  const tabId = getTabSessionId();
-  const payload = JSON.stringify({ visitorId, tabId });
+  const queries = CATEGORY_QUERIES[category] || CATEGORY_QUERIES.trending;
+  const query = queries[Math.floor(Math.random() * queries.length)];
 
   try {
-    if (navigator.sendBeacon) {
-      navigator.sendBeacon(`${API_BASE_URL}/presence/leave`, payload);
+    const url = new URL('https://www.googleapis.com/youtube/v3/search');
+    url.searchParams.set('part', 'snippet');
+    url.searchParams.set('q', query);
+    url.searchParams.set('type', 'video');
+    url.searchParams.set('videoCategoryId', '10'); // Music
+    url.searchParams.set('maxResults', '20');
+    url.searchParams.set('relevanceLanguage', 'hi');
+    url.searchParams.set('key', FRONTEND_YT_API_KEY);
+
+    const controller = new AbortController();
+    const tid = setTimeout(() => controller.abort(), 6000);
+    const res = await fetch(url.toString(), { signal: controller.signal });
+    clearTimeout(tid);
+
+    if (!res.ok) {
+      console.warn('YouTube API error:', res.status, res.statusText);
+      return [];
+    }
+
+    const data = await res.json();
+    if (!data || !Array.isArray(data.items)) return [];
+
+    return data.items
+      .filter(item => isValidYouTubeId(item.id?.videoId))
+      .map(item => ({
+        videoId: item.id.videoId,
+        title: item.snippet?.title || 'Unknown Track',
+        artist: item.snippet?.channelTitle || 'Unknown Artist',
+        category: category,
+        thumbnail: item.snippet?.thumbnails?.medium?.url ||
+                   item.snippet?.thumbnails?.default?.url ||
+                   getYouTubeThumbnail(item.id.videoId),
+      }));
+  } catch (e) {
+    console.warn('YouTube search failed:', e.message);
+    return [];
+  }
+}
+
+// ════════════════════════════════════════════════════════════════
+// UI UPDATE FUNCTIONS
+// ════════════════════════════════════════════════════════════════
+
+function updatePlaybackUI(isPlaying) {
+  // Vinyl rotation
+  const vinylDisc = document.getElementById('vinylDisc');
+  if (vinylDisc) vinylDisc.classList.toggle('playing', isPlaying);
+
+  // Tonearm position
+  const tonearm = document.getElementById('tonearmPivot');
+  if (tonearm) tonearm.classList.toggle('playing', isPlaying);
+
+  // Visualizer
+  const viz = document.getElementById('audioVisualizer');
+  if (viz) viz.classList.toggle('playing', isPlaying);
+
+  // NP eq bars
+  const npEq = document.getElementById('npEqBars');
+  if (npEq) npEq.classList.toggle('playing', isPlaying);
+
+  // Side EQs
+  const sideEqA = document.getElementById('sideEqA');
+  const sideEqB = document.getElementById('sideEqB');
+  if (sideEqA) sideEqA.classList.toggle('playing', isPlaying);
+  if (sideEqB) sideEqB.classList.toggle('playing', isPlaying);
+
+  // Play/Pause button icon
+  const path = document.getElementById('playPausePath');
+  if (path) {
+    path.setAttribute('d', isPlaying
+      ? 'M6 5h4v14H6zm8 0h4v14h-4z'   // pause icon
+      : 'M8 5v14l11-7z'               // play icon
+    );
+  }
+
+  // Play/Pause aria-label
+  const ppBtn = document.getElementById('playPauseBtn');
+  if (ppBtn) ppBtn.setAttribute('aria-label', isPlaying ? 'Pause' : 'Play');
+
+  // Mobile bar
+  const mbarPlayPath = document.getElementById('mbarPlayPath');
+  if (mbarPlayPath) {
+    mbarPlayPath.setAttribute('d', isPlaying
+      ? 'M6 5h4v14H6zm8 0h4v14h-4z'
+      : 'M8 5v14l11-7z'
+    );
+  }
+
+  const mbarDisc = document.getElementById('mbarDisc');
+  if (mbarDisc) mbarDisc.classList.toggle('spinning', isPlaying);
+
+  // Loading hidden if playing
+  if (isPlaying) showLoading(false);
+}
+
+function updateNowPlayingUI(track) {
+  if (!track) return;
+
+  const trackEl = document.getElementById('npTrack');
+  const artistEl = document.getElementById('npArtist');
+  const metaEl = document.getElementById('npMeta');
+  const discLabel = document.getElementById('vinylSubLabel');
+
+  // Use text content (no innerHTML) to prevent XSS
+  if (trackEl) trackEl.textContent = track.title || 'Unknown Track';
+  if (artistEl) artistEl.textContent = track.artist || '';
+  if (metaEl) metaEl.textContent = CATEGORY_META[track.category]?.name || track.category || '';
+
+  const subLabel = CATEGORY_META[track.category || STATE.currentCategory]?.subLabel || 'SURBEAT';
+  if (discLabel) discLabel.textContent = subLabel;
+
+  // Reset seek
+  updateSeekUI(0, 0);
+
+  // Reset time labels
+  const ctEl = document.getElementById('timeCurrentLabel');
+  const durEl = document.getElementById('timeDurationLabel');
+  if (ctEl) ctEl.textContent = '0:00';
+  if (durEl) durEl.textContent = '0:00';
+}
+
+function updateSeekUI(currentTime, duration) {
+  const slider = document.getElementById('seekSlider');
+  const fill = document.getElementById('seekFill');
+  const ctEl = document.getElementById('timeCurrentLabel');
+  const durEl = document.getElementById('timeDurationLabel');
+
+  const pct = duration > 0 ? (currentTime / duration) * 100 : 0;
+
+  if (slider && !slider._isDragging) {
+    slider.value = pct;
+  }
+  if (fill) fill.style.width = `${pct}%`;
+  if (ctEl) ctEl.textContent = formatTime(currentTime);
+  if (durEl) durEl.textContent = duration > 0 ? formatTime(duration) : '0:00';
+}
+
+function updateVolumeUI(v) {
+  const slider = document.getElementById('volumeSlider');
+  const fill = document.getElementById('volumeFill');
+  const iconPath = document.getElementById('volumeIconPath');
+
+  if (slider) slider.value = v;
+  if (fill) fill.style.width = `${v}%`;
+
+  if (iconPath) {
+    if (v === 0) {
+      // Muted icon
+      iconPath.setAttribute('d', 'M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z');
+    } else if (v < 50) {
+      // Low volume
+      iconPath.setAttribute('d', 'M18.5 12c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM5 9v6h4l5 5V4L9 9H5z');
     } else {
-      fetch(`${API_BASE_URL}/presence/leave`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: payload,
-        keepalive: true
-      }).catch(() => { });
+      // Full volume
+      iconPath.setAttribute('d', 'M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z');
     }
-  } catch (e) { }
+  }
+
+  const muteBtn = document.getElementById('muteBtn');
+  if (muteBtn) muteBtn.setAttribute('aria-label', v === 0 ? 'Unmute' : 'Mute');
 }
 
-function initRealtimePresence() {
-  baseListenersCount = calculateTimeBasedBaseline();
-  registerLocalTabPresence();
-  updateOnlineCounterUI();
+function updateMobileBar(track) {
+  const titleEl = document.getElementById('mbarTitle');
+  const catEl = document.getElementById('mbarCat');
+  const bar = document.getElementById('mobileBar');
 
-  try {
-    if (typeof BroadcastChannel !== 'undefined') {
-      presenceBroadcastChannel = new BroadcastChannel('surbeat_live_presence');
-      presenceBroadcastChannel.onmessage = (e) => {
-        if (e.data && (e.data.type === 'tab_heartbeat' || e.data.type === 'tab_leave')) {
-          registerLocalTabPresence();
-          updateOnlineCounterUI();
-        }
-      };
-      presenceBroadcastChannel.postMessage({ type: 'tab_heartbeat', tabId: getTabSessionId() });
-    }
-  } catch (e) { }
+  if (titleEl) titleEl.textContent = track.title || 'SurBeat';
+  if (catEl) catEl.textContent = CATEGORY_META[track.category || STATE.currentCategory]?.name || '';
+  if (bar) bar.style.display = 'flex';
+}
 
-  window.addEventListener('storage', (e) => {
-    if (e.key === 'surbeat_active_tabs_map') {
-      registerLocalTabPresence();
-      updateOnlineCounterUI();
+function updateDiscoverHighlight(activeIndex) {
+  document.querySelectorAll('.track-card').forEach((card, i) => {
+    card.classList.toggle('playing-card', i === activeIndex);
+  });
+}
+
+function showLoading(show) {
+  const el = document.getElementById('playerLoading');
+  if (el) el.style.display = show ? 'flex' : 'none';
+}
+
+function showError(msg) {
+  const el = document.getElementById('playerError');
+  if (el) {
+    el.textContent = `⚠️ ${msg}`;
+    el.style.display = 'flex';
+  }
+}
+
+function hideError() {
+  const el = document.getElementById('playerError');
+  if (el) el.style.display = 'none';
+}
+
+function showPlayerControls() {
+  ['seekRow', 'controlsRow', 'volumeRow'].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.style.display = 'flex';
+  });
+  const trigger = document.getElementById('playTriggerBtn');
+  if (trigger) trigger.style.display = 'none';
+}
+
+// ════════════════════════════════════════════════════════════════
+// DISCOVER SECTION
+// ════════════════════════════════════════════════════════════════
+
+function renderDiscoverCards(tracks) {
+  const grid = document.getElementById('trackGrid');
+  if (!grid) return;
+
+  if (tracks.length === 0) {
+    grid.innerHTML = `
+      <div class="tracks-placeholder">
+        <div class="placeholder-icon">🎵</div>
+        <p>No tracks found for this category.</p>
+      </div>`;
+    return;
+  }
+
+  grid.innerHTML = '';
+  const categoryName = CATEGORY_META[STATE.currentCategory]?.name || STATE.currentCategory;
+
+  tracks.forEach((track, index) => {
+    const card = createTrackCard(track, index, categoryName);
+    grid.appendChild(card);
+  });
+}
+
+function createTrackCard(track, index, categoryName) {
+  const card = document.createElement('div');
+  card.className = 'track-card';
+  card.setAttribute('role', 'listitem');
+  card.setAttribute('tabindex', '0');
+  card.setAttribute('aria-label', `Play ${track.title} by ${track.artist}`);
+  card.dataset.index = index;
+
+  const thumb = track.thumbnail || '';
+  const hasThumb = !!thumb;
+
+  card.innerHTML = `
+    <div class="track-thumb">
+      ${hasThumb
+        ? `<img
+            src="${thumb}"
+            alt="${escapeHtml(track.title)} thumbnail"
+            loading="lazy"
+            onerror="this.parentElement.innerHTML='<div class=track-thumb-fallback>🎵</div>'"
+           />`
+        : `<div class="track-thumb-fallback">🎵</div>`
+      }
+      <div class="track-play-overlay">
+        <button class="track-play-btn" aria-label="Play ${escapeHtml(track.title)}" tabindex="-1">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22" aria-hidden="true">
+            <path d="M8 5v14l11-7z"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="track-info">
+      <div class="track-title">${escapeHtml(track.title)}</div>
+      <div class="track-artist">${escapeHtml(track.artist)}</div>
+      <div class="track-badge">${escapeHtml(categoryName)}</div>
+    </div>
+  `;
+
+  // Click anywhere on card = play
+  card.addEventListener('click', () => playTrack(index));
+  card.addEventListener('keydown', e => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      playTrack(index);
     }
   });
 
-  sendPresenceHeartbeat();
-
-  if (heartbeatIntervalTimer) clearInterval(heartbeatIntervalTimer);
-  heartbeatIntervalTimer = setInterval(sendPresenceHeartbeat, 5000);
-
-  // Organic random-walk fluctuation (every 4 to 7 seconds)
-  if (organicFluctuationTimer) clearInterval(organicFluctuationTimer);
-  organicFluctuationTimer = setInterval(() => {
-    const delta = (Math.random() < 0.5 ? -1 : 1) * (Math.random() < 0.25 ? 2 : 1);
-    const newBase = baseListenersCount + delta;
-    if (newBase >= 18 && newBase <= 65) {
-      baseListenersCount = newBase;
-      updateOnlineCounterUI();
-    }
-  }, 4500 + Math.floor(Math.random() * 3000));
-
-  if (API_BASE_URL && !isFileProtocol && isBackendAvailable && typeof EventSource !== 'undefined') {
-    try {
-      if (presenceEventSource) presenceEventSource.close();
-      const sseUrl = `${API_BASE_URL}/presence/stream`;
-      presenceEventSource = new EventSource(sseUrl);
-
-      presenceEventSource.onmessage = (event) => {
-        try {
-          const data = JSON.parse(event.data);
-          if (data && typeof data.count === 'number') {
-            backendConnectedListeners = data.count;
-            updateOnlineCounterUI();
-          }
-        } catch (e) { }
-      };
-
-      presenceEventSource.onerror = () => { };
-    } catch (e) { }
-  }
-
-  window.addEventListener('beforeunload', sendPresenceLeaveBeacon);
-  window.addEventListener('pagehide', sendPresenceLeaveBeacon);
+  return card;
 }
+
+function escapeHtml(str) {
+  if (!str) return '';
+  return String(str)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#039;');
+}
+
+// ════════════════════════════════════════════════════════════════
+// MOBILE AUDIO UNLOCK
+// ════════════════════════════════════════════════════════════════
+
+let audioUnlocked = false;
+
+function unlockMobileAudio() {
+  if (audioUnlocked) return;
+  try {
+    const AudioCtx = window.AudioContext || window.webkitAudioContext;
+    if (AudioCtx) {
+      const ctx = new AudioCtx();
+      if (ctx.state === 'suspended') ctx.resume();
+      ctx.close();
+    }
+  } catch (e) {}
+  audioUnlocked = true;
+}
+
+// ════════════════════════════════════════════════════════════════
+// MEDIA SESSION API (lock screen controls)
+// ════════════════════════════════════════════════════════════════
+
+function updateMediaSession() {
+  if (!('mediaSession' in navigator)) return;
+  const track = STATE.trackList[STATE.currentIndex];
+  if (!track) return;
+
+  try {
+    navigator.mediaSession.metadata = new MediaMetadata({
+      title: track.title || 'SurBeat',
+      artist: track.artist || 'SurBeat — Indian Vibes',
+      album: CATEGORY_META[track.category]?.name || 'SurBeat',
+      artwork: [
+        { src: track.thumbnail || 'https://i.ytimg.com/vi/dQw4w9WgXcQ/mqdefault.jpg', sizes: '320x180', type: 'image/jpeg' }
+      ],
+    });
+
+    navigator.mediaSession.setActionHandler('play', () => {
+      if (STATE.ytReady && STATE.ytPlayer) STATE.ytPlayer.playVideo();
+    });
+    navigator.mediaSession.setActionHandler('pause', () => {
+      if (STATE.ytReady && STATE.ytPlayer) STATE.ytPlayer.pauseVideo();
+    });
+    navigator.mediaSession.setActionHandler('previoustrack', playPrev);
+    navigator.mediaSession.setActionHandler('nexttrack', playNext);
+    navigator.mediaSession.setActionHandler('seekto', (d) => {
+      if (d.seekTime != null) seekTo(d.seekTime);
+    });
+  } catch (e) {}
+}
+
+// ════════════════════════════════════════════════════════════════
+// BACKEND HEALTH CHECK
+// ════════════════════════════════════════════════════════════════
 
 async function checkBackendHealth() {
   if (!API_BASE_URL || isFileProtocol) {
@@ -514,1917 +909,203 @@ async function checkBackendHealth() {
   }
   try {
     const controller = new AbortController();
-    const timeoutId = setTimeout(() => controller.abort(), 1500);
-
+    const tid = setTimeout(() => controller.abort(), 2000);
     const res = await fetch(`${API_BASE_URL}/health`, { signal: controller.signal });
-    clearTimeout(timeoutId);
-
-    if (res.ok) {
-      const data = await res.json().catch(() => null);
-      if (data && data.status === 'ok') {
-        isBackendAvailable = true;
-        return;
-      }
-    }
-  } catch (e) { }
-  isBackendAvailable = false;
-}
-
-async function safeJsonFetch(url, label) {
-  if (!url || isFileProtocol || !isBackendAvailable) {
-    return null;
-  }
-
-  try {
-    const controller = new AbortController();
-    const timeoutId = setTimeout(() => controller.abort(), 2000);
-
-    const res = await fetch(url, { signal: controller.signal });
-    clearTimeout(timeoutId);
-
-    if (!res.ok) return null;
-
-    const contentType = res.headers.get('content-type') || '';
-    if (!contentType.includes('application/json')) return null;
-
-    return await res.json();
+    clearTimeout(tid);
+    const data = await res.json().catch(() => null);
+    isBackendAvailable = res.ok && data?.status === 'ok';
   } catch (e) {
-    return null;
+    isBackendAvailable = false;
   }
 }
 
-// ========================================
-// Background Image Loader
-// ========================================
-
-async function loadRomanticBackground() {
-  const bgEl = document.getElementById('bgPhoto');
-  if (!bgEl) return;
-
-  const localFallbacks = [
-    'https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1600&q=80',
-    'https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=1600&q=80',
-    'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1600&q=80',
-    'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=80'
-  ];
-
-  if (!isBackendAvailable) {
-    const randomUrl = localFallbacks[Math.floor(Math.random() * localFallbacks.length)];
-    bgEl.style.backgroundImage = `url('${randomUrl}')`;
-    return;
-  }
-
-  try {
-    const data = await safeJsonFetch(`${API_BASE_URL}/photos/romantic`, 'Background photo');
-    if (data && data.success && data.data?.url) {
-      bgEl.style.backgroundImage = `url('${data.data.url}')`;
-    } else {
-      const randomUrl = localFallbacks[Math.floor(Math.random() * localFallbacks.length)];
-      bgEl.style.backgroundImage = `url('${randomUrl}')`;
-    }
-  } catch (e) {
-    const randomUrl = localFallbacks[Math.floor(Math.random() * localFallbacks.length)];
-    bgEl.style.backgroundImage = `url('${randomUrl}')`;
-  }
-}
-
-// ========================================
-// Indian Sargam Floating Particles
-// ========================================
-
-function addFloatingNotes() {
-  const sargamNotes = ['Sa', 'Re', 'Ga', 'Ma', 'Pa', 'Dha', 'Ni', '🪕', '🪘', '♩', '♫', '♬', '✨'];
-  for (let i = 0; i < 20; i++) {
-    const n = document.createElement('div');
-    n.className = 'note';
-    n.innerText = sargamNotes[Math.floor(Math.random() * sargamNotes.length)];
-    n.style.left = Math.random() * 100 + 'vw';
-    n.style.fontSize = (1.1 + Math.random() * 1.5) + 'rem';
-    n.style.animationDuration = (12 + Math.random() * 14) + 's';
-    n.style.animationDelay = (Math.random() * 14) + 's';
-    document.body.appendChild(n);
-  }
-}
-
-// ========================================
-// 800-Song Fallback Database (200 Real Songs per Category for Quota Finish)
-// ========================================
-
-const DEFAULT_SONGS_DATABASE = {
-  "trending": [
-    "LK7-_dgAVQE",
-    "cWMxCE2HTag",
-    "XTp5jaRU3Ws",
-    "BtQp2U6hJII",
-    "o9PY6NsB3_E",
-    "-YlmnPh-6rE",
-    "x-KbnJ9fvJc",
-    "vsWxs1tuwDk",
-    "5GCfYLguTIs",
-    "uChhQpHMmXE",
-    "CeFQO9MQNqs",
-    "aFWDOFg7X2A",
-    "k85UB5b6pJU",
-    "2sAzb3kraoQ",
-    "cHwQowOzAf0",
-    "Guq9Vl8dK30",
-    "fRJ03btNsao",
-    "RuDsBrSczis",
-    "BXNxrT59MzQ",
-    "U4qD41gPQMU",
-    "roz9sXFkTuE",
-    "hxMNYkLN7tI",
-    "nFgsBxw-zWQ",
-    "YyepU5ztLf4",
-    "xWi8nDUjHGA",
-    "1xYZeDReUz4",
-    "ri1Ar5nEq4s",
-    "PkgStlsVaqw",
-    "1-nnEM8chwo",
-    "Zrt77f7nTqY",
-    "XtZTpxnrHAc",
-    "cxKAtmvf-uM",
-    "v5jVX0QYwQo",
-    "2G2_pc4IfUs",
-    "tA3Cv-rYcy4",
-    "KVnheXywIbY",
-    "NZ1EBaqDL0M",
-    "eehSZgV-ovc",
-    "VlvOgk5BHS4",
-    "0nrvPVnTWlc",
-    "EZh7my_RASk",
-    "FewWUHxY79w",
-    "ZbX_nlzv7uU",
-    "MnNQW_L7ovY",
-    "YDAWpY747TY",
-    "T_lDkgKdTD8",
-    "qH-fnpT7qgU",
-    "AhO7mWclXOc",
-    "FgHz5qNwtqg",
-    "fnyd1hGyJIY",
-    "fAU6b5U26sM",
-    "Z23mOrp8i24",
-    "iAv5WMNRX90",
-    "H9ogpITFBYM",
-    "4VqbPwVYq1s",
-    "NV7XJe4nqJ8",
-    "JcpiVAbAnYg",
-    "Bpj3JYLCCuA",
-    "QnQRMHkXzZ4",
-    "j3nADe5euQw",
-    "Etkd-07gnxM",
-    "Zlqf9cuaOBw",
-    "7CdpHATpXXU",
-    "qnQCd_nZn_g",
-    "PesrFCmjdNI",
-    "bjfKyIAlsZs",
-    "BwiaxAos5cg",
-    "-yX2trMgn5s",
-    "pCYojfACnzQ",
-    "sv26LXD4GbI",
-    "1tsCjcq0G-U",
-    "sVPKUMyOmg0",
-    "E-Qzp9_uzlA",
-    "Ref5bT8Tuk8",
-    "yWo9_7I58Bc",
-    "Xb82Eexgyeo",
-    "q8Mhq2GVM9M",
-    "2o1Bv1DyUN0",
-    "AUvYe_ZgLOY",
-    "yktlUKTWlJg",
-    "QXJyMpxd210",
-    "3qpxJEp4Ec4",
-    "taRBVfDRukY",
-    "hacByYwJ_a4",
-    "GkJ_wZy0iB4",
-    "IYK34I7y5O8",
-    "aa7_itx64eI",
-    "AdYOIQTyAAw",
-    "TjXH_P7Khhg",
-    "mHdneo9_yLM",
-    "vee_P6pIv_E",
-    "ETMul5GVk_Y",
-    "Pz_FkqA2x6s",
-    "FBTgulBOUy0",
-    "vW7sbaVWYqE",
-    "OweU4sBBqGI",
-    "9uIIdCBRNRc",
-    "0avk5g_9Cgk",
-    "44Aq9OZtM_M",
-    "cpfns3c5AQc",
-    "BddP6PYo2gs",
-    "RLzC55ai0eo",
-    "mNuhKUOD_A0",
-    "6mr4cYJ7yew",
-    "NJAv_7lHUIU",
-    "xfMN4SpIxIA",
-    "zCGck2spPsU",
-    "K3B8-klo5xc",
-    "g6fnFALEseI",
-    "W1S9AbHpWFY",
-    "1qeujW9f4So",
-    "k6GjS_Hzg8I",
-    "PLIsDVqACZ0",
-    "P7yRYiBiV3g",
-    "9_gAAHlp9CU",
-    "aDOs442shYU",
-    "WCDXUgvddR4",
-    "532toSHe57E",
-    "jZba76mHdg4",
-    "HLDFbuGhFVU",
-    "4VwtfInG-LU",
-    "ObiCEWmYH5Y",
-    "Q11jKrhG7m4",
-    "WJumea3vEpw",
-    "IhLJRgr-r0o",
-    "SW2uyfNqHg4",
-    "jC1oFRhElEw",
-    "gslkqoBV5SA",
-    "Gqnnrop26Sw",
-    "9uHS97epnYc",
-    "BbGNpf5vDTE",
-    "Miz5wvLmXPI",
-    "AdKdqAqsnsY",
-    "UITBjk6FttM",
-    "npKOkLWrZeE",
-    "gX3Gw-3wxfs",
-    "K0I124SPxmI",
-    "P6G4QoKwnzI",
-    "t5PEt4aXI58",
-    "YxWlaYCA8MU",
-    "VAdGW7QDJiU",
-    "V_jp5_VAzXk",
-    "8eYG5QGZAZs",
-    "9M_ZKSmxb_s",
-    "wr9M-CoxP7A",
-    "RpC85RO0okA",
-    "Bi7sSC046dk",
-    "LdHe2NCj3JE",
-    "wwYiyxR7c3c",
-    "obMNB-n6PE4",
-    "FNoNmaWGoRg",
-    "F_jU1KI82kw",
-    "oiSIKKlvqVE",
-    "s4yy40jRTu4",
-    "g98mwbjcmwU",
-    "yAe3qndvs7k",
-    "Ah6dEARljtE",
-    "EZ470Lj1MAQ",
-    "WqfCQ93c9TY",
-    "huxhqphtDrM",
-    "7TRFf7uUfhQ",
-    "AU9AdGIdWZs",
-    "uUGew2W87cU",
-    "EoKOuVGYMSw",
-    "bODY50rqPZg",
-    "7n562hVNKDc",
-    "VtThmt2paH8",
-    "C1524HGvznI",
-    "mvdsiQ5fl24",
-    "MXCHqAEgnN4",
-    "y4QVHzYHiU0",
-    "QtTM9X26bTk",
-    "uSSFACVucbs",
-    "OIjbVS9CFL4",
-    "dzKSxDEAMDY",
-    "UeH6_2qNaq8",
-    "NBgA2OxWt9k",
-    "pacvj3n-RLw",
-    "udgrClXV26Y",
-    "Uo_OSlQZlgY",
-    "Bu_89PkVqew",
-    "Hu-Bdubnnj0",
-    "U5yCBCWGbBw",
-    "8eDZpQpxnTU",
-    "P0dk_SF7Eao",
-    "MkkG-7HL7Bg",
-    "cI9iguIX87Y",
-    "p7f685ljJL8",
-    "o8-Gc4h4yVY",
-    "poMt_tQAjEg",
-    "pqoLQWf7Ync",
-    "0Vpv8JEX_Ao",
-    "ElZfdU54Cp8",
-    "YALvuUpY_b0",
-    "u2NAuswnTKs",
-    "3lDJZr6kbsg",
-    "LSP9SjZ3rrs",
-    "6X0pNXXeVIA",
-    "Wr0BLOr2WlU",
-    "3fPQtxRwn6U"
-  ],
-  "romantic_new": [
-    "tLqtnGLfm4Q",
-    "_iktURk0X-A",
-    "Ov0YGGSY6gY",
-    "inEu2qQuGZ8",
-    "VdyBtGaspss",
-    "Umqb9KENgmk",
-    "MJyKN-8UncM",
-    "IJq0yyWug1k",
-    "izy2tV-Ssj8",
-    "GtPvCa3vvxA",
-    "V1oczq_8L0E",
-    "z3UHfi9vpbc",
-    "pIBoAh4OXhQ",
-    "cUmUOb7j3dc",
-    "krJsyb_yf7A",
-    "2bMEe0UYa8E",
-    "eHRrZ5DQCV4",
-    "fsiPzT50ZiM",
-    "NUo8CKI34o4",
-    "YLoYt8H7kjM",
-    "gvyUuxdRdR4",
-    "orYf6VDtj_k",
-    "Dm6YRJHy64c",
-    "GLGuLXKT9Ng",
-    "skq8M5khNbw",
-    "qauUzF4GMZ0",
-    "dYwwHf9vWfo",
-    "2FRrtuu3Ljg",
-    "pz2Yz0_1lr8",
-    "oDkZEay6H6k",
-    "S2BOXJG71FY",
-    "8K9eaAKLrE0",
-    "jh6Anzu3ntQ",
-    "4O0_erwpB9E",
-    "naQXI7l6op0",
-    "Kp76nzS7pwA",
-    "-kVdEfkWsjo",
-    "s095hRZYb2U",
-    "bXWcVn4uNd0",
-    "7fhY7FFZ6nU",
-    "hoNb6HuNmU0",
-    "ElZfdU54Cp8",
-    "RLzC55ai0eo",
-    "Grr0FlC8SQA",
-    "w8LcxY43N5Y",
-    "vdbP_3o73qI",
-    "HYUpNJJELeE",
-    "yRB0xbKDebo",
-    "CsOsmgUmT9U",
-    "UEZm0U6KrfY",
-    "EQxEms7gnqs",
-    "tdbD2naYwdo",
-    "SsOY0gZFfGs",
-    "kPtn26x8TZM",
-    "iZH_ydGn9i0",
-    "tGs7iLem1cE",
-    "9-LH8ABADdo",
-    "QRwLbf3PwO8",
-    "mF2BHtQh4EI",
-    "SAcpESN_Fk4",
-    "JtnPpxe8K7c",
-    "mevO4I0f5lg",
-    "nqUbSvFS1e4",
-    "5DiLiDaIemI",
-    "u5DCgnh8S9M",
-    "ca-hzALjrcY",
-    "A2JaHCaVjrU",
-    "EsPrpf_vpi8",
-    "PsyNOOS5Xp4",
-    "POvFEQaK634",
-    "Pr86yMP_oZE",
-    "D8jKEaAyNcs",
-    "k_Qe4846hSI",
-    "EixnLHZ6QjA",
-    "XKmEVtVEMF0",
-    "8sxzVtqoAnA",
-    "MA9hbox27Zc",
-    "h6O4esqraE0",
-    "VDzjgO7-pVI",
-    "KUpwupYj_tY",
-    "2CXSw1oPj3I",
-    "Z0VbANbyH2o",
-    "eLjmQ0aGC1U",
-    "FiENDQapd4g",
-    "Nm0qd0uhhhY",
-    "PL0f3_ZuJts",
-    "-vzZ50Rijm8",
-    "JhjnnGuvI0c",
-    "kIVgRHm2OKg",
-    "ico0Nfz2gfU",
-    "yb584STwkTY",
-    "BGU1YL9LNr4",
-    "XK7Crkcn7Z0",
-    "gKioNQ1QwVA",
-    "LToDPzfwMoM",
-    "6jS1rU4F4HA",
-    "sXRnSIcZVZ0",
-    "jy26LpiiGJA",
-    "iAIBF2ngbWY",
-    "HrnrqYxYrbk",
-    "WWXm39leYew",
-    "lwv_0SEJ4NQ",
-    "9cHq63r1vHQ",
-    "Xbizke4zftY",
-    "NlRrGrrRyNo",
-    "KNXYonYD59w",
-    "kZGpkkfk2lA",
-    "9UmoVnBSm5k",
-    "Mv8yFE4-DA8",
-    "XaNgxnN6qEI",
-    "QKMTreKTpug",
-    "6RlpNQiPhgY",
-    "3o7o4N_mEUY",
-    "kO4AU5yBp64",
-    "wqVGA-XDe1I",
-    "YMAdgnh9VOI",
-    "jBfR0bU82z8",
-    "hpqvSU0Ynn0",
-    "sK7riqg2mr4",
-    "OGI0fNvr4fo",
-    "Q2S7CDuBTOc",
-    "xRb8hxwN5zc",
-    "FOA9iyxsW_A",
-    "fQlhzY5UH6s",
-    "dhY8jRNELUc",
-    "fs7-8M1VbZU",
-    "6SGRn9OHtFY",
-    "pon8irRa8II",
-    "UsxERu1Vv08",
-    "zCjRVABSHUs",
-    "r-i8teGFG5g",
-    "4vSIwdj6MEU",
-    "Ya_qVko-Xg0",
-    "KAskRVFhv-c",
-    "8Y7bYQIWcuk",
-    "6AcUmOGMnak",
-    "njoL-CQt7H4",
-    "4mq5tyWfXDU",
-    "TGpG56pg3UU",
-    "EtSAs6GD0Yk",
-    "_NWaYjsz3qY",
-    "ltrstdEFaqg",
-    "UNs50T6EYwE",
-    "txxAH9D2gZU",
-    "fKxEXm9qG4k",
-    "WIjra2HHRFM",
-    "tnp8SRcXx-s",
-    "v9KvrMnnyb4",
-    "uJlJBIBIbAU",
-    "0n2G2SryMuY",
-    "bfzDXYW5fS0",
-    "YrBE1Cd9UzA",
-    "Y35uCA-XVRM",
-    "UcmzeXxF4D4",
-    "P9OuseD4zdI",
-    "MYgIWSsOaSE",
-    "CXlHYSiuW4U",
-    "FYfYq2a-orA",
-    "8v-TWxPWIWc",
-    "jIqRbFQl-ds",
-    "Aokj-w3COw0",
-    "vIUp4CzOrpQ",
-    "RzMmU4xvyCU",
-    "Jv03fM7LZgE",
-    "s_Ab720t_zo",
-    "5BAWcCxkMCs",
-    "QMfLDyEoWkE",
-    "CSO5DhzK094",
-    "Vsxh7gEKuOE",
-    "-8DxXays6v8",
-    "1AGVmQ5OwtM",
-    "tYgy4fF9iJA",
-    "4G6-fKG96Y8",
-    "TnnOyFHn0Xc",
-    "pWJTiLL5PM8",
-    "nZpm-87y37Y",
-    "RBTXo0Ai8_A",
-    "5qJNtsPJtKc",
-    "fXRvluHnjxE",
-    "xitd9mEZIHk",
-    "eXkHvT--DBU",
-    "n0L6uHhzWIw",
-    "P0KasU0HXD0",
-    "tmWL-JxUGZc",
-    "OMsrXBzSsUI",
-    "bYy_bjsy8Y0",
-    "Cz7TfFrFojU",
-    "2s93cqRcqAk",
-    "lVpZaByCWUE",
-    "1BLF5dXRzlA",
-    "Wh74IJ9xSxA",
-    "Wo5nJJiJ8Cg",
-    "ZrhQCtQJ13s",
-    "vmLGHNreScc",
-    "-j6F012HtAM",
-    "06pGYAQnqWQ",
-    "SDQdGibJ9mE",
-    "OOWvmeTTp7Y",
-    "cYOB941gyXI",
-    "cs1e0fRyI18"
-  ],
-  "classic_old": [
-    "dt6aKKhNhaA",
-    "CWHSNIpl7dg",
-    "dyEdcOhxJNQ",
-    "huDnyuOBmfg",
-    "Pa1UPI5STLk",
-    "wKQVoA9UVEQ",
-    "WK1z5uJaI7Y",
-    "zbvfAkJWntc",
-    "bXO13Qqgki4",
-    "z486h8Z8PME",
-    "cnvkr55Z0Ns",
-    "QiWIXpsYM88",
-    "cvEeqyQl1zw",
-    "s1joyBZpbQ8",
-    "PvvPSmSTUAo",
-    "6r8KvFpVrnk",
-    "yPePNnCkfMs",
-    "DCR42fzL2Kk",
-    "aFzH9rjOTVo",
-    "_61aQJ4EEsk",
-    "ddl9TR3a7DM",
-    "Ca6dPcHgdFY",
-    "gTlY-WV7wYU",
-    "1T8G_d5o5Gs",
-    "Bx5sqAE86e0",
-    "qRdoJJb_rrU",
-    "vb9hvky8tc8",
-    "_yC4IKZ76GA",
-    "9XnNrSlfKOg",
-    "qfCt1UZAXMQ",
-    "jki29sXNRNM",
-    "pzfPccOlY_s",
-    "wFAU_duK0Jc",
-    "9_oTxNGcXR8",
-    "IuZNgJMfEeI",
-    "T6Cie280Dq8",
-    "keyUyjT0f8A",
-    "JVQhw298b6g",
-    "KK2vimvZ3Dg",
-    "C4QBpS9fq4U",
-    "7dO_MS9tZ5E",
-    "OssRAVZhsRk",
-    "9dcBy2uXL7E",
-    "-W2dagktUp0",
-    "Wy6ec9YTO8g",
-    "BB6KvXQx090",
-    "43wT0xhvfsA",
-    "QkGqpVYjLUw",
-    "Jkd0O1UqyOY",
-    "-ArgZa-UsAM",
-    "YT7crTHjCAo",
-    "kxT-5glSScc",
-    "gejKrLu9N9c",
-    "K2K33TUE4rw",
-    "BVnz6oSupUM",
-    "J4i7hGkR3g8",
-    "IJRT8hcp53w",
-    "COV1a8T5PDg",
-    "eMC7RJpMYhk",
-    "dqkmT6vLvZc",
-    "SBfPs-PMGTA",
-    "Oc9E71akp5M",
-    "vFN3eNe0_Hs",
-    "1R8MGdgZDns",
-    "YoThngCrGGc",
-    "G_x-UJNEmEU",
-    "bydvSfemqcg",
-    "Ki41AKu0iHc",
-    "hWJohzeDr7w",
-    "PZ7mhXZSJ8c",
-    "mdPrweVv7DE",
-    "LzXLcKbbDTw",
-    "ODu7OyAqK-Q",
-    "iSUK1QoK9-E",
-    "2yyNfCdiVug",
-    "dPkwe9AoOmY",
-    "lIk5ZBlIByo",
-    "17bJ89Ht7zs",
-    "Ed1WBWvxnSY",
-    "iSC33G5PK38",
-    "lZ2PhyBF3GQ",
-    "hw_HpTI_Wkw",
-    "cNV5hLSa9H8",
-    "Zxgvob1Ew0c",
-    "BOBUVPrYf2s",
-    "wBw9EPtDLw8",
-    "-V4XWq_sRDw",
-    "ojCnlV1MA-k",
-    "cUVUs7M9TS0",
-    "y33alFobQdA",
-    "O3q6OZbjgKU",
-    "uBmdxtJ5c4o",
-    "OV-Mpzvdd8E",
-    "TopgRkAtS3A",
-    "ay6pwhXPNvo",
-    "4f9rJADDp2g",
-    "Mf_0pDqZi50",
-    "hqtmwQ_5uCk",
-    "RU-k6NR2o8E",
-    "vCTW2GfcepQ",
-    "eVnG_Rqfgg4",
-    "9Eg4d56rt-U",
-    "WzyBk0jKggw",
-    "ThHYiiZTB1Y",
-    "PFHczgD-lGM",
-    "O-BBJgbNsv8",
-    "Ujl0rhUICGg",
-    "w_2wRMG1mH8",
-    "W78aOolYNwo",
-    "fJCA1x-FtaA",
-    "S3RHzeOCFHQ",
-    "fruy3jllfes",
-    "D-zNmkjyXNM",
-    "CeO-2xTCDTU",
-    "ZEgipMHnw6I",
-    "hL71wUbaHV4",
-    "LYLau8rZZws",
-    "mdPFcsZ7Pjc",
-    "LHlaLfujm_k",
-    "mOLYGNCc9nw",
-    "IrpRI8NyulE",
-    "7Ib33wy6OT4",
-    "lGkqNVrgFWE",
-    "9PdSmDRGIwM",
-    "Q0LMeOmRUy8",
-    "Fpu7OjcxYvY",
-    "g_pi4e7lLwE",
-    "09pE6IqT1ug",
-    "IXIgs15Uqf0",
-    "6BBz4BxZmw0",
-    "4gbvQNPCt-I",
-    "6yL7e60G17c",
-    "rWsJ79-TDqM",
-    "_70tVb5Ij0U",
-    "ZyNXJSgEdGM",
-    "-2UcIC_s05I",
-    "C4o0maaZFWo",
-    "EZIMrK0W7hs",
-    "PdelyWYIayk",
-    "Rod6fjR3MIY",
-    "AMuRRXCuy-4",
-    "mzIuhFx5W1o",
-    "viKdF7sp_cY",
-    "vYGw1V2NSik",
-    "cvQWzlNIjt8",
-    "GvK5ZVFju1I",
-    "cC6UGlKN3PA",
-    "pw6r-izZArA",
-    "QwLQ4_gkvsE",
-    "_q7Wz-N4oaQ",
-    "Vabo2KVaEwA",
-    "LjxNvViZxew",
-    "xB8bPYEFlPA",
-    "bwWprAAOyy8",
-    "H60L40GbfFI",
-    "ywyjyu36HlU",
-    "d0JpdfOLXI0",
-    "f5dw3nafOuo",
-    "Uw5_IzY_Ooc",
-    "tJrdQmCHcKs",
-    "hgi2MYAFgE8",
-    "UlWAjd9bcKw",
-    "MTwtrF243kY",
-    "6Z3DO-OFIjQ",
-    "g3kbONxTpIo",
-    "nWbBIf5_LTY",
-    "ooeAxo1GMRw",
-    "BulAS4su2CU",
-    "Xsn0QjMN3fM",
-    "LsMEeJpFMD4",
-    "XuVOqQI7SqQ",
-    "fYPkIaIemAs",
-    "SLT4HF7nHKc",
-    "0clDXacCD9E",
-    "4Nki0dXGt_o",
-    "L6DgJVMzkZU",
-    "JkdHB8S15Co",
-    "p8Tu9oj2ydw",
-    "NtrEXzHT4pU",
-    "JlxYbAodnjU",
-    "xDbK1eZYVzg",
-    "Z5D1dhTMclI",
-    "fyZ-sOHj-Vg",
-    "4gtXTXWBK4o",
-    "vKrBHzhBGOQ",
-    "wHqKTmEkpBg",
-    "MGsw7CnqdJo",
-    "uyjiK9QCU5U",
-    "8psAZcIOzEA",
-    "2beG3rwg2Ck",
-    "m7qCWlHdnr8",
-    "yTlYMxf7K74",
-    "KcZ9C6vWMIs",
-    "cIVkYSm7Orw",
-    "13AaATy46YU",
-    "h34CiqQ51zs",
-    "W6dKaCV-mJQ",
-    "7shxWODIwqs",
-    "zVUKtXI7xTM",
-    "g6C-GUy6a3s"
-  ],
-  "lofi": [
-    "ElZfdU54Cp8",
-    "BddP6PYo2gs",
-    "KUpwupYj_tY",
-    "RLzC55ai0eo",
-    "Grr0FlC8SQA",
-    "HrnrqYxYrbk",
-    "Z1-qmKn7DQY",
-    "mNuhKUOD_A0",
-    "6mr4cYJ7yew",
-    "zCGck2spPsU",
-    "7Txv-r7ijT8",
-    "UJ5J0cFZZTE",
-    "CTgdRyg8aVE",
-    "TjXH_P7Khhg",
-    "W1S9AbHpWFY",
-    "BwiaxAos5cg",
-    "vEe-UgJvUHE",
-    "9uIIdCBRNRc",
-    "0avk5g_9Cgk",
-    "k6dGN3azeqo",
-    "_iktURk0X-A",
-    "MJyKN-8UncM",
-    "HYUpNJJELeE",
-    "yRB0xbKDebo",
-    "EQxEms7gnqs",
-    "97bFaxqvpnI",
-    "MtnsyzHoZGU",
-    "ceTSEVpRFnM",
-    "9-LH8ABADdo",
-    "EEnlczCd1v4",
-    "vGHa_VcAIxM",
-    "KeSeFHfSqys",
-    "XtBsUXGTVZ0",
-    "hk5IqAhOrnY",
-    "sK1v-XxbSyE",
-    "rTvVuLoOq0I",
-    "xSGL4bM2jC8",
-    "m-e6lZuf5wc",
-    "zik32kzJBHc",
-    "ilNt2bikxDI",
-    "gJLVTKhTnog",
-    "bP8ATWCvqzw",
-    "2FhgKp_lfJQ",
-    "PJWemSzExXs",
-    "wmUJwQNGK3k",
-    "vA86QFrXoho",
-    "SmaY7RfBgas",
-    "bL6dJjxm0x0",
-    "-BJt4fCAtZE",
-    "P0NfnFYpENo",
-    "0IIJxkDtkHY",
-    "NLKwRW2y-sg",
-    "_mR6bY-ndso",
-    "JuXuakMtsMQ",
-    "tYqZK7bq5Bs",
-    "V_cZa8Ice2w",
-    "jKqCewZvECA",
-    "LIEiEwpEhWM",
-    "8erle22S6x0",
-    "usvVGXFIpTM",
-    "_deqdZmKzyg",
-    "uK7Ovgs44Uk",
-    "_CuOG9TBCi4",
-    "iOIF74Hk80A",
-    "HhoNUPDVlbc",
-    "4gpZU24m3nQ",
-    "0fPStMCNSy8",
-    "93oRx73yfAs",
-    "LsIDBebTAa4",
-    "LPDLr4UiVIQ",
-    "i1IDh_ZoJgI",
-    "1gEoVHEr_hU",
-    "GVQu3ym-Uf0",
-    "J3m3uptDf0Q",
-    "mEmwd17xpAk",
-    "vMtg9hbtvqM",
-    "NWDOrQ1hGBE",
-    "BmwiS-THm34",
-    "TS84-uinbdc",
-    "6fTilfKvxbo",
-    "5Gggsqvd4w4",
-    "0GwYr5jrw48",
-    "0P3Gt-60yLc",
-    "YmUptL9VSdg",
-    "n9W6WrDWQLU",
-    "2o7oC_A7TFU",
-    "MIcZU1fobg4",
-    "LFiofrZKNJE",
-    "JP9XJ7x3bEU",
-    "oQPfpNzmXnM",
-    "GZZovoe1dpM",
-    "LY1QEPLXAFk",
-    "sm91cOlOodY",
-    "p_K1HiTNZN8",
-    "Bh5ZRBjgkTs",
-    "FVfnQ3RHi-M",
-    "ygMbkWRKme4",
-    "_9QUykQ2xB8",
-    "-3KT1f7WZIo",
-    "9et5qzuzbQM",
-    "9fKQJcbd-jY",
-    "Y2zc2IeVX_g",
-    "gfEKRoO-pOU",
-    "pdL1imksSqY",
-    "AX6OrbgS8lI",
-    "A7NDb0iDZd0",
-    "aDlv2UX1lA8",
-    "sxCVdh2PHcM",
-    "7SjrVIxjfQA",
-    "gf8H9gtD4JI",
-    "TsBP6In4dtM",
-    "L2mSvBrq84E",
-    "euP-V53PZoc",
-    "UR-PAQRnrKw",
-    "0llEfC5Stg0",
-    "Wk-CpIkbUvo",
-    "IWyd09C7brs",
-    "l8lamLpCabY",
-    "YIEAg-v-Pic",
-    "uFbayWnLGxs",
-    "D0b7bAiXZJI",
-    "F3rN5MXtTL0",
-    "Fegf8boqL_w",
-    "6-BiWZsjgR8",
-    "_XBVWlI8TsQ",
-    "zQDAi8tI-cU",
-    "CAHN1yO196M",
-    "KA4APfVz5I8",
-    "-fVtSHPg040",
-    "_vRXnq3ISvs",
-    "6c-10LBzsIk",
-    "9_uPRv8HNqM",
-    "Jt7yvXSwyMA",
-    "NLAT7ljan8M",
-    "rzkP0nwKiqM",
-    "LKXxNB8iAMo",
-    "eoASHWddx7c",
-    "0Wt6C_EzLls",
-    "d5b9UNdZfsw",
-    "KgdBrGHviv4",
-    "7oO-Y7t9I_s",
-    "88Xhw-XTDb8",
-    "JokgM6-y9Ls",
-    "ULcyLYD3o_M",
-    "9lyPBa5Kd3I",
-    "Q3WfedW2i-s",
-    "9aNUc4L_94U",
-    "MArLl3XbN8Y",
-    "3RAoczaBVP8",
-    "ewuvBK5nax8",
-    "ZP1lpOMsek4",
-    "Q5Sc8IsY-SQ",
-    "TZLo-TTnrfQ",
-    "qy1l5Wt_olw",
-    "FysdiBYGJLI",
-    "etwc_LzYTFI",
-    "bE_hK9NZ2_A",
-    "_rGuNjq6fCE",
-    "LWJU1kj1PaI",
-    "N-PHKu9FCVY",
-    "_RFVSuDK9Eg",
-    "n5Jqs1vMyzE",
-    "9UpiVZDzXYc",
-    "fSS_R91Nimw",
-    "1q65CU2JoXg",
-    "ZlOZktsODpA",
-    "akjdj6iHttY",
-    "nJcaU8bKpGs",
-    "JKSoBqnQ5I4",
-    "EYgSirZikfw",
-    "fTtPg6CSeHk",
-    "p8p0Pb5R-FA",
-    "oTJxvlHcB-4",
-    "0bRnXG4ytuM",
-    "FvLlxpd4f7M",
-    "Qqxb9lI6xLw",
-    "4sMdGz8rbcs",
-    "3Kjj5UI9edw",
-    "fAB7HttsFpE",
-    "3lMww57WSzQ",
-    "8V8dOlyQj4Y",
-    "czfRogz56cA",
-    "U4e2UvC_YCo",
-    "jHNNMj5bNQw",
-    "yk2tHuIP59s",
-    "MuCfsZk9lbU",
-    "ta-W16uw7zg",
-    "lwLVJ0E8gN4",
-    "EK2Ol1ov0gk",
-    "7jZwAl0ArQw",
-    "Ymcbjo6P1O0",
-    "3F9r7xggi88",
-    "-X2dsCQMLcs",
-    "jJ4AsIV1FDI",
-    "PAjJAWrCAzU",
-    "L-SgTplq2IQ",
-    "GgOjecsKCww",
-    "iAOA8TLgqG8",
-    "w3eYf7noC8A",
-    "3oMQuyaPGa4"
-  ],
-  "workout": [
-    "d_2v3Jb3pFs",
-    "4y33h81qhKU",
-    "Qv6kQ1h7bU0",
-    "09dZq9e4j44",
-    "o1RZX4ACUaU",
-    "vMqm3O0X_hA",
-    "zC53p0k0L7s",
-    "E5qVbf7jZ5U",
-    "1tVL115jEIQ",
-    "1v8pQ0e0x6U",
-    "e-X1V7M_r48",
-    "vjZ5X3m1k94",
-    "YxWlaYCA8MU",
-    "Zlqf9cuaOBw",
-    "xWi8nDUjHGA",
-    "5GCfYLguTIs",
-    "2sAzb3kraoQ",
-    "CeFQO9MQNqs",
-    "uChhQpHMmXE",
-    "k85UB5b6pJU",
-    "fRJ03btNsao",
-    "RuDsBrSczis",
-    "roz9sXFkTuE",
-    "nFgsBxw-zWQ",
-    "PkgStlsVaqw",
-    "Zrt77f7nTqY",
-    "2G2_pc4IfUs",
-    "KVnheXywIbY",
-    "NZ1EBaqDL0M",
-    "EZh7my_RASk",
-    "FewWUHxY79w",
-    "ZbX_nlzv7uU",
-    "MnNQW_L7ovY",
-    "YDAWpY747TY",
-    "T_lDkgKdTD8",
-    "qH-fnpT7qgU",
-    "AhO7mWclXOc",
-    "FgHz5qNwtqg",
-    "fnyd1hGyJIY",
-    "fAU6b5U26sM",
-    "Z23mOrp8i24",
-    "iAv5WMNRX90",
-    "H9ogpITFBYM",
-    "4VqbPwVYq1s",
-    "NV7XJe4nqJ8",
-    "JcpiVAbAnYg",
-    "Bpj3JYLCCuA",
-    "QnQRMHkXzZ4",
-    "j3nADe5euQw",
-    "Etkd-07gnxM",
-    "7CdpHATpXXU",
-    "qnQCd_nZn_g",
-    "PesrFCmjdNI",
-    "bjfKyIAlsZs",
-    "BwiaxAos5cg",
-    "-yX2trMgn5s",
-    "pCYojfACnzQ",
-    "sv26LXD4GbI",
-    "1tsCjcq0G-U",
-    "sVPKUMyOmg0",
-    "E-Qzp9_uzlA",
-    "Ref5bT8Tuk8",
-    "yWo9_7I58Bc",
-    "Xb82Eexgyeo",
-    "q8Mhq2GVM9M",
-    "2o1Bv1DyUN0",
-    "AUvYe_ZgLOY",
-    "yktlUKTWlJg",
-    "QXJyMpxd210",
-    "3qpxJEp4Ec4",
-    "taRBVfDRukY",
-    "hacByYwJ_a4",
-    "GkJ_wZy0iB4",
-    "IYK34I7y5O8",
-    "aa7_itx64eI",
-    "AdYOIQTyAAw",
-    "TjXH_P7Khhg",
-    "mHdneo9_yLM",
-    "vee_P6pIv_E",
-    "ETMul5GVk_Y",
-    "Pz_FkqA2x6s",
-    "FBTgulBOUy0",
-    "vW7sbaVWYqE",
-    "OweU4sBBqGI",
-    "9uIIdCBRNRc",
-    "0avk5g_9Cgk",
-    "44Aq9OZtM_M",
-    "cpfns3c5AQc",
-    "BddP6PYo2gs",
-    "RLzC55ai0eo",
-    "mNuhKUOD_A0",
-    "6mr4cYJ7yew",
-    "NJAv_7lHUIU",
-    "xfMN4SpIxIA",
-    "zCGck2spPsU",
-    "K3B8-klo5xc",
-    "g6fnFALEseI",
-    "W1S9AbHpWFY",
-    "1qeujW9f4So",
-    "k6GjS_Hzg8I",
-    "PLIsDVqACZ0",
-    "P7yRYiBiV3g",
-    "9_gAAHlp9CU",
-    "aDOs442shYU",
-    "WCDXUgvddR4",
-    "532toSHe57E",
-    "jZba76mHdg4",
-    "HLDFbuGhFVU",
-    "4VwtfInG-LU",
-    "ObiCEWmYH5Y",
-    "Q11jKrhG7m4",
-    "WJumea3vEpw",
-    "IhLJRgr-r0o",
-    "SW2uyfNqHg4",
-    "jC1oFRhElEw",
-    "gslkqoBV5SA",
-    "Gqnnrop26Sw",
-    "9uHS97epnYc",
-    "BbGNpf5vDTE",
-    "Miz5wvLmXPI",
-    "AdKdqAqsnsY",
-    "UITBjk6FttM",
-    "npKOkLWrZeE",
-    "gX3Gw-3wxfs",
-    "K0I124SPxmI",
-    "P6G4QoKwnzI",
-    "t5PEt4aXI58",
-    "VAdGW7QDJiU",
-    "V_jp5_VAzXk",
-    "8eYG5QGZAZs",
-    "9M_ZKSmxb_s",
-    "wr9M-CoxP7A",
-    "u2NAuswnTKs",
-    "3lDJZr6kbsg",
-    "LSP9SjZ3rrs",
-    "6X0pNXXeVIA",
-    "Wr0BLOr2WlU",
-    "3fPQtxRwn6U",
-    "tLqtnGLfm4Q",
-    "_iktURk0X-A",
-    "Ov0YGGSY6gY",
-    "inEu2qQuGZ8",
-    "VdyBtGaspss",
-    "Umqb9KENgmk",
-    "MJyKN-8UncM",
-    "IJq0yyWug1k",
-    "izy2tV-Ssj8",
-    "GtPvCa3vvxA",
-    "V1oczq_8L0E",
-    "z3UHfi9vpbc",
-    "pIBoAh4OXhQ",
-    "cUmUOb7j3dc",
-    "krJsyb_yf7A",
-    "2bMEe0UYa8E",
-    "eHRrZ5DQCV4",
-    "fsiPzT50ZiM",
-    "NUo8CKI34o4",
-    "YLoYt8H7kjM",
-    "gvyUuxdRdR4",
-    "orYf6VDtj_k",
-    "Dm6YRJHy64c",
-    "GLGuLXKT9Ng",
-    "skq8M5khNbw",
-    "qauUzF4GMZ0",
-    "dYwwHf9vWfo",
-    "2FRrtuu3Ljg",
-    "pz2Yz0_1lr8",
-    "oDkZEay6H6k",
-    "S2BOXJG71FY",
-    "8K9eaAKLrE0",
-    "jh6Anzu3ntQ",
-    "4O0_erwpB9E",
-    "naQXI7l6op0",
-    "Kp76nzS7pwA",
-    "-kVdEfkWsjo",
-    "s095hRZYb2U",
-    "bXWcVn4uNd0",
-    "7fhY7FFZ6nU",
-    "hoNb6HuNmU0",
-    "ElZfdU54Cp8",
-    "1A08X9oY2g4",
-    "2B97k9hQ7e0",
-    "3C84k0xR9p0",
-    "4D73l9yT8q0",
-    "5E62m0vU7r0",
-    "6F51n1wV6s0",
-    "7G40o2xW5t0",
-    "8H39p3yX4u0",
-    "9I28q4zY3v0",
-    "0J17r5aZ2w0",
-    "1K06s6bA1x0",
-    "2L95t7cB0y0",
-    "3M84u8dC9z0",
-    "4N73v9eD8a0",
-    "5O62w0fE7b0",
-    "6P51x1gF6c0",
-    "7Q40y2hG5d0",
-    "8R39z3iH4e0",
-    "9S28a4jI3f0",
-    "0T17b5kJ2g0"
-],
-  "awarapan": [
-    "HqU_s1v8b6U",
-    "tLqtnGLGQ4Y",
-    "Nl8_x-rL5cM",
-    "d0q6fJj5u6w",
-    "w_Z0Wq1a4-c",
-    "m0b9lDk1i7k"
-  ]
-};
-
-const LOCAL_STORAGE_CACHE_KEY = 'surbeat_youtube_cache_v7';
-let youtubeCache = {
-  trending: [],
-  workout: [],
-  awarapan: [],
-  romantic_new: [],
-  classic_old: [],
-  lofi: []
-};
-
-// Shuffled queues per category (combines live online results + fallback)
-const categoryQueues = {
-  trending: [],
-  workout: [],
-  awarapan: [],
-  romantic_new: [],
-  classic_old: [],
-  lofi: []
-};
-
-let currentCategory = 'trending';
-const recentlyPlayedHistory = [];
-const pendingSearchRequests = new Map();
-let isQuotaExhausted = false;
-let isBackendAvailable = false;
-let consecutiveErrorCount = 0;
-
-function getCategoryForQuery(query) {
-  const q = (query || '').toLowerCase();
-  if (q.includes('awarapan') || q.includes('emraan') || q.includes('mustafa zahid') || q.includes('toh phir aao') || q.includes('tera mera rishta') || q.includes('mahiya')) return 'awarapan';
-  if (q.includes('workout') || q.includes('gym') || q.includes('dangal') || q.includes('sultan') || q.includes('bicep') || q.includes('squat') || q.includes('running') || q.includes('energy') || q.includes('akhada')) return 'workout';
-  if (q.includes('romantic') || q.includes('love') || q.includes('arijit') || q.includes('atif') || q.includes('shreya')) return 'romantic_new';
-  if (q.includes('old') || q.includes('classic') || q.includes('90s') || q.includes('retro') || q.includes('kishore') || q.includes('rafi') || q.includes('lata')) return 'classic_old';
-  if (q.includes('lofi') || q.includes('sad') || q.includes('chill') || q.includes('reverb') || q.includes('slowed') || q.includes('chai')) return 'lofi';
-  return 'trending';
-}
-
-function loadYoutubeCache() {
-  const categories = ['trending', 'workout', 'awarapan', 'romantic_new', 'classic_old', 'lofi'];
-  try {
-    const data = localStorage.getItem(LOCAL_STORAGE_CACHE_KEY);
-    if (data) {
-      const parsed = JSON.parse(data);
-      if (parsed && typeof parsed === 'object') {
-        for (const cat of categories) {
-          if (Array.isArray(parsed[cat])) {
-            const valid = parsed[cat].filter(isValidYouTubeId);
-            const minThreshold = cat === 'awarapan' ? 3 : 50;
-            if (valid.length >= minThreshold) {
-              youtubeCache[cat] = valid;
-            }
-          }
-        }
-      }
-    }
-  } catch (e) { }
-
-  // Ensure every category is backed by seed database
-  for (const cat of categories) {
-    const seed = DEFAULT_SONGS_DATABASE[cat] || DEFAULT_SONGS_DATABASE.trending || [];
-    const minThreshold = cat === 'awarapan' ? 3 : 50;
-    if (!youtubeCache[cat] || youtubeCache[cat].length < minThreshold) {
-      youtubeCache[cat] = [...seed];
-    } else {
-      const existingSet = new Set(youtubeCache[cat].filter(isValidYouTubeId));
-      seed.forEach(id => existingSet.add(id));
-      youtubeCache[cat] = Array.from(existingSet);
-    }
-  }
-
-  saveYoutubeCache();
-}
-
-function saveYoutubeCache() {
-  try {
-    localStorage.setItem(LOCAL_STORAGE_CACHE_KEY, JSON.stringify(youtubeCache));
-  } catch (e) { }
-}
-
-function syncSongToBackendDatabase(categoryKey, videoIds) {
-  if (!isBackendAvailable || !API_BASE_URL || isFileProtocol) return;
-  fetch(`${API_BASE_URL}/songs/database`, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ category: categoryKey, videoIds: videoIds.filter(isValidYouTubeId) })
-  }).catch(() => { });
-}
-
-// ========================================
-// Live Dynamic Online YouTube Search Engine
-// ========================================
-
-function isRelevantHindiMusic(item) {
-  if (!item || !item.id || !item.id.videoId) return false;
-  if (!isValidYouTubeId(item.id.videoId)) return false;
-  const title = (item.snippet?.title || '').toLowerCase();
-  const channelTitle = (item.snippet?.channelTitle || '').toLowerCase();
-  const description = (item.snippet?.description || '').toLowerCase();
-  const combined = `${title} ${channelTitle} ${description}`;
-
-  const irrelevantPattern = /\b(tutorial|how to|reaction|review|gameplay|walkthrough|podcast|news|trailer|teaser|full movie|unboxing|bgmi|pubg|vlog|episode)\b/i;
-  if (irrelevantPattern.test(combined)) {
-    return false;
-  }
-
-  return true;
-}
-
-/**
- * Searches live online YouTube when API quota is available,
- * and seamlessly enriches category queues and cache.
- */
-async function performYouTubeSearch(query) {
-  const normKey = query.trim().toLowerCase();
-  if (!normKey) return [];
-  const catKey = getCategoryForQuery(normKey);
-
-  if (pendingSearchRequests.has(normKey)) {
-    return pendingSearchRequests.get(normKey);
-  }
-
-  const searchPromise = (async () => {
-    try {
-      // 1. Try Backend dynamic search (YouTube API + Scraper)
-      if (isBackendAvailable && API_BASE_URL) {
-        try {
-          const controller = new AbortController();
-          const timeoutId = setTimeout(() => controller.abort(), 2500);
-
-          const res = await fetch(`${API_BASE_URL}/youtube/search?query=${encodeURIComponent(normKey)}`, { signal: controller.signal });
-          clearTimeout(timeoutId);
-
-          if (res.ok) {
-            const result = await res.json();
-            if (result.success && Array.isArray(result.data)) {
-              const validIds = result.data.filter(isValidYouTubeId);
-              if (validIds.length > 0) {
-                categoryQueues[catKey] = [...validIds, ...(categoryQueues[catKey] || [])];
-                return validIds;
-              }
-            }
-          }
-        } catch (e) { }
-      }
-
-      // 2. Direct Frontend YouTube Data API search if key exists & quota not exhausted
-      if (FRONTEND_YT_API_KEY && !isQuotaExhausted) {
-        const controller = new AbortController();
-        const timeoutId = setTimeout(() => controller.abort(), 2500);
-
-        const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&type=video&videoCategoryId=10&order=viewCount&relevanceLanguage=hi&maxResults=25&q=${encodeURIComponent(normKey)}&key=${FRONTEND_YT_API_KEY}`;
-        const res = await fetch(url, { signal: controller.signal });
-        clearTimeout(timeoutId);
-
-        if (res.status === 429 || res.status === 403) {
-          isQuotaExhausted = true;
-          console.warn('⚠️ YouTube API Quota exhausted. Seamlessly playing from SurBeat Library.');
-          return youtubeCache[catKey] || DEFAULT_SONGS_DATABASE[catKey] || [];
-        }
-
-        if (res.ok) {
-          const data = await res.json();
-          if (data && Array.isArray(data.items)) {
-            const validItems = data.items.filter(isRelevantHindiMusic);
-            const videoIds = validItems.map(item => item.id.videoId).filter(isValidYouTubeId);
-            if (videoIds.length > 0) {
-              categoryQueues[catKey] = [...videoIds, ...(categoryQueues[catKey] || [])];
-              syncSongToBackendDatabase(catKey, videoIds);
-              return videoIds;
-            }
-          }
-        }
-      }
-
-      return youtubeCache[catKey] || DEFAULT_SONGS_DATABASE[catKey] || [];
-    } catch (e) {
-      return youtubeCache[catKey] || DEFAULT_SONGS_DATABASE[catKey] || [];
-    } finally {
-      pendingSearchRequests.delete(normKey);
-    }
-  })();
-
-  pendingSearchRequests.set(normKey, searchPromise);
-  return searchPromise;
-}
-
-/**
- * Triggers background dynamic search using online queries without delaying playback
- */
-function fetchFreshOnlineSongsInBackground(categoryKey) {
-  if (isQuotaExhausted) return;
-  const queries = categoryQueries[categoryKey] || categoryQueries.trending;
-  if (!queries || queries.length === 0) return;
-
-  const randomQuery = queries[Math.floor(Math.random() * queries.length)];
-  performYouTubeSearch(randomQuery).then(fetchedIds => {
-    if (fetchedIds && fetchedIds.length > 0) {
-      const existingSet = new Set(youtubeCache[categoryKey].filter(isValidYouTubeId));
-      fetchedIds.forEach(id => {
-        if (isValidYouTubeId(id)) existingSet.add(id);
-      });
-      youtubeCache[categoryKey] = Array.from(existingSet);
-      saveYoutubeCache();
-    }
-  }).catch(() => { });
-}
-
-/**
- * Gets next song from queue; if empty, refills from category library
- */
-function getNextSongFromQueue(categoryKey) {
-  if (!categoryQueues[categoryKey] || categoryQueues[categoryKey].length === 0) {
-    const pool = (youtubeCache[categoryKey] && youtubeCache[categoryKey].length >= 50)
-      ? youtubeCache[categoryKey]
-      : (DEFAULT_SONGS_DATABASE[categoryKey] || DEFAULT_SONGS_DATABASE.trending || []);
-
-    const validPool = pool.filter(isValidYouTubeId);
-    categoryQueues[categoryKey] = shuffle(validPool.length > 0 ? validPool : DEFAULT_SONGS_DATABASE.trending);
-  }
-
-  const selectedId = categoryQueues[categoryKey].pop();
-  recentlyPlayedHistory.push(selectedId);
-  if (recentlyPlayedHistory.length > 100) {
-    recentlyPlayedHistory.shift();
-  }
-
-  return selectedId;
-}
-
-// ========================================
-// Player State & Playback Engine
-// ========================================
-
-let player = null;
-let isPlayerReady = false;
-let isMuted = false;
-let isLiked = false;
-let isLoopEnabled = false;
-let isShuffleEnabled = false;
-let isSeeking = false;
-let progressTimer = null;
-let pendingPlayVideoId = null;
-
-const PAUSE_ICON = 'M6 5h4v14H6zm8 0h4v14h-4z';
-const PLAY_ICON = 'M8 5v14l11-7z';
-
-function onUniversalPlaybackStart() {
-  consecutiveErrorCount = 0;
-  startLockScreenAudioSession();
-
-  const disc = document.getElementById('discCore');
-  const tonearm = document.getElementById('tonearm');
-  const eqBars = document.getElementById('eqBars');
-  const ambientGlow = document.getElementById('ambientGlow');
-  const stopBtn = document.getElementById('stopBtn');
-  const seekRow = document.getElementById('seekRow');
-
-  if (disc) disc.classList.add('playing');
-  if (tonearm) tonearm.classList.add('playing');
-  if (eqBars) eqBars.classList.add('playing');
-  if (ambientGlow) ambientGlow.classList.add('playing');
-  if (stopBtn) stopBtn.classList.remove('active');
-  if (seekRow) seekRow.style.display = 'flex';
-
-  setPlayPauseIcon(true);
-  startProgressTracking();
-}
-
-function onUniversalPlaybackPause() {
-  const disc = document.getElementById('discCore');
-  const tonearm = document.getElementById('tonearm');
-  const eqBars = document.getElementById('eqBars');
-  const ambientGlow = document.getElementById('ambientGlow');
-
-  if (disc) disc.classList.remove('playing');
-  if (tonearm) tonearm.classList.remove('playing');
-  if (eqBars) eqBars.classList.remove('playing');
-  if (ambientGlow) ambientGlow.classList.remove('playing');
-
-  setPlayPauseIcon(false);
-}
-
-function playCategorySong(categoryKey = currentCategory) {
-  currentCategory = categoryKey;
-  unlockMobileAudioGesture();
-
-  updateCategoryUI(categoryKey);
-
-  const nextSongId = getNextSongFromQueue(categoryKey);
-  if (!nextSongId) {
-    const fallbackId = (DEFAULT_SONGS_DATABASE[categoryKey] || DEFAULT_SONGS_DATABASE.trending)[0];
-    playVideoById(fallbackId);
-    return;
-  }
-
-  // Play immediately (0ms delay) via YouTube Engine
-  playVideoById(nextSongId);
-
-  // Trigger live online search in background to keep queue freshly updated
-  fetchFreshOnlineSongsInBackground(categoryKey);
-}
-
-function playVideoById(videoId) {
-  if (!videoId || !isValidYouTubeId(videoId)) return;
-
-  unlockMobileAudioGesture();
-  startLockScreenAudioSession();
-
-  if (player && isPlayerReady && typeof player.loadVideoById === 'function') {
-    try {
-      if (typeof player.unMute === 'function') player.unMute();
-      if (typeof player.setVolume === 'function') player.setVolume(85);
-      player.loadVideoById({
-        videoId: videoId,
-        suggestedQuality: 'small'
-      });
-      player.playVideo();
-    } catch (e) {
-      console.warn('Play video error:', e);
-    }
-
-    resetLike();
-    loadRomanticBackground();
-
-    const nowPlayingEl = document.getElementById('nowPlayingText');
-    if (nowPlayingEl) {
-      if (currentCategory === 'workout') {
-        nowPlayingEl.innerText = 'Tuning Workout Beat...';
-      } else if (currentCategory === 'awarapan') {
-        nowPlayingEl.innerText = 'Awarapan — Emraan Hashmi Hit';
-      } else {
-        nowPlayingEl.innerText = 'Loading melody...';
-      }
-    }
-
-    setTimeout(updateNowPlaying, 700);
-  } else {
-    pendingPlayVideoId = videoId;
-  }
-}
-
-function playNext() {
-  playCategorySong(currentCategory);
-}
-
-function playPrev() {
-  if (recentlyPlayedHistory.length > 1) {
-    recentlyPlayedHistory.pop();
-    const prevId = recentlyPlayedHistory[recentlyPlayedHistory.length - 1];
-    if (prevId && isValidYouTubeId(prevId)) {
-      playVideoById(prevId);
-      return;
-    }
-  }
-  playCategorySong(currentCategory);
-}
-
-function updateCategoryUI(categoryKey) {
-  const catLabel = document.getElementById('nowPlayingCategoryLabel');
-  const discSubLabel = document.getElementById('discSubLabel');
-
-  if (categoryKey === 'workout') {
-    if (catLabel) catLabel.innerText = 'NOW PLAYING • 💪 WORKOUT FORCE';
-    if (discSubLabel) discSubLabel.innerText = 'DESI WORKOUT';
-  } else if (categoryKey === 'awarapan') {
-    if (catLabel) catLabel.innerText = 'NOW PLAYING • ❤️ AWARAPAN (EMRAAN HASHMI)';
-    if (discSubLabel) discSubLabel.innerText = 'AWARAPAN';
-  } else if (categoryKey === 'romantic_new') {
-    if (catLabel) catLabel.innerText = 'NOW PLAYING • 💖 BOLLYWOOD ROMANTICS';
-    if (discSubLabel) discSubLabel.innerText = 'ROMANTIC';
-  } else if (categoryKey === 'classic_old') {
-    if (catLabel) catLabel.innerText = 'NOW PLAYING • 📻 GOLDEN 90S CLASSICS';
-    if (discSubLabel) discSubLabel.innerText = '90S RETRO';
-  } else if (categoryKey === 'lofi') {
-    if (catLabel) catLabel.innerText = 'NOW PLAYING • ☕ CHAI & LOFI BEATS';
-    if (discSubLabel) discSubLabel.innerText = 'CHAI LOFI';
-  } else {
-    if (catLabel) catLabel.innerText = 'NOW PLAYING • 🪕 DESI REEL HITS';
-    if (discSubLabel) discSubLabel.innerText = 'RAGA SARGAM';
-  }
-}
-
-function updateNowPlaying() {
-  const nowPlayingEl = document.getElementById('nowPlayingText');
-  if (!nowPlayingEl) return;
-
-  let trackTitle = 'SurBeat Hindi Melody';
-  let artistName = 'SurBeat — Indian Vibes';
-  let albumName = 'SurBeat Musical Hits';
-
-  if (player && typeof player.getVideoData === 'function') {
-    try {
-      const data = player.getVideoData();
-      if (data && data.title && data.title.trim() !== '') {
-        trackTitle = data.title;
-        if (currentCategory === 'workout') {
-          artistName = 'Desi Workout Motivation';
-          albumName = 'SurBeat Workout Force';
-        } else if (currentCategory === 'awarapan') {
-          artistName = 'Emraan Hashmi Hits';
-          albumName = 'Awarapan Collection';
-        }
-      }
-    } catch (e) { }
-  }
-
-  nowPlayingEl.innerText = trackTitle;
-  updateMediaSessionMetadata(trackTitle, artistName, albumName);
-}
-
-function updateMediaSessionMetadata(title, artist = 'SurBeat Artist', album = 'SurBeat Musics') {
-  if ('mediaSession' in navigator) {
-    try {
-      const art = 'https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=512&q=80';
-      navigator.mediaSession.metadata = new MediaMetadata({
-        title: title,
-        artist: artist,
-        album: album,
-        artwork: [
-          { src: art, sizes: '512x512', type: 'image/jpeg' },
-          { src: art, sizes: '192x192', type: 'image/jpeg' }
-        ]
-      });
-
-      setupMediaSessionActionHandlers();
-    } catch (e) {
-      console.warn('Media Session error:', e);
-    }
-  }
-}
-
-function resetLike() {
-  isLiked = false;
-  const likeBtn = document.getElementById('likeBtn');
-  if (likeBtn) likeBtn.classList.remove('liked');
-}
-
-function setPlayPauseIcon(isPlaying) {
-  const path = document.getElementById('playPausePath') || document.querySelector('#playPauseBtn path');
-  const btn = document.getElementById('playPauseBtn');
-
-  if (path) {
-    path.setAttribute('d', isPlaying ? PAUSE_ICON : PLAY_ICON);
-  }
-  if (btn) {
-    btn.setAttribute('aria-label', isPlaying ? 'Pause' : 'Play');
-    btn.setAttribute('title', isPlaying ? 'Pause' : 'Play');
-  }
-
-  if ('mediaSession' in navigator) {
-    try {
-      navigator.mediaSession.playbackState = isPlaying ? 'playing' : 'paused';
-    } catch (e) { }
-  }
-}
-
-function stopPlaybackCompletely() {
-  stopLockScreenAudioSession();
-
-  if (player) {
-    try {
-      if (typeof player.pauseVideo === 'function') player.pauseVideo();
-      if (typeof player.stopVideo === 'function') player.stopVideo();
-    } catch (e) { }
-  }
-
-  onUniversalPlaybackPause();
-
-  const nowPlayingEl = document.getElementById('nowPlayingText');
-  const stopBtn = document.getElementById('stopBtn');
-  if (nowPlayingEl) nowPlayingEl.innerText = 'SurBeat Stopped';
-  if (stopBtn) stopBtn.classList.add('active');
-
-  if ('mediaSession' in navigator) {
-    try {
-      navigator.mediaSession.playbackState = 'none';
-    } catch (e) { }
-  }
-
-  if (progressTimer) clearInterval(progressTimer);
-  const seekSlider = document.getElementById('seekSlider');
-  const currentLabel = document.getElementById('currentTimeLabel');
-  if (seekSlider) seekSlider.value = 0;
-  if (currentLabel) currentLabel.innerText = '0:00';
-}
-
-function startProgressTracking() {
-  if (progressTimer) clearInterval(progressTimer);
-  progressTimer = setInterval(() => {
-    if (isSeeking) return;
-
-    let duration = 0;
-    let current = 0;
-
-    if (player && isPlayerReady && typeof player.getDuration === 'function') {
-      try {
-        duration = player.getDuration();
-        current = player.getCurrentTime();
-      } catch (e) { }
-    }
-
-    if (duration > 0 && isFinite(current)) {
-      const seekSlider = document.getElementById('seekSlider');
-      const currentLabel = document.getElementById('currentTimeLabel');
-      const durationLabel = document.getElementById('durationLabel');
-
-      if (seekSlider) {
-        seekSlider.max = Math.floor(duration);
-        seekSlider.value = Math.floor(current);
-      }
-      if (currentLabel) currentLabel.innerText = formatTime(current);
-      if (durationLabel) durationLabel.innerText = formatTime(duration);
-
-      if ('mediaSession' in navigator && 'setPositionState' in navigator.mediaSession) {
-        try {
-          navigator.mediaSession.setPositionState({
-            duration: Math.max(0, duration),
-            playbackRate: 1,
-            position: Math.min(duration, Math.max(0, current))
-          });
-        } catch (e) { }
-      }
-    }
-  }, 400);
-}
-
-// ========================================
-// YouTube Player Integration
-// ========================================
-
-function onYouTubeIframeAPIReady() {
-  player = new YT.Player('player', {
-    height: '1',
-    width: '1',
-    playerVars: {
-      autoplay: 0,
-      mute: 0,
-      controls: 0,
-      playsinline: 1,
-      enablejsapi: 1,
-      rel: 0,
-      origin: window.location.origin || 'http://localhost'
-    },
-    events: {
-      onReady: onPlayerReady,
-      onStateChange: onPlayerStateChange,
-      onError: onPlayerError
-    }
-  });
-}
-
-function onPlayerReady(event) {
-  console.log('✅ SurBeat YouTube Player is ready');
-  isPlayerReady = true;
-  initLockScreenAudioKeepAlive();
-
-  if (pendingPlayVideoId) {
-    const queued = pendingPlayVideoId;
-    pendingPlayVideoId = null;
-    playVideoById(queued);
-  }
-}
-
-function onPlayerStateChange(event) {
-  if (event.data === YT.PlayerState.ENDED) {
-    if (isLoopEnabled) {
-      if (player && typeof player.seekTo === 'function') {
-        player.seekTo(0, true);
-        player.playVideo();
-      } else {
-        playNext();
-      }
-    } else {
-      playNext();
-    }
-  }
-
-  if (event.data === YT.PlayerState.PLAYING) {
-    try {
-      const duration = player.getDuration();
-      if (duration > 0 && duration < 30) {
-        const nowPlayingEl = document.getElementById('nowPlayingText');
-        if (nowPlayingEl) nowPlayingEl.innerText = 'Tuning full track...';
-        playNext();
-        return;
-      }
-    } catch (e) { }
-
-    onUniversalPlaybackStart();
-    updateNowPlaying();
-  }
-
-  if (event.data === YT.PlayerState.PAUSED || event.data === YT.PlayerState.CUED) {
-    onUniversalPlaybackPause();
-  }
-}
-
-function onPlayerError(event) {
-  console.warn('⚠️ YouTube Track Error Code:', event.data, '- Skipping instantly from SurBeat Library...');
-  consecutiveErrorCount++;
-
-  showSearchStatus('Playing from SurBeat Library', 'info');
-
-  if (player && typeof player.getVideoData === 'function') {
-    try {
-      const data = player.getVideoData();
-      if (data && data.video_id) {
-        for (const cat of Object.keys(youtubeCache)) {
-          if (Array.isArray(youtubeCache[cat])) {
-            youtubeCache[cat] = youtubeCache[cat].filter(id => id !== data.video_id);
-          }
-        }
-        saveYoutubeCache();
-      }
-    } catch (e) { }
-  }
-
-  setTimeout(playNext, 80);
-}
-
-// ========================================
-// Initialization & Event Listeners
-// ========================================
-
-document.addEventListener('DOMContentLoaded', async () => {
-  loadYoutubeCache();
-  await checkBackendHealth();
-
-  updateClock();
-  setInterval(updateClock, 1000);
-
-  initRealtimePresence();
-  loadRomanticBackground();
-  addFloatingNotes();
-  initLockScreenAudioKeepAlive();
-
-  // Global user gesture unlock for all mobile and desktop browsers
-  ['touchstart', 'touchend', 'pointerdown', 'click', 'keydown'].forEach(evtType => {
-    document.addEventListener(evtType, unlockMobileAudioGesture, { once: true, passive: true });
-  });
-
-  // Pre-load YouTube Iframe API
-  if (typeof YT === 'undefined' || !YT.Player) {
-    const tag = document.createElement('script');
-    tag.src = 'https://www.youtube.com/iframe_api';
-    document.body.appendChild(tag);
-  }
-
-  // Genre / Category Buttons
-  const genreBtns = document.querySelectorAll('.genre-btn');
-  genreBtns.forEach(btn => {
+// ════════════════════════════════════════════════════════════════
+// EVENT BINDINGS
+// ════════════════════════════════════════════════════════════════
+
+function bindCategoryButtons() {
+  document.querySelectorAll('.cat-btn').forEach(btn => {
     btn.addEventListener('click', () => {
-      genreBtns.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      currentCategory = btn.dataset.category || 'trending';
-
-      playCategorySong(currentCategory);
+      const cat = btn.dataset.category;
+      if (!cat || cat === STATE.currentCategory) return;
+      loadCategory(cat, false);
     });
   });
+}
 
-  // Main Play Button — Instant 0ms launch
-  const playBtn = document.getElementById('playBtn');
-  if (playBtn) {
-    const handleInitialPlay = () => {
-      unlockMobileAudioGesture();
-      startLockScreenAudioSession();
+function bindSideCards() {
+  const sideA = document.getElementById('sideCardA');
+  const sideB = document.getElementById('sideCardB');
 
-      playBtn.style.display = 'none';
-      const controlsRow = document.getElementById('controlsRow');
-      const volumeRow = document.getElementById('volumeRow');
-      if (controlsRow) controlsRow.style.display = 'flex';
-      if (volumeRow) volumeRow.style.display = 'flex';
+  const activateCard = (card) => {
+    if (!card) return;
+    const cat = card.dataset.category;
+    if (cat) loadCategory(cat, false);
+  };
 
-      playCategorySong(currentCategory);
-    };
+  [sideA, sideB].forEach(card => {
+    if (!card) return;
+    card.addEventListener('click', () => activateCard(card));
+    card.addEventListener('keydown', e => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        activateCard(card);
+      }
+    });
+  });
+}
 
-    playBtn.addEventListener('click', handleInitialPlay);
-    playBtn.addEventListener('touchend', (e) => {
-      e.preventDefault();
-      handleInitialPlay();
+function bindPlayerControls() {
+  // Play trigger (initial button)
+  const triggerBtn = document.getElementById('playTriggerBtn');
+  if (triggerBtn) {
+    triggerBtn.addEventListener('click', () => {
+      unlockMobileAudio();
+      loadCategoryAndPlay(STATE.currentCategory);
     });
   }
 
-  // Next & Prev Controls
-  const nextBtn = document.getElementById('nextBtn');
+  // Play/Pause
+  const ppBtn = document.getElementById('playPauseBtn');
+  if (ppBtn) {
+    ppBtn.addEventListener('click', () => {
+      unlockMobileAudio();
+      if (STATE.trackList.length === 0 && STATE.currentIndex === -1) {
+        loadCategoryAndPlay(STATE.currentCategory);
+      } else {
+        togglePlayPause();
+      }
+    });
+  }
+
+  // Previous
   const prevBtn = document.getElementById('prevBtn');
-  if (nextBtn) nextBtn.addEventListener('click', playNext);
   if (prevBtn) prevBtn.addEventListener('click', playPrev);
 
-  // Play / Pause Toggle Button
-  const playPauseBtn = document.getElementById('playPauseBtn');
-  if (playPauseBtn) {
-    playPauseBtn.addEventListener('click', () => {
-      if (!player || typeof player.getPlayerState !== 'function') return;
-      const state = player.getPlayerState();
-      if (state === YT.PlayerState.PLAYING || state === YT.PlayerState.BUFFERING) {
-        stopLockScreenAudioSession();
-        player.pauseVideo();
-        setPlayPauseIcon(false);
-      } else {
-        startLockScreenAudioSession();
-        if (typeof player.unMute === 'function') player.unMute();
-        player.playVideo();
-        setPlayPauseIcon(true);
-      }
-    });
-  }
+  // Next
+  const nextBtn = document.getElementById('nextBtn');
+  if (nextBtn) nextBtn.addEventListener('click', playNext);
 
-  // Stop Button
-  const stopBtn = document.getElementById('stopBtn');
-  if (stopBtn) {
-    stopBtn.addEventListener('click', stopPlaybackCompletely);
-  }
-
-  // Favorite / Like Button
-  const likeBtn = document.getElementById('likeBtn');
-  if (likeBtn) {
-    likeBtn.addEventListener('click', () => {
-      isLiked = !isLiked;
-      likeBtn.classList.toggle('liked', isLiked);
-    });
-  }
-
-  // Shuffle Button
+  // Shuffle
   const shuffleBtn = document.getElementById('shuffleBtn');
   if (shuffleBtn) {
     shuffleBtn.addEventListener('click', () => {
-      isShuffleEnabled = !isShuffleEnabled;
-      shuffleBtn.classList.toggle('active', isShuffleEnabled);
-      const labelText = `Shuffle: ${isShuffleEnabled ? 'On' : 'Off'}`;
-      shuffleBtn.setAttribute('aria-label', labelText);
-      shuffleBtn.setAttribute('title', labelText);
-      showSearchStatus(isShuffleEnabled ? '🔀 Shuffle Mode: ON' : '➡️ Shuffle Mode: OFF', 'info');
+      STATE.isShuffle = !STATE.isShuffle;
+      shuffleBtn.classList.toggle('active', STATE.isShuffle);
+      shuffleBtn.setAttribute('aria-pressed', STATE.isShuffle.toString());
+      shuffleBtn.setAttribute('aria-label', `Shuffle: ${STATE.isShuffle ? 'On' : 'Off'}`);
+      shuffleBtn.title = `Shuffle: ${STATE.isShuffle ? 'On' : 'Off'}`;
     });
   }
 
-  // Loop / Repeat Button
+  // Repeat
   const repeatBtn = document.getElementById('repeatBtn');
   if (repeatBtn) {
     repeatBtn.addEventListener('click', () => {
-      isLoopEnabled = !isLoopEnabled;
-      repeatBtn.classList.toggle('active', isLoopEnabled);
-      const labelText = `Repeat song: ${isLoopEnabled ? 'On' : 'Off'}`;
-      repeatBtn.setAttribute('aria-label', labelText);
-      repeatBtn.setAttribute('title', labelText);
-      showSearchStatus(isLoopEnabled ? '🔂 Repeat Mode: ON (Looping current track)' : '➡️ Repeat Mode: OFF (Auto-advance)', 'info');
+      STATE.isRepeat = !STATE.isRepeat;
+      repeatBtn.classList.toggle('active', STATE.isRepeat);
+      repeatBtn.setAttribute('aria-pressed', STATE.isRepeat.toString());
+      repeatBtn.setAttribute('aria-label', `Repeat: ${STATE.isRepeat ? 'On' : 'Off'}`);
+      repeatBtn.title = `Repeat: ${STATE.isRepeat ? 'On' : 'Off'}`;
     });
   }
 
-  // Volume & Mute Controls
-  const muteBtn = document.getElementById('muteBtn');
-  if (muteBtn) {
-    muteBtn.addEventListener('click', () => {
-      isMuted = !isMuted;
-      if (player && typeof player.mute === 'function') {
-        if (isMuted) player.mute(); else player.unMute();
-      }
-      const volSlider = document.getElementById('volumeSlider');
-      if (volSlider) volSlider.value = isMuted ? 0 : 80;
-    });
-  }
-
-  const volumeSlider = document.getElementById('volumeSlider');
-  if (volumeSlider) {
-    volumeSlider.addEventListener('input', (e) => {
-      const vol = parseInt(e.target.value, 10);
-      if (player && typeof player.setVolume === 'function') {
-        player.setVolume(vol);
-        if (vol === 0) player.mute(); else player.unMute();
-      }
-      isMuted = (vol === 0);
-    });
-  }
-
-  // Seek Slider
+  // Seek slider
   const seekSlider = document.getElementById('seekSlider');
   if (seekSlider) {
-    seekSlider.addEventListener('mousedown', () => { isSeeking = true; });
-    seekSlider.addEventListener('touchstart', () => { isSeeking = true; }, { passive: true });
-    seekSlider.addEventListener('input', (e) => {
-      const currentLabel = document.getElementById('currentTimeLabel');
-      if (currentLabel) currentLabel.innerText = formatTime(parseFloat(e.target.value));
-    });
+    seekSlider.addEventListener('mousedown', () => { seekSlider._isDragging = true; });
+    seekSlider.addEventListener('touchstart', () => { seekSlider._isDragging = true; }, { passive: true });
 
-    const commitSeek = (e) => {
-      const seekVal = parseFloat(e.target.value);
-      if (player && typeof player.seekTo === 'function') {
-        player.seekTo(seekVal, true);
-      }
-      isSeeking = false;
+    const doSeek = () => {
+      seekSlider._isDragging = false;
+      if (!STATE.duration) return;
+      const pct = parseFloat(seekSlider.value) / 100;
+      seekTo(pct * STATE.duration);
     };
 
-    seekSlider.addEventListener('mouseup', commitSeek);
-    seekSlider.addEventListener('touchend', commitSeek);
-    seekSlider.addEventListener('change', commitSeek);
+    seekSlider.addEventListener('mouseup', doSeek);
+    seekSlider.addEventListener('touchend', doSeek);
+
+    seekSlider.addEventListener('input', () => {
+      // Update fill live while dragging
+      const fill = document.getElementById('seekFill');
+      const pct = parseFloat(seekSlider.value);
+      if (fill) fill.style.width = `${pct}%`;
+      if (STATE.duration) {
+        const ct = (pct / 100) * STATE.duration;
+        const ctEl = document.getElementById('timeCurrentLabel');
+        if (ctEl) ctEl.textContent = formatTime(ct);
+      }
+    });
   }
-});
+
+  // Volume slider
+  const volSlider = document.getElementById('volumeSlider');
+  if (volSlider) {
+    volSlider.addEventListener('input', () => {
+      setVolume(parseInt(volSlider.value, 10));
+    });
+  }
+
+  // Mute button
+  const muteBtn = document.getElementById('muteBtn');
+  if (muteBtn) muteBtn.addEventListener('click', toggleMute);
+}
+
+function bindMobileBar() {
+  const mbarPrev = document.getElementById('mbarPrev');
+  const mbarPlay = document.getElementById('mbarPlay');
+  const mbarNext = document.getElementById('mbarNext');
+
+  if (mbarPrev) mbarPrev.addEventListener('click', playPrev);
+  if (mbarNext) mbarNext.addEventListener('click', playNext);
+  if (mbarPlay) {
+    mbarPlay.addEventListener('click', () => {
+      unlockMobileAudio();
+      togglePlayPause();
+    });
+  }
+}
+
+function bindTouchUnlock() {
+  // once: true auto-removes after first trigger
+  document.addEventListener('touchstart', unlockMobileAudio, { passive: true, once: true });
+  document.addEventListener('click', unlockMobileAudio, { once: true });
+}
+
+// ════════════════════════════════════════════════════════════════
+// INITIALIZATION
+// ════════════════════════════════════════════════════════════════
+
+async function init() {
+  // Start listeners count
+  startListenerFluctuation();
+
+  // Check backend
+  await checkBackendHealth();
+
+  // Bind all UI events
+  bindCategoryButtons();
+  bindSideCards();
+  bindPlayerControls();
+  bindMobileBar();
+  bindTouchUnlock();
+
+  // Load YouTube API
+  loadYouTubeAPI();
+
+  // Pre-load tracks for default category (no autoplay)
+  loadCategory('trending', false);
+
+  // Body loaded class
+  document.body.classList.add('loaded');
+
+  console.log('🎧 SurBeat initialized. Backend:', isBackendAvailable ? 'connected' : 'offline (using YouTube API)');
+}
+
+// Start on DOM ready
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', init);
+} else {
+  init();
+}
