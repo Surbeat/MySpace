@@ -5,7 +5,7 @@
  * 100% Legal / Royalty-Free / Instant Native Audio Streaming (< 10ms Playback)
  */
 
-(function(window) {
+(function (window) {
   'use strict';
 
   // 8 Required Energy Tags
@@ -441,14 +441,14 @@
 
     // Define getter for audioUrl and artwork so they generate on-demand in < 5ms
     Object.defineProperty(trackObj, 'audioUrl', {
-      get: function() {
+      get: function () {
         return generateWorkoutAudioBlobUrl(this);
       },
       configurable: true
     });
 
     Object.defineProperty(trackObj, 'artwork', {
-      get: function() {
+      get: function () {
         return generateWorkoutArtwork(this);
       },
       configurable: true
