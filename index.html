@@ -348,7 +348,18 @@
     <section class="discover-section" id="discoverSection" aria-label="Discover music">
       <div class="section-inner">
         <div class="section-header">
-          <h2 class="section-title">Discover <span class="gold">Music</span></h2>
+          <div class="discover-header-top">
+            <h2 class="section-title">Discover <span class="gold">Music</span></h2>
+            <div class="discover-controls">
+              <span class="feed-batch-badge" id="feedBatchBadge" title="20 batches × 10 songs = 200 songs">Batch 1 of 20</span>
+              <button class="btn-rotate-feed" id="btnRotateFeed" aria-label="Load next 10 songs from database">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14" aria-hidden="true">
+                  <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/>
+                </svg>
+                <span>Next 10</span>
+              </button>
+            </div>
+          </div>
           <p class="section-sub" id="discoverSubtitle">Browse tracks from the current playlist</p>
         </div>
         <div class="track-grid" id="trackGrid" role="list" aria-label="Track list">
@@ -456,19 +467,80 @@
           <!-- YouTube Attribution -->
           <div class="yt-attribution">
             <div class="yt-attr-row">
-              <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16" aria-hidden="true">
-                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
-              </svg>
-              <span>Powered by YouTube Data API v3 &amp; YouTube IFrame Player</span>
-            </div>
-            <p class="yt-attr-desc">SurBeat uses official YouTube API Services for music discovery and streaming, in compliance with YouTube Developer Policies.</p>
+          <div class="creator-story">
+            <p>
+              Rishabh Pandey is a software engineer, audio architecture enthusiast, and full-stack developer who envisioned <strong>SurBeat</strong> as the ultimate celebration of Indian music culture.
+            </p>
+            <p>
+              Frustrated by clunky web players and fragmented desi music platforms, Rishabh designed SurBeat from the ground up: fusing tactile vinyl turntable aesthetics with high-performance audio streaming, real-time presence indicators, dynamic category discovery, and strict compliance with the YouTube API Services ecosystem.
+            </p>
           </div>
 
-          <!-- Feature Badges -->
-          <div class="feature-badges" aria-label="Platform features">
-            <span class="f-badge">🪕 Indian Classical &amp; Modern</span>
-            <span class="f-badge">⚡ Instant 0ms Skip</span>
-            <span class="f-badge">✨ 100% Free Hi-Fi</span>
+          <div class="creator-tech-stack" aria-label="Technologies used">
+            <span class="tech-tag">HTML5 Audio &amp; Media Session API</span>
+            <span class="tech-tag">Vanilla JavaScript Engine</span>
+            <span class="tech-tag">YouTube IFrame Player API</span>
+            <span class="tech-tag">Node.js &amp; Express Real-Time SSE</span>
+            <span class="tech-tag">CSS3 Precision Motion Design</span>
+            <span class="tech-tag">Progressive Web App (PWA)</span>
+            <span class="tech-tag">Cloudflare Edge CDN</span>
+          </div>
+
+          <div class="creator-stats" aria-label="Platform Highlights">
+            <div class="c-stat">
+              <span class="c-stat-val">6</span>
+              <span class="c-stat-lbl">Curated Vibes</span>
+            </div>
+            <div class="c-stat-div" aria-hidden="true"></div>
+            <div class="c-stat">
+              <span class="c-stat-val">100%</span>
+              <span class="c-stat-lbl">Desi Culture</span>
+            </div>
+            <div class="c-stat-div" aria-hidden="true"></div>
+            <div class="c-stat">
+              <span class="c-stat-val">0ms</span>
+              <span class="c-stat-lbl">Lag Stream</span>
+            </div>
+            <div class="c-stat-div" aria-hidden="true"></div>
+            <div class="c-stat">
+              <span class="c-stat-val">PWA</span>
+              <span class="c-stat-lbl">Installable</span>
+            </div>
+          </div>
+
+          <div class="creator-footer">
+            <a
+              href="https://github.com/rishabhpandey"
+              class="creator-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub Profile (opens in new tab)"
+            >
+              <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true">
+                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+              </svg>
+              <span>GitHub</span>
+            </a>
+
+            <a
+              href="https://linkedin.com/in/rishabhpandey"
+              class="creator-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn Profile (opens in new tab)"
+            >
+              <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+              <span>LinkedIn</span>
+            </a>
+
+            <span class="creator-location" aria-label="Location">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14" aria-hidden="true">
+                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+              </svg>
+              India • Delhi NCR
+            </span>
           </div>
 
         </div>
@@ -478,14 +550,32 @@
   </main>
 
   <!-- ═══════════════════════════════════════
-       FOOTER
+       FOOTER & YOUTUBE API COMPLIANCE NOTICE
        ═══════════════════════════════════════ -->
   <footer class="site-footer" role="contentinfo">
-    <div class="footer-divider" aria-hidden="true"></div>
     <div class="footer-inner">
+      <div class="footer-compliance">
+        <div class="yt-attribution-box">
+          <div class="yt-badge">
+            <svg viewBox="0 0 24 24" fill="#FF0000" width="20" height="20" aria-hidden="true">
+              <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+            </svg>
+            <span>Powered by YouTube API Services</span>
+          </div>
+          <div class="yt-terms-links">
+            <p class="yt-attr-desc">SurBeat uses official YouTube API Services for music discovery and streaming, in compliance with YouTube Developer Policies.</p>
+            <div class="yt-links-row">
+              <a href="https://www.youtube.com/t/terms" target="_blank" rel="noopener noreferrer" class="yt-link">YouTube Terms of Service</a>
+              <span class="yt-sep">•</span>
+              <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" class="yt-link">Google Privacy Policy</a>
+              <span class="yt-sep">•</span>
+              <a href="https://developers.google.com/youtube/terms/api-services-terms-of-service" target="_blank" rel="noopener noreferrer" class="yt-link">YouTube API Terms</a>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="footer-left">
-        <span class="footer-brand">SurBeat</span>
-        <span class="footer-copy">&copy; 2026</span>
+        <span class="brand-sub">SURBEAT</span> • Premium Desi Vinyl Music Player • © 2024–2025
       </div>
       <div class="footer-right">
         Designed &amp; Engineered with <span class="heart" aria-label="love">❤️</span> by <strong>Rishabh Pandey</strong>
@@ -520,6 +610,20 @@
       </button>
     </div>
   </div>
+
+  <!-- ── DEV DEBUG PANEL (Zero-API Database Monitor) ── -->
+  <aside class="discover-debug-panel" id="discoverDebugPanel" aria-label="Developer Debug Panel">
+    <div class="debug-title">
+      <span>⚡ DISCOVER FEED MONITOR</span>
+      <button class="debug-btn-close" id="debugCloseBtn" aria-label="Close Debug Panel">×</button>
+    </div>
+    <div><strong>Category:</strong> <span id="debugCategory">Desi Reel Hits</span></div>
+    <div><strong>Database songs:</strong> <span id="debugTotalSongs">200</span></div>
+    <div><strong>Current cycle:</strong> <span id="debugCycle">1</span></div>
+    <div><strong>Current batch:</strong> <span id="debugBatch">1 / 20</span></div>
+    <div><strong>Current cursor:</strong> <span id="debugCursor">10 / 200</span></div>
+    <div><strong>API calls for Discover:</strong> <span class="debug-badge-green" id="debugApiCalls">0</span></div>
+  </aside>
 
   <!-- Scripts — Database catalogs first as they provide fallback tracks -->
   <script src="songsDatabaseCatalog.js"></script>

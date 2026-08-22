@@ -707,57 +707,213 @@ function setupVisibilityHandling() {
 }
 
 // ════════════════════════════════════════════════════════════════
-// 12. CATEGORY LOADING & DISCOVERY
+// ════════════════════════════════════════════════════════════════
+// 12. DATABASE-FIRST DISCOVER FEED MANAGER
 // ════════════════════════════════════════════════════════════════
 
-const CATEGORY_CACHE = {};
-let isQuotaExceeded = false;
+const DiscoverFeedManager = (() => {
+  const BATCH_SIZE = 10;
+  const STORAGE_FEED_KEY = 'surbeat_discover_feed_state';
+  const discoverCache = {};
+  let feedState = {};
+  let discoverApiCallCount = 0;
+  let isInitialized = false;
 
-function getFallbackCategoryTracks(category) {
-  let tracks = [];
-
-  // 1. Try global SurBeat Catalog
-  if (typeof window !== 'undefined' && typeof window.getSurBeatDatabaseSongs === 'function') {
-    tracks = window.getSurBeatDatabaseSongs(category);
-  } else if (typeof window !== 'undefined' && window.SURBEAT_CATALOG && window.SURBEAT_CATALOG[category]) {
-    tracks = window.SURBEAT_CATALOG[category];
+  function loadState() {
+    try {
+      const raw = localStorage.getItem(STORAGE_FEED_KEY);
+      if (raw) {
+        feedState = JSON.parse(raw);
+      }
+    } catch (e) {
+      console.warn('[SurBeat Feed] Could not read feed state from localStorage:', e);
+      feedState = {};
+    }
   }
 
-  // 2. Specific fallbacks for workout and awarapan if needed
-  if ((!tracks || tracks.length === 0) && category === 'workout' && typeof window !== 'undefined' && window.WORKOUT_CATALOG && Array.isArray(window.WORKOUT_CATALOG)) {
-    tracks = window.WORKOUT_CATALOG
-      .filter(t => t.ytId && isValidYouTubeId(t.ytId))
-      .map(t => ({
-        videoId: t.ytId,
-        title: t.title,
-        artist: t.artist,
-        category: 'workout',
-        thumbnail: t.artwork || getYouTubeThumbnail(t.ytId),
-      }));
+  function saveState() {
+    try {
+      localStorage.setItem(STORAGE_FEED_KEY, JSON.stringify(feedState));
+    } catch (e) {}
   }
 
-  if ((!tracks || tracks.length === 0) && category === 'awarapan') {
-    tracks = AWARAPAN_TRACKS;
+  // Fisher-Yates shuffle
+  function generateShuffledIndices(count) {
+    const indices = Array.from({ length: count }, (_, i) => i);
+    for (let i = count - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [indices[i], indices[j]] = [indices[j], indices[i]];
+    }
+    return indices;
   }
 
-  // 3. Ultimate fallback
-  if (!tracks || tracks.length === 0) {
-    tracks = AWARAPAN_TRACKS;
+  // Retrieve 200 songs for category from database/catalog (ZERO YouTube API calls)
+  function getCategoryDatabaseTracks(category) {
+    if (discoverCache[category] && discoverCache[category].length > 0) {
+      return discoverCache[category];
+    }
+
+    let tracks = [];
+
+    // 1. SurBeat Database Catalog (Comprehensive 200 songs per category)
+    if (typeof window !== 'undefined' && typeof window.getSurBeatDatabaseSongs === 'function') {
+      tracks = window.getSurBeatDatabaseSongs(category);
+    } else if (typeof window !== 'undefined' && window.SURBEAT_CATALOG && window.SURBEAT_CATALOG[category]) {
+      tracks = window.SURBEAT_CATALOG[category];
+    }
+
+    // 2. Workout catalog fallback if needed
+    if ((!tracks || tracks.length === 0) && category === 'workout' && typeof window !== 'undefined' && window.WORKOUT_CATALOG && Array.isArray(window.WORKOUT_CATALOG)) {
+      tracks = window.WORKOUT_CATALOG
+        .filter(t => t.ytId && isValidYouTubeId(t.ytId))
+        .map(t => ({
+          videoId: t.ytId,
+          title: t.title,
+          artist: t.artist,
+          category: 'workout',
+          thumbnail: t.artwork || getYouTubeThumbnail(t.ytId)
+        }));
+    }
+
+    // 3. Fallback to Awarapan tracks if category is awarapan
+    if ((!tracks || tracks.length === 0) && category === 'awarapan') {
+      tracks = AWARAPAN_TRACKS;
+    }
+
+    // 4. Default fallback
+    if (!tracks || tracks.length === 0) {
+      tracks = AWARAPAN_TRACKS;
+    }
+
+    const formatted = tracks.map((t, idx) => ({
+      videoId: t.videoId || t.ytId,
+      title: t.title || `Track #${idx + 1}`,
+      artist: t.artist || 'SurBeat Artist',
+      category: category,
+      thumbnail: t.thumbnail || t.artwork || getYouTubeThumbnail(t.videoId || t.ytId)
+    }));
+
+    discoverCache[category] = formatted;
+    return formatted;
   }
 
-  return tracks.map(t => ({
-    videoId: t.videoId || t.ytId,
-    title: t.title || 'SurBeat Melody',
-    artist: t.artist || 'SurBeat Artist',
-    category: category || t.category || 'trending',
-    thumbnail: t.thumbnail || t.artwork || getYouTubeThumbnail(t.videoId || t.ytId),
-  }));
-}
+  function getOrCreateCategoryState(category, totalCount) {
+    if (!feedState[category]) {
+      feedState[category] = {
+        currentIndex: 0,
+        cycle: 1,
+        shuffledOrder: generateShuffledIndices(totalCount),
+        lastUpdated: Date.now()
+      };
+      saveState();
+    }
+    const catState = feedState[category];
 
-async function loadCategory(category, autoPlay = false, forceRefresh = false) {
+    // Ensure valid shuffled order
+    if (!Array.isArray(catState.shuffledOrder) || catState.shuffledOrder.length !== totalCount) {
+      catState.shuffledOrder = generateShuffledIndices(totalCount);
+      catState.currentIndex = 0;
+      catState.cycle = catState.cycle || 1;
+      catState.lastUpdated = Date.now();
+      saveState();
+    }
+
+    return catState;
+  }
+
+  function getBatch(category, advance = false) {
+    const allTracks = getCategoryDatabaseTracks(category);
+    const totalCount = allTracks.length || 200;
+    const catState = getOrCreateCategoryState(category, totalCount);
+
+    if (advance) {
+      catState.currentIndex += BATCH_SIZE;
+      catState.lastUpdated = Date.now();
+
+      // When 200 songs are reached -> start new cycle and shuffle
+      if (catState.currentIndex >= totalCount) {
+        catState.cycle = (catState.cycle || 1) + 1;
+        catState.currentIndex = 0;
+        catState.shuffledOrder = generateShuffledIndices(totalCount);
+        console.log(`✨ [Discover Feed] Started Cycle #${catState.cycle} for "${category}" with a fresh shuffled ordering.`);
+      }
+      saveState();
+    }
+
+    const currentCursor = catState.currentIndex;
+    const batchIndex = Math.floor(currentCursor / BATCH_SIZE);
+    const totalBatches = Math.ceil(totalCount / BATCH_SIZE);
+    const batchNumber = Math.min(batchIndex + 1, totalBatches);
+
+    const batchTracks = [];
+    for (let i = 0; i < BATCH_SIZE; i++) {
+      const orderIdx = (currentCursor + i) % totalCount;
+      const trackIdx = catState.shuffledOrder[orderIdx] ?? orderIdx;
+      const track = allTracks[trackIdx] || allTracks[orderIdx % allTracks.length];
+      if (track) {
+        batchTracks.push(track);
+      }
+    }
+
+    return {
+      tracks: batchTracks,
+      batchNumber,
+      totalBatches,
+      cursor: currentCursor,
+      cycle: catState.cycle || 1,
+      totalSongs: totalCount,
+      category
+    };
+  }
+
+  function preloadNextBatchThumbnails(category) {
+    try {
+      const allTracks = getCategoryDatabaseTracks(category);
+      const totalCount = allTracks.length || 200;
+      const catState = getOrCreateCategoryState(category, totalCount);
+      const nextCursor = (catState.currentIndex + BATCH_SIZE) % totalCount;
+
+      for (let i = 0; i < BATCH_SIZE; i++) {
+        const orderIdx = (nextCursor + i) % totalCount;
+        const trackIdx = catState.shuffledOrder[orderIdx] ?? orderIdx;
+        const track = allTracks[trackIdx];
+        if (track && track.thumbnail) {
+          const img = new Image();
+          img.src = track.thumbnail;
+        }
+      }
+    } catch (e) {}
+  }
+
+  function logApiAttempt(source) {
+    discoverApiCallCount++;
+    console.warn(`🚨 [DISCOVER API CALL] API call attempted from: ${source}. Discover uses 0 API calls!`);
+    updateDebugPanel(STATE.currentCategory, null);
+  }
+
+  function getApiCallCount() {
+    return discoverApiCallCount;
+  }
+
+  function init() {
+    if (isInitialized) return;
+    loadState();
+    isInitialized = true;
+  }
+
+  return {
+    init,
+    getCategoryTracks: getCategoryDatabaseTracks,
+    getBatch,
+    preloadNextBatchThumbnails,
+    logApiAttempt,
+    getApiCallCount
+  };
+})();
+
+async function loadCategory(category, autoPlay = false, advanceBatch = false) {
   STATE.currentCategory = category;
   STATE.currentIndex = -1;
-  STATE.trackList = [];
 
   // Update category buttons UI
   document.querySelectorAll('.cat-btn').forEach(btn => {
@@ -766,64 +922,32 @@ async function loadCategory(category, autoPlay = false, forceRefresh = false) {
     btn.setAttribute('aria-selected', isActive ? 'true' : 'false');
   });
 
+  // Get 10 songs batch from DiscoverFeedManager (0 API calls)
+  const batch = DiscoverFeedManager.getBatch(category, advanceBatch);
+  STATE.trackList = batch.tracks;
+
   // Update discover subtitle
   const subEl = document.getElementById('discoverSubtitle');
-  if (subEl) subEl.textContent = `Browsing — ${CATEGORY_META[category]?.name || category}`;
-
-  // If already cached and not forcing refresh, use stable cached tracks immediately (no flicker/jump)
-  if (!forceRefresh && CATEGORY_CACHE[category] && CATEGORY_CACHE[category].length > 0) {
-    STATE.trackList = CATEGORY_CACHE[category];
-    renderDiscoverCards(STATE.trackList);
-    savePersistedSettings();
-    if (autoPlay) playTrack(0);
-    return;
+  if (subEl) {
+    const catName = CATEGORY_META[category]?.name || category;
+    subEl.textContent = `Browsing — ${catName} (Batch ${batch.batchNumber} of ${batch.totalBatches})`;
   }
 
-  // Clear discover grid with loading skeleton
-  const grid = document.getElementById('trackGrid');
-  if (grid) {
-    grid.innerHTML = `
-      <div class="tracks-placeholder" id="tracksPlaceholder">
-        <div class="loading-spinner" aria-hidden="true"></div>
-        <p style="margin-top:12px;color:var(--text-secondary)">Loading ${CATEGORY_META[category]?.name || category}…</p>
-      </div>`;
+  // Update batch badge
+  const badgeEl = document.getElementById('feedBatchBadge');
+  if (badgeEl) {
+    badgeEl.textContent = `Batch ${batch.batchNumber} of ${batch.totalBatches}`;
   }
 
-  let tracks = [];
+  // Render 10 discover cards with 16:9 aspect ratio, skeletons & fallback
+  renderDiscoverCards(STATE.trackList, batch);
 
-  // 1. Try backend API
-  tracks = await fetchTracksFromBackend(category);
+  // Preload next batch's 10 thumbnails in background
+  DiscoverFeedManager.preloadNextBatchThumbnails(category);
 
-  // 2. Try YouTube search API fallback (if quota not exceeded)
-  if (tracks.length === 0 && !isQuotaExceeded) {
-    tracks = await searchYouTube(category);
-  }
+  // Update dev debug panel
+  updateDebugPanel(category, batch);
 
-  // 3. Guaranteed instant Database Catalog Fallback when API quota is reached / offline
-  if (tracks.length === 0) {
-    tracks = getFallbackCategoryTracks(category);
-  }
-
-  // Merge with curated tracks for awarapan to ensure 100% complete collection
-  if (category === 'awarapan') {
-    const curated = AWARAPAN_TRACKS.map(t => ({
-      videoId: t.videoId,
-      title: t.title,
-      artist: t.artist,
-      category: t.category,
-      thumbnail: getYouTubeThumbnail(t.videoId),
-    }));
-
-    const existingIds = new Set(tracks.map(t => t.videoId));
-    const needed = curated.filter(t => !existingIds.has(t.videoId));
-    tracks = [...needed, ...tracks];
-  }
-
-  // Save to category cache for stable discover experience
-  CATEGORY_CACHE[category] = tracks;
-  STATE.trackList = tracks;
-
-  renderDiscoverCards(tracks);
   savePersistedSettings();
 
   if (autoPlay) {
@@ -832,11 +956,11 @@ async function loadCategory(category, autoPlay = false, forceRefresh = false) {
 }
 
 async function loadCategoryAndPlay(category) {
-  await loadCategory(category, true);
+  await loadCategory(category, true, false);
 }
 
 // ════════════════════════════════════════════════════════════════
-// 13. DATA FETCHING
+// 13. DATA FETCHING (Zero API Quota Compliance)
 // ════════════════════════════════════════════════════════════════
 
 async function fetchTracksFromBackend(category) {
@@ -865,55 +989,9 @@ async function fetchTracksFromBackend(category) {
 }
 
 async function searchYouTube(category) {
-  if (!FRONTEND_YT_API_KEY || isQuotaExceeded) return [];
-
-  // Use primary canonical query to keep discover tracks stable and high-quality
-  const queries = CATEGORY_QUERIES[category] || CATEGORY_QUERIES.trending;
-  const query = queries[0];
-
-  try {
-    const url = new URL('https://www.googleapis.com/youtube/v3/search');
-    url.searchParams.set('part', 'snippet');
-    url.searchParams.set('q', query);
-    url.searchParams.set('type', 'video');
-    url.searchParams.set('videoCategoryId', '10'); // Music
-    url.searchParams.set('videoEmbeddable', 'true');
-    url.searchParams.set('maxResults', '20');
-    url.searchParams.set('relevanceLanguage', 'hi');
-    url.searchParams.set('key', FRONTEND_YT_API_KEY);
-
-    const controller = new AbortController();
-    const tid = setTimeout(() => controller.abort(), 4000);
-    const res = await fetch(url.toString(), { signal: controller.signal });
-    clearTimeout(tid);
-
-    if (res.status === 403) {
-      isQuotaExceeded = true;
-      console.info('⚡ [SurBeat] YouTube Search API quota reached. Instant failover to verified Database Catalog.');
-      return [];
-    }
-
-    if (!res.ok) {
-      return [];
-    }
-
-    const data = await res.json();
-    if (!data || !Array.isArray(data.items)) return [];
-
-    return data.items
-      .filter(item => isValidYouTubeId(item.id?.videoId))
-      .map(item => ({
-        videoId: item.id.videoId,
-        title: item.snippet?.title || 'Unknown Track',
-        artist: item.snippet?.channelTitle || 'Unknown Artist',
-        category: category,
-        thumbnail: item.snippet?.thumbnails?.high?.url ||
-                   item.snippet?.thumbnails?.medium?.url ||
-                   getYouTubeThumbnail(item.id.videoId),
-      }));
-  } catch (e) {
-    return [];
-  }
+  // Discover feed does NOT call searchYouTube. Log any accidental attempt.
+  DiscoverFeedManager.logApiAttempt('searchYouTube');
+  return [];
 }
 
 // ════════════════════════════════════════════════════════════════
@@ -1108,15 +1186,15 @@ function showPlayerControls() {
 // 15. DISCOVER SECTION RENDERING
 // ════════════════════════════════════════════════════════════════
 
-function renderDiscoverCards(tracks) {
+function renderDiscoverCards(tracks, batchInfo) {
   const grid = document.getElementById('trackGrid');
   if (!grid) return;
 
-  if (tracks.length === 0) {
+  if (!tracks || tracks.length === 0) {
     grid.innerHTML = `
       <div class="tracks-placeholder">
         <div class="placeholder-icon">🎵</div>
-        <p>No tracks found for this category.</p>
+        <p>No tracks found in database catalog.</p>
       </div>`;
     return;
   }
@@ -1139,20 +1217,25 @@ function createTrackCard(track, index, categoryName) {
   card.setAttribute('aria-label', `Play ${track.title} by ${track.artist}`);
   card.dataset.index = index;
 
-  const thumb = track.thumbnail || '';
-  const hasThumb = !!thumb;
+  const thumb = track.thumbnail || getYouTubeThumbnail(track.videoId);
+  const isPriority = index < 4;
 
   card.innerHTML = `
     <div class="track-thumb">
-      ${hasThumb
-        ? `<img
-            src="${thumb}"
-            alt="${escapeHtml(track.title)} thumbnail"
-            loading="lazy"
-            onerror="this.parentElement.innerHTML='<div class=track-thumb-fallback>🎵</div>'"
-           />`
-        : `<div class="track-thumb-fallback">🎵</div>`
-      }
+      <div class="thumb-skeleton" aria-hidden="true"></div>
+      <img
+        src="${thumb}"
+        alt="${escapeHtml(track.title)} thumbnail"
+        loading="${isPriority ? 'eager' : 'lazy'}"
+        width="480"
+        height="270"
+        onload="this.classList.add('img-loaded'); const s = this.previousElementSibling; if (s) s.style.display='none';"
+        onerror="this.style.display='none'; const s = this.previousElementSibling; if (s) s.style.display='none'; const f = this.nextElementSibling; if (f) f.classList.remove('hidden');"
+      />
+      <div class="track-thumb-fallback hidden" aria-hidden="true">
+        <span class="fallback-icon">🎵</span>
+        <span class="fallback-brand">SurBeat Music</span>
+      </div>
       <div class="track-play-overlay">
         <button class="track-play-btn" aria-label="Play ${escapeHtml(track.title)}" tabindex="-1">
           <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22" aria-hidden="true">
@@ -1180,7 +1263,68 @@ function createTrackCard(track, index, categoryName) {
 }
 
 // ════════════════════════════════════════════════════════════════
-// 16. MOBILE AUDIO UNLOCK & PWA SERVICE WORKER
+// 16. DEVELOPER DEBUG PANEL & API MONITOR
+// ════════════════════════════════════════════════════════════════
+
+function updateDebugPanel(category, batch) {
+  const panel = document.getElementById('discoverDebugPanel');
+  if (!panel) return;
+
+  const catName = CATEGORY_META[category]?.name || category;
+  const debugCat = document.getElementById('debugCategory');
+  const debugTotal = document.getElementById('debugTotalSongs');
+  const debugCycle = document.getElementById('debugCycle');
+  const debugBatch = document.getElementById('debugBatch');
+  const debugCursor = document.getElementById('debugCursor');
+  const debugApiCalls = document.getElementById('debugApiCalls');
+
+  if (debugCat) debugCat.textContent = catName;
+  if (debugTotal) debugTotal.textContent = batch ? batch.totalSongs : 200;
+  if (debugCycle) debugCycle.textContent = batch ? batch.cycle : 1;
+  if (debugBatch) debugBatch.textContent = batch ? `${batch.batchNumber} / ${batch.totalBatches}` : '1 / 20';
+  if (debugCursor) debugCursor.textContent = batch ? `${batch.cursor + batch.tracks.length} / ${batch.totalSongs}` : '10 / 200';
+  
+  if (debugApiCalls) {
+    const count = DiscoverFeedManager.getApiCallCount();
+    debugApiCalls.textContent = count;
+    if (count > 0) {
+      debugApiCalls.style.background = 'rgba(255, 60, 60, 0.2)';
+      debugApiCalls.style.color = '#ff6b6b';
+      debugApiCalls.style.borderColor = 'rgba(255, 60, 60, 0.4)';
+    } else {
+      debugApiCalls.style.background = 'rgba(40, 180, 80, 0.2)';
+      debugApiCalls.style.color = '#4ade80';
+      debugApiCalls.style.borderColor = 'rgba(74, 222, 128, 0.3)';
+    }
+  }
+}
+
+function initDebugPanel() {
+  const panel = document.getElementById('discoverDebugPanel');
+  const params = new URLSearchParams(window.location.search);
+  const showDebug = params.get('debug') === 'true' || window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+  
+  if (panel && showDebug) {
+    panel.classList.add('visible');
+  }
+
+  const closeBtn = document.getElementById('debugCloseBtn');
+  if (closeBtn && panel) {
+    closeBtn.addEventListener('click', () => {
+      panel.classList.remove('visible');
+    });
+  }
+
+  // Keyboard shortcut Ctrl+Shift+D to toggle debug panel anytime
+  document.addEventListener('keydown', (e) => {
+    if (e.ctrlKey && e.shiftKey && (e.key === 'D' || e.key === 'd')) {
+      if (panel) panel.classList.toggle('visible');
+    }
+  });
+}
+
+// ════════════════════════════════════════════════════════════════
+// 17. MOBILE AUDIO UNLOCK & PWA SERVICE WORKER
 // ════════════════════════════════════════════════════════════════
 
 let audioUnlocked = false;
@@ -1199,27 +1343,30 @@ function unlockMobileAudio() {
 }
 
 function registerServiceWorker() {
-  if ('serviceWorker' in navigator && !isFileProtocol) {
-    const doRegister = () => {
-      navigator.serviceWorker.register('./sw.js')
-        .then((reg) => {
-          console.log('⚡ SurBeat PWA Service Worker Registered:', reg.scope);
+  if ('serviceWorker' in navigator && (window.location.protocol === 'https:' || window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1')) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/sw.js')
+        .then(reg => {
+          reg.addEventListener('updatefound', () => {
+            const newWorker = reg.installing;
+            if (newWorker) {
+              newWorker.addEventListener('statechange', () => {
+                if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+                  console.info('[SurBeat PWA] New update available.');
+                }
+              });
+            }
+          });
         })
-        .catch((err) => {
-          console.warn('[SurBeat] SW registration error:', err);
+        .catch(err => {
+          console.warn('[SurBeat PWA] Service Worker registration failed:', err);
         });
-    };
-
-    if (document.readyState === 'complete') {
-      doRegister();
-    } else if (typeof window !== 'undefined' && typeof window.addEventListener === 'function') {
-      window.addEventListener('load', doRegister);
-    }
+    });
   }
 }
 
 // ════════════════════════════════════════════════════════════════
-// 17. BACKEND HEALTH CHECK
+// 18. BACKEND HEALTH CHECK
 // ════════════════════════════════════════════════════════════════
 
 async function checkBackendHealth() {
@@ -1240,15 +1387,21 @@ async function checkBackendHealth() {
 }
 
 // ════════════════════════════════════════════════════════════════
-// 18. UI EVENT BINDINGS
+// 19. UI EVENT BINDINGS
 // ════════════════════════════════════════════════════════════════
 
 function bindCategoryButtons() {
   document.querySelectorAll('.cat-btn').forEach(btn => {
     btn.addEventListener('click', () => {
       const cat = btn.dataset.category;
-      if (!cat || cat === STATE.currentCategory) return;
-      loadCategory(cat, false);
+      if (!cat) return;
+      if (cat === STATE.currentCategory) {
+        // If clicking active category again, advance to next 10 songs batch
+        loadCategory(cat, false, true);
+      } else {
+        // If switching category, load from saved cursor
+        loadCategory(cat, false, false);
+      }
     });
   });
 }
@@ -1260,7 +1413,7 @@ function bindSideCards() {
   const activateCard = (card) => {
     if (!card) return;
     const cat = card.dataset.category;
-    if (cat) loadCategory(cat, false);
+    if (cat) loadCategory(cat, false, false);
   };
 
   [sideA, sideB].forEach(card => {
@@ -1276,6 +1429,14 @@ function bindSideCards() {
 }
 
 function bindPlayerControls() {
+  // Feed Next 10 rotation button
+  const rotateBtn = document.getElementById('btnRotateFeed');
+  if (rotateBtn) {
+    rotateBtn.addEventListener('click', () => {
+      loadCategory(STATE.currentCategory, false, true);
+    });
+  }
+
   // Play trigger (initial start button)
   const triggerBtn = document.getElementById('playTriggerBtn');
   if (triggerBtn) {
@@ -1391,12 +1552,15 @@ function bindTouchUnlock() {
 }
 
 // ════════════════════════════════════════════════════════════════
-// 19. INITIALIZATION
+// 20. INITIALIZATION
 // ════════════════════════════════════════════════════════════════
 
 async function init() {
   // Load saved preferences (volume, repeat, shuffle, category)
   loadPersistedSettings();
+
+  // Initialize Database-First Discover Feed Manager
+  DiscoverFeedManager.init();
 
   // Start real-time clock & organic listener count
   startListenerFluctuation();
@@ -1417,6 +1581,9 @@ async function init() {
   bindMobileBar();
   bindTouchUnlock();
 
+  // Initialize Developer Debug Panel & Monitor
+  initDebugPanel();
+
   // Apply persisted settings to UI
   updateVolumeUI(STATE.volume);
   updateRepeatUI();
@@ -1430,14 +1597,14 @@ async function init() {
   // Load YouTube IFrame API
   loadYouTubeAPI();
 
-  // Preload track list for category (without autoplay)
-  loadCategory(initialCategory, false);
+  // Load category batch from Database-First Feed Manager (0 YouTube API calls)
+  loadCategory(initialCategory, false, false);
 
   // Initialize media session action listeners early where supported
   initMediaSessionHandlers();
 
   document.body.classList.add('loaded');
-  console.log('🎧 SurBeat Audio Engine initialized. Ready for background playback.');
+  console.log('🎧 SurBeat Audio Engine & Database Feed Manager initialized.');
 }
 
 if (document.readyState === 'loading') {
