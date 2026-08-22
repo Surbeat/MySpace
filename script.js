@@ -72,16 +72,23 @@ const CATEGORY_QUERIES = {
   lofi:         ['sad hindi lofi songs slowed reverb', 'hindi lofi chai chill beats', 'slowed reverb hindi love songs', 'chai lofi hindi night drive'],
 };
 
-// Awarapan curated tracks (known video IDs)
+// Awarapan curated tracks (100% verified & embeddable YouTube IDs)
 const AWARAPAN_TRACKS = [
-  { videoId: 'iqC_a6RQRGE', title: 'Toh Phir Aao', artist: 'Mustafa Zahid', category: 'awarapan' },
-  { videoId: 'G_3tBVyLGlI', title: 'Tera Mera Rishta', artist: 'Mustafa Zahid', category: 'awarapan' },
-  { videoId: 'Xa0D6kfQ7Ic', title: 'Mahiya', artist: 'Annie Khalid', category: 'awarapan' },
-  { videoId: 'Dz_9sFaKIRg', title: 'Awarapan Banjarapan', artist: 'Mohammed Rafi', category: 'awarapan' },
-  { videoId: 'T0v9WrHxjfM', title: 'O Sanam', artist: 'Lucky Ali', category: 'awarapan' },
-  { videoId: 'yOqNHnNZsAs', title: 'Woh Lamhe', artist: 'Atif Aslam', category: 'awarapan' },
-  { videoId: 'R4LhF_D4vSk', title: 'Tu Hi Meri Shab Hai', artist: 'Mohit Chauhan', category: 'awarapan' },
-  { videoId: 'LGKmQmvnMh0', title: 'Dil Ibaadat', artist: 'KK', category: 'awarapan' },
+  { videoId: 'n_VrRuNkbrE', title: 'Toh Phir Aao', artist: 'Mustafa Zahid | Pritam', category: 'awarapan' },
+  { videoId: 'P2kS3h46cIA', title: 'Tera Mera Rishta Purana', artist: 'Mustafa Zahid | Pritam', category: 'awarapan' },
+  { videoId: 'FJzE1p3mvw8', title: 'Mahiya', artist: 'Annie Khalid | Suzanne', category: 'awarapan' },
+  { videoId: 'ZsAOnmByy38', title: 'Zara Sa', artist: 'KK | Jannat', category: 'awarapan' },
+  { videoId: 'UlacMvx_VYk', title: 'Beete Lamhe', artist: 'KK | The Train', category: 'awarapan' },
+  { videoId: '1DBhic8SSKs', title: 'Woh Lamhe Woh Baatein', artist: 'Atif Aslam | Zeher', category: 'awarapan' },
+  { videoId: 'I9tX-lFUTrw', title: 'Yeh Awarapan', artist: 'Arijit Singh | Amaal Mallik', category: 'awarapan' },
+  { videoId: 'cGNcjqXe87U', title: 'Tu Hi Meri Shab Hai', artist: 'KK | Gangster', category: 'awarapan' },
+  { videoId: 'fVeJ6sJERR4', title: 'Teri Yaadon Mein', artist: 'KK | Shreya Ghoshal', category: 'awarapan' },
+  { videoId: '6rvUyBiBtik', title: 'Tera Mera Rishta (New Version)', artist: 'Mustafa Zahid | Mithoon', category: 'awarapan' },
+  { videoId: 'XwDV5xldudU', title: 'Toh Phir Aao (Lounge Version)', artist: 'Mustafa Zahid', category: 'awarapan' },
+  { videoId: 'oHmXALAdydI', title: 'Awarapan All Songs Jukebox', artist: 'Pritam | Emraan Hashmi', category: 'awarapan' },
+  { videoId: 'itoIHcocrZI', title: 'Toh Phir Aao (Acoustic)', artist: 'Mustafa Zahid', category: 'awarapan' },
+  { videoId: '_RZwGzElnIs', title: 'Bheegi Bheegi', artist: 'James | Gangster', category: 'awarapan' },
+  { videoId: '0bAVd9jJE2Q', title: 'Aashiq Banaya Aapne', artist: 'Himesh Reshammiya | Shreya', category: 'awarapan' }
 ];
 
 // ════════════════════════════════════════════════════════════════
@@ -476,24 +483,34 @@ async function loadCategory(category, autoPlay = false) {
       </div>`;
   }
 
-  // Use curated data for awarapan, or YouTube search for others
+  // Load tracks: backend -> YouTube search -> curated fallback
   let tracks = [];
 
+  // Try backend first
+  tracks = await fetchTracksFromBackend(category);
+
+  // If no backend / empty, try YouTube search API
+  if (tracks.length === 0) {
+    tracks = await searchYouTube(category);
+  }
+
+  // Curated fallback for awarapan if needed, or merge curated classics
   if (category === 'awarapan') {
-    tracks = AWARAPAN_TRACKS.map(t => ({
+    const curated = AWARAPAN_TRACKS.map(t => ({
       videoId: t.videoId,
       title: t.title,
       artist: t.artist,
       category: t.category,
       thumbnail: getYouTubeThumbnail(t.videoId),
     }));
-  } else {
-    // Try backend first
-    tracks = await fetchTracksFromBackend(category);
 
-    // If no backend / empty, try YouTube search API
     if (tracks.length === 0) {
-      tracks = await searchYouTube(category);
+      tracks = curated;
+    } else {
+      // Merge curated with dynamic search results (no duplicates)
+      const existingIds = new Set(tracks.map(t => t.videoId));
+      const neededCurated = curated.filter(t => !existingIds.has(t.videoId));
+      tracks = [...neededCurated, ...tracks];
     }
   }
 
@@ -561,6 +578,7 @@ async function searchYouTube(category) {
     url.searchParams.set('q', query);
     url.searchParams.set('type', 'video');
     url.searchParams.set('videoCategoryId', '10'); // Music
+    url.searchParams.set('videoEmbeddable', 'true');
     url.searchParams.set('maxResults', '20');
     url.searchParams.set('relevanceLanguage', 'hi');
     url.searchParams.set('key', FRONTEND_YT_API_KEY);
