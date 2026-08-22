@@ -1,6 +1,7 @@
 /**
- * SurBeat — Comprehensive 200-Song Database Catalog Per Category
- * 100% Real, Verified, Embeddable YouTube IDs with Exact Matching Titles, Artists & Thumbnails
+ * SurBeat — Comprehensive Canonical 200-Song Database Catalog Per Category
+ * 100% Real, Verified, Embeddable YouTube IDs with Canonical Track Structure:
+ * { id, youtubeId, videoId, title, artist, album, category, thumbnail }
  * Zero-Quota Database Feed Engine (6 Categories × 200 Songs = 1,200 Tracks)
  */
 
@@ -10,8412 +11,12012 @@
   const SONGS_DATABASE = {
   "trending": [
     {
+      "id": "trending-001",
+      "youtubeId": "LK7-_dgAVQE",
       "videoId": "LK7-_dgAVQE",
       "title": "Tauba Tauba",
       "artist": "Bad Newz | Vicky Kaushal | Triptii Dim…",
+      "album": "Bad Newz",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/LK7-_dgAVQE/hqdefault.jpg"
     },
     {
+      "id": "trending-002",
+      "youtubeId": "cWMxCE2HTag",
       "videoId": "cWMxCE2HTag",
       "title": "SOFTLY KARAN AUJLA",
       "artist": "IKKY | LATEST PUNJABI SONGS 2023",
+      "album": "IKKY",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/cWMxCE2HTag/hqdefault.jpg"
     },
     {
+      "id": "trending-003",
+      "youtubeId": "XTp5jaRU3Ws",
       "videoId": "XTp5jaRU3Ws",
       "title": "WAVY KARAN AUJLA",
       "artist": "LATEST PUNJABI SONGS 2024",
+      "album": "Desi Reel Hits",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/XTp5jaRU3Ws/hqdefault.jpg"
     },
     {
+      "id": "trending-004",
+      "youtubeId": "BtQp2U6hJII",
       "videoId": "BtQp2U6hJII",
       "title": "White Brown Black - Avvy Sra",
       "artist": "Karan Aujla | Jaani | Amanninder Singh…",
+      "album": "Karan Aujla",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/BtQp2U6hJII/hqdefault.jpg"
     },
     {
+      "id": "trending-005",
+      "youtubeId": "o9PY6NsB3_E",
       "videoId": "o9PY6NsB3_E",
       "title": "Chitta Kurta Karan Aujla feat. Gurlez Akhtar",
       "artist": "Deep jandu | Punjabi Songs 2019",
+      "album": "Deep jandu",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/o9PY6NsB3_E/hqdefault.jpg"
     },
     {
+      "id": "trending-006",
+      "youtubeId": "-YlmnPh-6rE",
       "videoId": "-YlmnPh-6rE",
       "title": "For A Reason Karan Aujla",
       "artist": "Tania | Ikky | Latest Punjabi Songs 2025",
+      "album": "Tania",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/-YlmnPh-6rE/hqdefault.jpg"
     },
     {
+      "id": "trending-007",
+      "youtubeId": "x-KbnJ9fvJc",
       "videoId": "x-KbnJ9fvJc",
       "title": "Kya Baat Aa : Karan Aujla Tania",
       "artist": "Desi Crew | Latest Punjabi Songs",
+      "album": "Desi Crew",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/x-KbnJ9fvJc/hqdefault.jpg"
     },
     {
+      "id": "trending-008",
+      "youtubeId": "vsWxs1tuwDk",
       "videoId": "vsWxs1tuwDk",
       "title": "Winning Speech (Music Video) Karan Aujla",
       "artist": "Mxrci | Latest Punjabi Songs 2024",
+      "album": "Mxrci",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/vsWxs1tuwDk/hqdefault.jpg"
     },
     {
+      "id": "trending-009",
+      "youtubeId": "5GCfYLguTIs",
       "videoId": "5GCfYLguTIs",
       "title": "BOYFRIEND(MUSIC VIDEO) KARAN AUJLA| SUNANDA",
       "artist": "IKKY | Latest Punjabi Songs 2025",
+      "album": "IKKY",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/5GCfYLguTIs/hqdefault.jpg"
     },
     {
+      "id": "trending-010",
+      "youtubeId": "uChhQpHMmXE",
       "videoId": "uChhQpHMmXE",
       "title": "Aaye Haaye",
       "artist": "Karan Aujla, Nora Fatehi, Neha Kakkar,…",
+      "album": "Desi Reel Hits",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/uChhQpHMmXE/hqdefault.jpg"
     },
     {
+      "id": "trending-011",
+      "youtubeId": "CeFQO9MQNqs",
       "videoId": "CeFQO9MQNqs",
       "title": "Badshah X Karan Aujla - Players",
       "artist": "3:00 AM Sessions",
+      "album": "Desi Reel Hits",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/CeFQO9MQNqs/hqdefault.jpg"
     },
     {
+      "id": "trending-012",
+      "youtubeId": "aFWDOFg7X2A",
       "videoId": "aFWDOFg7X2A",
       "title": "On Top Karan Aujla",
       "artist": "Yeah Proof | New Punjabi Songs 2022",
+      "album": "Yeah Proof",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/aFWDOFg7X2A/hqdefault.jpg"
     },
     {
+      "id": "trending-013",
+      "youtubeId": "k85UB5b6pJU",
       "videoId": "k85UB5b6pJU",
       "title": "Admirin' You Karan Aujla",
       "artist": "Ikky | Making Memories | Latest Punjab…",
+      "album": "Ikky",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/k85UB5b6pJU/hqdefault.jpg"
     },
     {
+      "id": "trending-014",
+      "youtubeId": "2sAzb3kraoQ",
       "videoId": "2sAzb3kraoQ",
       "title": "Mexico Koka",
       "artist": "Karan Aujla Mahira Sharma Latest Punja…",
+      "album": "Desi Reel Hits",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/2sAzb3kraoQ/hqdefault.jpg"
     },
     {
+      "id": "trending-015",
+      "youtubeId": "cHwQowOzAf0",
       "videoId": "cHwQowOzAf0",
       "title": "HINT Karan Aujla",
       "artist": "Rupan Bal | Jay Trak | Latest Punjabi …",
+      "album": "Rupan Bal",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/cHwQowOzAf0/hqdefault.jpg"
     },
     {
+      "id": "trending-016",
+      "youtubeId": "Guq9Vl8dK30",
       "videoId": "Guq9Vl8dK30",
       "title": "Take It Easy Karan Aujla.",
       "artist": "Ikky | Four You EP | Latest Punjabi So…",
+      "album": "Ikky",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/Guq9Vl8dK30/hqdefault.jpg"
     },
     {
+      "id": "trending-017",
+      "youtubeId": "fRJ03btNsao",
       "videoId": "fRJ03btNsao",
       "title": "Bachke Bachke Karan Aujla I Ikky",
       "artist": "Latest Punjabi Songs 2023",
+      "album": "Desi Reel Hits",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/fRJ03btNsao/hqdefault.jpg"
     },
     {
+      "id": "trending-018",
+      "youtubeId": "RuDsBrSczis",
       "videoId": "RuDsBrSczis",
       "title": "WYTB Karan Aujla ft Gurlej Akhtar",
       "artist": "New Punjabi Songs 2022",
+      "album": "Desi Reel Hits",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/RuDsBrSczis/hqdefault.jpg"
     },
     {
+      "id": "trending-019",
+      "youtubeId": "BXNxrT59MzQ",
       "videoId": "BXNxrT59MzQ",
       "title": "Jee Ni Lagda Karan Aujla I Making Memories I Ikky",
       "artist": "Latest Punjabi Songs 2023",
+      "album": "Desi Reel Hits",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/BXNxrT59MzQ/hqdefault.jpg"
     },
     {
+      "id": "trending-020",
+      "youtubeId": "U4qD41gPQMU",
       "videoId": "U4qD41gPQMU",
       "title": "Softly",
       "artist": "Karan Aujla - Topic",
+      "album": "Desi Reel Hits",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/U4qD41gPQMU/hqdefault.jpg"
     },
     {
+      "id": "trending-021",
+      "youtubeId": "roz9sXFkTuE",
       "videoId": "roz9sXFkTuE",
       "title": "Aaj Ki Raat",
       "artist": "Stree 2 | Tamannaah Bhatia | Sachin–Ji…",
+      "album": "Stree 2",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/roz9sXFkTuE/hqdefault.jpg"
     },
     {
+      "id": "trending-022",
+      "youtubeId": "hxMNYkLN7tI",
       "videoId": "hxMNYkLN7tI",
       "title": "Aaj Ki Raat - Full Song",
       "artist": "Stree 2| Tamannaah Bhatia, Rajkummar R…",
+      "album": "Stree 2",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/hxMNYkLN7tI/hqdefault.jpg"
     },
     {
+      "id": "trending-023",
+      "youtubeId": "nFgsBxw-zWQ",
       "videoId": "nFgsBxw-zWQ",
       "title": "Aayi Nai -Stree 2",
       "artist": "Shraddha Kapoor | Rajkummar Rao | Sach…",
+      "album": "Shraddha Kapoor",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/nFgsBxw-zWQ/hqdefault.jpg"
     },
     {
+      "id": "trending-024",
+      "youtubeId": "YyepU5ztLf4",
       "videoId": "YyepU5ztLf4",
       "title": "Shararat",
       "artist": "Dhurandhar | Ranveer, Aditya Dhar, Sha…",
+      "album": "Dhurandhar",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/YyepU5ztLf4/hqdefault.jpg"
     },
     {
+      "id": "trending-025",
+      "youtubeId": "xWi8nDUjHGA",
       "videoId": "xWi8nDUjHGA",
       "title": "Yo Yo Honey Singh: DIL CHORI (Video) Simar Kaur,…",
       "artist": "Hans Raj Hans | Sonu Ke Titu Ki Sweety",
+      "album": "Hans Raj Hans",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/xWi8nDUjHGA/hqdefault.jpg"
     },
     {
+      "id": "trending-026",
+      "youtubeId": "1xYZeDReUz4",
       "videoId": "1xYZeDReUz4",
       "title": "Milegi Milegi Video Song",
       "artist": "STREE | Mika Singh | Sachin-Jigar | Ra…",
+      "album": "STREE",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/1xYZeDReUz4/hqdefault.jpg"
     },
     {
+      "id": "trending-027",
+      "youtubeId": "ri1Ar5nEq4s",
       "videoId": "ri1Ar5nEq4s",
       "title": "Aaj Ki Raat - 8K Video",
       "artist": "Stree 2 | Tamannaah Bhatia, Rajkummar …",
+      "album": "Stree 2",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/ri1Ar5nEq4s/hqdefault.jpg"
     },
     {
+      "id": "trending-028",
+      "youtubeId": "PkgStlsVaqw",
       "videoId": "PkgStlsVaqw",
       "title": "Aao Kabhi Haveli Pe Video",
       "artist": "STREE | Kriti Sanon | Badshah, Nikhita…",
+      "album": "STREE",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/PkgStlsVaqw/hqdefault.jpg"
     },
     {
+      "id": "trending-029",
+      "youtubeId": "1-nnEM8chwo",
       "videoId": "1-nnEM8chwo",
       "title": "Khoobsurat",
       "artist": "Stree 2 | Varun Dhawan | Shraddha Kapo…",
+      "album": "Stree 2",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/1-nnEM8chwo/hqdefault.jpg"
     },
     {
+      "id": "trending-030",
+      "youtubeId": "Zrt77f7nTqY",
       "videoId": "Zrt77f7nTqY",
       "title": "Morni",
       "artist": "Badshah | Sharvi Yadav | Preity Mukhun…",
+      "album": "Badshah",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/Zrt77f7nTqY/hqdefault.jpg"
     },
     {
+      "id": "trending-031",
+      "youtubeId": "XtZTpxnrHAc",
       "videoId": "XtZTpxnrHAc",
       "title": "Aaj Ki Raat (From \"Stree 2\")",
       "artist": "Sachin-Jigar - Topic",
+      "album": "Desi Reel Hits",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/XtZTpxnrHAc/hqdefault.jpg"
     },
     {
+      "id": "trending-032",
+      "youtubeId": "cxKAtmvf-uM",
       "videoId": "cxKAtmvf-uM",
       "title": "Tumhare Hi Rahenge Hum",
       "artist": "Stree 2 | Shraddha Kapoor | Rajkummar …",
+      "album": "Stree 2",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/cxKAtmvf-uM/hqdefault.jpg"
     },
     {
+      "id": "trending-033",
+      "youtubeId": "v5jVX0QYwQo",
       "videoId": "v5jVX0QYwQo",
       "title": "Shararat - 8K Video",
       "artist": "Dhurandhar | Ranveer Singh, Shashwat S…",
+      "album": "Dhurandhar",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/v5jVX0QYwQo/hqdefault.jpg"
     },
     {
+      "id": "trending-034",
+      "youtubeId": "2G2_pc4IfUs",
       "videoId": "2G2_pc4IfUs",
       "title": "Chipmunks Songs || Aayi Nai || Stree 2 .....",
       "artist": "AKB FUNTUBE",
+      "album": "Desi Reel Hits",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/2G2_pc4IfUs/hqdefault.jpg"
     },
     {
+      "id": "trending-035",
+      "youtubeId": "tA3Cv-rYcy4",
       "videoId": "tA3Cv-rYcy4",
       "title": "Aaj Ki Raat",
       "artist": "Lyrical, Stree 2, Tamannaah Bhatia,Raj…",
+      "album": "Desi Reel Hits",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/tA3Cv-rYcy4/hqdefault.jpg"
     },
     {
+      "id": "trending-036",
+      "youtubeId": "KVnheXywIbY",
       "videoId": "KVnheXywIbY",
       "title": "Stree 2",
       "artist": "Official Trailer | Shraddha K | Rajkum…",
+      "album": "Official Trailer",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/KVnheXywIbY/hqdefault.jpg"
     },
     {
+      "id": "trending-037",
+      "youtubeId": "NZ1EBaqDL0M",
       "videoId": "NZ1EBaqDL0M",
       "title": "NASHA: Tamannaah B, Ajay D, Riteish D",
       "artist": "Jasmine S, Sachet T, Jaani | Bhushan K…",
+      "album": "Jasmine S, Sachet T, Jaani",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/NZ1EBaqDL0M/hqdefault.jpg"
     },
     {
+      "id": "trending-038",
+      "youtubeId": "eehSZgV-ovc",
       "videoId": "eehSZgV-ovc",
       "title": "Aayi Nai - Lyrical",
       "artist": "Stree 2 | Shraddha Kapoor | Rajkummar …",
+      "album": "Stree 2",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/eehSZgV-ovc/hqdefault.jpg"
     },
     {
+      "id": "trending-039",
+      "youtubeId": "VlvOgk5BHS4",
       "videoId": "VlvOgk5BHS4",
       "title": "Stree 2",
       "artist": "Official Trailer | Shraddha K | Rajkum…",
+      "album": "Official Trailer",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/VlvOgk5BHS4/hqdefault.jpg"
     },
     {
+      "id": "trending-040",
+      "youtubeId": "0nrvPVnTWlc",
       "videoId": "0nrvPVnTWlc",
       "title": "Aayi Nai - 8K Video",
       "artist": "Stree 2 | Shraddha Kapoor, Rajkummar, …",
+      "album": "Stree 2",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/0nrvPVnTWlc/hqdefault.jpg"
     },
     {
+      "id": "trending-041",
+      "youtubeId": "EZh7my_RASk",
       "videoId": "EZh7my_RASk",
       "title": "Ikk Kudi sung by Alia Bhatt & Diljit Dosanjh",
       "artist": "Udta Punjab | Amit Trivedi",
+      "album": "Udta Punjab",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/EZh7my_RASk/hqdefault.jpg"
     },
     {
+      "id": "trending-042",
+      "youtubeId": "FewWUHxY79w",
       "videoId": "FewWUHxY79w",
       "title": "Chal Kudiye",
       "artist": "Jigra | Diljit Dosanjh | Alia Bhatt | …",
+      "album": "Jigra",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/FewWUHxY79w/hqdefault.jpg"
     },
     {
+      "id": "trending-043",
+      "youtubeId": "ZbX_nlzv7uU",
       "videoId": "ZbX_nlzv7uU",
       "title": "Ikk Kudi (Reprised Version) Udta Punjab",
       "artist": "Diljit Dosanjh | Alia Bhatt | Amit Tri…",
+      "album": "Diljit Dosanjh",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/ZbX_nlzv7uU/hqdefault.jpg"
     },
     {
+      "id": "trending-044",
+      "youtubeId": "MnNQW_L7ovY",
       "videoId": "MnNQW_L7ovY",
       "title": "Chal Kudiye (From \"Jigra\")",
       "artist": "Diljit Dosanjh - Topic",
+      "album": "Desi Reel Hits",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/MnNQW_L7ovY/hqdefault.jpg"
     },
     {
+      "id": "trending-045",
+      "youtubeId": "YDAWpY747TY",
       "videoId": "YDAWpY747TY",
       "title": "Chaska Ishq Pyar Ka",
       "artist": "Navneet Sumohan & Simran | Official Mu…",
+      "album": "Navneet Sumohan & Simran",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/YDAWpY747TY/hqdefault.jpg"
     },
     {
+      "id": "trending-046",
+      "youtubeId": "T_lDkgKdTD8",
       "videoId": "T_lDkgKdTD8",
       "title": "Jigra -Full Album",
       "artist": "Alia Bhatt |Vedang Raina | Chal Kudiye…",
+      "album": "Alia Bhatt",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/T_lDkgKdTD8/hqdefault.jpg"
     },
     {
+      "id": "trending-047",
+      "youtubeId": "qH-fnpT7qgU",
       "videoId": "qH-fnpT7qgU",
       "title": "Making of Chal Kudiye",
       "artist": "Jigra | Diljit Dosanjh | Alia Bhatt | …",
+      "album": "Jigra",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/qH-fnpT7qgU/hqdefault.jpg"
     },
     {
+      "id": "trending-048",
+      "youtubeId": "AhO7mWclXOc",
       "videoId": "AhO7mWclXOc",
       "title": "Hits of Alia Bhatt - Video Jukebox",
       "artist": "What Jhumka | Tum Kya Mile | Ve Kamley…",
+      "album": "What Jhumka",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/AhO7mWclXOc/hqdefault.jpg"
     },
     {
+      "id": "trending-049",
+      "youtubeId": "FgHz5qNwtqg",
       "videoId": "FgHz5qNwtqg",
       "title": "Chal Kudiye - Lyrical",
       "artist": "Jigra | Diljit Dosanjh | Alia Bhatt | …",
+      "album": "Jigra",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/FgHz5qNwtqg/hqdefault.jpg"
     },
     {
+      "id": "trending-050",
+      "youtubeId": "fnyd1hGyJIY",
       "videoId": "fnyd1hGyJIY",
       "title": "Chal Kudiye - Audio",
       "artist": "Jigra | Diljit Dosanjh | Alia Bhatt | …",
+      "album": "Jigra",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/fnyd1hGyJIY/hqdefault.jpg"
     },
     {
+      "id": "trending-051",
+      "youtubeId": "fAU6b5U26sM",
       "videoId": "fAU6b5U26sM",
       "title": "Women's Day Special - Video Jukebox",
       "artist": "Chal Kudiye, Dholida, Jhume Re Gori, A…",
+      "album": "Desi Reel Hits",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/fAU6b5U26sM/hqdefault.jpg"
     },
     {
+      "id": "trending-052",
+      "youtubeId": "Z23mOrp8i24",
       "videoId": "Z23mOrp8i24",
       "title": "Best of Alia Bhatt - Video Jukebox",
       "artist": "What Jhumka | Ve Kamleya | Kudmayi | D…",
+      "album": "What Jhumka",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/Z23mOrp8i24/hqdefault.jpg"
     },
     {
+      "id": "trending-053",
+      "youtubeId": "iAv5WMNRX90",
       "videoId": "iAv5WMNRX90",
       "title": "Diljit Dosanjh - Top 3 Songs (Video Jukebox)",
       "artist": "Bhairava Anthem | Love Ya | Chal Kudiye",
+      "album": "Bhairava Anthem",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/iAv5WMNRX90/hqdefault.jpg"
     },
     {
+      "id": "trending-054",
+      "youtubeId": "H9ogpITFBYM",
       "videoId": "H9ogpITFBYM",
       "title": "Chal Kudiye Melodic House Mix",
       "artist": "Arthat - Topic",
+      "album": "Desi Reel Hits",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/H9ogpITFBYM/hqdefault.jpg"
     },
     {
+      "id": "trending-055",
+      "youtubeId": "4VqbPwVYq1s",
       "videoId": "4VqbPwVYq1s",
       "title": "Chal Kudiye - Teaser",
       "artist": "Jigra | Alia Bhatt, Diljit Dosanjh | C…",
+      "album": "Jigra",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/4VqbPwVYq1s/hqdefault.jpg"
     },
     {
+      "id": "trending-056",
+      "youtubeId": "NV7XJe4nqJ8",
       "videoId": "NV7XJe4nqJ8",
       "title": "Chal Kudiye - Jigra",
       "artist": "Diljit Dosanjh | Alia Bhatt | Manpreet…",
+      "album": "Diljit Dosanjh",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/NV7XJe4nqJ8/hqdefault.jpg"
     },
     {
+      "id": "trending-057",
+      "youtubeId": "JcpiVAbAnYg",
       "videoId": "JcpiVAbAnYg",
       "title": "Making of Chal Kudiye",
       "artist": "Diljit Dosanjh | Alia Bhatt | Jigra | …",
+      "album": "Diljit Dosanjh",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/JcpiVAbAnYg/hqdefault.jpg"
     },
     {
+      "id": "trending-058",
+      "youtubeId": "Bpj3JYLCCuA",
       "videoId": "Bpj3JYLCCuA",
       "title": "Celebrating 1 Year of Jigra - Video Jukebox",
       "artist": "Alia Bhatt | Vedang Raina | Tenu Sang …",
+      "album": "Alia Bhatt",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/Bpj3JYLCCuA/hqdefault.jpg"
     },
     {
+      "id": "trending-059",
+      "youtubeId": "QnQRMHkXzZ4",
       "videoId": "QnQRMHkXzZ4",
       "title": "Jigra - Video Jukebox",
       "artist": "Alia Bhatt|Vedang Raina|Tenu Sang Rakh…",
+      "album": "Alia Bhatt",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/QnQRMHkXzZ4/hqdefault.jpg"
     },
     {
+      "id": "trending-060",
+      "youtubeId": "j3nADe5euQw",
       "videoId": "j3nADe5euQw",
       "title": "Chal Kudiye",
       "artist": "Jigra | Diljit Dosanjh | Alia Bhatt | …",
+      "album": "Jigra",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/j3nADe5euQw/hqdefault.jpg"
     },
     {
+      "id": "trending-061",
+      "youtubeId": "Etkd-07gnxM",
       "videoId": "Etkd-07gnxM",
       "title": "Dunki: O Maahi",
       "artist": "Shah Rukh Khan | Taapsee Pannu | Prita…",
+      "album": "Shah Rukh Khan",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/Etkd-07gnxM/hqdefault.jpg"
     },
     {
+      "id": "trending-062",
+      "youtubeId": "Zlqf9cuaOBw",
       "videoId": "Zlqf9cuaOBw",
       "title": "Dunki Drop 5: O Maahi",
       "artist": "Shah Rukh Khan | Taapsee Pannu | Prita…",
+      "album": "Shah Rukh Khan",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/Zlqf9cuaOBw/hqdefault.jpg"
     },
     {
+      "id": "trending-063",
+      "youtubeId": "7CdpHATpXXU",
       "videoId": "7CdpHATpXXU",
       "title": "Lutt Putt Gaya Shah Rukh Khan,Taapsee,Rajkumar H…",
       "artist": "Dunki",
+      "album": "Desi Reel Hits",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/7CdpHATpXXU/hqdefault.jpg"
     },
     {
+      "id": "trending-064",
+      "youtubeId": "qnQCd_nZn_g",
       "videoId": "qnQCd_nZn_g",
       "title": "O Maahi",
       "artist": "Arijit Singh - Topic",
+      "album": "Desi Reel Hits",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/qnQCd_nZn_g/hqdefault.jpg"
     },
     {
+      "id": "trending-065",
+      "youtubeId": "PesrFCmjdNI",
       "videoId": "PesrFCmjdNI",
       "title": "O Maahi Mashup",
       "artist": "Jay Guldekar | Arijit Singh | Tum Tak …",
+      "album": "Jay Guldekar",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/PesrFCmjdNI/hqdefault.jpg"
     },
     {
+      "id": "trending-066",
+      "youtubeId": "bjfKyIAlsZs",
       "videoId": "bjfKyIAlsZs",
       "title": "Dunki: O Maahi (Lyrical Video) Shah Rukh Khan",
       "artist": "Taapsee Pannu | Pritam | Arijit Singh …",
+      "album": "Taapsee Pannu",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/bjfKyIAlsZs/hqdefault.jpg"
     },
     {
+      "id": "trending-067",
+      "youtubeId": "BwiaxAos5cg",
       "videoId": "BwiaxAos5cg",
       "title": "O Maahi (Slowed + Reverb)",
       "artist": "Pritam, Arijit Singh | Dunki | SR Lofi",
+      "album": "Pritam, Arijit Singh",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/BwiaxAos5cg/hqdefault.jpg"
     },
     {
+      "id": "trending-068",
+      "youtubeId": "-yX2trMgn5s",
       "videoId": "-yX2trMgn5s",
       "title": "O Maahi - Lofi Mix",
       "artist": "Slowed + Reverb | Arijit Singh, Pritam…",
+      "album": "Slowed + Reverb",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/-yX2trMgn5s/hqdefault.jpg"
     },
     {
+      "id": "trending-069",
+      "youtubeId": "pCYojfACnzQ",
       "videoId": "pCYojfACnzQ",
       "title": "Arijit Singh: O Maahi",
       "artist": "Dunki | Shah Rukh Khan, Taapsee Pannu …",
+      "album": "Dunki",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/pCYojfACnzQ/hqdefault.jpg"
     },
     {
+      "id": "trending-070",
+      "youtubeId": "sv26LXD4GbI",
       "videoId": "sv26LXD4GbI",
       "title": "O MAHI [Lirik dan Terjemahan] || DUNKI || ARIJIT…",
       "artist": "Lisda Music",
+      "album": "Desi Reel Hits",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/sv26LXD4GbI/hqdefault.jpg"
     },
     {
+      "id": "trending-071",
+      "youtubeId": "1tsCjcq0G-U",
       "videoId": "1tsCjcq0G-U",
       "title": "Dunki:O Maahi Shah Rukh Khan",
       "artist": "Rajkumar Hirani | Taapsee Pannu | Prit…",
+      "album": "Rajkumar Hirani",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/1tsCjcq0G-U/hqdefault.jpg"
     },
     {
+      "id": "trending-072",
+      "youtubeId": "sVPKUMyOmg0",
       "videoId": "sVPKUMyOmg0",
       "title": "O Maahi - Arjit Singh",
       "artist": "Pritam | Irshad Kamil | Shah Rukh Khan…",
+      "album": "Pritam",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/sVPKUMyOmg0/hqdefault.jpg"
     },
     {
+      "id": "trending-073",
+      "youtubeId": "E-Qzp9_uzlA",
       "videoId": "E-Qzp9_uzlA",
       "title": "Dunki: O Maahi 8K Full Song",
       "artist": "Shah Rukh Khan | Taapsee Pannu | Prita…",
+      "album": "Shah Rukh Khan",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/E-Qzp9_uzlA/hqdefault.jpg"
     },
     {
+      "id": "trending-074",
+      "youtubeId": "Ref5bT8Tuk8",
       "videoId": "Ref5bT8Tuk8",
       "title": "O Maahi - Dunki",
       "artist": "Shah Rukh Khan | Taapsee Pannu | Prita…",
+      "album": "Shah Rukh Khan",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/Ref5bT8Tuk8/hqdefault.jpg"
     },
     {
+      "id": "trending-075",
+      "youtubeId": "yWo9_7I58Bc",
       "videoId": "yWo9_7I58Bc",
       "title": "Dunki: O Maahi",
       "artist": "Shah Rukh Khan | Taapsee Pannu | Prita…",
+      "album": "Shah Rukh Khan",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/yWo9_7I58Bc/hqdefault.jpg"
     },
     {
+      "id": "trending-076",
+      "youtubeId": "Xb82Eexgyeo",
       "videoId": "Xb82Eexgyeo",
       "title": "O Maahi",
       "artist": "Dunki | Arijit Singh | [ Slowed + reve…",
+      "album": "Dunki",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/Xb82Eexgyeo/hqdefault.jpg"
     },
     {
+      "id": "trending-077",
+      "youtubeId": "q8Mhq2GVM9M",
       "videoId": "q8Mhq2GVM9M",
       "title": "O MAAHI ( Lyrical video ) Dunki",
       "artist": "Shah Rukh Khan, Taapsee Pannu | Arijit…",
+      "album": "Shah Rukh Khan, Taapsee Pannu",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/q8Mhq2GVM9M/hqdefault.jpg"
     },
     {
+      "id": "trending-078",
+      "youtubeId": "2o1Bv1DyUN0",
       "videoId": "2o1Bv1DyUN0",
       "title": "Dunki : O Maahi",
       "artist": "Shah Rukh Khan | Taapsee Pannu | Prita…",
+      "album": "Shah Rukh Khan",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/2o1Bv1DyUN0/hqdefault.jpg"
     },
     {
+      "id": "trending-079",
+      "youtubeId": "AUvYe_ZgLOY",
       "videoId": "AUvYe_ZgLOY",
       "title": "Dunki : O Maahi",
       "artist": "Shah Rukh Khan | Taapsee Pannu | Prita…",
+      "album": "Shah Rukh Khan",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/AUvYe_ZgLOY/hqdefault.jpg"
     },
     {
+      "id": "trending-080",
+      "youtubeId": "yktlUKTWlJg",
       "videoId": "yktlUKTWlJg",
       "title": "O Maahi X Tum Tak Mashup",
       "artist": "Dunki | Raanjhanaa | Pritam | Arijit S…",
+      "album": "Dunki",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/yktlUKTWlJg/hqdefault.jpg"
     },
     {
+      "id": "trending-081",
+      "youtubeId": "QXJyMpxd210",
       "videoId": "QXJyMpxd210",
       "title": "Ve Kamleya",
       "artist": "Rocky Aur Rani Kii Prem Kahaani | Ranv…",
+      "album": "Rocky Aur Rani Kii Prem Kahaani",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/QXJyMpxd210/hqdefault.jpg"
     },
     {
+      "id": "trending-082",
+      "youtubeId": "3qpxJEp4Ec4",
       "videoId": "3qpxJEp4Ec4",
       "title": "Kudmayi (Film Version)",
       "artist": "Rocky Aur Rani Kii Prem Kahaani | Ranv…",
+      "album": "Rocky Aur Rani Kii Prem Kahaani",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/3qpxJEp4Ec4/hqdefault.jpg"
     },
     {
+      "id": "trending-083",
+      "youtubeId": "taRBVfDRukY",
       "videoId": "taRBVfDRukY",
       "title": "Tum Kya Mile - Rocky Aur Rani Kii Prem Kahaani",
       "artist": "Ranveer | Alia | Pritam | Amitabh | Ar…",
+      "album": "Ranveer",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/taRBVfDRukY/hqdefault.jpg"
     },
     {
+      "id": "trending-084",
+      "youtubeId": "hacByYwJ_a4",
       "videoId": "hacByYwJ_a4",
       "title": "Tum Kya Mile-Full Video",
       "artist": "Rocky Aur Rani Kii Prem Kahaani, Ranve…",
+      "album": "Desi Reel Hits",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/hacByYwJ_a4/hqdefault.jpg"
     },
     {
+      "id": "trending-085",
+      "youtubeId": "GkJ_wZy0iB4",
       "videoId": "GkJ_wZy0iB4",
       "title": "Ve Kamleya (From \"Rocky Aur Rani Kii Prem Kahaan…",
       "artist": "Pritam - Topic",
+      "album": "Desi Reel Hits",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/GkJ_wZy0iB4/hqdefault.jpg"
     },
     {
+      "id": "trending-086",
+      "youtubeId": "IYK34I7y5O8",
       "videoId": "IYK34I7y5O8",
       "title": "Ve Kamleya Mere Nadan Dil Arijit Singh & Shreya …",
       "artist": "Ranveer, Alia | Pritam",
+      "album": "Ranveer, Alia",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/IYK34I7y5O8/hqdefault.jpg"
     },
     {
+      "id": "trending-087",
+      "youtubeId": "aa7_itx64eI",
       "videoId": "aa7_itx64eI",
       "title": "Bigboss OTT Finale Performance by Asees Kaur - V…",
       "artist": "#aseeskaur #biggboss",
+      "album": "Desi Reel Hits",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/aa7_itx64eI/hqdefault.jpg"
     },
     {
+      "id": "trending-088",
+      "youtubeId": "AdYOIQTyAAw",
       "videoId": "AdYOIQTyAAw",
       "title": "Ve Kamleya - Asees Version",
       "artist": "Rocky Aur Rani Kii Prem Kahaani | Ranv…",
+      "album": "Rocky Aur Rani Kii Prem Kahaani",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/AdYOIQTyAAw/hqdefault.jpg"
     },
     {
+      "id": "trending-089",
+      "youtubeId": "TjXH_P7Khhg",
       "videoId": "TjXH_P7Khhg",
       "title": "VE KAMLEYA - ARIJIT SINGH &  SHREYA GOSHAL ( Lyr…",
       "artist": "Lyrical 7",
+      "album": "Desi Reel Hits",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/TjXH_P7Khhg/hqdefault.jpg"
     },
     {
+      "id": "trending-090",
+      "youtubeId": "mHdneo9_yLM",
       "videoId": "mHdneo9_yLM",
       "title": "Tum Kya Mile - Lyrical",
       "artist": "Rocky Aur Rani Kii Prem Kahaani | Ranv…",
+      "album": "Rocky Aur Rani Kii Prem Kahaani",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/mHdneo9_yLM/hqdefault.jpg"
     },
     {
+      "id": "trending-091",
+      "youtubeId": "vee_P6pIv_E",
       "videoId": "vee_P6pIv_E",
       "title": "What Jhumka? - 8K Video",
       "artist": "Rocky Aur Rani Kii Prem Kahaani | Ranv…",
+      "album": "Rocky Aur Rani Kii Prem Kahaani",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/vee_P6pIv_E/hqdefault.jpg"
     },
     {
+      "id": "trending-092",
+      "youtubeId": "ETMul5GVk_Y",
       "videoId": "ETMul5GVk_Y",
       "title": "Tum Kya Mile - 8K Video",
       "artist": "Rocky Aur Rani Kii Prem Kahaani | Ranv…",
+      "album": "Rocky Aur Rani Kii Prem Kahaani",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/ETMul5GVk_Y/hqdefault.jpg"
     },
     {
+      "id": "trending-093",
+      "youtubeId": "Pz_FkqA2x6s",
       "videoId": "Pz_FkqA2x6s",
       "title": "Ve Kamleya - Audio",
       "artist": "Rocky Aur Rani Kii Prem Kahaani, Ranve…",
+      "album": "Desi Reel Hits",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/Pz_FkqA2x6s/hqdefault.jpg"
     },
     {
+      "id": "trending-094",
+      "youtubeId": "FBTgulBOUy0",
       "videoId": "FBTgulBOUy0",
       "title": "Carvaan Medley",
       "artist": "Rocky Aur Rani Kii Prem Kahaani | Ranv…",
+      "album": "Rocky Aur Rani Kii Prem Kahaani",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/FBTgulBOUy0/hqdefault.jpg"
     },
     {
+      "id": "trending-095",
+      "youtubeId": "OweU4sBBqGI",
       "videoId": "OweU4sBBqGI",
       "title": "Tum Kya Mile",
       "artist": "Pritam' s Version (From \"Rocky Aur Ran…",
+      "album": "Desi Reel Hits",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/OweU4sBBqGI/hqdefault.jpg"
     },
     {
+      "id": "trending-096",
+      "youtubeId": "2Vv-BfVoq4g",
       "videoId": "2Vv-BfVoq4g",
       "title": "Dangal Title Track",
       "artist": "Daler Mehndi, Pritam | Dangal",
+      "album": "Daler Mehndi, Pritam",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/2Vv-BfVoq4g/hqdefault.jpg"
     },
     {
+      "id": "trending-097",
+      "youtubeId": "9uIIdCBRNRc",
       "videoId": "9uIIdCBRNRc",
       "title": "Ve Kamleya (Slowed + Reverb)",
       "artist": "Arijit Singh, Shreya Ghoshal | SR Lofi",
+      "album": "Arijit Singh, Shreya Ghoshal",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/9uIIdCBRNRc/hqdefault.jpg"
     },
     {
+      "id": "trending-098",
+      "youtubeId": "0avk5g_9Cgk",
       "videoId": "0avk5g_9Cgk",
       "title": "Ve Kamleya (Slowed + Reverb)",
       "artist": "Arijit Singh, Shreya Ghoshal |",
+      "album": "Arijit Singh, Shreya Ghoshal",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/0avk5g_9Cgk/hqdefault.jpg"
     },
     {
+      "id": "trending-099",
+      "youtubeId": "44Aq9OZtM_M",
       "videoId": "44Aq9OZtM_M",
       "title": "Ve Kamleya-Lyrical",
       "artist": "Rocky Aur Rani Kii Prem Kahaani | Ranv…",
+      "album": "Rocky Aur Rani Kii Prem Kahaani",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/44Aq9OZtM_M/hqdefault.jpg"
     },
     {
+      "id": "trending-100",
+      "youtubeId": "cpfns3c5AQc",
       "videoId": "cpfns3c5AQc",
       "title": "Tum Kya Mile - Lyrical",
       "artist": "Rocky Aur Rani Kii Prem Kahaani | Ranv…",
+      "album": "Rocky Aur Rani Kii Prem Kahaani",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/cpfns3c5AQc/hqdefault.jpg"
     },
     {
+      "id": "trending-101",
+      "youtubeId": "BddP6PYo2gs",
       "videoId": "BddP6PYo2gs",
       "title": "Kesariya - Brahmāstra",
       "artist": "Ranbir Kapoor, Alia Bhatt | Pritam | A…",
+      "album": "Ranbir Kapoor, Alia Bhatt",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/BddP6PYo2gs/hqdefault.jpg"
     },
     {
+      "id": "trending-102",
+      "youtubeId": "RLzC55ai0eo",
       "videoId": "RLzC55ai0eo",
       "title": "Heeriye Jasleen Royal ft Arijit Singh| Dulquer S…",
       "artist": "Jasleen Royal",
+      "album": "Desi Reel Hits",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/RLzC55ai0eo/hqdefault.jpg"
     },
     {
+      "id": "trending-103",
+      "youtubeId": "mNuhKUOD_A0",
       "videoId": "mNuhKUOD_A0",
       "title": "Deva Deva",
       "artist": "Extended Film Version|Brahmāstra|Amita…",
+      "album": "Extended Film Version",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/mNuhKUOD_A0/hqdefault.jpg"
     },
     {
+      "id": "trending-104",
+      "youtubeId": "6mr4cYJ7yew",
       "videoId": "6mr4cYJ7yew",
       "title": "Kesariya - Film Version",
       "artist": "Brahmāstra | Ranbir | Alia | Pritam | …",
+      "album": "Brahmāstra",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/6mr4cYJ7yew/hqdefault.jpg"
     },
     {
+      "id": "trending-105",
+      "youtubeId": "NJAv_7lHUIU",
       "videoId": "NJAv_7lHUIU",
       "title": "Kesariya (From \"Brahmastra\")",
       "artist": "Arijit Singh - Topic",
+      "album": "Desi Reel Hits",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/NJAv_7lHUIU/hqdefault.jpg"
     },
     {
+      "id": "trending-106",
+      "youtubeId": "xfMN4SpIxIA",
       "videoId": "xfMN4SpIxIA",
       "title": "Dance Ka Bhoot - Brahmāstra",
       "artist": "Ranbir Kapoor | Alia Bhatt | Pritam | …",
+      "album": "Ranbir Kapoor",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/xfMN4SpIxIA/hqdefault.jpg"
     },
     {
+      "id": "trending-107",
+      "youtubeId": "zCGck2spPsU",
       "videoId": "zCGck2spPsU",
       "title": "Kesariya x Saibo Mashup",
       "artist": "Chillout Heart | Arijit Singh, Shreya …",
+      "album": "Chillout Heart",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/zCGck2spPsU/hqdefault.jpg"
     },
     {
+      "id": "trending-108",
+      "youtubeId": "K3B8-klo5xc",
       "videoId": "K3B8-klo5xc",
       "title": "Kesariya (Dance Mix) - Brahmāstra",
       "artist": "Amitabh B | Ranbir | Alia | Pritam | S…",
+      "album": "Amitabh B",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/K3B8-klo5xc/hqdefault.jpg"
     },
     {
+      "id": "trending-109",
+      "youtubeId": "g6fnFALEseI",
       "videoId": "g6fnFALEseI",
       "title": "Kesariya",
       "artist": "Official Lyric|Brahmāstra|Ranbir, Alia…",
+      "album": "Official Lyric",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/g6fnFALEseI/hqdefault.jpg"
     },
     {
+      "id": "trending-110",
+      "youtubeId": "W1S9AbHpWFY",
       "videoId": "W1S9AbHpWFY",
       "title": "Kesariya Full Song - Brahmastra",
       "artist": "Arijit Singh | Kesariya Tera Ishq Hai …",
+      "album": "Arijit Singh",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/W1S9AbHpWFY/hqdefault.jpg"
     },
     {
+      "id": "trending-111",
+      "youtubeId": "1qeujW9f4So",
       "videoId": "1qeujW9f4So",
       "title": "BRAHMĀSTRA Part One: Shiva",
       "artist": "Kesariya Teaser | Ranbir | Alia | Arij…",
+      "album": "Kesariya Teaser",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/1qeujW9f4So/hqdefault.jpg"
     },
     {
+      "id": "trending-112",
+      "youtubeId": "k6GjS_Hzg8I",
       "videoId": "k6GjS_Hzg8I",
       "title": "Kesariya Full Song - Brahmastra",
       "artist": "Arijit Singh | Kesariya Tera Ishq Hai …",
+      "album": "Arijit Singh",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/k6GjS_Hzg8I/hqdefault.jpg"
     },
     {
+      "id": "trending-113",
+      "youtubeId": "PLIsDVqACZ0",
       "videoId": "PLIsDVqACZ0",
       "title": "Deva Deva",
       "artist": "Film Version |Brahmāstra |Amitabh B|Ra…",
+      "album": "Film Version",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/PLIsDVqACZ0/hqdefault.jpg"
     },
     {
+      "id": "trending-114",
+      "youtubeId": "P7yRYiBiV3g",
       "videoId": "P7yRYiBiV3g",
       "title": "Kesariya Music Video",
       "artist": "Arijit Singh | Ranbir Kapoor | Alia Bh…",
+      "album": "Arijit Singh",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/P7yRYiBiV3g/hqdefault.jpg"
     },
     {
+      "id": "trending-115",
+      "youtubeId": "WCDXUgvddR4",
       "videoId": "WCDXUgvddR4",
       "title": "BRAHMĀSTRA (Kannada)",
       "artist": "Kesariya Rangu | Ranbir | Alia | Prita…",
+      "album": "Kesariya Rangu",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/WCDXUgvddR4/hqdefault.jpg"
     },
     {
+      "id": "trending-116",
+      "youtubeId": "aDOs442shYU",
       "videoId": "aDOs442shYU",
       "title": "Rasiya Reprise - Brahmāstra",
       "artist": "Amitabh B | Ranbir | Alia | Pritam | A…",
+      "album": "Amitabh B",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/aDOs442shYU/hqdefault.jpg"
     },
     {
+      "id": "trending-117",
+      "youtubeId": "W0dmYnZ9_hE",
       "videoId": "W0dmYnZ9_hE",
       "title": "Sultan Title Track",
       "artist": "Sukhwinder Singh, Shadab Faridi | Sultan",
+      "album": "Sukhwinder Singh, Shadab Faridi",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/W0dmYnZ9_hE/hqdefault.jpg"
     },
     {
+      "id": "trending-118",
+      "youtubeId": "532toSHe57E",
       "videoId": "532toSHe57E",
       "title": "Kesariya [Slowed + Reverb] Arijit Singh",
       "artist": "Brahmastra",
+      "album": "Desi Reel Hits",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/532toSHe57E/hqdefault.jpg"
     },
     {
+      "id": "trending-119",
+      "youtubeId": "jZba76mHdg4",
       "videoId": "jZba76mHdg4",
       "title": "BRAHMĀSTRA (Tamil)",
       "artist": "Deva Deva | Amitabh B | Ranbir | Alia …",
+      "album": "Deva Deva",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/jZba76mHdg4/hqdefault.jpg"
     },
     {
+      "id": "trending-120",
+      "youtubeId": "HLDFbuGhFVU",
       "videoId": "HLDFbuGhFVU",
       "title": "Kesariya - Brahmāstra",
       "artist": "Arijit Singh | Kesariya Tera Ishq Hai …",
+      "album": "Arijit Singh",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/HLDFbuGhFVU/hqdefault.jpg"
     },
     {
+      "id": "trending-121",
+      "youtubeId": "4VwtfInG-LU",
       "videoId": "4VwtfInG-LU",
       "title": "Heeriye (feat. Arijit Singh)",
       "artist": "Jasleen Royal - Topic",
+      "album": "Desi Reel Hits",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/4VwtfInG-LU/hqdefault.jpg"
     },
     {
+      "id": "trending-122",
+      "youtubeId": "ObiCEWmYH5Y",
       "videoId": "ObiCEWmYH5Y",
       "title": "Heeriye Jasleen Royal ft. Arijit Singh & Dulquer…",
       "artist": "Indie India",
+      "album": "Desi Reel Hits",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/ObiCEWmYH5Y/hqdefault.jpg"
     },
     {
+      "id": "trending-123",
+      "youtubeId": "Q11jKrhG7m4",
       "videoId": "Q11jKrhG7m4",
       "title": "Heeriye (Slowed + Reverb)",
       "artist": "Arijit Singh, Jasleen Royal | SR Lofi",
+      "album": "Arijit Singh, Jasleen Royal",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/Q11jKrhG7m4/hqdefault.jpg"
     },
     {
+      "id": "trending-124",
+      "youtubeId": "WJumea3vEpw",
       "videoId": "WJumea3vEpw",
       "title": "Heeriye Jasleen Royal ft Arijit Singh| Dulquer S…",
       "artist": "Ps Official",
+      "album": "Desi Reel Hits",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/WJumea3vEpw/hqdefault.jpg"
     },
     {
+      "id": "trending-125",
+      "youtubeId": "IhLJRgr-r0o",
       "videoId": "IhLJRgr-r0o",
       "title": "Heeriye Jasleen Royal ft. Arijit Singh",
       "artist": "Dulquer Salmaan | Aditya| Taani | Memo…",
+      "album": "Dulquer Salmaan",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/IhLJRgr-r0o/hqdefault.jpg"
     },
     {
+      "id": "trending-126",
+      "youtubeId": "SW2uyfNqHg4",
       "videoId": "SW2uyfNqHg4",
       "title": "Heeriye Lofi Remix (feat. Arijit Singh)",
       "artist": "Jasleen Royal - Topic",
+      "album": "Desi Reel Hits",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/SW2uyfNqHg4/hqdefault.jpg"
     },
     {
+      "id": "trending-127",
+      "youtubeId": "jC1oFRhElEw",
       "videoId": "jC1oFRhElEw",
       "title": "Key board",
       "artist": "funny taught",
+      "album": "Desi Reel Hits",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/jC1oFRhElEw/hqdefault.jpg"
     },
     {
+      "id": "trending-128",
+      "youtubeId": "gslkqoBV5SA",
       "videoId": "gslkqoBV5SA",
       "title": "Heeriye - Remix",
       "artist": "Dj Sunny | Arijit Singh & Jasleen Roya…",
+      "album": "Dj Sunny",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/gslkqoBV5SA/hqdefault.jpg"
     },
     {
+      "id": "trending-129",
+      "youtubeId": "Gqnnrop26Sw",
       "videoId": "Gqnnrop26Sw",
       "title": "Heeriye Jasleen Royal ft Arijit Singh| Dulquer S…",
       "artist": "Shubham Vlog Dehati",
+      "album": "Desi Reel Hits",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/Gqnnrop26Sw/hqdefault.jpg"
     },
     {
+      "id": "trending-130",
+      "youtubeId": "9uHS97epnYc",
       "videoId": "9uHS97epnYc",
       "title": "Asmar video",
       "artist": "Winnner Boy",
+      "album": "Desi Reel Hits",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/9uHS97epnYc/hqdefault.jpg"
     },
     {
+      "id": "trending-131",
+      "youtubeId": "BbGNpf5vDTE",
       "videoId": "BbGNpf5vDTE",
       "title": "Heeriye (Official song) Jasleen Royal ft Arijit …",
       "artist": "CK Communication",
+      "album": "Desi Reel Hits",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/BbGNpf5vDTE/hqdefault.jpg"
     },
     {
+      "id": "trending-132",
+      "youtubeId": "Miz5wvLmXPI",
       "videoId": "Miz5wvLmXPI",
       "title": "Heeriye (Flute Cover)",
       "artist": "Flute Siva | Jasleen Royal | Arijit Si…",
+      "album": "Flute Siva",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/Miz5wvLmXPI/hqdefault.jpg"
     },
     {
+      "id": "trending-133",
+      "youtubeId": "AdKdqAqsnsY",
       "videoId": "AdKdqAqsnsY",
       "title": "Heeriye Jasleen Royal ft. Arijit Singh",
       "artist": "Dulquer Salmaan | Aditya| Taani | Memo…",
+      "album": "Dulquer Salmaan",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/AdKdqAqsnsY/hqdefault.jpg"
     },
     {
+      "id": "trending-134",
+      "youtubeId": "K0I124SPxmI",
       "videoId": "K0I124SPxmI",
       "title": "आज देख शहर में घूमने गए तो यहां का वीडियो बनाया …",
       "artist": "GP VIDEOS",
+      "album": "Desi Reel Hits",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/K0I124SPxmI/hqdefault.jpg"
     },
     {
+      "id": "trending-135",
+      "youtubeId": "npKOkLWrZeE",
       "videoId": "npKOkLWrZeE",
       "title": "निम्बू देखिए दोस्तों निम्बू कितने सारे निम्बू लग…",
       "artist": "vlog video ",
+      "album": "Desi Reel Hits",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/npKOkLWrZeE/hqdefault.jpg"
     },
     {
+      "id": "trending-136",
+      "youtubeId": "gX3Gw-3wxfs",
       "videoId": "gX3Gw-3wxfs",
       "title": "Heeriye Jasleen Royal ft Arijit Singh| Dulquer S…",
       "artist": "Marwadi Madam",
+      "album": "Desi Reel Hits",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/gX3Gw-3wxfs/hqdefault.jpg"
     },
     {
+      "id": "trending-137",
+      "youtubeId": "k4q7Yg_Z49U",
       "videoId": "k4q7Yg_Z49U",
       "title": "Zinda",
       "artist": "Siddharth Mahadevan | Bhaag Milkha Bhaag",
+      "album": "Siddharth Mahadevan",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/k4q7Yg_Z49U/hqdefault.jpg"
     },
     {
+      "id": "trending-138",
+      "youtubeId": "P6G4QoKwnzI",
       "videoId": "P6G4QoKwnzI",
       "title": "Heeriye - English Translation",
       "artist": "Arijit Singh, Jasleen Royal, Aditya Sh…",
+      "album": "Desi Reel Hits",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/P6G4QoKwnzI/hqdefault.jpg"
     },
     {
+      "id": "trending-139",
+      "youtubeId": "t5PEt4aXI58",
       "videoId": "t5PEt4aXI58",
       "title": "जोधपुर में बना हुआ है यह बहुत ही खूबसूरत महल छित…",
       "artist": "Singer Suresh bhati official ",
+      "album": "Desi Reel Hits",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/t5PEt4aXI58/hqdefault.jpg"
     },
     {
+      "id": "trending-140",
+      "youtubeId": "YxWlaYCA8MU",
       "videoId": "YxWlaYCA8MU",
       "title": "Jhoome Jo Pathaan Song",
       "artist": "Shah Rukh Khan, Deepika | Vishal & She…",
+      "album": "Shah Rukh Khan, Deepika",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/YxWlaYCA8MU/hqdefault.jpg"
     },
     {
+      "id": "trending-141",
+      "youtubeId": "VAdGW7QDJiU",
       "videoId": "VAdGW7QDJiU",
       "title": "JAWAN: Chaleya (Hindi)",
       "artist": "Shah Rukh Khan | Nayanthara | Atlee | …",
+      "album": "Shah Rukh Khan",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/VAdGW7QDJiU/hqdefault.jpg"
     },
     {
+      "id": "trending-142",
+      "youtubeId": "V_jp5_VAzXk",
       "videoId": "V_jp5_VAzXk",
       "title": "Chaleya",
       "artist": "Arijit Singh - Topic",
+      "album": "Desi Reel Hits",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/V_jp5_VAzXk/hqdefault.jpg"
     },
     {
+      "id": "trending-143",
+      "youtubeId": "8eYG5QGZAZs",
       "videoId": "8eYG5QGZAZs",
       "title": "Jawan: Hayyoda (Tamil)",
       "artist": "Shahrukh Khan | Atlee | Anirudh | Naya…",
+      "album": "Shahrukh Khan",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/8eYG5QGZAZs/hqdefault.jpg"
     },
     {
+      "id": "trending-144",
+      "youtubeId": "9M_ZKSmxb_s",
       "videoId": "9M_ZKSmxb_s",
       "title": "Heeriye X Chaleya X Tu Aake Dekhle Insta Mashup",
       "artist": "revibe | Viral Insta Reels, TikTok Rem…",
+      "album": "revibe",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/9M_ZKSmxb_s/hqdefault.jpg"
     },
     {
+      "id": "trending-145",
+      "youtubeId": "wr9M-CoxP7A",
       "videoId": "wr9M-CoxP7A",
       "title": "Jawan: Chaleya (Lyrical Video)",
       "artist": "Shah Rukh Khan | Nayanthara | Atlee | …",
+      "album": "Shah Rukh Khan",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/wr9M-CoxP7A/hqdefault.jpg"
     },
     {
+      "id": "trending-146",
+      "youtubeId": "RpC85RO0okA",
       "videoId": "RpC85RO0okA",
       "title": "JAWAN: Faraatta",
       "artist": "Shah Rukh Khan | Deepika | Atlee | Ani…",
+      "album": "Shah Rukh Khan",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/RpC85RO0okA/hqdefault.jpg"
     },
     {
+      "id": "trending-147",
+      "youtubeId": "Bi7sSC046dk",
       "videoId": "Bi7sSC046dk",
       "title": "Chaleya - Jawan",
       "artist": "Shah Rukh Khan | Nayanthara | Atlee, A…",
+      "album": "Shah Rukh Khan",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/Bi7sSC046dk/hqdefault.jpg"
     },
     {
+      "id": "trending-148",
+      "youtubeId": "LdHe2NCj3JE",
       "videoId": "LdHe2NCj3JE",
       "title": "Jawan: Chalona (Telugu)",
       "artist": "Shah Rukh Khan |Atlee |Anirudh |Nayant…",
+      "album": "Shah Rukh Khan",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/LdHe2NCj3JE/hqdefault.jpg"
     },
     {
+      "id": "trending-149",
+      "youtubeId": "wwYiyxR7c3c",
       "videoId": "wwYiyxR7c3c",
       "title": "Chaleya Dance Video |Jawan |Shahrukh khan",
       "artist": "Choreography - Skool of hip hop",
+      "album": "Desi Reel Hits",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/wwYiyxR7c3c/hqdefault.jpg"
     },
     {
+      "id": "trending-150",
+      "youtubeId": "obMNB-n6PE4",
       "videoId": "obMNB-n6PE4",
       "title": "Chaleya - Lofi [slowed + reverb] Song",
       "artist": "nine lofi | Lofi Music",
+      "album": "nine lofi",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/obMNB-n6PE4/hqdefault.jpg"
     },
     {
+      "id": "trending-151",
+      "youtubeId": "FNoNmaWGoRg",
       "videoId": "FNoNmaWGoRg",
       "title": "JAWAN: Chaleya (Arabic): Shah Rukh Khan |Nayanth…",
       "artist": "T-Series",
+      "album": "Desi Reel Hits",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/FNoNmaWGoRg/hqdefault.jpg"
     },
     {
+      "id": "trending-152",
+      "youtubeId": "F_jU1KI82kw",
       "videoId": "F_jU1KI82kw",
       "title": "Jawan: Chaleya",
       "artist": "Shah Rukh Khan | Nayanthara | Atlee | …",
+      "album": "Shah Rukh Khan",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/F_jU1KI82kw/hqdefault.jpg"
     },
     {
+      "id": "trending-153",
+      "youtubeId": "oiSIKKlvqVE",
       "videoId": "oiSIKKlvqVE",
       "title": "Chaleya (Hindi)",
       "artist": "JAWAN | Dance Cover | Nainika & Thanaya",
+      "album": "JAWAN",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/oiSIKKlvqVE/hqdefault.jpg"
     },
     {
+      "id": "trending-154",
+      "youtubeId": "s4yy40jRTu4",
       "videoId": "s4yy40jRTu4",
       "title": "Chaleya X Hayyoda",
       "artist": "Shahrukh Khan | Anirudh | Arijit Singh…",
+      "album": "Shahrukh Khan",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/s4yy40jRTu4/hqdefault.jpg"
     },
     {
+      "id": "trending-155",
+      "youtubeId": "g98mwbjcmwU",
       "videoId": "g98mwbjcmwU",
       "title": "Chaleya (Slowed + Reverb)",
       "artist": "Arijit Singh, Shilpa Rao | Jawan | SR …",
+      "album": "Arijit Singh, Shilpa Rao",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/g98mwbjcmwU/hqdefault.jpg"
     },
     {
+      "id": "trending-156",
+      "youtubeId": "yAe3qndvs7k",
       "videoId": "yAe3qndvs7k",
       "title": "sad love story",
       "artist": "SSA Creation",
+      "album": "Desi Reel Hits",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/yAe3qndvs7k/hqdefault.jpg"
     },
     {
+      "id": "trending-157",
+      "youtubeId": "Ah6dEARljtE",
       "videoId": "Ah6dEARljtE",
       "title": "Jawan: Chaleya 8K Full Song",
       "artist": "Shah Rukh Khan | Nayanthara | Atlee | …",
+      "album": "Shah Rukh Khan",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/Ah6dEARljtE/hqdefault.jpg"
     },
     {
+      "id": "trending-158",
+      "youtubeId": "EZ470Lj1MAQ",
       "videoId": "EZ470Lj1MAQ",
       "title": "Chaleya Dance Video |Jawan |Shahrukh khan |Aniru…",
       "artist": "Bhavya Singh Kushwah",
+      "album": "Desi Reel Hits",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/EZ470Lj1MAQ/hqdefault.jpg"
     },
     {
+      "id": "trending-159",
+      "youtubeId": "WqfCQ93c9TY",
       "videoId": "WqfCQ93c9TY",
       "title": "Chaleya (Hindi) (8D Audio) || Jawan || Arijit Si…",
       "artist": "8D JS Creation",
+      "album": "Desi Reel Hits",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/WqfCQ93c9TY/hqdefault.jpg"
     },
     {
+      "id": "trending-160",
+      "youtubeId": "huxhqphtDrM",
       "videoId": "huxhqphtDrM",
       "title": "Besharam Rang Song",
       "artist": "Pathaan | Shah Rukh Khan, Deepika Padu…",
+      "album": "Pathaan",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/huxhqphtDrM/hqdefault.jpg"
     },
     {
+      "id": "trending-161",
+      "youtubeId": "7TRFf7uUfhQ",
       "videoId": "7TRFf7uUfhQ",
       "title": "Swag Se Swagat",
       "artist": "Full Song | Tiger Zinda Hai, Salman Kh…",
+      "album": "Full Song",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/7TRFf7uUfhQ/hqdefault.jpg"
     },
     {
+      "id": "trending-162",
+      "youtubeId": "AU9AdGIdWZs",
       "videoId": "AU9AdGIdWZs",
       "title": "Jhoome Jo Pathaan (From \"Pathaan\")",
       "artist": "Arijit Singh - Topic",
+      "album": "Desi Reel Hits",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/AU9AdGIdWZs/hqdefault.jpg"
     },
     {
+      "id": "trending-163",
+      "youtubeId": "uUGew2W87cU",
       "videoId": "uUGew2W87cU",
       "title": "Jhoome Jo Pathaan Dance Cover",
       "artist": "Deepak Tulsyan Choreography | G M Danc…",
+      "album": "Deepak Tulsyan Choreography",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/uUGew2W87cU/hqdefault.jpg"
     },
     {
+      "id": "trending-164",
+      "youtubeId": "EoKOuVGYMSw",
       "videoId": "EoKOuVGYMSw",
       "title": "Kummese Pathaan Song",
       "artist": "Shah Rukh Khan, Deepika | Vishal & She…",
+      "album": "Shah Rukh Khan, Deepika",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/EoKOuVGYMSw/hqdefault.jpg"
     },
     {
+      "id": "trending-165",
+      "youtubeId": "bODY50rqPZg",
       "videoId": "bODY50rqPZg",
       "title": "Jhoome Jo Pathaan Arabic Version, Shah Rukh, Dee…",
       "artist": "YRF",
+      "album": "Desi Reel Hits",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/bODY50rqPZg/hqdefault.jpg"
     },
     {
+      "id": "trending-166",
+      "youtubeId": "7n562hVNKDc",
       "videoId": "7n562hVNKDc",
       "title": "Dance on: Jhoome Jo Pathaan",
       "artist": "Pathaan | Shah Rukh Khan, Deepika Padu…",
+      "album": "Pathaan",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/7n562hVNKDc/hqdefault.jpg"
     },
     {
+      "id": "trending-167",
+      "youtubeId": "VtThmt2paH8",
       "videoId": "VtThmt2paH8",
       "title": "JHOOME JO PATHAAN",
       "artist": "Vina Fan Version Parodi Recreate",
+      "album": "Desi Reel Hits",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/VtThmt2paH8/hqdefault.jpg"
     },
     {
+      "id": "trending-168",
+      "youtubeId": "C1524HGvznI",
       "videoId": "C1524HGvznI",
       "title": "Jhoome Jo Pathaan",
       "artist": "Live dance | Nainika & Thanaya",
+      "album": "Live dance",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/C1524HGvznI/hqdefault.jpg"
     },
     {
+      "id": "trending-169",
+      "youtubeId": "mvdsiQ5fl24",
       "videoId": "mvdsiQ5fl24",
       "title": "Lyrical",
       "artist": "Jhoome Jo Pathaan | Shah Rukh Khan, De…",
+      "album": "Jhoome Jo Pathaan",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/mvdsiQ5fl24/hqdefault.jpg"
     },
     {
+      "id": "trending-170",
+      "youtubeId": "MXCHqAEgnN4",
       "videoId": "MXCHqAEgnN4",
       "title": "Jhoome Jo Pathaan",
       "artist": "Pathaan | Shah Rukh Khan | Deepika Pad…",
+      "album": "Pathaan",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/MXCHqAEgnN4/hqdefault.jpg"
     },
     {
+      "id": "trending-171",
+      "youtubeId": "y4QVHzYHiU0",
       "videoId": "y4QVHzYHiU0",
       "title": "Vishal Dadlani की Rocking Performance| Indian Idol",
       "artist": "Neha Kakkar | Vishal Dadlani | Perform…",
+      "album": "Neha Kakkar",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/y4QVHzYHiU0/hqdefault.jpg"
     },
     {
+      "id": "trending-172",
+      "youtubeId": "QtTM9X26bTk",
       "videoId": "QtTM9X26bTk",
       "title": "Jhoome Jo Pathaan Song [ 8D AUDIO ] USE HEADPHON…",
       "artist": "Shah Rukh Khan, Deepika | Arijit Singh",
+      "album": "Shah Rukh Khan, Deepika",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/QtTM9X26bTk/hqdefault.jpg"
     },
     {
+      "id": "trending-173",
+      "youtubeId": "uSSFACVucbs",
       "videoId": "uSSFACVucbs",
       "title": "Making of Jhoome Jo Pathaan Song",
       "artist": "Pathaan | Shah Rukh Khan | Deepika Pad…",
+      "album": "Pathaan",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/uSSFACVucbs/hqdefault.jpg"
     },
     {
+      "id": "trending-174",
+      "youtubeId": "OIjbVS9CFL4",
       "videoId": "OIjbVS9CFL4",
       "title": "Jhoome Jo Pathaan Song Lyrics",
       "artist": "Shah Rukh Khan,Deepika Vishal & Sheykh…",
+      "album": "Desi Reel Hits",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/OIjbVS9CFL4/hqdefault.jpg"
     },
     {
+      "id": "trending-175",
+      "youtubeId": "dzKSxDEAMDY",
       "videoId": "dzKSxDEAMDY",
       "title": "Lyrical",
       "artist": "Jhoome Jo Pathaan | Pathaan | Shah Ruk…",
+      "album": "Jhoome Jo Pathaan",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/dzKSxDEAMDY/hqdefault.jpg"
     },
     {
+      "id": "trending-176",
+      "youtubeId": "UeH6_2qNaq8",
       "videoId": "UeH6_2qNaq8",
       "title": "Jhoome Jo Pathaan",
       "artist": "Dance cover | Nainika & Thanaya",
+      "album": "Dance cover",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/UeH6_2qNaq8/hqdefault.jpg"
     },
     {
+      "id": "trending-177",
+      "youtubeId": "NBgA2OxWt9k",
       "videoId": "NBgA2OxWt9k",
       "title": "Jhoome Jo Pathaan song",
       "artist": "Shahrukh Khan, Deepika | Vishal & Shek…",
+      "album": "Shahrukh Khan, Deepika",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/NBgA2OxWt9k/hqdefault.jpg"
     },
     {
+      "id": "trending-178",
+      "youtubeId": "pacvj3n-RLw",
       "videoId": "pacvj3n-RLw",
       "title": "Arijit Singh: Jhoome Jo Pathaan",
       "artist": "Shah Rukh Khan, Deepika Padukone",
+      "album": "Desi Reel Hits",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/pacvj3n-RLw/hqdefault.jpg"
     },
     {
+      "id": "trending-179",
+      "youtubeId": "udgrClXV26Y",
       "videoId": "udgrClXV26Y",
       "title": "Dil Ka Jo Haal Hai (Lyrical)",
       "artist": "Besharam | Ranbir Kapoor | Abhijeet Bh…",
+      "album": "Besharam",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/udgrClXV26Y/hqdefault.jpg"
     },
     {
+      "id": "trending-180",
+      "youtubeId": "Uo_OSlQZlgY",
       "videoId": "Uo_OSlQZlgY",
       "title": "Besharam Rang (From \"Pathaan\")",
       "artist": "Shilpa Rao - Topic",
+      "album": "Desi Reel Hits",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/Uo_OSlQZlgY/hqdefault.jpg"
     },
     {
+      "id": "trending-181",
+      "youtubeId": "Bu_89PkVqew",
       "videoId": "Bu_89PkVqew",
       "title": "Naa Nijam Rangu",
       "artist": "Pathaan | Shah Rukh Khan, Deepika Padu…",
+      "album": "Pathaan",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/Bu_89PkVqew/hqdefault.jpg"
     },
     {
+      "id": "trending-182",
+      "youtubeId": "Hu-Bdubnnj0",
       "videoId": "Hu-Bdubnnj0",
       "title": "Pathaan Controversy",
       "artist": "Is Bollywood Hinduphobic? | Shah Rukh …",
+      "album": "Is Bollywood Hinduphobic?",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/Hu-Bdubnnj0/hqdefault.jpg"
     },
     {
+      "id": "trending-183",
+      "youtubeId": "U5yCBCWGbBw",
       "videoId": "U5yCBCWGbBw",
       "title": "hame to loot liya milke ishq walon ne",
       "artist": "shahrukh khan, deepika p | Besharam Ra…",
+      "album": "shahrukh khan, deepika p",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/U5yCBCWGbBw/hqdefault.jpg"
     },
     {
+      "id": "trending-184",
+      "youtubeId": "8eDZpQpxnTU",
       "videoId": "8eDZpQpxnTU",
       "title": "Besharam Rang Lyric| Pathaan",
       "artist": "Shah Rukh Khan, Deepika Padukone | Vis…",
+      "album": "Shah Rukh Khan, Deepika Padukone",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/8eDZpQpxnTU/hqdefault.jpg"
     },
     {
+      "id": "trending-185",
+      "youtubeId": "P0dk_SF7Eao",
       "videoId": "P0dk_SF7Eao",
       "title": "Besharam Rang",
       "artist": "Pathaan | SRK & Deepika Padukone | Shi…",
+      "album": "Pathaan",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/P0dk_SF7Eao/hqdefault.jpg"
     },
     {
+      "id": "trending-186",
+      "youtubeId": "MkkG-7HL7Bg",
       "videoId": "MkkG-7HL7Bg",
       "title": "Besharam Rang (Pathaan) - DJ NYK Deep House Remix",
       "artist": "Shilpa Rao , Shahrukh Khan, Deepika Pa…",
+      "album": "Desi Reel Hits",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/MkkG-7HL7Bg/hqdefault.jpg"
     },
     {
+      "id": "trending-187",
+      "youtubeId": "cI9iguIX87Y",
       "videoId": "cI9iguIX87Y",
       "title": "Besharam Rang - Pathaan",
       "artist": "Shah Rukh Khan, Deepika P | Vishal & S…",
+      "album": "Shah Rukh Khan, Deepika P",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/cI9iguIX87Y/hqdefault.jpg"
     },
     {
+      "id": "trending-188",
+      "youtubeId": "p7f685ljJL8",
       "videoId": "p7f685ljJL8",
       "title": "Making of Besharam Rang Song",
       "artist": "Pathaan | Shah Rukh Khan | Deepika Pad…",
+      "album": "Pathaan",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/p7f685ljJL8/hqdefault.jpg"
     },
     {
+      "id": "trending-189",
+      "youtubeId": "o8-Gc4h4yVY",
       "videoId": "o8-Gc4h4yVY",
       "title": "Dance on: Besharam Rang",
       "artist": "Pathaan | SHUFFLE - RAVE | Elif Karama…",
+      "album": "Pathaan",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/o8-Gc4h4yVY/hqdefault.jpg"
     },
     {
+      "id": "trending-190",
+      "youtubeId": "poMt_tQAjEg",
       "videoId": "poMt_tQAjEg",
       "title": "Besharam Rang (Full Audio Song) Shahrukh Khan",
       "artist": "Deepika Padukone (Pathaan) Moj Viral S…",
+      "album": "Desi Reel Hits",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/poMt_tQAjEg/hqdefault.jpg"
     },
     {
+      "id": "trending-191",
+      "youtubeId": "pqoLQWf7Ync",
       "videoId": "pqoLQWf7Ync",
       "title": "Besharam Rang Song",
       "artist": "Pathaan | Shah Rukh Khan, Deepika Padu…",
+      "album": "Pathaan",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/pqoLQWf7Ync/hqdefault.jpg"
     },
     {
+      "id": "trending-192",
+      "youtubeId": "0Vpv8JEX_Ao",
       "videoId": "0Vpv8JEX_Ao",
       "title": "Besharam Rang Pathaan Song REVIEW",
       "artist": "Deeksha Sharma",
+      "album": "Desi Reel Hits",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/0Vpv8JEX_Ao/hqdefault.jpg"
     },
     {
+      "id": "trending-193",
+      "youtubeId": "ElZfdU54Cp8",
       "videoId": "ElZfdU54Cp8",
       "title": "Apna Bana Le - Bhediya",
       "artist": "Varun Dhawan, Kriti Sanon| Sachin-Jiga…",
+      "album": "Varun Dhawan, Kriti Sanon",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/ElZfdU54Cp8/hqdefault.jpg"
     },
     {
+      "id": "trending-194",
+      "youtubeId": "YALvuUpY_b0",
       "videoId": "YALvuUpY_b0",
       "title": "Apna Bana Le (From \"Bhediya\")",
       "artist": "Arijit Singh - Topic",
+      "album": "Desi Reel Hits",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/YALvuUpY_b0/hqdefault.jpg"
     },
     {
+      "id": "trending-195",
+      "youtubeId": "u2NAuswnTKs",
       "videoId": "u2NAuswnTKs",
       "title": "Apna Bana Le - Full Audio",
       "artist": "Bhediya | Varun Dhawan, Kriti Sanon| S…",
+      "album": "Bhediya",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/u2NAuswnTKs/hqdefault.jpg"
     },
     {
+      "id": "trending-196",
+      "youtubeId": "3lDJZr6kbsg",
       "videoId": "3lDJZr6kbsg",
       "title": "Apna Bana Le - Arijit Singh",
       "artist": "Varun Dhawan & Kriti Sanon | Sachin-Ji…",
+      "album": "Varun Dhawan & Kriti Sanon",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/3lDJZr6kbsg/hqdefault.jpg"
     },
     {
+      "id": "trending-197",
+      "youtubeId": "LSP9SjZ3rrs",
       "videoId": "LSP9SjZ3rrs",
       "title": "Best Of Arijit Singh 2024",
       "artist": "Arijit Singh Hits Songs | Arijit Singh…",
+      "album": "Arijit Singh Hits Songs",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/LSP9SjZ3rrs/hqdefault.jpg"
     },
     {
+      "id": "trending-198",
+      "youtubeId": "6X0pNXXeVIA",
       "videoId": "6X0pNXXeVIA",
       "title": "Sa Re Ga Ma Pa 2023 |Everyone's Heart Missed A B…",
       "artist": "Zee TV",
+      "album": "Desi Reel Hits",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/6X0pNXXeVIA/hqdefault.jpg"
     },
     {
+      "id": "trending-199",
+      "youtubeId": "Wr0BLOr2WlU",
       "videoId": "Wr0BLOr2WlU",
       "title": "Apna Bana Le - [Slowed And Reverb]",
       "artist": "Bhediya | Varun Dhawan, Kriti Sanon| A…",
+      "album": "Bhediya",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/Wr0BLOr2WlU/hqdefault.jpg"
     },
     {
+      "id": "trending-200",
+      "youtubeId": "3fPQtxRwn6U",
       "videoId": "3fPQtxRwn6U",
       "title": "APNA BANA LE Love Hits - Full Album",
       "artist": "Nonstop Romantic Songs | Valentine Spe…",
+      "album": "Nonstop Romantic Songs",
       "category": "trending",
       "thumbnail": "https://i.ytimg.com/vi/3fPQtxRwn6U/hqdefault.jpg"
     }
   ],
   "workout": [
     {
+      "id": "workout-001",
+      "youtubeId": "YxWlaYCA8MU",
       "videoId": "YxWlaYCA8MU",
       "title": "Jhoome Jo Pathaan Song",
       "artist": "Shah Rukh Khan, Deepika | Vishal & She…",
+      "album": "Shah Rukh Khan, Deepika",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/YxWlaYCA8MU/hqdefault.jpg"
     },
     {
+      "id": "workout-002",
+      "youtubeId": "Zlqf9cuaOBw",
       "videoId": "Zlqf9cuaOBw",
       "title": "Dunki Drop 5: O Maahi",
       "artist": "Shah Rukh Khan | Taapsee Pannu | Prita…",
+      "album": "Shah Rukh Khan",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/Zlqf9cuaOBw/hqdefault.jpg"
     },
     {
+      "id": "workout-003",
+      "youtubeId": "xWi8nDUjHGA",
       "videoId": "xWi8nDUjHGA",
       "title": "Yo Yo Honey Singh: DIL CHORI (Video) Simar Kaur,…",
       "artist": "Hans Raj Hans | Sonu Ke Titu Ki Sweety",
+      "album": "Hans Raj Hans",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/xWi8nDUjHGA/hqdefault.jpg"
     },
     {
+      "id": "workout-004",
+      "youtubeId": "5GCfYLguTIs",
       "videoId": "5GCfYLguTIs",
       "title": "BOYFRIEND(MUSIC VIDEO) KARAN AUJLA| SUNANDA",
       "artist": "IKKY | Latest Punjabi Songs 2025",
+      "album": "IKKY",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/5GCfYLguTIs/hqdefault.jpg"
     },
     {
+      "id": "workout-005",
+      "youtubeId": "2sAzb3kraoQ",
       "videoId": "2sAzb3kraoQ",
       "title": "Mexico Koka",
       "artist": "Karan Aujla Mahira Sharma Latest Punja…",
+      "album": "Workout & Gym",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/2sAzb3kraoQ/hqdefault.jpg"
     },
     {
+      "id": "workout-006",
+      "youtubeId": "CeFQO9MQNqs",
       "videoId": "CeFQO9MQNqs",
       "title": "Badshah X Karan Aujla - Players",
       "artist": "3:00 AM Sessions",
+      "album": "Workout & Gym",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/CeFQO9MQNqs/hqdefault.jpg"
     },
     {
+      "id": "workout-007",
+      "youtubeId": "uChhQpHMmXE",
       "videoId": "uChhQpHMmXE",
       "title": "Aaye Haaye",
       "artist": "Karan Aujla, Nora Fatehi, Neha Kakkar,…",
+      "album": "Workout & Gym",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/uChhQpHMmXE/hqdefault.jpg"
     },
     {
+      "id": "workout-008",
+      "youtubeId": "k85UB5b6pJU",
       "videoId": "k85UB5b6pJU",
       "title": "Admirin' You Karan Aujla",
       "artist": "Ikky | Making Memories | Latest Punjab…",
+      "album": "Ikky",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/k85UB5b6pJU/hqdefault.jpg"
     },
     {
+      "id": "workout-009",
+      "youtubeId": "fRJ03btNsao",
       "videoId": "fRJ03btNsao",
       "title": "Bachke Bachke Karan Aujla I Ikky",
       "artist": "Latest Punjabi Songs 2023",
+      "album": "Workout & Gym",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/fRJ03btNsao/hqdefault.jpg"
     },
     {
+      "id": "workout-010",
+      "youtubeId": "RuDsBrSczis",
       "videoId": "RuDsBrSczis",
       "title": "WYTB Karan Aujla ft Gurlej Akhtar",
       "artist": "New Punjabi Songs 2022",
+      "album": "Workout & Gym",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/RuDsBrSczis/hqdefault.jpg"
     },
     {
+      "id": "workout-011",
+      "youtubeId": "roz9sXFkTuE",
       "videoId": "roz9sXFkTuE",
       "title": "Aaj Ki Raat",
       "artist": "Stree 2 | Tamannaah Bhatia | Sachin–Ji…",
+      "album": "Stree 2",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/roz9sXFkTuE/hqdefault.jpg"
     },
     {
+      "id": "workout-012",
+      "youtubeId": "nFgsBxw-zWQ",
       "videoId": "nFgsBxw-zWQ",
       "title": "Aayi Nai -Stree 2",
       "artist": "Shraddha Kapoor | Rajkummar Rao | Sach…",
+      "album": "Shraddha Kapoor",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/nFgsBxw-zWQ/hqdefault.jpg"
     },
     {
+      "id": "workout-013",
+      "youtubeId": "2Vv-BfVoq4g",
       "videoId": "2Vv-BfVoq4g",
       "title": "Dangal Title Track",
       "artist": "Daler Mehndi, Pritam | Dangal",
+      "album": "Daler Mehndi, Pritam",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/2Vv-BfVoq4g/hqdefault.jpg"
     },
     {
+      "id": "workout-014",
+      "youtubeId": "W0dmYnZ9_hE",
       "videoId": "W0dmYnZ9_hE",
       "title": "Sultan Title Track",
       "artist": "Sukhwinder Singh, Shadab Faridi | Sultan",
+      "album": "Sukhwinder Singh, Shadab Faridi",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/W0dmYnZ9_hE/hqdefault.jpg"
     },
     {
+      "id": "workout-015",
+      "youtubeId": "k4q7Yg_Z49U",
       "videoId": "k4q7Yg_Z49U",
       "title": "Zinda",
       "artist": "Siddharth Mahadevan | Bhaag Milkha Bhaag",
+      "album": "Siddharth Mahadevan",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/k4q7Yg_Z49U/hqdefault.jpg"
     },
     {
+      "id": "workout-016",
+      "youtubeId": "tK9w_01p9zE",
       "videoId": "tK9w_01p9zE",
       "title": "Brothers Anthem",
       "artist": "Vishal Dadlani, Ajay-Atul | Brothers",
+      "album": "Vishal Dadlani, Ajay-Atul",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/tK9w_01p9zE/hqdefault.jpg"
     },
     {
+      "id": "workout-017",
+      "youtubeId": "0Y_q1i0w9aQ",
       "videoId": "0Y_q1i0w9aQ",
       "title": "Kar Har Maidaan Fateh",
       "artist": "Sukhwinder Singh, Shreya Ghoshal | Sanju",
+      "album": "Sukhwinder Singh, Shreya Ghoshal",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/0Y_q1i0w9aQ/hqdefault.jpg"
     },
     {
+      "id": "workout-018",
+      "youtubeId": "8lG1rK94qWE",
       "videoId": "8lG1rK94qWE",
       "title": "Chaiyya Chaiyya",
       "artist": "Sukhwinder Singh, Sapna Awasthi | Dil Se",
+      "album": "Sukhwinder Singh, Sapna Awasthi",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/8lG1rK94qWE/hqdefault.jpg"
     },
     {
+      "id": "workout-019",
+      "youtubeId": "7CdpHATpXXU",
       "videoId": "7CdpHATpXXU",
       "title": "Chak Lein De",
       "artist": "Kailash Kher | Chandni Chowk To China",
+      "album": "Kailash Kher",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/7CdpHATpXXU/hqdefault.jpg"
     },
     {
+      "id": "workout-020",
+      "youtubeId": "qnQCd_nZn_g",
       "videoId": "qnQCd_nZn_g",
       "title": "Get Ready To Fight",
       "artist": "Benny Dayal, Vishal Mishra | Baaghi",
+      "album": "Benny Dayal, Vishal Mishra",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/qnQCd_nZn_g/hqdefault.jpg"
     },
     {
+      "id": "workout-021",
+      "youtubeId": "PesrFCmjdNI",
       "videoId": "PesrFCmjdNI",
       "title": "Malhari",
       "artist": "Vishal Dadlani | Bajirao Mastani",
+      "album": "Vishal Dadlani",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/PesrFCmjdNI/hqdefault.jpg"
     },
     {
+      "id": "workout-022",
+      "youtubeId": "bjfKyIAlsZs",
       "videoId": "bjfKyIAlsZs",
       "title": "Singham Title Track",
       "artist": "Sukhwinder Singh, Ajay-Atul | Singham",
+      "album": "Sukhwinder Singh, Ajay-Atul",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/bjfKyIAlsZs/hqdefault.jpg"
     },
     {
+      "id": "workout-023",
+      "youtubeId": "BwiaxAos5cg",
       "videoId": "BwiaxAos5cg",
       "title": "Ziddi Dil",
       "artist": "Vishal Dadlani | Mary Kom",
+      "album": "Vishal Dadlani",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/BwiaxAos5cg/hqdefault.jpg"
     },
     {
+      "id": "workout-024",
+      "youtubeId": "-yX2trMgn5s",
       "videoId": "-yX2trMgn5s",
       "title": "Jee Karda",
       "artist": "Divya Kumar, Sachin-Jigar | Badlapur",
+      "album": "Divya Kumar, Sachin-Jigar",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/-yX2trMgn5s/hqdefault.jpg"
     },
     {
+      "id": "workout-025",
+      "youtubeId": "PkgStlsVaqw",
       "videoId": "PkgStlsVaqw",
       "title": "Aao Kabhi Haveli Pe Video",
       "artist": "STREE | Kriti Sanon | Badshah, Nikhita…",
+      "album": "STREE",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/PkgStlsVaqw/hqdefault.jpg"
     },
     {
+      "id": "workout-026",
+      "youtubeId": "Zrt77f7nTqY",
       "videoId": "Zrt77f7nTqY",
       "title": "Morni",
       "artist": "Badshah | Sharvi Yadav | Preity Mukhun…",
+      "album": "Badshah",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/Zrt77f7nTqY/hqdefault.jpg"
     },
     {
+      "id": "workout-027",
+      "youtubeId": "2G2_pc4IfUs",
       "videoId": "2G2_pc4IfUs",
       "title": "Chipmunks Songs || Aayi Nai || Stree 2 .....",
       "artist": "AKB FUNTUBE",
+      "album": "Workout & Gym",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/2G2_pc4IfUs/hqdefault.jpg"
     },
     {
+      "id": "workout-028",
+      "youtubeId": "KVnheXywIbY",
       "videoId": "KVnheXywIbY",
       "title": "Stree 2",
       "artist": "Official Trailer | Shraddha K | Rajkum…",
+      "album": "Official Trailer",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/KVnheXywIbY/hqdefault.jpg"
     },
     {
+      "id": "workout-029",
+      "youtubeId": "NZ1EBaqDL0M",
       "videoId": "NZ1EBaqDL0M",
       "title": "NASHA: Tamannaah B, Ajay D, Riteish D",
       "artist": "Jasmine S, Sachet T, Jaani | Bhushan K…",
+      "album": "Jasmine S, Sachet T, Jaani",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/NZ1EBaqDL0M/hqdefault.jpg"
     },
     {
+      "id": "workout-030",
+      "youtubeId": "EZh7my_RASk",
       "videoId": "EZh7my_RASk",
       "title": "Ikk Kudi sung by Alia Bhatt & Diljit Dosanjh",
       "artist": "Udta Punjab | Amit Trivedi",
+      "album": "Udta Punjab",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/EZh7my_RASk/hqdefault.jpg"
     },
     {
+      "id": "workout-031",
+      "youtubeId": "FewWUHxY79w",
       "videoId": "FewWUHxY79w",
       "title": "Chal Kudiye",
       "artist": "Jigra | Diljit Dosanjh | Alia Bhatt | …",
+      "album": "Jigra",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/FewWUHxY79w/hqdefault.jpg"
     },
     {
+      "id": "workout-032",
+      "youtubeId": "ZbX_nlzv7uU",
       "videoId": "ZbX_nlzv7uU",
       "title": "Ikk Kudi (Reprised Version) Udta Punjab",
       "artist": "Diljit Dosanjh | Alia Bhatt | Amit Tri…",
+      "album": "Diljit Dosanjh",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/ZbX_nlzv7uU/hqdefault.jpg"
     },
     {
+      "id": "workout-033",
+      "youtubeId": "MnNQW_L7ovY",
       "videoId": "MnNQW_L7ovY",
       "title": "Chal Kudiye (From \"Jigra\")",
       "artist": "Diljit Dosanjh - Topic",
+      "album": "Workout & Gym",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/MnNQW_L7ovY/hqdefault.jpg"
     },
     {
+      "id": "workout-034",
+      "youtubeId": "YDAWpY747TY",
       "videoId": "YDAWpY747TY",
       "title": "Chaska Ishq Pyar Ka",
       "artist": "Navneet Sumohan & Simran | Official Mu…",
+      "album": "Navneet Sumohan & Simran",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/YDAWpY747TY/hqdefault.jpg"
     },
     {
+      "id": "workout-035",
+      "youtubeId": "T_lDkgKdTD8",
       "videoId": "T_lDkgKdTD8",
       "title": "Jigra -Full Album",
       "artist": "Alia Bhatt |Vedang Raina | Chal Kudiye…",
+      "album": "Alia Bhatt",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/T_lDkgKdTD8/hqdefault.jpg"
     },
     {
+      "id": "workout-036",
+      "youtubeId": "qH-fnpT7qgU",
       "videoId": "qH-fnpT7qgU",
       "title": "Making of Chal Kudiye",
       "artist": "Jigra | Diljit Dosanjh | Alia Bhatt | …",
+      "album": "Jigra",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/qH-fnpT7qgU/hqdefault.jpg"
     },
     {
+      "id": "workout-037",
+      "youtubeId": "AhO7mWclXOc",
       "videoId": "AhO7mWclXOc",
       "title": "Hits of Alia Bhatt - Video Jukebox",
       "artist": "What Jhumka | Tum Kya Mile | Ve Kamley…",
+      "album": "What Jhumka",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/AhO7mWclXOc/hqdefault.jpg"
     },
     {
+      "id": "workout-038",
+      "youtubeId": "FgHz5qNwtqg",
       "videoId": "FgHz5qNwtqg",
       "title": "Chal Kudiye - Lyrical",
       "artist": "Jigra | Diljit Dosanjh | Alia Bhatt | …",
+      "album": "Jigra",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/FgHz5qNwtqg/hqdefault.jpg"
     },
     {
+      "id": "workout-039",
+      "youtubeId": "fnyd1hGyJIY",
       "videoId": "fnyd1hGyJIY",
       "title": "Chal Kudiye - Audio",
       "artist": "Jigra | Diljit Dosanjh | Alia Bhatt | …",
+      "album": "Jigra",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/fnyd1hGyJIY/hqdefault.jpg"
     },
     {
+      "id": "workout-040",
+      "youtubeId": "fAU6b5U26sM",
       "videoId": "fAU6b5U26sM",
       "title": "Women's Day Special - Video Jukebox",
       "artist": "Chal Kudiye, Dholida, Jhume Re Gori, A…",
+      "album": "Workout & Gym",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/fAU6b5U26sM/hqdefault.jpg"
     },
     {
+      "id": "workout-041",
+      "youtubeId": "Z23mOrp8i24",
       "videoId": "Z23mOrp8i24",
       "title": "Best of Alia Bhatt - Video Jukebox",
       "artist": "What Jhumka | Ve Kamleya | Kudmayi | D…",
+      "album": "What Jhumka",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/Z23mOrp8i24/hqdefault.jpg"
     },
     {
+      "id": "workout-042",
+      "youtubeId": "iAv5WMNRX90",
       "videoId": "iAv5WMNRX90",
       "title": "Diljit Dosanjh - Top 3 Songs (Video Jukebox)",
       "artist": "Bhairava Anthem | Love Ya | Chal Kudiye",
+      "album": "Bhairava Anthem",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/iAv5WMNRX90/hqdefault.jpg"
     },
     {
+      "id": "workout-043",
+      "youtubeId": "H9ogpITFBYM",
       "videoId": "H9ogpITFBYM",
       "title": "Chal Kudiye Melodic House Mix",
       "artist": "Arthat - Topic",
+      "album": "Workout & Gym",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/H9ogpITFBYM/hqdefault.jpg"
     },
     {
+      "id": "workout-044",
+      "youtubeId": "4VqbPwVYq1s",
       "videoId": "4VqbPwVYq1s",
       "title": "Chal Kudiye - Teaser",
       "artist": "Jigra | Alia Bhatt, Diljit Dosanjh | C…",
+      "album": "Jigra",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/4VqbPwVYq1s/hqdefault.jpg"
     },
     {
+      "id": "workout-045",
+      "youtubeId": "NV7XJe4nqJ8",
       "videoId": "NV7XJe4nqJ8",
       "title": "Chal Kudiye - Jigra",
       "artist": "Diljit Dosanjh | Alia Bhatt | Manpreet…",
+      "album": "Diljit Dosanjh",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/NV7XJe4nqJ8/hqdefault.jpg"
     },
     {
+      "id": "workout-046",
+      "youtubeId": "JcpiVAbAnYg",
       "videoId": "JcpiVAbAnYg",
       "title": "Making of Chal Kudiye",
       "artist": "Diljit Dosanjh | Alia Bhatt | Jigra | …",
+      "album": "Diljit Dosanjh",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/JcpiVAbAnYg/hqdefault.jpg"
     },
     {
+      "id": "workout-047",
+      "youtubeId": "Bpj3JYLCCuA",
       "videoId": "Bpj3JYLCCuA",
       "title": "Celebrating 1 Year of Jigra - Video Jukebox",
       "artist": "Alia Bhatt | Vedang Raina | Tenu Sang …",
+      "album": "Alia Bhatt",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/Bpj3JYLCCuA/hqdefault.jpg"
     },
     {
+      "id": "workout-048",
+      "youtubeId": "QnQRMHkXzZ4",
       "videoId": "QnQRMHkXzZ4",
       "title": "Jigra - Video Jukebox",
       "artist": "Alia Bhatt|Vedang Raina|Tenu Sang Rakh…",
+      "album": "Alia Bhatt",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/QnQRMHkXzZ4/hqdefault.jpg"
     },
     {
+      "id": "workout-049",
+      "youtubeId": "j3nADe5euQw",
       "videoId": "j3nADe5euQw",
       "title": "Chal Kudiye",
       "artist": "Jigra | Diljit Dosanjh | Alia Bhatt | …",
+      "album": "Jigra",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/j3nADe5euQw/hqdefault.jpg"
     },
     {
+      "id": "workout-050",
+      "youtubeId": "Etkd-07gnxM",
       "videoId": "Etkd-07gnxM",
       "title": "Dunki: O Maahi",
       "artist": "Shah Rukh Khan | Taapsee Pannu | Prita…",
+      "album": "Shah Rukh Khan",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/Etkd-07gnxM/hqdefault.jpg"
     },
     {
+      "id": "workout-051",
+      "youtubeId": "pCYojfACnzQ",
       "videoId": "pCYojfACnzQ",
       "title": "Challa (Main Lad Jaana)",
       "artist": "Romy, Vivek Hariharan | Uri",
+      "album": "Romy, Vivek Hariharan",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/pCYojfACnzQ/hqdefault.jpg"
     },
     {
+      "id": "workout-052",
+      "youtubeId": "sv26LXD4GbI",
       "videoId": "sv26LXD4GbI",
       "title": "Jai Jai Shivshankar",
       "artist": "Vishal Dadlani, Benny Dayal | War",
+      "album": "Vishal Dadlani, Benny Dayal",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/sv26LXD4GbI/hqdefault.jpg"
     },
     {
+      "id": "workout-053",
+      "youtubeId": "1tsCjcq0G-U",
       "videoId": "1tsCjcq0G-U",
       "title": "Aarambh Hai Prachand",
       "artist": "Piyush Mishra | Gulaal",
+      "album": "Piyush Mishra",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/1tsCjcq0G-U/hqdefault.jpg"
     },
     {
+      "id": "workout-054",
+      "youtubeId": "F5W9370GZ9s",
       "videoId": "F5W9370GZ9s",
       "title": "Neele Neele Ambar Par",
       "artist": "Kishore Kumar | Kalaakaar",
+      "album": "Kishore Kumar",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/F5W9370GZ9s/hqdefault.jpg"
     },
     {
+      "id": "workout-055",
+      "youtubeId": "henP_m2wUqg",
       "videoId": "henP_m2wUqg",
       "title": "Mere Sapnon Ki Rani",
       "artist": "Kishore Kumar | Aradhana",
+      "album": "Kishore Kumar",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/henP_m2wUqg/hqdefault.jpg"
     },
     {
+      "id": "workout-056",
+      "youtubeId": "gA62xK4BqQE",
       "videoId": "gA62xK4BqQE",
       "title": "Yeh Shaam Mastani",
       "artist": "Kishore Kumar | Kati Patang",
+      "album": "Kishore Kumar",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/gA62xK4BqQE/hqdefault.jpg"
     },
     {
+      "id": "workout-057",
+      "youtubeId": "P_jKk7a-pXw",
       "videoId": "P_jKk7a-pXw",
       "title": "Roop Tera Mastana",
       "artist": "Kishore Kumar | Aradhana",
+      "album": "Kishore Kumar",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/P_jKk7a-pXw/hqdefault.jpg"
     },
     {
+      "id": "workout-058",
+      "youtubeId": "o2F8_90L1b0",
       "videoId": "o2F8_90L1b0",
       "title": "O Mere Dil Ke Chain",
       "artist": "Kishore Kumar | Mere Jeevan Saathi",
+      "album": "Kishore Kumar",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/o2F8_90L1b0/hqdefault.jpg"
     },
     {
+      "id": "workout-059",
+      "youtubeId": "dG928sWk0_U",
       "videoId": "dG928sWk0_U",
       "title": "Pal Pal Dil Ke Paas",
       "artist": "Kishore Kumar | Blackmail",
+      "album": "Kishore Kumar",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/dG928sWk0_U/hqdefault.jpg"
     },
     {
+      "id": "workout-060",
+      "youtubeId": "sVPKUMyOmg0",
       "videoId": "sVPKUMyOmg0",
       "title": "O Maahi - Arjit Singh",
       "artist": "Pritam | Irshad Kamil | Shah Rukh Khan…",
+      "album": "Pritam",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/sVPKUMyOmg0/hqdefault.jpg"
     },
     {
+      "id": "workout-061",
+      "youtubeId": "E-Qzp9_uzlA",
       "videoId": "E-Qzp9_uzlA",
       "title": "Dunki: O Maahi 8K Full Song",
       "artist": "Shah Rukh Khan | Taapsee Pannu | Prita…",
+      "album": "Shah Rukh Khan",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/E-Qzp9_uzlA/hqdefault.jpg"
     },
     {
+      "id": "workout-062",
+      "youtubeId": "Ref5bT8Tuk8",
       "videoId": "Ref5bT8Tuk8",
       "title": "O Maahi - Dunki",
       "artist": "Shah Rukh Khan | Taapsee Pannu | Prita…",
+      "album": "Shah Rukh Khan",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/Ref5bT8Tuk8/hqdefault.jpg"
     },
     {
+      "id": "workout-063",
+      "youtubeId": "yWo9_7I58Bc",
       "videoId": "yWo9_7I58Bc",
       "title": "Dunki: O Maahi",
       "artist": "Shah Rukh Khan | Taapsee Pannu | Prita…",
+      "album": "Shah Rukh Khan",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/yWo9_7I58Bc/hqdefault.jpg"
     },
     {
+      "id": "workout-064",
+      "youtubeId": "Xb82Eexgyeo",
       "videoId": "Xb82Eexgyeo",
       "title": "O Maahi",
       "artist": "Dunki | Arijit Singh | [ Slowed + reve…",
+      "album": "Dunki",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/Xb82Eexgyeo/hqdefault.jpg"
     },
     {
+      "id": "workout-065",
+      "youtubeId": "q8Mhq2GVM9M",
       "videoId": "q8Mhq2GVM9M",
       "title": "O MAAHI ( Lyrical video ) Dunki",
       "artist": "Shah Rukh Khan, Taapsee Pannu | Arijit…",
+      "album": "Shah Rukh Khan, Taapsee Pannu",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/q8Mhq2GVM9M/hqdefault.jpg"
     },
     {
+      "id": "workout-066",
+      "youtubeId": "2o1Bv1DyUN0",
       "videoId": "2o1Bv1DyUN0",
       "title": "Dunki : O Maahi",
       "artist": "Shah Rukh Khan | Taapsee Pannu | Prita…",
+      "album": "Shah Rukh Khan",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/2o1Bv1DyUN0/hqdefault.jpg"
     },
     {
+      "id": "workout-067",
+      "youtubeId": "AUvYe_ZgLOY",
       "videoId": "AUvYe_ZgLOY",
       "title": "Dunki : O Maahi",
       "artist": "Shah Rukh Khan | Taapsee Pannu | Prita…",
+      "album": "Shah Rukh Khan",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/AUvYe_ZgLOY/hqdefault.jpg"
     },
     {
+      "id": "workout-068",
+      "youtubeId": "yktlUKTWlJg",
       "videoId": "yktlUKTWlJg",
       "title": "O Maahi X Tum Tak Mashup",
       "artist": "Dunki | Raanjhanaa | Pritam | Arijit S…",
+      "album": "Dunki",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/yktlUKTWlJg/hqdefault.jpg"
     },
     {
+      "id": "workout-069",
+      "youtubeId": "QXJyMpxd210",
       "videoId": "QXJyMpxd210",
       "title": "Ve Kamleya",
       "artist": "Rocky Aur Rani Kii Prem Kahaani | Ranv…",
+      "album": "Rocky Aur Rani Kii Prem Kahaani",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/QXJyMpxd210/hqdefault.jpg"
     },
     {
+      "id": "workout-070",
+      "youtubeId": "3qpxJEp4Ec4",
       "videoId": "3qpxJEp4Ec4",
       "title": "Kudmayi (Film Version)",
       "artist": "Rocky Aur Rani Kii Prem Kahaani | Ranv…",
+      "album": "Rocky Aur Rani Kii Prem Kahaani",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/3qpxJEp4Ec4/hqdefault.jpg"
     },
     {
+      "id": "workout-071",
+      "youtubeId": "taRBVfDRukY",
       "videoId": "taRBVfDRukY",
       "title": "Tum Kya Mile - Rocky Aur Rani Kii Prem Kahaani",
       "artist": "Ranveer | Alia | Pritam | Amitabh | Ar…",
+      "album": "Ranveer",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/taRBVfDRukY/hqdefault.jpg"
     },
     {
+      "id": "workout-072",
+      "youtubeId": "hacByYwJ_a4",
       "videoId": "hacByYwJ_a4",
       "title": "Tum Kya Mile-Full Video",
       "artist": "Rocky Aur Rani Kii Prem Kahaani, Ranve…",
+      "album": "Workout & Gym",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/hacByYwJ_a4/hqdefault.jpg"
     },
     {
+      "id": "workout-073",
+      "youtubeId": "GkJ_wZy0iB4",
       "videoId": "GkJ_wZy0iB4",
       "title": "Ve Kamleya (From \"Rocky Aur Rani Kii Prem Kahaan…",
       "artist": "Pritam - Topic",
+      "album": "Workout & Gym",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/GkJ_wZy0iB4/hqdefault.jpg"
     },
     {
+      "id": "workout-074",
+      "youtubeId": "IYK34I7y5O8",
       "videoId": "IYK34I7y5O8",
       "title": "Ve Kamleya Mere Nadan Dil Arijit Singh & Shreya …",
       "artist": "Ranveer, Alia | Pritam",
+      "album": "Ranveer, Alia",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/IYK34I7y5O8/hqdefault.jpg"
     },
     {
+      "id": "workout-075",
+      "youtubeId": "aa7_itx64eI",
       "videoId": "aa7_itx64eI",
       "title": "Bigboss OTT Finale Performance by Asees Kaur - V…",
       "artist": "#aseeskaur #biggboss",
+      "album": "Workout & Gym",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/aa7_itx64eI/hqdefault.jpg"
     },
     {
+      "id": "workout-076",
+      "youtubeId": "AdYOIQTyAAw",
       "videoId": "AdYOIQTyAAw",
       "title": "Ve Kamleya - Asees Version",
       "artist": "Rocky Aur Rani Kii Prem Kahaani | Ranv…",
+      "album": "Rocky Aur Rani Kii Prem Kahaani",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/AdYOIQTyAAw/hqdefault.jpg"
     },
     {
+      "id": "workout-077",
+      "youtubeId": "TjXH_P7Khhg",
       "videoId": "TjXH_P7Khhg",
       "title": "VE KAMLEYA - ARIJIT SINGH &  SHREYA GOSHAL ( Lyr…",
       "artist": "Lyrical 7",
+      "album": "Workout & Gym",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/TjXH_P7Khhg/hqdefault.jpg"
     },
     {
+      "id": "workout-078",
+      "youtubeId": "mHdneo9_yLM",
       "videoId": "mHdneo9_yLM",
       "title": "Tum Kya Mile - Lyrical",
       "artist": "Rocky Aur Rani Kii Prem Kahaani | Ranv…",
+      "album": "Rocky Aur Rani Kii Prem Kahaani",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/mHdneo9_yLM/hqdefault.jpg"
     },
     {
+      "id": "workout-079",
+      "youtubeId": "vee_P6pIv_E",
       "videoId": "vee_P6pIv_E",
       "title": "What Jhumka? - 8K Video",
       "artist": "Rocky Aur Rani Kii Prem Kahaani | Ranv…",
+      "album": "Rocky Aur Rani Kii Prem Kahaani",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/vee_P6pIv_E/hqdefault.jpg"
     },
     {
+      "id": "workout-080",
+      "youtubeId": "ETMul5GVk_Y",
       "videoId": "ETMul5GVk_Y",
       "title": "Tum Kya Mile - 8K Video",
       "artist": "Rocky Aur Rani Kii Prem Kahaani | Ranv…",
+      "album": "Rocky Aur Rani Kii Prem Kahaani",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/ETMul5GVk_Y/hqdefault.jpg"
     },
     {
+      "id": "workout-081",
+      "youtubeId": "Pz_FkqA2x6s",
       "videoId": "Pz_FkqA2x6s",
       "title": "Ve Kamleya - Audio",
       "artist": "Rocky Aur Rani Kii Prem Kahaani, Ranve…",
+      "album": "Workout & Gym",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/Pz_FkqA2x6s/hqdefault.jpg"
     },
     {
+      "id": "workout-082",
+      "youtubeId": "FBTgulBOUy0",
       "videoId": "FBTgulBOUy0",
       "title": "Carvaan Medley",
       "artist": "Rocky Aur Rani Kii Prem Kahaani | Ranv…",
+      "album": "Rocky Aur Rani Kii Prem Kahaani",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/FBTgulBOUy0/hqdefault.jpg"
     },
     {
+      "id": "workout-083",
+      "youtubeId": "K3B8-klo5xc",
       "videoId": "K3B8-klo5xc",
       "title": "Kesariya (Dance Mix) - Brahmāstra",
       "artist": "Amitabh B | Ranbir | Alia | Pritam | S…",
+      "album": "Amitabh B",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/K3B8-klo5xc/hqdefault.jpg"
     },
     {
+      "id": "workout-084",
+      "youtubeId": "OweU4sBBqGI",
       "videoId": "OweU4sBBqGI",
       "title": "Tum Kya Mile",
       "artist": "Pritam' s Version (From \"Rocky Aur Ran…",
+      "album": "Workout & Gym",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/OweU4sBBqGI/hqdefault.jpg"
     },
     {
+      "id": "workout-085",
+      "youtubeId": "9uIIdCBRNRc",
       "videoId": "9uIIdCBRNRc",
       "title": "Ve Kamleya (Slowed + Reverb)",
       "artist": "Arijit Singh, Shreya Ghoshal | SR Lofi",
+      "album": "Arijit Singh, Shreya Ghoshal",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/9uIIdCBRNRc/hqdefault.jpg"
     },
     {
+      "id": "workout-086",
+      "youtubeId": "0avk5g_9Cgk",
       "videoId": "0avk5g_9Cgk",
       "title": "Ve Kamleya (Slowed + Reverb)",
       "artist": "Arijit Singh, Shreya Ghoshal |",
+      "album": "Arijit Singh, Shreya Ghoshal",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/0avk5g_9Cgk/hqdefault.jpg"
     },
     {
+      "id": "workout-087",
+      "youtubeId": "44Aq9OZtM_M",
       "videoId": "44Aq9OZtM_M",
       "title": "Ve Kamleya-Lyrical",
       "artist": "Rocky Aur Rani Kii Prem Kahaani | Ranv…",
+      "album": "Rocky Aur Rani Kii Prem Kahaani",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/44Aq9OZtM_M/hqdefault.jpg"
     },
     {
+      "id": "workout-088",
+      "youtubeId": "cpfns3c5AQc",
       "videoId": "cpfns3c5AQc",
       "title": "Tum Kya Mile - Lyrical",
       "artist": "Rocky Aur Rani Kii Prem Kahaani | Ranv…",
+      "album": "Rocky Aur Rani Kii Prem Kahaani",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/cpfns3c5AQc/hqdefault.jpg"
     },
     {
+      "id": "workout-089",
+      "youtubeId": "BddP6PYo2gs",
       "videoId": "BddP6PYo2gs",
       "title": "Kesariya - Brahmāstra",
       "artist": "Ranbir Kapoor, Alia Bhatt | Pritam | A…",
+      "album": "Ranbir Kapoor, Alia Bhatt",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/BddP6PYo2gs/hqdefault.jpg"
     },
     {
+      "id": "workout-090",
+      "youtubeId": "RLzC55ai0eo",
       "videoId": "RLzC55ai0eo",
       "title": "Heeriye Jasleen Royal ft Arijit Singh| Dulquer S…",
       "artist": "Jasleen Royal",
+      "album": "Workout & Gym",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/RLzC55ai0eo/hqdefault.jpg"
     },
     {
+      "id": "workout-091",
+      "youtubeId": "mNuhKUOD_A0",
       "videoId": "mNuhKUOD_A0",
       "title": "Deva Deva",
       "artist": "Extended Film Version|Brahmāstra|Amita…",
+      "album": "Extended Film Version",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/mNuhKUOD_A0/hqdefault.jpg"
     },
     {
+      "id": "workout-092",
+      "youtubeId": "6mr4cYJ7yew",
       "videoId": "6mr4cYJ7yew",
       "title": "Kesariya - Film Version",
       "artist": "Brahmāstra | Ranbir | Alia | Pritam | …",
+      "album": "Brahmāstra",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/6mr4cYJ7yew/hqdefault.jpg"
     },
     {
+      "id": "workout-093",
+      "youtubeId": "NJAv_7lHUIU",
       "videoId": "NJAv_7lHUIU",
       "title": "Kesariya (From \"Brahmastra\")",
       "artist": "Arijit Singh - Topic",
+      "album": "Workout & Gym",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/NJAv_7lHUIU/hqdefault.jpg"
     },
     {
+      "id": "workout-094",
+      "youtubeId": "xfMN4SpIxIA",
       "videoId": "xfMN4SpIxIA",
       "title": "Dance Ka Bhoot - Brahmāstra",
       "artist": "Ranbir Kapoor | Alia Bhatt | Pritam | …",
+      "album": "Ranbir Kapoor",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/xfMN4SpIxIA/hqdefault.jpg"
     },
     {
+      "id": "workout-095",
+      "youtubeId": "zCGck2spPsU",
       "videoId": "zCGck2spPsU",
       "title": "Kesariya x Saibo Mashup",
       "artist": "Chillout Heart | Arijit Singh, Shreya …",
+      "album": "Chillout Heart",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/zCGck2spPsU/hqdefault.jpg"
     },
     {
+      "id": "workout-096",
+      "youtubeId": "4-iO6c-JmN8",
       "videoId": "4-iO6c-JmN8",
       "title": "Ek Ladki Ko Dekha Toh Aisa Laga",
       "artist": "Kumar Sanu | 1942 A Love Story",
+      "album": "Kumar Sanu",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/4-iO6c-JmN8/hqdefault.jpg"
     },
     {
+      "id": "workout-097",
+      "youtubeId": "g6fnFALEseI",
       "videoId": "g6fnFALEseI",
       "title": "Kesariya",
       "artist": "Official Lyric|Brahmāstra|Ranbir, Alia…",
+      "album": "Official Lyric",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/g6fnFALEseI/hqdefault.jpg"
     },
     {
+      "id": "workout-098",
+      "youtubeId": "W1S9AbHpWFY",
       "videoId": "W1S9AbHpWFY",
       "title": "Kesariya Full Song - Brahmastra",
       "artist": "Arijit Singh | Kesariya Tera Ishq Hai …",
+      "album": "Arijit Singh",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/W1S9AbHpWFY/hqdefault.jpg"
     },
     {
+      "id": "workout-099",
+      "youtubeId": "1qeujW9f4So",
       "videoId": "1qeujW9f4So",
       "title": "BRAHMĀSTRA Part One: Shiva",
       "artist": "Kesariya Teaser | Ranbir | Alia | Arij…",
+      "album": "Kesariya Teaser",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/1qeujW9f4So/hqdefault.jpg"
     },
     {
+      "id": "workout-100",
+      "youtubeId": "k6GjS_Hzg8I",
       "videoId": "k6GjS_Hzg8I",
       "title": "Kesariya Full Song - Brahmastra",
       "artist": "Arijit Singh | Kesariya Tera Ishq Hai …",
+      "album": "Arijit Singh",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/k6GjS_Hzg8I/hqdefault.jpg"
     },
     {
+      "id": "workout-101",
+      "youtubeId": "PLIsDVqACZ0",
       "videoId": "PLIsDVqACZ0",
       "title": "Deva Deva",
       "artist": "Film Version |Brahmāstra |Amitabh B|Ra…",
+      "album": "Film Version",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/PLIsDVqACZ0/hqdefault.jpg"
     },
     {
+      "id": "workout-102",
+      "youtubeId": "P7yRYiBiV3g",
       "videoId": "P7yRYiBiV3g",
       "title": "Kesariya Music Video",
       "artist": "Arijit Singh | Ranbir Kapoor | Alia Bh…",
+      "album": "Arijit Singh",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/P7yRYiBiV3g/hqdefault.jpg"
     },
     {
+      "id": "workout-103",
+      "youtubeId": "Gqnnrop26Sw",
       "videoId": "Gqnnrop26Sw",
       "title": "Heeriye Jasleen Royal ft Arijit Singh| Dulquer S…",
       "artist": "Shubham Vlog Dehati",
+      "album": "Workout & Gym",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/Gqnnrop26Sw/hqdefault.jpg"
     },
     {
+      "id": "workout-104",
+      "youtubeId": "aDOs442shYU",
       "videoId": "aDOs442shYU",
       "title": "Rasiya Reprise - Brahmāstra",
       "artist": "Amitabh B | Ranbir | Alia | Pritam | A…",
+      "album": "Amitabh B",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/aDOs442shYU/hqdefault.jpg"
     },
     {
+      "id": "workout-105",
+      "youtubeId": "WCDXUgvddR4",
       "videoId": "WCDXUgvddR4",
       "title": "BRAHMĀSTRA (Kannada)",
       "artist": "Kesariya Rangu | Ranbir | Alia | Prita…",
+      "album": "Kesariya Rangu",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/WCDXUgvddR4/hqdefault.jpg"
     },
     {
+      "id": "workout-106",
+      "youtubeId": "532toSHe57E",
       "videoId": "532toSHe57E",
       "title": "Kesariya [Slowed + Reverb] Arijit Singh",
       "artist": "Brahmastra",
+      "album": "Workout & Gym",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/532toSHe57E/hqdefault.jpg"
     },
     {
+      "id": "workout-107",
+      "youtubeId": "jZba76mHdg4",
       "videoId": "jZba76mHdg4",
       "title": "BRAHMĀSTRA (Tamil)",
       "artist": "Deva Deva | Amitabh B | Ranbir | Alia …",
+      "album": "Deva Deva",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/jZba76mHdg4/hqdefault.jpg"
     },
     {
+      "id": "workout-108",
+      "youtubeId": "HLDFbuGhFVU",
       "videoId": "HLDFbuGhFVU",
       "title": "Kesariya - Brahmāstra",
       "artist": "Arijit Singh | Kesariya Tera Ishq Hai …",
+      "album": "Arijit Singh",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/HLDFbuGhFVU/hqdefault.jpg"
     },
     {
+      "id": "workout-109",
+      "youtubeId": "4VwtfInG-LU",
       "videoId": "4VwtfInG-LU",
       "title": "Heeriye (feat. Arijit Singh)",
       "artist": "Jasleen Royal - Topic",
+      "album": "Workout & Gym",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/4VwtfInG-LU/hqdefault.jpg"
     },
     {
+      "id": "workout-110",
+      "youtubeId": "ObiCEWmYH5Y",
       "videoId": "ObiCEWmYH5Y",
       "title": "Heeriye Jasleen Royal ft. Arijit Singh & Dulquer…",
       "artist": "Indie India",
+      "album": "Workout & Gym",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/ObiCEWmYH5Y/hqdefault.jpg"
     },
     {
+      "id": "workout-111",
+      "youtubeId": "Q11jKrhG7m4",
       "videoId": "Q11jKrhG7m4",
       "title": "Heeriye (Slowed + Reverb)",
       "artist": "Arijit Singh, Jasleen Royal | SR Lofi",
+      "album": "Arijit Singh, Jasleen Royal",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/Q11jKrhG7m4/hqdefault.jpg"
     },
     {
+      "id": "workout-112",
+      "youtubeId": "WJumea3vEpw",
       "videoId": "WJumea3vEpw",
       "title": "Heeriye Jasleen Royal ft Arijit Singh| Dulquer S…",
       "artist": "Ps Official",
+      "album": "Workout & Gym",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/WJumea3vEpw/hqdefault.jpg"
     },
     {
+      "id": "workout-113",
+      "youtubeId": "IhLJRgr-r0o",
       "videoId": "IhLJRgr-r0o",
       "title": "Heeriye Jasleen Royal ft. Arijit Singh",
       "artist": "Dulquer Salmaan | Aditya| Taani | Memo…",
+      "album": "Dulquer Salmaan",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/IhLJRgr-r0o/hqdefault.jpg"
     },
     {
+      "id": "workout-114",
+      "youtubeId": "SW2uyfNqHg4",
       "videoId": "SW2uyfNqHg4",
       "title": "Heeriye Lofi Remix (feat. Arijit Singh)",
       "artist": "Jasleen Royal - Topic",
+      "album": "Workout & Gym",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/SW2uyfNqHg4/hqdefault.jpg"
     },
     {
+      "id": "workout-115",
+      "youtubeId": "jC1oFRhElEw",
       "videoId": "jC1oFRhElEw",
       "title": "Key board",
       "artist": "funny taught",
+      "album": "Workout & Gym",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/jC1oFRhElEw/hqdefault.jpg"
     },
     {
+      "id": "workout-116",
+      "youtubeId": "gslkqoBV5SA",
       "videoId": "gslkqoBV5SA",
       "title": "Heeriye - Remix",
       "artist": "Dj Sunny | Arijit Singh & Jasleen Roya…",
+      "album": "Dj Sunny",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/gslkqoBV5SA/hqdefault.jpg"
     },
     {
+      "id": "workout-117",
+      "youtubeId": "T8Y8c1iQ_uE",
       "videoId": "T8Y8c1iQ_uE",
       "title": "Pehla Nasha",
       "artist": "Udit Narayan, Sadhana Sargam | JJWS",
+      "album": "Udit Narayan, Sadhana Sargam",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/T8Y8c1iQ_uE/hqdefault.jpg"
     },
     {
+      "id": "workout-118",
+      "youtubeId": "9uHS97epnYc",
       "videoId": "9uHS97epnYc",
       "title": "Asmar video",
       "artist": "Winnner Boy",
+      "album": "Workout & Gym",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/9uHS97epnYc/hqdefault.jpg"
     },
     {
+      "id": "workout-119",
+      "youtubeId": "BbGNpf5vDTE",
       "videoId": "BbGNpf5vDTE",
       "title": "Heeriye (Official song) Jasleen Royal ft Arijit …",
       "artist": "CK Communication",
+      "album": "Workout & Gym",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/BbGNpf5vDTE/hqdefault.jpg"
     },
     {
+      "id": "workout-120",
+      "youtubeId": "Miz5wvLmXPI",
       "videoId": "Miz5wvLmXPI",
       "title": "Heeriye (Flute Cover)",
       "artist": "Flute Siva | Jasleen Royal | Arijit Si…",
+      "album": "Flute Siva",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/Miz5wvLmXPI/hqdefault.jpg"
     },
     {
+      "id": "workout-121",
+      "youtubeId": "AdKdqAqsnsY",
       "videoId": "AdKdqAqsnsY",
       "title": "Heeriye Jasleen Royal ft. Arijit Singh",
       "artist": "Dulquer Salmaan | Aditya| Taani | Memo…",
+      "album": "Dulquer Salmaan",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/AdKdqAqsnsY/hqdefault.jpg"
     },
     {
+      "id": "workout-122",
+      "youtubeId": "Wr0BLOr2WlU",
       "videoId": "Wr0BLOr2WlU",
       "title": "Apna Bana Le - [Slowed And Reverb]",
       "artist": "Bhediya | Varun Dhawan, Kriti Sanon| A…",
+      "album": "Bhediya",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/Wr0BLOr2WlU/hqdefault.jpg"
     },
     {
+      "id": "workout-123",
+      "youtubeId": "npKOkLWrZeE",
       "videoId": "npKOkLWrZeE",
       "title": "निम्बू देखिए दोस्तों निम्बू कितने सारे निम्बू लग…",
       "artist": "vlog video ",
+      "album": "Workout & Gym",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/npKOkLWrZeE/hqdefault.jpg"
     },
     {
+      "id": "workout-124",
+      "youtubeId": "gX3Gw-3wxfs",
       "videoId": "gX3Gw-3wxfs",
       "title": "Heeriye Jasleen Royal ft Arijit Singh| Dulquer S…",
       "artist": "Marwadi Madam",
+      "album": "Workout & Gym",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/gX3Gw-3wxfs/hqdefault.jpg"
     },
     {
+      "id": "workout-125",
+      "youtubeId": "K0I124SPxmI",
       "videoId": "K0I124SPxmI",
       "title": "आज देख शहर में घूमने गए तो यहां का वीडियो बनाया …",
       "artist": "GP VIDEOS",
+      "album": "Workout & Gym",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/K0I124SPxmI/hqdefault.jpg"
     },
     {
+      "id": "workout-126",
+      "youtubeId": "P6G4QoKwnzI",
       "videoId": "P6G4QoKwnzI",
       "title": "Heeriye - English Translation",
       "artist": "Arijit Singh, Jasleen Royal, Aditya Sh…",
+      "album": "Workout & Gym",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/P6G4QoKwnzI/hqdefault.jpg"
     },
     {
+      "id": "workout-127",
+      "youtubeId": "t5PEt4aXI58",
       "videoId": "t5PEt4aXI58",
       "title": "जोधपुर में बना हुआ है यह बहुत ही खूबसूरत महल छित…",
       "artist": "Singer Suresh bhati official ",
+      "album": "Workout & Gym",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/t5PEt4aXI58/hqdefault.jpg"
     },
     {
+      "id": "workout-128",
+      "youtubeId": "VAdGW7QDJiU",
       "videoId": "VAdGW7QDJiU",
       "title": "JAWAN: Chaleya (Hindi)",
       "artist": "Shah Rukh Khan | Nayanthara | Atlee | …",
+      "album": "Shah Rukh Khan",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/VAdGW7QDJiU/hqdefault.jpg"
     },
     {
+      "id": "workout-129",
+      "youtubeId": "V_jp5_VAzXk",
       "videoId": "V_jp5_VAzXk",
       "title": "Chaleya",
       "artist": "Arijit Singh - Topic",
+      "album": "Workout & Gym",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/V_jp5_VAzXk/hqdefault.jpg"
     },
     {
+      "id": "workout-130",
+      "youtubeId": "8eYG5QGZAZs",
       "videoId": "8eYG5QGZAZs",
       "title": "Jawan: Hayyoda (Tamil)",
       "artist": "Shahrukh Khan | Atlee | Anirudh | Naya…",
+      "album": "Shahrukh Khan",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/8eYG5QGZAZs/hqdefault.jpg"
     },
     {
+      "id": "workout-131",
+      "youtubeId": "9M_ZKSmxb_s",
       "videoId": "9M_ZKSmxb_s",
       "title": "Heeriye X Chaleya X Tu Aake Dekhle Insta Mashup",
       "artist": "revibe | Viral Insta Reels, TikTok Rem…",
+      "album": "revibe",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/9M_ZKSmxb_s/hqdefault.jpg"
     },
     {
+      "id": "workout-132",
+      "youtubeId": "wr9M-CoxP7A",
       "videoId": "wr9M-CoxP7A",
       "title": "Jawan: Chaleya (Lyrical Video)",
       "artist": "Shah Rukh Khan | Nayanthara | Atlee | …",
+      "album": "Shah Rukh Khan",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/wr9M-CoxP7A/hqdefault.jpg"
     },
     {
+      "id": "workout-133",
+      "youtubeId": "u2NAuswnTKs",
       "videoId": "u2NAuswnTKs",
       "title": "Apna Bana Le - Full Audio",
       "artist": "Bhediya | Varun Dhawan, Kriti Sanon| S…",
+      "album": "Bhediya",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/u2NAuswnTKs/hqdefault.jpg"
     },
     {
+      "id": "workout-134",
+      "youtubeId": "3lDJZr6kbsg",
       "videoId": "3lDJZr6kbsg",
       "title": "Apna Bana Le - Arijit Singh",
       "artist": "Varun Dhawan & Kriti Sanon | Sachin-Ji…",
+      "album": "Varun Dhawan & Kriti Sanon",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/3lDJZr6kbsg/hqdefault.jpg"
     },
     {
+      "id": "workout-135",
+      "youtubeId": "LSP9SjZ3rrs",
       "videoId": "LSP9SjZ3rrs",
       "title": "Best Of Arijit Singh 2024",
       "artist": "Arijit Singh Hits Songs | Arijit Singh…",
+      "album": "Arijit Singh Hits Songs",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/LSP9SjZ3rrs/hqdefault.jpg"
     },
     {
+      "id": "workout-136",
+      "youtubeId": "6X0pNXXeVIA",
       "videoId": "6X0pNXXeVIA",
       "title": "Sa Re Ga Ma Pa 2023 |Everyone's Heart Missed A B…",
       "artist": "Zee TV",
+      "album": "Workout & Gym",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/6X0pNXXeVIA/hqdefault.jpg"
     },
     {
+      "id": "workout-137",
+      "youtubeId": "QZ0F0l_oZ1U",
       "videoId": "QZ0F0l_oZ1U",
       "title": "Tujhe Dekha Toh Yeh Jaana Sanam",
       "artist": "Kumar Sanu, Lata Mangeshkar | DDLJ",
+      "album": "Kumar Sanu, Lata Mangeshkar",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/QZ0F0l_oZ1U/hqdefault.jpg"
     },
     {
+      "id": "workout-138",
+      "youtubeId": "3fPQtxRwn6U",
       "videoId": "3fPQtxRwn6U",
       "title": "APNA BANA LE Love Hits - Full Album",
       "artist": "Nonstop Romantic Songs | Valentine Spe…",
+      "album": "Nonstop Romantic Songs",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/3fPQtxRwn6U/hqdefault.jpg"
     },
     {
+      "id": "workout-139",
+      "youtubeId": "tLqtnGLfm4Q",
       "videoId": "tLqtnGLfm4Q",
       "title": "Lyrical: Tum Hi Aana",
       "artist": "Marjaavaan | Riteish D, Sidharth M, Ta…",
+      "album": "Marjaavaan",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/tLqtnGLfm4Q/hqdefault.jpg"
     },
     {
+      "id": "workout-140",
+      "youtubeId": "_iktURk0X-A",
       "videoId": "_iktURk0X-A",
       "title": "𝐏𝐡𝐢𝐫 𝐁𝐡𝐢 𝐓𝐮𝐦𝐤𝐨 𝐂𝐡𝐚𝐚𝐡𝐮𝐧𝐠𝐚💖",
       "artist": "𝐅𝐮𝐥𝐥 𝐒𝐨𝐧𝐠 | Arijit Singh | Arj…",
+      "album": "𝐅𝐮𝐥𝐥 𝐒𝐨𝐧𝐠",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/_iktURk0X-A/hqdefault.jpg"
     },
     {
+      "id": "workout-141",
+      "youtubeId": "Ov0YGGSY6gY",
       "videoId": "Ov0YGGSY6gY",
       "title": "KAUN TUJHE  Lyrical",
       "artist": "M.S. DHONI -THE UNTOLD STORY | Amaal M…",
+      "album": "M.S. DHONI -THE UNTOLD STORY",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/Ov0YGGSY6gY/hqdefault.jpg"
     },
     {
+      "id": "workout-142",
+      "youtubeId": "inEu2qQuGZ8",
       "videoId": "inEu2qQuGZ8",
       "title": "\"Sun Raha Hai Na Tu Female Version\" By Shreya Gh…",
       "artist": "T-Series",
+      "album": "Workout & Gym",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/inEu2qQuGZ8/hqdefault.jpg"
     },
     {
+      "id": "workout-143",
+      "youtubeId": "VdyBtGaspss",
       "videoId": "VdyBtGaspss",
       "title": "Chahun Main Ya Naa Full Video Song Aashiqui 2",
       "artist": "Aditya Roy Kapur, Shraddha Kapoor",
+      "album": "Workout & Gym",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/VdyBtGaspss/hqdefault.jpg"
     },
     {
+      "id": "workout-144",
+      "youtubeId": "Umqb9KENgmk",
       "videoId": "Umqb9KENgmk",
       "title": "\"Tum Hi Ho\" Aashiqui 2 Full Song With Lyrics",
       "artist": "Aditya Roy Kapur, Shraddha Kapoor",
+      "album": "Workout & Gym",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/Umqb9KENgmk/hqdefault.jpg"
     },
     {
+      "id": "workout-145",
+      "youtubeId": "MJyKN-8UncM",
       "videoId": "MJyKN-8UncM",
       "title": "Shayad - Love Aaj Kal",
       "artist": "Kartik | Sara | Arushi | Pritam | Arij…",
+      "album": "Kartik",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/MJyKN-8UncM/hqdefault.jpg"
     },
     {
+      "id": "workout-146",
+      "youtubeId": "IJq0yyWug1k",
       "videoId": "IJq0yyWug1k",
       "title": "\"Tum Hi Ho Aashiqui 2\" Full Video Song HD",
       "artist": "Aditya Roy Kapur, Shraddha Kapoor | Mu…",
+      "album": "Aditya Roy Kapur, Shraddha Kapoor",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/IJq0yyWug1k/hqdefault.jpg"
     },
     {
+      "id": "workout-147",
+      "youtubeId": "izy2tV-Ssj8",
       "videoId": "izy2tV-Ssj8",
       "title": "AASHIQUI 2 MASHUP FULL SONG",
       "artist": "KIRAN KAMATH | BEST BOLLYWOOD MASHUPS",
+      "album": "KIRAN KAMATH",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/izy2tV-Ssj8/hqdefault.jpg"
     },
     {
+      "id": "workout-148",
+      "youtubeId": "GtPvCa3vvxA",
       "videoId": "GtPvCa3vvxA",
       "title": "\"Milne Hai Mujhse Aayi Aashiqui 2\" Full Video Song",
       "artist": "Aditya Roy Kapur, Shraddha Kapoor",
+      "album": "Workout & Gym",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/GtPvCa3vvxA/hqdefault.jpg"
     },
     {
+      "id": "workout-149",
+      "youtubeId": "V1oczq_8L0E",
       "videoId": "V1oczq_8L0E",
       "title": "ISHQ MUBARAK Full Video Song || Tum Bin 2 || Ari…",
       "artist": "Neha Sharma, Aditya Seal & Aashim Gulati",
+      "album": "Workout & Gym",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/V1oczq_8L0E/hqdefault.jpg"
     },
     {
+      "id": "workout-150",
+      "youtubeId": "z3UHfi9vpbc",
       "videoId": "z3UHfi9vpbc",
       "title": "Sunn Raha Hai Na Tu Aashiqui 2 Full Song With Ly…",
       "artist": "Aditya Roy Kapur, Shraddha Kapoor",
+      "album": "Workout & Gym",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/z3UHfi9vpbc/hqdefault.jpg"
     },
     {
+      "id": "workout-151",
+      "youtubeId": "pIBoAh4OXhQ",
       "videoId": "pIBoAh4OXhQ",
       "title": "Janam Janam",
       "artist": "Dilwale | Shah Rukh Khan | Kajol | Pri…",
+      "album": "Dilwale",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/pIBoAh4OXhQ/hqdefault.jpg"
     },
     {
+      "id": "workout-152",
+      "youtubeId": "cUmUOb7j3dc",
       "videoId": "cUmUOb7j3dc",
       "title": "Dhun Song",
       "artist": "Saiyaara | Ahaan Panday, Aneet Padda |…",
+      "album": "Saiyaara",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/cUmUOb7j3dc/hqdefault.jpg"
     },
     {
+      "id": "workout-153",
+      "youtubeId": "krJsyb_yf7A",
       "videoId": "krJsyb_yf7A",
       "title": "Aashiqui 2 Hum Mar Jayenge Full Video Song",
       "artist": "Aditya Roy Kapur, Shraddha Kapoor",
+      "album": "Workout & Gym",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/krJsyb_yf7A/hqdefault.jpg"
     },
     {
+      "id": "workout-154",
+      "youtubeId": "2bMEe0UYa8E",
       "videoId": "2bMEe0UYa8E",
       "title": "\"Piya Aaye Na\" Aashiqui 2 Full Song with Lyrics",
       "artist": "Aditya Roy Kapur, Shraddha Kapoor",
+      "album": "Workout & Gym",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/2bMEe0UYa8E/hqdefault.jpg"
     },
     {
+      "id": "workout-155",
+      "youtubeId": "eHRrZ5DQCV4",
       "videoId": "eHRrZ5DQCV4",
       "title": "Sunn Raha Hai Na Tu Aashiqui 2 Full Video Song",
       "artist": "Aditya Roy Kapur, Shraddha Kapoor",
+      "album": "Workout & Gym",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/eHRrZ5DQCV4/hqdefault.jpg"
     },
     {
+      "id": "workout-156",
+      "youtubeId": "fsiPzT50ZiM",
       "videoId": "fsiPzT50ZiM",
       "title": "Tum Hi Ho",
       "artist": "Arijit Singh - Topic",
+      "album": "Workout & Gym",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/fsiPzT50ZiM/hqdefault.jpg"
     },
     {
+      "id": "workout-157",
+      "youtubeId": "NUo8CKI34o4",
       "videoId": "NUo8CKI34o4",
       "title": "Tum Hi Ho Song Aashiqui 2",
       "artist": "Music By Mithoon | Aditya Roy Kapur, S…",
+      "album": "Music By Mithoon",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/NUo8CKI34o4/hqdefault.jpg"
     },
     {
+      "id": "workout-158",
+      "youtubeId": "YLoYt8H7kjM",
       "videoId": "YLoYt8H7kjM",
       "title": "Arijit Singh with his soulful performance",
       "artist": "6th Royal Stag Mirchi Music Awards | R…",
+      "album": "6th Royal Stag Mirchi Music Awards",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/YLoYt8H7kjM/hqdefault.jpg"
     },
     {
+      "id": "workout-159",
+      "youtubeId": "gvyUuxdRdR4",
       "videoId": "gvyUuxdRdR4",
       "title": "Raataan Lambiyan",
       "artist": "Official Video | Shershaah | Sidharth …",
+      "album": "Official Video",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/gvyUuxdRdR4/hqdefault.jpg"
     },
     {
+      "id": "workout-160",
+      "youtubeId": "orYf6VDtj_k",
       "videoId": "orYf6VDtj_k",
       "title": "Raataan Lambiyan - Lyric Video",
       "artist": "Shershaah | Sidharth, Kiara | Tanishk …",
+      "album": "Shershaah",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/orYf6VDtj_k/hqdefault.jpg"
     },
     {
+      "id": "workout-161",
+      "youtubeId": "Dm6YRJHy64c",
       "videoId": "Dm6YRJHy64c",
       "title": "Raataan Lambiyan (From \"Shershaah\")",
       "artist": "Jubin Nautiyal - Topic",
+      "album": "Workout & Gym",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/Dm6YRJHy64c/hqdefault.jpg"
     },
     {
+      "id": "workout-162",
+      "youtubeId": "GLGuLXKT9Ng",
       "videoId": "GLGuLXKT9Ng",
       "title": "Raataan Lambiyan - Shershaah",
       "artist": "Full Song | Sidharth, Kiara | Tanishk …",
+      "album": "Full Song",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/GLGuLXKT9Ng/hqdefault.jpg"
     },
     {
+      "id": "workout-163",
+      "youtubeId": "skq8M5khNbw",
       "videoId": "skq8M5khNbw",
       "title": "Raataan Lambiyan",
       "artist": "Shershaah | Jubin Nautiyal | Asees Kau…",
+      "album": "Shershaah",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/skq8M5khNbw/hqdefault.jpg"
     },
     {
+      "id": "workout-164",
+      "youtubeId": "qauUzF4GMZ0",
       "videoId": "qauUzF4GMZ0",
       "title": "THIS IS SO ROMANTIC",
       "artist": "RAATAAN LAMBIYAN - Shershaah | Violin …",
+      "album": "RAATAAN LAMBIYAN - Shershaah",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/qauUzF4GMZ0/hqdefault.jpg"
     },
     {
+      "id": "workout-165",
+      "youtubeId": "dYwwHf9vWfo",
       "videoId": "dYwwHf9vWfo",
       "title": "Kithe Chaliye Tu Lyrics Video From Shershaah Mov…",
       "artist": "Kiara || Raataan Lambiyan",
+      "album": "Kiara",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/dYwwHf9vWfo/hqdefault.jpg"
     },
     {
+      "id": "workout-166",
+      "youtubeId": "2FRrtuu3Ljg",
       "videoId": "2FRrtuu3Ljg",
       "title": "Shershaah - all songs",
       "artist": "Sidharth Malhotra, Kiara Advani | Jubi…",
+      "album": "Sidharth Malhotra, Kiara Advani",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/2FRrtuu3Ljg/hqdefault.jpg"
     },
     {
+      "id": "workout-167",
+      "youtubeId": "pz2Yz0_1lr8",
       "videoId": "pz2Yz0_1lr8",
       "title": "Raataan Lambiyan",
       "artist": "Shershaah | Lirik - Terjemahan Indonesia",
+      "album": "Shershaah",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/pz2Yz0_1lr8/hqdefault.jpg"
     },
     {
+      "id": "workout-168",
+      "youtubeId": "oDkZEay6H6k",
       "videoId": "oDkZEay6H6k",
       "title": "Raataan Lambiyan🌙",
       "artist": "Shershaah|Sidharth-Kiara|Tanishk B| Ju…",
+      "album": "Shershaah",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/oDkZEay6H6k/hqdefault.jpg"
     },
     {
+      "id": "workout-169",
+      "youtubeId": "S2BOXJG71FY",
       "videoId": "S2BOXJG71FY",
       "title": "Raataan Lambiyan",
       "artist": "Jubin Nautiyal | Asees Kaur | Tanishk …",
+      "album": "Jubin Nautiyal",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/S2BOXJG71FY/hqdefault.jpg"
     },
     {
+      "id": "workout-170",
+      "youtubeId": "8K9eaAKLrE0",
       "videoId": "8K9eaAKLrE0",
       "title": "RAATAAN LAMBIYAN (\"From Shershaah\")",
       "artist": "Tanishk Bagchi, Jubin Nautiyal, Asees …",
+      "album": "Workout & Gym",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/8K9eaAKLrE0/hqdefault.jpg"
     },
     {
+      "id": "workout-171",
+      "youtubeId": "jh6Anzu3ntQ",
       "videoId": "jh6Anzu3ntQ",
       "title": "Raataan Lambiyan Dance Video",
       "artist": "Shershaah | Siddharth | Jubin Nautiyal…",
+      "album": "Shershaah",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/jh6Anzu3ntQ/hqdefault.jpg"
     },
     {
+      "id": "workout-172",
+      "youtubeId": "4O0_erwpB9E",
       "videoId": "4O0_erwpB9E",
       "title": "Raataan Lambiyan Lyrics",
       "artist": "Shershaah | Jubin Nautiyal, Asees Kaur…",
+      "album": "Shershaah",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/4O0_erwpB9E/hqdefault.jpg"
     },
     {
+      "id": "workout-173",
+      "youtubeId": "naQXI7l6op0",
       "videoId": "naQXI7l6op0",
       "title": "Raataan Lambiyan - Jubin Nautiyal",
       "artist": "Asees Kaur | Shershaah | Sidhath M | T…",
+      "album": "Asees Kaur",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/naQXI7l6op0/hqdefault.jpg"
     },
     {
+      "id": "workout-174",
+      "youtubeId": "Kp76nzS7pwA",
       "videoId": "Kp76nzS7pwA",
       "title": "Raataan Lambiyan - Official Remix Version",
       "artist": "Shershaah | Tanishk B | Jubin N | Asee…",
+      "album": "Shershaah",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/Kp76nzS7pwA/hqdefault.jpg"
     },
     {
+      "id": "workout-175",
+      "youtubeId": "-kVdEfkWsjo",
       "videoId": "-kVdEfkWsjo",
       "title": "Raataan Lambhiyan [Slowed + Reverb]",
       "artist": "Shershah | Jubin Nautiyal | Asees Kaur…",
+      "album": "Shershah",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/-kVdEfkWsjo/hqdefault.jpg"
     },
     {
+      "id": "workout-176",
+      "youtubeId": "s095hRZYb2U",
       "videoId": "s095hRZYb2U",
       "title": "Raataan lambiyam - official Video",
       "artist": "Shershaah | Kiara - sidharth malhotra …",
+      "album": "Shershaah",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/s095hRZYb2U/hqdefault.jpg"
     },
     {
+      "id": "workout-177",
+      "youtubeId": "bXWcVn4uNd0",
       "videoId": "bXWcVn4uNd0",
       "title": "Raataan Lambiyan (Jubin Nautiyal)",
       "artist": "Step By Step",
+      "album": "Workout & Gym",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/bXWcVn4uNd0/hqdefault.jpg"
     },
     {
+      "id": "workout-178",
+      "youtubeId": "7fhY7FFZ6nU",
       "videoId": "7fhY7FFZ6nU",
       "title": "Arjun - Raataan Lambiyan (English Remix)",
       "artist": "Shershaah | Tanishk B | Jubin Nautiyal…",
+      "album": "Shershaah",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/7fhY7FFZ6nU/hqdefault.jpg"
     },
     {
+      "id": "workout-179",
+      "youtubeId": "hoNb6HuNmU0",
       "videoId": "hoNb6HuNmU0",
       "title": "Full Song: KHAIRIYAT (BONUS TRACK)",
       "artist": "CHHICHHORE | Sushant, Shraddha | Prita…",
+      "album": "CHHICHHORE",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/hoNb6HuNmU0/hqdefault.jpg"
     },
     {
+      "id": "workout-180",
+      "youtubeId": "ElZfdU54Cp8",
       "videoId": "ElZfdU54Cp8",
       "title": "Apna Bana Le - Bhediya",
       "artist": "Varun Dhawan, Kriti Sanon| Sachin-Jiga…",
+      "album": "Varun Dhawan, Kriti Sanon",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/ElZfdU54Cp8/hqdefault.jpg"
     },
     {
+      "id": "workout-181",
+      "youtubeId": "k1iOQ4u9eQk",
       "videoId": "k1iOQ4u9eQk",
       "title": "Tip Tip Barsa Paani",
       "artist": "Udit Narayan, Alka Yagnik | Mohra",
+      "album": "Udit Narayan, Alka Yagnik",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/k1iOQ4u9eQk/hqdefault.jpg"
     },
     {
+      "id": "workout-182",
+      "youtubeId": "aY1aYt0x9sU",
       "videoId": "aY1aYt0x9sU",
       "title": "Do Dil Mil Rahe Hain",
       "artist": "Kumar Sanu | Pardes",
+      "album": "Kumar Sanu",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/aY1aYt0x9sU/hqdefault.jpg"
     },
     {
+      "id": "workout-183",
+      "youtubeId": "r1j-o2_4e1Y",
       "videoId": "r1j-o2_4e1Y",
       "title": "Dheere Dheere Se Meri Zindagi",
       "artist": "Kumar Sanu, Anuradha Paudwal",
+      "album": "Workout & Gym",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/r1j-o2_4e1Y/hqdefault.jpg"
     },
     {
+      "id": "workout-184",
+      "youtubeId": "wYqF_z7y3oA",
       "videoId": "wYqF_z7y3oA",
       "title": "Tumse Milne Ki Tamanna Hai",
       "artist": "S.P. Balasubrahmanyam | Saajan",
+      "album": "S.P. Balasubrahmanyam",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/wYqF_z7y3oA/hqdefault.jpg"
     },
     {
+      "id": "workout-185",
+      "youtubeId": "tK3e_k_9z1A",
       "videoId": "tK3e_k_9z1A",
       "title": "Chura Ke Dil Mera",
       "artist": "Kumar Sanu, Alka Yagnik",
+      "album": "Workout & Gym",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/tK3e_k_9z1A/hqdefault.jpg"
     },
     {
+      "id": "workout-186",
+      "youtubeId": "sK7riqg2mr4",
       "videoId": "sK7riqg2mr4",
       "title": "Hawaayein",
       "artist": "Arijit Singh, Pritam | JHMS",
+      "album": "Arijit Singh, Pritam",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/sK7riqg2mr4/hqdefault.jpg"
     },
     {
+      "id": "workout-187",
+      "youtubeId": "Iltsoc3D3PY",
       "videoId": "Iltsoc3D3PY",
       "title": "Shayad",
       "artist": "Arijit Singh, Pritam | Love Aaj Kal",
+      "album": "Arijit Singh, Pritam",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/Iltsoc3D3PY/hqdefault.jpg"
     },
     {
+      "id": "workout-188",
+      "youtubeId": "74c2e642k4Q",
       "videoId": "74c2e642k4Q",
       "title": "Agar Tum Saath Ho",
       "artist": "Arijit Singh, Alka Yagnik | Tamasha",
+      "album": "Arijit Singh, Alka Yagnik",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/74c2e642k4Q/hqdefault.jpg"
     },
     {
+      "id": "workout-189",
+      "youtubeId": "zLtL045tG98",
       "videoId": "zLtL045tG98",
       "title": "Tera Ban Jaunga",
       "artist": "Akhil Sachdeva, Tulsi Kumar | Kabir Singh",
+      "album": "Akhil Sachdeva, Tulsi Kumar",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/zLtL045tG98/hqdefault.jpg"
     },
     {
+      "id": "workout-190",
+      "youtubeId": "kJQP7kiw5Fk",
       "videoId": "kJQP7kiw5Fk",
       "title": "Galliyan",
       "artist": "Ankit Tiwari | Ek Villain",
+      "album": "Ankit Tiwari",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/kJQP7kiw5Fk/hqdefault.jpg"
     },
     {
+      "id": "workout-191",
+      "youtubeId": "k4yXQkG2s1E",
       "videoId": "k4yXQkG2s1E",
       "title": "Kaun Tujhe",
       "artist": "Palak Muchhal | M.S. Dhoni",
+      "album": "Palak Muchhal",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/k4yXQkG2s1E/hqdefault.jpg"
     },
     {
+      "id": "workout-192",
+      "youtubeId": "ZsAOnmByy38",
       "videoId": "ZsAOnmByy38",
       "title": "Zara Sa",
       "artist": "KK, Pritam | Jannat",
+      "album": "KK, Pritam",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/ZsAOnmByy38/hqdefault.jpg"
     },
     {
+      "id": "workout-193",
+      "youtubeId": "cGNcjqXe87U",
       "videoId": "cGNcjqXe87U",
       "title": "Tu Hi Meri Shab Hai",
       "artist": "KK, Pritam | Gangster",
+      "album": "KK, Pritam",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/cGNcjqXe87U/hqdefault.jpg"
     },
     {
+      "id": "workout-194",
+      "youtubeId": "1DBhic8SSKs",
       "videoId": "1DBhic8SSKs",
       "title": "Woh Lamhe Woh Baatein",
       "artist": "Atif Aslam | Zeher",
+      "album": "Atif Aslam",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/1DBhic8SSKs/hqdefault.jpg"
     },
     {
+      "id": "workout-195",
+      "youtubeId": "8fN_7w1tLzU",
       "videoId": "8fN_7w1tLzU",
       "title": "Jeene Laga Hoon",
       "artist": "Atif Aslam, Shreya Ghoshal",
+      "album": "Workout & Gym",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/8fN_7w1tLzU/hqdefault.jpg"
     },
     {
+      "id": "workout-196",
+      "youtubeId": "3UwxjY_X47w",
       "videoId": "3UwxjY_X47w",
       "title": "Baarishein (Lo-Fi)",
       "artist": "Anuv Jain | Monsoon Lofi",
+      "album": "Anuv Jain",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/3UwxjY_X47w/hqdefault.jpg"
     },
     {
+      "id": "workout-197",
+      "youtubeId": "9nCjY_t1k2E",
       "videoId": "9nCjY_t1k2E",
       "title": "Dil Mere (Lo-Fi)",
       "artist": "The Local Train | Night Drive",
+      "album": "The Local Train",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/9nCjY_t1k2E/hqdefault.jpg"
     },
     {
+      "id": "workout-198",
+      "youtubeId": "0n_9c_012e8",
       "videoId": "0n_9c_012e8",
       "title": "Iktara (Lo-Fi)",
       "artist": "Kavita Seth, Amit Trivedi",
+      "album": "Workout & Gym",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/0n_9c_012e8/hqdefault.jpg"
     },
     {
+      "id": "workout-199",
+      "youtubeId": "w_Z0Wq1a4-c",
       "videoId": "w_Z0Wq1a4-c",
       "title": "Tera Mera Rishta (Lo-Fi)",
       "artist": "Mustafa Zahid | Chai & Beats",
+      "album": "Mustafa Zahid",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/w_Z0Wq1a4-c/hqdefault.jpg"
     },
     {
+      "id": "workout-200",
+      "youtubeId": "d0q6fJj5u6w",
       "videoId": "d0q6fJj5u6w",
       "title": "Toh Phir Aao (Lo-Fi)",
       "artist": "Mustafa Zahid | Rainy Cafe",
+      "album": "Mustafa Zahid",
       "category": "workout",
       "thumbnail": "https://i.ytimg.com/vi/d0q6fJj5u6w/hqdefault.jpg"
     }
   ],
   "awarapan": [
     {
+      "id": "awarapan-001",
+      "youtubeId": "n_VrRuNkbrE",
       "videoId": "n_VrRuNkbrE",
       "title": "Toh Phir Aao - Music Video",
       "artist": "Awarapan | Emraan Hashmi Song | Mustaf…",
+      "album": "Awarapan",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/n_VrRuNkbrE/hqdefault.jpg"
     },
     {
+      "id": "awarapan-002",
+      "youtubeId": "P2kS3h46cIA",
       "videoId": "P2kS3h46cIA",
       "title": "Tera Mera Rishta",
       "artist": "OST Awarapan",
+      "album": "Awarapan Collection",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/P2kS3h46cIA/hqdefault.jpg"
     },
     {
+      "id": "awarapan-003",
+      "youtubeId": "g23pmazHwgE",
       "videoId": "g23pmazHwgE",
       "title": "Tera Mera Rishta Purana - Music Video",
       "artist": "Awarapan | Emraan Hashmi Song | Mustaf…",
+      "album": "Awarapan",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/g23pmazHwgE/hqdefault.jpg"
     },
     {
+      "id": "awarapan-004",
+      "youtubeId": "FJzE1p3mvw8",
       "videoId": "FJzE1p3mvw8",
       "title": "Mahiya - Music Video",
       "artist": "Awarapan | Emraan Hashmi, Mrinalini Sh…",
+      "album": "Awarapan",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/FJzE1p3mvw8/hqdefault.jpg"
     },
     {
+      "id": "awarapan-005",
+      "youtubeId": "ZsAOnmByy38",
       "videoId": "ZsAOnmByy38",
       "title": "Zara Sa",
       "artist": "4K Music Video | Jannat | Emraan Hashm…",
+      "album": "4K Music Video",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/ZsAOnmByy38/hqdefault.jpg"
     },
     {
+      "id": "awarapan-006",
+      "youtubeId": "UlacMvx_VYk",
       "videoId": "UlacMvx_VYk",
       "title": "\"Beete Lamhe\" Lyrical Video Song",
       "artist": "The Train | K.K. | Mithoon | Emraan Ha…",
+      "album": "The Train",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/UlacMvx_VYk/hqdefault.jpg"
     },
     {
+      "id": "awarapan-007",
+      "youtubeId": "1DBhic8SSKs",
       "videoId": "1DBhic8SSKs",
       "title": "Woh Lamhe Woh Baatein (Lyrics Video) Atif Aslam",
       "artist": "Emraan Hashmi | Zeher (2005) | WorldFa…",
+      "album": "Emraan Hashmi",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/1DBhic8SSKs/hqdefault.jpg"
     },
     {
+      "id": "awarapan-008",
+      "youtubeId": "I9tX-lFUTrw",
       "videoId": "I9tX-lFUTrw",
       "title": "Yeh Awarapan",
       "artist": "Emraan Hashmi, Disha Patani | Vishesh …",
+      "album": "Emraan Hashmi, Disha Patani",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/I9tX-lFUTrw/hqdefault.jpg"
     },
     {
+      "id": "awarapan-009",
+      "youtubeId": "cGNcjqXe87U",
       "videoId": "cGNcjqXe87U",
       "title": "Tu Hi Meri Shab Hai",
       "artist": "Pritam - Topic",
+      "album": "Awarapan Collection",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/cGNcjqXe87U/hqdefault.jpg"
     },
     {
+      "id": "awarapan-010",
+      "youtubeId": "fVeJ6sJERR4",
       "videoId": "fVeJ6sJERR4",
       "title": "Teri Yaadon Mein Lyrical Video",
       "artist": "The Killer | K K, Shreya Ghosal | Emra…",
+      "album": "The Killer",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/fVeJ6sJERR4/hqdefault.jpg"
     },
     {
+      "id": "awarapan-011",
+      "youtubeId": "6rvUyBiBtik",
       "videoId": "6rvUyBiBtik",
       "title": "Tera Mera Rishta - New Version",
       "artist": "Awarapan 2 | Emraan, Disha | Mithoon, …",
+      "album": "Awarapan 2",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/6rvUyBiBtik/hqdefault.jpg"
     },
     {
+      "id": "awarapan-012",
+      "youtubeId": "XwDV5xldudU",
       "videoId": "XwDV5xldudU",
       "title": "Toh Phir Aao (Lounge Version)",
       "artist": "Pritam - Topic",
+      "album": "Awarapan Collection",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/XwDV5xldudU/hqdefault.jpg"
     },
     {
+      "id": "awarapan-013",
+      "youtubeId": "oHmXALAdydI",
       "videoId": "oHmXALAdydI",
       "title": "Awarapan Movie All Songs Jukebox",
       "artist": "Need Of Humour Studios ; ",
+      "album": "Awarapan Collection",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/oHmXALAdydI/hqdefault.jpg"
     },
     {
+      "id": "awarapan-014",
+      "youtubeId": "itoIHcocrZI",
       "videoId": "itoIHcocrZI",
       "title": "Toh Phir Aao - Mustafa Zahid ft. Heaven",
       "artist": "Official Music Video | Awarapan 2",
+      "album": "Official Music Video",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/itoIHcocrZI/hqdefault.jpg"
     },
     {
+      "id": "awarapan-015",
+      "youtubeId": "_RZwGzElnIs",
       "videoId": "_RZwGzElnIs",
       "title": "Bheegi Bheegi",
       "artist": "Pritam - Topic",
+      "album": "Awarapan Collection",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/_RZwGzElnIs/hqdefault.jpg"
     },
     {
+      "id": "awarapan-016",
+      "youtubeId": "VMSNq_wtBDQ",
       "videoId": "VMSNq_wtBDQ",
       "title": "TERI YAADON MEIN",
       "artist": "Kay Kay - Topic",
+      "album": "Awarapan Collection",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/VMSNq_wtBDQ/hqdefault.jpg"
     },
     {
+      "id": "awarapan-017",
+      "youtubeId": "r0c1f6XxRQg",
       "videoId": "r0c1f6XxRQg",
       "title": "Evergreen Hits of KK (Audio Jukebox)",
       "artist": "Remembering the Golden Voice | T Serie…",
+      "album": "Remembering the Golden Voice",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/r0c1f6XxRQg/hqdefault.jpg"
     },
     {
+      "id": "awarapan-018",
+      "youtubeId": "0bAVd9jJE2Q",
       "videoId": "0bAVd9jJE2Q",
       "title": "Aashiq Banaya Aapne Full Song",
       "artist": "Himesh Reshammiya,Shreya Ghoshal | Emr…",
+      "album": "Himesh Reshammiya,Shreya Ghoshal",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/0bAVd9jJE2Q/hqdefault.jpg"
     },
     {
+      "id": "awarapan-019",
+      "youtubeId": "aEeUuH0tyoA",
       "videoId": "aEeUuH0tyoA",
       "title": "Saiyaara x Kaisay Jiyein",
       "artist": "Mustafa Zahid",
+      "album": "Awarapan Collection",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/aEeUuH0tyoA/hqdefault.jpg"
     },
     {
+      "id": "awarapan-020",
+      "youtubeId": "eESg95AqmbA",
       "videoId": "eESg95AqmbA",
       "title": "Jannat - Audio Jukebox",
       "artist": "10 Years of Jannat | Emraan Hashmi | E…",
+      "album": "10 Years of Jannat",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/eESg95AqmbA/hqdefault.jpg"
     },
     {
+      "id": "awarapan-021",
+      "youtubeId": "tLqtnGLfm4Q",
       "videoId": "tLqtnGLfm4Q",
       "title": "Lyrical: Tum Hi Aana",
       "artist": "Marjaavaan | Riteish D, Sidharth M, Ta…",
+      "album": "Marjaavaan",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/tLqtnGLfm4Q/hqdefault.jpg"
     },
     {
+      "id": "awarapan-022",
+      "youtubeId": "_iktURk0X-A",
       "videoId": "_iktURk0X-A",
       "title": "𝐏𝐡𝐢𝐫 𝐁𝐡𝐢 𝐓𝐮𝐦𝐤𝐨 𝐂𝐡𝐚𝐚𝐡𝐮𝐧𝐠𝐚💖",
       "artist": "𝐅𝐮𝐥𝐥 𝐒𝐨𝐧𝐠 | Arijit Singh | Arj…",
+      "album": "𝐅𝐮𝐥𝐥 𝐒𝐨𝐧𝐠",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/_iktURk0X-A/hqdefault.jpg"
     },
     {
+      "id": "awarapan-023",
+      "youtubeId": "Ov0YGGSY6gY",
       "videoId": "Ov0YGGSY6gY",
       "title": "KAUN TUJHE  Lyrical",
       "artist": "M.S. DHONI -THE UNTOLD STORY | Amaal M…",
+      "album": "M.S. DHONI -THE UNTOLD STORY",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/Ov0YGGSY6gY/hqdefault.jpg"
     },
     {
+      "id": "awarapan-024",
+      "youtubeId": "inEu2qQuGZ8",
       "videoId": "inEu2qQuGZ8",
       "title": "\"Sun Raha Hai Na Tu Female Version\" By Shreya Gh…",
       "artist": "T-Series",
+      "album": "Awarapan Collection",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/inEu2qQuGZ8/hqdefault.jpg"
     },
     {
+      "id": "awarapan-025",
+      "youtubeId": "VdyBtGaspss",
       "videoId": "VdyBtGaspss",
       "title": "Chahun Main Ya Naa Full Video Song Aashiqui 2",
       "artist": "Aditya Roy Kapur, Shraddha Kapoor",
+      "album": "Awarapan Collection",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/VdyBtGaspss/hqdefault.jpg"
     },
     {
+      "id": "awarapan-026",
+      "youtubeId": "Umqb9KENgmk",
       "videoId": "Umqb9KENgmk",
       "title": "\"Tum Hi Ho\" Aashiqui 2 Full Song With Lyrics",
       "artist": "Aditya Roy Kapur, Shraddha Kapoor",
+      "album": "Awarapan Collection",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/Umqb9KENgmk/hqdefault.jpg"
     },
     {
+      "id": "awarapan-027",
+      "youtubeId": "MJyKN-8UncM",
       "videoId": "MJyKN-8UncM",
       "title": "Shayad - Love Aaj Kal",
       "artist": "Kartik | Sara | Arushi | Pritam | Arij…",
+      "album": "Kartik",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/MJyKN-8UncM/hqdefault.jpg"
     },
     {
+      "id": "awarapan-028",
+      "youtubeId": "IJq0yyWug1k",
       "videoId": "IJq0yyWug1k",
       "title": "\"Tum Hi Ho Aashiqui 2\" Full Video Song HD",
       "artist": "Aditya Roy Kapur, Shraddha Kapoor | Mu…",
+      "album": "Aditya Roy Kapur, Shraddha Kapoor",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/IJq0yyWug1k/hqdefault.jpg"
     },
     {
+      "id": "awarapan-029",
+      "youtubeId": "izy2tV-Ssj8",
       "videoId": "izy2tV-Ssj8",
       "title": "AASHIQUI 2 MASHUP FULL SONG",
       "artist": "KIRAN KAMATH | BEST BOLLYWOOD MASHUPS",
+      "album": "KIRAN KAMATH",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/izy2tV-Ssj8/hqdefault.jpg"
     },
     {
+      "id": "awarapan-030",
+      "youtubeId": "GtPvCa3vvxA",
       "videoId": "GtPvCa3vvxA",
       "title": "\"Milne Hai Mujhse Aayi Aashiqui 2\" Full Video Song",
       "artist": "Aditya Roy Kapur, Shraddha Kapoor",
+      "album": "Awarapan Collection",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/GtPvCa3vvxA/hqdefault.jpg"
     },
     {
+      "id": "awarapan-031",
+      "youtubeId": "V1oczq_8L0E",
       "videoId": "V1oczq_8L0E",
       "title": "ISHQ MUBARAK Full Video Song || Tum Bin 2 || Ari…",
       "artist": "Neha Sharma, Aditya Seal & Aashim Gulati",
+      "album": "Awarapan Collection",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/V1oczq_8L0E/hqdefault.jpg"
     },
     {
+      "id": "awarapan-032",
+      "youtubeId": "z3UHfi9vpbc",
       "videoId": "z3UHfi9vpbc",
       "title": "Sunn Raha Hai Na Tu Aashiqui 2 Full Song With Ly…",
       "artist": "Aditya Roy Kapur, Shraddha Kapoor",
+      "album": "Awarapan Collection",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/z3UHfi9vpbc/hqdefault.jpg"
     },
     {
+      "id": "awarapan-033",
+      "youtubeId": "pIBoAh4OXhQ",
       "videoId": "pIBoAh4OXhQ",
       "title": "Janam Janam",
       "artist": "Dilwale | Shah Rukh Khan | Kajol | Pri…",
+      "album": "Dilwale",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/pIBoAh4OXhQ/hqdefault.jpg"
     },
     {
+      "id": "awarapan-034",
+      "youtubeId": "cUmUOb7j3dc",
       "videoId": "cUmUOb7j3dc",
       "title": "Dhun Song",
       "artist": "Saiyaara | Ahaan Panday, Aneet Padda |…",
+      "album": "Saiyaara",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/cUmUOb7j3dc/hqdefault.jpg"
     },
     {
+      "id": "awarapan-035",
+      "youtubeId": "krJsyb_yf7A",
       "videoId": "krJsyb_yf7A",
       "title": "Aashiqui 2 Hum Mar Jayenge Full Video Song",
       "artist": "Aditya Roy Kapur, Shraddha Kapoor",
+      "album": "Awarapan Collection",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/krJsyb_yf7A/hqdefault.jpg"
     },
     {
+      "id": "awarapan-036",
+      "youtubeId": "2bMEe0UYa8E",
       "videoId": "2bMEe0UYa8E",
       "title": "\"Piya Aaye Na\" Aashiqui 2 Full Song with Lyrics",
       "artist": "Aditya Roy Kapur, Shraddha Kapoor",
+      "album": "Awarapan Collection",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/2bMEe0UYa8E/hqdefault.jpg"
     },
     {
+      "id": "awarapan-037",
+      "youtubeId": "eHRrZ5DQCV4",
       "videoId": "eHRrZ5DQCV4",
       "title": "Sunn Raha Hai Na Tu Aashiqui 2 Full Video Song",
       "artist": "Aditya Roy Kapur, Shraddha Kapoor",
+      "album": "Awarapan Collection",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/eHRrZ5DQCV4/hqdefault.jpg"
     },
     {
+      "id": "awarapan-038",
+      "youtubeId": "fsiPzT50ZiM",
       "videoId": "fsiPzT50ZiM",
       "title": "Tum Hi Ho",
       "artist": "Arijit Singh - Topic",
+      "album": "Awarapan Collection",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/fsiPzT50ZiM/hqdefault.jpg"
     },
     {
+      "id": "awarapan-039",
+      "youtubeId": "NUo8CKI34o4",
       "videoId": "NUo8CKI34o4",
       "title": "Tum Hi Ho Song Aashiqui 2",
       "artist": "Music By Mithoon | Aditya Roy Kapur, S…",
+      "album": "Music By Mithoon",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/NUo8CKI34o4/hqdefault.jpg"
     },
     {
+      "id": "awarapan-040",
+      "youtubeId": "YLoYt8H7kjM",
       "videoId": "YLoYt8H7kjM",
       "title": "Arijit Singh with his soulful performance",
       "artist": "6th Royal Stag Mirchi Music Awards | R…",
+      "album": "6th Royal Stag Mirchi Music Awards",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/YLoYt8H7kjM/hqdefault.jpg"
     },
     {
+      "id": "awarapan-041",
+      "youtubeId": "gvyUuxdRdR4",
       "videoId": "gvyUuxdRdR4",
       "title": "Raataan Lambiyan",
       "artist": "Official Video | Shershaah | Sidharth …",
+      "album": "Official Video",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/gvyUuxdRdR4/hqdefault.jpg"
     },
     {
+      "id": "awarapan-042",
+      "youtubeId": "orYf6VDtj_k",
       "videoId": "orYf6VDtj_k",
       "title": "Raataan Lambiyan - Lyric Video",
       "artist": "Shershaah | Sidharth, Kiara | Tanishk …",
+      "album": "Shershaah",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/orYf6VDtj_k/hqdefault.jpg"
     },
     {
+      "id": "awarapan-043",
+      "youtubeId": "Dm6YRJHy64c",
       "videoId": "Dm6YRJHy64c",
       "title": "Raataan Lambiyan (From \"Shershaah\")",
       "artist": "Jubin Nautiyal - Topic",
+      "album": "Awarapan Collection",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/Dm6YRJHy64c/hqdefault.jpg"
     },
     {
+      "id": "awarapan-044",
+      "youtubeId": "GLGuLXKT9Ng",
       "videoId": "GLGuLXKT9Ng",
       "title": "Raataan Lambiyan - Shershaah",
       "artist": "Full Song | Sidharth, Kiara | Tanishk …",
+      "album": "Full Song",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/GLGuLXKT9Ng/hqdefault.jpg"
     },
     {
+      "id": "awarapan-045",
+      "youtubeId": "skq8M5khNbw",
       "videoId": "skq8M5khNbw",
       "title": "Raataan Lambiyan",
       "artist": "Shershaah | Jubin Nautiyal | Asees Kau…",
+      "album": "Shershaah",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/skq8M5khNbw/hqdefault.jpg"
     },
     {
+      "id": "awarapan-046",
+      "youtubeId": "qauUzF4GMZ0",
       "videoId": "qauUzF4GMZ0",
       "title": "THIS IS SO ROMANTIC",
       "artist": "RAATAAN LAMBIYAN - Shershaah | Violin …",
+      "album": "RAATAAN LAMBIYAN - Shershaah",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/qauUzF4GMZ0/hqdefault.jpg"
     },
     {
+      "id": "awarapan-047",
+      "youtubeId": "dYwwHf9vWfo",
       "videoId": "dYwwHf9vWfo",
       "title": "Kithe Chaliye Tu Lyrics Video From Shershaah Mov…",
       "artist": "Kiara || Raataan Lambiyan",
+      "album": "Kiara",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/dYwwHf9vWfo/hqdefault.jpg"
     },
     {
+      "id": "awarapan-048",
+      "youtubeId": "2FRrtuu3Ljg",
       "videoId": "2FRrtuu3Ljg",
       "title": "Shershaah - all songs",
       "artist": "Sidharth Malhotra, Kiara Advani | Jubi…",
+      "album": "Sidharth Malhotra, Kiara Advani",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/2FRrtuu3Ljg/hqdefault.jpg"
     },
     {
+      "id": "awarapan-049",
+      "youtubeId": "pz2Yz0_1lr8",
       "videoId": "pz2Yz0_1lr8",
       "title": "Raataan Lambiyan",
       "artist": "Shershaah | Lirik - Terjemahan Indonesia",
+      "album": "Shershaah",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/pz2Yz0_1lr8/hqdefault.jpg"
     },
     {
+      "id": "awarapan-050",
+      "youtubeId": "oDkZEay6H6k",
       "videoId": "oDkZEay6H6k",
       "title": "Raataan Lambiyan🌙",
       "artist": "Shershaah|Sidharth-Kiara|Tanishk B| Ju…",
+      "album": "Shershaah",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/oDkZEay6H6k/hqdefault.jpg"
     },
     {
+      "id": "awarapan-051",
+      "youtubeId": "S2BOXJG71FY",
       "videoId": "S2BOXJG71FY",
       "title": "Raataan Lambiyan",
       "artist": "Jubin Nautiyal | Asees Kaur | Tanishk …",
+      "album": "Jubin Nautiyal",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/S2BOXJG71FY/hqdefault.jpg"
     },
     {
+      "id": "awarapan-052",
+      "youtubeId": "8K9eaAKLrE0",
       "videoId": "8K9eaAKLrE0",
       "title": "RAATAAN LAMBIYAN (\"From Shershaah\")",
       "artist": "Tanishk Bagchi, Jubin Nautiyal, Asees …",
+      "album": "Awarapan Collection",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/8K9eaAKLrE0/hqdefault.jpg"
     },
     {
+      "id": "awarapan-053",
+      "youtubeId": "jh6Anzu3ntQ",
       "videoId": "jh6Anzu3ntQ",
       "title": "Raataan Lambiyan Dance Video",
       "artist": "Shershaah | Siddharth | Jubin Nautiyal…",
+      "album": "Shershaah",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/jh6Anzu3ntQ/hqdefault.jpg"
     },
     {
+      "id": "awarapan-054",
+      "youtubeId": "4O0_erwpB9E",
       "videoId": "4O0_erwpB9E",
       "title": "Raataan Lambiyan Lyrics",
       "artist": "Shershaah | Jubin Nautiyal, Asees Kaur…",
+      "album": "Shershaah",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/4O0_erwpB9E/hqdefault.jpg"
     },
     {
+      "id": "awarapan-055",
+      "youtubeId": "naQXI7l6op0",
       "videoId": "naQXI7l6op0",
       "title": "Raataan Lambiyan - Jubin Nautiyal",
       "artist": "Asees Kaur | Shershaah | Sidhath M | T…",
+      "album": "Asees Kaur",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/naQXI7l6op0/hqdefault.jpg"
     },
     {
+      "id": "awarapan-056",
+      "youtubeId": "Kp76nzS7pwA",
       "videoId": "Kp76nzS7pwA",
       "title": "Raataan Lambiyan - Official Remix Version",
       "artist": "Shershaah | Tanishk B | Jubin N | Asee…",
+      "album": "Shershaah",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/Kp76nzS7pwA/hqdefault.jpg"
     },
     {
+      "id": "awarapan-057",
+      "youtubeId": "-kVdEfkWsjo",
       "videoId": "-kVdEfkWsjo",
       "title": "Raataan Lambhiyan [Slowed + Reverb]",
       "artist": "Shershah | Jubin Nautiyal | Asees Kaur…",
+      "album": "Shershah",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/-kVdEfkWsjo/hqdefault.jpg"
     },
     {
+      "id": "awarapan-058",
+      "youtubeId": "s095hRZYb2U",
       "videoId": "s095hRZYb2U",
       "title": "Raataan lambiyam - official Video",
       "artist": "Shershaah | Kiara - sidharth malhotra …",
+      "album": "Shershaah",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/s095hRZYb2U/hqdefault.jpg"
     },
     {
+      "id": "awarapan-059",
+      "youtubeId": "bXWcVn4uNd0",
       "videoId": "bXWcVn4uNd0",
       "title": "Raataan Lambiyan (Jubin Nautiyal)",
       "artist": "Step By Step",
+      "album": "Awarapan Collection",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/bXWcVn4uNd0/hqdefault.jpg"
     },
     {
+      "id": "awarapan-060",
+      "youtubeId": "7fhY7FFZ6nU",
       "videoId": "7fhY7FFZ6nU",
       "title": "Arjun - Raataan Lambiyan (English Remix)",
       "artist": "Shershaah | Tanishk B | Jubin Nautiyal…",
+      "album": "Shershaah",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/7fhY7FFZ6nU/hqdefault.jpg"
     },
     {
+      "id": "awarapan-061",
+      "youtubeId": "hoNb6HuNmU0",
       "videoId": "hoNb6HuNmU0",
       "title": "Full Song: KHAIRIYAT (BONUS TRACK)",
       "artist": "CHHICHHORE | Sushant, Shraddha | Prita…",
+      "album": "CHHICHHORE",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/hoNb6HuNmU0/hqdefault.jpg"
     },
     {
+      "id": "awarapan-062",
+      "youtubeId": "ElZfdU54Cp8",
       "videoId": "ElZfdU54Cp8",
       "title": "Apna Bana Le - Bhediya",
       "artist": "Varun Dhawan, Kriti Sanon| Sachin-Jiga…",
+      "album": "Varun Dhawan, Kriti Sanon",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/ElZfdU54Cp8/hqdefault.jpg"
     },
     {
+      "id": "awarapan-063",
+      "youtubeId": "RLzC55ai0eo",
       "videoId": "RLzC55ai0eo",
       "title": "Heeriye Jasleen Royal ft Arijit Singh| Dulquer S…",
       "artist": "Jasleen Royal",
+      "album": "Awarapan Collection",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/RLzC55ai0eo/hqdefault.jpg"
     },
     {
+      "id": "awarapan-064",
+      "youtubeId": "Grr0FlC8SQA",
       "videoId": "Grr0FlC8SQA",
       "title": "Kalank Title Track - Lyrical",
       "artist": "Alia Bhatt , Varun Dhawan | Arijit Sin…",
+      "album": "Alia Bhatt , Varun Dhawan",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/Grr0FlC8SQA/hqdefault.jpg"
     },
     {
+      "id": "awarapan-065",
+      "youtubeId": "w8LcxY43N5Y",
       "videoId": "w8LcxY43N5Y",
       "title": "Pal - Lyrical Video",
       "artist": "Jalebi | Arijit Singh | Shreya Ghoshal…",
+      "album": "Jalebi",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/w8LcxY43N5Y/hqdefault.jpg"
     },
     {
+      "id": "awarapan-066",
+      "youtubeId": "vdbP_3o73qI",
       "videoId": "vdbP_3o73qI",
       "title": "Jaan Nisaar - Lyrical",
       "artist": "Kedarnath| Arijit Singh | Sushant Sing…",
+      "album": "Kedarnath",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/vdbP_3o73qI/hqdefault.jpg"
     },
     {
+      "id": "awarapan-067",
+      "youtubeId": "HYUpNJJELeE",
       "videoId": "HYUpNJJELeE",
       "title": "Mehrama - Love Aaj Kal",
       "artist": "Kartik | Sara | Pritam | Darshan Raval…",
+      "album": "Kartik",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/HYUpNJJELeE/hqdefault.jpg"
     },
     {
+      "id": "awarapan-068",
+      "youtubeId": "yRB0xbKDebo",
       "videoId": "yRB0xbKDebo",
       "title": "Haan Main Galat - Love Aaj Kal",
       "artist": "Kartik, Sara | Pritam | Arijit Singh |…",
+      "album": "Kartik, Sara",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/yRB0xbKDebo/hqdefault.jpg"
     },
     {
+      "id": "awarapan-069",
+      "youtubeId": "CsOsmgUmT9U",
       "videoId": "CsOsmgUmT9U",
       "title": "Saware Full AUDIO Song - Arijit Singh",
       "artist": "Phantom",
+      "album": "Awarapan Collection",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/CsOsmgUmT9U/hqdefault.jpg"
     },
     {
+      "id": "awarapan-070",
+      "youtubeId": "UEZm0U6KrfY",
       "videoId": "UEZm0U6KrfY",
       "title": "Metro…In Dino: Zamaana Lage (Song)",
       "artist": "Anurag Basu | Pritam | Arijit Singh, S…",
+      "album": "Anurag Basu",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/UEZm0U6KrfY/hqdefault.jpg"
     },
     {
+      "id": "awarapan-071",
+      "youtubeId": "EQxEms7gnqs",
       "videoId": "EQxEms7gnqs",
       "title": "Shayad (From \"Love Aaj Kal\")",
       "artist": "Arijit Singh - Topic",
+      "album": "Awarapan Collection",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/EQxEms7gnqs/hqdefault.jpg"
     },
     {
+      "id": "awarapan-072",
+      "youtubeId": "tdbD2naYwdo",
       "videoId": "tdbD2naYwdo",
       "title": "Mehrama - Official Lyric Video",
       "artist": "Love Aaj Kal | Kartik | Sara | Pritam …",
+      "album": "Love Aaj Kal",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/tdbD2naYwdo/hqdefault.jpg"
     },
     {
+      "id": "awarapan-073",
+      "youtubeId": "SsOY0gZFfGs",
       "videoId": "SsOY0gZFfGs",
       "title": "Mehrama (Extended)",
       "artist": "Pritam - Topic",
+      "album": "Awarapan Collection",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/SsOY0gZFfGs/hqdefault.jpg"
     },
     {
+      "id": "awarapan-074",
+      "youtubeId": "kPtn26x8TZM",
       "videoId": "kPtn26x8TZM",
       "title": "Dooriyan - Lyrical Video",
       "artist": "Love Aaj Kal | Saif Ali Khan, Deepika …",
+      "album": "Love Aaj Kal",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/kPtn26x8TZM/hqdefault.jpg"
     },
     {
+      "id": "awarapan-075",
+      "youtubeId": "iZH_ydGn9i0",
       "videoId": "iZH_ydGn9i0",
       "title": "Shayad Lyric Video - Love Aaj Kal",
       "artist": "Arijit Singh | Kartik Aaryan | Sara Al…",
+      "album": "Arijit Singh",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/iZH_ydGn9i0/hqdefault.jpg"
     },
     {
+      "id": "awarapan-076",
+      "youtubeId": "tGs7iLem1cE",
       "videoId": "tGs7iLem1cE",
       "title": "Rahogi Meri - Love Aaj Kal",
       "artist": "Kartik Aaryan | Sara Ali Khan | Pritam…",
+      "album": "Kartik Aaryan",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/tGs7iLem1cE/hqdefault.jpg"
     },
     {
+      "id": "awarapan-077",
+      "youtubeId": "9-LH8ABADdo",
       "videoId": "9-LH8ABADdo",
       "title": "Shayad - Chaahat Kasam Nahi Hai",
       "artist": "Pritam | Arijit Singh",
+      "album": "Pritam",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/9-LH8ABADdo/hqdefault.jpg"
     },
     {
+      "id": "awarapan-078",
+      "youtubeId": "QRwLbf3PwO8",
       "videoId": "QRwLbf3PwO8",
       "title": "Qayde Se (Lyrical Video): Arijit Singh",
       "artist": "Pritam | Amitabh Bhattacharya | Metro……",
+      "album": "Pritam",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/QRwLbf3PwO8/hqdefault.jpg"
     },
     {
+      "id": "awarapan-079",
+      "youtubeId": "mF2BHtQh4EI",
       "videoId": "mF2BHtQh4EI",
       "title": "Shayad - Love Aaj Kal",
       "artist": "Kartik Aryan | Sara Ali Khan | Randeep…",
+      "album": "Kartik Aryan",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/mF2BHtQh4EI/hqdefault.jpg"
     },
     {
+      "id": "awarapan-080",
+      "youtubeId": "SAcpESN_Fk4",
       "videoId": "SAcpESN_Fk4",
       "title": "Dil Diyan Gallan Song",
       "artist": "Tiger Zinda Hai | Salman Khan, Katrina…",
+      "album": "Tiger Zinda Hai",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/SAcpESN_Fk4/hqdefault.jpg"
     },
     {
+      "id": "awarapan-081",
+      "youtubeId": "JtnPpxe8K7c",
       "videoId": "JtnPpxe8K7c",
       "title": "Dil Diyan Gallan Full Song",
       "artist": "Tiger Zinda Hai | Salman Khan, Katrina…",
+      "album": "Tiger Zinda Hai",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/JtnPpxe8K7c/hqdefault.jpg"
     },
     {
+      "id": "awarapan-082",
+      "youtubeId": "mevO4I0f5lg",
       "videoId": "mevO4I0f5lg",
       "title": "Dil Diyan Gallan",
       "artist": "Full Song Audio | Tiger Zinda Hai | At…",
+      "album": "Full Song Audio",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/mevO4I0f5lg/hqdefault.jpg"
     },
     {
+      "id": "awarapan-083",
+      "youtubeId": "nqUbSvFS1e4",
       "videoId": "nqUbSvFS1e4",
       "title": "Lyrical",
       "artist": "Dil Diyan Gallan Song with Lyrics | Ti…",
+      "album": "Dil Diyan Gallan Song with Lyrics",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/nqUbSvFS1e4/hqdefault.jpg"
     },
     {
+      "id": "awarapan-084",
+      "youtubeId": "5DiLiDaIemI",
       "videoId": "5DiLiDaIemI",
       "title": "ATIF ASLAM - NEHA KAKKAR LIVE IN HOUSTON (2018) …",
       "artist": "Subscribe | Like 👍 | Share",
+      "album": "Subscribe",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/5DiLiDaIemI/hqdefault.jpg"
     },
     {
+      "id": "awarapan-085",
+      "youtubeId": "u5DCgnh8S9M",
       "videoId": "u5DCgnh8S9M",
       "title": "Dil Diyan Gallan (From \"Tiger Zinda Hai\")",
       "artist": "Vishal - Shekhar - Topic",
+      "album": "Awarapan Collection",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/u5DCgnh8S9M/hqdefault.jpg"
     },
     {
+      "id": "awarapan-086",
+      "youtubeId": "ca-hzALjrcY",
       "videoId": "ca-hzALjrcY",
       "title": "Dil Diyan Gallan| B Praak| Gippy Grewal| Sargun …",
       "artist": "Moviebox Record Label",
+      "album": "Awarapan Collection",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/ca-hzALjrcY/hqdefault.jpg"
     },
     {
+      "id": "awarapan-087",
+      "youtubeId": "A2JaHCaVjrU",
       "videoId": "A2JaHCaVjrU",
       "title": "Dil Diyan Gallan Full Song",
       "artist": "Tiger Zinda Hai | Salman Khan, Katrina…",
+      "album": "Tiger Zinda Hai",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/A2JaHCaVjrU/hqdefault.jpg"
     },
     {
+      "id": "awarapan-088",
+      "youtubeId": "EsPrpf_vpi8",
       "videoId": "EsPrpf_vpi8",
       "title": "SANAM",
       "artist": "Dil Diyan Gallan",
+      "album": "Awarapan Collection",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/EsPrpf_vpi8/hqdefault.jpg"
     },
     {
+      "id": "awarapan-089",
+      "youtubeId": "PsyNOOS5Xp4",
       "videoId": "PsyNOOS5Xp4",
       "title": "Dil Diyan Gallan - Atif Aslam",
       "artist": "Extra 3D Audio | Surround Sound | Use …",
+      "album": "Extra 3D Audio",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/PsyNOOS5Xp4/hqdefault.jpg"
     },
     {
+      "id": "awarapan-090",
+      "youtubeId": "POvFEQaK634",
       "videoId": "POvFEQaK634",
       "title": "Atif Aslam",
       "artist": "Dil Diyan Gallan (Tiger Zinda Hai Soun…",
+      "album": "Awarapan Collection",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/POvFEQaK634/hqdefault.jpg"
     },
     {
+      "id": "awarapan-091",
+      "youtubeId": "Pr86yMP_oZE",
       "videoId": "Pr86yMP_oZE",
       "title": "Dil Diyan Gallan Song",
       "artist": "Tiger Zinda Hai | Female Cover Version…",
+      "album": "Tiger Zinda Hai",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/Pr86yMP_oZE/hqdefault.jpg"
     },
     {
+      "id": "awarapan-092",
+      "youtubeId": "D8jKEaAyNcs",
       "videoId": "D8jKEaAyNcs",
       "title": "Dil Diyan Gallan Lyrical Full Song",
       "artist": "Tiger Zinda Hai | Salman Khan | Katrin…",
+      "album": "Tiger Zinda Hai",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/D8jKEaAyNcs/hqdefault.jpg"
     },
     {
+      "id": "awarapan-093",
+      "youtubeId": "k_Qe4846hSI",
       "videoId": "k_Qe4846hSI",
       "title": "Dil Diyan Gallan - Tiger Zinda Hai",
       "artist": "Atif Aslam | SORY | Choreography By Ra…",
+      "album": "Atif Aslam",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/k_Qe4846hSI/hqdefault.jpg"
     },
     {
+      "id": "awarapan-094",
+      "youtubeId": "EixnLHZ6QjA",
       "videoId": "EixnLHZ6QjA",
       "title": "Making of Dil Diyan Gallan Song",
       "artist": "Tiger Zinda Hai | Salman Khan, Katrina…",
+      "album": "Tiger Zinda Hai",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/EixnLHZ6QjA/hqdefault.jpg"
     },
     {
+      "id": "awarapan-095",
+      "youtubeId": "XKmEVtVEMF0",
       "videoId": "XKmEVtVEMF0",
       "title": "Dil Diyan Gallan [Slowed + Reverb]",
       "artist": "Tiger Zinda Hai | Salman Khan | Katrin…",
+      "album": "Tiger Zinda Hai",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/XKmEVtVEMF0/hqdefault.jpg"
     },
     {
+      "id": "awarapan-096",
+      "youtubeId": "8sxzVtqoAnA",
       "videoId": "8sxzVtqoAnA",
       "title": "Dil diyan gallan [ Slowed + reverb ]",
       "artist": "Lofi remix",
+      "album": "Awarapan Collection",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/8sxzVtqoAnA/hqdefault.jpg"
     },
     {
+      "id": "awarapan-097",
+      "youtubeId": "MA9hbox27Zc",
       "videoId": "MA9hbox27Zc",
       "title": "ATIF ASLAM & NEHA KAKKAR",
       "artist": "DIL DIYAN GALLAN| UNPLUGGED| LIVE",
+      "album": "DIL DIYAN GALLAN",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/MA9hbox27Zc/hqdefault.jpg"
     },
     {
+      "id": "awarapan-098",
+      "youtubeId": "h6O4esqraE0",
       "videoId": "h6O4esqraE0",
       "title": "Best Of Atif Aslam 💓| Atif Aslam Hit Songs",
       "artist": "Atif Aslam Hindi Songs | Atif Aslam Be…",
+      "album": "Atif Aslam Hindi Songs",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/h6O4esqraE0/hqdefault.jpg"
     },
     {
+      "id": "awarapan-099",
+      "youtubeId": "VDzjgO7-pVI",
       "videoId": "VDzjgO7-pVI",
       "title": "dil diyan gallan (slowed + reverb)",
       "artist": "atif aslam",
+      "album": "Awarapan Collection",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/VDzjgO7-pVI/hqdefault.jpg"
     },
     {
+      "id": "awarapan-100",
+      "youtubeId": "KUpwupYj_tY",
       "videoId": "KUpwupYj_tY",
       "title": "Tere Hawaale Laal Singh Chaddha",
       "artist": "Aamir,Kareena | Arijit,Shilpa | Pritam…",
+      "album": "Aamir,Kareena",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/KUpwupYj_tY/hqdefault.jpg"
     },
     {
+      "id": "awarapan-101",
+      "youtubeId": "2CXSw1oPj3I",
       "videoId": "2CXSw1oPj3I",
       "title": "Tere Hawaale: Laal Singh Chaddha",
       "artist": "Aamir, Kareena | Arijit, Shilpa | Prit…",
+      "album": "Aamir, Kareena",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/2CXSw1oPj3I/hqdefault.jpg"
     },
     {
+      "id": "awarapan-102",
+      "youtubeId": "Z0VbANbyH2o",
       "videoId": "Z0VbANbyH2o",
       "title": "Tere Hawaale",
       "artist": "Pritam - Topic",
+      "album": "Awarapan Collection",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/Z0VbANbyH2o/hqdefault.jpg"
     },
     {
+      "id": "awarapan-103",
+      "youtubeId": "eLjmQ0aGC1U",
       "videoId": "eLjmQ0aGC1U",
       "title": "Tere Hawaale - Lofi (Slowed + Reverb)",
       "artist": "Arijit Singh, Shilpa Rao | SR Lofi",
+      "album": "Arijit Singh, Shilpa Rao",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/eLjmQ0aGC1U/hqdefault.jpg"
     },
     {
+      "id": "awarapan-104",
+      "youtubeId": "FiENDQapd4g",
       "videoId": "FiENDQapd4g",
       "title": "Tere Hawaale (Arijit Singh - Shreya Ghoshal Duet)",
       "artist": "Laal Singh Chaddha | Aamir, Kareena | …",
+      "album": "Laal Singh Chaddha",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/FiENDQapd4g/hqdefault.jpg"
     },
     {
+      "id": "awarapan-105",
+      "youtubeId": "Nm0qd0uhhhY",
       "videoId": "Nm0qd0uhhhY",
       "title": "Dekha Zamana Sara Bharam Hai || Tere Hawale || A…",
       "artist": "Lyrics By GS",
+      "album": "Awarapan Collection",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/Nm0qd0uhhhY/hqdefault.jpg"
     },
     {
+      "id": "awarapan-106",
+      "youtubeId": "PL0f3_ZuJts",
       "videoId": "PL0f3_ZuJts",
       "title": "Tere Hawale",
       "artist": "Arijit-Shreya Duet | Lyrical Video | L…",
+      "album": "Arijit-Shreya Duet",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/PL0f3_ZuJts/hqdefault.jpg"
     },
     {
+      "id": "awarapan-107",
+      "youtubeId": "-vzZ50Rijm8",
       "videoId": "-vzZ50Rijm8",
       "title": "Tere Hawaale (Arijit, Shreya Duet)",
       "artist": "Laal Singh Chaddha (Extended)| Aamir, …",
+      "album": "Laal Singh Chaddha (Extended)",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/-vzZ50Rijm8/hqdefault.jpg"
     },
     {
+      "id": "awarapan-108",
+      "youtubeId": "JhjnnGuvI0c",
       "videoId": "JhjnnGuvI0c",
       "title": "Na Hoke Bhi Kareeb Tu Hamesha Paas Tha - Tere Ha…",
       "artist": "Laal Singh Chaddha | Arijit Singh Songs",
+      "album": "Laal Singh Chaddha",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/JhjnnGuvI0c/hqdefault.jpg"
     },
     {
+      "id": "awarapan-109",
+      "youtubeId": "kIVgRHm2OKg",
       "videoId": "kIVgRHm2OKg",
       "title": "Tere Hawale - Arijit Singh, Shilpa Rao",
       "artist": "Aamir, Kareena | Pritam | Laal Singh C…",
+      "album": "Aamir, Kareena",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/kIVgRHm2OKg/hqdefault.jpg"
     },
     {
+      "id": "awarapan-110",
+      "youtubeId": "ico0Nfz2gfU",
       "videoId": "ico0Nfz2gfU",
       "title": "Arijit Singh: Tere Hawaale (Duet)",
       "artist": "Shreya Ghoshal | Pritam, Amitabh Bhatt…",
+      "album": "Shreya Ghoshal",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/ico0Nfz2gfU/hqdefault.jpg"
     },
     {
+      "id": "awarapan-111",
+      "youtubeId": "yb584STwkTY",
       "videoId": "yb584STwkTY",
       "title": "Kalank",
       "artist": "Shilpa Rao | Zee TvPa Grand Finale",
+      "album": "Shilpa Rao",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/yb584STwkTY/hqdefault.jpg"
     },
     {
+      "id": "awarapan-112",
+      "youtubeId": "BGU1YL9LNr4",
       "videoId": "BGU1YL9LNr4",
       "title": "Tere Hawale (Arijit",
       "artist": "Shreya Duet)",
+      "album": "Awarapan Collection",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/BGU1YL9LNr4/hqdefault.jpg"
     },
     {
+      "id": "awarapan-113",
+      "youtubeId": "XK7Crkcn7Z0",
       "videoId": "XK7Crkcn7Z0",
       "title": "Tere Hawaale Full Song- Laal Singh Chaddha",
       "artist": "Amir Khan,Kareena K | Arijit,Shilpa| P…",
+      "album": "Amir Khan,Kareena K",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/XK7Crkcn7Z0/hqdefault.jpg"
     },
     {
+      "id": "awarapan-114",
+      "youtubeId": "gKioNQ1QwVA",
       "videoId": "gKioNQ1QwVA",
       "title": "Arijit Singh & Shilpa Rao - Tere Hawaale [Lyrics…",
       "artist": "Abshomar",
+      "album": "Awarapan Collection",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/gKioNQ1QwVA/hqdefault.jpg"
     },
     {
+      "id": "awarapan-115",
+      "youtubeId": "LToDPzfwMoM",
       "videoId": "LToDPzfwMoM",
       "title": "Tere Hawaale 8K Video Song",
       "artist": "Aamir | Kareena | Pritam | Arijit Sing…",
+      "album": "Aamir",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/LToDPzfwMoM/hqdefault.jpg"
     },
     {
+      "id": "awarapan-116",
+      "youtubeId": "6jS1rU4F4HA",
       "videoId": "6jS1rU4F4HA",
       "title": "Tere Hawale",
       "artist": "Arijit Singh",
+      "album": "Awarapan Collection",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/6jS1rU4F4HA/hqdefault.jpg"
     },
     {
+      "id": "awarapan-117",
+      "youtubeId": "sXRnSIcZVZ0",
       "videoId": "sXRnSIcZVZ0",
       "title": "Tere Hawaale Laal Singh Chaddha",
       "artist": "Aamir,Kareena | Arijit,Shilpa | Pritam…",
+      "album": "Aamir,Kareena",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/sXRnSIcZVZ0/hqdefault.jpg"
     },
     {
+      "id": "awarapan-118",
+      "youtubeId": "jy26LpiiGJA",
       "videoId": "jy26LpiiGJA",
       "title": "Tere Hawale (Arijit Singh-Shreya Ghoshal Duet la…",
       "artist": "Khan Saab Records",
+      "album": "Awarapan Collection",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/jy26LpiiGJA/hqdefault.jpg"
     },
     {
+      "id": "awarapan-119",
+      "youtubeId": "iAIBF2ngbWY",
       "videoId": "iAIBF2ngbWY",
       "title": "ANIMAL:Pehle Bhi Main",
       "artist": "Ranbir Kapoor,Tripti Dimri |Sandeep V …",
+      "album": "Ranbir Kapoor,Tripti Dimri",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/iAIBF2ngbWY/hqdefault.jpg"
     },
     {
+      "id": "awarapan-120",
+      "youtubeId": "HrnrqYxYrbk",
       "videoId": "HrnrqYxYrbk",
       "title": "ANIMAL: SATRANGA(Song) Ranbir Kapoor,Rashmika|Sa…",
       "artist": "T-Series",
+      "album": "Awarapan Collection",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/HrnrqYxYrbk/hqdefault.jpg"
     },
     {
+      "id": "awarapan-121",
+      "youtubeId": "WWXm39leYew",
       "videoId": "WWXm39leYew",
       "title": "LYRICAL: Kaise Hua",
       "artist": "Kabir Singh | Shahid K, Kiara A, Sande…",
+      "album": "Kabir Singh",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/WWXm39leYew/hqdefault.jpg"
     },
     {
+      "id": "awarapan-122",
+      "youtubeId": "lwv_0SEJ4NQ",
       "videoId": "lwv_0SEJ4NQ",
       "title": "ANIMAL:PEHLE BHI MAIN(Lyrical)",
       "artist": "Ranbir Kapoor,Tripti Dimri | Sandeep V…",
+      "album": "Ranbir Kapoor,Tripti Dimri",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/lwv_0SEJ4NQ/hqdefault.jpg"
     },
     {
+      "id": "awarapan-123",
+      "youtubeId": "9cHq63r1vHQ",
       "videoId": "9cHq63r1vHQ",
       "title": "Pehle Bhi Main",
       "artist": "Vishal Mishra - Topic",
+      "album": "Awarapan Collection",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/9cHq63r1vHQ/hqdefault.jpg"
     },
     {
+      "id": "awarapan-124",
+      "youtubeId": "Xbizke4zftY",
       "videoId": "Xbizke4zftY",
       "title": "ANIMAL: Evarevaro - Ranbir Kapoor,Tripti Dimri",
       "artist": "Sandeep V | Vishal M | Bhushan K",
+      "album": "Sandeep V",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/Xbizke4zftY/hqdefault.jpg"
     },
     {
+      "id": "awarapan-125",
+      "youtubeId": "NlRrGrrRyNo",
       "videoId": "NlRrGrrRyNo",
       "title": "Aaj Bhi 2 (Video) Vishal Mishra",
       "artist": "Kaushal Kishore | VYRL Originals",
+      "album": "Kaushal Kishore",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/NlRrGrrRyNo/hqdefault.jpg"
     },
     {
+      "id": "awarapan-126",
+      "youtubeId": "KNXYonYD59w",
       "videoId": "KNXYonYD59w",
       "title": "ANIMAL: HUA MAIN (Lyrical Video)",
       "artist": "Ranbir Kapoor,Rashmika M | Sandeep V |…",
+      "album": "Ranbir Kapoor,Rashmika M",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/KNXYonYD59w/hqdefault.jpg"
     },
     {
+      "id": "awarapan-127",
+      "youtubeId": "kZGpkkfk2lA",
       "videoId": "kZGpkkfk2lA",
       "title": "Pehle Bhi Main (Slowed + Reverb)",
       "artist": "Vishal Mishra | Animal | SR Lofi",
+      "album": "Vishal Mishra",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/kZGpkkfk2lA/hqdefault.jpg"
     },
     {
+      "id": "awarapan-128",
+      "youtubeId": "9UmoVnBSm5k",
       "videoId": "9UmoVnBSm5k",
       "title": "Pehle Bhi Main || Vishal Mishra || Animal || Off…",
       "artist": "𝐒𝐅 𝐋𝐘𝐑𝐈𝐂𝐒 𝐇𝐔𝐁",
+      "album": "Awarapan Collection",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/9UmoVnBSm5k/hqdefault.jpg"
     },
     {
+      "id": "awarapan-129",
+      "youtubeId": "Mv8yFE4-DA8",
       "videoId": "Mv8yFE4-DA8",
       "title": "ANIMAL: Marham (Pehle Bhi Main) (Song) Ranbir Ka…",
       "artist": "T-Series",
+      "album": "Awarapan Collection",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/Mv8yFE4-DA8/hqdefault.jpg"
     },
     {
+      "id": "awarapan-130",
+      "youtubeId": "XaNgxnN6qEI",
       "videoId": "XaNgxnN6qEI",
       "title": "Vishal Mishra Mashup 2025",
       "artist": "Hiren Chawda | Best of Vishal Mishra |…",
+      "album": "Hiren Chawda",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/XaNgxnN6qEI/hqdefault.jpg"
     },
     {
+      "id": "awarapan-131",
+      "youtubeId": "QKMTreKTpug",
       "videoId": "QKMTreKTpug",
       "title": "ANIMAL:PEHLE BHI MAIN|Ranbir Kapoor,Rashmika,Ani…",
       "artist": "T-Series",
+      "album": "Awarapan Collection",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/QKMTreKTpug/hqdefault.jpg"
     },
     {
+      "id": "awarapan-132",
+      "youtubeId": "6RlpNQiPhgY",
       "videoId": "6RlpNQiPhgY",
       "title": "ANIMAL Mashup",
       "artist": "Jay Guldekar | Satranga | Pehle Bhi Me…",
+      "album": "Jay Guldekar",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/6RlpNQiPhgY/hqdefault.jpg"
     },
     {
+      "id": "awarapan-133",
+      "youtubeId": "3o7o4N_mEUY",
       "videoId": "3o7o4N_mEUY",
       "title": "ANIMAL Mashup Nonstop - Jukebox",
       "artist": "Jay Guldekar | Satranga | Pehle Bhi Mein",
+      "album": "Jay Guldekar",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/3o7o4N_mEUY/hqdefault.jpg"
     },
     {
+      "id": "awarapan-134",
+      "youtubeId": "kO4AU5yBp64",
       "videoId": "kO4AU5yBp64",
       "title": "Pehle Bhi Main x Kaise Hua (ACV Mashup)",
       "artist": "ANIMAL MASHUP | Ranbir Kapoor",
+      "album": "ANIMAL MASHUP",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/kO4AU5yBp64/hqdefault.jpg"
     },
     {
+      "id": "awarapan-135",
+      "youtubeId": "wqVGA-XDe1I",
       "videoId": "wqVGA-XDe1I",
       "title": "Marham (Pehle Bhi Main)",
       "artist": "Vishal Mishra - Topic",
+      "album": "Awarapan Collection",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/wqVGA-XDe1I/hqdefault.jpg"
     },
     {
+      "id": "awarapan-136",
+      "youtubeId": "YMAdgnh9VOI",
       "videoId": "YMAdgnh9VOI",
       "title": "Vishal Mishra Mashup 2024",
       "artist": "Pehle Bhi Main | Janiye | Aaj Bhi | [B…",
+      "album": "Pehle Bhi Main",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/YMAdgnh9VOI/hqdefault.jpg"
     },
     {
+      "id": "awarapan-137",
+      "youtubeId": "jBfR0bU82z8",
       "videoId": "jBfR0bU82z8",
       "title": "Kaise Hua",
       "artist": "Vishal Mishra | Live | TKSS",
+      "album": "Vishal Mishra",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/jBfR0bU82z8/hqdefault.jpg"
     },
     {
+      "id": "awarapan-138",
+      "youtubeId": "hpqvSU0Ynn0",
       "videoId": "hpqvSU0Ynn0",
       "title": "ANIMAL MOVIES SONG: PEHLE BHI MAIN",
       "artist": "vishal mishra live performance",
+      "album": "Awarapan Collection",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/hpqvSU0Ynn0/hqdefault.jpg"
     },
     {
+      "id": "awarapan-139",
+      "youtubeId": "sK7riqg2mr4",
       "videoId": "sK7riqg2mr4",
       "title": "Agar Tum Saath Ho FULL AUDIO Song",
       "artist": "Tamasha | Ranbir Kapoor, Deepika Paduk…",
+      "album": "Tamasha",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/sK7riqg2mr4/hqdefault.jpg"
     },
     {
+      "id": "awarapan-140",
+      "youtubeId": "OGI0fNvr4fo",
       "videoId": "OGI0fNvr4fo",
       "title": "Agar Tum Saath Ho",
       "artist": "Full Song",
+      "album": "Awarapan Collection",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/OGI0fNvr4fo/hqdefault.jpg"
     },
     {
+      "id": "awarapan-141",
+      "youtubeId": "Q2S7CDuBTOc",
       "videoId": "Q2S7CDuBTOc",
       "title": "Agar Tum Saath Ho Maahi Ve l Mixtape l Jubin N P…",
       "artist": "T-Series",
+      "album": "Awarapan Collection",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/Q2S7CDuBTOc/hqdefault.jpg"
     },
     {
+      "id": "awarapan-142",
+      "youtubeId": "xRb8hxwN5zc",
       "videoId": "xRb8hxwN5zc",
       "title": "'AGAR TUM SAATH HO' Full VIDEO song",
       "artist": "Tamasha | Ranbir Kapoor, Deepika Paduk…",
+      "album": "Tamasha",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/xRb8hxwN5zc/hqdefault.jpg"
     },
     {
+      "id": "awarapan-143",
+      "youtubeId": "FOA9iyxsW_A",
       "videoId": "FOA9iyxsW_A",
       "title": "AGAR TUM SAATH HO",
       "artist": "Arijit Singh - Topic",
+      "album": "Awarapan Collection",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/FOA9iyxsW_A/hqdefault.jpg"
     },
     {
+      "id": "awarapan-144",
+      "youtubeId": "fQlhzY5UH6s",
       "videoId": "fQlhzY5UH6s",
       "title": "\"Agar Tum Saath Ho\" Song with Lyrics",
       "artist": "Tamasha | Ranbir Kapoor, Deepika Paduk…",
+      "album": "Tamasha",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/fQlhzY5UH6s/hqdefault.jpg"
     },
     {
+      "id": "awarapan-145",
+      "youtubeId": "dhY8jRNELUc",
       "videoId": "dhY8jRNELUc",
       "title": "Agar Tum Saath Ho",
       "artist": "Tamasha | Alka Yagnik Arijit Singh | L…",
+      "album": "Tamasha",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/dhY8jRNELUc/hqdefault.jpg"
     },
     {
+      "id": "awarapan-146",
+      "youtubeId": "fs7-8M1VbZU",
       "videoId": "fs7-8M1VbZU",
       "title": "Arijit Singh: Agar Tum Sath Ho",
       "artist": "Alka Yagnik, A.R. Rehman, Irshad Kamil",
+      "album": "Awarapan Collection",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/fs7-8M1VbZU/hqdefault.jpg"
     },
     {
+      "id": "awarapan-147",
+      "youtubeId": "6SGRn9OHtFY",
       "videoId": "6SGRn9OHtFY",
       "title": "Agar Tum Saath Ho VIDEO Song",
       "artist": "Tamasha | Ranbir Kapoor, Deepika Paduk…",
+      "album": "Tamasha",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/6SGRn9OHtFY/hqdefault.jpg"
     },
     {
+      "id": "awarapan-148",
+      "youtubeId": "pon8irRa8II",
       "videoId": "pon8irRa8II",
       "title": "AGAR TUM SAATH HO' Full 4k  song",
       "artist": "Tamasha | Ranbir Kapoor, Deepika Paduk…",
+      "album": "Tamasha",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/pon8irRa8II/hqdefault.jpg"
     },
     {
+      "id": "awarapan-149",
+      "youtubeId": "UsxERu1Vv08",
       "videoId": "UsxERu1Vv08",
       "title": "Agar Tum Saath ho (Slowed+Reverb)",
       "artist": "ARIJIT SINGH",
+      "album": "Awarapan Collection",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/UsxERu1Vv08/hqdefault.jpg"
     },
     {
+      "id": "awarapan-150",
+      "youtubeId": "zCjRVABSHUs",
       "videoId": "zCjRVABSHUs",
       "title": "'AGAR TUM SAATH HO' Full AUDIO song",
       "artist": "Tamasha | Ranbir Kapoor, Deepika Paduk…",
+      "album": "Tamasha",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/zCjRVABSHUs/hqdefault.jpg"
     },
     {
+      "id": "awarapan-151",
+      "youtubeId": "r-i8teGFG5g",
       "videoId": "r-i8teGFG5g",
       "title": "Agar tum sath ho (slowed and reverb) Arijit Singh",
       "artist": "MINE VIBE",
+      "album": "Awarapan Collection",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/r-i8teGFG5g/hqdefault.jpg"
     },
     {
+      "id": "awarapan-152",
+      "youtubeId": "4vSIwdj6MEU",
       "videoId": "4vSIwdj6MEU",
       "title": "Agar Tum Saath Ho",
       "artist": "Tamasha | Lirik - Terjemahan Indonesia",
+      "album": "Tamasha",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/4vSIwdj6MEU/hqdefault.jpg"
     },
     {
+      "id": "awarapan-153",
+      "youtubeId": "Ya_qVko-Xg0",
       "videoId": "Ya_qVko-Xg0",
       "title": "Agar Tum Saath ho - Tamasha",
       "artist": "Reprised | Cover by Tanya Gupta",
+      "album": "Reprised",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/Ya_qVko-Xg0/hqdefault.jpg"
     },
     {
+      "id": "awarapan-154",
+      "youtubeId": "KAskRVFhv-c",
       "videoId": "KAskRVFhv-c",
       "title": "Agar Tum Saath Ho [Slowed + Reverb]",
       "artist": "Arijit Singh, Alka Yagnik",
+      "album": "Awarapan Collection",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/KAskRVFhv-c/hqdefault.jpg"
     },
     {
+      "id": "awarapan-155",
+      "youtubeId": "8Y7bYQIWcuk",
       "videoId": "8Y7bYQIWcuk",
       "title": "Agar Tum Saath Ho Full Audio Song || Tamasha || …",
       "artist": "Charu's Music World",
+      "album": "Awarapan Collection",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/8Y7bYQIWcuk/hqdefault.jpg"
     },
     {
+      "id": "awarapan-156",
+      "youtubeId": "6AcUmOGMnak",
       "videoId": "6AcUmOGMnak",
       "title": "agar tum saath ho",
       "artist": "arijit singh | live performance | roya…",
+      "album": "arijit singh",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/6AcUmOGMnak/hqdefault.jpg"
     },
     {
+      "id": "awarapan-157",
+      "youtubeId": "njoL-CQt7H4",
       "videoId": "njoL-CQt7H4",
       "title": "Agar Tum Saath Ho [Slowed+Reverb] - ALKA YAGNIK,…",
       "artist": "Musiclovers | Textaudio",
+      "album": "Musiclovers",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/njoL-CQt7H4/hqdefault.jpg"
     },
     {
+      "id": "awarapan-158",
+      "youtubeId": "4mq5tyWfXDU",
       "videoId": "4mq5tyWfXDU",
       "title": "Agar Tum Saath Ho",
       "artist": "TAMASHA {SLOWED & REVERB}",
+      "album": "Awarapan Collection",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/4mq5tyWfXDU/hqdefault.jpg"
     },
     {
+      "id": "awarapan-159",
+      "youtubeId": "TGpG56pg3UU",
       "videoId": "TGpG56pg3UU",
       "title": "Sun Saathiya Full Video",
       "artist": "Disney's ABCD 2 | Varun Dhawan , Shrad…",
+      "album": "Disney's ABCD 2",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/TGpG56pg3UU/hqdefault.jpg"
     },
     {
+      "id": "awarapan-160",
+      "youtubeId": "EtSAs6GD0Yk",
       "videoId": "EtSAs6GD0Yk",
       "title": "Sun Saathiya",
       "artist": "Priya Saraiya - Topic",
+      "album": "Awarapan Collection",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/EtSAs6GD0Yk/hqdefault.jpg"
     },
     {
+      "id": "awarapan-161",
+      "youtubeId": "_NWaYjsz3qY",
       "videoId": "_NWaYjsz3qY",
       "title": "Sun Saathiya - Full Song - Disney's ABCD 2",
       "artist": "Varun Dhawan - Shraddha Kapoor | Sachi…",
+      "album": "Varun Dhawan - Shraddha Kapoor",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/_NWaYjsz3qY/hqdefault.jpg"
     },
     {
+      "id": "awarapan-162",
+      "youtubeId": "ltrstdEFaqg",
       "videoId": "ltrstdEFaqg",
       "title": "Neelanjana Ray and Divya Kumar Performs On Sun S…",
       "artist": "The Voice India Kids | Episode 34",
+      "album": "The Voice India Kids",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/ltrstdEFaqg/hqdefault.jpg"
     },
     {
+      "id": "awarapan-163",
+      "youtubeId": "UNs50T6EYwE",
       "videoId": "UNs50T6EYwE",
       "title": "Sun Saathiya - Full Video",
       "artist": "Disney's ABCD 2 | Varun Dhawan, Shradd…",
+      "album": "Disney's ABCD 2",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/UNs50T6EYwE/hqdefault.jpg"
     },
     {
+      "id": "awarapan-164",
+      "youtubeId": "txxAH9D2gZU",
       "videoId": "txxAH9D2gZU",
       "title": "Sun Saathiya - Song with Lyrics - Disney's ABCD …",
       "artist": "Sachin - Jigar",
+      "album": "Awarapan Collection",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/txxAH9D2gZU/hqdefault.jpg"
     },
     {
+      "id": "awarapan-165",
+      "youtubeId": "fKxEXm9qG4k",
       "videoId": "fKxEXm9qG4k",
       "title": "sun saathiya lyrics",
       "artist": "Vibe With VNM",
+      "album": "Awarapan Collection",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/fKxEXm9qG4k/hqdefault.jpg"
     },
     {
+      "id": "awarapan-166",
+      "youtubeId": "WIjra2HHRFM",
       "videoId": "WIjra2HHRFM",
       "title": "Sun Saathiya ( Slowed & Reverb )",
       "artist": "Lyrics | Priya Saraiya | Divya Kumar |…",
+      "album": "Lyrics",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/WIjra2HHRFM/hqdefault.jpg"
     },
     {
+      "id": "awarapan-167",
+      "youtubeId": "tnp8SRcXx-s",
       "videoId": "tnp8SRcXx-s",
       "title": "Sun Saathiya Maahiya [Slowed Reverb] ABCD 2",
       "artist": "Priya Saraiya, Divya Kumar | Srk Lofi …",
+      "album": "Priya Saraiya, Divya Kumar",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/tnp8SRcXx-s/hqdefault.jpg"
     },
     {
+      "id": "awarapan-168",
+      "youtubeId": "v9KvrMnnyb4",
       "videoId": "v9KvrMnnyb4",
       "title": "Sun Saathiya ( Slowed+Reverb ) Priya Saraiya",
       "artist": "Divya Kumar | Deeps Vibes",
+      "album": "Divya Kumar",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/v9KvrMnnyb4/hqdefault.jpg"
     },
     {
+      "id": "awarapan-169",
+      "youtubeId": "uJlJBIBIbAU",
       "videoId": "uJlJBIBIbAU",
       "title": "SUN SATHIYA(SLOWED & REVERB)||SACHIN-JIGAR",
       "artist": "P RAJ MUSIC",
+      "album": "Awarapan Collection",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/uJlJBIBIbAU/hqdefault.jpg"
     },
     {
+      "id": "awarapan-170",
+      "youtubeId": "0n2G2SryMuY",
       "videoId": "0n2G2SryMuY",
       "title": "Making of Sun Saathiya - Disney's ABCD 2",
       "artist": "Varun Dhawan - Shraddha Kapoor | Sachi…",
+      "album": "Varun Dhawan - Shraddha Kapoor",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/0n2G2SryMuY/hqdefault.jpg"
     },
     {
+      "id": "awarapan-171",
+      "youtubeId": "bfzDXYW5fS0",
       "videoId": "bfzDXYW5fS0",
       "title": "Sun Saathiya [Slowed+Reverb] Priya Saraiya",
       "artist": "Divya Kumar l SV Lofi",
+      "album": "Awarapan Collection",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/bfzDXYW5fS0/hqdefault.jpg"
     },
     {
+      "id": "awarapan-172",
+      "youtubeId": "YrBE1Cd9UzA",
       "videoId": "YrBE1Cd9UzA",
       "title": "Sun Saathiya (Slowed + Reverb)",
       "artist": "Priya Saraiya, Divya Kumar | ABCD 2 | …",
+      "album": "Priya Saraiya, Divya Kumar",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/YrBE1Cd9UzA/hqdefault.jpg"
     },
     {
+      "id": "awarapan-173",
+      "youtubeId": "Y35uCA-XVRM",
       "videoId": "Y35uCA-XVRM",
       "title": "Sun Saathiya Full Video",
       "artist": "Disney's ABCD 2 | Varun Dhawan , Shrad…",
+      "album": "Disney's ABCD 2",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/Y35uCA-XVRM/hqdefault.jpg"
     },
     {
+      "id": "awarapan-174",
+      "youtubeId": "UcmzeXxF4D4",
       "videoId": "UcmzeXxF4D4",
       "title": "Sun Saathiya Lirik & Terjemahan Indonesia |ABCD 2",
       "artist": "bllydxt",
+      "album": "Awarapan Collection",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/UcmzeXxF4D4/hqdefault.jpg"
     },
     {
+      "id": "awarapan-175",
+      "youtubeId": "P9OuseD4zdI",
       "videoId": "P9OuseD4zdI",
       "title": "Sun Saathiya - Varun Dhawan & Shraddha Kapoor",
       "artist": "Sachin-Jigar | Priya Saraiya, Divya Ku…",
+      "album": "Sachin-Jigar",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/P9OuseD4zdI/hqdefault.jpg"
     },
     {
+      "id": "awarapan-176",
+      "youtubeId": "MYgIWSsOaSE",
       "videoId": "MYgIWSsOaSE",
       "title": "Sun Saathiya Full Video",
       "artist": "Disney's ABCD 2 | Varun Dhawan , Shrad…",
+      "album": "Disney's ABCD 2",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/MYgIWSsOaSE/hqdefault.jpg"
     },
     {
+      "id": "awarapan-177",
+      "youtubeId": "CXlHYSiuW4U",
       "videoId": "CXlHYSiuW4U",
       "title": "Sun Saathiya (Slowed + Reverb)",
       "artist": "ABCD 2",
+      "album": "Awarapan Collection",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/CXlHYSiuW4U/hqdefault.jpg"
     },
     {
+      "id": "awarapan-178",
+      "youtubeId": "FYfYq2a-orA",
       "videoId": "FYfYq2a-orA",
       "title": "Sun sathiya  (slowed + reverb)",
       "artist": "Ć𝕙@𝒓𝐦ⲓ𝖓𝐠𝕡ꪱxꪱɇ♡",
+      "album": "Awarapan Collection",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/FYfYq2a-orA/hqdefault.jpg"
     },
     {
+      "id": "awarapan-179",
+      "youtubeId": "8v-TWxPWIWc",
       "videoId": "8v-TWxPWIWc",
       "title": "Humsafar",
       "artist": "Varun & Alia Bhatt | Akhil Sachdeva | …",
+      "album": "Varun & Alia Bhatt",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/8v-TWxPWIWc/hqdefault.jpg"
     },
     {
+      "id": "awarapan-180",
+      "youtubeId": "jIqRbFQl-ds",
       "videoId": "jIqRbFQl-ds",
       "title": "Humsafar (Video)",
       "artist": "Varun Dhawan, Alia Bhatt | Akhil Sachd…",
+      "album": "Varun Dhawan, Alia Bhatt",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/jIqRbFQl-ds/hqdefault.jpg"
     },
     {
+      "id": "awarapan-181",
+      "youtubeId": "Aokj-w3COw0",
       "videoId": "Aokj-w3COw0",
       "title": "Humsafar",
       "artist": "Akhil Sachdeva - Topic",
+      "album": "Awarapan Collection",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/Aokj-w3COw0/hqdefault.jpg"
     },
     {
+      "id": "awarapan-182",
+      "youtubeId": "vIUp4CzOrpQ",
       "videoId": "vIUp4CzOrpQ",
       "title": "Humsafar (Full Audio Song)",
       "artist": "Varun Dhawan , Alia Bhatt | Akhil Sach…",
+      "album": "Varun Dhawan , Alia Bhatt",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/vIUp4CzOrpQ/hqdefault.jpg"
     },
     {
+      "id": "awarapan-183",
+      "youtubeId": "RzMmU4xvyCU",
       "videoId": "RzMmU4xvyCU",
       "title": "Humsafar Female Version",
       "artist": "Varun & Alia Bhatt | Akhil Sachdeva | …",
+      "album": "Varun & Alia Bhatt",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/RzMmU4xvyCU/hqdefault.jpg"
     },
     {
+      "id": "awarapan-184",
+      "youtubeId": "Jv03fM7LZgE",
       "videoId": "Jv03fM7LZgE",
       "title": "Humsafar (Full Audio Song)",
       "artist": "Varun Dhawan , Alia Bhatt | Akhil Sach…",
+      "album": "Varun Dhawan , Alia Bhatt",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/Jv03fM7LZgE/hqdefault.jpg"
     },
     {
+      "id": "awarapan-185",
+      "youtubeId": "s_Ab720t_zo",
       "videoId": "s_Ab720t_zo",
       "title": "Humsafar ( Slowed and Reverb) Akhil Sachdeva",
       "artist": "Badrinath ki dulhania | Nexus Music",
+      "album": "Badrinath ki dulhania",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/s_Ab720t_zo/hqdefault.jpg"
     },
     {
+      "id": "awarapan-186",
+      "youtubeId": "5BAWcCxkMCs",
       "videoId": "5BAWcCxkMCs",
       "title": "Humsafar (Lyrical Video)",
       "artist": "Varun Dhawan, Alia Bhatt | Akhil Sachd…",
+      "album": "Varun Dhawan, Alia Bhatt",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/5BAWcCxkMCs/hqdefault.jpg"
     },
     {
+      "id": "awarapan-187",
+      "youtubeId": "QMfLDyEoWkE",
       "videoId": "QMfLDyEoWkE",
       "title": "Humsafar - Akhil Sachdeva",
       "artist": "Lyrical Bam Hindi",
+      "album": "Awarapan Collection",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/QMfLDyEoWkE/hqdefault.jpg"
     },
     {
+      "id": "awarapan-188",
+      "youtubeId": "CSO5DhzK094",
       "videoId": "CSO5DhzK094",
       "title": "Humsafar Remix",
       "artist": "Varun Dhawan, Alia Bhatt | \"Badrinath …",
+      "album": "Varun Dhawan, Alia Bhatt",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/CSO5DhzK094/hqdefault.jpg"
     },
     {
+      "id": "awarapan-189",
+      "youtubeId": "Vsxh7gEKuOE",
       "videoId": "Vsxh7gEKuOE",
       "title": "Sun Mere Humsafar - Slowed and Reverbed (Magical)",
       "artist": "Badrinath Ki Dulhania | Lofi Vibes",
+      "album": "Badrinath Ki Dulhania",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/Vsxh7gEKuOE/hqdefault.jpg"
     },
     {
+      "id": "awarapan-190",
+      "youtubeId": "-8DxXays6v8",
       "videoId": "-8DxXays6v8",
       "title": "HUMSAFAR Lyrics Full Song Lyrics Movie - Badrina…",
       "artist": "Akhil Sachdeva",
+      "album": "Awarapan Collection",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/-8DxXays6v8/hqdefault.jpg"
     },
     {
+      "id": "awarapan-191",
+      "youtubeId": "1AGVmQ5OwtM",
       "videoId": "1AGVmQ5OwtM",
       "title": "Humsafar (Zaalima) Video Song",
       "artist": "Akhil Nasha | BADRINATH KI DULAHNIA",
+      "album": "Akhil Nasha",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/1AGVmQ5OwtM/hqdefault.jpg"
     },
     {
+      "id": "awarapan-192",
+      "youtubeId": "tYgy4fF9iJA",
       "videoId": "tYgy4fF9iJA",
       "title": "Badrinath Ki Dulhania: Humsafar Song",
       "artist": "Varun Dhawan | Alia Bhatt | Akhil Sach…",
+      "album": "Varun Dhawan",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/tYgy4fF9iJA/hqdefault.jpg"
     },
     {
+      "id": "awarapan-193",
+      "youtubeId": "4G6-fKG96Y8",
       "videoId": "4G6-fKG96Y8",
       "title": "Humsafar (sun jara samjhe)| \"Badrinath Ki Dulhan…",
       "artist": "Varun Dhawan , Alia Bhatt",
+      "album": "Awarapan Collection",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/4G6-fKG96Y8/hqdefault.jpg"
     },
     {
+      "id": "awarapan-194",
+      "youtubeId": "TnnOyFHn0Xc",
       "videoId": "TnnOyFHn0Xc",
       "title": "Humsafar [Slowed & Reverb] ~ Akhil Sachdeva",
       "artist": "Badrinath Ki Dulhania | Vcofficial",
+      "album": "Badrinath Ki Dulhania",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/TnnOyFHn0Xc/hqdefault.jpg"
     },
     {
+      "id": "awarapan-195",
+      "youtubeId": "pWJTiLL5PM8",
       "videoId": "pWJTiLL5PM8",
       "title": "Humsafar - \"Badrinath Ki Dulhania\"",
       "artist": "Female Cover By Pallavi Mukund",
+      "album": "Awarapan Collection",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/pWJTiLL5PM8/hqdefault.jpg"
     },
     {
+      "id": "awarapan-196",
+      "youtubeId": "nZpm-87y37Y",
       "videoId": "nZpm-87y37Y",
       "title": "Humsafar (8D song)",
       "artist": "Varun & Alia Bhatt | Akhil Sachdeva | …",
+      "album": "Varun & Alia Bhatt",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/nZpm-87y37Y/hqdefault.jpg"
     },
     {
+      "id": "awarapan-197",
+      "youtubeId": "RBTXo0Ai8_A",
       "videoId": "RBTXo0Ai8_A",
       "title": "Humsafar Lyrics with English Translation",
       "artist": "Full Song | Badrinath Ki Dulhania (201…",
+      "album": "Full Song",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/RBTXo0Ai8_A/hqdefault.jpg"
     },
     {
+      "id": "awarapan-198",
+      "youtubeId": "5qJNtsPJtKc",
       "videoId": "5qJNtsPJtKc",
       "title": "Humsafar Full Song With LYRICS",
       "artist": "Badrinath Ki Dulhania | Alia bhatt, Va…",
+      "album": "Badrinath Ki Dulhania",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/5qJNtsPJtKc/hqdefault.jpg"
     },
     {
+      "id": "awarapan-199",
+      "youtubeId": "fXRvluHnjxE",
       "videoId": "fXRvluHnjxE",
       "title": "Mast Magan Full Song with Lyrics",
       "artist": "2 States | Arijit Singh | Arjun Kapoor…",
+      "album": "2 States",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/fXRvluHnjxE/hqdefault.jpg"
     },
     {
+      "id": "awarapan-200",
+      "youtubeId": "xitd9mEZIHk",
       "videoId": "xitd9mEZIHk",
       "title": "Mast Magan FULL Video Song",
       "artist": "2 States | Arijit Singh | Arjun Kapoor…",
+      "album": "2 States",
       "category": "awarapan",
       "thumbnail": "https://i.ytimg.com/vi/xitd9mEZIHk/hqdefault.jpg"
     }
   ],
   "romantic_new": [
     {
+      "id": "romantic_new-001",
+      "youtubeId": "tLqtnGLfm4Q",
       "videoId": "tLqtnGLfm4Q",
       "title": "Lyrical: Tum Hi Aana",
       "artist": "Marjaavaan | Riteish D, Sidharth M, Ta…",
+      "album": "Marjaavaan",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/tLqtnGLfm4Q/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-002",
+      "youtubeId": "_iktURk0X-A",
       "videoId": "_iktURk0X-A",
       "title": "𝐏𝐡𝐢𝐫 𝐁𝐡𝐢 𝐓𝐮𝐦𝐤𝐨 𝐂𝐡𝐚𝐚𝐡𝐮𝐧𝐠𝐚💖",
       "artist": "𝐅𝐮𝐥𝐥 𝐒𝐨𝐧𝐠 | Arijit Singh | Arj…",
+      "album": "𝐅𝐮𝐥𝐥 𝐒𝐨𝐧𝐠",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/_iktURk0X-A/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-003",
+      "youtubeId": "Ov0YGGSY6gY",
       "videoId": "Ov0YGGSY6gY",
       "title": "KAUN TUJHE  Lyrical",
       "artist": "M.S. DHONI -THE UNTOLD STORY | Amaal M…",
+      "album": "M.S. DHONI -THE UNTOLD STORY",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/Ov0YGGSY6gY/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-004",
+      "youtubeId": "inEu2qQuGZ8",
       "videoId": "inEu2qQuGZ8",
       "title": "\"Sun Raha Hai Na Tu Female Version\" By Shreya Gh…",
       "artist": "T-Series",
+      "album": "Bollywood Romantics",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/inEu2qQuGZ8/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-005",
+      "youtubeId": "VdyBtGaspss",
       "videoId": "VdyBtGaspss",
       "title": "Chahun Main Ya Naa Full Video Song Aashiqui 2",
       "artist": "Aditya Roy Kapur, Shraddha Kapoor",
+      "album": "Bollywood Romantics",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/VdyBtGaspss/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-006",
+      "youtubeId": "Umqb9KENgmk",
       "videoId": "Umqb9KENgmk",
       "title": "\"Tum Hi Ho\" Aashiqui 2 Full Song With Lyrics",
       "artist": "Aditya Roy Kapur, Shraddha Kapoor",
+      "album": "Bollywood Romantics",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/Umqb9KENgmk/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-007",
+      "youtubeId": "MJyKN-8UncM",
       "videoId": "MJyKN-8UncM",
       "title": "Shayad - Love Aaj Kal",
       "artist": "Kartik | Sara | Arushi | Pritam | Arij…",
+      "album": "Kartik",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/MJyKN-8UncM/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-008",
+      "youtubeId": "IJq0yyWug1k",
       "videoId": "IJq0yyWug1k",
       "title": "\"Tum Hi Ho Aashiqui 2\" Full Video Song HD",
       "artist": "Aditya Roy Kapur, Shraddha Kapoor | Mu…",
+      "album": "Aditya Roy Kapur, Shraddha Kapoor",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/IJq0yyWug1k/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-009",
+      "youtubeId": "izy2tV-Ssj8",
       "videoId": "izy2tV-Ssj8",
       "title": "AASHIQUI 2 MASHUP FULL SONG",
       "artist": "KIRAN KAMATH | BEST BOLLYWOOD MASHUPS",
+      "album": "KIRAN KAMATH",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/izy2tV-Ssj8/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-010",
+      "youtubeId": "GtPvCa3vvxA",
       "videoId": "GtPvCa3vvxA",
       "title": "\"Milne Hai Mujhse Aayi Aashiqui 2\" Full Video Song",
       "artist": "Aditya Roy Kapur, Shraddha Kapoor",
+      "album": "Bollywood Romantics",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/GtPvCa3vvxA/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-011",
+      "youtubeId": "V1oczq_8L0E",
       "videoId": "V1oczq_8L0E",
       "title": "ISHQ MUBARAK Full Video Song || Tum Bin 2 || Ari…",
       "artist": "Neha Sharma, Aditya Seal & Aashim Gulati",
+      "album": "Bollywood Romantics",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/V1oczq_8L0E/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-012",
+      "youtubeId": "z3UHfi9vpbc",
       "videoId": "z3UHfi9vpbc",
       "title": "Sunn Raha Hai Na Tu Aashiqui 2 Full Song With Ly…",
       "artist": "Aditya Roy Kapur, Shraddha Kapoor",
+      "album": "Bollywood Romantics",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/z3UHfi9vpbc/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-013",
+      "youtubeId": "pIBoAh4OXhQ",
       "videoId": "pIBoAh4OXhQ",
       "title": "Janam Janam",
       "artist": "Dilwale | Shah Rukh Khan | Kajol | Pri…",
+      "album": "Dilwale",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/pIBoAh4OXhQ/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-014",
+      "youtubeId": "cUmUOb7j3dc",
       "videoId": "cUmUOb7j3dc",
       "title": "Dhun Song",
       "artist": "Saiyaara | Ahaan Panday, Aneet Padda |…",
+      "album": "Saiyaara",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/cUmUOb7j3dc/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-015",
+      "youtubeId": "krJsyb_yf7A",
       "videoId": "krJsyb_yf7A",
       "title": "Aashiqui 2 Hum Mar Jayenge Full Video Song",
       "artist": "Aditya Roy Kapur, Shraddha Kapoor",
+      "album": "Bollywood Romantics",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/krJsyb_yf7A/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-016",
+      "youtubeId": "2bMEe0UYa8E",
       "videoId": "2bMEe0UYa8E",
       "title": "\"Piya Aaye Na\" Aashiqui 2 Full Song with Lyrics",
       "artist": "Aditya Roy Kapur, Shraddha Kapoor",
+      "album": "Bollywood Romantics",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/2bMEe0UYa8E/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-017",
+      "youtubeId": "eHRrZ5DQCV4",
       "videoId": "eHRrZ5DQCV4",
       "title": "Sunn Raha Hai Na Tu Aashiqui 2 Full Video Song",
       "artist": "Aditya Roy Kapur, Shraddha Kapoor",
+      "album": "Bollywood Romantics",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/eHRrZ5DQCV4/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-018",
+      "youtubeId": "fsiPzT50ZiM",
       "videoId": "fsiPzT50ZiM",
       "title": "Tum Hi Ho",
       "artist": "Arijit Singh - Topic",
+      "album": "Bollywood Romantics",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/fsiPzT50ZiM/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-019",
+      "youtubeId": "NUo8CKI34o4",
       "videoId": "NUo8CKI34o4",
       "title": "Tum Hi Ho Song Aashiqui 2",
       "artist": "Music By Mithoon | Aditya Roy Kapur, S…",
+      "album": "Music By Mithoon",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/NUo8CKI34o4/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-020",
+      "youtubeId": "YLoYt8H7kjM",
       "videoId": "YLoYt8H7kjM",
       "title": "Arijit Singh with his soulful performance",
       "artist": "6th Royal Stag Mirchi Music Awards | R…",
+      "album": "6th Royal Stag Mirchi Music Awards",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/YLoYt8H7kjM/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-021",
+      "youtubeId": "gvyUuxdRdR4",
       "videoId": "gvyUuxdRdR4",
       "title": "Raataan Lambiyan",
       "artist": "Official Video | Shershaah | Sidharth …",
+      "album": "Official Video",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/gvyUuxdRdR4/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-022",
+      "youtubeId": "orYf6VDtj_k",
       "videoId": "orYf6VDtj_k",
       "title": "Raataan Lambiyan - Lyric Video",
       "artist": "Shershaah | Sidharth, Kiara | Tanishk …",
+      "album": "Shershaah",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/orYf6VDtj_k/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-023",
+      "youtubeId": "Dm6YRJHy64c",
       "videoId": "Dm6YRJHy64c",
       "title": "Raataan Lambiyan (From \"Shershaah\")",
       "artist": "Jubin Nautiyal - Topic",
+      "album": "Bollywood Romantics",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/Dm6YRJHy64c/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-024",
+      "youtubeId": "GLGuLXKT9Ng",
       "videoId": "GLGuLXKT9Ng",
       "title": "Raataan Lambiyan - Shershaah",
       "artist": "Full Song | Sidharth, Kiara | Tanishk …",
+      "album": "Full Song",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/GLGuLXKT9Ng/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-025",
+      "youtubeId": "skq8M5khNbw",
       "videoId": "skq8M5khNbw",
       "title": "Raataan Lambiyan",
       "artist": "Shershaah | Jubin Nautiyal | Asees Kau…",
+      "album": "Shershaah",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/skq8M5khNbw/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-026",
+      "youtubeId": "qauUzF4GMZ0",
       "videoId": "qauUzF4GMZ0",
       "title": "THIS IS SO ROMANTIC",
       "artist": "RAATAAN LAMBIYAN - Shershaah | Violin …",
+      "album": "RAATAAN LAMBIYAN - Shershaah",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/qauUzF4GMZ0/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-027",
+      "youtubeId": "dYwwHf9vWfo",
       "videoId": "dYwwHf9vWfo",
       "title": "Kithe Chaliye Tu Lyrics Video From Shershaah Mov…",
       "artist": "Kiara || Raataan Lambiyan",
+      "album": "Kiara",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/dYwwHf9vWfo/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-028",
+      "youtubeId": "2FRrtuu3Ljg",
       "videoId": "2FRrtuu3Ljg",
       "title": "Shershaah - all songs",
       "artist": "Sidharth Malhotra, Kiara Advani | Jubi…",
+      "album": "Sidharth Malhotra, Kiara Advani",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/2FRrtuu3Ljg/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-029",
+      "youtubeId": "pz2Yz0_1lr8",
       "videoId": "pz2Yz0_1lr8",
       "title": "Raataan Lambiyan",
       "artist": "Shershaah | Lirik - Terjemahan Indonesia",
+      "album": "Shershaah",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/pz2Yz0_1lr8/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-030",
+      "youtubeId": "oDkZEay6H6k",
       "videoId": "oDkZEay6H6k",
       "title": "Raataan Lambiyan🌙",
       "artist": "Shershaah|Sidharth-Kiara|Tanishk B| Ju…",
+      "album": "Shershaah",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/oDkZEay6H6k/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-031",
+      "youtubeId": "S2BOXJG71FY",
       "videoId": "S2BOXJG71FY",
       "title": "Raataan Lambiyan",
       "artist": "Jubin Nautiyal | Asees Kaur | Tanishk …",
+      "album": "Jubin Nautiyal",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/S2BOXJG71FY/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-032",
+      "youtubeId": "8K9eaAKLrE0",
       "videoId": "8K9eaAKLrE0",
       "title": "RAATAAN LAMBIYAN (\"From Shershaah\")",
       "artist": "Tanishk Bagchi, Jubin Nautiyal, Asees …",
+      "album": "Bollywood Romantics",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/8K9eaAKLrE0/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-033",
+      "youtubeId": "jh6Anzu3ntQ",
       "videoId": "jh6Anzu3ntQ",
       "title": "Raataan Lambiyan Dance Video",
       "artist": "Shershaah | Siddharth | Jubin Nautiyal…",
+      "album": "Shershaah",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/jh6Anzu3ntQ/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-034",
+      "youtubeId": "4O0_erwpB9E",
       "videoId": "4O0_erwpB9E",
       "title": "Raataan Lambiyan Lyrics",
       "artist": "Shershaah | Jubin Nautiyal, Asees Kaur…",
+      "album": "Shershaah",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/4O0_erwpB9E/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-035",
+      "youtubeId": "naQXI7l6op0",
       "videoId": "naQXI7l6op0",
       "title": "Raataan Lambiyan - Jubin Nautiyal",
       "artist": "Asees Kaur | Shershaah | Sidhath M | T…",
+      "album": "Asees Kaur",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/naQXI7l6op0/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-036",
+      "youtubeId": "Kp76nzS7pwA",
       "videoId": "Kp76nzS7pwA",
       "title": "Raataan Lambiyan - Official Remix Version",
       "artist": "Shershaah | Tanishk B | Jubin N | Asee…",
+      "album": "Shershaah",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/Kp76nzS7pwA/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-037",
+      "youtubeId": "-kVdEfkWsjo",
       "videoId": "-kVdEfkWsjo",
       "title": "Raataan Lambhiyan [Slowed + Reverb]",
       "artist": "Shershah | Jubin Nautiyal | Asees Kaur…",
+      "album": "Shershah",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/-kVdEfkWsjo/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-038",
+      "youtubeId": "s095hRZYb2U",
       "videoId": "s095hRZYb2U",
       "title": "Raataan lambiyam - official Video",
       "artist": "Shershaah | Kiara - sidharth malhotra …",
+      "album": "Shershaah",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/s095hRZYb2U/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-039",
+      "youtubeId": "bXWcVn4uNd0",
       "videoId": "bXWcVn4uNd0",
       "title": "Raataan Lambiyan (Jubin Nautiyal)",
       "artist": "Step By Step",
+      "album": "Bollywood Romantics",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/bXWcVn4uNd0/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-040",
+      "youtubeId": "7fhY7FFZ6nU",
       "videoId": "7fhY7FFZ6nU",
       "title": "Arjun - Raataan Lambiyan (English Remix)",
       "artist": "Shershaah | Tanishk B | Jubin Nautiyal…",
+      "album": "Shershaah",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/7fhY7FFZ6nU/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-041",
+      "youtubeId": "hoNb6HuNmU0",
       "videoId": "hoNb6HuNmU0",
       "title": "Full Song: KHAIRIYAT (BONUS TRACK)",
       "artist": "CHHICHHORE | Sushant, Shraddha | Prita…",
+      "album": "CHHICHHORE",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/hoNb6HuNmU0/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-042",
+      "youtubeId": "ElZfdU54Cp8",
       "videoId": "ElZfdU54Cp8",
       "title": "Apna Bana Le - Bhediya",
       "artist": "Varun Dhawan, Kriti Sanon| Sachin-Jiga…",
+      "album": "Varun Dhawan, Kriti Sanon",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/ElZfdU54Cp8/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-043",
+      "youtubeId": "RLzC55ai0eo",
       "videoId": "RLzC55ai0eo",
       "title": "Heeriye Jasleen Royal ft Arijit Singh| Dulquer S…",
       "artist": "Jasleen Royal",
+      "album": "Bollywood Romantics",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/RLzC55ai0eo/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-044",
+      "youtubeId": "Grr0FlC8SQA",
       "videoId": "Grr0FlC8SQA",
       "title": "Kalank Title Track - Lyrical",
       "artist": "Alia Bhatt , Varun Dhawan | Arijit Sin…",
+      "album": "Alia Bhatt , Varun Dhawan",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/Grr0FlC8SQA/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-045",
+      "youtubeId": "w8LcxY43N5Y",
       "videoId": "w8LcxY43N5Y",
       "title": "Pal - Lyrical Video",
       "artist": "Jalebi | Arijit Singh | Shreya Ghoshal…",
+      "album": "Jalebi",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/w8LcxY43N5Y/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-046",
+      "youtubeId": "vdbP_3o73qI",
       "videoId": "vdbP_3o73qI",
       "title": "Jaan Nisaar - Lyrical",
       "artist": "Kedarnath| Arijit Singh | Sushant Sing…",
+      "album": "Kedarnath",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/vdbP_3o73qI/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-047",
+      "youtubeId": "HYUpNJJELeE",
       "videoId": "HYUpNJJELeE",
       "title": "Mehrama - Love Aaj Kal",
       "artist": "Kartik | Sara | Pritam | Darshan Raval…",
+      "album": "Kartik",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/HYUpNJJELeE/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-048",
+      "youtubeId": "yRB0xbKDebo",
       "videoId": "yRB0xbKDebo",
       "title": "Haan Main Galat - Love Aaj Kal",
       "artist": "Kartik, Sara | Pritam | Arijit Singh |…",
+      "album": "Kartik, Sara",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/yRB0xbKDebo/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-049",
+      "youtubeId": "CsOsmgUmT9U",
       "videoId": "CsOsmgUmT9U",
       "title": "Saware Full AUDIO Song - Arijit Singh",
       "artist": "Phantom",
+      "album": "Bollywood Romantics",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/CsOsmgUmT9U/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-050",
+      "youtubeId": "UEZm0U6KrfY",
       "videoId": "UEZm0U6KrfY",
       "title": "Metro…In Dino: Zamaana Lage (Song)",
       "artist": "Anurag Basu | Pritam | Arijit Singh, S…",
+      "album": "Anurag Basu",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/UEZm0U6KrfY/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-051",
+      "youtubeId": "EQxEms7gnqs",
       "videoId": "EQxEms7gnqs",
       "title": "Shayad (From \"Love Aaj Kal\")",
       "artist": "Arijit Singh - Topic",
+      "album": "Bollywood Romantics",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/EQxEms7gnqs/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-052",
+      "youtubeId": "tdbD2naYwdo",
       "videoId": "tdbD2naYwdo",
       "title": "Mehrama - Official Lyric Video",
       "artist": "Love Aaj Kal | Kartik | Sara | Pritam …",
+      "album": "Love Aaj Kal",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/tdbD2naYwdo/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-053",
+      "youtubeId": "SsOY0gZFfGs",
       "videoId": "SsOY0gZFfGs",
       "title": "Mehrama (Extended)",
       "artist": "Pritam - Topic",
+      "album": "Bollywood Romantics",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/SsOY0gZFfGs/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-054",
+      "youtubeId": "kPtn26x8TZM",
       "videoId": "kPtn26x8TZM",
       "title": "Dooriyan - Lyrical Video",
       "artist": "Love Aaj Kal | Saif Ali Khan, Deepika …",
+      "album": "Love Aaj Kal",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/kPtn26x8TZM/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-055",
+      "youtubeId": "iZH_ydGn9i0",
       "videoId": "iZH_ydGn9i0",
       "title": "Shayad Lyric Video - Love Aaj Kal",
       "artist": "Arijit Singh | Kartik Aaryan | Sara Al…",
+      "album": "Arijit Singh",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/iZH_ydGn9i0/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-056",
+      "youtubeId": "tGs7iLem1cE",
       "videoId": "tGs7iLem1cE",
       "title": "Rahogi Meri - Love Aaj Kal",
       "artist": "Kartik Aaryan | Sara Ali Khan | Pritam…",
+      "album": "Kartik Aaryan",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/tGs7iLem1cE/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-057",
+      "youtubeId": "9-LH8ABADdo",
       "videoId": "9-LH8ABADdo",
       "title": "Shayad - Chaahat Kasam Nahi Hai",
       "artist": "Pritam | Arijit Singh",
+      "album": "Pritam",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/9-LH8ABADdo/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-058",
+      "youtubeId": "QRwLbf3PwO8",
       "videoId": "QRwLbf3PwO8",
       "title": "Qayde Se (Lyrical Video): Arijit Singh",
       "artist": "Pritam | Amitabh Bhattacharya | Metro……",
+      "album": "Pritam",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/QRwLbf3PwO8/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-059",
+      "youtubeId": "mF2BHtQh4EI",
       "videoId": "mF2BHtQh4EI",
       "title": "Shayad - Love Aaj Kal",
       "artist": "Kartik Aryan | Sara Ali Khan | Randeep…",
+      "album": "Kartik Aryan",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/mF2BHtQh4EI/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-060",
+      "youtubeId": "SAcpESN_Fk4",
       "videoId": "SAcpESN_Fk4",
       "title": "Dil Diyan Gallan Song",
       "artist": "Tiger Zinda Hai | Salman Khan, Katrina…",
+      "album": "Tiger Zinda Hai",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/SAcpESN_Fk4/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-061",
+      "youtubeId": "JtnPpxe8K7c",
       "videoId": "JtnPpxe8K7c",
       "title": "Dil Diyan Gallan Full Song",
       "artist": "Tiger Zinda Hai | Salman Khan, Katrina…",
+      "album": "Tiger Zinda Hai",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/JtnPpxe8K7c/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-062",
+      "youtubeId": "mevO4I0f5lg",
       "videoId": "mevO4I0f5lg",
       "title": "Dil Diyan Gallan",
       "artist": "Full Song Audio | Tiger Zinda Hai | At…",
+      "album": "Full Song Audio",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/mevO4I0f5lg/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-063",
+      "youtubeId": "nqUbSvFS1e4",
       "videoId": "nqUbSvFS1e4",
       "title": "Lyrical",
       "artist": "Dil Diyan Gallan Song with Lyrics | Ti…",
+      "album": "Dil Diyan Gallan Song with Lyrics",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/nqUbSvFS1e4/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-064",
+      "youtubeId": "5DiLiDaIemI",
       "videoId": "5DiLiDaIemI",
       "title": "ATIF ASLAM - NEHA KAKKAR LIVE IN HOUSTON (2018) …",
       "artist": "Subscribe | Like 👍 | Share",
+      "album": "Subscribe",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/5DiLiDaIemI/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-065",
+      "youtubeId": "u5DCgnh8S9M",
       "videoId": "u5DCgnh8S9M",
       "title": "Dil Diyan Gallan (From \"Tiger Zinda Hai\")",
       "artist": "Vishal - Shekhar - Topic",
+      "album": "Bollywood Romantics",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/u5DCgnh8S9M/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-066",
+      "youtubeId": "ca-hzALjrcY",
       "videoId": "ca-hzALjrcY",
       "title": "Dil Diyan Gallan| B Praak| Gippy Grewal| Sargun …",
       "artist": "Moviebox Record Label",
+      "album": "Bollywood Romantics",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/ca-hzALjrcY/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-067",
+      "youtubeId": "A2JaHCaVjrU",
       "videoId": "A2JaHCaVjrU",
       "title": "Dil Diyan Gallan Full Song",
       "artist": "Tiger Zinda Hai | Salman Khan, Katrina…",
+      "album": "Tiger Zinda Hai",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/A2JaHCaVjrU/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-068",
+      "youtubeId": "EsPrpf_vpi8",
       "videoId": "EsPrpf_vpi8",
       "title": "SANAM",
       "artist": "Dil Diyan Gallan",
+      "album": "Bollywood Romantics",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/EsPrpf_vpi8/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-069",
+      "youtubeId": "PsyNOOS5Xp4",
       "videoId": "PsyNOOS5Xp4",
       "title": "Dil Diyan Gallan - Atif Aslam",
       "artist": "Extra 3D Audio | Surround Sound | Use …",
+      "album": "Extra 3D Audio",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/PsyNOOS5Xp4/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-070",
+      "youtubeId": "POvFEQaK634",
       "videoId": "POvFEQaK634",
       "title": "Atif Aslam",
       "artist": "Dil Diyan Gallan (Tiger Zinda Hai Soun…",
+      "album": "Bollywood Romantics",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/POvFEQaK634/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-071",
+      "youtubeId": "Pr86yMP_oZE",
       "videoId": "Pr86yMP_oZE",
       "title": "Dil Diyan Gallan Song",
       "artist": "Tiger Zinda Hai | Female Cover Version…",
+      "album": "Tiger Zinda Hai",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/Pr86yMP_oZE/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-072",
+      "youtubeId": "D8jKEaAyNcs",
       "videoId": "D8jKEaAyNcs",
       "title": "Dil Diyan Gallan Lyrical Full Song",
       "artist": "Tiger Zinda Hai | Salman Khan | Katrin…",
+      "album": "Tiger Zinda Hai",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/D8jKEaAyNcs/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-073",
+      "youtubeId": "k_Qe4846hSI",
       "videoId": "k_Qe4846hSI",
       "title": "Dil Diyan Gallan - Tiger Zinda Hai",
       "artist": "Atif Aslam | SORY | Choreography By Ra…",
+      "album": "Atif Aslam",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/k_Qe4846hSI/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-074",
+      "youtubeId": "EixnLHZ6QjA",
       "videoId": "EixnLHZ6QjA",
       "title": "Making of Dil Diyan Gallan Song",
       "artist": "Tiger Zinda Hai | Salman Khan, Katrina…",
+      "album": "Tiger Zinda Hai",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/EixnLHZ6QjA/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-075",
+      "youtubeId": "XKmEVtVEMF0",
       "videoId": "XKmEVtVEMF0",
       "title": "Dil Diyan Gallan [Slowed + Reverb]",
       "artist": "Tiger Zinda Hai | Salman Khan | Katrin…",
+      "album": "Tiger Zinda Hai",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/XKmEVtVEMF0/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-076",
+      "youtubeId": "8sxzVtqoAnA",
       "videoId": "8sxzVtqoAnA",
       "title": "Dil diyan gallan [ Slowed + reverb ]",
       "artist": "Lofi remix",
+      "album": "Bollywood Romantics",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/8sxzVtqoAnA/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-077",
+      "youtubeId": "MA9hbox27Zc",
       "videoId": "MA9hbox27Zc",
       "title": "ATIF ASLAM & NEHA KAKKAR",
       "artist": "DIL DIYAN GALLAN| UNPLUGGED| LIVE",
+      "album": "DIL DIYAN GALLAN",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/MA9hbox27Zc/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-078",
+      "youtubeId": "h6O4esqraE0",
       "videoId": "h6O4esqraE0",
       "title": "Best Of Atif Aslam 💓| Atif Aslam Hit Songs",
       "artist": "Atif Aslam Hindi Songs | Atif Aslam Be…",
+      "album": "Atif Aslam Hindi Songs",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/h6O4esqraE0/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-079",
+      "youtubeId": "VDzjgO7-pVI",
       "videoId": "VDzjgO7-pVI",
       "title": "dil diyan gallan (slowed + reverb)",
       "artist": "atif aslam",
+      "album": "Bollywood Romantics",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/VDzjgO7-pVI/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-080",
+      "youtubeId": "KUpwupYj_tY",
       "videoId": "KUpwupYj_tY",
       "title": "Tere Hawaale Laal Singh Chaddha",
       "artist": "Aamir,Kareena | Arijit,Shilpa | Pritam…",
+      "album": "Aamir,Kareena",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/KUpwupYj_tY/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-081",
+      "youtubeId": "2CXSw1oPj3I",
       "videoId": "2CXSw1oPj3I",
       "title": "Tere Hawaale: Laal Singh Chaddha",
       "artist": "Aamir, Kareena | Arijit, Shilpa | Prit…",
+      "album": "Aamir, Kareena",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/2CXSw1oPj3I/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-082",
+      "youtubeId": "Z0VbANbyH2o",
       "videoId": "Z0VbANbyH2o",
       "title": "Tere Hawaale",
       "artist": "Pritam - Topic",
+      "album": "Bollywood Romantics",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/Z0VbANbyH2o/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-083",
+      "youtubeId": "eLjmQ0aGC1U",
       "videoId": "eLjmQ0aGC1U",
       "title": "Tere Hawaale - Lofi (Slowed + Reverb)",
       "artist": "Arijit Singh, Shilpa Rao | SR Lofi",
+      "album": "Arijit Singh, Shilpa Rao",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/eLjmQ0aGC1U/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-084",
+      "youtubeId": "FiENDQapd4g",
       "videoId": "FiENDQapd4g",
       "title": "Tere Hawaale (Arijit Singh - Shreya Ghoshal Duet)",
       "artist": "Laal Singh Chaddha | Aamir, Kareena | …",
+      "album": "Laal Singh Chaddha",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/FiENDQapd4g/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-085",
+      "youtubeId": "Nm0qd0uhhhY",
       "videoId": "Nm0qd0uhhhY",
       "title": "Dekha Zamana Sara Bharam Hai || Tere Hawale || A…",
       "artist": "Lyrics By GS",
+      "album": "Bollywood Romantics",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/Nm0qd0uhhhY/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-086",
+      "youtubeId": "PL0f3_ZuJts",
       "videoId": "PL0f3_ZuJts",
       "title": "Tere Hawale",
       "artist": "Arijit-Shreya Duet | Lyrical Video | L…",
+      "album": "Arijit-Shreya Duet",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/PL0f3_ZuJts/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-087",
+      "youtubeId": "-vzZ50Rijm8",
       "videoId": "-vzZ50Rijm8",
       "title": "Tere Hawaale (Arijit, Shreya Duet)",
       "artist": "Laal Singh Chaddha (Extended)| Aamir, …",
+      "album": "Laal Singh Chaddha (Extended)",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/-vzZ50Rijm8/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-088",
+      "youtubeId": "JhjnnGuvI0c",
       "videoId": "JhjnnGuvI0c",
       "title": "Na Hoke Bhi Kareeb Tu Hamesha Paas Tha - Tere Ha…",
       "artist": "Laal Singh Chaddha | Arijit Singh Songs",
+      "album": "Laal Singh Chaddha",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/JhjnnGuvI0c/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-089",
+      "youtubeId": "kIVgRHm2OKg",
       "videoId": "kIVgRHm2OKg",
       "title": "Tere Hawale - Arijit Singh, Shilpa Rao",
       "artist": "Aamir, Kareena | Pritam | Laal Singh C…",
+      "album": "Aamir, Kareena",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/kIVgRHm2OKg/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-090",
+      "youtubeId": "ico0Nfz2gfU",
       "videoId": "ico0Nfz2gfU",
       "title": "Arijit Singh: Tere Hawaale (Duet)",
       "artist": "Shreya Ghoshal | Pritam, Amitabh Bhatt…",
+      "album": "Shreya Ghoshal",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/ico0Nfz2gfU/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-091",
+      "youtubeId": "yb584STwkTY",
       "videoId": "yb584STwkTY",
       "title": "Kalank",
       "artist": "Shilpa Rao | Zee TvPa Grand Finale",
+      "album": "Shilpa Rao",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/yb584STwkTY/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-092",
+      "youtubeId": "BGU1YL9LNr4",
       "videoId": "BGU1YL9LNr4",
       "title": "Tere Hawale (Arijit",
       "artist": "Shreya Duet)",
+      "album": "Bollywood Romantics",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/BGU1YL9LNr4/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-093",
+      "youtubeId": "XK7Crkcn7Z0",
       "videoId": "XK7Crkcn7Z0",
       "title": "Tere Hawaale Full Song- Laal Singh Chaddha",
       "artist": "Amir Khan,Kareena K | Arijit,Shilpa| P…",
+      "album": "Amir Khan,Kareena K",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/XK7Crkcn7Z0/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-094",
+      "youtubeId": "gKioNQ1QwVA",
       "videoId": "gKioNQ1QwVA",
       "title": "Arijit Singh & Shilpa Rao - Tere Hawaale [Lyrics…",
       "artist": "Abshomar",
+      "album": "Bollywood Romantics",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/gKioNQ1QwVA/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-095",
+      "youtubeId": "LToDPzfwMoM",
       "videoId": "LToDPzfwMoM",
       "title": "Tere Hawaale 8K Video Song",
       "artist": "Aamir | Kareena | Pritam | Arijit Sing…",
+      "album": "Aamir",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/LToDPzfwMoM/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-096",
+      "youtubeId": "6jS1rU4F4HA",
       "videoId": "6jS1rU4F4HA",
       "title": "Tere Hawale",
       "artist": "Arijit Singh",
+      "album": "Bollywood Romantics",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/6jS1rU4F4HA/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-097",
+      "youtubeId": "sXRnSIcZVZ0",
       "videoId": "sXRnSIcZVZ0",
       "title": "Tere Hawaale Laal Singh Chaddha",
       "artist": "Aamir,Kareena | Arijit,Shilpa | Pritam…",
+      "album": "Aamir,Kareena",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/sXRnSIcZVZ0/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-098",
+      "youtubeId": "jy26LpiiGJA",
       "videoId": "jy26LpiiGJA",
       "title": "Tere Hawale (Arijit Singh-Shreya Ghoshal Duet la…",
       "artist": "Khan Saab Records",
+      "album": "Bollywood Romantics",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/jy26LpiiGJA/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-099",
+      "youtubeId": "iAIBF2ngbWY",
       "videoId": "iAIBF2ngbWY",
       "title": "ANIMAL:Pehle Bhi Main",
       "artist": "Ranbir Kapoor,Tripti Dimri |Sandeep V …",
+      "album": "Ranbir Kapoor,Tripti Dimri",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/iAIBF2ngbWY/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-100",
+      "youtubeId": "HrnrqYxYrbk",
       "videoId": "HrnrqYxYrbk",
       "title": "ANIMAL: SATRANGA(Song) Ranbir Kapoor,Rashmika|Sa…",
       "artist": "T-Series",
+      "album": "Bollywood Romantics",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/HrnrqYxYrbk/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-101",
+      "youtubeId": "WWXm39leYew",
       "videoId": "WWXm39leYew",
       "title": "LYRICAL: Kaise Hua",
       "artist": "Kabir Singh | Shahid K, Kiara A, Sande…",
+      "album": "Kabir Singh",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/WWXm39leYew/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-102",
+      "youtubeId": "lwv_0SEJ4NQ",
       "videoId": "lwv_0SEJ4NQ",
       "title": "ANIMAL:PEHLE BHI MAIN(Lyrical)",
       "artist": "Ranbir Kapoor,Tripti Dimri | Sandeep V…",
+      "album": "Ranbir Kapoor,Tripti Dimri",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/lwv_0SEJ4NQ/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-103",
+      "youtubeId": "9cHq63r1vHQ",
       "videoId": "9cHq63r1vHQ",
       "title": "Pehle Bhi Main",
       "artist": "Vishal Mishra - Topic",
+      "album": "Bollywood Romantics",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/9cHq63r1vHQ/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-104",
+      "youtubeId": "Xbizke4zftY",
       "videoId": "Xbizke4zftY",
       "title": "ANIMAL: Evarevaro - Ranbir Kapoor,Tripti Dimri",
       "artist": "Sandeep V | Vishal M | Bhushan K",
+      "album": "Sandeep V",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/Xbizke4zftY/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-105",
+      "youtubeId": "NlRrGrrRyNo",
       "videoId": "NlRrGrrRyNo",
       "title": "Aaj Bhi 2 (Video) Vishal Mishra",
       "artist": "Kaushal Kishore | VYRL Originals",
+      "album": "Kaushal Kishore",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/NlRrGrrRyNo/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-106",
+      "youtubeId": "KNXYonYD59w",
       "videoId": "KNXYonYD59w",
       "title": "ANIMAL: HUA MAIN (Lyrical Video)",
       "artist": "Ranbir Kapoor,Rashmika M | Sandeep V |…",
+      "album": "Ranbir Kapoor,Rashmika M",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/KNXYonYD59w/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-107",
+      "youtubeId": "kZGpkkfk2lA",
       "videoId": "kZGpkkfk2lA",
       "title": "Pehle Bhi Main (Slowed + Reverb)",
       "artist": "Vishal Mishra | Animal | SR Lofi",
+      "album": "Vishal Mishra",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/kZGpkkfk2lA/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-108",
+      "youtubeId": "9UmoVnBSm5k",
       "videoId": "9UmoVnBSm5k",
       "title": "Pehle Bhi Main || Vishal Mishra || Animal || Off…",
       "artist": "𝐒𝐅 𝐋𝐘𝐑𝐈𝐂𝐒 𝐇𝐔𝐁",
+      "album": "Bollywood Romantics",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/9UmoVnBSm5k/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-109",
+      "youtubeId": "Mv8yFE4-DA8",
       "videoId": "Mv8yFE4-DA8",
       "title": "ANIMAL: Marham (Pehle Bhi Main) (Song) Ranbir Ka…",
       "artist": "T-Series",
+      "album": "Bollywood Romantics",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/Mv8yFE4-DA8/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-110",
+      "youtubeId": "XaNgxnN6qEI",
       "videoId": "XaNgxnN6qEI",
       "title": "Vishal Mishra Mashup 2025",
       "artist": "Hiren Chawda | Best of Vishal Mishra |…",
+      "album": "Hiren Chawda",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/XaNgxnN6qEI/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-111",
+      "youtubeId": "QKMTreKTpug",
       "videoId": "QKMTreKTpug",
       "title": "ANIMAL:PEHLE BHI MAIN|Ranbir Kapoor,Rashmika,Ani…",
       "artist": "T-Series",
+      "album": "Bollywood Romantics",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/QKMTreKTpug/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-112",
+      "youtubeId": "6RlpNQiPhgY",
       "videoId": "6RlpNQiPhgY",
       "title": "ANIMAL Mashup",
       "artist": "Jay Guldekar | Satranga | Pehle Bhi Me…",
+      "album": "Jay Guldekar",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/6RlpNQiPhgY/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-113",
+      "youtubeId": "3o7o4N_mEUY",
       "videoId": "3o7o4N_mEUY",
       "title": "ANIMAL Mashup Nonstop - Jukebox",
       "artist": "Jay Guldekar | Satranga | Pehle Bhi Mein",
+      "album": "Jay Guldekar",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/3o7o4N_mEUY/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-114",
+      "youtubeId": "kO4AU5yBp64",
       "videoId": "kO4AU5yBp64",
       "title": "Pehle Bhi Main x Kaise Hua (ACV Mashup)",
       "artist": "ANIMAL MASHUP | Ranbir Kapoor",
+      "album": "ANIMAL MASHUP",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/kO4AU5yBp64/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-115",
+      "youtubeId": "wqVGA-XDe1I",
       "videoId": "wqVGA-XDe1I",
       "title": "Marham (Pehle Bhi Main)",
       "artist": "Vishal Mishra - Topic",
+      "album": "Bollywood Romantics",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/wqVGA-XDe1I/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-116",
+      "youtubeId": "YMAdgnh9VOI",
       "videoId": "YMAdgnh9VOI",
       "title": "Vishal Mishra Mashup 2024",
       "artist": "Pehle Bhi Main | Janiye | Aaj Bhi | [B…",
+      "album": "Pehle Bhi Main",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/YMAdgnh9VOI/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-117",
+      "youtubeId": "jBfR0bU82z8",
       "videoId": "jBfR0bU82z8",
       "title": "Kaise Hua",
       "artist": "Vishal Mishra | Live | TKSS",
+      "album": "Vishal Mishra",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/jBfR0bU82z8/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-118",
+      "youtubeId": "hpqvSU0Ynn0",
       "videoId": "hpqvSU0Ynn0",
       "title": "ANIMAL MOVIES SONG: PEHLE BHI MAIN",
       "artist": "vishal mishra live performance",
+      "album": "Bollywood Romantics",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/hpqvSU0Ynn0/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-119",
+      "youtubeId": "sK7riqg2mr4",
       "videoId": "sK7riqg2mr4",
       "title": "Agar Tum Saath Ho FULL AUDIO Song",
       "artist": "Tamasha | Ranbir Kapoor, Deepika Paduk…",
+      "album": "Tamasha",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/sK7riqg2mr4/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-120",
+      "youtubeId": "OGI0fNvr4fo",
       "videoId": "OGI0fNvr4fo",
       "title": "Agar Tum Saath Ho",
       "artist": "Full Song",
+      "album": "Bollywood Romantics",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/OGI0fNvr4fo/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-121",
+      "youtubeId": "Q2S7CDuBTOc",
       "videoId": "Q2S7CDuBTOc",
       "title": "Agar Tum Saath Ho Maahi Ve l Mixtape l Jubin N P…",
       "artist": "T-Series",
+      "album": "Bollywood Romantics",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/Q2S7CDuBTOc/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-122",
+      "youtubeId": "xRb8hxwN5zc",
       "videoId": "xRb8hxwN5zc",
       "title": "'AGAR TUM SAATH HO' Full VIDEO song",
       "artist": "Tamasha | Ranbir Kapoor, Deepika Paduk…",
+      "album": "Tamasha",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/xRb8hxwN5zc/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-123",
+      "youtubeId": "FOA9iyxsW_A",
       "videoId": "FOA9iyxsW_A",
       "title": "AGAR TUM SAATH HO",
       "artist": "Arijit Singh - Topic",
+      "album": "Bollywood Romantics",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/FOA9iyxsW_A/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-124",
+      "youtubeId": "fQlhzY5UH6s",
       "videoId": "fQlhzY5UH6s",
       "title": "\"Agar Tum Saath Ho\" Song with Lyrics",
       "artist": "Tamasha | Ranbir Kapoor, Deepika Paduk…",
+      "album": "Tamasha",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/fQlhzY5UH6s/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-125",
+      "youtubeId": "dhY8jRNELUc",
       "videoId": "dhY8jRNELUc",
       "title": "Agar Tum Saath Ho",
       "artist": "Tamasha | Alka Yagnik Arijit Singh | L…",
+      "album": "Tamasha",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/dhY8jRNELUc/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-126",
+      "youtubeId": "fs7-8M1VbZU",
       "videoId": "fs7-8M1VbZU",
       "title": "Arijit Singh: Agar Tum Sath Ho",
       "artist": "Alka Yagnik, A.R. Rehman, Irshad Kamil",
+      "album": "Bollywood Romantics",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/fs7-8M1VbZU/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-127",
+      "youtubeId": "6SGRn9OHtFY",
       "videoId": "6SGRn9OHtFY",
       "title": "Agar Tum Saath Ho VIDEO Song",
       "artist": "Tamasha | Ranbir Kapoor, Deepika Paduk…",
+      "album": "Tamasha",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/6SGRn9OHtFY/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-128",
+      "youtubeId": "pon8irRa8II",
       "videoId": "pon8irRa8II",
       "title": "AGAR TUM SAATH HO' Full 4k  song",
       "artist": "Tamasha | Ranbir Kapoor, Deepika Paduk…",
+      "album": "Tamasha",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/pon8irRa8II/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-129",
+      "youtubeId": "UsxERu1Vv08",
       "videoId": "UsxERu1Vv08",
       "title": "Agar Tum Saath ho (Slowed+Reverb)",
       "artist": "ARIJIT SINGH",
+      "album": "Bollywood Romantics",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/UsxERu1Vv08/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-130",
+      "youtubeId": "zCjRVABSHUs",
       "videoId": "zCjRVABSHUs",
       "title": "'AGAR TUM SAATH HO' Full AUDIO song",
       "artist": "Tamasha | Ranbir Kapoor, Deepika Paduk…",
+      "album": "Tamasha",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/zCjRVABSHUs/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-131",
+      "youtubeId": "r-i8teGFG5g",
       "videoId": "r-i8teGFG5g",
       "title": "Agar tum sath ho (slowed and reverb) Arijit Singh",
       "artist": "MINE VIBE",
+      "album": "Bollywood Romantics",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/r-i8teGFG5g/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-132",
+      "youtubeId": "4vSIwdj6MEU",
       "videoId": "4vSIwdj6MEU",
       "title": "Agar Tum Saath Ho",
       "artist": "Tamasha | Lirik - Terjemahan Indonesia",
+      "album": "Tamasha",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/4vSIwdj6MEU/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-133",
+      "youtubeId": "Ya_qVko-Xg0",
       "videoId": "Ya_qVko-Xg0",
       "title": "Agar Tum Saath ho - Tamasha",
       "artist": "Reprised | Cover by Tanya Gupta",
+      "album": "Reprised",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/Ya_qVko-Xg0/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-134",
+      "youtubeId": "KAskRVFhv-c",
       "videoId": "KAskRVFhv-c",
       "title": "Agar Tum Saath Ho [Slowed + Reverb]",
       "artist": "Arijit Singh, Alka Yagnik",
+      "album": "Bollywood Romantics",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/KAskRVFhv-c/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-135",
+      "youtubeId": "8Y7bYQIWcuk",
       "videoId": "8Y7bYQIWcuk",
       "title": "Agar Tum Saath Ho Full Audio Song || Tamasha || …",
       "artist": "Charu's Music World",
+      "album": "Bollywood Romantics",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/8Y7bYQIWcuk/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-136",
+      "youtubeId": "6AcUmOGMnak",
       "videoId": "6AcUmOGMnak",
       "title": "agar tum saath ho",
       "artist": "arijit singh | live performance | roya…",
+      "album": "arijit singh",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/6AcUmOGMnak/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-137",
+      "youtubeId": "njoL-CQt7H4",
       "videoId": "njoL-CQt7H4",
       "title": "Agar Tum Saath Ho [Slowed+Reverb] - ALKA YAGNIK,…",
       "artist": "Musiclovers | Textaudio",
+      "album": "Musiclovers",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/njoL-CQt7H4/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-138",
+      "youtubeId": "4mq5tyWfXDU",
       "videoId": "4mq5tyWfXDU",
       "title": "Agar Tum Saath Ho",
       "artist": "TAMASHA {SLOWED & REVERB}",
+      "album": "Bollywood Romantics",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/4mq5tyWfXDU/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-139",
+      "youtubeId": "TGpG56pg3UU",
       "videoId": "TGpG56pg3UU",
       "title": "Sun Saathiya Full Video",
       "artist": "Disney's ABCD 2 | Varun Dhawan , Shrad…",
+      "album": "Disney's ABCD 2",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/TGpG56pg3UU/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-140",
+      "youtubeId": "EtSAs6GD0Yk",
       "videoId": "EtSAs6GD0Yk",
       "title": "Sun Saathiya",
       "artist": "Priya Saraiya - Topic",
+      "album": "Bollywood Romantics",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/EtSAs6GD0Yk/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-141",
+      "youtubeId": "_NWaYjsz3qY",
       "videoId": "_NWaYjsz3qY",
       "title": "Sun Saathiya - Full Song - Disney's ABCD 2",
       "artist": "Varun Dhawan - Shraddha Kapoor | Sachi…",
+      "album": "Varun Dhawan - Shraddha Kapoor",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/_NWaYjsz3qY/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-142",
+      "youtubeId": "ltrstdEFaqg",
       "videoId": "ltrstdEFaqg",
       "title": "Neelanjana Ray and Divya Kumar Performs On Sun S…",
       "artist": "The Voice India Kids | Episode 34",
+      "album": "The Voice India Kids",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/ltrstdEFaqg/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-143",
+      "youtubeId": "UNs50T6EYwE",
       "videoId": "UNs50T6EYwE",
       "title": "Sun Saathiya - Full Video",
       "artist": "Disney's ABCD 2 | Varun Dhawan, Shradd…",
+      "album": "Disney's ABCD 2",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/UNs50T6EYwE/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-144",
+      "youtubeId": "txxAH9D2gZU",
       "videoId": "txxAH9D2gZU",
       "title": "Sun Saathiya - Song with Lyrics - Disney's ABCD …",
       "artist": "Sachin - Jigar",
+      "album": "Bollywood Romantics",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/txxAH9D2gZU/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-145",
+      "youtubeId": "fKxEXm9qG4k",
       "videoId": "fKxEXm9qG4k",
       "title": "sun saathiya lyrics",
       "artist": "Vibe With VNM",
+      "album": "Bollywood Romantics",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/fKxEXm9qG4k/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-146",
+      "youtubeId": "WIjra2HHRFM",
       "videoId": "WIjra2HHRFM",
       "title": "Sun Saathiya ( Slowed & Reverb )",
       "artist": "Lyrics | Priya Saraiya | Divya Kumar |…",
+      "album": "Lyrics",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/WIjra2HHRFM/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-147",
+      "youtubeId": "tnp8SRcXx-s",
       "videoId": "tnp8SRcXx-s",
       "title": "Sun Saathiya Maahiya [Slowed Reverb] ABCD 2",
       "artist": "Priya Saraiya, Divya Kumar | Srk Lofi …",
+      "album": "Priya Saraiya, Divya Kumar",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/tnp8SRcXx-s/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-148",
+      "youtubeId": "v9KvrMnnyb4",
       "videoId": "v9KvrMnnyb4",
       "title": "Sun Saathiya ( Slowed+Reverb ) Priya Saraiya",
       "artist": "Divya Kumar | Deeps Vibes",
+      "album": "Divya Kumar",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/v9KvrMnnyb4/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-149",
+      "youtubeId": "uJlJBIBIbAU",
       "videoId": "uJlJBIBIbAU",
       "title": "SUN SATHIYA(SLOWED & REVERB)||SACHIN-JIGAR",
       "artist": "P RAJ MUSIC",
+      "album": "Bollywood Romantics",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/uJlJBIBIbAU/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-150",
+      "youtubeId": "0n2G2SryMuY",
       "videoId": "0n2G2SryMuY",
       "title": "Making of Sun Saathiya - Disney's ABCD 2",
       "artist": "Varun Dhawan - Shraddha Kapoor | Sachi…",
+      "album": "Varun Dhawan - Shraddha Kapoor",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/0n2G2SryMuY/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-151",
+      "youtubeId": "bfzDXYW5fS0",
       "videoId": "bfzDXYW5fS0",
       "title": "Sun Saathiya [Slowed+Reverb] Priya Saraiya",
       "artist": "Divya Kumar l SV Lofi",
+      "album": "Bollywood Romantics",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/bfzDXYW5fS0/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-152",
+      "youtubeId": "YrBE1Cd9UzA",
       "videoId": "YrBE1Cd9UzA",
       "title": "Sun Saathiya (Slowed + Reverb)",
       "artist": "Priya Saraiya, Divya Kumar | ABCD 2 | …",
+      "album": "Priya Saraiya, Divya Kumar",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/YrBE1Cd9UzA/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-153",
+      "youtubeId": "Y35uCA-XVRM",
       "videoId": "Y35uCA-XVRM",
       "title": "Sun Saathiya Full Video",
       "artist": "Disney's ABCD 2 | Varun Dhawan , Shrad…",
+      "album": "Disney's ABCD 2",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/Y35uCA-XVRM/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-154",
+      "youtubeId": "UcmzeXxF4D4",
       "videoId": "UcmzeXxF4D4",
       "title": "Sun Saathiya Lirik & Terjemahan Indonesia |ABCD 2",
       "artist": "bllydxt",
+      "album": "Bollywood Romantics",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/UcmzeXxF4D4/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-155",
+      "youtubeId": "P9OuseD4zdI",
       "videoId": "P9OuseD4zdI",
       "title": "Sun Saathiya - Varun Dhawan & Shraddha Kapoor",
       "artist": "Sachin-Jigar | Priya Saraiya, Divya Ku…",
+      "album": "Sachin-Jigar",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/P9OuseD4zdI/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-156",
+      "youtubeId": "MYgIWSsOaSE",
       "videoId": "MYgIWSsOaSE",
       "title": "Sun Saathiya Full Video",
       "artist": "Disney's ABCD 2 | Varun Dhawan , Shrad…",
+      "album": "Disney's ABCD 2",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/MYgIWSsOaSE/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-157",
+      "youtubeId": "CXlHYSiuW4U",
       "videoId": "CXlHYSiuW4U",
       "title": "Sun Saathiya (Slowed + Reverb)",
       "artist": "ABCD 2",
+      "album": "Bollywood Romantics",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/CXlHYSiuW4U/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-158",
+      "youtubeId": "FYfYq2a-orA",
       "videoId": "FYfYq2a-orA",
       "title": "Sun sathiya  (slowed + reverb)",
       "artist": "Ć𝕙@𝒓𝐦ⲓ𝖓𝐠𝕡ꪱxꪱɇ♡",
+      "album": "Bollywood Romantics",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/FYfYq2a-orA/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-159",
+      "youtubeId": "8v-TWxPWIWc",
       "videoId": "8v-TWxPWIWc",
       "title": "Humsafar",
       "artist": "Varun & Alia Bhatt | Akhil Sachdeva | …",
+      "album": "Varun & Alia Bhatt",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/8v-TWxPWIWc/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-160",
+      "youtubeId": "jIqRbFQl-ds",
       "videoId": "jIqRbFQl-ds",
       "title": "Humsafar (Video)",
       "artist": "Varun Dhawan, Alia Bhatt | Akhil Sachd…",
+      "album": "Varun Dhawan, Alia Bhatt",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/jIqRbFQl-ds/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-161",
+      "youtubeId": "Aokj-w3COw0",
       "videoId": "Aokj-w3COw0",
       "title": "Humsafar",
       "artist": "Akhil Sachdeva - Topic",
+      "album": "Bollywood Romantics",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/Aokj-w3COw0/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-162",
+      "youtubeId": "vIUp4CzOrpQ",
       "videoId": "vIUp4CzOrpQ",
       "title": "Humsafar (Full Audio Song)",
       "artist": "Varun Dhawan , Alia Bhatt | Akhil Sach…",
+      "album": "Varun Dhawan , Alia Bhatt",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/vIUp4CzOrpQ/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-163",
+      "youtubeId": "RzMmU4xvyCU",
       "videoId": "RzMmU4xvyCU",
       "title": "Humsafar Female Version",
       "artist": "Varun & Alia Bhatt | Akhil Sachdeva | …",
+      "album": "Varun & Alia Bhatt",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/RzMmU4xvyCU/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-164",
+      "youtubeId": "Jv03fM7LZgE",
       "videoId": "Jv03fM7LZgE",
       "title": "Humsafar (Full Audio Song)",
       "artist": "Varun Dhawan , Alia Bhatt | Akhil Sach…",
+      "album": "Varun Dhawan , Alia Bhatt",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/Jv03fM7LZgE/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-165",
+      "youtubeId": "s_Ab720t_zo",
       "videoId": "s_Ab720t_zo",
       "title": "Humsafar ( Slowed and Reverb) Akhil Sachdeva",
       "artist": "Badrinath ki dulhania | Nexus Music",
+      "album": "Badrinath ki dulhania",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/s_Ab720t_zo/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-166",
+      "youtubeId": "5BAWcCxkMCs",
       "videoId": "5BAWcCxkMCs",
       "title": "Humsafar (Lyrical Video)",
       "artist": "Varun Dhawan, Alia Bhatt | Akhil Sachd…",
+      "album": "Varun Dhawan, Alia Bhatt",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/5BAWcCxkMCs/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-167",
+      "youtubeId": "QMfLDyEoWkE",
       "videoId": "QMfLDyEoWkE",
       "title": "Humsafar - Akhil Sachdeva",
       "artist": "Lyrical Bam Hindi",
+      "album": "Bollywood Romantics",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/QMfLDyEoWkE/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-168",
+      "youtubeId": "CSO5DhzK094",
       "videoId": "CSO5DhzK094",
       "title": "Humsafar Remix",
       "artist": "Varun Dhawan, Alia Bhatt | \"Badrinath …",
+      "album": "Varun Dhawan, Alia Bhatt",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/CSO5DhzK094/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-169",
+      "youtubeId": "Vsxh7gEKuOE",
       "videoId": "Vsxh7gEKuOE",
       "title": "Sun Mere Humsafar - Slowed and Reverbed (Magical)",
       "artist": "Badrinath Ki Dulhania | Lofi Vibes",
+      "album": "Badrinath Ki Dulhania",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/Vsxh7gEKuOE/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-170",
+      "youtubeId": "-8DxXays6v8",
       "videoId": "-8DxXays6v8",
       "title": "HUMSAFAR Lyrics Full Song Lyrics Movie - Badrina…",
       "artist": "Akhil Sachdeva",
+      "album": "Bollywood Romantics",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/-8DxXays6v8/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-171",
+      "youtubeId": "1AGVmQ5OwtM",
       "videoId": "1AGVmQ5OwtM",
       "title": "Humsafar (Zaalima) Video Song",
       "artist": "Akhil Nasha | BADRINATH KI DULAHNIA",
+      "album": "Akhil Nasha",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/1AGVmQ5OwtM/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-172",
+      "youtubeId": "tYgy4fF9iJA",
       "videoId": "tYgy4fF9iJA",
       "title": "Badrinath Ki Dulhania: Humsafar Song",
       "artist": "Varun Dhawan | Alia Bhatt | Akhil Sach…",
+      "album": "Varun Dhawan",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/tYgy4fF9iJA/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-173",
+      "youtubeId": "4G6-fKG96Y8",
       "videoId": "4G6-fKG96Y8",
       "title": "Humsafar (sun jara samjhe)| \"Badrinath Ki Dulhan…",
       "artist": "Varun Dhawan , Alia Bhatt",
+      "album": "Bollywood Romantics",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/4G6-fKG96Y8/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-174",
+      "youtubeId": "TnnOyFHn0Xc",
       "videoId": "TnnOyFHn0Xc",
       "title": "Humsafar [Slowed & Reverb] ~ Akhil Sachdeva",
       "artist": "Badrinath Ki Dulhania | Vcofficial",
+      "album": "Badrinath Ki Dulhania",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/TnnOyFHn0Xc/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-175",
+      "youtubeId": "pWJTiLL5PM8",
       "videoId": "pWJTiLL5PM8",
       "title": "Humsafar - \"Badrinath Ki Dulhania\"",
       "artist": "Female Cover By Pallavi Mukund",
+      "album": "Bollywood Romantics",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/pWJTiLL5PM8/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-176",
+      "youtubeId": "nZpm-87y37Y",
       "videoId": "nZpm-87y37Y",
       "title": "Humsafar (8D song)",
       "artist": "Varun & Alia Bhatt | Akhil Sachdeva | …",
+      "album": "Varun & Alia Bhatt",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/nZpm-87y37Y/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-177",
+      "youtubeId": "RBTXo0Ai8_A",
       "videoId": "RBTXo0Ai8_A",
       "title": "Humsafar Lyrics with English Translation",
       "artist": "Full Song | Badrinath Ki Dulhania (201…",
+      "album": "Full Song",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/RBTXo0Ai8_A/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-178",
+      "youtubeId": "5qJNtsPJtKc",
       "videoId": "5qJNtsPJtKc",
       "title": "Humsafar Full Song With LYRICS",
       "artist": "Badrinath Ki Dulhania | Alia bhatt, Va…",
+      "album": "Badrinath Ki Dulhania",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/5qJNtsPJtKc/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-179",
+      "youtubeId": "fXRvluHnjxE",
       "videoId": "fXRvluHnjxE",
       "title": "Mast Magan Full Song with Lyrics",
       "artist": "2 States | Arijit Singh | Arjun Kapoor…",
+      "album": "2 States",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/fXRvluHnjxE/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-180",
+      "youtubeId": "xitd9mEZIHk",
       "videoId": "xitd9mEZIHk",
       "title": "Mast Magan FULL Video Song",
       "artist": "2 States | Arijit Singh | Arjun Kapoor…",
+      "album": "2 States",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/xitd9mEZIHk/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-181",
+      "youtubeId": "eXkHvT--DBU",
       "videoId": "eXkHvT--DBU",
       "title": "Zaalima",
       "artist": "Arijit Singh - Topic",
+      "album": "Bollywood Romantics",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/eXkHvT--DBU/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-182",
+      "youtubeId": "n0L6uHhzWIw",
       "videoId": "n0L6uHhzWIw",
       "title": "Mast Magan",
       "artist": "2 States (2014) | Full Song Story HD |…",
+      "album": "2 States (2014)",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/n0L6uHhzWIw/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-183",
+      "youtubeId": "P0KasU0HXD0",
       "videoId": "P0KasU0HXD0",
       "title": "Chaandaniya FULL Video Song",
       "artist": "2 States | Arjun Kapoor | Alia Bhatt",
+      "album": "2 States",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/P0KasU0HXD0/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-184",
+      "youtubeId": "tmWL-JxUGZc",
       "videoId": "tmWL-JxUGZc",
       "title": "Mast Magan 2 States Full Song by Arijit Singh",
       "artist": "Arjun Kapoor, Alia Bhatt",
+      "album": "Bollywood Romantics",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/tmWL-JxUGZc/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-185",
+      "youtubeId": "OMsrXBzSsUI",
       "videoId": "OMsrXBzSsUI",
       "title": "Mast Magan ( Slowed And Reverb )",
       "artist": "Lyrixcals",
+      "album": "Bollywood Romantics",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/OMsrXBzSsUI/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-186",
+      "youtubeId": "bYy_bjsy8Y0",
       "videoId": "bYy_bjsy8Y0",
       "title": "Mast Magan Lyrics",
       "artist": "Arijit Singh | 2 States | Arjun Kapoor…",
+      "album": "Arijit Singh",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/bYy_bjsy8Y0/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-187",
+      "youtubeId": "Cz7TfFrFojU",
       "videoId": "Cz7TfFrFojU",
       "title": "Mast Magan lyrics",
       "artist": "2 States | ArijitSingh | Arjun Kapoor,…",
+      "album": "2 States",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/Cz7TfFrFojU/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-188",
+      "youtubeId": "2s93cqRcqAk",
       "videoId": "2s93cqRcqAk",
       "title": "Mast Magan ( Slowed + Reverb ) ✨",
       "artist": "chxrrybomb",
+      "album": "Bollywood Romantics",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/2s93cqRcqAk/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-189",
+      "youtubeId": "lVpZaByCWUE",
       "videoId": "lVpZaByCWUE",
       "title": "Mast Magan ( Lyrics )| Arijit Singh",
       "artist": "Chinmayi Sripada | Arjun Kapoor | Alia…",
+      "album": "Chinmayi Sripada",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/lVpZaByCWUE/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-190",
+      "youtubeId": "1BLF5dXRzlA",
       "videoId": "1BLF5dXRzlA",
       "title": "2 States: Mast Magan Lyrics",
       "artist": "Arijit Singh |Alia Bhatt, Arjun Kapoor…",
+      "album": "Arijit Singh",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/1BLF5dXRzlA/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-191",
+      "youtubeId": "Wh74IJ9xSxA",
       "videoId": "Wh74IJ9xSxA",
       "title": "Kudmayi x Mast Magan Mashup",
       "artist": "Full Version | Rtek |",
+      "album": "Full Version",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/Wh74IJ9xSxA/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-192",
+      "youtubeId": "Wo5nJJiJ8Cg",
       "videoId": "Wo5nJJiJ8Cg",
       "title": "Mast Magan - HDR  2 States",
       "artist": "Arijit Singh | Arjun Kapoor, Alia Bhatt",
+      "album": "Arijit Singh",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/Wo5nJJiJ8Cg/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-193",
+      "youtubeId": "ZrhQCtQJ13s",
       "videoId": "ZrhQCtQJ13s",
       "title": "Mast Magan [8D AUDIO] Arijit Singh, Chinmayi Sri…",
       "artist": "2 States",
+      "album": "Bollywood Romantics",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/ZrhQCtQJ13s/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-194",
+      "youtubeId": "vmLGHNreScc",
       "videoId": "vmLGHNreScc",
       "title": "Arijit Singh : Mast Magan (Soulful Version) Voic…",
       "artist": "Facebook Live Concert | Full HD",
+      "album": "Facebook Live Concert",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/vmLGHNreScc/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-195",
+      "youtubeId": "-j6F012HtAM",
       "videoId": "-j6F012HtAM",
       "title": "Mast Magan - 2 States",
       "artist": "Official Song | Arjun Kapoor, Alia Bhatt",
+      "album": "Official Song",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/-j6F012HtAM/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-196",
+      "youtubeId": "06pGYAQnqWQ",
       "videoId": "06pGYAQnqWQ",
       "title": "Mast Magan",
       "artist": "2 States (2014) | Full Song HD | Ariji…",
+      "album": "2 States (2014)",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/06pGYAQnqWQ/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-197",
+      "youtubeId": "SDQdGibJ9mE",
       "videoId": "SDQdGibJ9mE",
       "title": "Mast Magan (From \"2 States)",
       "artist": "Arijit Singh - Topic",
+      "album": "Bollywood Romantics",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/SDQdGibJ9mE/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-198",
+      "youtubeId": "OOWvmeTTp7Y",
       "videoId": "OOWvmeTTp7Y",
       "title": "Mast Magan,Lirik",
       "artist": "Terjemahan Indonesia |2 States",
+      "album": "Terjemahan Indonesia",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/OOWvmeTTp7Y/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-199",
+      "youtubeId": "cYOB941gyXI",
       "videoId": "cYOB941gyXI",
       "title": "Hawayein - Lyrical Video",
       "artist": "Jab Harry Met Sejal | Shah Rukh Khan, …",
+      "album": "Jab Harry Met Sejal",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/cYOB941gyXI/hqdefault.jpg"
     },
     {
+      "id": "romantic_new-200",
+      "youtubeId": "cs1e0fRyI18",
       "videoId": "cs1e0fRyI18",
       "title": "Hawayein",
       "artist": "Jab Harry Met Sejal | Anushka Sharma |…",
+      "album": "Jab Harry Met Sejal",
       "category": "romantic_new",
       "thumbnail": "https://i.ytimg.com/vi/cs1e0fRyI18/hqdefault.jpg"
     }
   ],
   "classic_old": [
     {
+      "id": "classic_old-001",
+      "youtubeId": "CWHSNIpl7dg",
       "videoId": "CWHSNIpl7dg",
       "title": "Rajesh Khanna Romantic Songs",
       "artist": "Yeh Sham Mastani | Mere Sapnon Ki Rani…",
+      "album": "Yeh Sham Mastani",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/CWHSNIpl7dg/hqdefault.jpg"
     },
     {
+      "id": "classic_old-002",
+      "youtubeId": "2Vv-BfVoq4g",
       "videoId": "2Vv-BfVoq4g",
       "title": "Dangal Title Track",
       "artist": "Daler Mehndi, Pritam | Dangal",
+      "album": "Daler Mehndi, Pritam",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/2Vv-BfVoq4g/hqdefault.jpg"
     },
     {
+      "id": "classic_old-003",
+      "youtubeId": "Pa1UPI5STLk",
       "videoId": "Pa1UPI5STLk",
       "title": "Roop Tera Mastana.....Then & Now.....by Amit Kum…",
       "artist": "Happy Lucky Entertainment",
+      "album": "Golden 90s Classics",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/Pa1UPI5STLk/hqdefault.jpg"
     },
     {
+      "id": "classic_old-004",
+      "youtubeId": "huDnyuOBmfg",
       "videoId": "huDnyuOBmfg",
       "title": "amit kumar  roop tera mastana",
       "artist": "General Voice",
+      "album": "Golden 90s Classics",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/huDnyuOBmfg/hqdefault.jpg"
     },
     {
+      "id": "classic_old-005",
+      "youtubeId": "W0dmYnZ9_hE",
       "videoId": "W0dmYnZ9_hE",
       "title": "Sultan Title Track",
       "artist": "Sukhwinder Singh, Shadab Faridi | Sultan",
+      "album": "Sukhwinder Singh, Shadab Faridi",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/W0dmYnZ9_hE/hqdefault.jpg"
     },
     {
+      "id": "classic_old-006",
+      "youtubeId": "z486h8Z8PME",
       "videoId": "z486h8Z8PME",
       "title": "Aradhana - 1969",
       "artist": "Rajesh Khanna | Sharmila | Mere Sapno …",
+      "album": "Rajesh Khanna",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/z486h8Z8PME/hqdefault.jpg"
     },
     {
+      "id": "classic_old-007",
+      "youtubeId": "WK1z5uJaI7Y",
       "videoId": "WK1z5uJaI7Y",
       "title": "Dil Ki Baatein Dil Hi Jaane",
       "artist": "Lata Mangeshkar, Kishore Kumar | Roop …",
+      "album": "Lata Mangeshkar, Kishore Kumar",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/WK1z5uJaI7Y/hqdefault.jpg"
     },
     {
+      "id": "classic_old-008",
+      "youtubeId": "zbvfAkJWntc",
       "videoId": "zbvfAkJWntc",
       "title": "ROOP TERA MASTANA official full song video from …",
       "artist": "Sony Music India",
+      "album": "Golden 90s Classics",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/zbvfAkJWntc/hqdefault.jpg"
     },
     {
+      "id": "classic_old-009",
+      "youtubeId": "6r8KvFpVrnk",
       "videoId": "6r8KvFpVrnk",
       "title": "Roop Tera Mastana",
       "artist": "Super Hit Romantic Song By Kishore Kum…",
+      "album": "Golden 90s Classics",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/6r8KvFpVrnk/hqdefault.jpg"
     },
     {
+      "id": "classic_old-010",
+      "youtubeId": "k4q7Yg_Z49U",
       "videoId": "k4q7Yg_Z49U",
       "title": "Zinda",
       "artist": "Siddharth Mahadevan | Bhaag Milkha Bhaag",
+      "album": "Siddharth Mahadevan",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/k4q7Yg_Z49U/hqdefault.jpg"
     },
     {
+      "id": "classic_old-011",
+      "youtubeId": "cnvkr55Z0Ns",
       "videoId": "cnvkr55Z0Ns",
       "title": "The Kapil Sharma Show",
       "artist": "Suniye \"Roop Tera Mastana\" Gaane Ka Or…",
+      "album": "Golden 90s Classics",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/cnvkr55Z0Ns/hqdefault.jpg"
     },
     {
+      "id": "classic_old-012",
+      "youtubeId": "aFzH9rjOTVo",
       "videoId": "aFzH9rjOTVo",
       "title": "Roop Tera Mastana - Karaoke with scrolling Lyric",
       "artist": "Kishore Kumar Karaoke | Hindi Sing Along",
+      "album": "Kishore Kumar Karaoke",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/aFzH9rjOTVo/hqdefault.jpg"
     },
     {
+      "id": "classic_old-013",
+      "youtubeId": "cvEeqyQl1zw",
       "videoId": "cvEeqyQl1zw",
       "title": "Roop Tera Mastana Remix Shaan, Style Bhai",
       "artist": "Indipop Songs",
+      "album": "Golden 90s Classics",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/cvEeqyQl1zw/hqdefault.jpg"
     },
     {
+      "id": "classic_old-014",
+      "youtubeId": "ddl9TR3a7DM",
       "videoId": "ddl9TR3a7DM",
       "title": "Tere Jaisa Yaar Kahan|Yeh Dosti Ham Nahi Todenge…",
       "artist": "ALBUM CREATIONS",
+      "album": "Golden 90s Classics",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/ddl9TR3a7DM/hqdefault.jpg"
     },
     {
+      "id": "classic_old-015",
+      "youtubeId": "Ca6dPcHgdFY",
       "videoId": "Ca6dPcHgdFY",
       "title": "Yeh Dosti Hum Nahi Todenge - Rahul Jain",
       "artist": "Unplugged | Pehchan Music | Viral Frie…",
+      "album": "Unplugged",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/Ca6dPcHgdFY/hqdefault.jpg"
     },
     {
+      "id": "classic_old-016",
+      "youtubeId": "tK9w_01p9zE",
       "videoId": "tK9w_01p9zE",
       "title": "Brothers Anthem",
       "artist": "Vishal Dadlani, Ajay-Atul | Brothers",
+      "album": "Vishal Dadlani, Ajay-Atul",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/tK9w_01p9zE/hqdefault.jpg"
     },
     {
+      "id": "classic_old-017",
+      "youtubeId": "yPePNnCkfMs",
       "videoId": "yPePNnCkfMs",
       "title": "Roop Tera Mastana Cover GYB Prateek||New Bollywo…",
       "artist": "Prateek Kapoor",
+      "album": "Golden 90s Classics",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/yPePNnCkfMs/hqdefault.jpg"
     },
     {
+      "id": "classic_old-018",
+      "youtubeId": "DCR42fzL2Kk",
       "videoId": "DCR42fzL2Kk",
       "title": "ROOP TERA MASTANA",
       "artist": "ARADHANA SONGS | SHARMILA TAGORE, RAJE…",
+      "album": "ARADHANA SONGS",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/DCR42fzL2Kk/hqdefault.jpg"
     },
     {
+      "id": "classic_old-019",
+      "youtubeId": "0Y_q1i0w9aQ",
       "videoId": "0Y_q1i0w9aQ",
       "title": "Kar Har Maidaan Fateh",
       "artist": "Sukhwinder Singh, Shreya Ghoshal | Sanju",
+      "album": "Sukhwinder Singh, Shreya Ghoshal",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/0Y_q1i0w9aQ/hqdefault.jpg"
     },
     {
+      "id": "classic_old-020",
+      "youtubeId": "_61aQJ4EEsk",
       "videoId": "_61aQJ4EEsk",
       "title": "Roop Tera Mastana  - Super Jhankar Beats",
       "artist": "Aradhana | Kishore Kumar | Evergreen R…",
+      "album": "Aradhana",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/_61aQJ4EEsk/hqdefault.jpg"
     },
     {
+      "id": "classic_old-021",
+      "youtubeId": "8lG1rK94qWE",
       "videoId": "8lG1rK94qWE",
       "title": "Chaiyya Chaiyya",
       "artist": "Sukhwinder Singh, Sapna Awasthi | Dil Se",
+      "album": "Sukhwinder Singh, Sapna Awasthi",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/8lG1rK94qWE/hqdefault.jpg"
     },
     {
+      "id": "classic_old-022",
+      "youtubeId": "7CdpHATpXXU",
       "videoId": "7CdpHATpXXU",
       "title": "Chak Lein De",
       "artist": "Kailash Kher | Chandni Chowk To China",
+      "album": "Kailash Kher",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/7CdpHATpXXU/hqdefault.jpg"
     },
     {
+      "id": "classic_old-023",
+      "youtubeId": "gTlY-WV7wYU",
       "videoId": "gTlY-WV7wYU",
       "title": "Tere Jaisa Yaar Kahan|Ye Dosti Ham Nahi Todenge|…",
       "artist": "ALBUM CREATIONS",
+      "album": "Golden 90s Classics",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/gTlY-WV7wYU/hqdefault.jpg"
     },
     {
+      "id": "classic_old-024",
+      "youtubeId": "1T8G_d5o5Gs",
       "videoId": "1T8G_d5o5Gs",
       "title": "Yeh Dosti Hum Nahi Todenge",
       "artist": "Sholay(1975)| Amitabh Bachchan | Dharm…",
+      "album": "Sholay(1975)",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/1T8G_d5o5Gs/hqdefault.jpg"
     },
     {
+      "id": "classic_old-025",
+      "youtubeId": "Bx5sqAE86e0",
       "videoId": "Bx5sqAE86e0",
       "title": "Yeh Dosti Hum Nahi Todenge - Full Song (HD)",
       "artist": "Sholay | Kishore Kumar | Amitabh Bachc…",
+      "album": "Sholay",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/Bx5sqAE86e0/hqdefault.jpg"
     },
     {
+      "id": "classic_old-026",
+      "youtubeId": "qRdoJJb_rrU",
       "videoId": "qRdoJJb_rrU",
       "title": "Yeh Dosti Hum Nahi Todenge",
       "artist": "Sholay | Amitabh Bachchan | Dharmendra…",
+      "album": "Sholay",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/qRdoJJb_rrU/hqdefault.jpg"
     },
     {
+      "id": "classic_old-027",
+      "youtubeId": "vb9hvky8tc8",
       "videoId": "vb9hvky8tc8",
       "title": "Yeh Dosti Hum Nahi Todenge (Unplugged Cover)",
       "artist": "Rahul Jain | Sholay | Tune Lyrico",
+      "album": "Rahul Jain",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/vb9hvky8tc8/hqdefault.jpg"
     },
     {
+      "id": "classic_old-028",
+      "youtubeId": "_yC4IKZ76GA",
       "videoId": "_yC4IKZ76GA",
       "title": "DEF PEREN COMMEMORATED WORLD MUSIC DAY IN SONGS …",
       "artist": "M. Dosti",
+      "album": "Golden 90s Classics",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/_yC4IKZ76GA/hqdefault.jpg"
     },
     {
+      "id": "classic_old-029",
+      "youtubeId": "keyUyjT0f8A",
       "videoId": "keyUyjT0f8A",
       "title": "Moods of Kishor",
       "artist": "Yeh Dosti Hum Nahi Todenge",
+      "album": "Golden 90s Classics",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/keyUyjT0f8A/hqdefault.jpg"
     },
     {
+      "id": "classic_old-030",
+      "youtubeId": "qfCt1UZAXMQ",
       "videoId": "qfCt1UZAXMQ",
       "title": "Friendship Special - Yeh Dosti Hum Nahi Todenge",
       "artist": "Dharmendra | Amitabh | Sholay -HD Vide…",
+      "album": "Dharmendra",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/qfCt1UZAXMQ/hqdefault.jpg"
     },
     {
+      "id": "classic_old-031",
+      "youtubeId": "jki29sXNRNM",
       "videoId": "jki29sXNRNM",
       "title": "Yeh Dosti Hum Nahin Todenge [ Lofi Song ] : Rahu…",
       "artist": "🎧 Lofi Slot 🎧",
+      "album": "Golden 90s Classics",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/jki29sXNRNM/hqdefault.jpg"
     },
     {
+      "id": "classic_old-032",
+      "youtubeId": "pzfPccOlY_s",
       "videoId": "pzfPccOlY_s",
       "title": "Yeh Dosti Hum Nahi Todenge (Sad) (HD)",
       "artist": "Sholay Song | Amitabh bachchan | Dharm…",
+      "album": "Sholay Song",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/pzfPccOlY_s/hqdefault.jpg"
     },
     {
+      "id": "classic_old-033",
+      "youtubeId": "wFAU_duK0Jc",
       "videoId": "wFAU_duK0Jc",
       "title": "Yeh Dosti Hum Nahi Todenge",
       "artist": "Kishore Kumar, Manna Dey | Sholay Song…",
+      "album": "Kishore Kumar, Manna Dey",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/wFAU_duK0Jc/hqdefault.jpg"
     },
     {
+      "id": "classic_old-034",
+      "youtubeId": "9_oTxNGcXR8",
       "videoId": "9_oTxNGcXR8",
       "title": "Ye Dosti Hum Nahi Todenge Remix Song DJ JAY THAKUR",
       "artist": "Dj Jay Thakur",
+      "album": "Golden 90s Classics",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/9_oTxNGcXR8/hqdefault.jpg"
     },
     {
+      "id": "classic_old-035",
+      "youtubeId": "IuZNgJMfEeI",
       "videoId": "IuZNgJMfEeI",
       "title": "जो भी गब्बर से टकराएगा, अंजाम यही होगा! 😢🔥",
       "artist": "Sholay Emotional Scene | Gabbar Singh …",
+      "album": "Sholay Emotional Scene",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/IuZNgJMfEeI/hqdefault.jpg"
     },
     {
+      "id": "classic_old-036",
+      "youtubeId": "T6Cie280Dq8",
       "videoId": "T6Cie280Dq8",
       "title": "Yeh Dosti Hum Nahin (Happy Version / From \"Shola…",
       "artist": "Manna Dey - Topic",
+      "album": "Golden 90s Classics",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/T6Cie280Dq8/hqdefault.jpg"
     },
     {
+      "id": "classic_old-037",
+      "youtubeId": "qnQCd_nZn_g",
       "videoId": "qnQCd_nZn_g",
       "title": "Get Ready To Fight",
       "artist": "Benny Dayal, Vishal Mishra | Baaghi",
+      "album": "Benny Dayal, Vishal Mishra",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/qnQCd_nZn_g/hqdefault.jpg"
     },
     {
+      "id": "classic_old-038",
+      "youtubeId": "JVQhw298b6g",
       "videoId": "JVQhw298b6g",
       "title": "Yeh Dosti Hum Nahi Todenge",
       "artist": "Sholay Oxygen Mix | DJ Aira | 4K • 5.1",
+      "album": "Sholay Oxygen Mix",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/JVQhw298b6g/hqdefault.jpg"
     },
     {
+      "id": "classic_old-039",
+      "youtubeId": "KK2vimvZ3Dg",
       "videoId": "KK2vimvZ3Dg",
       "title": "Yeh Dosti Hum Nahi Todenge",
       "artist": "Sholay(1975)| Amitabh Bachchan | Dharm…",
+      "album": "Sholay(1975)",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/KK2vimvZ3Dg/hqdefault.jpg"
     },
     {
+      "id": "classic_old-040",
+      "youtubeId": "C4QBpS9fq4U",
       "videoId": "C4QBpS9fq4U",
       "title": "Yeh Dosti [ Happy ]-Remix",
       "artist": "Sholey 1975 | BassBoosted Remix with J…",
+      "album": "Sholey 1975",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/C4QBpS9fq4U/hqdefault.jpg"
     },
     {
+      "id": "classic_old-041",
+      "youtubeId": "7dO_MS9tZ5E",
       "videoId": "7dO_MS9tZ5E",
       "title": "Dekha Ek Khwab Song",
       "artist": "Silsila | Amitabh Bachchan, Rekha | Ki…",
+      "album": "Silsila",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/7dO_MS9tZ5E/hqdefault.jpg"
     },
     {
+      "id": "classic_old-042",
+      "youtubeId": "OssRAVZhsRk",
       "videoId": "OssRAVZhsRk",
       "title": "O SATHI RE TERE BINA BHI KYA JINA",
       "artist": "Rajnish Nagar",
+      "album": "Golden 90s Classics",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/OssRAVZhsRk/hqdefault.jpg"
     },
     {
+      "id": "classic_old-043",
+      "youtubeId": "9dcBy2uXL7E",
       "videoId": "9dcBy2uXL7E",
       "title": "Tere Jaisa Yaar Kahan",
       "artist": "Kishore Kumar | Yaarana 1981 Songs | A…",
+      "album": "Kishore Kumar",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/9dcBy2uXL7E/hqdefault.jpg"
     },
     {
+      "id": "classic_old-044",
+      "youtubeId": "-W2dagktUp0",
       "videoId": "-W2dagktUp0",
       "title": "Kabhi Kabhie Mere Dil Mein",
       "artist": "Full Song | Rakhee, Amitabh Bachchan, …",
+      "album": "Full Song",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/-W2dagktUp0/hqdefault.jpg"
     },
     {
+      "id": "classic_old-045",
+      "youtubeId": "Wy6ec9YTO8g",
       "videoId": "Wy6ec9YTO8g",
       "title": "O Saathi Re (Male) with lyrics",
       "artist": "ओ साथी रे गाने के बोल | Muqaddar ka Si…",
+      "album": "ओ साथी रे गाने के बोल",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/Wy6ec9YTO8g/hqdefault.jpg"
     },
     {
+      "id": "classic_old-046",
+      "youtubeId": "BB6KvXQx090",
       "videoId": "BB6KvXQx090",
       "title": "Kabhi Kabhie Mere Dil Mein",
       "artist": "Amitabh Bachchan",
+      "album": "Golden 90s Classics",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/BB6KvXQx090/hqdefault.jpg"
     },
     {
+      "id": "classic_old-047",
+      "youtubeId": "43wT0xhvfsA",
       "videoId": "43wT0xhvfsA",
       "title": "Yeh Kahaan Aa Gaye Hum",
       "artist": "Full Song | Silsila | Amitabh Bachchan…",
+      "album": "Full Song",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/43wT0xhvfsA/hqdefault.jpg"
     },
     {
+      "id": "classic_old-048",
+      "youtubeId": "QkGqpVYjLUw",
       "videoId": "QkGqpVYjLUw",
       "title": "Main Pal Do Pal Ka Shayar Hoon Full Song",
       "artist": "Kabhi Kabhie | Amitabh Bachchan, Rakhe…",
+      "album": "Kabhi Kabhie",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/QkGqpVYjLUw/hqdefault.jpg"
     },
     {
+      "id": "classic_old-049",
+      "youtubeId": "Jkd0O1UqyOY",
       "videoId": "Jkd0O1UqyOY",
       "title": "Kabhi Kabhi Mere Dil Mein",
       "artist": "Kabhi Kabhie |Cover by Vineet Dhingra|…",
+      "album": "Kabhi Kabhie",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/Jkd0O1UqyOY/hqdefault.jpg"
     },
     {
+      "id": "classic_old-050",
+      "youtubeId": "-ArgZa-UsAM",
       "videoId": "-ArgZa-UsAM",
       "title": "Aadmi Jo Kehta Hai",
       "artist": "Amitabh Bachchan | Praveen Babi | Majb…",
+      "album": "Amitabh Bachchan",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/-ArgZa-UsAM/hqdefault.jpg"
     },
     {
+      "id": "classic_old-051",
+      "youtubeId": "YT7crTHjCAo",
       "videoId": "YT7crTHjCAo",
       "title": "DIL TO HAI DIL",
       "artist": "दिल तो है दिल दिल का ऐतबार | Muqadar K…",
+      "album": "दिल तो है दिल दिल का ऐतबार",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/YT7crTHjCAo/hqdefault.jpg"
     },
     {
+      "id": "classic_old-052",
+      "youtubeId": "kxT-5glSScc",
       "videoId": "kxT-5glSScc",
       "title": "Main Pal Do Pal Ka Shayar Hoon",
       "artist": "Amitabh Bachchan's Poetry Recital | Ka…",
+      "album": "Amitabh Bachchan's Poetry Recital",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/kxT-5glSScc/hqdefault.jpg"
     },
     {
+      "id": "classic_old-053",
+      "youtubeId": "gejKrLu9N9c",
       "videoId": "gejKrLu9N9c",
       "title": "Tere Chehre Se Full Song",
       "artist": "Kabhi Kabhie | Rishi Kapoor, Neetu Sin…",
+      "album": "Kabhi Kabhie",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/gejKrLu9N9c/hqdefault.jpg"
     },
     {
+      "id": "classic_old-054",
+      "youtubeId": "K2K33TUE4rw",
       "videoId": "K2K33TUE4rw",
       "title": "Tu Rootha Dil Toota",
       "artist": "Kishore Kumar | Yaarana 1981 Songs | A…",
+      "album": "Kishore Kumar",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/K2K33TUE4rw/hqdefault.jpg"
     },
     {
+      "id": "classic_old-055",
+      "youtubeId": "BVnz6oSupUM",
       "videoId": "BVnz6oSupUM",
       "title": "Kabhi Kabhie Mere Dil Mein Song",
       "artist": "Amitabh Bachchan, Rakhee | Mukesh | Kh…",
+      "album": "Amitabh Bachchan, Rakhee",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/BVnz6oSupUM/hqdefault.jpg"
     },
     {
+      "id": "classic_old-056",
+      "youtubeId": "G_x-UJNEmEU",
       "videoId": "G_x-UJNEmEU",
       "title": "Aao Naa",
       "artist": "Sadhana Sargam | Udit Narayan | Kyun H…",
+      "album": "Sadhana Sargam",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/G_x-UJNEmEU/hqdefault.jpg"
     },
     {
+      "id": "classic_old-057",
+      "youtubeId": "IJRT8hcp53w",
       "videoId": "IJRT8hcp53w",
       "title": "Kabhi Kabhi Mere Dil Mein With Dialogue By Amitabh",
       "artist": "Amitabh Bachchan - Topic",
+      "album": "Golden 90s Classics",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/IJRT8hcp53w/hqdefault.jpg"
     },
     {
+      "id": "classic_old-058",
+      "youtubeId": "COV1a8T5PDg",
       "videoId": "COV1a8T5PDg",
       "title": "Mere Ghar Aayi Ek Nanhi Pari Song",
       "artist": "Kabhi Kabhie | Amitabh Bachchan, Wahee…",
+      "album": "Kabhi Kabhie",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/COV1a8T5PDg/hqdefault.jpg"
     },
     {
+      "id": "classic_old-059",
+      "youtubeId": "eMC7RJpMYhk",
       "videoId": "eMC7RJpMYhk",
       "title": "Kabhi Kabhie - Full Album",
       "artist": "Amitabh Bachchan | Rakhee Gulzar | Kab…",
+      "album": "Amitabh Bachchan",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/eMC7RJpMYhk/hqdefault.jpg"
     },
     {
+      "id": "classic_old-060",
+      "youtubeId": "dqkmT6vLvZc",
       "videoId": "dqkmT6vLvZc",
       "title": "KABHI KABHI MERE DIL",
       "artist": "MUKHTAR SHAH | KABHI KABHIE MOVIE | AM…",
+      "album": "MUKHTAR SHAH",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/dqkmT6vLvZc/hqdefault.jpg"
     },
     {
+      "id": "classic_old-061",
+      "youtubeId": "SBfPs-PMGTA",
       "videoId": "SBfPs-PMGTA",
       "title": "Pehla Nasha Pehla khumar Full HD l Udit Narayan,…",
       "artist": "Rakib Sultan Music",
+      "album": "Golden 90s Classics",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/SBfPs-PMGTA/hqdefault.jpg"
     },
     {
+      "id": "classic_old-062",
+      "youtubeId": "Oc9E71akp5M",
       "videoId": "Oc9E71akp5M",
       "title": "पहला नशा",
       "artist": "Jo Jeeta Wohi Sikandar | Lata Mangeshk…",
+      "album": "Jo Jeeta Wohi Sikandar",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/Oc9E71akp5M/hqdefault.jpg"
     },
     {
+      "id": "classic_old-063",
+      "youtubeId": "2yyNfCdiVug",
       "videoId": "2yyNfCdiVug",
       "title": "Pehla Nasha",
       "artist": "Cover | Aamir Khan | Udit Narayan | Sa…",
+      "album": "Cover",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/2yyNfCdiVug/hqdefault.jpg"
     },
     {
+      "id": "classic_old-064",
+      "youtubeId": "1R8MGdgZDns",
       "videoId": "1R8MGdgZDns",
       "title": "Pehla Nasha",
       "artist": "Udit Narayan - Topic",
+      "album": "Golden 90s Classics",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/1R8MGdgZDns/hqdefault.jpg"
     },
     {
+      "id": "classic_old-065",
+      "youtubeId": "YoThngCrGGc",
       "videoId": "YoThngCrGGc",
       "title": "Pehla Nasha Pehla Khumar Full HD",
       "artist": "Udit Narayan , Sadhana Sargam | Jo Jee…",
+      "album": "Udit Narayan , Sadhana Sargam",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/YoThngCrGGc/hqdefault.jpg"
     },
     {
+      "id": "classic_old-066",
+      "youtubeId": "PesrFCmjdNI",
       "videoId": "PesrFCmjdNI",
       "title": "Malhari",
       "artist": "Vishal Dadlani | Bajirao Mastani",
+      "album": "Vishal Dadlani",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/PesrFCmjdNI/hqdefault.jpg"
     },
     {
+      "id": "classic_old-067",
+      "youtubeId": "bydvSfemqcg",
       "videoId": "bydvSfemqcg",
       "title": "Best of Udit Narayan",
       "artist": "Pehla Nasha | Jaadu Teri Nazar | Ruk J…",
+      "album": "Pehla Nasha",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/bydvSfemqcg/hqdefault.jpg"
     },
     {
+      "id": "classic_old-068",
+      "youtubeId": "Ki41AKu0iHc",
       "videoId": "Ki41AKu0iHc",
       "title": "Pehla Nasha Lyrical",
       "artist": "Aamir Khan | Sadhana Sargam | Udit Nar…",
+      "album": "Aamir Khan",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/Ki41AKu0iHc/hqdefault.jpg"
     },
     {
+      "id": "classic_old-069",
+      "youtubeId": "hw_HpTI_Wkw",
       "videoId": "hw_HpTI_Wkw",
       "title": "Ho Gaya Hai Tujhko",
       "artist": "Full Song | Dilwale Dulhania Le Jayeng…",
+      "album": "Full Song",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/hw_HpTI_Wkw/hqdefault.jpg"
     },
     {
+      "id": "classic_old-070",
+      "youtubeId": "PZ7mhXZSJ8c",
       "videoId": "PZ7mhXZSJ8c",
       "title": "Pehla Nasha [Reverb]",
       "artist": "Mood 90's",
+      "album": "Golden 90s Classics",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/PZ7mhXZSJ8c/hqdefault.jpg"
     },
     {
+      "id": "classic_old-071",
+      "youtubeId": "mdPrweVv7DE",
       "videoId": "mdPrweVv7DE",
       "title": "Jo Jeeta Wohi Sikandar",
       "artist": "Uttarwar Pruthviraj",
+      "album": "Golden 90s Classics",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/mdPrweVv7DE/hqdefault.jpg"
     },
     {
+      "id": "classic_old-072",
+      "youtubeId": "BOBUVPrYf2s",
       "videoId": "BOBUVPrYf2s",
       "title": "Dilwale Dulhania Le Jayenge Video Jukebox",
       "artist": "Full Song | Jatin-Lalit | Shah Rukh Kh…",
+      "album": "Full Song",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/BOBUVPrYf2s/hqdefault.jpg"
     },
     {
+      "id": "classic_old-073",
+      "youtubeId": "ODu7OyAqK-Q",
       "videoId": "ODu7OyAqK-Q",
       "title": "Pehla Nasha Lyrical",
       "artist": "Aamir Khan | Sadhana Sargam | Udit Nar…",
+      "album": "Aamir Khan",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/ODu7OyAqK-Q/hqdefault.jpg"
     },
     {
+      "id": "classic_old-074",
+      "youtubeId": "iSUK1QoK9-E",
       "videoId": "iSUK1QoK9-E",
       "title": "Pehla Nasha - Lyrical",
       "artist": "Aamir Khan | Sadhana Sargam | Udit Nar…",
+      "album": "Aamir Khan",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/iSUK1QoK9-E/hqdefault.jpg"
     },
     {
+      "id": "classic_old-075",
+      "youtubeId": "bjfKyIAlsZs",
       "videoId": "bjfKyIAlsZs",
       "title": "Singham Title Track",
       "artist": "Sukhwinder Singh, Ajay-Atul | Singham",
+      "album": "Sukhwinder Singh, Ajay-Atul",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/bjfKyIAlsZs/hqdefault.jpg"
     },
     {
+      "id": "classic_old-076",
+      "youtubeId": "dPkwe9AoOmY",
       "videoId": "dPkwe9AoOmY",
       "title": "Pehla Nasha 2",
       "artist": "Udit Narayan - Topic",
+      "album": "Golden 90s Classics",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/dPkwe9AoOmY/hqdefault.jpg"
     },
     {
+      "id": "classic_old-077",
+      "youtubeId": "lIk5ZBlIByo",
       "videoId": "lIk5ZBlIByo",
       "title": "Pehla Nasha Pehla Khumar Full HD",
       "artist": "Udit Narayan , Sadhana Sargam | Jo Jee…",
+      "album": "Udit Narayan , Sadhana Sargam",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/lIk5ZBlIByo/hqdefault.jpg"
     },
     {
+      "id": "classic_old-078",
+      "youtubeId": "17bJ89Ht7zs",
       "videoId": "17bJ89Ht7zs",
       "title": "Pehla Nasha",
       "artist": "Karaoke Song with Lyrics | Jo Jeeta Wo…",
+      "album": "Karaoke Song with Lyrics",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/17bJ89Ht7zs/hqdefault.jpg"
     },
     {
+      "id": "classic_old-079",
+      "youtubeId": "Ed1WBWvxnSY",
       "videoId": "Ed1WBWvxnSY",
       "title": "Pehla Nasha (Udit Narayan)Lyrics English Transla…",
       "artist": "My Hindi Songs Translation",
+      "album": "Golden 90s Classics",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/Ed1WBWvxnSY/hqdefault.jpg"
     },
     {
+      "id": "classic_old-080",
+      "youtubeId": "TopgRkAtS3A",
       "videoId": "TopgRkAtS3A",
       "title": "Tujhe Dekha To Yeh Jaana Sanam",
       "artist": "Dilwale Dulhania Le Jayenge - Kumar Sa…",
+      "album": "Golden 90s Classics",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/TopgRkAtS3A/hqdefault.jpg"
     },
     {
+      "id": "classic_old-081",
+      "youtubeId": "lZ2PhyBF3GQ",
       "videoId": "lZ2PhyBF3GQ",
       "title": "Dil To Pagal Hai Song",
       "artist": "Shah Rukh Khan, Madhuri, Karisma, Aksh…",
+      "album": "Golden 90s Classics",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/lZ2PhyBF3GQ/hqdefault.jpg"
     },
     {
+      "id": "classic_old-082",
+      "youtubeId": "BwiaxAos5cg",
       "videoId": "BwiaxAos5cg",
       "title": "Ziddi Dil",
       "artist": "Vishal Dadlani | Mary Kom",
+      "album": "Vishal Dadlani",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/BwiaxAos5cg/hqdefault.jpg"
     },
     {
+      "id": "classic_old-083",
+      "youtubeId": "cNV5hLSa9H8",
       "videoId": "cNV5hLSa9H8",
       "title": "Tujhe Dekha Toh Song",
       "artist": "Dilwale Dulhania Le Jayenge | Shah Ruk…",
+      "album": "Dilwale Dulhania Le Jayenge",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/cNV5hLSa9H8/hqdefault.jpg"
     },
     {
+      "id": "classic_old-084",
+      "youtubeId": "Zxgvob1Ew0c",
       "videoId": "Zxgvob1Ew0c",
       "title": "Mere Khwabon Mein",
       "artist": "Lyrical Song | Dilwale Dulhania Le Jay…",
+      "album": "Lyrical Song",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/Zxgvob1Ew0c/hqdefault.jpg"
     },
     {
+      "id": "classic_old-085",
+      "youtubeId": "-yX2trMgn5s",
       "videoId": "-yX2trMgn5s",
       "title": "Jee Karda",
       "artist": "Divya Kumar, Sachin-Jigar | Badlapur",
+      "album": "Divya Kumar, Sachin-Jigar",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/-yX2trMgn5s/hqdefault.jpg"
     },
     {
+      "id": "classic_old-086",
+      "youtubeId": "wBw9EPtDLw8",
       "videoId": "wBw9EPtDLw8",
       "title": "O Jaana Na Jaana",
       "artist": "Kumar Sanu | Lata Mangeshkar | Salman …",
+      "album": "Kumar Sanu",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/wBw9EPtDLw8/hqdefault.jpg"
     },
     {
+      "id": "classic_old-087",
+      "youtubeId": "-V4XWq_sRDw",
       "videoId": "-V4XWq_sRDw",
       "title": "Dilwale Dulhania Le Jayenge (DDLJ)",
       "artist": "Shahrukh Khan | Kajol | Full Songs | J…",
+      "album": "Shahrukh Khan",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/-V4XWq_sRDw/hqdefault.jpg"
     },
     {
+      "id": "classic_old-088",
+      "youtubeId": "ojCnlV1MA-k",
       "videoId": "ojCnlV1MA-k",
       "title": "Audio",
       "artist": "Dil To Pagal Hai | Full Song | Lata Ma…",
+      "album": "Dil To Pagal Hai",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/ojCnlV1MA-k/hqdefault.jpg"
     },
     {
+      "id": "classic_old-089",
+      "youtubeId": "cUVUs7M9TS0",
       "videoId": "cUVUs7M9TS0",
       "title": "Dekha Tujhe Toh Hogayi Deewani",
       "artist": "Shahrukh Khan | Madhuri Dixit | Kumar …",
+      "album": "Shahrukh Khan",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/cUVUs7M9TS0/hqdefault.jpg"
     },
     {
+      "id": "classic_old-090",
+      "youtubeId": "y33alFobQdA",
       "videoId": "y33alFobQdA",
       "title": "\"Tujhe Dekha To\" पे समां बाँध दिया Pawandeep & A…",
       "artist": "Indian Idol Season 12",
+      "album": "Golden 90s Classics",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/y33alFobQdA/hqdefault.jpg"
     },
     {
+      "id": "classic_old-091",
+      "youtubeId": "O3q6OZbjgKU",
       "videoId": "O3q6OZbjgKU",
       "title": "Tujhe Dekha Toh",
       "artist": "Lyrical Song | Dilwale Dulhania Le Jay…",
+      "album": "Lyrical Song",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/O3q6OZbjgKU/hqdefault.jpg"
     },
     {
+      "id": "classic_old-092",
+      "youtubeId": "uBmdxtJ5c4o",
       "videoId": "uBmdxtJ5c4o",
       "title": "Tujhe Dekha Toh : Ranu Mondal",
       "artist": "Dilwale Dulhania Le Jayenge || Ranu Mo…",
+      "album": "Dilwale Dulhania Le Jayenge",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/uBmdxtJ5c4o/hqdefault.jpg"
     },
     {
+      "id": "classic_old-093",
+      "youtubeId": "Ujl0rhUICGg",
       "videoId": "Ujl0rhUICGg",
       "title": "Song Of The Day 05 || Bollywood Best Songs || Ne…",
       "artist": "Eagle",
+      "album": "Golden 90s Classics",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/Ujl0rhUICGg/hqdefault.jpg"
     },
     {
+      "id": "classic_old-094",
+      "youtubeId": "pCYojfACnzQ",
       "videoId": "pCYojfACnzQ",
       "title": "Challa (Main Lad Jaana)",
       "artist": "Romy, Vivek Hariharan | Uri",
+      "album": "Romy, Vivek Hariharan",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/pCYojfACnzQ/hqdefault.jpg"
     },
     {
+      "id": "classic_old-095",
+      "youtubeId": "ay6pwhXPNvo",
       "videoId": "ay6pwhXPNvo",
       "title": "Tujhe Dekha To Ye Jana Sanam - Lyrical",
       "artist": "Shah Rukh Khan | Kajol | Kumar Sanu | …",
+      "album": "Shah Rukh Khan",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/ay6pwhXPNvo/hqdefault.jpg"
     },
     {
+      "id": "classic_old-096",
+      "youtubeId": "4f9rJADDp2g",
       "videoId": "4f9rJADDp2g",
       "title": "TUJHE DEKHA TOH YEH",
       "artist": "|DDLJ | Kumar Sanu-Anuradha Ghosh | 55…",
+      "album": "",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/4f9rJADDp2g/hqdefault.jpg"
     },
     {
+      "id": "classic_old-097",
+      "youtubeId": "Mf_0pDqZi50",
       "videoId": "Mf_0pDqZi50",
       "title": "Tujhe Dekha To",
       "artist": "Lata Mangeshkar - Topic",
+      "album": "Golden 90s Classics",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/Mf_0pDqZi50/hqdefault.jpg"
     },
     {
+      "id": "classic_old-098",
+      "youtubeId": "hqtmwQ_5uCk",
       "videoId": "hqtmwQ_5uCk",
       "title": "Tujhe dekha to ye jana sanam Kumar sanu live in …",
       "artist": "Lalat Harmony Events",
+      "album": "Golden 90s Classics",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/hqtmwQ_5uCk/hqdefault.jpg"
     },
     {
+      "id": "classic_old-099",
+      "youtubeId": "RU-k6NR2o8E",
       "videoId": "RU-k6NR2o8E",
       "title": "Tujhe Dekha To Yeh Jaana Sanam",
       "artist": "Instrumental Music Cover | Rinku Khan",
+      "album": "Instrumental Music Cover",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/RU-k6NR2o8E/hqdefault.jpg"
     },
     {
+      "id": "classic_old-100",
+      "youtubeId": "vCTW2GfcepQ",
       "videoId": "vCTW2GfcepQ",
       "title": "Tujhe Dekha Toh Song",
       "artist": "Dilwale Dulhania Le Jayenge | Shah Ruk…",
+      "album": "Dilwale Dulhania Le Jayenge",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/vCTW2GfcepQ/hqdefault.jpg"
     },
     {
+      "id": "classic_old-101",
+      "youtubeId": "eVnG_Rqfgg4",
       "videoId": "eVnG_Rqfgg4",
       "title": "Neele Neele Ambar Par - Male Version Lyric Video…",
       "artist": "Sridevi | Kishore Kumar",
+      "album": "Sridevi",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/eVnG_Rqfgg4/hqdefault.jpg"
     },
     {
+      "id": "classic_old-102",
+      "youtubeId": "9Eg4d56rt-U",
       "videoId": "9Eg4d56rt-U",
       "title": "Neele Neele Ambar Par (Male Version)",
       "artist": "Kishore Kumar - Topic",
+      "album": "Golden 90s Classics",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/9Eg4d56rt-U/hqdefault.jpg"
     },
     {
+      "id": "classic_old-103",
+      "youtubeId": "WzyBk0jKggw",
       "videoId": "WzyBk0jKggw",
       "title": "Neele Neele Amber Par Lyrical Video",
       "artist": "Kishore Kumar Superhit Song | Sridevi …",
+      "album": "Kishore Kumar Superhit Song",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/WzyBk0jKggw/hqdefault.jpg"
     },
     {
+      "id": "classic_old-104",
+      "youtubeId": "ThHYiiZTB1Y",
       "videoId": "ThHYiiZTB1Y",
       "title": "Neele neele ambar par Chand jab aaye ..#kishorek…",
       "artist": "Nackishore",
+      "album": "Golden 90s Classics",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/ThHYiiZTB1Y/hqdefault.jpg"
     },
     {
+      "id": "classic_old-105",
+      "youtubeId": "PFHczgD-lGM",
       "videoId": "PFHczgD-lGM",
       "title": "Saagar Jaisi Aankhonwali (From \"Saagar\")",
       "artist": "Kishore Kumar - Topic",
+      "album": "Golden 90s Classics",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/PFHczgD-lGM/hqdefault.jpg"
     },
     {
+      "id": "classic_old-106",
+      "youtubeId": "O-BBJgbNsv8",
       "videoId": "O-BBJgbNsv8",
       "title": "Neele Neele Ambar Par",
       "artist": "Abhijeet Kumar (Reverb Audio)",
+      "album": "Golden 90s Classics",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/O-BBJgbNsv8/hqdefault.jpg"
     },
     {
+      "id": "classic_old-107",
+      "youtubeId": "sv26LXD4GbI",
       "videoId": "sv26LXD4GbI",
       "title": "Jai Jai Shivshankar",
       "artist": "Vishal Dadlani, Benny Dayal | War",
+      "album": "Vishal Dadlani, Benny Dayal",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/sv26LXD4GbI/hqdefault.jpg"
     },
     {
+      "id": "classic_old-108",
+      "youtubeId": "w_2wRMG1mH8",
       "videoId": "w_2wRMG1mH8",
       "title": "Neele Neele Ambar Par (1983) [Slow & Reverb] - K…",
       "artist": "Slow Symphony",
+      "album": "Golden 90s Classics",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/w_2wRMG1mH8/hqdefault.jpg"
     },
     {
+      "id": "classic_old-109",
+      "youtubeId": "W78aOolYNwo",
       "videoId": "W78aOolYNwo",
       "title": "Neele Neele Ambar Par (Female Version)",
       "artist": "Kalaakaar (1983) | Moner Retro Vibes",
+      "album": "Kalaakaar (1983)",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/W78aOolYNwo/hqdefault.jpg"
     },
     {
+      "id": "classic_old-110",
+      "youtubeId": "fJCA1x-FtaA",
       "videoId": "fJCA1x-FtaA",
       "title": "Nihal का Version Of 'Neele Neele Ambar Par' है क…",
       "artist": "Indian Idol | Journey Till Now",
+      "album": "Indian Idol",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/fJCA1x-FtaA/hqdefault.jpg"
     },
     {
+      "id": "classic_old-111",
+      "youtubeId": "S3RHzeOCFHQ",
       "videoId": "S3RHzeOCFHQ",
       "title": "Neele Neele Ambar Par Guitar Instrumental with T…",
       "artist": "Kalakaar",
+      "album": "Golden 90s Classics",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/S3RHzeOCFHQ/hqdefault.jpg"
     },
     {
+      "id": "classic_old-112",
+      "youtubeId": "fruy3jllfes",
       "videoId": "fruy3jllfes",
       "title": "Kalakaar (1983) Hindi Full Length HD Movie || Ku…",
       "artist": "Eagle Home Entertainments",
+      "album": "Golden 90s Classics",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/fruy3jllfes/hqdefault.jpg"
     },
     {
+      "id": "classic_old-113",
+      "youtubeId": "4gbvQNPCt-I",
       "videoId": "4gbvQNPCt-I",
       "title": "Pyar Hume",
       "artist": "Mere Sapno Ki Rani Cover - Mashup | Aa…",
+      "album": "Mere Sapno Ki Rani Cover - Mashup",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/4gbvQNPCt-I/hqdefault.jpg"
     },
     {
+      "id": "classic_old-114",
+      "youtubeId": "CeO-2xTCDTU",
       "videoId": "CeO-2xTCDTU",
       "title": "Best Of Kishore Kumar",
       "artist": "Ek Ladki Bheegi Bhagi Si | Mere Mehboo…",
+      "album": "Ek Ladki Bheegi Bhagi Si",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/CeO-2xTCDTU/hqdefault.jpg"
     },
     {
+      "id": "classic_old-115",
+      "youtubeId": "ZEgipMHnw6I",
       "videoId": "ZEgipMHnw6I",
       "title": "Neele Neele Ambar par",
       "artist": "Acoustic Guitar instrumental",
+      "album": "Golden 90s Classics",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/ZEgipMHnw6I/hqdefault.jpg"
     },
     {
+      "id": "classic_old-116",
+      "youtubeId": "hL71wUbaHV4",
       "videoId": "hL71wUbaHV4",
       "title": "Kishore Kumar & Bappi Lahiri Hits",
       "artist": "Pag Ghunghroo Baandh | Aaj Rapat Jaaye…",
+      "album": "Pag Ghunghroo Baandh",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/hL71wUbaHV4/hqdefault.jpg"
     },
     {
+      "id": "classic_old-117",
+      "youtubeId": "LYLau8rZZws",
       "videoId": "LYLau8rZZws",
       "title": "#180:-Neele Neele Ambar Par Chand Jab Chaye || K…",
       "artist": "Meraki Sax",
+      "album": "Golden 90s Classics",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/LYLau8rZZws/hqdefault.jpg"
     },
     {
+      "id": "classic_old-118",
+      "youtubeId": "mdPFcsZ7Pjc",
       "videoId": "mdPFcsZ7Pjc",
       "title": "Kishore Kumar Hit",
       "artist": "Old Songs Kishore Kumar|  Kishore Kuma…",
+      "album": "Old Songs Kishore Kumar",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/mdPFcsZ7Pjc/hqdefault.jpg"
     },
     {
+      "id": "classic_old-119",
+      "youtubeId": "LHlaLfujm_k",
       "videoId": "LHlaLfujm_k",
       "title": "Neele Neele Ambar Par (Cover)",
       "artist": "Kishore Kumar | Kalaakaar | Sargam",
+      "album": "Kishore Kumar",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/LHlaLfujm_k/hqdefault.jpg"
     },
     {
+      "id": "classic_old-120",
+      "youtubeId": "EZIMrK0W7hs",
       "videoId": "EZIMrK0W7hs",
       "title": "Mere Sapno Ki Rani Kab Ayegi - New Version| Kish…",
       "artist": "Old songs remix",
+      "album": "Golden 90s Classics",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/EZIMrK0W7hs/hqdefault.jpg"
     },
     {
+      "id": "classic_old-121",
+      "youtubeId": "IrpRI8NyulE",
       "videoId": "IrpRI8NyulE",
       "title": "SANAM",
       "artist": "Mere Sapno Ki Rani",
+      "album": "Golden 90s Classics",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/IrpRI8NyulE/hqdefault.jpg"
     },
     {
+      "id": "classic_old-122",
+      "youtubeId": "7Ib33wy6OT4",
       "videoId": "7Ib33wy6OT4",
       "title": "Mere Sapnon Ki Rani - SANAM",
       "artist": "Lyrical Video",
+      "album": "Golden 90s Classics",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/7Ib33wy6OT4/hqdefault.jpg"
     },
     {
+      "id": "classic_old-123",
+      "youtubeId": "lGkqNVrgFWE",
       "videoId": "lGkqNVrgFWE",
       "title": "Selena Gomez - Same Old Love",
       "artist": "Mere Sapno Ki Rani Remix (Vidya Vox Ma…",
+      "album": "Golden 90s Classics",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/lGkqNVrgFWE/hqdefault.jpg"
     },
     {
+      "id": "classic_old-124",
+      "youtubeId": "mzIuhFx5W1o",
       "videoId": "mzIuhFx5W1o",
       "title": "Pal Pal Dil Ke Paas",
       "artist": "Retro Hit Songs | Kishore Kumar Romant…",
+      "album": "Retro Hit Songs",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/mzIuhFx5W1o/hqdefault.jpg"
     },
     {
+      "id": "classic_old-125",
+      "youtubeId": "Q0LMeOmRUy8",
       "videoId": "Q0LMeOmRUy8",
       "title": "Mere Sapno Ki Rani / Mor Swapner Sathi - Reloaded",
       "artist": "Kishore Kumar | Rajesh Khanna | Sumit …",
+      "album": "Kishore Kumar",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/Q0LMeOmRUy8/hqdefault.jpg"
     },
     {
+      "id": "classic_old-126",
+      "youtubeId": "Fpu7OjcxYvY",
       "videoId": "Fpu7OjcxYvY",
       "title": "Many Shades Of Rajesh Khanna",
       "artist": "O Mere Dil Ke Chain | Bheegi Bheegi Ra…",
+      "album": "O Mere Dil Ke Chain",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/Fpu7OjcxYvY/hqdefault.jpg"
     },
     {
+      "id": "classic_old-127",
+      "youtubeId": "g_pi4e7lLwE",
       "videoId": "g_pi4e7lLwE",
       "title": "Mere Sapno Ki Rani Remix",
       "artist": "Dj RawKing | Dj RawQueen | R S Visuals…",
+      "album": "Dj RawKing",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/g_pi4e7lLwE/hqdefault.jpg"
     },
     {
+      "id": "classic_old-128",
+      "youtubeId": "09pE6IqT1ug",
       "videoId": "09pE6IqT1ug",
       "title": "Mere Sapno Ki Rani",
       "artist": "film Instrumental by Veena Meerakrishna",
+      "album": "Golden 90s Classics",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/09pE6IqT1ug/hqdefault.jpg"
     },
     {
+      "id": "classic_old-129",
+      "youtubeId": "IXIgs15Uqf0",
       "videoId": "IXIgs15Uqf0",
       "title": "Mere Sapno Ki Rani X The Box [ slowed + reverb ]…",
       "artist": "AddieBle Musics",
+      "album": "Golden 90s Classics",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/IXIgs15Uqf0/hqdefault.jpg"
     },
     {
+      "id": "classic_old-130",
+      "youtubeId": "_q7Wz-N4oaQ",
       "videoId": "_q7Wz-N4oaQ",
       "title": "Lyrical: Pal Pal Dil Ke Paas (HD)",
       "artist": "Dharmendra & Rakhi",
+      "album": "Golden 90s Classics",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/_q7Wz-N4oaQ/hqdefault.jpg"
     },
     {
+      "id": "classic_old-131",
+      "youtubeId": "1tsCjcq0G-U",
       "videoId": "1tsCjcq0G-U",
       "title": "Aarambh Hai Prachand",
       "artist": "Piyush Mishra | Gulaal",
+      "album": "Piyush Mishra",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/1tsCjcq0G-U/hqdefault.jpg"
     },
     {
+      "id": "classic_old-132",
+      "youtubeId": "6yL7e60G17c",
       "videoId": "6yL7e60G17c",
       "title": "Mere Sapno Ki Rani with lyrics|मेरे सपनो की रानी…",
       "artist": "राजेश खन्ना | शर्मिला टैगोर | किशोर कु…",
+      "album": "राजेश खन्ना",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/6yL7e60G17c/hqdefault.jpg"
     },
     {
+      "id": "classic_old-133",
+      "youtubeId": "rWsJ79-TDqM",
       "videoId": "rWsJ79-TDqM",
       "title": "MERE SAPNO KI RANI -(Club Remix) - DJ Kalpesh Mu…",
       "artist": "Kishore Kumar | Aradhana | Mere Sapno …",
+      "album": "Kishore Kumar",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/rWsJ79-TDqM/hqdefault.jpg"
     },
     {
+      "id": "classic_old-134",
+      "youtubeId": "_70tVb5Ij0U",
       "videoId": "_70tVb5Ij0U",
       "title": "Mere Sapno Ki Rani",
       "artist": "Lyrical | Suniel Shetty | Hunter | Sur…",
+      "album": "Lyrical",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/_70tVb5Ij0U/hqdefault.jpg"
     },
     {
+      "id": "classic_old-135",
+      "youtubeId": "ZyNXJSgEdGM",
       "videoId": "ZyNXJSgEdGM",
       "title": "Mere Sapno Ki Rani",
       "artist": "Lyrics | Aradhana | Kishore Kumar Hit …",
+      "album": "Lyrics",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/ZyNXJSgEdGM/hqdefault.jpg"
     },
     {
+      "id": "classic_old-136",
+      "youtubeId": "-2UcIC_s05I",
       "videoId": "-2UcIC_s05I",
       "title": "Old 3D Song |Mere Sapno Ki Rani",
       "artist": "Aradhana",
+      "album": "Golden 90s Classics",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/-2UcIC_s05I/hqdefault.jpg"
     },
     {
+      "id": "classic_old-137",
+      "youtubeId": "C4o0maaZFWo",
       "videoId": "C4o0maaZFWo",
       "title": "Mere Sapno Ki Rani || Female Version || Mere Sap…",
       "artist": "Bijaya Official",
+      "album": "Golden 90s Classics",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/C4o0maaZFWo/hqdefault.jpg"
     },
     {
+      "id": "classic_old-138",
+      "youtubeId": "F5W9370GZ9s",
       "videoId": "F5W9370GZ9s",
       "title": "Neele Neele Ambar Par",
       "artist": "Kishore Kumar | Kalaakaar",
+      "album": "Kishore Kumar",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/F5W9370GZ9s/hqdefault.jpg"
     },
     {
+      "id": "classic_old-139",
+      "youtubeId": "PdelyWYIayk",
       "videoId": "PdelyWYIayk",
       "title": "Mere Sapno Ki Raani Kab Aayegi tu",
       "artist": "Aaradhana (1969)",
+      "album": "Golden 90s Classics",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/PdelyWYIayk/hqdefault.jpg"
     },
     {
+      "id": "classic_old-140",
+      "youtubeId": "Rod6fjR3MIY",
       "videoId": "Rod6fjR3MIY",
       "title": "Mere Sapno Ki Rani",
       "artist": "Aradhana | music pieces(Prelude/Interl…",
+      "album": "Aradhana",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/Rod6fjR3MIY/hqdefault.jpg"
     },
     {
+      "id": "classic_old-141",
+      "youtubeId": "AMuRRXCuy-4",
       "videoId": "AMuRRXCuy-4",
       "title": "Blackmail",
       "artist": "Pal Pal Dil Ke Paas Tum Rehti Ho",
+      "album": "Golden 90s Classics",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/AMuRRXCuy-4/hqdefault.jpg"
     },
     {
+      "id": "classic_old-142",
+      "youtubeId": "henP_m2wUqg",
       "videoId": "henP_m2wUqg",
       "title": "Mere Sapnon Ki Rani",
       "artist": "Kishore Kumar | Aradhana",
+      "album": "Kishore Kumar",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/henP_m2wUqg/hqdefault.jpg"
     },
     {
+      "id": "classic_old-143",
+      "youtubeId": "viKdF7sp_cY",
       "videoId": "viKdF7sp_cY",
       "title": "Pal Pal Dil Ke Paas (HD)",
       "artist": "Blackmail | Dharmendra & Rakhi | Bolly…",
+      "album": "Blackmail",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/viKdF7sp_cY/hqdefault.jpg"
     },
     {
+      "id": "classic_old-144",
+      "youtubeId": "vYGw1V2NSik",
       "videoId": "vYGw1V2NSik",
       "title": "Dil Ke Paas (Indian Version) Lyrical Video Song",
       "artist": "Arijit Singh & Tulsi Kumar",
+      "album": "Golden 90s Classics",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/vYGw1V2NSik/hqdefault.jpg"
     },
     {
+      "id": "classic_old-145",
+      "youtubeId": "cvQWzlNIjt8",
       "videoId": "cvQWzlNIjt8",
       "title": "Pal Pal Dil Ke Paas",
       "artist": "Dharmendra | Rakhee | Black Mail (1973…",
+      "album": "Dharmendra",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/cvQWzlNIjt8/hqdefault.jpg"
     },
     {
+      "id": "classic_old-146",
+      "youtubeId": "BulAS4su2CU",
       "videoId": "BulAS4su2CU",
       "title": "Gulabi Aankhen (Music Video) - SANAM",
       "artist": "Universally SANAM | Romantic Song",
+      "album": "Universally SANAM",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/BulAS4su2CU/hqdefault.jpg"
     },
     {
+      "id": "classic_old-147",
+      "youtubeId": "cC6UGlKN3PA",
       "videoId": "cC6UGlKN3PA",
       "title": "Pal Pal Dil Ke Paas (The Unwind Mix) by Mohammed…",
       "artist": "Strumm Sound",
+      "album": "Golden 90s Classics",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/cC6UGlKN3PA/hqdefault.jpg"
     },
     {
+      "id": "classic_old-148",
+      "youtubeId": "LsMEeJpFMD4",
       "videoId": "LsMEeJpFMD4",
       "title": "Gulabi aankhen jo teri dekhi   Unplugged cover b…",
       "artist": "vishesh goyal",
+      "album": "Golden 90s Classics",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/LsMEeJpFMD4/hqdefault.jpg"
     },
     {
+      "id": "classic_old-149",
+      "youtubeId": "QwLQ4_gkvsE",
       "videoId": "QwLQ4_gkvsE",
       "title": "Pal Pal Dil Ke Paas (Official Lyric Video)| Kish…",
       "artist": "Dharmendra,Rakhee,Shatrughan | Blackmail",
+      "album": "Dharmendra,Rakhee,Shatrughan",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/QwLQ4_gkvsE/hqdefault.jpg"
     },
     {
+      "id": "classic_old-150",
+      "youtubeId": "gA62xK4BqQE",
       "videoId": "gA62xK4BqQE",
       "title": "Yeh Shaam Mastani",
       "artist": "Kishore Kumar | Kati Patang",
+      "album": "Kishore Kumar",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/gA62xK4BqQE/hqdefault.jpg"
     },
     {
+      "id": "classic_old-151",
+      "youtubeId": "Vabo2KVaEwA",
       "videoId": "Vabo2KVaEwA",
       "title": "Pal Pal Dil Ke Paas",
       "artist": "Blackmail | Kishore Kumar | Dharmendra…",
+      "album": "Blackmail",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/Vabo2KVaEwA/hqdefault.jpg"
     },
     {
+      "id": "classic_old-152",
+      "youtubeId": "LjxNvViZxew",
       "videoId": "LjxNvViZxew",
       "title": "Pal Pal Dil Ke Paas Tum Rehti Ho",
       "artist": "Blackmail | Dharmendra | Rakhee | Supe…",
+      "album": "Blackmail",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/LjxNvViZxew/hqdefault.jpg"
     },
     {
+      "id": "classic_old-153",
+      "youtubeId": "xB8bPYEFlPA",
       "videoId": "xB8bPYEFlPA",
       "title": "Pal Pal Dil Ke Paas (From \"Blackmail\")",
       "artist": "Kishore Kumar - Topic",
+      "album": "Golden 90s Classics",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/xB8bPYEFlPA/hqdefault.jpg"
     },
     {
+      "id": "classic_old-154",
+      "youtubeId": "bwWprAAOyy8",
       "videoId": "bwWprAAOyy8",
       "title": "Kishore Kumar Hit Songs । Old Songs । Pal Pal Di…",
       "artist": "Versatile - Melody TM",
+      "album": "Golden 90s Classics",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/bwWprAAOyy8/hqdefault.jpg"
     },
     {
+      "id": "classic_old-155",
+      "youtubeId": "H60L40GbfFI",
       "videoId": "H60L40GbfFI",
       "title": "Kishor Live Pal pal dil ke paas",
       "artist": "Soham Oza",
+      "album": "Golden 90s Classics",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/H60L40GbfFI/hqdefault.jpg"
     },
     {
+      "id": "classic_old-156",
+      "youtubeId": "NtrEXzHT4pU",
       "videoId": "NtrEXzHT4pU",
       "title": "Gulabi Aankhen Jo Teri Dekhi Mohammed Rafi The T…",
       "artist": "MehboobChohanFanClub",
+      "album": "Golden 90s Classics",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/NtrEXzHT4pU/hqdefault.jpg"
     },
     {
+      "id": "classic_old-157",
+      "youtubeId": "d0JpdfOLXI0",
       "videoId": "d0JpdfOLXI0",
       "title": "Pal Pal Dil Ke Paas (from Blackmail)",
       "artist": "Kishore Kumar - Topic",
+      "album": "Golden 90s Classics",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/d0JpdfOLXI0/hqdefault.jpg"
     },
     {
+      "id": "classic_old-158",
+      "youtubeId": "f5dw3nafOuo",
       "videoId": "f5dw3nafOuo",
       "title": "Pal Pal Dil Ke Paas",
       "artist": "Lyrics | Kishore Kumar | Audio | Old S…",
+      "album": "Lyrics",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/f5dw3nafOuo/hqdefault.jpg"
     },
     {
+      "id": "classic_old-159",
+      "youtubeId": "Uw5_IzY_Ooc",
       "videoId": "Uw5_IzY_Ooc",
       "title": "Pal Pal Dil Ke Paas",
       "artist": "पल पल दिल के पास | Dharmendra, Rakhee …",
+      "album": "पल पल दिल के पास",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/Uw5_IzY_Ooc/hqdefault.jpg"
     },
     {
+      "id": "classic_old-160",
+      "youtubeId": "tJrdQmCHcKs",
       "videoId": "tJrdQmCHcKs",
       "title": "90s Kishore Kumar Superhits 🎶  O Mere Dil Ke Ch…",
       "artist": "Neelam Pragya Geet",
+      "album": "Golden 90s Classics",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/tJrdQmCHcKs/hqdefault.jpg"
     },
     {
+      "id": "classic_old-161",
+      "youtubeId": "hgi2MYAFgE8",
       "videoId": "hgi2MYAFgE8",
       "title": "SANAM",
       "artist": "Gulabi Aankhen",
+      "album": "Golden 90s Classics",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/hgi2MYAFgE8/hqdefault.jpg"
     },
     {
+      "id": "classic_old-162",
+      "youtubeId": "vKrBHzhBGOQ",
       "videoId": "vKrBHzhBGOQ",
       "title": "Kya Hua Tera Wada(Reprise) || Ashish Patil || Mo…",
       "artist": "Ashish Patil",
+      "album": "Golden 90s Classics",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/vKrBHzhBGOQ/hqdefault.jpg"
     },
     {
+      "id": "classic_old-163",
+      "youtubeId": "MTwtrF243kY",
       "videoId": "MTwtrF243kY",
       "title": "Mere Huzoor",
       "artist": "Rukh Se Zara Naqab Utha Do Mere Huzoor",
+      "album": "Golden 90s Classics",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/MTwtrF243kY/hqdefault.jpg"
     },
     {
+      "id": "classic_old-164",
+      "youtubeId": "6Z3DO-OFIjQ",
       "videoId": "6Z3DO-OFIjQ",
       "title": "Gulabi Aankhen Jo Teri Dekhi",
       "artist": "Rajesh Khanna, Nanda | The Train (1970…",
+      "album": "Rajesh Khanna, Nanda",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/6Z3DO-OFIjQ/hqdefault.jpg"
     },
     {
+      "id": "classic_old-165",
+      "youtubeId": "g3kbONxTpIo",
       "videoId": "g3kbONxTpIo",
       "title": "Gulabi Aankhen Lyrics Song",
       "artist": "Sanam Puri | Old Is Gold | Song | Dark…",
+      "album": "Sanam Puri",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/g3kbONxTpIo/hqdefault.jpg"
     },
     {
+      "id": "classic_old-166",
+      "youtubeId": "nWbBIf5_LTY",
       "videoId": "nWbBIf5_LTY",
       "title": "Gulabi Ankhen (From \"The Train\")",
       "artist": "Mohammed Rafi - Topic",
+      "album": "Golden 90s Classics",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/nWbBIf5_LTY/hqdefault.jpg"
     },
     {
+      "id": "classic_old-167",
+      "youtubeId": "ooeAxo1GMRw",
       "videoId": "ooeAxo1GMRw",
       "title": "Gulabi Ankhein Jo Teri Dekhi",
       "artist": "गुलाबी आँखे जो तेरी देखी from The Trai…",
+      "album": "Golden 90s Classics",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/ooeAxo1GMRw/hqdefault.jpg"
     },
     {
+      "id": "classic_old-168",
+      "youtubeId": "P_jKk7a-pXw",
       "videoId": "P_jKk7a-pXw",
       "title": "Roop Tera Mastana",
       "artist": "Kishore Kumar | Aradhana",
+      "album": "Kishore Kumar",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/P_jKk7a-pXw/hqdefault.jpg"
     },
     {
+      "id": "classic_old-169",
+      "youtubeId": "Xsn0QjMN3fM",
       "videoId": "Xsn0QjMN3fM",
       "title": "Gulabi Aankhen jo teri dekhi old song",
       "artist": "गुलाबी आँखें जो तेरी देखी | Mohammed R…",
+      "album": "गुलाबी आँखें जो तेरी देखी",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/Xsn0QjMN3fM/hqdefault.jpg"
     },
     {
+      "id": "classic_old-170",
+      "youtubeId": "o2F8_90L1b0",
       "videoId": "o2F8_90L1b0",
       "title": "O Mere Dil Ke Chain",
       "artist": "Kishore Kumar | Mere Jeevan Saathi",
+      "album": "Kishore Kumar",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/o2F8_90L1b0/hqdefault.jpg"
     },
     {
+      "id": "classic_old-171",
+      "youtubeId": "cIVkYSm7Orw",
       "videoId": "cIVkYSm7Orw",
       "title": "Kya Hua Tera Wada-Hum Kisise Kum Naheen 1977 Ful…",
       "artist": "Chand Lamhe Fursat Ke",
+      "album": "Golden 90s Classics",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/cIVkYSm7Orw/hqdefault.jpg"
     },
     {
+      "id": "classic_old-172",
+      "youtubeId": "fYPkIaIemAs",
       "videoId": "fYPkIaIemAs",
       "title": "Likhe Jo Khat Tujhe × O Mere Dil Ke Chain × Gula…",
       "artist": "Karwaan Official",
+      "album": "Golden 90s Classics",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/fYPkIaIemAs/hqdefault.jpg"
     },
     {
+      "id": "classic_old-173",
+      "youtubeId": "SLT4HF7nHKc",
       "videoId": "SLT4HF7nHKc",
       "title": "Gulabi Aankhen Jo Teri Dekhi",
       "artist": "The Train (1970) | Rajesh Khanna, Nand…",
+      "album": "The Train (1970)",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/SLT4HF7nHKc/hqdefault.jpg"
     },
     {
+      "id": "classic_old-174",
+      "youtubeId": "0clDXacCD9E",
       "videoId": "0clDXacCD9E",
       "title": "Gulabi Aankhen - Karaoke with scrolling Lyric",
       "artist": "Mohammed Rafi Karaoke | Hindi Sing Along",
+      "album": "Mohammed Rafi Karaoke",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/0clDXacCD9E/hqdefault.jpg"
     },
     {
+      "id": "classic_old-175",
+      "youtubeId": "4Nki0dXGt_o",
       "videoId": "4Nki0dXGt_o",
       "title": "GULABI AAKHEN",
       "artist": "गुलाबी आँखें जो| MOHD RAFI | SARVESH M…",
+      "album": "गुलाबी आँखें जो",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/4Nki0dXGt_o/hqdefault.jpg"
     },
     {
+      "id": "classic_old-176",
+      "youtubeId": "L6DgJVMzkZU",
       "videoId": "L6DgJVMzkZU",
       "title": "Gulabi Aakhen",
       "artist": "Piano Cover | Mohammed Rafi | Aakash D…",
+      "album": "Piano Cover",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/L6DgJVMzkZU/hqdefault.jpg"
     },
     {
+      "id": "classic_old-177",
+      "youtubeId": "JkdHB8S15Co",
       "videoId": "JkdHB8S15Co",
       "title": "Mohammad Rafi",
       "artist": "Gulabi Aankhen Jo Teri Dekhi.",
+      "album": "Golden 90s Classics",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/JkdHB8S15Co/hqdefault.jpg"
     },
     {
+      "id": "classic_old-178",
+      "youtubeId": "p8Tu9oj2ydw",
       "videoId": "p8Tu9oj2ydw",
       "title": "Gulabi Aankhein Jo Teri Dekhin",
       "artist": "Mohd. Rafi | R D Burman | Anand Bakshi…",
+      "album": "Mohd. Rafi",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/p8Tu9oj2ydw/hqdefault.jpg"
     },
     {
+      "id": "classic_old-179",
+      "youtubeId": "dG928sWk0_U",
       "videoId": "dG928sWk0_U",
       "title": "Pal Pal Dil Ke Paas",
       "artist": "Kishore Kumar | Blackmail",
+      "album": "Kishore Kumar",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/dG928sWk0_U/hqdefault.jpg"
     },
     {
+      "id": "classic_old-180",
+      "youtubeId": "JlxYbAodnjU",
       "videoId": "JlxYbAodnjU",
       "title": "Gulabi Aankhen Jo Teri Dekhi",
       "artist": "The Train (1970) | Rajesh Khanna, Nand…",
+      "album": "The Train (1970)",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/JlxYbAodnjU/hqdefault.jpg"
     },
     {
+      "id": "classic_old-181",
+      "youtubeId": "xDbK1eZYVzg",
       "videoId": "xDbK1eZYVzg",
       "title": "kya hua tera wada",
       "artist": "bollywoodstyle",
+      "album": "Golden 90s Classics",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/xDbK1eZYVzg/hqdefault.jpg"
     },
     {
+      "id": "classic_old-182",
+      "youtubeId": "Z5D1dhTMclI",
       "videoId": "Z5D1dhTMclI",
       "title": "Kya Hua Tera Wada with lyrics",
       "artist": "क्या हुआ तेरा वादा | Hum Kisise kum na…",
+      "album": "क्या हुआ तेरा वादा",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/Z5D1dhTMclI/hqdefault.jpg"
     },
     {
+      "id": "classic_old-183",
+      "youtubeId": "fyZ-sOHj-Vg",
       "videoId": "fyZ-sOHj-Vg",
       "title": "Kya Hua Tera Wada-Lyrical",
       "artist": "क्या हुआ तेरा वादा | Hum Kisise kum na…",
+      "album": "क्या हुआ तेरा वादा",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/fyZ-sOHj-Vg/hqdefault.jpg"
     },
     {
+      "id": "classic_old-184",
+      "youtubeId": "4gtXTXWBK4o",
       "videoId": "4gtXTXWBK4o",
       "title": "Kya Hua Tera Wada",
       "artist": "Pranav Chandran Covers | Hum Kisise Ku…",
+      "album": "Pranav Chandran Covers",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/4gtXTXWBK4o/hqdefault.jpg"
     },
     {
+      "id": "classic_old-185",
+      "youtubeId": "4-iO6c-JmN8",
       "videoId": "4-iO6c-JmN8",
       "title": "Ek Ladki Ko Dekha Toh Aisa Laga",
       "artist": "Kumar Sanu | 1942 A Love Story",
+      "album": "Kumar Sanu",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/4-iO6c-JmN8/hqdefault.jpg"
     },
     {
+      "id": "classic_old-186",
+      "youtubeId": "wHqKTmEkpBg",
       "videoId": "wHqKTmEkpBg",
       "title": "Ye Ladka Hay Allah Kaisa Hai Diwana",
       "artist": "Asha Bhosle | Mohammed Rafi | Hum Kisi…",
+      "album": "Asha Bhosle",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/wHqKTmEkpBg/hqdefault.jpg"
     },
     {
+      "id": "classic_old-187",
+      "youtubeId": "MGsw7CnqdJo",
       "videoId": "MGsw7CnqdJo",
       "title": "SANAM",
       "artist": "Kya Hua Tera Wada Pt. 2",
+      "album": "Golden 90s Classics",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/MGsw7CnqdJo/hqdefault.jpg"
     },
     {
+      "id": "classic_old-188",
+      "youtubeId": "uyjiK9QCU5U",
       "videoId": "uyjiK9QCU5U",
       "title": "Chand Mera Dil",
       "artist": "Ah Kya Mahfil Hai | Tum Kya Jano | Mil…",
+      "album": "Ah Kya Mahfil Hai",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/uyjiK9QCU5U/hqdefault.jpg"
     },
     {
+      "id": "classic_old-189",
+      "youtubeId": "8psAZcIOzEA",
       "videoId": "8psAZcIOzEA",
       "title": "Kya Hua Tera Wada with lyrics",
       "artist": "Mohammed Rafi | Hum Kisise kum nahi | …",
+      "album": "Mohammed Rafi",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/8psAZcIOzEA/hqdefault.jpg"
     },
     {
+      "id": "classic_old-190",
+      "youtubeId": "2beG3rwg2Ck",
       "videoId": "2beG3rwg2Ck",
       "title": "Sad Songs Of 70's",
       "artist": "Kya Hua Tera Vada | Tere Bina Zindagi …",
+      "album": "Kya Hua Tera Vada",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/2beG3rwg2Ck/hqdefault.jpg"
     },
     {
+      "id": "classic_old-191",
+      "youtubeId": "m7qCWlHdnr8",
       "videoId": "m7qCWlHdnr8",
       "title": "Kiya hua tera wada, atif aslam full lyrics",
       "artist": "masala music",
+      "album": "Golden 90s Classics",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/m7qCWlHdnr8/hqdefault.jpg"
     },
     {
+      "id": "classic_old-192",
+      "youtubeId": "yTlYMxf7K74",
       "videoId": "yTlYMxf7K74",
       "title": "Hum Kisise Kum Naheen",
       "artist": "Full Album Jukebox | Rishi Kapoor | Ka…",
+      "album": "Full Album Jukebox",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/yTlYMxf7K74/hqdefault.jpg"
     },
     {
+      "id": "classic_old-193",
+      "youtubeId": "KcZ9C6vWMIs",
       "videoId": "KcZ9C6vWMIs",
       "title": "Kya Hua Tera Wada",
       "artist": "Atif Aslam (Ai Cover)",
+      "album": "Golden 90s Classics",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/KcZ9C6vWMIs/hqdefault.jpg"
     },
     {
+      "id": "classic_old-194",
+      "youtubeId": "T8Y8c1iQ_uE",
       "videoId": "T8Y8c1iQ_uE",
       "title": "Pehla Nasha",
       "artist": "Udit Narayan, Sadhana Sargam | JJWS",
+      "album": "Udit Narayan, Sadhana Sargam",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/T8Y8c1iQ_uE/hqdefault.jpg"
     },
     {
+      "id": "classic_old-195",
+      "youtubeId": "13AaATy46YU",
       "videoId": "13AaATy46YU",
       "title": "Kya Hua Tera Wada ( Lyrics)",
       "artist": "Mohammad Rafi | Old song",
+      "album": "Mohammad Rafi",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/13AaATy46YU/hqdefault.jpg"
     },
     {
+      "id": "classic_old-196",
+      "youtubeId": "h34CiqQ51zs",
       "videoId": "h34CiqQ51zs",
       "title": "Kya Hua Tera Wada",
       "artist": "Mohammad Rafi | Hum Kisise Kum Nahi | …",
+      "album": "Mohammad Rafi",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/h34CiqQ51zs/hqdefault.jpg"
     },
     {
+      "id": "classic_old-197",
+      "youtubeId": "W6dKaCV-mJQ",
       "videoId": "W6dKaCV-mJQ",
       "title": "Kya Hua Tera Wada (1977)| Mohammad Rafi",
       "artist": "Hum Kisise Kum Naheen",
+      "album": "Golden 90s Classics",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/W6dKaCV-mJQ/hqdefault.jpg"
     },
     {
+      "id": "classic_old-198",
+      "youtubeId": "7shxWODIwqs",
       "videoId": "7shxWODIwqs",
       "title": "Kya Hua Tera Wada KARAOKE🎤Original Quality With…",
       "artist": "Gopi & Baby Gupta",
+      "album": "Golden 90s Classics",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/7shxWODIwqs/hqdefault.jpg"
     },
     {
+      "id": "classic_old-199",
+      "youtubeId": "zVUKtXI7xTM",
       "videoId": "zVUKtXI7xTM",
       "title": "Kya Hua Tera Wada-Lyrical",
       "artist": "क्या हुआ तेरा वादा | Hum Kisise kum na…",
+      "album": "क्या हुआ तेरा वादा",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/zVUKtXI7xTM/hqdefault.jpg"
     },
     {
+      "id": "classic_old-200",
+      "youtubeId": "g6C-GUy6a3s",
       "videoId": "g6C-GUy6a3s",
       "title": "KYA HUA TERA WAADA KARAOKE HINDI",
       "artist": "GEET SANGEET",
+      "album": "Golden 90s Classics",
       "category": "classic_old",
       "thumbnail": "https://i.ytimg.com/vi/g6C-GUy6a3s/hqdefault.jpg"
     }
   ],
   "lofi": [
     {
+      "id": "lofi-001",
+      "youtubeId": "ElZfdU54Cp8",
       "videoId": "ElZfdU54Cp8",
       "title": "Apna Bana Le - Bhediya",
       "artist": "Varun Dhawan, Kriti Sanon| Sachin-Jiga…",
+      "album": "Varun Dhawan, Kriti Sanon",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/ElZfdU54Cp8/hqdefault.jpg"
     },
     {
+      "id": "lofi-002",
+      "youtubeId": "BddP6PYo2gs",
       "videoId": "BddP6PYo2gs",
       "title": "Kesariya - Brahmāstra",
       "artist": "Ranbir Kapoor, Alia Bhatt | Pritam | A…",
+      "album": "Ranbir Kapoor, Alia Bhatt",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/BddP6PYo2gs/hqdefault.jpg"
     },
     {
+      "id": "lofi-003",
+      "youtubeId": "KUpwupYj_tY",
       "videoId": "KUpwupYj_tY",
       "title": "Tere Hawaale Laal Singh Chaddha",
       "artist": "Aamir,Kareena | Arijit,Shilpa | Pritam…",
+      "album": "Aamir,Kareena",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/KUpwupYj_tY/hqdefault.jpg"
     },
     {
+      "id": "lofi-004",
+      "youtubeId": "RLzC55ai0eo",
       "videoId": "RLzC55ai0eo",
       "title": "Heeriye Jasleen Royal ft Arijit Singh| Dulquer S…",
       "artist": "Jasleen Royal",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/RLzC55ai0eo/hqdefault.jpg"
     },
     {
+      "id": "lofi-005",
+      "youtubeId": "Grr0FlC8SQA",
       "videoId": "Grr0FlC8SQA",
       "title": "Kalank Title Track - Lyrical",
       "artist": "Alia Bhatt , Varun Dhawan | Arijit Sin…",
+      "album": "Alia Bhatt , Varun Dhawan",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/Grr0FlC8SQA/hqdefault.jpg"
     },
     {
+      "id": "lofi-006",
+      "youtubeId": "HrnrqYxYrbk",
       "videoId": "HrnrqYxYrbk",
       "title": "ANIMAL: SATRANGA(Song) Ranbir Kapoor,Rashmika|Sa…",
       "artist": "T-Series",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/HrnrqYxYrbk/hqdefault.jpg"
     },
     {
+      "id": "lofi-007",
+      "youtubeId": "Z1-qmKn7DQY",
       "videoId": "Z1-qmKn7DQY",
       "title": "Ve Maahi",
       "artist": "Kesari | Akshay Kumar & Parineeti Chop…",
+      "album": "Kesari",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/Z1-qmKn7DQY/hqdefault.jpg"
     },
     {
+      "id": "lofi-008",
+      "youtubeId": "mNuhKUOD_A0",
       "videoId": "mNuhKUOD_A0",
       "title": "Deva Deva",
       "artist": "Extended Film Version|Brahmāstra|Amita…",
+      "album": "Extended Film Version",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/mNuhKUOD_A0/hqdefault.jpg"
     },
     {
+      "id": "lofi-009",
+      "youtubeId": "6mr4cYJ7yew",
       "videoId": "6mr4cYJ7yew",
       "title": "Kesariya - Film Version",
       "artist": "Brahmāstra | Ranbir | Alia | Pritam | …",
+      "album": "Brahmāstra",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/6mr4cYJ7yew/hqdefault.jpg"
     },
     {
+      "id": "lofi-010",
+      "youtubeId": "zCGck2spPsU",
       "videoId": "zCGck2spPsU",
       "title": "Kesariya x Saibo Mashup",
       "artist": "Chillout Heart | Arijit Singh, Shreya …",
+      "album": "Chillout Heart",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/zCGck2spPsU/hqdefault.jpg"
     },
     {
+      "id": "lofi-011",
+      "youtubeId": "7Txv-r7ijT8",
       "videoId": "7Txv-r7ijT8",
       "title": "Arijit Singh Mashup 2023",
       "artist": "Amtee | Best Of Arijit Singh Songs | S…",
+      "album": "Amtee",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/7Txv-r7ijT8/hqdefault.jpg"
     },
     {
+      "id": "lofi-012",
+      "youtubeId": "UJ5J0cFZZTE",
       "videoId": "UJ5J0cFZZTE",
       "title": "Raabta - Arijit Singh",
       "artist": "Slowed + Reverb | Lyrics | Use Headpho…",
+      "album": "Slowed + Reverb",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/UJ5J0cFZZTE/hqdefault.jpg"
     },
     {
+      "id": "lofi-013",
+      "youtubeId": "CTgdRyg8aVE",
       "videoId": "CTgdRyg8aVE",
       "title": "Hawayein (slowed + reverb)",
       "artist": "arijit singh",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/CTgdRyg8aVE/hqdefault.jpg"
     },
     {
+      "id": "lofi-014",
+      "youtubeId": "TjXH_P7Khhg",
       "videoId": "TjXH_P7Khhg",
       "title": "VE KAMLEYA - ARIJIT SINGH &  SHREYA GOSHAL ( Lyr…",
       "artist": "Lyrical 7",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/TjXH_P7Khhg/hqdefault.jpg"
     },
     {
+      "id": "lofi-015",
+      "youtubeId": "W1S9AbHpWFY",
       "videoId": "W1S9AbHpWFY",
       "title": "Kesariya Full Song - Brahmastra",
       "artist": "Arijit Singh | Kesariya Tera Ishq Hai …",
+      "album": "Arijit Singh",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/W1S9AbHpWFY/hqdefault.jpg"
     },
     {
+      "id": "lofi-016",
+      "youtubeId": "BwiaxAos5cg",
       "videoId": "BwiaxAos5cg",
       "title": "O Maahi (Slowed + Reverb)",
       "artist": "Pritam, Arijit Singh | Dunki | SR Lofi",
+      "album": "Pritam, Arijit Singh",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/BwiaxAos5cg/hqdefault.jpg"
     },
     {
+      "id": "lofi-017",
+      "youtubeId": "vEe-UgJvUHE",
       "videoId": "vEe-UgJvUHE",
       "title": "Arijit Singh - Raabta (Lyrics Video)| Agent Vinod",
       "artist": "Saif Ali Khan , Kareena Kapoor Khan.",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/vEe-UgJvUHE/hqdefault.jpg"
     },
     {
+      "id": "lofi-018",
+      "youtubeId": "9uIIdCBRNRc",
       "videoId": "9uIIdCBRNRc",
       "title": "Ve Kamleya (Slowed + Reverb)",
       "artist": "Arijit Singh, Shreya Ghoshal | SR Lofi",
+      "album": "Arijit Singh, Shreya Ghoshal",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/9uIIdCBRNRc/hqdefault.jpg"
     },
     {
+      "id": "lofi-019",
+      "youtubeId": "0avk5g_9Cgk",
       "videoId": "0avk5g_9Cgk",
       "title": "Ve Kamleya (Slowed + Reverb)",
       "artist": "Arijit Singh, Shreya Ghoshal |",
+      "album": "Arijit Singh, Shreya Ghoshal",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/0avk5g_9Cgk/hqdefault.jpg"
     },
     {
+      "id": "lofi-020",
+      "youtubeId": "k6dGN3azeqo",
       "videoId": "k6dGN3azeqo",
       "title": "Kalank - Arijit Singh",
       "artist": "Lyrical Bam Hindi",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/k6dGN3azeqo/hqdefault.jpg"
     },
     {
+      "id": "lofi-021",
+      "youtubeId": "_iktURk0X-A",
       "videoId": "_iktURk0X-A",
       "title": "𝐏𝐡𝐢𝐫 𝐁𝐡𝐢 𝐓𝐮𝐦𝐤𝐨 𝐂𝐡𝐚𝐚𝐡𝐮𝐧𝐠𝐚💖",
       "artist": "𝐅𝐮𝐥𝐥 𝐒𝐨𝐧𝐠 | Arijit Singh | Arj…",
+      "album": "𝐅𝐮𝐥𝐥 𝐒𝐨𝐧𝐠",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/_iktURk0X-A/hqdefault.jpg"
     },
     {
+      "id": "lofi-022",
+      "youtubeId": "MJyKN-8UncM",
       "videoId": "MJyKN-8UncM",
       "title": "Shayad - Love Aaj Kal",
       "artist": "Kartik | Sara | Arushi | Pritam | Arij…",
+      "album": "Kartik",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/MJyKN-8UncM/hqdefault.jpg"
     },
     {
+      "id": "lofi-023",
+      "youtubeId": "HYUpNJJELeE",
       "videoId": "HYUpNJJELeE",
       "title": "Mehrama - Love Aaj Kal",
       "artist": "Kartik | Sara | Pritam | Darshan Raval…",
+      "album": "Kartik",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/HYUpNJJELeE/hqdefault.jpg"
     },
     {
+      "id": "lofi-024",
+      "youtubeId": "yRB0xbKDebo",
       "videoId": "yRB0xbKDebo",
       "title": "Haan Main Galat - Love Aaj Kal",
       "artist": "Kartik, Sara | Pritam | Arijit Singh |…",
+      "album": "Kartik, Sara",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/yRB0xbKDebo/hqdefault.jpg"
     },
     {
+      "id": "lofi-025",
+      "youtubeId": "EQxEms7gnqs",
       "videoId": "EQxEms7gnqs",
       "title": "Shayad (From \"Love Aaj Kal\")",
       "artist": "Arijit Singh - Topic",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/EQxEms7gnqs/hqdefault.jpg"
     },
     {
+      "id": "lofi-026",
+      "youtubeId": "97bFaxqvpnI",
       "videoId": "97bFaxqvpnI",
       "title": "Arijit Singh & Shreya Ghoshal",
       "artist": "Pal from \"Jalebi\"",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/97bFaxqvpnI/hqdefault.jpg"
     },
     {
+      "id": "lofi-027",
+      "youtubeId": "MtnsyzHoZGU",
       "videoId": "MtnsyzHoZGU",
       "title": "🥀\"Miloge kabhi Jo Tum\"🥀 (slowed Reverb) lofi R…",
       "artist": "Lucky Edits",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/MtnsyzHoZGU/hqdefault.jpg"
     },
     {
+      "id": "lofi-028",
+      "youtubeId": "ceTSEVpRFnM",
       "videoId": "ceTSEVpRFnM",
       "title": "Kabhi Toh Paas Mere Aao ( Slowed + Reverb ) Lofi…",
       "artist": "Official",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/ceTSEVpRFnM/hqdefault.jpg"
     },
     {
+      "id": "lofi-029",
+      "youtubeId": "9-LH8ABADdo",
       "videoId": "9-LH8ABADdo",
       "title": "Shayad - Chaahat Kasam Nahi Hai",
       "artist": "Pritam | Arijit Singh",
+      "album": "Pritam",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/9-LH8ABADdo/hqdefault.jpg"
     },
     {
+      "id": "lofi-030",
+      "youtubeId": "EEnlczCd1v4",
       "videoId": "EEnlczCd1v4",
       "title": "Hai Dil Ye Mera (Slowed + Reverb)",
       "artist": "Arijit Singh | Hate Story 2 | SR Lofi",
+      "album": "Arijit Singh",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/EEnlczCd1v4/hqdefault.jpg"
     },
     {
+      "id": "lofi-031",
+      "youtubeId": "vGHa_VcAIxM",
       "videoId": "vGHa_VcAIxM",
       "title": "Shayad",
       "artist": "Lockdown Version | Pritam | Arijit",
+      "album": "Lockdown Version",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/vGHa_VcAIxM/hqdefault.jpg"
     },
     {
+      "id": "lofi-032",
+      "youtubeId": "KeSeFHfSqys",
       "videoId": "KeSeFHfSqys",
       "title": "Phir bhi Tumko Chahunga - Sad Version",
       "artist": "slowed + reverbed + rain | Arijit Sing…",
+      "album": "slowed + reverbed + rain",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/KeSeFHfSqys/hqdefault.jpg"
     },
     {
+      "id": "lofi-033",
+      "youtubeId": "XtBsUXGTVZ0",
       "videoId": "XtBsUXGTVZ0",
       "title": "Rahogi Meri - Official Lyric Video",
       "artist": "Love Aaj Kal | Kartik | Sara | Pritam …",
+      "album": "Love Aaj Kal",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/XtBsUXGTVZ0/hqdefault.jpg"
     },
     {
+      "id": "lofi-034",
+      "youtubeId": "hk5IqAhOrnY",
       "videoId": "hk5IqAhOrnY",
       "title": "Wajah Tum Ho (Slowed + Reverb)",
       "artist": "Armaan Malik | Hate Story 3 | SR Lofi",
+      "album": "Armaan Malik",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/hk5IqAhOrnY/hqdefault.jpg"
     },
     {
+      "id": "lofi-035",
+      "youtubeId": "sK1v-XxbSyE",
       "videoId": "sK1v-XxbSyE",
       "title": "Hamaari Adhuri Kahani || slowed and reverb || 𝟷…",
       "artist": "1st soul",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/sK1v-XxbSyE/hqdefault.jpg"
     },
     {
+      "id": "lofi-036",
+      "youtubeId": "rTvVuLoOq0I",
       "videoId": "rTvVuLoOq0I",
       "title": "Milne Hai Mujhse Aayi - Lofi (Slowed + Reverb)",
       "artist": "Arijit Singh | SR Lofi",
+      "album": "Arijit Singh",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/rTvVuLoOq0I/hqdefault.jpg"
     },
     {
+      "id": "lofi-037",
+      "youtubeId": "xSGL4bM2jC8",
       "videoId": "xSGL4bM2jC8",
       "title": "Hamdard",
       "artist": "[ Slowed+Reverb ] | Ek Villain | Ariji…",
+      "album": "[ Slowed+Reverb ]",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/xSGL4bM2jC8/hqdefault.jpg"
     },
     {
+      "id": "lofi-038",
+      "youtubeId": "m-e6lZuf5wc",
       "videoId": "m-e6lZuf5wc",
       "title": "Saware (Slowed+Reverb)",
       "artist": "Arijit Singh |",
+      "album": "Arijit Singh",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/m-e6lZuf5wc/hqdefault.jpg"
     },
     {
+      "id": "lofi-039",
+      "youtubeId": "zik32kzJBHc",
       "videoId": "zik32kzJBHc",
       "title": "Phir Bhi Tumko Chaahunga [Slowed+Reverb] Arijit …",
       "artist": "Textaudio | Lyrics",
+      "album": "Textaudio",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/zik32kzJBHc/hqdefault.jpg"
     },
     {
+      "id": "lofi-040",
+      "youtubeId": "ilNt2bikxDI",
       "videoId": "ilNt2bikxDI",
       "title": "Anuv Jain",
       "artist": "JO TUM MERE HO",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/ilNt2bikxDI/hqdefault.jpg"
     },
     {
+      "id": "lofi-041",
+      "youtubeId": "gJLVTKhTnog",
       "videoId": "gJLVTKhTnog",
       "title": "Anuv Jain",
       "artist": "HUSN",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/gJLVTKhTnog/hqdefault.jpg"
     },
     {
+      "id": "lofi-042",
+      "youtubeId": "bP8ATWCvqzw",
       "videoId": "bP8ATWCvqzw",
       "title": "Anuv Jain X Lost Stories - Arz Kiya Hai",
       "artist": "Coke Studio Bharat",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/bP8ATWCvqzw/hqdefault.jpg"
     },
     {
+      "id": "lofi-043",
+      "youtubeId": "2FhgKp_lfJQ",
       "videoId": "2FhgKp_lfJQ",
       "title": "Anuv Jain",
       "artist": "AFSOS ft. AP Dhillon (Official Visuali…",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/2FhgKp_lfJQ/hqdefault.jpg"
     },
     {
+      "id": "lofi-044",
+      "youtubeId": "PJWemSzExXs",
       "videoId": "PJWemSzExXs",
       "title": "BAARISHEIN (Studio) Anuv Jain",
       "artist": "Anuv Jain",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/PJWemSzExXs/hqdefault.jpg"
     },
     {
+      "id": "lofi-045",
+      "youtubeId": "wmUJwQNGK3k",
       "videoId": "wmUJwQNGK3k",
       "title": "Anuv Jain",
       "artist": "JO TUM MERE HO",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/wmUJwQNGK3k/hqdefault.jpg"
     },
     {
+      "id": "lofi-046",
+      "youtubeId": "vA86QFrXoho",
       "videoId": "vA86QFrXoho",
       "title": "Anuv Jain",
       "artist": "ALAG AASMAAN (a song on the ukulele)",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/vA86QFrXoho/hqdefault.jpg"
     },
     {
+      "id": "lofi-047",
+      "youtubeId": "SmaY7RfBgas",
       "videoId": "SmaY7RfBgas",
       "title": "Anuv Jain",
       "artist": "GUL (Studio)",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/SmaY7RfBgas/hqdefault.jpg"
     },
     {
+      "id": "lofi-048",
+      "youtubeId": "bL6dJjxm0x0",
       "videoId": "bL6dJjxm0x0",
       "title": "Let Her Go x Husn (Gravero Mashup)",
       "artist": "Anuv Jain",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/bL6dJjxm0x0/hqdefault.jpg"
     },
     {
+      "id": "lofi-049",
+      "youtubeId": "-BJt4fCAtZE",
       "videoId": "-BJt4fCAtZE",
       "title": "Arz Kiya Hai",
       "artist": "Coke Studio Bharat",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/-BJt4fCAtZE/hqdefault.jpg"
     },
     {
+      "id": "lofi-050",
+      "youtubeId": "P0NfnFYpENo",
       "videoId": "P0NfnFYpENo",
       "title": "BAARISHEIN Song",
       "artist": "Arko Feat. Atif Aslam  & Nushrat Bharu…",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/P0NfnFYpENo/hqdefault.jpg"
     },
     {
+      "id": "lofi-051",
+      "youtubeId": "0IIJxkDtkHY",
       "videoId": "0IIJxkDtkHY",
       "title": "Anuv Jain",
       "artist": "HUSN",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/0IIJxkDtkHY/hqdefault.jpg"
     },
     {
+      "id": "lofi-052",
+      "youtubeId": "NLKwRW2y-sg",
       "videoId": "NLKwRW2y-sg",
       "title": "Anuv Jain",
       "artist": "BAARISHEIN (ACOUSTIC)",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/NLKwRW2y-sg/hqdefault.jpg"
     },
     {
+      "id": "lofi-053",
+      "youtubeId": "_mR6bY-ndso",
       "videoId": "_mR6bY-ndso",
       "title": "Husn Mashup (Extended)",
       "artist": "Anuv Jain | Let Her Go X Husn X Choo L…",
+      "album": "Anuv Jain",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/_mR6bY-ndso/hqdefault.jpg"
     },
     {
+      "id": "lofi-054",
+      "youtubeId": "JuXuakMtsMQ",
       "videoId": "JuXuakMtsMQ",
       "title": "Departure Lane X Wishes X Afsos - Talha Anjum Ft…",
       "artist": "DJ Sumit Rajwanshi",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/JuXuakMtsMQ/hqdefault.jpg"
     },
     {
+      "id": "lofi-055",
+      "youtubeId": "tYqZK7bq5Bs",
       "videoId": "tYqZK7bq5Bs",
       "title": "Baarishein",
       "artist": "Anuv Jain - Topic",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/tYqZK7bq5Bs/hqdefault.jpg"
     },
     {
+      "id": "lofi-056",
+      "youtubeId": "V_cZa8Ice2w",
       "videoId": "V_cZa8Ice2w",
       "title": "Snap x Baarishen - Mashup (Full Version)",
       "artist": "Gravero & TP",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/V_cZa8Ice2w/hqdefault.jpg"
     },
     {
+      "id": "lofi-057",
+      "youtubeId": "jKqCewZvECA",
       "videoId": "jKqCewZvECA",
       "title": "ARZ KIYA HAI - Anuv Jain",
       "artist": "With Translation | Coke Studio | Anuv …",
+      "album": "With Translation",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/jKqCewZvECA/hqdefault.jpg"
     },
     {
+      "id": "lofi-058",
+      "youtubeId": "LIEiEwpEhWM",
       "videoId": "LIEiEwpEhWM",
       "title": "Arz Kiya Hai  -  Anuv Jain",
       "artist": "Aise tu lagay ki gulaab hai 🌹, aur wa…",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/LIEiEwpEhWM/hqdefault.jpg"
     },
     {
+      "id": "lofi-059",
+      "youtubeId": "8erle22S6x0",
       "videoId": "8erle22S6x0",
       "title": "Best of Anuv Jain 2024",
       "artist": "Top 5 Songs of Anuv Jain | Husn | Jo T…",
+      "album": "Top 5 Songs of Anuv Jain",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/8erle22S6x0/hqdefault.jpg"
     },
     {
+      "id": "lofi-060",
+      "youtubeId": "usvVGXFIpTM",
       "videoId": "usvVGXFIpTM",
       "title": "Jo Tum Mere Ho",
       "artist": "Anuv Jain - Topic",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/usvVGXFIpTM/hqdefault.jpg"
     },
     {
+      "id": "lofi-061",
+      "youtubeId": "_deqdZmKzyg",
       "videoId": "_deqdZmKzyg",
       "title": "Husn",
       "artist": "Anuv Jain - Topic",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/_deqdZmKzyg/hqdefault.jpg"
     },
     {
+      "id": "lofi-062",
+      "youtubeId": "uK7Ovgs44Uk",
       "videoId": "uK7Ovgs44Uk",
       "title": "Jo Tum Mere Ho (Slowed + Reverb) Anuv Jain",
       "artist": "Ameen Fahim",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/uK7Ovgs44Uk/hqdefault.jpg"
     },
     {
+      "id": "lofi-063",
+      "youtubeId": "iOIF74Hk80A",
       "videoId": "iOIF74Hk80A",
       "title": "Kasoor (Acoustic) - Prateek Kuhad",
       "artist": "Official Lyric Video 🌻✨",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/iOIF74Hk80A/hqdefault.jpg"
     },
     {
+      "id": "lofi-064",
+      "youtubeId": "2Vv-BfVoq4g",
       "videoId": "2Vv-BfVoq4g",
       "title": "Dangal Title Track",
       "artist": "Daler Mehndi, Pritam | Dangal",
+      "album": "Daler Mehndi, Pritam",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/2Vv-BfVoq4g/hqdefault.jpg"
     },
     {
+      "id": "lofi-065",
+      "youtubeId": "HhoNUPDVlbc",
       "videoId": "HhoNUPDVlbc",
       "title": "Prateek Kuhad",
       "artist": "Kasoor (Acoustic) (Bashaar Remix) Lyri…",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/HhoNUPDVlbc/hqdefault.jpg"
     },
     {
+      "id": "lofi-066",
+      "youtubeId": "4gpZU24m3nQ",
       "videoId": "4gpZU24m3nQ",
       "title": "kasoor",
       "artist": "prateek kuhad (slowed+reverb) (indian …",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/4gpZU24m3nQ/hqdefault.jpg"
     },
     {
+      "id": "lofi-067",
+      "youtubeId": "0fPStMCNSy8",
       "videoId": "0fPStMCNSy8",
       "title": "Kasoor Lo-Fi",
       "artist": "Darsh D Shah - Topic",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/0fPStMCNSy8/hqdefault.jpg"
     },
     {
+      "id": "lofi-068",
+      "youtubeId": "93oRx73yfAs",
       "videoId": "93oRx73yfAs",
       "title": "Kasoor - Prateek Kuhad",
       "artist": "Lofi Flip Cover | Nvneel",
+      "album": "Lofi Flip Cover",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/93oRx73yfAs/hqdefault.jpg"
     },
     {
+      "id": "lofi-069",
+      "youtubeId": "LsIDBebTAa4",
       "videoId": "LsIDBebTAa4",
       "title": "prateek kuhad",
       "artist": "kasoor acoustic (slowed & reverb) LoFi…",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/LsIDBebTAa4/hqdefault.jpg"
     },
     {
+      "id": "lofi-070",
+      "youtubeId": "LPDLr4UiVIQ",
       "videoId": "LPDLr4UiVIQ",
       "title": "Tute Makan / Anuv Jain -- GUL Song/ ( Slowed Rev…",
       "artist": "sad me",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/LPDLr4UiVIQ/hqdefault.jpg"
     },
     {
+      "id": "lofi-071",
+      "youtubeId": "i1IDh_ZoJgI",
       "videoId": "i1IDh_ZoJgI",
       "title": "Alag Aasmaan",
       "artist": "Anuv Jain - Topic",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/i1IDh_ZoJgI/hqdefault.jpg"
     },
     {
+      "id": "lofi-072",
+      "youtubeId": "1gEoVHEr_hU",
       "videoId": "1gEoVHEr_hU",
       "title": "Husn (Slowed + Reverb)",
       "artist": "Anuv Jain | SR Lofi",
+      "album": "Anuv Jain",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/1gEoVHEr_hU/hqdefault.jpg"
     },
     {
+      "id": "lofi-073",
+      "youtubeId": "GVQu3ym-Uf0",
       "videoId": "GVQu3ym-Uf0",
       "title": "Husn X Let Her Go X Choo Lo",
       "artist": "SID Gudlekar | Anuv Jain | Passenger |…",
+      "album": "SID Gudlekar",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/GVQu3ym-Uf0/hqdefault.jpg"
     },
     {
+      "id": "lofi-074",
+      "youtubeId": "J3m3uptDf0Q",
       "videoId": "J3m3uptDf0Q",
       "title": "Anuv Jain",
       "artist": "Alag Aasmaan (Acoustic)",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/J3m3uptDf0Q/hqdefault.jpg"
     },
     {
+      "id": "lofi-075",
+      "youtubeId": "mEmwd17xpAk",
       "videoId": "mEmwd17xpAk",
       "title": "Baarishein (Acoustic)",
       "artist": "Anuv Jain - Topic",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/mEmwd17xpAk/hqdefault.jpg"
     },
     {
+      "id": "lofi-076",
+      "youtubeId": "vMtg9hbtvqM",
       "videoId": "vMtg9hbtvqM",
       "title": "🌟 Best of Anuv Jain",
       "artist": "Soulful Indie Vibes | Timeless Melodie…",
+      "album": "Soulful Indie Vibes",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/vMtg9hbtvqM/hqdefault.jpg"
     },
     {
+      "id": "lofi-077",
+      "youtubeId": "NWDOrQ1hGBE",
       "videoId": "NWDOrQ1hGBE",
       "title": "Alag Aasmaan (Acoustic)",
       "artist": "Anuv Jain - Topic",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/NWDOrQ1hGBE/hqdefault.jpg"
     },
     {
+      "id": "lofi-078",
+      "youtubeId": "BmwiS-THm34",
       "videoId": "BmwiS-THm34",
       "title": "Anuv Jain",
       "artist": "ALAG AASMAAN ( Lyrics )",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/BmwiS-THm34/hqdefault.jpg"
     },
     {
+      "id": "lofi-079",
+      "youtubeId": "TS84-uinbdc",
       "videoId": "TS84-uinbdc",
       "title": "GUL Lyrics (Studio) - Anuv Jain Lyrics",
       "artist": "Gul Lyrics Anuv Jain",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/TS84-uinbdc/hqdefault.jpg"
     },
     {
+      "id": "lofi-080",
+      "youtubeId": "6fTilfKvxbo",
       "videoId": "6fTilfKvxbo",
       "title": "Baarishein",
       "artist": "Anuv Jain.",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/6fTilfKvxbo/hqdefault.jpg"
     },
     {
+      "id": "lofi-081",
+      "youtubeId": "5Gggsqvd4w4",
       "videoId": "5Gggsqvd4w4",
       "title": "AFSOS",
       "artist": "Anuv Jain , AP Dillon (slowed+reverb) …",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/5Gggsqvd4w4/hqdefault.jpg"
     },
     {
+      "id": "lofi-082",
+      "youtubeId": "0GwYr5jrw48",
       "videoId": "0GwYr5jrw48",
       "title": "Jo Tum Mera Ho (Lofi Song)",
       "artist": "Slowed+Reverb | Anuv Jain| @srlofi71 @…",
+      "album": "Slowed+Reverb",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/0GwYr5jrw48/hqdefault.jpg"
     },
     {
+      "id": "lofi-083",
+      "youtubeId": "0P3Gt-60yLc",
       "videoId": "0P3Gt-60yLc",
       "title": "Anuv Jain",
       "artist": "MISHRI (Studio)",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/0P3Gt-60yLc/hqdefault.jpg"
     },
     {
+      "id": "lofi-084",
+      "youtubeId": "YmUptL9VSdg",
       "videoId": "YmUptL9VSdg",
       "title": "~ANUV JAIN best songs for 45 minutes straight ||…",
       "artist": "Sound DOSE",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/YmUptL9VSdg/hqdefault.jpg"
     },
     {
+      "id": "lofi-085",
+      "youtubeId": "n9W6WrDWQLU",
       "videoId": "n9W6WrDWQLU",
       "title": "Anuv Jain",
       "artist": "MISHRI (Slowed + Reverb)",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/n9W6WrDWQLU/hqdefault.jpg"
     },
     {
+      "id": "lofi-086",
+      "youtubeId": "2o7oC_A7TFU",
       "videoId": "2o7oC_A7TFU",
       "title": "Anuv Jain",
       "artist": "MISHRI (Live) @Bacardi NH7 Weekender 2…",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/2o7oC_A7TFU/hqdefault.jpg"
     },
     {
+      "id": "lofi-087",
+      "youtubeId": "MIcZU1fobg4",
       "videoId": "MIcZU1fobg4",
       "title": "MISHRI",
       "artist": "Unplugged Karaoke | Anuv Jain",
+      "album": "Unplugged Karaoke",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/MIcZU1fobg4/hqdefault.jpg"
     },
     {
+      "id": "lofi-088",
+      "youtubeId": "LFiofrZKNJE",
       "videoId": "LFiofrZKNJE",
       "title": "Mishri Lofi flip",
       "artist": "Scribbled Music - Topic",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/LFiofrZKNJE/hqdefault.jpg"
     },
     {
+      "id": "lofi-089",
+      "youtubeId": "JP9XJ7x3bEU",
       "videoId": "JP9XJ7x3bEU",
       "title": "MISHRI - ANUV JAIN",
       "artist": "KARAOKE VERSION (with lyrics in the de…",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/JP9XJ7x3bEU/hqdefault.jpg"
     },
     {
+      "id": "lofi-090",
+      "youtubeId": "oQPfpNzmXnM",
       "videoId": "oQPfpNzmXnM",
       "title": "Mishri",
       "artist": "Anuv Jain But It's Lo-Fi HipHop Mix",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/oQPfpNzmXnM/hqdefault.jpg"
     },
     {
+      "id": "lofi-091",
+      "youtubeId": "GZZovoe1dpM",
       "videoId": "GZZovoe1dpM",
       "title": "Anuv Jain- Mishri but you're listening to it liv…",
       "artist": "ZAKI FIRDAUSI",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/GZZovoe1dpM/hqdefault.jpg"
     },
     {
+      "id": "lofi-092",
+      "youtubeId": "LY1QEPLXAFk",
       "videoId": "LY1QEPLXAFk",
       "title": "Mishri",
       "artist": "Lofi Mix (Slowed + Reverb) | @anuvjain…",
+      "album": "Lofi Mix (Slowed + Reverb)",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/LY1QEPLXAFk/hqdefault.jpg"
     },
     {
+      "id": "lofi-093",
+      "youtubeId": "sm91cOlOodY",
       "videoId": "sm91cOlOodY",
       "title": "Mishri Cover LOFI",
       "artist": "Swattrex - Topic",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/sm91cOlOodY/hqdefault.jpg"
     },
     {
+      "id": "lofi-094",
+      "youtubeId": "p_K1HiTNZN8",
       "videoId": "p_K1HiTNZN8",
       "title": "Anuv Jain- Mishri (Original Harmonies)",
       "artist": "one hour long soothing loop",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/p_K1HiTNZN8/hqdefault.jpg"
     },
     {
+      "id": "lofi-095",
+      "youtubeId": "Bh5ZRBjgkTs",
       "videoId": "Bh5ZRBjgkTs",
       "title": "Jo Tum Mere Ho♥️✨ [Slowed+Reverb] Like",
       "artist": "Share | Subscribe Us!!",
+      "album": "Share",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/Bh5ZRBjgkTs/hqdefault.jpg"
     },
     {
+      "id": "lofi-096",
+      "youtubeId": "FVfnQ3RHi-M",
       "videoId": "FVfnQ3RHi-M",
       "title": "mishri ~ anuv jain",
       "artist": "(s l o w e d + r e v e r b e d) | spec…",
+      "album": "(s l o w e d + r e v e r b e d)",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/FVfnQ3RHi-M/hqdefault.jpg"
     },
     {
+      "id": "lofi-097",
+      "youtubeId": "ygMbkWRKme4",
       "videoId": "ygMbkWRKme4",
       "title": "Best of ANUV JAIN 2025",
       "artist": "Top 5 songs of Anuv Jain |Husn | Jo tu…",
+      "album": "Top 5 songs of Anuv Jain",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/ygMbkWRKme4/hqdefault.jpg"
     },
     {
+      "id": "lofi-098",
+      "youtubeId": "_9QUykQ2xB8",
       "videoId": "_9QUykQ2xB8",
       "title": "Mishri",
       "artist": "Anuv Jain (Lofi Flip) 🤍",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/_9QUykQ2xB8/hqdefault.jpg"
     },
     {
+      "id": "lofi-099",
+      "youtubeId": "-3KT1f7WZIo",
       "videoId": "-3KT1f7WZIo",
       "title": "Afsos",
       "artist": "Anuv Jain - Topic",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/-3KT1f7WZIo/hqdefault.jpg"
     },
     {
+      "id": "lofi-100",
+      "youtubeId": "9et5qzuzbQM",
       "videoId": "9et5qzuzbQM",
       "title": "RIHA by Anuv Jain (Studio)",
       "artist": "Anuv Jain",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/9et5qzuzbQM/hqdefault.jpg"
     },
     {
+      "id": "lofi-101",
+      "youtubeId": "9fKQJcbd-jY",
       "videoId": "9fKQJcbd-jY",
       "title": "Anuv Jain",
       "artist": "INAAM",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/9fKQJcbd-jY/hqdefault.jpg"
     },
     {
+      "id": "lofi-102",
+      "youtubeId": "Y2zc2IeVX_g",
       "videoId": "Y2zc2IeVX_g",
       "title": "OCEAN by Anuv Jain (a song on the ukulele)",
       "artist": "Anuv Jain",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/Y2zc2IeVX_g/hqdefault.jpg"
     },
     {
+      "id": "lofi-103",
+      "youtubeId": "gfEKRoO-pOU",
       "videoId": "gfEKRoO-pOU",
       "title": "Let Her Go X Husn",
       "artist": "Anuv Jain |Gravero Mashup",
+      "album": "Anuv Jain",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/gfEKRoO-pOU/hqdefault.jpg"
     },
     {
+      "id": "lofi-104",
+      "youtubeId": "pdL1imksSqY",
       "videoId": "pdL1imksSqY",
       "title": "Husn Mashup",
       "artist": "Anuv Jain | Let Her Go X Husn X Choo L…",
+      "album": "Anuv Jain",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/pdL1imksSqY/hqdefault.jpg"
     },
     {
+      "id": "lofi-105",
+      "youtubeId": "AX6OrbgS8lI",
       "videoId": "AX6OrbgS8lI",
       "title": "Tu Hai Kahan by AUR",
       "artist": "تو ہے کہاں",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/AX6OrbgS8lI/hqdefault.jpg"
     },
     {
+      "id": "lofi-106",
+      "youtubeId": "A7NDb0iDZd0",
       "videoId": "A7NDb0iDZd0",
       "title": "Tu Hai Kahan by AUR",
       "artist": "تو ہے کہاں feat. ZAYN",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/A7NDb0iDZd0/hqdefault.jpg"
     },
     {
+      "id": "lofi-107",
+      "youtubeId": "aDlv2UX1lA8",
       "videoId": "aDlv2UX1lA8",
       "title": "Mein Zinda Hoon Lekin Kahan Zindagi Hai",
       "artist": "(Lofi Remake)",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/aDlv2UX1lA8/hqdefault.jpg"
     },
     {
+      "id": "lofi-108",
+      "youtubeId": "sxCVdh2PHcM",
       "videoId": "sxCVdh2PHcM",
       "title": "Jaane  tu kahan Hai",
       "artist": "Slowed-Reverb | Lofi",
+      "album": "Slowed-Reverb",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/sxCVdh2PHcM/hqdefault.jpg"
     },
     {
+      "id": "lofi-109",
+      "youtubeId": "TsBP6In4dtM",
       "videoId": "TsBP6In4dtM",
       "title": "Mein Zinda Hoon Lekin Kahan Zindagi Hai (Lofi) s…",
       "artist": "Tu jo nahin\" | Glenn John | Pritam",
+      "album": "Tu jo nahin\"",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/TsBP6In4dtM/hqdefault.jpg"
     },
     {
+      "id": "lofi-110",
+      "youtubeId": "gf8H9gtD4JI",
       "videoId": "gf8H9gtD4JI",
       "title": "Tu Hai Kahan || Lofi #edit #lofi #music #youtube…",
       "artist": "Zenitsuu",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/gf8H9gtD4JI/hqdefault.jpg"
     },
     {
+      "id": "lofi-111",
+      "youtubeId": "W0dmYnZ9_hE",
       "videoId": "W0dmYnZ9_hE",
       "title": "Sultan Title Track",
       "artist": "Sukhwinder Singh, Shadab Faridi | Sultan",
+      "album": "Sukhwinder Singh, Shadab Faridi",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/W0dmYnZ9_hE/hqdefault.jpg"
     },
     {
+      "id": "lofi-112",
+      "youtubeId": "L2mSvBrq84E",
       "videoId": "L2mSvBrq84E",
       "title": "Suna Suna (Slowed + Reverb)",
       "artist": "Shreya Ghoshal | Krishna Cottage | SR …",
+      "album": "Shreya Ghoshal",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/L2mSvBrq84E/hqdefault.jpg"
     },
     {
+      "id": "lofi-113",
+      "youtubeId": "euP-V53PZoc",
       "videoId": "euP-V53PZoc",
       "title": "कहा चल गईल हमर जान ।। (#Sloved + Reverb lofi son…",
       "artist": "LOFI FANS",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/euP-V53PZoc/hqdefault.jpg"
     },
     {
+      "id": "lofi-114",
+      "youtubeId": "UR-PAQRnrKw",
       "videoId": "UR-PAQRnrKw",
       "title": "Tu Hai Kahan",
       "artist": "Tu Hai Kahan Lofi- SLOWED REVERB",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/UR-PAQRnrKw/hqdefault.jpg"
     },
     {
+      "id": "lofi-115",
+      "youtubeId": "0llEfC5Stg0",
       "videoId": "0llEfC5Stg0",
       "title": "Tu Hai Kahan 2 || Ank Royal || Uraan || 7sky Lofi",
       "artist": "7sky Lofi",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/0llEfC5Stg0/hqdefault.jpg"
     },
     {
+      "id": "lofi-116",
+      "youtubeId": "Wk-CpIkbUvo",
       "videoId": "Wk-CpIkbUvo",
       "title": "Jaane tu kahan Hai",
       "artist": "Slowed-Reverb | Lofi #song #love #boll…",
+      "album": "Slowed-Reverb",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/Wk-CpIkbUvo/hqdefault.jpg"
     },
     {
+      "id": "lofi-117",
+      "youtubeId": "IWyd09C7brs",
       "videoId": "IWyd09C7brs",
       "title": "Tu hai kahan || slowed + reverb + 16D + lyrics |…",
       "artist": "Heal The Music",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/IWyd09C7brs/hqdefault.jpg"
     },
     {
+      "id": "lofi-118",
+      "youtubeId": "l8lamLpCabY",
       "videoId": "l8lamLpCabY",
       "title": "❤️‍🩹 Tu Hai Kahan Slowed + Reverb",
       "artist": "LoFi Love Story",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/l8lamLpCabY/hqdefault.jpg"
     },
     {
+      "id": "lofi-119",
+      "youtubeId": "YIEAg-v-Pic",
       "videoId": "YIEAg-v-Pic",
       "title": "Jannatein kahan || KK ( Krishnakumar Kunnath ) |…",
       "artist": "keratic music",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/YIEAg-v-Pic/hqdefault.jpg"
     },
     {
+      "id": "lofi-120",
+      "youtubeId": "uFbayWnLGxs",
       "videoId": "uFbayWnLGxs",
       "title": "TU HAI KAHAN 3.0|New| @Meloshiv @aurmusicband",
       "artist": "New lyrics| Lofi |",
+      "album": "New lyrics",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/uFbayWnLGxs/hqdefault.jpg"
     },
     {
+      "id": "lofi-121",
+      "youtubeId": "D0b7bAiXZJI",
       "videoId": "D0b7bAiXZJI",
       "title": "Tohra Jaisan Bhai Kahan",
       "artist": "Lofi Mix [slowed + reverb] Pawan Singh",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/D0b7bAiXZJI/hqdefault.jpg"
     },
     {
+      "id": "lofi-122",
+      "youtubeId": "F3rN5MXtTL0",
       "videoId": "F3rN5MXtTL0",
       "title": "Tohra Jaisan Bhai Kahan",
       "artist": "Lofi Mix [slowed + reverb] Pawan Singh…",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/F3rN5MXtTL0/hqdefault.jpg"
     },
     {
+      "id": "lofi-123",
+      "youtubeId": "Fegf8boqL_w",
       "videoId": "Fegf8boqL_w",
       "title": "Tu Hai Kahan AUR",
       "artist": "Lofi Slowed + Reverb | PRIME Lofi World",
+      "album": "Lofi Slowed + Reverb",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/Fegf8boqL_w/hqdefault.jpg"
     },
     {
+      "id": "lofi-124",
+      "youtubeId": "6-BiWZsjgR8",
       "videoId": "6-BiWZsjgR8",
       "title": "TU HAI KAHAN || Slowed + Reverb) Music",
       "artist": "Raffey - Usama - Ahad | Leon lofi@jaan…",
+      "album": "Raffey - Usama - Ahad",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/6-BiWZsjgR8/hqdefault.jpg"
     },
     {
+      "id": "lofi-125",
+      "youtubeId": "KA4APfVz5I8",
       "videoId": "KA4APfVz5I8",
       "title": "Kaifi Khalil",
       "artist": "Mansoob",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/KA4APfVz5I8/hqdefault.jpg"
     },
     {
+      "id": "lofi-126",
+      "youtubeId": "zQDAi8tI-cU",
       "videoId": "zQDAi8tI-cU",
       "title": "Coke Studio",
       "artist": "Season 14 | Kana Yaari | Kaifi Khalil …",
+      "album": "Season 14",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/zQDAi8tI-cU/hqdefault.jpg"
     },
     {
+      "id": "lofi-127",
+      "youtubeId": "CAHN1yO196M",
       "videoId": "CAHN1yO196M",
       "title": "Kahani Meri Official Lyrical Video",
       "artist": "Kaifi Khalil | Novice Records",
+      "album": "Kaifi Khalil",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/CAHN1yO196M/hqdefault.jpg"
     },
     {
+      "id": "lofi-128",
+      "youtubeId": "k4q7Yg_Z49U",
       "videoId": "k4q7Yg_Z49U",
       "title": "Zinda",
       "artist": "Siddharth Mahadevan | Bhaag Milkha Bhaag",
+      "album": "Siddharth Mahadevan",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/k4q7Yg_Z49U/hqdefault.jpg"
     },
     {
+      "id": "lofi-129",
+      "youtubeId": "-fVtSHPg040",
       "videoId": "-fVtSHPg040",
       "title": "Kaifi Khalil",
       "artist": "Jurmana",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/-fVtSHPg040/hqdefault.jpg"
     },
     {
+      "id": "lofi-130",
+      "youtubeId": "_vRXnq3ISvs",
       "videoId": "_vRXnq3ISvs",
       "title": "Kahani Suno 2.0 || Reply Version || Lyrics",
       "artist": "Swati Mishra",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/_vRXnq3ISvs/hqdefault.jpg"
     },
     {
+      "id": "lofi-131",
+      "youtubeId": "6c-10LBzsIk",
       "videoId": "6c-10LBzsIk",
       "title": "Hai Tamanna Humen Tumhen Dulhan Banaye   Kahani …",
       "artist": "Golden Superstar",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/6c-10LBzsIk/hqdefault.jpg"
     },
     {
+      "id": "lofi-132",
+      "youtubeId": "9_uPRv8HNqM",
       "videoId": "9_uPRv8HNqM",
       "title": "Kahani Suno 2.0 ( slowed + Reverb  ) || Kaifi Kh…",
       "artist": "Beat Sound",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/9_uPRv8HNqM/hqdefault.jpg"
     },
     {
+      "id": "lofi-133",
+      "youtubeId": "Jt7yvXSwyMA",
       "videoId": "Jt7yvXSwyMA",
       "title": "Kahani Suno 2.0 Mashup",
       "artist": "Naresh Parmar | Kaifi Khalil | Rahat F…",
+      "album": "Naresh Parmar",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/Jt7yvXSwyMA/hqdefault.jpg"
     },
     {
+      "id": "lofi-134",
+      "youtubeId": "NLAT7ljan8M",
       "videoId": "NLAT7ljan8M",
       "title": "Kahani Suno Mashup 3.0",
       "artist": "Jay Guldekar | Kaifi Khail | Main Agar…",
+      "album": "Jay Guldekar",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/NLAT7ljan8M/hqdefault.jpg"
     },
     {
+      "id": "lofi-135",
+      "youtubeId": "rzkP0nwKiqM",
       "videoId": "rzkP0nwKiqM",
       "title": "Shiddat X Kahani Suno X Guli Mata Mashup Dj Nsynk",
       "artist": "Dj NSYNK",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/rzkP0nwKiqM/hqdefault.jpg"
     },
     {
+      "id": "lofi-136",
+      "youtubeId": "LKXxNB8iAMo",
       "videoId": "LKXxNB8iAMo",
       "title": "Kahani Suno 2.0",
       "artist": "Kaifi Khalil I Slow Reverb Songs | Lof…",
+      "album": "Kaifi Khalil I Slow Reverb Songs",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/LKXxNB8iAMo/hqdefault.jpg"
     },
     {
+      "id": "lofi-137",
+      "youtubeId": "eoASHWddx7c",
       "videoId": "eoASHWddx7c",
       "title": "Kaifi Khalil Love Mashup ( Mahesh Suthar Mashup …",
       "artist": "Mahesh Suthar",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/eoASHWddx7c/hqdefault.jpg"
     },
     {
+      "id": "lofi-138",
+      "youtubeId": "0Wt6C_EzLls",
       "videoId": "0Wt6C_EzLls",
       "title": "Kahani Suno 2.0",
       "artist": "Kaifi Khalil",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/0Wt6C_EzLls/hqdefault.jpg"
     },
     {
+      "id": "lofi-139",
+      "youtubeId": "d5b9UNdZfsw",
       "videoId": "d5b9UNdZfsw",
       "title": "❤️Kahani Suno 2.0- [Slowed + Reverb]",
       "artist": "Top Bollywood Lofi Song| Love Lofi Mas…",
+      "album": "Top Bollywood Lofi Song",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/d5b9UNdZfsw/hqdefault.jpg"
     },
     {
+      "id": "lofi-140",
+      "youtubeId": "KgdBrGHviv4",
       "videoId": "KgdBrGHviv4",
       "title": "Kaifi Khalil",
       "artist": "Kahani Suno 2.0",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/KgdBrGHviv4/hqdefault.jpg"
     },
     {
+      "id": "lofi-141",
+      "youtubeId": "7oO-Y7t9I_s",
       "videoId": "7oO-Y7t9I_s",
       "title": "Kaifi Khalil",
       "artist": "Mansoob [Slowed+Reverb+Lofi+Lyric]",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/7oO-Y7t9I_s/hqdefault.jpg"
     },
     {
+      "id": "lofi-142",
+      "youtubeId": "88Xhw-XTDb8",
       "videoId": "88Xhw-XTDb8",
       "title": "Mujhe Pyar Hua Thaa",
       "artist": "Slowed & Reverb| OST | Floating Heart |",
+      "album": "Slowed & Reverb",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/88Xhw-XTDb8/hqdefault.jpg"
     },
     {
+      "id": "lofi-143",
+      "youtubeId": "JokgM6-y9Ls",
       "videoId": "JokgM6-y9Ls",
       "title": "Muntazir (Music Video) Kaifi Khalil",
       "artist": "Feat. Kinza Hashmi | Latest Song 2026",
+      "album": "Feat. Kinza Hashmi",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/JokgM6-y9Ls/hqdefault.jpg"
     },
     {
+      "id": "lofi-144",
+      "youtubeId": "ULcyLYD3o_M",
       "videoId": "ULcyLYD3o_M",
       "title": "King x Nick Jonas",
       "artist": "Maan Meri Jaan (Afterlife)",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/ULcyLYD3o_M/hqdefault.jpg"
     },
     {
+      "id": "lofi-145",
+      "youtubeId": "9lyPBa5Kd3I",
       "videoId": "9lyPBa5Kd3I",
       "title": "Teri Ho Na Saki",
       "artist": "Official Video | Shayad Woh Sune | KING",
+      "album": "Official Video",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/9lyPBa5Kd3I/hqdefault.jpg"
     },
     {
+      "id": "lofi-146",
+      "youtubeId": "Q3WfedW2i-s",
       "videoId": "Q3WfedW2i-s",
       "title": "TU AAKE DEKH LE",
       "artist": "KING 👑 | SLOWED-REVERB | NIGHT RLXX",
+      "album": "KING 👑",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/Q3WfedW2i-s/hqdefault.jpg"
     },
     {
+      "id": "lofi-147",
+      "youtubeId": "9aNUc4L_94U",
       "videoId": "9aNUc4L_94U",
       "title": "Maan Meri Jaan X Woh Chali",
       "artist": "King X Bombay Vikings - Euphony Official",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/9aNUc4L_94U/hqdefault.jpg"
     },
     {
+      "id": "lofi-148",
+      "youtubeId": "MArLl3XbN8Y",
       "videoId": "MArLl3XbN8Y",
       "title": "Apna Bana Le x Maan Meri Jaan (Slowed+Reverb)",
       "artist": "Arijit Singh and King | love Mashup/lo…",
+      "album": "Arijit Singh and King",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/MArLl3XbN8Y/hqdefault.jpg"
     },
     {
+      "id": "lofi-149",
+      "youtubeId": "3RAoczaBVP8",
       "videoId": "3RAoczaBVP8",
       "title": "King",
       "artist": "Maan Meri Jaan",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/3RAoczaBVP8/hqdefault.jpg"
     },
     {
+      "id": "lofi-150",
+      "youtubeId": "ewuvBK5nax8",
       "videoId": "ewuvBK5nax8",
       "title": "Maan Meri Jaan (Slowed + Reverb)",
       "artist": "King | SR Lofi",
+      "album": "King",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/ewuvBK5nax8/hqdefault.jpg"
     },
     {
+      "id": "lofi-151",
+      "youtubeId": "ZP1lpOMsek4",
       "videoId": "ZP1lpOMsek4",
       "title": "Mitraz x King Mashup",
       "artist": "Ankhiyaan x Maan Meri Jaan x Tu Aake D…",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/ZP1lpOMsek4/hqdefault.jpg"
     },
     {
+      "id": "lofi-152",
+      "youtubeId": "Q5Sc8IsY-SQ",
       "videoId": "Q5Sc8IsY-SQ",
       "title": "Maan Meri Jaan x Apna Bana Le",
       "artist": "king smatchup | Arijit Singh | Sachin–…",
+      "album": "king smatchup",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/Q5Sc8IsY-SQ/hqdefault.jpg"
     },
     {
+      "id": "lofi-153",
+      "youtubeId": "TZLo-TTnrfQ",
       "videoId": "TZLo-TTnrfQ",
       "title": "Maan Meri Jaan - King",
       "artist": "Slowed and Reverb | AP Bass Boosted",
+      "album": "Slowed and Reverb",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/TZLo-TTnrfQ/hqdefault.jpg"
     },
     {
+      "id": "lofi-154",
+      "youtubeId": "qy1l5Wt_olw",
       "videoId": "qy1l5Wt_olw",
       "title": "Tu Maan Meri Jaan - King",
       "artist": "Slowed and Reverb | Midnight Chill",
+      "album": "Slowed and Reverb",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/qy1l5Wt_olw/hqdefault.jpg"
     },
     {
+      "id": "lofi-155",
+      "youtubeId": "FysdiBYGJLI",
       "videoId": "FysdiBYGJLI",
       "title": "Maan meri jaan (slowed-reverb)",
       "artist": "Champagne Talk | king | industry of Lo…",
+      "album": "Champagne Talk",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/FysdiBYGJLI/hqdefault.jpg"
     },
     {
+      "id": "lofi-156",
+      "youtubeId": "etwc_LzYTFI",
       "videoId": "etwc_LzYTFI",
       "title": "Maan Meri Jaan LoFi",
       "artist": "Slowed+Reverb | King | Divyam Agarwal",
+      "album": "Slowed+Reverb",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/etwc_LzYTFI/hqdefault.jpg"
     },
     {
+      "id": "lofi-157",
+      "youtubeId": "bE_hK9NZ2_A",
       "videoId": "bE_hK9NZ2_A",
       "title": "Maan Meri Jaan - Lofi",
       "artist": "Slowed & Reverb | King",
+      "album": "Slowed & Reverb",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/bE_hK9NZ2_A/hqdefault.jpg"
     },
     {
+      "id": "lofi-158",
+      "youtubeId": "_rGuNjq6fCE",
       "videoId": "_rGuNjq6fCE",
       "title": "Maan Meri Jaan 🥹💕",
       "artist": "Slowed + Reverb | King | Hindi |",
+      "album": "Slowed + Reverb",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/_rGuNjq6fCE/hqdefault.jpg"
     },
     {
+      "id": "lofi-159",
+      "youtubeId": "LWJU1kj1PaI",
       "videoId": "LWJU1kj1PaI",
       "title": "Maan Meri Jaan (slowed and reverb) ||#king Perfe…",
       "artist": "MR_Rohit_music",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/LWJU1kj1PaI/hqdefault.jpg"
     },
     {
+      "id": "lofi-160",
+      "youtubeId": "N-PHKu9FCVY",
       "videoId": "N-PHKu9FCVY",
       "title": "Maan Meri Jaan [ Slowed+Reverb ] / King & Natash…",
       "artist": "Slowed & Reverb Lofi Mix",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/N-PHKu9FCVY/hqdefault.jpg"
     },
     {
+      "id": "lofi-161",
+      "youtubeId": "_RFVSuDK9Eg",
       "videoId": "_RFVSuDK9Eg",
       "title": "Maan Meri Jaan Lofi || Slowed+Reverb Song (Lofi …",
       "artist": "Zrahn",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/_RFVSuDK9Eg/hqdefault.jpg"
     },
     {
+      "id": "lofi-162",
+      "youtubeId": "n5Jqs1vMyzE",
       "videoId": "n5Jqs1vMyzE",
       "title": "Maan Meri Jaan ( Slowed + Reverb ) _  King _ Lof…",
       "artist": "S H A H I D",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/n5Jqs1vMyzE/hqdefault.jpg"
     },
     {
+      "id": "lofi-163",
+      "youtubeId": "9UpiVZDzXYc",
       "videoId": "9UpiVZDzXYc",
       "title": "MAAN MERI JAAN LOFI SONG ( Slowed + reverb )",
       "artist": "MAAN MERI JAAN SUPERMACY #king  #lofi …",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/9UpiVZDzXYc/hqdefault.jpg"
     },
     {
+      "id": "lofi-164",
+      "youtubeId": "fSS_R91Nimw",
       "videoId": "fSS_R91Nimw",
       "title": "Iktara Full Video - Wake Up Sid",
       "artist": "Ranbir Kapoor, Konkona Sen Sharma | Ka…",
+      "album": "Ranbir Kapoor, Konkona Sen Sharma",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/fSS_R91Nimw/hqdefault.jpg"
     },
     {
+      "id": "lofi-165",
+      "youtubeId": "1q65CU2JoXg",
       "videoId": "1q65CU2JoXg",
       "title": "Iktara",
       "artist": "Amit Trivedi - Topic",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/1q65CU2JoXg/hqdefault.jpg"
     },
     {
+      "id": "lofi-166",
+      "youtubeId": "ZlOZktsODpA",
       "videoId": "ZlOZktsODpA",
       "title": "Iktara Lyric Video - Wake Up Sid",
       "artist": "Ranbir Kapoor, Konkona Sen Sharma | Ka…",
+      "album": "Ranbir Kapoor, Konkona Sen Sharma",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/ZlOZktsODpA/hqdefault.jpg"
     },
     {
+      "id": "lofi-167",
+      "youtubeId": "akjdj6iHttY",
       "videoId": "akjdj6iHttY",
       "title": "Iktara - Lyric Video - Wake Up Sid",
       "artist": "Ranbir Kapoor | Konkona Sen Sharma",
+      "album": "Ranbir Kapoor",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/akjdj6iHttY/hqdefault.jpg"
     },
     {
+      "id": "lofi-168",
+      "youtubeId": "nJcaU8bKpGs",
       "videoId": "nJcaU8bKpGs",
       "title": "Iktara  - Wake Up Sid",
       "artist": "[slowed + reverb]",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/nJcaU8bKpGs/hqdefault.jpg"
     },
     {
+      "id": "lofi-169",
+      "youtubeId": "JKSoBqnQ5I4",
       "videoId": "JKSoBqnQ5I4",
       "title": "Iktara",
       "artist": "Amit Trivedi, Kavita Seth, Amitabh Bha…",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/JKSoBqnQ5I4/hqdefault.jpg"
     },
     {
+      "id": "lofi-170",
+      "youtubeId": "EYgSirZikfw",
       "videoId": "EYgSirZikfw",
       "title": "Iktara (From \"Wake Up Sid\") (Male Version)",
       "artist": "Amit Trivedi - Topic",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/EYgSirZikfw/hqdefault.jpg"
     },
     {
+      "id": "lofi-171",
+      "youtubeId": "fTtPg6CSeHk",
       "videoId": "fTtPg6CSeHk",
       "title": "Iktara",
       "artist": "Male Version Best Video",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/fTtPg6CSeHk/hqdefault.jpg"
     },
     {
+      "id": "lofi-172",
+      "youtubeId": "p8p0Pb5R-FA",
       "videoId": "p8p0Pb5R-FA",
       "title": "Iktara Unplugged Cover (2025)",
       "artist": "Wake Up Sid | Stone Boy Cover Version",
+      "album": "Wake Up Sid",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/p8p0Pb5R-FA/hqdefault.jpg"
     },
     {
+      "id": "lofi-173",
+      "youtubeId": "oTJxvlHcB-4",
       "videoId": "oTJxvlHcB-4",
       "title": "Wake Up Sid",
       "artist": "Iktara (Lyrics video)| Ranbir Kapoor",
+      "album": "Iktara (Lyrics video)",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/oTJxvlHcB-4/hqdefault.jpg"
     },
     {
+      "id": "lofi-174",
+      "youtubeId": "0bRnXG4ytuM",
       "videoId": "0bRnXG4ytuM",
       "title": "Iktara (Lofi Flip)",
       "artist": "VIBIE - Topic",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/0bRnXG4ytuM/hqdefault.jpg"
     },
     {
+      "id": "lofi-175",
+      "youtubeId": "FvLlxpd4f7M",
       "videoId": "FvLlxpd4f7M",
       "title": "Iktara",
       "artist": "Perfectly Slowed | Wake Up Sid | Lofi",
+      "album": "Perfectly Slowed",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/FvLlxpd4f7M/hqdefault.jpg"
     },
     {
+      "id": "lofi-176",
+      "youtubeId": "Qqxb9lI6xLw",
       "videoId": "Qqxb9lI6xLw",
       "title": "Iktara (Lofi flip) - Kavita Seth",
       "artist": "VIBIE (Bollywood lofi)",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/Qqxb9lI6xLw/hqdefault.jpg"
     },
     {
+      "id": "lofi-177",
+      "youtubeId": "4sMdGz8rbcs",
       "videoId": "4sMdGz8rbcs",
       "title": "Iktara",
       "artist": "Wake Up Sid | Ranbir Kapoor | Konkona …",
+      "album": "Wake Up Sid",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/4sMdGz8rbcs/hqdefault.jpg"
     },
     {
+      "id": "lofi-178",
+      "youtubeId": "3Kjj5UI9edw",
       "videoId": "3Kjj5UI9edw",
       "title": "Iktara (Slowed + Reverb) || Kavita Seth, Amitabh…",
       "artist": "Wake Up Sid",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/3Kjj5UI9edw/hqdefault.jpg"
     },
     {
+      "id": "lofi-179",
+      "youtubeId": "fAB7HttsFpE",
       "videoId": "fAB7HttsFpE",
       "title": "Iktara Unplugged Cover",
       "artist": "Sumonto Mukherjee | Wake Up Sid | Kavi…",
+      "album": "Sumonto Mukherjee",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/fAB7HttsFpE/hqdefault.jpg"
     },
     {
+      "id": "lofi-180",
+      "youtubeId": "3lMww57WSzQ",
       "videoId": "3lMww57WSzQ",
       "title": "Iktara (male) [slowed+reverbed] || REJOICE",
       "artist": "REJOICE",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/3lMww57WSzQ/hqdefault.jpg"
     },
     {
+      "id": "lofi-181",
+      "youtubeId": "8V8dOlyQj4Y",
       "videoId": "8V8dOlyQj4Y",
       "title": "Iktara Lofi Flip",
       "artist": "VIBIE | Wake Up Sid | Ranbir Kapoor | …",
+      "album": "VIBIE",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/8V8dOlyQj4Y/hqdefault.jpg"
     },
     {
+      "id": "lofi-182",
+      "youtubeId": "czfRogz56cA",
       "videoId": "czfRogz56cA",
       "title": "Iktara ( slow and reverb ) night lofi song || Lo…",
       "artist": "Love Lofi",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/czfRogz56cA/hqdefault.jpg"
     },
     {
+      "id": "lofi-183",
+      "youtubeId": "U4e2UvC_YCo",
       "videoId": "U4e2UvC_YCo",
       "title": "IKTARA - Wake Up Sid",
       "artist": "Slowed and Reverb | Peace Point 🕊️",
+      "album": "Slowed and Reverb",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/U4e2UvC_YCo/hqdefault.jpg"
     },
     {
+      "id": "lofi-184",
+      "youtubeId": "jHNNMj5bNQw",
       "videoId": "jHNNMj5bNQw",
       "title": "\"Kabira Full Song\" Yeh Jawaani Hai Deewani",
       "artist": "Pritam | Ranbir Kapoor, Deepika Padukone",
+      "album": "Pritam",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/jHNNMj5bNQw/hqdefault.jpg"
     },
     {
+      "id": "lofi-185",
+      "youtubeId": "yk2tHuIP59s",
       "videoId": "yk2tHuIP59s",
       "title": "Kabira",
       "artist": "Lofi Flip (Rewerbed) @hxrshyaa",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/yk2tHuIP59s/hqdefault.jpg"
     },
     {
+      "id": "lofi-186",
+      "youtubeId": "MuCfsZk9lbU",
       "videoId": "MuCfsZk9lbU",
       "title": "Kabira Encore Song Yeh Jawaani Hai Deewani",
       "artist": "Ranbir Kapoor, Deepika Padukone",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/MuCfsZk9lbU/hqdefault.jpg"
     },
     {
+      "id": "lofi-187",
+      "youtubeId": "ta-W16uw7zg",
       "videoId": "ta-W16uw7zg",
       "title": "Kabira Encore - Yeh Jawaani Hai Deewani",
       "artist": "Ranbir Kapoor, Deepika Padukone",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/ta-W16uw7zg/hqdefault.jpg"
     },
     {
+      "id": "lofi-188",
+      "youtubeId": "lwLVJ0E8gN4",
       "videoId": "lwLVJ0E8gN4",
       "title": "Kabira (Encore) Yeh Jawaani Hai Deewani Song",
       "artist": "Pritam | Ranbir Kapoor, Deepika Padukone",
+      "album": "Pritam",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/lwLVJ0E8gN4/hqdefault.jpg"
     },
     {
+      "id": "lofi-189",
+      "youtubeId": "EK2Ol1ov0gk",
       "videoId": "EK2Ol1ov0gk",
       "title": "ALLAH WAARIYAN (Slowed+Reverb) - Shafqat Amanat …",
       "artist": "s2 lofi",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/EK2Ol1ov0gk/hqdefault.jpg"
     },
     {
+      "id": "lofi-190",
+      "youtubeId": "7jZwAl0ArQw",
       "videoId": "7jZwAl0ArQw",
       "title": "\"Kabira Full Lyrics Song\" Yeh Jawaani Hai Deewan…",
       "artist": "TENNIS BALL CRICKET VIDEO ",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/7jZwAl0ArQw/hqdefault.jpg"
     },
     {
+      "id": "lofi-191",
+      "youtubeId": "Ymcbjo6P1O0",
       "videoId": "Ymcbjo6P1O0",
       "title": "Kabira X Raanjhan Mashup",
       "artist": "revibe | Viral Insta Reels, TikTok | R…",
+      "album": "revibe",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/Ymcbjo6P1O0/hqdefault.jpg"
     },
     {
+      "id": "lofi-192",
+      "youtubeId": "3F9r7xggi88",
       "videoId": "3F9r7xggi88",
       "title": "Kabira",
       "artist": "Lofi",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/3F9r7xggi88/hqdefault.jpg"
     },
     {
+      "id": "lofi-193",
+      "youtubeId": "-X2dsCQMLcs",
       "videoId": "-X2dsCQMLcs",
       "title": "Kabira (slowed+reverb)",
       "artist": "Deppboi",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/-X2dsCQMLcs/hqdefault.jpg"
     },
     {
+      "id": "lofi-194",
+      "youtubeId": "jJ4AsIV1FDI",
       "videoId": "jJ4AsIV1FDI",
       "title": "Kabira (Encore) Yeh Jawaani Hai Deewani Full Son…",
       "artist": "Ranbir Kapoor, Deepika Padukone",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/jJ4AsIV1FDI/hqdefault.jpg"
     },
     {
+      "id": "lofi-195",
+      "youtubeId": "PAjJAWrCAzU",
       "videoId": "PAjJAWrCAzU",
       "title": "Kabira [slowed + reverb]- Yeh Jawaani Hai Deewani",
       "artist": "Rts Lofi #Textaudio #slowedandreverb #…",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/PAjJAWrCAzU/hqdefault.jpg"
     },
     {
+      "id": "lofi-196",
+      "youtubeId": "L-SgTplq2IQ",
       "videoId": "L-SgTplq2IQ",
       "title": "Kabira (Slowed + Reverb)",
       "artist": "Rekha Bhardwaj, Tochi Raina | Yeh Jawa…",
+      "album": "Rekha Bhardwaj, Tochi Raina",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/L-SgTplq2IQ/hqdefault.jpg"
     },
     {
+      "id": "lofi-197",
+      "youtubeId": "GgOjecsKCww",
       "videoId": "GgOjecsKCww",
       "title": "Kabira [Slowed+Reverb] Lyrics - Yeh Jawaani Hai …",
       "artist": "happy-or-sad",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/GgOjecsKCww/hqdefault.jpg"
     },
     {
+      "id": "lofi-198",
+      "youtubeId": "iAOA8TLgqG8",
       "videoId": "iAOA8TLgqG8",
       "title": "Dua Mein Tujhe Yaad Karte Hai (Slowed+Reverbs)",
       "artist": "Beats Peacock | TextAudio Lyrics | Mus…",
+      "album": "Beats Peacock",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/iAOA8TLgqG8/hqdefault.jpg"
     },
     {
+      "id": "lofi-199",
+      "youtubeId": "w3eYf7noC8A",
       "videoId": "w3eYf7noC8A",
       "title": "Kabira [slowed + reverb]- Yeh Jawaani Hai Deewani",
       "artist": "Music Zone | Textaudio",
+      "album": "Music Zone",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/w3eYf7noC8A/hqdefault.jpg"
     },
     {
+      "id": "lofi-200",
+      "youtubeId": "3oMQuyaPGa4",
       "videoId": "3oMQuyaPGa4",
       "title": "Kabira X Good Things Fall Apart (Slowed and Reve…",
       "artist": "Tochi Raina, Rekha Bhardwaj, Illenium",
+      "album": "Chai & Lo-fi Beats",
       "category": "lofi",
       "thumbnail": "https://i.ytimg.com/vi/3oMQuyaPGa4/hqdefault.jpg"
     }
@@ -8443,12 +12044,32 @@
     return all.slice(start, end);
   }
 
+  function findTrackByYoutubeId(youtubeId) {
+    if (!youtubeId) return null;
+    for (const cat in SONGS_DATABASE) {
+      const found = SONGS_DATABASE[cat].find(t => t.youtubeId === youtubeId || t.videoId === youtubeId);
+      if (found) return found;
+    }
+    return null;
+  }
+
+  function findTrackById(id) {
+    if (!id) return null;
+    for (const cat in SONGS_DATABASE) {
+      const found = SONGS_DATABASE[cat].find(t => t.id === id);
+      if (found) return found;
+    }
+    return null;
+  }
+
   if (typeof module !== 'undefined' && module.exports) {
     module.exports = {
       SONGS_DATABASE,
       getDatabaseSongs,
       getCategoryTotalCount,
-      getCategoryBatch
+      getCategoryBatch,
+      findTrackByYoutubeId,
+      findTrackById
     };
   }
   if (typeof root !== 'undefined') {
@@ -8456,5 +12077,7 @@
     root.getSurBeatDatabaseSongs = getDatabaseSongs;
     root.getCategoryTotalCount = getCategoryTotalCount;
     root.getCategoryBatch = getCategoryBatch;
+    root.findSurBeatTrackByYoutubeId = findTrackByYoutubeId;
+    root.findSurBeatTrackById = findTrackById;
   }
 })(typeof window !== 'undefined' ? window : global);

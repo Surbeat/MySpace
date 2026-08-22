@@ -73,11 +73,14 @@ const BRAND_FALLBACK_ARTWORK = 'icons/icon.svg';
 // ════════════════════════════════════════════════════════════════
 // 2. CENTRALIZED STATE — Single Source of Truth
 // ════════════════════════════════════════════════════════════════
+// 2. CENTRALIZED STATE — Canonical Single Source of Truth
+// ════════════════════════════════════════════════════════════════
 
 const STATE = {
   currentCategory: 'trending',
-  trackList: [],          // Array of { videoId, title, artist, category, thumbnail }
-  currentIndex: -1,
+  currentTrack: null,     // Canonical Track: { id, youtubeId, videoId, title, artist, album, category, thumbnail }
+  playbackQueue: [],      // Array of canonical tracks queued for playback
+  discoverTracks: [],     // Array of canonical tracks currently in Discover grid (10 items)
   isPlaying: false,
   isShuffle: false,
   repeatMode: 'off',      // 'off' | 'all' | 'one'
@@ -96,8 +99,24 @@ const STATE = {
 };
 
 // ════════════════════════════════════════════════════════════════
-// 3. PERSISTENCE (localStorage)
+// 3. CANONICAL TRACK HELPERS & PERSISTENCE
 // ════════════════════════════════════════════════════════════════
+
+function normalizeTrack(raw) {
+  if (!raw) return null;
+  const ytid = raw.youtubeId || raw.videoId || raw.ytId || '';
+  const cat = raw.category || STATE.currentCategory || 'trending';
+  return {
+    id: raw.id || (ytid ? `track-${ytid}` : `track-${Date.now()}`),
+    youtubeId: ytid,
+    videoId: ytid,
+    title: raw.title || 'SurBeat Track',
+    artist: raw.artist || 'SurBeat Artist',
+    album: raw.album || (CATEGORY_META[cat]?.name || cat),
+    category: cat,
+    thumbnail: raw.thumbnail || raw.artwork || getYouTubeThumbnail(ytid, 'hqdefault')
+  };
+}
 
 const STORAGE_KEY = 'surbeat_player_preferences';
 
@@ -119,12 +138,18 @@ function loadPersistedSettings() {
       STATE.isShuffle = data.isShuffle;
     }
     if (data.currentCategory && CATEGORY_META[data.currentCategory]) {
-      // Allow URL param override
       const urlParams = new URLSearchParams(window.location.search);
       const catParam = urlParams.get('cat');
       if (!catParam || !CATEGORY_META[catParam]) {
         STATE.currentCategory = data.currentCategory;
       }
+    }
+    // Restore exact track by canonical object or youtubeId
+    if (data.currentTrack && (data.currentTrack.youtubeId || data.currentTrack.videoId)) {
+      STATE.currentTrack = normalizeTrack(data.currentTrack);
+    } else if (data.currentYoutubeId && typeof window !== 'undefined' && typeof window.findSurBeatTrackByYoutubeId === 'function') {
+      const found = window.findSurBeatTrackByYoutubeId(data.currentYoutubeId);
+      if (found) STATE.currentTrack = normalizeTrack(found);
     }
   } catch (e) {
     console.warn('[SurBeat] Error reading saved preferences:', e);
@@ -138,6 +163,17 @@ function savePersistedSettings() {
       repeatMode: STATE.repeatMode,
       isShuffle: STATE.isShuffle,
       currentCategory: STATE.currentCategory,
+      currentTrack: STATE.currentTrack ? {
+        id: STATE.currentTrack.id,
+        youtubeId: STATE.currentTrack.youtubeId,
+        videoId: STATE.currentTrack.videoId,
+        title: STATE.currentTrack.title,
+        artist: STATE.currentTrack.artist,
+        album: STATE.currentTrack.album,
+        category: STATE.currentTrack.category,
+        thumbnail: STATE.currentTrack.thumbnail
+      } : null,
+      currentYoutubeId: STATE.currentTrack ? (STATE.currentTrack.youtubeId || STATE.currentTrack.videoId) : null
     };
     localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
   } catch (e) {}
@@ -308,7 +344,7 @@ function onYTPlayerError(event) {
   STATE.isLoading = false;
   STATE.skipAttempts++;
 
-  if (STATE.skipAttempts < 4 && STATE.trackList.length > 1) {
+  if (STATE.skipAttempts < 4) {
     showError('Unable to play this track. Trying next available track…');
     setTimeout(() => {
       hideError();
@@ -322,16 +358,20 @@ function onYTPlayerError(event) {
 }
 
 function autoSkipNext() {
-  const nextIdx = getNextIndex();
-  if (nextIdx !== -1) {
-    playTrack(nextIdx);
+  if (STATE.skipAttempts < 4) {
+    playNext();
+  } else {
+    showError('This track is currently unavailable.');
+    showLoading(false);
+    STATE.isPlaying = false;
+    updatePlaybackUI(false);
   }
 }
 
 function onTrackEnded() {
   // Handle Repeat One
   if (STATE.repeatMode === 'one') {
-    if (STATE.currentIndex !== -1) {
+    if (STATE.currentTrack) {
       seekTo(0);
       if (STATE.ytPlayer && typeof STATE.ytPlayer.playVideo === 'function') {
         STATE.ytPlayer.playVideo();
@@ -340,8 +380,11 @@ function onTrackEnded() {
     return;
   }
 
-  // Handle Repeat All or Normal Playlist Progression
-  const isLastTrack = STATE.currentIndex >= STATE.trackList.length - 1;
+  const queue = STATE.playbackQueue.length > 0 ? STATE.playbackQueue : STATE.discoverTracks;
+  const currentId = STATE.currentTrack ? (STATE.currentTrack.youtubeId || STATE.currentTrack.videoId) : null;
+  const currentIdx = queue.findIndex(t => (t.youtubeId || t.videoId) === currentId);
+  const isLastTrack = currentIdx >= queue.length - 1;
+
   if (isLastTrack && STATE.repeatMode === 'off' && !STATE.isShuffle) {
     // End of playlist with repeat off
     STATE.isPlaying = false;
@@ -349,81 +392,64 @@ function onTrackEnded() {
     return;
   }
 
-  const nextIdx = getNextIndex();
-  if (nextIdx !== -1) {
-    playTrack(nextIdx);
-  } else {
-    STATE.isPlaying = false;
-    updatePlaybackUI(false);
-  }
+  playNext();
 }
 
 // ════════════════════════════════════════════════════════════════
-// 7. TRACK INDEXING & NAVIGATION LOGIC
+// 7. CENTRAL PLAYBACK ENGINE (CANONICAL TRACK OBJECT DISPATCH)
 // ════════════════════════════════════════════════════════════════
 
-function getNextIndex() {
-  if (STATE.trackList.length === 0) return -1;
-  if (STATE.trackList.length === 1) return 0;
+function playTrack(track, queue = null) {
+  if (!track) return;
 
-  if (STATE.isShuffle) {
-    let idx;
-    let tries = 0;
-    do {
-      idx = Math.floor(Math.random() * STATE.trackList.length);
-      tries++;
-    } while (idx === STATE.currentIndex && tries < 25);
-    return idx;
-  }
+  const canonical = normalizeTrack(track);
+  const ytid = canonical.youtubeId || canonical.videoId;
 
-  return (STATE.currentIndex + 1) % STATE.trackList.length;
-}
-
-function getPrevIndex() {
-  if (STATE.trackList.length === 0) return -1;
-  if (STATE.trackList.length === 1) return 0;
-
-  if (STATE.isShuffle) {
-    return getNextIndex();
-  }
-
-  return (STATE.currentIndex - 1 + STATE.trackList.length) % STATE.trackList.length;
-}
-
-// ════════════════════════════════════════════════════════════════
-// 8. CENTRAL PLAYBACK COMMANDS
-// ════════════════════════════════════════════════════════════════
-
-function playTrack(index) {
-  if (!STATE.ytReady || !STATE.ytPlayer) {
-    console.warn('Audio player engine initializing…');
-    return;
-  }
-
-  if (index < 0 || index >= STATE.trackList.length) return;
-  const track = STATE.trackList[index];
-  if (!track || !isValidYouTubeId(track.videoId)) {
-    console.warn('Invalid track format at index', index);
+  if (!isValidYouTubeId(ytid)) {
+    console.warn('❌ [SurBeat] Invalid track youtubeId:', canonical);
+    showError('This track is currently unavailable.');
     autoSkipNext();
     return;
   }
 
-  STATE.currentIndex = index;
+  // Developer Logging & Verification
+  console.log(`🎵 [DISCOVER CLICK] Title: "${canonical.title}" | Artist: "${canonical.artist}" | YouTube ID: ${ytid}`);
+
+  // Update active playback queue if provided (e.g. from Discover batch)
+  if (Array.isArray(queue) && queue.length > 0) {
+    STATE.playbackQueue = queue.map(normalizeTrack);
+  } else if (STATE.playbackQueue.length === 0 || !STATE.playbackQueue.some(t => (t.youtubeId || t.videoId) === ytid)) {
+    STATE.playbackQueue.push(canonical);
+  }
+
+  // Store exact canonical track
+  STATE.currentTrack = canonical;
   STATE.isLoading = true;
   STATE.skipAttempts = 0;
   STATE.currentTime = 0;
   STATE.duration = 0;
 
-  // Immediate UI synchronization
-  updateNowPlayingUI(track);
-  updateDiscoverHighlight(index);
-  updateMobileBar(track);
+  // Immediate UI synchronization strictly from canonical track
+  updateNowPlayingUI(canonical);
+  updateDiscoverHighlight(canonical);
+  updateMobileBar(canonical);
 
   showLoading(true);
   hideError();
 
+  console.log(`▶️ [PLAYER START] Title: "${canonical.title}" | Artist: "${canonical.artist}" | YouTube ID: ${ytid}`);
+
+  // Developer Assertion Check
+  if (ytid !== (STATE.currentTrack.youtubeId || STATE.currentTrack.videoId)) {
+    console.error('🚨 [CRITICAL TRACK MISMATCH ASSERTION FAILED]', canonical, STATE.currentTrack);
+  }
+
   try {
-    STATE.ytPlayer.loadVideoById(track.videoId);
+    if (STATE.ytReady && STATE.ytPlayer && typeof STATE.ytPlayer.loadVideoById === 'function') {
+      STATE.ytPlayer.loadVideoById(ytid);
+    } else {
+      console.warn('Player engine not ready yet. Video queued:', ytid);
+    }
   } catch (e) {
     console.warn('Player load error:', e);
     showError('Unable to load track.');
@@ -443,13 +469,12 @@ function playTrack(index) {
 function togglePlayPause() {
   if (!STATE.ytReady || !STATE.ytPlayer) return;
 
-  if (STATE.trackList.length === 0) {
-    loadCategoryAndPlay(STATE.currentCategory);
-    return;
-  }
-
-  if (STATE.currentIndex === -1) {
-    playTrack(0);
+  if (!STATE.currentTrack) {
+    if (STATE.discoverTracks.length > 0) {
+      playTrack(STATE.discoverTracks[0], STATE.discoverTracks);
+    } else {
+      loadCategoryAndPlay(STATE.currentCategory);
+    }
     return;
   }
 
@@ -457,16 +482,41 @@ function togglePlayPause() {
     try {
       STATE.ytPlayer.pauseVideo();
     } catch (e) {}
+    STATE.isPlaying = false;
+    updatePlaybackUI(false);
   } else {
     try {
       STATE.ytPlayer.playVideo();
     } catch (e) {}
+    STATE.isPlaying = true;
+    updatePlaybackUI(true);
   }
 }
 
 function playNext() {
-  const nextIdx = getNextIndex();
-  if (nextIdx !== -1) playTrack(nextIdx);
+  const queue = STATE.playbackQueue.length > 0 ? STATE.playbackQueue : STATE.discoverTracks;
+  if (!queue || queue.length === 0) return;
+
+  const currentId = STATE.currentTrack ? (STATE.currentTrack.youtubeId || STATE.currentTrack.videoId) : null;
+  const currentIdx = queue.findIndex(t => (t.youtubeId || t.videoId) === currentId);
+
+  let nextIdx = 0;
+  if (STATE.isShuffle) {
+    if (queue.length > 1) {
+      let tries = 0;
+      do {
+        nextIdx = Math.floor(Math.random() * queue.length);
+        tries++;
+      } while (nextIdx === currentIdx && tries < 25);
+    }
+  } else {
+    nextIdx = currentIdx >= 0 ? (currentIdx + 1) % queue.length : 0;
+  }
+
+  const nextTrack = queue[nextIdx];
+  if (nextTrack) {
+    playTrack(nextTrack, queue);
+  }
 }
 
 function playPrev() {
@@ -479,8 +529,24 @@ function playPrev() {
     return;
   }
 
-  const prevIdx = getPrevIndex();
-  if (prevIdx !== -1) playTrack(prevIdx);
+  const queue = STATE.playbackQueue.length > 0 ? STATE.playbackQueue : STATE.discoverTracks;
+  if (!queue || queue.length === 0) return;
+
+  const currentId = STATE.currentTrack ? (STATE.currentTrack.youtubeId || STATE.currentTrack.videoId) : null;
+  const currentIdx = queue.findIndex(t => (t.youtubeId || t.videoId) === currentId);
+
+  let prevIdx = 0;
+  if (STATE.isShuffle) {
+    playNext();
+    return;
+  } else {
+    prevIdx = currentIdx >= 0 ? (currentIdx - 1 + queue.length) % queue.length : 0;
+  }
+
+  const prevTrack = queue[prevIdx];
+  if (prevTrack) {
+    playTrack(prevTrack, queue);
+  }
 }
 
 function seekTo(seconds) {
@@ -585,8 +651,8 @@ function initMediaSessionHandlers() {
 
   const actionHandlers = [
     ['play', () => {
-      if (STATE.currentIndex === -1 && STATE.trackList.length > 0) {
-        playTrack(0);
+      if (!STATE.currentTrack && STATE.discoverTracks.length > 0) {
+        playTrack(STATE.discoverTracks[0], STATE.discoverTracks);
       } else {
         togglePlayPause();
       }
@@ -627,10 +693,10 @@ function updateMediaSession() {
   if (!('mediaSession' in navigator)) return;
   initMediaSessionHandlers();
 
-  const track = STATE.trackList[STATE.currentIndex];
+  const track = STATE.currentTrack;
   if (!track) return;
 
-  const artworkBase = track.thumbnail || getYouTubeThumbnail(track.videoId, 'hqdefault');
+  const artworkBase = track.thumbnail || getYouTubeThumbnail(track.youtubeId || track.videoId, 'hqdefault');
   const catTitle = CATEGORY_META[track.category || STATE.currentCategory]?.name || 'SurBeat';
 
   try {
@@ -680,23 +746,44 @@ function updateMediaSessionPosition() {
       navigator.mediaSession.setPositionState({
         duration: dur,
         playbackRate: 1,
-        position: pos,
+        position: Math.min(pos, dur),
       });
     } catch (e) {}
   }
 }
 
 // ════════════════════════════════════════════════════════════════
-// 11. VISIBILITY & BACKGROUND RESILIENCE
+// 11. VISIBILITY & BACKGROUND AUDIO HANDLING
 // ════════════════════════════════════════════════════════════════
 
 function setupVisibilityHandling() {
   document.addEventListener('visibilitychange', () => {
-    // When returning to page, instantly synchronize seekbar & UI state with audio timeline
-    if (!document.hidden && STATE.ytReady && STATE.ytPlayer) {
+    if (document.hidden) {
+      // Keep background audio active & update Media Session
+      if (STATE.isPlaying) {
+        updateMediaSession();
+        syncMediaSessionPlaybackState();
+      }
+    } else {
+      // Sync UI when user returns to foreground
       try {
-        const ct = STATE.ytPlayer.getCurrentTime() || 0;
-        const dur = STATE.ytPlayer.getDuration() || 0;
+        if (STATE.ytPlayer && STATE.isPlaying) {
+          const ct = STATE.ytPlayer.getCurrentTime() || STATE.currentTime;
+          const dur = STATE.ytPlayer.getDuration() || STATE.duration;
+          STATE.currentTime = ct;
+          STATE.duration = dur;
+          updateSeekUI(ct, dur);
+          updatePlaybackUI(STATE.isPlaying);
+        }
+      } catch (e) {}
+    }
+  });
+
+  window.addEventListener('pageshow', (event) => {
+    if (event.persisted && STATE.isPlaying && STATE.ytPlayer) {
+      try {
+        const ct = STATE.ytPlayer.getCurrentTime() || STATE.currentTime;
+        const dur = STATE.ytPlayer.getDuration() || STATE.duration;
         STATE.currentTime = ct;
         STATE.duration = dur;
         updateSeekUI(ct, dur);
@@ -706,7 +793,6 @@ function setupVisibilityHandling() {
   });
 }
 
-// ════════════════════════════════════════════════════════════════
 // ════════════════════════════════════════════════════════════════
 // 12. DATABASE-FIRST DISCOVER FEED MANAGER
 // ════════════════════════════════════════════════════════════════
@@ -762,35 +848,25 @@ const DiscoverFeedManager = (() => {
       tracks = window.SURBEAT_CATALOG[category];
     }
 
-    // 2. Workout catalog fallback if needed
-    if ((!tracks || tracks.length === 0) && category === 'workout' && typeof window !== 'undefined' && window.WORKOUT_CATALOG && Array.isArray(window.WORKOUT_CATALOG)) {
-      tracks = window.WORKOUT_CATALOG
-        .filter(t => t.ytId && isValidYouTubeId(t.ytId))
-        .map(t => ({
-          videoId: t.ytId,
-          title: t.title,
-          artist: t.artist,
-          category: 'workout',
-          thumbnail: t.artwork || getYouTubeThumbnail(t.ytId)
-        }));
-    }
-
-    // 3. Fallback to Awarapan tracks if category is awarapan
+    // 2. Fallback to Awarapan tracks if category is awarapan
     if ((!tracks || tracks.length === 0) && category === 'awarapan') {
       tracks = AWARAPAN_TRACKS;
     }
 
-    // 4. Default fallback
+    // 3. Default fallback
     if (!tracks || tracks.length === 0) {
       tracks = AWARAPAN_TRACKS;
     }
 
-    const formatted = tracks.map((t, idx) => ({
-      videoId: t.videoId || t.ytId,
+    const formatted = tracks.map((t, idx) => normalizeTrack({
+      id: t.id || `${category}-${String(idx + 1).padStart(3, '0')}`,
+      youtubeId: t.youtubeId || t.videoId || t.ytId,
+      videoId: t.youtubeId || t.videoId || t.ytId,
       title: t.title || `Track #${idx + 1}`,
       artist: t.artist || 'SurBeat Artist',
+      album: t.album || CATEGORY_META[category]?.name || category,
       category: category,
-      thumbnail: t.thumbnail || t.artwork || getYouTubeThumbnail(t.videoId || t.ytId)
+      thumbnail: t.thumbnail || t.artwork || getYouTubeThumbnail(t.youtubeId || t.videoId || t.ytId)
     }));
 
     discoverCache[category] = formatted;
@@ -913,7 +989,6 @@ const DiscoverFeedManager = (() => {
 
 async function loadCategory(category, autoPlay = false, advanceBatch = false) {
   STATE.currentCategory = category;
-  STATE.currentIndex = -1;
 
   // Update category buttons UI
   document.querySelectorAll('.cat-btn').forEach(btn => {
@@ -924,7 +999,7 @@ async function loadCategory(category, autoPlay = false, advanceBatch = false) {
 
   // Get 10 songs batch from DiscoverFeedManager (0 API calls)
   const batch = DiscoverFeedManager.getBatch(category, advanceBatch);
-  STATE.trackList = batch.tracks;
+  STATE.discoverTracks = batch.tracks.map(normalizeTrack);
 
   // Update discover subtitle
   const subEl = document.getElementById('discoverSubtitle');
@@ -940,7 +1015,7 @@ async function loadCategory(category, autoPlay = false, advanceBatch = false) {
   }
 
   // Render 10 discover cards with 16:9 aspect ratio, skeletons & fallback
-  renderDiscoverCards(STATE.trackList, batch);
+  renderDiscoverCards(STATE.discoverTracks, batch);
 
   // Preload next batch's 10 thumbnails in background
   DiscoverFeedManager.preloadNextBatchThumbnails(category);
@@ -950,8 +1025,8 @@ async function loadCategory(category, autoPlay = false, advanceBatch = false) {
 
   savePersistedSettings();
 
-  if (autoPlay) {
-    playTrack(0);
+  if (autoPlay && STATE.discoverTracks.length > 0) {
+    playTrack(STATE.discoverTracks[0], STATE.discoverTracks);
   }
 }
 
@@ -975,14 +1050,8 @@ async function fetchTracksFromBackend(category) {
     const data = await res.json();
     if (!data || !Array.isArray(data.tracks)) return [];
     return data.tracks
-      .filter(t => isValidYouTubeId(t.videoId || t.ytId))
-      .map(t => ({
-        videoId: t.videoId || t.ytId,
-        title: t.title || 'Unknown Track',
-        artist: t.artist || 'Unknown Artist',
-        category: category,
-        thumbnail: t.thumbnail || t.artwork || getYouTubeThumbnail(t.videoId || t.ytId),
-      }));
+      .filter(t => isValidYouTubeId(t.youtubeId || t.videoId || t.ytId))
+      .map(t => normalizeTrack(t));
   } catch (e) {
     return [];
   }
@@ -1149,9 +1218,17 @@ function updateMobileBar(track) {
   if (bar) bar.style.display = 'flex';
 }
 
-function updateDiscoverHighlight(activeIndex) {
-  document.querySelectorAll('.track-card').forEach((card, i) => {
-    card.classList.toggle('playing-card', i === activeIndex);
+function updateDiscoverHighlight(trackOrId) {
+  const activeId = (typeof trackOrId === 'object' && trackOrId)
+    ? (trackOrId.youtubeId || trackOrId.videoId || trackOrId.id)
+    : (typeof trackOrId === 'string'
+      ? trackOrId
+      : (STATE.currentTrack ? (STATE.currentTrack.youtubeId || STATE.currentTrack.videoId || STATE.currentTrack.id) : null));
+
+  document.querySelectorAll('.track-card').forEach(card => {
+    const cardId = card.dataset.youtubeId || card.dataset.videoId || card.dataset.id;
+    const isPlaying = !!(activeId && cardId === activeId);
+    card.classList.toggle('playing-card', isPlaying);
   });
 }
 
@@ -1203,21 +1280,29 @@ function renderDiscoverCards(tracks, batchInfo) {
   const categoryName = CATEGORY_META[STATE.currentCategory]?.name || STATE.currentCategory;
 
   tracks.forEach((track, index) => {
-    const card = createTrackCard(track, index, categoryName);
+    const canonical = normalizeTrack(track);
+    const card = createTrackCard(canonical, index, categoryName, tracks);
     grid.appendChild(card);
   });
 }
 
-function createTrackCard(track, index, categoryName) {
+function createTrackCard(track, index, categoryName, batchTracks) {
   const card = document.createElement('div');
   card.className = 'track-card';
-  if (index === STATE.currentIndex) card.classList.add('playing-card');
+  const ytid = track.youtubeId || track.videoId;
+  const currentPlayingId = STATE.currentTrack ? (STATE.currentTrack.youtubeId || STATE.currentTrack.videoId) : null;
+  if (currentPlayingId && ytid === currentPlayingId) {
+    card.classList.add('playing-card');
+  }
+
   card.setAttribute('role', 'listitem');
   card.setAttribute('tabindex', '0');
   card.setAttribute('aria-label', `Play ${track.title} by ${track.artist}`);
-  card.dataset.index = index;
+  card.dataset.id = track.id || `track-${index}`;
+  card.dataset.youtubeId = ytid;
+  card.dataset.videoId = ytid;
 
-  const thumb = track.thumbnail || getYouTubeThumbnail(track.videoId);
+  const thumb = track.thumbnail || getYouTubeThumbnail(ytid);
   const isPriority = index < 4;
 
   card.innerHTML = `
@@ -1251,11 +1336,13 @@ function createTrackCard(track, index, categoryName) {
     </div>
   `;
 
-  card.addEventListener('click', () => playTrack(index));
+  card.addEventListener('click', () => {
+    playTrack(track, batchTracks || STATE.discoverTracks);
+  });
   card.addEventListener('keydown', e => {
     if (e.key === 'Enter' || e.key === ' ') {
       e.preventDefault();
-      playTrack(index);
+      playTrack(track, batchTracks || STATE.discoverTracks);
     }
   });
 
@@ -1451,7 +1538,7 @@ function bindPlayerControls() {
   if (ppBtn) {
     ppBtn.addEventListener('click', () => {
       unlockMobileAudio();
-      if (STATE.trackList.length === 0 && STATE.currentIndex === -1) {
+      if (!STATE.currentTrack && STATE.discoverTracks.length === 0) {
         loadCategoryAndPlay(STATE.currentCategory);
       } else {
         togglePlayPause();
