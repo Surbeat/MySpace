@@ -108,19 +108,11 @@ app.get('/api/songs/database', (req, res) => {
 
 /**
  * WORKOUT CATALOG ENDPOINT
- * Serves the 200 curated Workout tracks catalog
+ * Serves the 200 curated Workout tracks from canonical database
  */
 app.get('/api/workout/tracks', (req, res) => {
-  const workoutPath = path.join(__dirname, 'data', 'workout_catalog.json');
-  try {
-    if (fs.existsSync(workoutPath)) {
-      const data = JSON.parse(fs.readFileSync(workoutPath, 'utf8'));
-      const { language } = req.query;
-      const filtered = language && language !== 'all' ? data.filter(t => t.language === language) : data;
-      return res.json({ success: true, count: filtered.length, data: filtered });
-    }
-  } catch (e) {}
-  return res.json({ success: true, count: 0, data: [] });
+  const songs = songsDb.getSongs('workout');
+  return res.json({ success: true, count: songs.length, data: songs });
 });
 
 app.post('/api/songs/database', (req, res) => {

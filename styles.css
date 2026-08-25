@@ -1270,24 +1270,6 @@ input { border: none; outline: none; background: none; }
   opacity: 0;
 }
 
-.btn-rotate-feed:hover {
-  background: linear-gradient(135deg, var(--burgundy-bright), var(--burgundy-deep));
-  transform: translateY(-1px);
-  box-shadow: 0 4px 15px var(--gold-glow-sm);
-}
-
-.btn-rotate-feed:active {
-  transform: translateY(0);
-}
-
-.btn-rotate-feed svg {
-  transition: transform 0.4s ease;
-}
-
-.btn-rotate-feed:hover svg {
-  transform: rotate(180deg);
-}
-
 .tracks-placeholder {
   grid-column: 1 / -1;
   text-align: center;

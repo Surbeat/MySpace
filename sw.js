@@ -3,14 +3,13 @@
  * PWA Asset Caching & Offline App Shell
  */
 
-const CACHE_NAME = 'surbeat-v2.2.0';
+const CACHE_NAME = 'surbeat-v2.3.0';
 const STATIC_ASSETS = [
   './',
   './index.html',
   './styles.css',
   './script.js',
   './songsDatabaseCatalog.js',
-  './workoutCatalog.js',
   './manifest.webmanifest',
   './icons/icon.svg'
 ];
