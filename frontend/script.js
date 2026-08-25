@@ -842,8 +842,79 @@ function setupVisibilityHandling() {
 }
 
 // ════════════════════════════════════════════════════════════════
-// 12. CONTINUOUS DISCOVER FEED MANAGER (UNLIMITED SCROLL)
+// 12. RECENT HISTORY & CONTINUOUS DISCOVER FEED MANAGER
 // ════════════════════════════════════════════════════════════════
+
+function shuffleArray(arr) {
+  const a = arr.slice();
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+const RecentHistoryManager = (() => {
+  const STORAGE_KEY = 'surbeat_recent_shown_history';
+  let historyCache = null;
+
+  function loadAllHistory() {
+    if (historyCache) return historyCache;
+    try {
+      const raw = localStorage.getItem(STORAGE_KEY);
+      if (raw) {
+        historyCache = JSON.parse(raw);
+      }
+    } catch (e) {}
+    if (!historyCache || typeof historyCache !== 'object') {
+      historyCache = {
+        trending: [],
+        workout: [],
+        awarapan: [],
+        romantic_new: [],
+        classic_old: [],
+        lofi: []
+      };
+    }
+    return historyCache;
+  }
+
+  function getHistory(category) {
+    const all = loadAllHistory();
+    return Array.isArray(all[category]) ? all[category] : [];
+  }
+
+  function recordShown(category, trackIds) {
+    const all = loadAllHistory();
+    if (!Array.isArray(all[category])) all[category] = [];
+    trackIds.forEach(id => {
+      if (id && !all[category].includes(id)) {
+        all[category].push(id);
+      }
+    });
+    // Trim history if it exceeds 140 songs so earlier tracks become eligible again
+    if (all[category].length > 140) {
+      all[category] = all[category].slice(-80);
+    }
+    try {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(all));
+    } catch (e) {}
+  }
+
+  function resetCategoryHistory(category) {
+    const all = loadAllHistory();
+    all[category] = [];
+    try {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(all));
+    } catch (e) {}
+  }
+
+  return {
+    getHistory,
+    recordShown,
+    resetCategoryHistory
+  };
+})();
 
 const ContinuousDiscoverFeedManager = (() => {
   const CHUNK_SIZE = 10;
@@ -879,6 +950,41 @@ const ContinuousDiscoverFeedManager = (() => {
 
     categoryCache[category] = formatted;
     return formatted;
+  }
+
+  // Generates a fresh, randomized 10-song selection avoiding recently displayed songs
+  function getFreshSessionFeed(category, count = 10) {
+    const allTracks = getCategoryDatabaseTracks(category);
+    if (!allTracks || allTracks.length === 0) {
+      return { selected: [], fullQueue: [] };
+    }
+
+    let history = RecentHistoryManager.getHistory(category);
+    const historySet = new Set(history);
+
+    // Eligible pool excludes recently displayed songs
+    let eligible = allTracks.filter(t => !historySet.has(t.id) && !historySet.has(t.youtubeId));
+
+    // If remaining pool has fewer than requested songs, trim history and replenish
+    if (eligible.length < count) {
+      RecentHistoryManager.resetCategoryHistory(category);
+      eligible = allTracks.slice();
+    }
+
+    // Unbiased shuffle of the eligible candidate pool
+    const shuffledEligible = shuffleArray(eligible);
+    const selected = shuffledEligible.slice(0, count);
+
+    // Record the 10 selected track IDs to recent history
+    RecentHistoryManager.recordShown(category, selected.map(t => t.id));
+
+    // Build the complete non-repeating playback queue starting with the 10 fresh cards
+    const selectedIdSet = new Set(selected.map(t => t.id));
+    const remainingEligible = shuffledEligible.slice(count);
+    const previouslyShown = shuffleArray(allTracks.filter(t => !selectedIdSet.has(t.id) && !remainingEligible.some(r => r.id === t.id)));
+    const fullQueue = [...selected, ...remainingEligible, ...previouslyShown];
+
+    return { selected, fullQueue };
   }
 
   // Preloads the next group of thumbnails in the background
@@ -932,8 +1038,11 @@ const ContinuousDiscoverFeedManager = (() => {
     STATE.feedLoadingMore = true;
 
     const cat = STATE.currentCategory;
-    const allTracks = getCategoryDatabaseTracks(cat);
-    if (!allTracks || allTracks.length === 0) {
+    const queue = STATE.playbackQueue && STATE.playbackQueue.length > 0
+      ? STATE.playbackQueue
+      : getCategoryDatabaseTracks(cat);
+
+    if (!queue || queue.length === 0) {
       STATE.feedLoadingMore = false;
       return;
     }
@@ -942,8 +1051,8 @@ const ContinuousDiscoverFeedManager = (() => {
     const nextTracks = [];
 
     for (let i = 0; i < CHUNK_SIZE; i++) {
-      const trackIdx = (currentCount + i) % allTracks.length;
-      const track = allTracks[trackIdx];
+      const trackIdx = (currentCount + i) % queue.length;
+      const track = queue[trackIdx];
       if (track) {
         nextTracks.push(track);
       }
@@ -972,6 +1081,7 @@ const ContinuousDiscoverFeedManager = (() => {
 
   return {
     getCategoryDatabaseTracks,
+    getFreshSessionFeed,
     setupInfiniteScroll,
     loadMore,
     preloadNextThumbnails
@@ -1000,16 +1110,15 @@ async function loadCategory(category, autoPlay = false) {
     subEl.textContent = `Browse curated melodies from ${catName}`;
   }
 
-  // Load all tracks for playback queue
-  const allTracks = ContinuousDiscoverFeedManager.getCategoryDatabaseTracks(category);
-  STATE.playbackQueue = allTracks;
+  // Generate fresh session feed for this category
+  const { selected, fullQueue } = ContinuousDiscoverFeedManager.getFreshSessionFeed(category, 10);
 
-  // Reset feed render count and load initial 10 cards
-  const initialChunk = allTracks.slice(0, 10);
-  STATE.renderedFeedTracks = initialChunk;
-  STATE.renderedCount = initialChunk.length;
+  STATE.playbackQueue = fullQueue;
+  STATE.renderedFeedTracks = selected;
+  STATE.renderedCount = selected.length;
 
-  renderDiscoverCards(initialChunk);
+  // Render fresh 10 cards to the DOM
+  renderDiscoverCards(selected);
 
   // Preload next thumbnails
   ContinuousDiscoverFeedManager.preloadNextThumbnails(category, 10, 10);
@@ -1017,8 +1126,8 @@ async function loadCategory(category, autoPlay = false) {
   savePersistedSettings();
   updateDebugStatus();
 
-  if (autoPlay && initialChunk.length > 0) {
-    playTrack(initialChunk[0], allTracks);
+  if (autoPlay && selected.length > 0) {
+    playTrack(selected[0], fullQueue);
   }
 }
 
