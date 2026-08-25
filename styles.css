@@ -175,9 +175,38 @@ input { border: none; outline: none; background: none; }
 
 .header-brand {
   display: flex;
-  align-items: center;
-  gap: var(--space-sm);
+  flex-direction: column;
+  justify-content: center;
+  gap: 1px;
   flex-shrink: 0;
+}
+
+.header-brand-main {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+.header-creator-byline {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.68rem;
+  color: var(--text-muted);
+  padding-left: 14px;
+  letter-spacing: 0.02em;
+  line-height: 1;
+}
+
+.header-creator-byline .creator-by {
+  color: var(--text-muted);
+  font-weight: 400;
+}
+
+.header-creator-byline .creator-name {
+  color: var(--gold-bright);
+  font-weight: 600;
+  font-family: var(--font-display);
 }
 
 .header-live-dot {
@@ -216,6 +245,26 @@ input { border: none; outline: none; background: none; }
   padding: 2px 7px;
   border-radius: var(--radius-full);
   background: var(--gold-glow-sm);
+}
+
+.hero-creator-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 14px;
+  background: rgba(212, 175, 55, 0.08);
+  border: 1px solid var(--border-gold-md);
+  border-radius: var(--radius-full);
+  font-size: 0.76rem;
+  color: var(--gold-bright);
+  margin-bottom: var(--space-md);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.hero-creator-tag strong {
+  color: #fff;
+  font-weight: 600;
 }
 
 .header-status {
@@ -1958,29 +2007,39 @@ input { border: none; outline: none; background: none; }
 }
 
 /* ═══════════════════════════════════════════════════════
-   RESPONSIVE LAYOUTS
+   RESPONSIVE LAYOUTS (320px to 1920px+)
    ═══════════════════════════════════════════════════════ */
+
+/* Global container safety against horizontal overflow */
+html, body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
 
 /* ── MOBILE: up to 767px ───────────────────────────────────────── */
 @media (max-width: 767px) {
 
   /* Header */
+  .site-header { padding: 0 var(--space-sm); }
+  .header-inner { padding: 0 4px; gap: var(--space-xs); }
   .header-badge { display: none; }
-  .header-listeners #listenerCount {
-    font-size: 0.72rem;
-  }
+  .header-brand-name { font-size: 1.1rem; }
+  .header-creator-byline { font-size: 0.65rem; padding-left: 10px; }
+  .header-clock { font-size: 0.75rem; }
+  .header-listeners #listenerCount { font-size: 0.72rem; }
 
   /* Hero */
   .hero-section { padding: var(--space-xl) var(--space-md) var(--space-lg); }
   .sargam-notes span { font-size: 0.75rem; }
 
   /* Categories — horizontal scroll */
-  .category-nav { padding: 0 0 var(--space-lg); }
+  .category-nav { padding: 0 0 var(--space-lg); width: 100%; }
   .category-pills {
     flex-wrap: nowrap;
     overflow-x: auto;
     overflow-y: hidden;
-    padding: 4px var(--space-lg);
+    padding: 4px var(--space-md);
     justify-content: flex-start;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
@@ -1991,20 +2050,20 @@ input { border: none; outline: none; background: none; }
   .cat-btn { scroll-snap-align: start; flex-shrink: 0; }
 
   /* Player zone — single column */
-  .player-zone { padding: 0 var(--space-md) 100px; }
+  .player-zone { padding: 0 var(--space-md) 100px; width: 100%; }
   .player-zone-inner {
     flex-direction: column;
     align-items: center;
     gap: var(--space-lg);
+    width: 100%;
   }
 
   /* Side cards — horizontal row on mobile */
   .side-card {
     position: static;
     flex: 0 0 auto;
-    max-width: 100%;
     width: 100%;
-    max-width: 340px;
+    max-width: 360px;
   }
 
   .side-card-inner {
@@ -2024,35 +2083,32 @@ input { border: none; outline: none; background: none; }
   .side-eq { display: none; }
 
   /* Side cards order on mobile */
-  .player-zone-inner { flex-direction: column; }
   .side-card-a { order: 3; }
-  .main-player { order: 1; }
+  .main-player { order: 1; width: 100%; }
   .side-card-b { order: 4; }
 
   /* Vinyl size on mobile */
-  .turntable-stage { width: 220px; height: 220px; }
-  .vinyl-disc { width: 188px; height: 188px; }
+  .turntable-stage { width: clamp(190px, 52vw, 220px); height: clamp(190px, 52vw, 220px); }
+  .vinyl-disc { width: clamp(165px, 45vw, 188px); height: clamp(165px, 45vw, 188px); }
   .vinyl-label { width: 64px; height: 64px; }
-  .ar-1 { width: 240px; height: 240px; }
-  .ar-2 { width: 270px; height: 270px; }
-  .ar-3 { width: 300px; height: 300px; }
-
-  /* Main player full width on mobile */
-  .main-player { width: 100%; }
+  .ar-1 { width: clamp(210px, 58vw, 240px); height: clamp(210px, 58vw, 240px); }
+  .ar-2 { width: clamp(235px, 65vw, 270px); height: clamp(235px, 65vw, 270px); }
+  .ar-3 { width: clamp(260px, 72vw, 300px); height: clamp(260px, 72vw, 300px); }
 
   /* Controls */
   .ctrl-primary { width: 56px; height: 56px; }
   .ctrl-secondary { width: 40px; height: 40px; }
+  .controls-row { gap: clamp(8px, 2.5vw, 16px); }
 
   /* Volume — center */
   .volume-row { max-width: 100%; justify-content: center; }
 
   /* Discover */
-  .discover-section { padding: var(--space-lg) var(--space-md); }
+  .discover-section { padding: var(--space-lg) var(--space-md); width: 100%; }
   .track-grid { grid-template-columns: repeat(2, 1fr); gap: var(--space-sm); }
 
   /* Creator */
-  .creator-section { padding: var(--space-lg) var(--space-md); }
+  .creator-section { padding: var(--space-lg) var(--space-md); width: 100%; }
   .creator-card { padding: var(--space-lg); }
   .creator-header { gap: var(--space-md); }
   .creator-avatar { width: 56px; height: 56px; font-size: 1.1rem; }
@@ -2073,24 +2129,39 @@ input { border: none; outline: none; background: none; }
   body { padding-bottom: 60px; }
 }
 
-@media (max-width: 400px) {
-  .track-grid { grid-template-columns: 1fr; }
+/* ── SMALL & NARROW MOBILE: up to 480px ─────────────────────────── */
+@media (max-width: 480px) {
+  .header-clock { display: none; }
+  .header-divider { display: none; }
+  .header-brand-name { font-size: 1.05rem; }
+  .header-creator-byline { font-size: 0.62rem; padding-left: 8px; }
+  .track-grid { grid-template-columns: 1fr; gap: var(--space-md); }
   .social-grid { grid-template-columns: 1fr; }
+}
+
+/* ── ULTRA NARROW MOBILE: up to 360px ──────────────────────────── */
+@media (max-width: 360px) {
+  .header-brand-name { font-size: 0.98rem; }
+  .header-creator-byline { font-size: 0.58rem; }
+  .header-listeners #listenerCount { font-size: 0.68rem; }
+  .turntable-stage { width: 175px; height: 175px; }
+  .vinyl-disc { width: 150px; height: 150px; }
+  .ctrl-primary { width: 48px; height: 48px; }
+  .ctrl-secondary { width: 36px; height: 36px; }
+  .controls-row { gap: 6px; }
+  .time-display { font-size: 0.7rem; }
 }
 
 /* ── TABLET: 768px–1023px ──────────────────────────────────────── */
 @media (min-width: 768px) and (max-width: 1023px) {
-
   .hero-section { padding: var(--space-2xl) var(--space-lg) var(--space-xl); }
 
-  /* Player zone: side cards move below player */
   .player-zone-inner {
     flex-direction: column;
     align-items: center;
     gap: var(--space-lg);
   }
 
-  /* Side cards horizontal row */
   .side-card-a,
   .side-card-b {
     position: static;
@@ -2098,7 +2169,6 @@ input { border: none; outline: none; background: none; }
     flex: 0 0 340px;
   }
 
-  /* Wrap side cards in a row */
   .side-cards-row {
     display: flex;
     gap: var(--space-lg);
@@ -2116,14 +2186,11 @@ input { border: none; outline: none; background: none; }
   .side-eq { display: none; }
 
   .track-grid { grid-template-columns: repeat(3, 1fr); }
-
   .social-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 }
 
 /* ── DESKTOP: 1024px+ ──────────────────────────────────────────── */
 @media (min-width: 1024px) {
-
-  /* Player zone: 3-column layout */
   .player-zone-inner {
     align-items: flex-start;
   }
@@ -2134,7 +2201,6 @@ input { border: none; outline: none; background: none; }
   }
 
   .track-grid { grid-template-columns: repeat(4, 1fr); }
-
   .social-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 }
 
@@ -2157,8 +2223,6 @@ input { border: none; outline: none; background: none; }
 
 /* Tablet side cards wrapper — used by script.js DOM manipulation */
 @media (max-width: 1023px) {
-  /* On tablet/mobile, side cards are stacked below the player.
-     We control order via flex ordering. */
   .player-zone-inner {
     flex-wrap: wrap;
   }
