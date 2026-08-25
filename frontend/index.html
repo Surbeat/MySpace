@@ -350,17 +350,8 @@
         <div class="section-header">
           <div class="discover-header-top">
             <h2 class="section-title">Discover <span class="gold">Music</span></h2>
-            <div class="discover-controls">
-              <span class="feed-batch-badge" id="feedBatchBadge" title="20 batches × 10 songs = 200 songs">Batch 1 of 20</span>
-              <button class="btn-rotate-feed" id="btnRotateFeed" aria-label="Load next 10 songs from database">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14" aria-hidden="true">
-                  <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/>
-                </svg>
-                <span>Next 10</span>
-              </button>
-            </div>
           </div>
-          <p class="section-sub" id="discoverSubtitle">Browse tracks from the current playlist</p>
+          <p class="section-sub" id="discoverSubtitle">Browse tracks from the current vibe</p>
         </div>
         <div class="track-grid" id="trackGrid" role="list" aria-label="Track list">
           <!-- Populated by script.js -->
@@ -369,6 +360,7 @@
             <p>Select a category above to discover music</p>
           </div>
         </div>
+        <div id="feedSentinel" class="feed-sentinel" aria-hidden="true"></div>
       </div>
     </section>
 
@@ -525,18 +517,16 @@
     </div>
   </div>
 
-  <!-- ── DEV DEBUG PANEL (Zero-API Database Monitor) ── -->
+  <!-- ── DEV DEBUG PANEL (Discover & Audio Monitor) ── -->
   <aside class="discover-debug-panel" id="discoverDebugPanel" aria-label="Developer Debug Panel">
     <div class="debug-title">
-      <span>⚡ DISCOVER FEED MONITOR</span>
+      <span>⚡ SURBEAT ENGINE MONITOR</span>
       <button class="debug-btn-close" id="debugCloseBtn" aria-label="Close Debug Panel">×</button>
     </div>
     <div><strong>Category:</strong> <span id="debugCategory">Desi Reel Hits</span></div>
-    <div><strong>Database songs:</strong> <span id="debugTotalSongs">200</span></div>
-    <div><strong>Current cycle:</strong> <span id="debugCycle">1</span></div>
-    <div><strong>Current batch:</strong> <span id="debugBatch">1 / 20</span></div>
-    <div><strong>Current cursor:</strong> <span id="debugCursor">10 / 200</span></div>
-    <div><strong>API calls for Discover:</strong> <span class="debug-badge-green" id="debugApiCalls">0</span></div>
+    <div><strong>Discovery Feed:</strong> <span id="debugFeedMode">Continuous</span></div>
+    <div><strong>API Status:</strong> <span class="debug-badge-green" id="debugApiStatus">Active / Fallback Ready</span></div>
+    <div><strong>Active Queue:</strong> <span id="debugQueueInfo">Ready</span></div>
   </aside>
 
   <!-- Scripts — Database catalogs first as they provide fallback tracks -->

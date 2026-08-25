@@ -1,7 +1,7 @@
 /**
  * SurBeat — Music Engine & Audio Architecture
  * Centralized State Machine • Media Session API • PWA Service Worker
- * Standards-compliant Background Playback & Lock-Screen Audio Controls
+ * Automatic API Quota Fallback • Category-Specific Unlimited Discover Feed
  */
 
 'use strict';
@@ -28,7 +28,7 @@ const API_BASE_URL = (() => {
 const isFileProtocol = window.location.protocol === 'file:';
 let isBackendAvailable = false;
 
-// Category display names & sub-labels
+// Category display names & metadata
 const CATEGORY_META = {
   trending:     { name: 'Desi Reel Hits',      subLabel: 'DESI REEL HITS',    icon: '🪕' },
   workout:      { name: 'Workout',             subLabel: 'BEAST MODE',         icon: '💪' },
@@ -38,7 +38,7 @@ const CATEGORY_META = {
   lofi:         { name: 'Chai & Lo‑fi',        subLabel: 'CHAI LOFI',          icon: '☕' },
 };
 
-// YouTube search queries per category
+// YouTube search queries per category (used strictly in API mode when quota is healthy)
 const CATEGORY_QUERIES = {
   trending:     ['instagram trending hindi songs 2024', 'desi reel viral hindi songs', 'trending hindi hits songs', 'best hindi songs 2024'],
   workout:      ['gym workout hindi motivation songs', 'haryanvi gym workout songs', 'punjabi workout beast mode songs', 'desi gym motivation hindi'],
@@ -48,39 +48,90 @@ const CATEGORY_QUERIES = {
   lofi:         ['sad hindi lofi songs slowed reverb', 'hindi lofi chai chill beats', 'slowed reverb hindi love songs', 'chai lofi hindi night drive'],
 };
 
-// Awarapan curated tracks (100% verified & embeddable YouTube IDs)
-const AWARAPAN_TRACKS = [
-  { videoId: 'n_VrRuNkbrE', title: 'Toh Phir Aao', artist: 'Mustafa Zahid | Pritam', category: 'awarapan' },
-  { videoId: 'P2kS3h46cIA', title: 'Tera Mera Rishta Purana', artist: 'Mustafa Zahid | Pritam', category: 'awarapan' },
-  { videoId: 'FJzE1p3mvw8', title: 'Mahiya', artist: 'Annie Khalid | Suzanne', category: 'awarapan' },
-  { videoId: 'ZsAOnmByy38', title: 'Zara Sa', artist: 'KK | Jannat', category: 'awarapan' },
-  { videoId: 'UlacMvx_VYk', title: 'Beete Lamhe', artist: 'KK | The Train', category: 'awarapan' },
-  { videoId: '1DBhic8SSKs', title: 'Woh Lamhe Woh Baatein', artist: 'Atif Aslam | Zeher', category: 'awarapan' },
-  { videoId: 'I9tX-lFUTrw', title: 'Yeh Awarapan', artist: 'Arijit Singh | Amaal Mallik', category: 'awarapan' },
-  { videoId: 'cGNcjqXe87U', title: 'Tu Hi Meri Shab Hai', artist: 'KK | Gangster', category: 'awarapan' },
-  { videoId: 'fVeJ6sJERR4', title: 'Teri Yaadon Mein', artist: 'KK | Shreya Ghoshal', category: 'awarapan' },
-  { videoId: '6rvUyBiBtik', title: 'Tera Mera Rishta (New Version)', artist: 'Mustafa Zahid | Mithoon', category: 'awarapan' },
-  { videoId: 'XwDV5xldudU', title: 'Toh Phir Aao (Lounge Version)', artist: 'Mustafa Zahid', category: 'awarapan' },
-  { videoId: 'oHmXALAdydI', title: 'Awarapan All Songs Jukebox', artist: 'Pritam | Emraan Hashmi', category: 'awarapan' },
-  { videoId: 'itoIHcocrZI', title: 'Toh Phir Aao (Acoustic)', artist: 'Mustafa Zahid', category: 'awarapan' },
-  { videoId: '_RZwGzElnIs', title: 'Bheegi Bheegi', artist: 'James | Gangster', category: 'awarapan' },
-  { videoId: '0bAVd9jJE2Q', title: 'Aashiq Banaya Aapne', artist: 'Himesh Reshammiya | Shreya', category: 'awarapan' }
-];
-
-// Fallback high-res artwork
 const BRAND_FALLBACK_ARTWORK = 'icons/icon.svg';
 
 // ════════════════════════════════════════════════════════════════
-// 2. CENTRALIZED STATE — Single Source of Truth
+// 2. API QUOTA STATE MACHINE
 // ════════════════════════════════════════════════════════════════
-// 2. CENTRALIZED STATE — Canonical Single Source of Truth
+
+const ApiQuotaManager = (() => {
+  const STORAGE_KEY = 'surbeat_api_quota_exhausted';
+  let currentState = 'API_AVAILABLE'; // 'API_AVAILABLE' | 'API_QUOTA_EXHAUSTED' | 'API_TEMPORARY_ERROR' | 'DATABASE_FALLBACK'
+  let apiCallCount = 0;
+
+  function init() {
+    try {
+      const stored = sessionStorage.getItem(STORAGE_KEY);
+      if (stored === 'true') {
+        currentState = 'DATABASE_FALLBACK';
+        console.log('⚡ [API Quota Manager] Restored DATABASE_FALLBACK mode from session storage.');
+      }
+    } catch (e) {}
+  }
+
+  function markQuotaExhausted(reason = 'quotaExceeded') {
+    currentState = 'DATABASE_FALLBACK';
+    try {
+      sessionStorage.setItem(STORAGE_KEY, 'true');
+    } catch (e) {}
+    console.warn(`🚨 [API Quota Exhausted] Notice: ${reason}. Silently switched to Category Database Fallback Queue.`);
+    updateDebugStatus();
+  }
+
+  function markTemporaryError() {
+    if (currentState !== 'DATABASE_FALLBACK') {
+      currentState = 'API_TEMPORARY_ERROR';
+    }
+  }
+
+  function isFallbackMode() {
+    return currentState === 'DATABASE_FALLBACK' || currentState === 'API_QUOTA_EXHAUSTED';
+  }
+
+  function getState() {
+    return currentState;
+  }
+
+  function recordApiCall() {
+    apiCallCount++;
+    updateDebugStatus();
+  }
+
+  function getApiCallCount() {
+    return apiCallCount;
+  }
+
+  function reset() {
+    currentState = 'API_AVAILABLE';
+    apiCallCount = 0;
+    try {
+      sessionStorage.removeItem(STORAGE_KEY);
+    } catch (e) {}
+    updateDebugStatus();
+  }
+
+  return {
+    init,
+    markQuotaExhausted,
+    markTemporaryError,
+    isFallbackMode,
+    getState,
+    recordApiCall,
+    getApiCallCount,
+    reset
+  };
+})();
+
+// ════════════════════════════════════════════════════════════════
+// 3. CENTRALIZED STATE — Single Source of Truth
 // ════════════════════════════════════════════════════════════════
 
 const STATE = {
   currentCategory: 'trending',
   currentTrack: null,     // Canonical Track: { id, youtubeId, videoId, title, artist, album, category, thumbnail }
-  playbackQueue: [],      // Array of canonical tracks queued for playback
-  discoverTracks: [],     // Array of canonical tracks currently in Discover grid (10 items)
+  playbackQueue: [],      // Array of canonical tracks queued for playback (200 tracks per category)
+  renderedFeedTracks: [], // Array of tracks currently rendered in the Discover grid
+  renderedCount: 0,       // Current number of rendered cards
   isPlaying: false,
   isShuffle: false,
   repeatMode: 'off',      // 'off' | 'all' | 'one'
@@ -96,10 +147,12 @@ const STATE = {
   seekIntervalId: null,
   skipAttempts: 0,        // For auto-skip error recovery
   mediaSessionInitialized: false,
+  feedLoadingMore: false,
+  playToken: 0,           // To prevent async race conditions
 };
 
 // ════════════════════════════════════════════════════════════════
-// 3. CANONICAL TRACK HELPERS & PERSISTENCE
+// 4. CANONICAL TRACK HELPERS & PERSISTENCE
 // ════════════════════════════════════════════════════════════════
 
 function normalizeTrack(raw) {
@@ -119,11 +172,11 @@ function normalizeTrack(raw) {
   };
 }
 
-const STORAGE_KEY = 'surbeat_player_preferences';
+const STORAGE_PREFS_KEY = 'surbeat_player_preferences';
 
 function loadPersistedSettings() {
   try {
-    const raw = localStorage.getItem(STORAGE_KEY);
+    const raw = localStorage.getItem(STORAGE_PREFS_KEY);
     if (!raw) return;
     const data = JSON.parse(raw);
 
@@ -145,12 +198,8 @@ function loadPersistedSettings() {
         STATE.currentCategory = data.currentCategory;
       }
     }
-    // Restore exact track by canonical object or youtubeId
     if (data.currentTrack && (data.currentTrack.youtubeId || data.currentTrack.videoId)) {
       STATE.currentTrack = normalizeTrack(data.currentTrack);
-    } else if (data.currentYoutubeId && typeof window !== 'undefined' && typeof window.findSurBeatTrackByYoutubeId === 'function') {
-      const found = window.findSurBeatTrackByYoutubeId(data.currentYoutubeId);
-      if (found) STATE.currentTrack = normalizeTrack(found);
     }
   } catch (e) {
     console.warn('[SurBeat] Error reading saved preferences:', e);
@@ -174,15 +223,14 @@ function savePersistedSettings() {
         category: STATE.currentTrack.category,
         thumbnail: STATE.currentTrack.thumbnail,
         audioUrl: STATE.currentTrack.audioUrl
-      } : null,
-      currentYoutubeId: STATE.currentTrack ? (STATE.currentTrack.youtubeId || STATE.currentTrack.videoId) : null
+      } : null
     };
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+    localStorage.setItem(STORAGE_PREFS_KEY, JSON.stringify(data));
   } catch (e) {}
 }
 
 // ════════════════════════════════════════════════════════════════
-// 4. UTILITIES
+// 5. UTILITIES
 // ════════════════════════════════════════════════════════════════
 
 function formatTime(sec) {
@@ -214,7 +262,7 @@ function escapeHtml(str) {
 }
 
 // ════════════════════════════════════════════════════════════════
-// 5. LIVE CLOCK & LISTENER SIMULATION
+// 6. LIVE CLOCK & LISTENER SIMULATION
 // ════════════════════════════════════════════════════════════════
 
 let clockTimer = null;
@@ -234,16 +282,16 @@ function startClock() {
   clockTimer = setInterval(updateClock, 1000);
 }
 
-let baseListeners = 28;
+let baseListeners = 34;
 let listenerTimer = null;
 
 function calculateBaseListeners() {
   const now = new Date();
   const utc = now.getTime() + (now.getTimezoneOffset() * 60000);
   const istHour = new Date(utc + 19800000).getHours(); // UTC+5:30
-  if (istHour >= 18 && istHour <= 23) return 36 + Math.floor(Math.random() * 10);
-  if (istHour >= 9 && istHour < 18) return 26 + Math.floor(Math.random() * 8);
-  return 18 + Math.floor(Math.random() * 6);
+  if (istHour >= 18 && istHour <= 23) return 42 + Math.floor(Math.random() * 12);
+  if (istHour >= 9 && istHour < 18) return 28 + Math.floor(Math.random() * 10);
+  return 20 + Math.floor(Math.random() * 8);
 }
 
 function updateListenerCount() {
@@ -261,7 +309,7 @@ function startListenerFluctuation() {
   listenerTimer = setInterval(() => {
     const delta = Math.random() < 0.5 ? -1 : 1;
     const next = baseListeners + delta;
-    if (next >= 16 && next <= 68) {
+    if (next >= 18 && next <= 75) {
       baseListeners = next;
       updateListenerCount();
     }
@@ -269,7 +317,7 @@ function startListenerFluctuation() {
 }
 
 // ════════════════════════════════════════════════════════════════
-// 6. YOUTUBE IFRAME ENGINE & EVENTS
+// 7. YOUTUBE IFRAME ENGINE & AUDIO CONTROLS
 // ════════════════════════════════════════════════════════════════
 
 function loadYouTubeAPI() {
@@ -343,25 +391,21 @@ function onYTPlayerStateChange(event) {
     STATE.isLoading = true;
     showLoading(true);
   }
-
-  if (event.data === YTS.UNSTARTED) {
-    // Unstarted state
-  }
 }
 
 function onYTPlayerError(event) {
-  console.warn('⚠️ Audio Source Notice [code:', event.data, ']');
+  console.warn('⚠️ Audio Stream Notice [code:', event.data, ']');
   STATE.isLoading = false;
   STATE.skipAttempts++;
 
   if (STATE.skipAttempts < 4) {
-    showError('Unable to play this track. Trying next available track…');
+    showError('Switching to next available track…');
     setTimeout(() => {
       hideError();
       autoSkipNext();
-    }, 1200);
+    }, 800);
   } else {
-    showError('Unable to load track. Please select another vibe.');
+    showError('Select another vibe to continue.');
     STATE.isLoading = false;
     updatePlaybackUI(false);
   }
@@ -371,7 +415,7 @@ function autoSkipNext() {
   if (STATE.skipAttempts < 4) {
     playNext();
   } else {
-    showError('This track is currently unavailable.');
+    showError('Track currently unavailable.');
     showLoading(false);
     STATE.isPlaying = false;
     updatePlaybackUI(false);
@@ -379,7 +423,6 @@ function autoSkipNext() {
 }
 
 function onTrackEnded() {
-  // Handle Repeat One
   if (STATE.repeatMode === 'one') {
     if (STATE.currentTrack) {
       seekTo(0);
@@ -393,7 +436,7 @@ function onTrackEnded() {
   let queue = STATE.playbackQueue;
   if (!queue || queue.length === 0) {
     const cat = STATE.currentTrack?.category || STATE.currentCategory || 'trending';
-    queue = DiscoverFeedManager.getCategoryTracks(cat);
+    queue = ContinuousDiscoverFeedManager.getCategoryDatabaseTracks(cat);
     STATE.playbackQueue = queue;
   }
 
@@ -402,7 +445,7 @@ function onTrackEnded() {
   const isLastTrack = currentIdx >= queue.length - 1;
 
   if (isLastTrack && STATE.repeatMode === 'off' && !STATE.isShuffle) {
-    // End of 200-song playlist with repeat off
+    // End of full category catalog with repeat off
     STATE.isPlaying = false;
     updatePlaybackUI(false);
     return;
@@ -412,41 +455,39 @@ function onTrackEnded() {
 }
 
 // ════════════════════════════════════════════════════════════════
-// 7. CENTRAL PLAYBACK ENGINE (CANONICAL TRACK OBJECT DISPATCH)
+// 8. CENTRAL PLAYBACK ENGINE (CANONICAL TRACK OBJECT DISPATCH)
 // ════════════════════════════════════════════════════════════════
 
 function playTrack(track, queue = null) {
   if (!track) return;
 
+  const currentSession = ++STATE.playToken;
   const canonical = normalizeTrack(track);
   const ytid = canonical.youtubeId || canonical.videoId;
 
   if (!isValidYouTubeId(ytid) && !canonical.audioUrl) {
-    console.warn('❌ [SurBeat] Invalid track youtubeId & audioUrl:', canonical);
-    showError('This track is currently unavailable.');
+    console.warn('❌ [SurBeat] Invalid playback source:', canonical);
+    showError('Track unavailable. Moving to next…');
     autoSkipNext();
     return;
   }
 
-  // Developer Logging & Verification
-  console.log(`🎵 [DISCOVER CLICK] Title: "${canonical.title}" | Artist: "${canonical.artist}" | Database ID: ${canonical.id} | YouTube ID: ${ytid}`);
-
-  // Maintain complete 200-song category catalog as active playback queue
   const targetCategory = canonical.category || STATE.currentCategory || 'trending';
+
+  // Ensure active category playback queue has full category songs
   if (Array.isArray(queue) && queue.length > 0) {
     STATE.playbackQueue = queue.map(normalizeTrack);
   } else if (!STATE.playbackQueue || STATE.playbackQueue.length === 0 || (STATE.playbackQueue[0] && STATE.playbackQueue[0].category !== targetCategory)) {
-    STATE.playbackQueue = DiscoverFeedManager.getCategoryTracks(targetCategory);
+    STATE.playbackQueue = ContinuousDiscoverFeedManager.getCategoryDatabaseTracks(targetCategory);
   }
 
-  // Store exact canonical track
   STATE.currentTrack = canonical;
   STATE.isLoading = true;
   STATE.skipAttempts = 0;
   STATE.currentTime = 0;
   STATE.duration = 0;
 
-  // Immediate UI synchronization strictly from canonical track
+  // Immediate UI synchronization from the exact canonical track
   updateNowPlayingUI(canonical);
   updateDiscoverHighlight(canonical);
   updateMobileBar(canonical);
@@ -454,25 +495,21 @@ function playTrack(track, queue = null) {
   showLoading(true);
   hideError();
 
-  console.log(`▶️ [PLAYER START] Title: "${canonical.title}" | Artist: "${canonical.artist}" | Database ID: ${canonical.id} | YouTube ID: ${ytid}`);
-
-  // Developer Assertion Check
-  if (ytid && ytid !== (STATE.currentTrack.youtubeId || STATE.currentTrack.videoId)) {
-    console.error('🚨 [CRITICAL TRACK MISMATCH ASSERTION FAILED]', canonical, STATE.currentTrack);
-  }
+  console.log(`▶️ [PLAY] "${canonical.title}" by ${canonical.artist} [${targetCategory}] (YT: ${ytid})`);
 
   try {
     if (STATE.ytReady && STATE.ytPlayer && typeof STATE.ytPlayer.loadVideoById === 'function') {
-      STATE.ytPlayer.loadVideoById(ytid);
+      if (currentSession === STATE.playToken) {
+        STATE.ytPlayer.loadVideoById(ytid);
+      }
     } else {
-      console.warn('Player engine not ready yet. Video queued:', ytid);
+      console.warn('Player engine initializing for:', ytid);
     }
   } catch (e) {
     console.warn('Player load error:', e);
-    showError('Unable to load track.');
+    showError('Unable to stream track.');
   }
 
-  // Reveal player controls on first play
   if (!STATE.hasStarted) {
     STATE.hasStarted = true;
     showPlayerControls();
@@ -481,14 +518,15 @@ function playTrack(track, queue = null) {
   unlockMobileAudio();
   updateMediaSession();
   savePersistedSettings();
+  updateDebugStatus();
 }
 
 function togglePlayPause() {
   if (!STATE.ytReady || !STATE.ytPlayer) return;
 
   if (!STATE.currentTrack) {
-    if (STATE.discoverTracks.length > 0) {
-      playTrack(STATE.discoverTracks[0]);
+    if (STATE.renderedFeedTracks.length > 0) {
+      playTrack(STATE.renderedFeedTracks[0]);
     } else {
       loadCategoryAndPlay(STATE.currentCategory);
     }
@@ -496,15 +534,11 @@ function togglePlayPause() {
   }
 
   if (STATE.isPlaying) {
-    try {
-      STATE.ytPlayer.pauseVideo();
-    } catch (e) {}
+    try { STATE.ytPlayer.pauseVideo(); } catch (e) {}
     STATE.isPlaying = false;
     updatePlaybackUI(false);
   } else {
-    try {
-      STATE.ytPlayer.playVideo();
-    } catch (e) {}
+    try { STATE.ytPlayer.playVideo(); } catch (e) {}
     STATE.isPlaying = true;
     updatePlaybackUI(true);
   }
@@ -514,7 +548,7 @@ function playNext() {
   let queue = STATE.playbackQueue;
   if (!queue || queue.length === 0) {
     const cat = STATE.currentTrack?.category || STATE.currentCategory || 'trending';
-    queue = DiscoverFeedManager.getCategoryTracks(cat);
+    queue = ContinuousDiscoverFeedManager.getCategoryDatabaseTracks(cat);
     STATE.playbackQueue = queue;
   }
   if (!queue || queue.length === 0) return;
@@ -542,7 +576,6 @@ function playNext() {
 }
 
 function playPrev() {
-  // If current position > 3.0s, restart the current track
   if (STATE.currentTime > 3.0) {
     seekTo(0);
     if (!STATE.isPlaying && STATE.ytReady && STATE.ytPlayer) {
@@ -554,7 +587,7 @@ function playPrev() {
   let queue = STATE.playbackQueue;
   if (!queue || queue.length === 0) {
     const cat = STATE.currentTrack?.category || STATE.currentCategory || 'trending';
-    queue = DiscoverFeedManager.getCategoryTracks(cat);
+    queue = ContinuousDiscoverFeedManager.getCategoryDatabaseTracks(cat);
     STATE.playbackQueue = queue;
   }
   if (!queue || queue.length === 0) return;
@@ -615,7 +648,6 @@ function toggleShuffle() {
 }
 
 function toggleRepeat() {
-  // 3-state cycle: 'off' -> 'all' -> 'one' -> 'off'
   if (STATE.repeatMode === 'off') {
     STATE.repeatMode = 'all';
   } else if (STATE.repeatMode === 'all') {
@@ -678,8 +710,8 @@ function initMediaSessionHandlers() {
 
   const actionHandlers = [
     ['play', () => {
-      if (!STATE.currentTrack && STATE.discoverTracks.length > 0) {
-        playTrack(STATE.discoverTracks[0], STATE.discoverTracks);
+      if (!STATE.currentTrack && STATE.renderedFeedTracks.length > 0) {
+        playTrack(STATE.renderedFeedTracks[0]);
       } else {
         togglePlayPause();
       }
@@ -708,9 +740,7 @@ function initMediaSessionHandlers() {
   actionHandlers.forEach(([action, handler]) => {
     try {
       navigator.mediaSession.setActionHandler(action, handler);
-    } catch (err) {
-      // Some browsers don't support seekforward/seekbackward/stop actions
-    }
+    } catch (err) {}
   });
 
   STATE.mediaSessionInitialized = true;
@@ -741,7 +771,7 @@ function updateMediaSession() {
       ],
     });
   } catch (e) {
-    console.warn('[SurBeat] MediaMetadata assignment error:', e);
+    console.warn('[SurBeat] MediaMetadata error:', e);
   }
 
   syncMediaSessionPlaybackState();
@@ -761,14 +791,7 @@ function updateMediaSessionPosition() {
   const dur = STATE.duration;
   const pos = STATE.currentTime;
 
-  // Strict validation: never send NaN, Infinity, negative duration, or position > duration
-  if (
-    isFinite(dur) &&
-    dur > 0 &&
-    isFinite(pos) &&
-    pos >= 0 &&
-    pos <= dur
-  ) {
+  if (isFinite(dur) && dur > 0 && isFinite(pos) && pos >= 0 && pos <= dur) {
     try {
       navigator.mediaSession.setPositionState({
         duration: dur,
@@ -786,13 +809,11 @@ function updateMediaSessionPosition() {
 function setupVisibilityHandling() {
   document.addEventListener('visibilitychange', () => {
     if (document.hidden) {
-      // Keep background audio active & update Media Session
       if (STATE.isPlaying) {
         updateMediaSession();
         syncMediaSessionPlaybackState();
       }
     } else {
-      // Sync UI when user returns to foreground
       try {
         if (STATE.ytPlayer && STATE.isPlaying) {
           const ct = STATE.ytPlayer.getCurrentTime() || STATE.currentTime;
@@ -821,165 +842,52 @@ function setupVisibilityHandling() {
 }
 
 // ════════════════════════════════════════════════════════════════
-// 12. DATABASE-FIRST DISCOVER FEED MANAGER
+// 12. CONTINUOUS DISCOVER FEED MANAGER (UNLIMITED SCROLL)
 // ════════════════════════════════════════════════════════════════
 
-const DiscoverFeedManager = (() => {
-  const BATCH_SIZE = 10;
-  const STORAGE_FEED_KEY = 'surbeat_discover_feed_state';
-  const discoverCache = {};
-  let feedState = {};
-  let discoverApiCallCount = 0;
-  let isInitialized = false;
+const ContinuousDiscoverFeedManager = (() => {
+  const CHUNK_SIZE = 10;
+  const categoryCache = {};
+  let observer = null;
 
-  function loadState() {
-    try {
-      const raw = localStorage.getItem(STORAGE_FEED_KEY);
-      if (raw) {
-        feedState = JSON.parse(raw);
-      }
-    } catch (e) {
-      console.warn('[SurBeat Feed] Could not read feed state from localStorage:', e);
-      feedState = {};
-    }
-  }
-
-  function saveState() {
-    try {
-      localStorage.setItem(STORAGE_FEED_KEY, JSON.stringify(feedState));
-    } catch (e) {}
-  }
-
-  // Fisher-Yates shuffle
-  function generateShuffledIndices(count) {
-    const indices = Array.from({ length: count }, (_, i) => i);
-    for (let i = count - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [indices[i], indices[j]] = [indices[j], indices[i]];
-    }
-    return indices;
-  }
-
-  // Retrieve 200 songs for category from database/catalog (ZERO YouTube API calls)
   function getCategoryDatabaseTracks(category) {
-    if (discoverCache[category] && discoverCache[category].length > 0) {
-      return discoverCache[category];
+    if (categoryCache[category] && categoryCache[category].length > 0) {
+      return categoryCache[category];
     }
 
     let tracks = [];
-
-    // 1. SurBeat Database Catalog (Comprehensive 200 songs per category)
     if (typeof window !== 'undefined' && typeof window.getSurBeatDatabaseSongs === 'function') {
       tracks = window.getSurBeatDatabaseSongs(category);
     } else if (typeof window !== 'undefined' && window.SURBEAT_CATALOG && window.SURBEAT_CATALOG[category]) {
       tracks = window.SURBEAT_CATALOG[category];
     }
 
-    // 2. Fallback to Awarapan tracks if category is awarapan
-    if ((!tracks || tracks.length === 0) && category === 'awarapan') {
-      tracks = AWARAPAN_TRACKS;
-    }
-
-    // 3. Default fallback
     if (!tracks || tracks.length === 0) {
-      tracks = AWARAPAN_TRACKS;
+      tracks = [];
     }
 
     const formatted = tracks.map((t, idx) => normalizeTrack({
       id: t.id || `${category}-${String(idx + 1).padStart(3, '0')}`,
       youtubeId: t.youtubeId || t.videoId || t.ytId,
       videoId: t.youtubeId || t.videoId || t.ytId,
-      title: t.title || `Track #${idx + 1}`,
+      title: t.title || `Melody #${idx + 1}`,
       artist: t.artist || 'SurBeat Artist',
       album: t.album || CATEGORY_META[category]?.name || category,
       category: category,
       thumbnail: t.thumbnail || t.artwork || getYouTubeThumbnail(t.youtubeId || t.videoId || t.ytId)
     }));
 
-    discoverCache[category] = formatted;
+    categoryCache[category] = formatted;
     return formatted;
   }
 
-  function getOrCreateCategoryState(category, totalCount) {
-    if (!feedState[category]) {
-      feedState[category] = {
-        currentIndex: 0,
-        cycle: 1,
-        shuffledOrder: generateShuffledIndices(totalCount),
-        lastUpdated: Date.now()
-      };
-      saveState();
-    }
-    const catState = feedState[category];
-
-    // Ensure valid shuffled order
-    if (!Array.isArray(catState.shuffledOrder) || catState.shuffledOrder.length !== totalCount) {
-      catState.shuffledOrder = generateShuffledIndices(totalCount);
-      catState.currentIndex = 0;
-      catState.cycle = catState.cycle || 1;
-      catState.lastUpdated = Date.now();
-      saveState();
-    }
-
-    return catState;
-  }
-
-  function getBatch(category, advance = false) {
-    const allTracks = getCategoryDatabaseTracks(category);
-    const totalCount = allTracks.length || 200;
-    const catState = getOrCreateCategoryState(category, totalCount);
-
-    if (advance) {
-      catState.currentIndex += BATCH_SIZE;
-      catState.lastUpdated = Date.now();
-
-      // When 200 songs are reached -> start new cycle and shuffle
-      if (catState.currentIndex >= totalCount) {
-        catState.cycle = (catState.cycle || 1) + 1;
-        catState.currentIndex = 0;
-        catState.shuffledOrder = generateShuffledIndices(totalCount);
-        console.log(`✨ [Discover Feed] Started Cycle #${catState.cycle} for "${category}" with a fresh shuffled ordering.`);
-      }
-      saveState();
-    }
-
-    const currentCursor = catState.currentIndex;
-    const batchIndex = Math.floor(currentCursor / BATCH_SIZE);
-    const totalBatches = Math.ceil(totalCount / BATCH_SIZE);
-    const batchNumber = Math.min(batchIndex + 1, totalBatches);
-
-    const batchTracks = [];
-    for (let i = 0; i < BATCH_SIZE; i++) {
-      const orderIdx = (currentCursor + i) % totalCount;
-      const trackIdx = catState.shuffledOrder[orderIdx] ?? orderIdx;
-      const track = allTracks[trackIdx] || allTracks[orderIdx % allTracks.length];
-      if (track) {
-        batchTracks.push(track);
-      }
-    }
-
-    return {
-      tracks: batchTracks,
-      batchNumber,
-      totalBatches,
-      cursor: currentCursor,
-      cycle: catState.cycle || 1,
-      totalSongs: totalCount,
-      category
-    };
-  }
-
-  function preloadNextBatchThumbnails(category) {
+  // Preloads the next group of thumbnails in the background
+  function preloadNextThumbnails(category, startIndex, count = 10) {
     try {
-      const allTracks = getCategoryDatabaseTracks(category);
-      const totalCount = allTracks.length || 200;
-      const catState = getOrCreateCategoryState(category, totalCount);
-      const nextCursor = (catState.currentIndex + BATCH_SIZE) % totalCount;
-
-      for (let i = 0; i < BATCH_SIZE; i++) {
-        const orderIdx = (nextCursor + i) % totalCount;
-        const trackIdx = catState.shuffledOrder[orderIdx] ?? orderIdx;
-        const track = allTracks[trackIdx];
+      const all = getCategoryDatabaseTracks(category);
+      for (let i = 0; i < count; i++) {
+        const idx = (startIndex + i) % all.length;
+        const track = all[idx];
         if (track && track.thumbnail) {
           const img = new Image();
           img.src = track.thumbnail;
@@ -988,33 +896,93 @@ const DiscoverFeedManager = (() => {
     } catch (e) {}
   }
 
-  function logApiAttempt(source) {
-    discoverApiCallCount++;
-    console.warn(`🚨 [DISCOVER API CALL] API call attempted from: ${source}. Discover uses 0 API calls!`);
-    updateDebugPanel(STATE.currentCategory, null);
+  function setupInfiniteScroll() {
+    const sentinel = document.getElementById('feedSentinel');
+    if (!sentinel) return;
+
+    if ('IntersectionObserver' in window) {
+      if (observer) observer.disconnect();
+      observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting && !STATE.feedLoadingMore) {
+            loadMore();
+          }
+        });
+      }, {
+        root: null,
+        rootMargin: '400px',
+        threshold: 0.01
+      });
+      observer.observe(sentinel);
+    }
+
+    // Scroll listener fallback
+    window.addEventListener('scroll', () => {
+      if (STATE.feedLoadingMore) return;
+      const scrollPos = window.innerHeight + window.scrollY;
+      const bodyHeight = document.documentElement.offsetHeight;
+      if (bodyHeight - scrollPos < 600) {
+        loadMore();
+      }
+    }, { passive: true });
   }
 
-  function getApiCallCount() {
-    return discoverApiCallCount;
-  }
+  function loadMore() {
+    if (STATE.feedLoadingMore) return;
+    STATE.feedLoadingMore = true;
 
-  function init() {
-    if (isInitialized) return;
-    loadState();
-    isInitialized = true;
+    const cat = STATE.currentCategory;
+    const allTracks = getCategoryDatabaseTracks(cat);
+    if (!allTracks || allTracks.length === 0) {
+      STATE.feedLoadingMore = false;
+      return;
+    }
+
+    const currentCount = STATE.renderedCount;
+    const nextTracks = [];
+
+    for (let i = 0; i < CHUNK_SIZE; i++) {
+      const trackIdx = (currentCount + i) % allTracks.length;
+      const track = allTracks[trackIdx];
+      if (track) {
+        nextTracks.push(track);
+      }
+    }
+
+    if (nextTracks.length > 0) {
+      const grid = document.getElementById('trackGrid');
+      if (grid) {
+        const categoryName = CATEGORY_META[cat]?.name || cat;
+        nextTracks.forEach((t, i) => {
+          const card = createTrackCard(t, currentCount + i, categoryName);
+          grid.appendChild(card);
+        });
+      }
+      STATE.renderedFeedTracks = STATE.renderedFeedTracks.concat(nextTracks);
+      STATE.renderedCount += nextTracks.length;
+
+      // Preload next batch of thumbnails in background
+      preloadNextThumbnails(cat, STATE.renderedCount, 10);
+    }
+
+    setTimeout(() => {
+      STATE.feedLoadingMore = false;
+    }, 200);
   }
 
   return {
-    init,
-    getCategoryTracks: getCategoryDatabaseTracks,
-    getBatch,
-    preloadNextBatchThumbnails,
-    logApiAttempt,
-    getApiCallCount
+    getCategoryDatabaseTracks,
+    setupInfiniteScroll,
+    loadMore,
+    preloadNextThumbnails
   };
 })();
 
-async function loadCategory(category, autoPlay = false, advanceBatch = false) {
+// ════════════════════════════════════════════════════════════════
+// 13. CATEGORY SWITCHING & CONTINUOUS LOADING
+// ════════════════════════════════════════════════════════════════
+
+async function loadCategory(category, autoPlay = false) {
   STATE.currentCategory = category;
 
   // Update category buttons UI
@@ -1024,113 +992,73 @@ async function loadCategory(category, autoPlay = false, advanceBatch = false) {
     btn.setAttribute('aria-selected', isActive ? 'true' : 'false');
   });
 
-  // Get 10 songs batch from DiscoverFeedManager (0 API calls)
-  const batch = DiscoverFeedManager.getBatch(category, advanceBatch);
-  STATE.discoverTracks = batch.tracks.map(normalizeTrack);
+  const catName = CATEGORY_META[category]?.name || category;
 
-  // Update discover subtitle
+  // Update discover subtitle with clean non-paginated text
   const subEl = document.getElementById('discoverSubtitle');
   if (subEl) {
-    const catName = CATEGORY_META[category]?.name || category;
-    subEl.textContent = `Browsing — ${catName} (Batch ${batch.batchNumber} of ${batch.totalBatches})`;
+    subEl.textContent = `Browse curated melodies from ${catName}`;
   }
 
-  // Update batch badge
-  const badgeEl = document.getElementById('feedBatchBadge');
-  if (badgeEl) {
-    badgeEl.textContent = `Batch ${batch.batchNumber} of ${batch.totalBatches}`;
-  }
+  // Load all tracks for playback queue
+  const allTracks = ContinuousDiscoverFeedManager.getCategoryDatabaseTracks(category);
+  STATE.playbackQueue = allTracks;
 
-  // Render 10 discover cards with 16:9 aspect ratio, skeletons & fallback
-  renderDiscoverCards(STATE.discoverTracks, batch);
+  // Reset feed render count and load initial 10 cards
+  const initialChunk = allTracks.slice(0, 10);
+  STATE.renderedFeedTracks = initialChunk;
+  STATE.renderedCount = initialChunk.length;
 
-  // Preload next batch's 10 thumbnails in background
-  DiscoverFeedManager.preloadNextBatchThumbnails(category);
+  renderDiscoverCards(initialChunk);
 
-  // Update dev debug panel
-  updateDebugPanel(category, batch);
+  // Preload next thumbnails
+  ContinuousDiscoverFeedManager.preloadNextThumbnails(category, 10, 10);
 
   savePersistedSettings();
+  updateDebugStatus();
 
-  if (autoPlay && STATE.discoverTracks.length > 0) {
-    playTrack(STATE.discoverTracks[0], STATE.discoverTracks);
+  if (autoPlay && initialChunk.length > 0) {
+    playTrack(initialChunk[0], allTracks);
   }
 }
 
 async function loadCategoryAndPlay(category) {
-  await loadCategory(category, true, false);
+  await loadCategory(category, true);
 }
 
 // ════════════════════════════════════════════════════════════════
-// 13. DATA FETCHING (Zero API Quota Compliance)
-// ════════════════════════════════════════════════════════════════
-
-async function fetchTracksFromBackend(category) {
-  if (!API_BASE_URL || isFileProtocol || !isBackendAvailable) return [];
-
-  try {
-    const controller = new AbortController();
-    const tid = setTimeout(() => controller.abort(), 2500);
-    const res = await fetch(`${API_BASE_URL}/songs/${category}`, { signal: controller.signal });
-    clearTimeout(tid);
-    if (!res.ok) return [];
-    const data = await res.json();
-    if (!data || !Array.isArray(data.tracks)) return [];
-    return data.tracks
-      .filter(t => isValidYouTubeId(t.youtubeId || t.videoId || t.ytId))
-      .map(t => normalizeTrack(t));
-  } catch (e) {
-    return [];
-  }
-}
-
-async function searchYouTube(category) {
-  // Discover feed does NOT call searchYouTube. Log any accidental attempt.
-  DiscoverFeedManager.logApiAttempt('searchYouTube');
-  return [];
-}
-
-// ════════════════════════════════════════════════════════════════
-// 14. UI UPDATE FUNCTIONS
+// 14. UI UPDATE & RENDERING FUNCTIONS
 // ════════════════════════════════════════════════════════════════
 
 function updatePlaybackUI(isPlaying) {
-  // Vinyl disc spinning
   const vinylDisc = document.getElementById('vinylDisc');
   if (vinylDisc) vinylDisc.classList.toggle('playing', isPlaying);
 
-  // Tonearm pivot
   const tonearm = document.getElementById('tonearmPivot');
   if (tonearm) tonearm.classList.toggle('playing', isPlaying);
 
-  // Audio Visualizer
   const viz = document.getElementById('audioVisualizer');
   if (viz) viz.classList.toggle('playing', isPlaying);
 
-  // NP equalizer bars
   const npEq = document.getElementById('npEqBars');
   if (npEq) npEq.classList.toggle('playing', isPlaying);
 
-  // Side card equalizers
   const sideEqA = document.getElementById('sideEqA');
   const sideEqB = document.getElementById('sideEqB');
   if (sideEqA) sideEqA.classList.toggle('playing', isPlaying);
   if (sideEqB) sideEqB.classList.toggle('playing', isPlaying);
 
-  // Play/Pause button icon
   const path = document.getElementById('playPausePath');
   if (path) {
     path.setAttribute('d', isPlaying
-      ? 'M6 5h4v14H6zm8 0h4v14h-4z'   // Pause icon
-      : 'M8 5v14l11-7z'               // Play icon
+      ? 'M6 5h4v14H6zm8 0h4v14h-4z'   // Pause
+      : 'M8 5v14l11-7z'               // Play
     );
   }
 
-  // Play/Pause accessibility
   const ppBtn = document.getElementById('playPauseBtn');
   if (ppBtn) ppBtn.setAttribute('aria-label', isPlaying ? 'Pause' : 'Play');
 
-  // Mobile bar play icon
   const mbarPlayPath = document.getElementById('mbarPlayPath');
   if (mbarPlayPath) {
     mbarPlayPath.setAttribute('d', isPlaying
@@ -1290,7 +1218,7 @@ function showPlayerControls() {
 // 15. DISCOVER SECTION RENDERING
 // ════════════════════════════════════════════════════════════════
 
-function renderDiscoverCards(tracks, batchInfo) {
+function renderDiscoverCards(tracks) {
   const grid = document.getElementById('trackGrid');
   if (!grid) return;
 
@@ -1298,7 +1226,7 @@ function renderDiscoverCards(tracks, batchInfo) {
     grid.innerHTML = `
       <div class="tracks-placeholder">
         <div class="placeholder-icon">🎵</div>
-        <p>No tracks found in database catalog.</p>
+        <p>No tracks found for this vibe.</p>
       </div>`;
     return;
   }
@@ -1308,12 +1236,12 @@ function renderDiscoverCards(tracks, batchInfo) {
 
   tracks.forEach((track, index) => {
     const canonical = normalizeTrack(track);
-    const card = createTrackCard(canonical, index, categoryName, tracks);
+    const card = createTrackCard(canonical, index, categoryName);
     grid.appendChild(card);
   });
 }
 
-function createTrackCard(track, index, categoryName, batchTracks) {
+function createTrackCard(track, index, categoryName) {
   const card = document.createElement('div');
   card.className = 'track-card';
   const ytid = track.youtubeId || track.videoId;
@@ -1377,38 +1305,30 @@ function createTrackCard(track, index, categoryName, batchTracks) {
 }
 
 // ════════════════════════════════════════════════════════════════
-// 16. DEVELOPER DEBUG PANEL & API MONITOR
+// 16. DEVELOPER MONITOR PANEL
 // ════════════════════════════════════════════════════════════════
 
-function updateDebugPanel(category, batch) {
+function updateDebugStatus() {
   const panel = document.getElementById('discoverDebugPanel');
   if (!panel) return;
 
-  const catName = CATEGORY_META[category]?.name || category;
+  const catName = CATEGORY_META[STATE.currentCategory]?.name || STATE.currentCategory;
   const debugCat = document.getElementById('debugCategory');
-  const debugTotal = document.getElementById('debugTotalSongs');
-  const debugCycle = document.getElementById('debugCycle');
-  const debugBatch = document.getElementById('debugBatch');
-  const debugCursor = document.getElementById('debugCursor');
-  const debugApiCalls = document.getElementById('debugApiCalls');
+  const debugMode = document.getElementById('debugFeedMode');
+  const debugStatus = document.getElementById('debugApiStatus');
+  const debugQueue = document.getElementById('debugQueueInfo');
 
   if (debugCat) debugCat.textContent = catName;
-  if (debugTotal) debugTotal.textContent = batch ? batch.totalSongs : 200;
-  if (debugCycle) debugCycle.textContent = batch ? batch.cycle : 1;
-  if (debugBatch) debugBatch.textContent = batch ? `${batch.batchNumber} / ${batch.totalBatches}` : '1 / 20';
-  if (debugCursor) debugCursor.textContent = batch ? `${batch.cursor + batch.tracks.length} / ${batch.totalSongs}` : '10 / 200';
-  
-  if (debugApiCalls) {
-    const count = DiscoverFeedManager.getApiCallCount();
-    debugApiCalls.textContent = count;
-    if (count > 0) {
-      debugApiCalls.style.background = 'rgba(255, 60, 60, 0.2)';
-      debugApiCalls.style.color = '#ff6b6b';
-      debugApiCalls.style.borderColor = 'rgba(255, 60, 60, 0.4)';
+  if (debugMode) debugMode.textContent = `Continuous (${STATE.renderedCount} visible)`;
+  if (debugQueue) debugQueue.textContent = `${STATE.playbackQueue.length} Tracks Prepared`;
+
+  if (debugStatus) {
+    if (ApiQuotaManager.isFallbackMode()) {
+      debugStatus.textContent = 'Database Fallback Active';
+      debugStatus.className = 'debug-badge-green';
     } else {
-      debugApiCalls.style.background = 'rgba(40, 180, 80, 0.2)';
-      debugApiCalls.style.color = '#4ade80';
-      debugApiCalls.style.borderColor = 'rgba(74, 222, 128, 0.3)';
+      debugStatus.textContent = 'API Ready';
+      debugStatus.className = 'debug-badge-green';
     }
   }
 }
@@ -1417,7 +1337,7 @@ function initDebugPanel() {
   const panel = document.getElementById('discoverDebugPanel');
   const params = new URLSearchParams(window.location.search);
   const showDebug = params.get('debug') === 'true' || window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
-  
+
   if (panel && showDebug) {
     panel.classList.add('visible');
   }
@@ -1429,7 +1349,7 @@ function initDebugPanel() {
     });
   }
 
-  // Keyboard shortcut Ctrl+Shift+D to toggle debug panel anytime
+  // Toggle debug panel with Ctrl+Shift+D
   document.addEventListener('keydown', (e) => {
     if (e.ctrlKey && e.shiftKey && (e.key === 'D' || e.key === 'd')) {
       if (panel) panel.classList.toggle('visible');
@@ -1509,12 +1429,8 @@ function bindCategoryButtons() {
     btn.addEventListener('click', () => {
       const cat = btn.dataset.category;
       if (!cat) return;
-      if (cat === STATE.currentCategory) {
-        // If clicking active category again, advance to next 10 songs batch
-        loadCategory(cat, false, true);
-      } else {
-        // If switching category, load from saved cursor
-        loadCategory(cat, false, false);
+      if (cat !== STATE.currentCategory) {
+        loadCategory(cat, false);
       }
     });
   });
@@ -1527,7 +1443,7 @@ function bindSideCards() {
   const activateCard = (card) => {
     if (!card) return;
     const cat = card.dataset.category;
-    if (cat) loadCategory(cat, false, false);
+    if (cat) loadCategory(cat, false);
   };
 
   [sideA, sideB].forEach(card => {
@@ -1543,15 +1459,6 @@ function bindSideCards() {
 }
 
 function bindPlayerControls() {
-  // Feed Next 10 rotation button
-  const rotateBtn = document.getElementById('btnRotateFeed');
-  if (rotateBtn) {
-    rotateBtn.addEventListener('click', () => {
-      loadCategory(STATE.currentCategory, false, true);
-    });
-  }
-
-  // Play trigger (initial start button)
   const triggerBtn = document.getElementById('playTriggerBtn');
   if (triggerBtn) {
     triggerBtn.addEventListener('click', () => {
@@ -1560,12 +1467,11 @@ function bindPlayerControls() {
     });
   }
 
-  // Play/Pause button
   const ppBtn = document.getElementById('playPauseBtn');
   if (ppBtn) {
     ppBtn.addEventListener('click', () => {
       unlockMobileAudio();
-      if (!STATE.currentTrack && STATE.discoverTracks.length === 0) {
+      if (!STATE.currentTrack && STATE.renderedFeedTracks.length === 0) {
         loadCategoryAndPlay(STATE.currentCategory);
       } else {
         togglePlayPause();
@@ -1573,27 +1479,18 @@ function bindPlayerControls() {
     });
   }
 
-  // Previous button
   const prevBtn = document.getElementById('prevBtn');
   if (prevBtn) prevBtn.addEventListener('click', playPrev);
 
-  // Next button
   const nextBtn = document.getElementById('nextBtn');
   if (nextBtn) nextBtn.addEventListener('click', playNext);
 
-  // Shuffle button
   const shuffleBtn = document.getElementById('shuffleBtn');
-  if (shuffleBtn) {
-    shuffleBtn.addEventListener('click', toggleShuffle);
-  }
+  if (shuffleBtn) shuffleBtn.addEventListener('click', toggleShuffle);
 
-  // Repeat button
   const repeatBtn = document.getElementById('repeatBtn');
-  if (repeatBtn) {
-    repeatBtn.addEventListener('click', toggleRepeat);
-  }
+  if (repeatBtn) repeatBtn.addEventListener('click', toggleRepeat);
 
-  // Seek slider
   const seekSlider = document.getElementById('seekSlider');
   if (seekSlider) {
     seekSlider.addEventListener('mousedown', () => { seekSlider._isDragging = true; });
@@ -1621,7 +1518,6 @@ function bindPlayerControls() {
     });
   }
 
-  // Volume slider
   const volSlider = document.getElementById('volumeSlider');
   if (volSlider) {
     volSlider.addEventListener('input', () => {
@@ -1629,7 +1525,6 @@ function bindPlayerControls() {
     });
   }
 
-  // Mute button
   const muteBtn = document.getElementById('muteBtn');
   if (muteBtn) muteBtn.addEventListener('click', toggleMute);
 }
@@ -1649,7 +1544,6 @@ function bindMobileBar() {
     });
   }
 
-  // Clicking track in mini player smoothly navigates back to turntable
   if (mbarTrack) {
     mbarTrack.addEventListener('click', () => {
       const playerEl = document.getElementById('mainPlayer');
@@ -1670,11 +1564,11 @@ function bindTouchUnlock() {
 // ════════════════════════════════════════════════════════════════
 
 async function init() {
-  // Load saved preferences (volume, repeat, shuffle, category)
+  // Load saved preferences
   loadPersistedSettings();
 
-  // Initialize Database-First Discover Feed Manager
-  DiscoverFeedManager.init();
+  // Initialize API Quota State Machine
+  ApiQuotaManager.init();
 
   // Start real-time clock & organic listener count
   startClock();
@@ -1689,14 +1583,17 @@ async function init() {
   // Bind visibility & background events
   setupVisibilityHandling();
 
-  // Bind all UI interactive elements
+  // Bind UI interactive elements
   bindCategoryButtons();
   bindSideCards();
   bindPlayerControls();
   bindMobileBar();
   bindTouchUnlock();
 
-  // Initialize Developer Debug Panel & Monitor
+  // Setup infinite scroll observer for continuous feed
+  ContinuousDiscoverFeedManager.setupInfiniteScroll();
+
+  // Initialize Developer Debug Panel
   initDebugPanel();
 
   // Apply persisted settings to UI
@@ -1704,7 +1601,7 @@ async function init() {
   updateRepeatUI();
   updateShuffleUI();
 
-  // Check URL category query or fallback
+  // Check URL category query
   const urlParams = new URLSearchParams(window.location.search);
   const catParam = urlParams.get('cat');
   const initialCategory = (catParam && CATEGORY_META[catParam]) ? catParam : STATE.currentCategory;
@@ -1712,14 +1609,14 @@ async function init() {
   // Load YouTube IFrame API
   loadYouTubeAPI();
 
-  // Load category batch from Database-First Feed Manager (0 YouTube API calls)
-  loadCategory(initialCategory, false, false);
+  // Load initial category continuous feed
+  loadCategory(initialCategory, false);
 
-  // Initialize media session action listeners early where supported
+  // Initialize media session action listeners
   initMediaSessionHandlers();
 
   document.body.classList.add('loaded');
-  console.log('🎧 SurBeat Audio Engine & Database Feed Manager initialized.');
+  console.log('🎧 SurBeat Audio Engine & Continuous Feed initialized.');
 }
 
 if (document.readyState === 'loading') {
