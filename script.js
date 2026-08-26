@@ -1196,6 +1196,47 @@ function updateNowPlayingUI(track) {
   const durEl = document.getElementById('timeDurationLabel');
   if (ctEl) ctEl.textContent = '0:00';
   if (durEl) durEl.textContent = '0:00';
+
+  // Dynamic Song-Reactive Atmospheric Background
+  updateDynamicArtworkBackground(track);
+}
+
+function updateDynamicArtworkBackground(track) {
+  const bgEl = document.getElementById('bgDynamicArtwork');
+  if (!bgEl) return;
+
+  if (!track) {
+    bgEl.classList.remove('active');
+    return;
+  }
+
+  const ytid = track.youtubeId || track.videoId;
+  const thumbUrl = track.thumbnail || (ytid ? getYouTubeThumbnail(ytid, 'hqdefault') : null);
+  if (!thumbUrl) {
+    bgEl.classList.remove('active');
+    return;
+  }
+
+  // Preload image before fading in smoothly
+  const img = new Image();
+  img.onload = () => {
+    bgEl.style.backgroundImage = `url("${thumbUrl}")`;
+    bgEl.classList.add('active');
+  };
+  img.onerror = () => {
+    if (ytid) {
+      const fallbackThumb = getYouTubeThumbnail(ytid, 'mqdefault');
+      if (fallbackThumb && fallbackThumb !== thumbUrl) {
+        const img2 = new Image();
+        img2.onload = () => {
+          bgEl.style.backgroundImage = `url("${fallbackThumb}")`;
+          bgEl.classList.add('active');
+        };
+        img2.src = fallbackThumb;
+      }
+    }
+  };
+  img.src = thumbUrl;
 }
 
 function updateRepeatUI() {
