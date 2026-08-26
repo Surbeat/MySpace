@@ -436,7 +436,7 @@ function onTrackEnded() {
   let queue = STATE.playbackQueue;
   if (!queue || queue.length === 0) {
     const cat = STATE.currentTrack?.category || STATE.currentCategory || 'trending';
-    queue = ContinuousDiscoverFeedManager.getCategoryDatabaseTracks(cat);
+    queue = DiscoverCarouselManager.getCategoryDatabaseTracks(cat);
     STATE.playbackQueue = queue;
   }
 
@@ -478,7 +478,7 @@ function playTrack(track, queue = null) {
   if (Array.isArray(queue) && queue.length > 0) {
     STATE.playbackQueue = queue.map(normalizeTrack);
   } else if (!STATE.playbackQueue || STATE.playbackQueue.length === 0 || (STATE.playbackQueue[0] && STATE.playbackQueue[0].category !== targetCategory)) {
-    STATE.playbackQueue = ContinuousDiscoverFeedManager.getCategoryDatabaseTracks(targetCategory);
+    STATE.playbackQueue = DiscoverCarouselManager.getCategoryDatabaseTracks(targetCategory);
   }
 
   STATE.currentTrack = canonical;
@@ -548,7 +548,7 @@ function playNext() {
   let queue = STATE.playbackQueue;
   if (!queue || queue.length === 0) {
     const cat = STATE.currentTrack?.category || STATE.currentCategory || 'trending';
-    queue = ContinuousDiscoverFeedManager.getCategoryDatabaseTracks(cat);
+    queue = DiscoverCarouselManager.getCategoryDatabaseTracks(cat);
     STATE.playbackQueue = queue;
   }
   if (!queue || queue.length === 0) return;
@@ -587,7 +587,7 @@ function playPrev() {
   let queue = STATE.playbackQueue;
   if (!queue || queue.length === 0) {
     const cat = STATE.currentTrack?.category || STATE.currentCategory || 'trending';
-    queue = ContinuousDiscoverFeedManager.getCategoryDatabaseTracks(cat);
+    queue = DiscoverCarouselManager.getCategoryDatabaseTracks(cat);
     STATE.playbackQueue = queue;
   }
   if (!queue || queue.length === 0) return;
@@ -916,10 +916,8 @@ const RecentHistoryManager = (() => {
   };
 })();
 
-const ContinuousDiscoverFeedManager = (() => {
-  const CHUNK_SIZE = 10;
+const DiscoverCarouselManager = (() => {
   const categoryCache = {};
-  let observer = null;
 
   function getCategoryDatabaseTracks(category) {
     if (categoryCache[category] && categoryCache[category].length > 0) {
@@ -937,23 +935,39 @@ const ContinuousDiscoverFeedManager = (() => {
       tracks = [];
     }
 
-    const formatted = tracks.map((t, idx) => normalizeTrack({
-      id: t.id || `${category}-${String(idx + 1).padStart(3, '0')}`,
-      youtubeId: t.youtubeId || t.videoId || t.ytId,
-      videoId: t.youtubeId || t.videoId || t.ytId,
-      title: t.title || `Melody #${idx + 1}`,
-      artist: t.artist || 'SurBeat Artist',
-      album: t.album || CATEGORY_META[category]?.name || category,
-      category: category,
-      thumbnail: t.thumbnail || t.artwork || getYouTubeThumbnail(t.youtubeId || t.videoId || t.ytId)
-    }));
+    // Deduplicate songs by videoId and normalized title for a pristine catalog
+    const seenIds = new Set();
+    const seenTitles = new Set();
+    const formatted = [];
+
+    tracks.forEach((t, idx) => {
+      const ytid = t.youtubeId || t.videoId || t.ytId;
+      if (!ytid || seenIds.has(ytid)) return;
+
+      const normTitle = (t.title || '').toLowerCase().replace(/[^a-z0-9]/g, '');
+      if (normTitle && seenTitles.has(normTitle)) return;
+
+      seenIds.add(ytid);
+      if (normTitle) seenTitles.add(normTitle);
+
+      formatted.push(normalizeTrack({
+        id: t.id || `${category}-${String(idx + 1).padStart(3, '0')}`,
+        youtubeId: ytid,
+        videoId: ytid,
+        title: t.title || `Melody #${idx + 1}`,
+        artist: t.artist || 'SurBeat Artist',
+        album: t.album || CATEGORY_META[category]?.name || category,
+        category: category,
+        thumbnail: t.thumbnail || t.artwork || getYouTubeThumbnail(ytid)
+      }));
+    });
 
     categoryCache[category] = formatted;
     return formatted;
   }
 
-  // Generates a fresh, randomized 10-song selection avoiding recently displayed songs
-  function getFreshSessionFeed(category, count = 10) {
+  // Returns a rich selection of unique songs for the horizontal carousel rail
+  function getCarouselTracks(category) {
     const allTracks = getCategoryDatabaseTracks(category);
     if (!allTracks || allTracks.length === 0) {
       return { selected: [], fullQueue: [] };
@@ -962,38 +976,29 @@ const ContinuousDiscoverFeedManager = (() => {
     let history = RecentHistoryManager.getHistory(category);
     const historySet = new Set(history);
 
-    // Eligible pool excludes recently displayed songs
     let eligible = allTracks.filter(t => !historySet.has(t.id) && !historySet.has(t.youtubeId));
-
-    // If remaining pool has fewer than requested songs, trim history and replenish
-    if (eligible.length < count) {
+    if (eligible.length < 20) {
       RecentHistoryManager.resetCategoryHistory(category);
       eligible = allTracks.slice();
     }
 
-    // Unbiased shuffle of the eligible candidate pool
-    const shuffledEligible = shuffleArray(eligible);
-    const selected = shuffledEligible.slice(0, count);
+    const shuffled = shuffleArray(eligible);
+    // Display up to 50 curated tracks in the swipeable rail
+    const selected = shuffled.slice(0, Math.min(50, allTracks.length));
+    RecentHistoryManager.recordShown(category, selected.slice(0, 15).map(t => t.id));
 
-    // Record the 10 selected track IDs to recent history
-    RecentHistoryManager.recordShown(category, selected.map(t => t.id));
-
-    // Build the complete non-repeating playback queue starting with the 10 fresh cards
     const selectedIdSet = new Set(selected.map(t => t.id));
-    const remainingEligible = shuffledEligible.slice(count);
-    const previouslyShown = shuffleArray(allTracks.filter(t => !selectedIdSet.has(t.id) && !remainingEligible.some(r => r.id === t.id)));
-    const fullQueue = [...selected, ...remainingEligible, ...previouslyShown];
+    const remaining = allTracks.filter(t => !selectedIdSet.has(t.id));
+    const fullQueue = [...selected, ...remaining];
 
     return { selected, fullQueue };
   }
 
   // Preloads the next group of thumbnails in the background
-  function preloadNextThumbnails(category, startIndex, count = 10) {
+  function preloadThumbnails(tracks, count = 15) {
     try {
-      const all = getCategoryDatabaseTracks(category);
-      for (let i = 0; i < count; i++) {
-        const idx = (startIndex + i) % all.length;
-        const track = all[idx];
+      for (let i = 0; i < Math.min(count, tracks.length); i++) {
+        const track = tracks[i];
         if (track && track.thumbnail) {
           const img = new Image();
           img.src = track.thumbnail;
@@ -1002,94 +1007,75 @@ const ContinuousDiscoverFeedManager = (() => {
     } catch (e) {}
   }
 
-  function setupInfiniteScroll() {
-    const sentinel = document.getElementById('feedSentinel');
-    if (!sentinel) return;
+  function initCarouselControls() {
+    const rail = document.getElementById('trackGrid');
+    const prevBtn = document.getElementById('discoverPrevBtn');
+    const nextBtn = document.getElementById('discoverNextBtn');
 
-    if ('IntersectionObserver' in window) {
-      if (observer) observer.disconnect();
-      observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting && !STATE.feedLoadingMore) {
-            loadMore();
-          }
-        });
-      }, {
-        root: null,
-        rootMargin: '400px',
-        threshold: 0.01
+    if (prevBtn && rail) {
+      prevBtn.addEventListener('click', () => {
+        const scrollAmount = Math.max(260, rail.clientWidth * 0.75);
+        rail.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
       });
-      observer.observe(sentinel);
     }
 
-    // Scroll listener fallback
-    window.addEventListener('scroll', () => {
-      if (STATE.feedLoadingMore) return;
-      const scrollPos = window.innerHeight + window.scrollY;
-      const bodyHeight = document.documentElement.offsetHeight;
-      if (bodyHeight - scrollPos < 600) {
-        loadMore();
-      }
-    }, { passive: true });
-  }
-
-  function loadMore() {
-    if (STATE.feedLoadingMore) return;
-    STATE.feedLoadingMore = true;
-
-    const cat = STATE.currentCategory;
-    const queue = STATE.playbackQueue && STATE.playbackQueue.length > 0
-      ? STATE.playbackQueue
-      : getCategoryDatabaseTracks(cat);
-
-    if (!queue || queue.length === 0) {
-      STATE.feedLoadingMore = false;
-      return;
+    if (nextBtn && rail) {
+      nextBtn.addEventListener('click', () => {
+        const scrollAmount = Math.max(260, rail.clientWidth * 0.75);
+        rail.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+      });
     }
 
-    const currentCount = STATE.renderedCount;
-    const nextTracks = [];
+    // Mouse drag-to-scroll for desktop users
+    if (rail) {
+      let isDown = false;
+      let startX = 0;
+      let scrollLeft = 0;
+      let hasDragged = false;
 
-    for (let i = 0; i < CHUNK_SIZE; i++) {
-      const trackIdx = (currentCount + i) % queue.length;
-      const track = queue[trackIdx];
-      if (track) {
-        nextTracks.push(track);
-      }
+      rail.addEventListener('mousedown', (e) => {
+        // Only trigger on main mouse click and not on inner buttons
+        if (e.button !== 0 || e.target.closest('.track-play-btn')) return;
+        isDown = true;
+        hasDragged = false;
+        startX = e.pageX - rail.offsetLeft;
+        scrollLeft = rail.scrollLeft;
+      });
+
+      window.addEventListener('mouseup', () => {
+        isDown = false;
+      });
+
+      rail.addEventListener('mousemove', (e) => {
+        if (!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - rail.offsetLeft;
+        const walk = (x - startX) * 1.5;
+        if (Math.abs(walk) > 6) hasDragged = true;
+        rail.scrollLeft = scrollLeft - walk;
+      });
+
+      // Prevent click action when actively dragging
+      rail.addEventListener('click', (e) => {
+        if (hasDragged) {
+          e.preventDefault();
+          e.stopPropagation();
+          hasDragged = false;
+        }
+      }, true);
     }
-
-    if (nextTracks.length > 0) {
-      const grid = document.getElementById('trackGrid');
-      if (grid) {
-        const categoryName = CATEGORY_META[cat]?.name || cat;
-        nextTracks.forEach((t, i) => {
-          const card = createTrackCard(t, currentCount + i, categoryName);
-          grid.appendChild(card);
-        });
-      }
-      STATE.renderedFeedTracks = STATE.renderedFeedTracks.concat(nextTracks);
-      STATE.renderedCount += nextTracks.length;
-
-      // Preload next batch of thumbnails in background
-      preloadNextThumbnails(cat, STATE.renderedCount, 10);
-    }
-
-    setTimeout(() => {
-      STATE.feedLoadingMore = false;
-    }, 200);
   }
 
   return {
     getCategoryDatabaseTracks,
-    getFreshSessionFeed,
-    setupInfiniteScroll,
-    loadMore,
-    preloadNextThumbnails
+    getCarouselTracks,
+    preloadThumbnails,
+    initCarouselControls
   };
 })();
 
 // ════════════════════════════════════════════════════════════════
-// 13. CATEGORY SWITCHING & CONTINUOUS LOADING
+// 13. CATEGORY SWITCHING & HORIZONTAL CAROUSEL LOADING
 // ════════════════════════════════════════════════════════════════
 
 async function loadCategory(category, autoPlay = false) {
@@ -1104,24 +1090,30 @@ async function loadCategory(category, autoPlay = false) {
 
   const catName = CATEGORY_META[category]?.name || category;
 
-  // Update discover subtitle with clean non-paginated text
+  // Update discover subtitle
   const subEl = document.getElementById('discoverSubtitle');
   if (subEl) {
-    subEl.textContent = `Browse curated melodies from ${catName}`;
+    subEl.textContent = `Swipe or scroll through curated melodies from ${catName}`;
   }
 
-  // Generate fresh session feed for this category
-  const { selected, fullQueue } = ContinuousDiscoverFeedManager.getFreshSessionFeed(category, 10);
+  // Generate rich selection of tracks for this category's horizontal rail
+  const { selected, fullQueue } = DiscoverCarouselManager.getCarouselTracks(category);
 
   STATE.playbackQueue = fullQueue;
   STATE.renderedFeedTracks = selected;
   STATE.renderedCount = selected.length;
 
-  // Render fresh 10 cards to the DOM
+  // Render cards to the horizontal rail
   renderDiscoverCards(selected);
 
-  // Preload next thumbnails
-  ContinuousDiscoverFeedManager.preloadNextThumbnails(category, 10, 10);
+  // Smoothly reset carousel rail scroll position to start
+  const rail = document.getElementById('trackGrid');
+  if (rail) {
+    rail.scrollTo({ left: 0, behavior: 'smooth' });
+  }
+
+  // Preload initial thumbnails
+  DiscoverCarouselManager.preloadThumbnails(selected, 12);
 
   savePersistedSettings();
   updateDebugStatus();
@@ -1367,7 +1359,7 @@ function createTrackCard(track, index, categoryName) {
   card.dataset.videoId = ytid;
 
   const thumb = track.thumbnail || getYouTubeThumbnail(ytid);
-  const isPriority = index < 4;
+  const isPriority = index < 6;
 
   card.innerHTML = `
     <div class="track-thumb">
@@ -1428,7 +1420,7 @@ function updateDebugStatus() {
   const debugQueue = document.getElementById('debugQueueInfo');
 
   if (debugCat) debugCat.textContent = catName;
-  if (debugMode) debugMode.textContent = `Continuous (${STATE.renderedCount} visible)`;
+  if (debugMode) debugMode.textContent = `Horizontal Carousel (${STATE.renderedCount} songs)`;
   if (debugQueue) debugQueue.textContent = `${STATE.playbackQueue.length} Tracks Prepared`;
 
   if (debugStatus) {
@@ -1699,8 +1691,8 @@ async function init() {
   bindMobileBar();
   bindTouchUnlock();
 
-  // Setup infinite scroll observer for continuous feed
-  ContinuousDiscoverFeedManager.setupInfiniteScroll();
+  // Setup horizontal carousel navigation controls and mouse-drag
+  DiscoverCarouselManager.initCarouselControls();
 
   // Initialize Developer Debug Panel
   initDebugPanel();
@@ -1718,14 +1710,14 @@ async function init() {
   // Load YouTube IFrame API
   loadYouTubeAPI();
 
-  // Load initial category continuous feed
+  // Load initial category carousel feed
   loadCategory(initialCategory, false);
 
   // Initialize media session action listeners
   initMediaSessionHandlers();
 
   document.body.classList.add('loaded');
-  console.log('🎧 SurBeat Audio Engine & Continuous Feed initialized.');
+  console.log('🎧 SurBeat Audio Engine & Horizontal Carousel initialized.');
 }
 
 if (document.readyState === 'loading') {

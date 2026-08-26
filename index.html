@@ -350,23 +350,39 @@
       <!-- /player-zone-inner -->
     </section>
 
-    <!-- ── DISCOVER SECTION ──────────────────────────── -->
+    <!-- ── DISCOVER SECTION (HORIZONTAL SWIPEABLE RAIL) ─────────── -->
     <section class="discover-section" id="discoverSection" aria-label="Discover music">
       <div class="section-inner">
         <div class="section-header">
           <div class="discover-header-top">
-            <h2 class="section-title">Discover <span class="gold">Music</span></h2>
+            <div class="discover-title-wrap">
+              <h2 class="section-title">Discover <span class="gold">Music</span></h2>
+              <p class="section-sub" id="discoverSubtitle">Swipe or scroll through curated melodies</p>
+            </div>
+            <!-- Desktop/Tablet Carousel Controls -->
+            <div class="discover-nav-controls" id="discoverNavControls" aria-label="Carousel navigation">
+              <button class="discover-nav-btn" id="discoverPrevBtn" aria-label="Previous tracks" title="Previous tracks">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true">
+                  <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+                </svg>
+              </button>
+              <button class="discover-nav-btn" id="discoverNextBtn" aria-label="Next tracks" title="Next tracks">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true">
+                  <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+                </svg>
+              </button>
+            </div>
           </div>
-          <p class="section-sub" id="discoverSubtitle">Browse tracks from the current vibe</p>
         </div>
-        <div class="track-grid" id="trackGrid" role="list" aria-label="Track list">
-          <!-- Populated by script.js -->
-          <div class="tracks-placeholder" id="tracksPlaceholder">
-            <div class="placeholder-icon" aria-hidden="true">🎵</div>
-            <p>Select a category above to discover music</p>
+        <div class="discover-carousel-container">
+          <div class="discover-rail" id="trackGrid" role="list" aria-label="Track carousel" tabindex="0">
+            <!-- Populated by script.js -->
+            <div class="tracks-placeholder" id="tracksPlaceholder">
+              <div class="placeholder-icon" aria-hidden="true">🎵</div>
+              <p>Select a category above to discover music</p>
+            </div>
           </div>
         </div>
-        <div id="feedSentinel" class="feed-sentinel" aria-hidden="true"></div>
       </div>
     </section>
 
@@ -540,7 +556,7 @@
       <button class="debug-btn-close" id="debugCloseBtn" aria-label="Close Debug Panel">×</button>
     </div>
     <div><strong>Category:</strong> <span id="debugCategory">Desi Reel Hits</span></div>
-    <div><strong>Discovery Feed:</strong> <span id="debugFeedMode">Continuous</span></div>
+    <div><strong>Discovery Feed:</strong> <span id="debugFeedMode">Horizontal Carousel Rail</span></div>
     <div><strong>API Status:</strong> <span class="debug-badge-green" id="debugApiStatus">Active / Fallback Ready</span></div>
     <div><strong>Active Queue:</strong> <span id="debugQueueInfo">Ready</span></div>
   </aside>
