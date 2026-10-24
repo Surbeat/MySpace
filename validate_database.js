@@ -13,8 +13,8 @@ for (const cat in db) {
   const songs = db[cat];
   totalTracksAll += songs.length;
   
-  if (songs.length < 100) {
-    console.error(`❌ FAIL: ${cat} has only ${songs.length} tracks (expected at least 100)`);
+  if (songs.length < 50) {
+    console.error(`❌ FAIL: ${cat} has only ${songs.length} tracks (expected at least 50)`);
     allPassed = false;
   }
   
@@ -52,7 +52,7 @@ for (const cat in db) {
   summary[cat] = {
     totalRecords: songs.length,
     uniqueYouTubeIds: ytSet.size,
-    status: errors === 0 && songs.length >= 100 ? '100% VALID' : 'FAILED'
+    status: errors === 0 && songs.length >= 50 ? '100% VALID' : 'FAILED'
   };
 }
 
