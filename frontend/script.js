@@ -31,9 +31,9 @@ let isBackendAvailable = false;
 // Category display names & metadata
 const CATEGORY_META = {
   trending:     { name: 'Desi Reel Hits',      subLabel: 'DESI REEL HITS',    icon: '🪕' },
-  workout:      { name: 'Workout',             subLabel: 'BEAST MODE',         icon: '💪' },
-  awarapan:     { name: 'Awarapan',            subLabel: 'AWARAPAN',           icon: '❤️' },
   romantic_new: { name: 'Bollywood Romantics', subLabel: 'BOLLYWOOD ROMANCE',  icon: '💖' },
+  sad:          { name: 'Dard & Sad Hits',     subLabel: 'DARD & EMOTION',     icon: '💔' },
+  workout:      { name: 'Workout',             subLabel: 'BEAST MODE',         icon: '💪' },
   classic_old:  { name: 'Golden 90s',          subLabel: 'GOLDEN ERA',         icon: '📻' },
   lofi:         { name: 'Chai & Lo‑fi',        subLabel: 'CHAI LOFI',          icon: '☕' },
 };
@@ -41,9 +41,9 @@ const CATEGORY_META = {
 // YouTube search queries per category (used strictly in API mode when quota is healthy)
 const CATEGORY_QUERIES = {
   trending:     ['instagram trending hindi songs 2024', 'desi reel viral hindi songs', 'trending hindi hits songs', 'best hindi songs 2024'],
-  workout:      ['gym workout hindi motivation songs', 'haryanvi gym workout songs', 'punjabi workout beast mode songs', 'desi gym motivation hindi'],
-  awarapan:     ['awarapan songs emraan hashmi', 'toh phir aao mustafa zahid awarapan', 'mahiya annie khalid awarapan', 'awarapan movie songs full'],
   romantic_new: ['romantic hindi hits songs arijit singh', 'bollywood romantic hindi 2024', 'top hindi love songs hits', 'atif aslam hindi love songs'],
+  sad:          ['aashiqui 2 sad songs full', 'arijit singh heartbroken sad songs', 'kk sad emotional hits', 'best bollywood sad hits songs'],
+  workout:      ['gym workout hindi motivation songs', 'haryanvi gym workout songs', 'punjabi workout beast mode songs', 'desi gym motivation hindi'],
   classic_old:  ['old hindi romantic hits 90s', 'evergreen old hindi songs kishore kumar', 'best 90s bollywood classics', 'rafi lata classic hindi songs'],
   lofi:         ['sad hindi lofi songs slowed reverb', 'hindi lofi chai chill beats', 'slowed reverb hindi love songs', 'chai lofi hindi night drive'],
 };
@@ -869,9 +869,9 @@ const RecentHistoryManager = (() => {
     if (!historyCache || typeof historyCache !== 'object') {
       historyCache = {
         trending: [],
-        workout: [],
-        awarapan: [],
         romantic_new: [],
+        sad: [],
+        workout: [],
         classic_old: [],
         lofi: []
       };
@@ -1007,6 +1007,72 @@ const DiscoverCarouselManager = (() => {
     } catch (e) {}
   }
 
+  let isLoadingMore = false;
+
+  function loadMoreCards() {
+    if (isLoadingMore) return;
+    const grid = document.getElementById('trackGrid');
+    if (!grid) return;
+
+    isLoadingMore = true;
+    try {
+      const category = STATE.currentCategory;
+      const allTracks = getCategoryDatabaseTracks(category);
+      if (!allTracks || allTracks.length === 0) {
+        isLoadingMore = false;
+        return;
+      }
+
+      const renderedIds = new Set(
+        (STATE.renderedFeedTracks || []).map(t => t.youtubeId || t.videoId || t.id)
+      );
+
+      // Find tracks from playbackQueue not yet rendered
+      let candidates = (STATE.playbackQueue || []).filter(t => {
+        const id = t.youtubeId || t.videoId || t.id;
+        return !renderedIds.has(id);
+      });
+
+      // If all tracks in current queue have been rendered, create a fresh cycle from full catalog
+      // so user gets an unlimited stream of hits!
+      if (candidates.length < 15) {
+        const freshCycle = shuffleArray(allTracks.slice());
+        candidates = candidates.concat(freshCycle);
+        STATE.playbackQueue = (STATE.playbackQueue || []).concat(freshCycle);
+      }
+
+      const nextBatch = candidates.slice(0, 25);
+      if (nextBatch.length === 0) {
+        isLoadingMore = false;
+        return;
+      }
+
+      const categoryName = CATEGORY_META[category]?.name || category;
+      const baseIndex = STATE.renderedFeedTracks ? STATE.renderedFeedTracks.length : 0;
+
+      nextBatch.forEach((track, idx) => {
+        const canonical = normalizeTrack(track);
+        const card = createTrackCard(canonical, baseIndex + idx, categoryName);
+        grid.appendChild(card);
+        if (STATE.renderedFeedTracks) {
+          STATE.renderedFeedTracks.push(canonical);
+        }
+      });
+
+      if (STATE.renderedFeedTracks) {
+        STATE.renderedCount = STATE.renderedFeedTracks.length;
+      }
+
+      preloadThumbnails(nextBatch, 10);
+    } catch (err) {
+      console.warn('loadMoreCards error:', err);
+    } finally {
+      setTimeout(() => {
+        isLoadingMore = false;
+      }, 150);
+    }
+  }
+
   function initCarouselControls() {
     const rail = document.getElementById('trackGrid');
     const prevBtn = document.getElementById('discoverPrevBtn');
@@ -1023,11 +1089,29 @@ const DiscoverCarouselManager = (() => {
       nextBtn.addEventListener('click', () => {
         const scrollAmount = Math.max(260, rail.clientWidth * 0.75);
         rail.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+        setTimeout(() => {
+          if (rail.scrollWidth - (rail.scrollLeft + rail.clientWidth) < 800) {
+            loadMoreCards();
+          }
+        }, 200);
       });
     }
 
-    // Mouse drag-to-scroll for desktop users
+    // Infinite horizontal carousel auto-loader on scroll
     if (rail) {
+      let scrollTimer = null;
+      rail.addEventListener('scroll', () => {
+        if (rail.scrollWidth - (rail.scrollLeft + rail.clientWidth) < 700) {
+          if (!scrollTimer) {
+            scrollTimer = setTimeout(() => {
+              scrollTimer = null;
+              loadMoreCards();
+            }, 100);
+          }
+        }
+      }, { passive: true });
+
+      // Mouse drag-to-scroll for desktop users
       let isDown = false;
       let startX = 0;
       let scrollLeft = 0;
@@ -1070,7 +1154,8 @@ const DiscoverCarouselManager = (() => {
     getCategoryDatabaseTracks,
     getCarouselTracks,
     preloadThumbnails,
-    initCarouselControls
+    initCarouselControls,
+    loadMoreCards
   };
 })();
 

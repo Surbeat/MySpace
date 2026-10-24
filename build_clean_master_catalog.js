@@ -4,21 +4,7 @@ const { cleanTitle, cleanArtist, normalize } = require('./normalizer.js');
 
 const trendingSeeds = require('./data_trending.js');
 const workoutSeeds = require('./data_workout.js');
-const awarapanSeeds = require('./data_awarapan.js');
-const romanticSeeds = require('./data_romantic.js');
-const classicSeeds = require('./data_classic.js');
-const lofiSeeds = require('./data_lofi.js');
-
-const SEEDS = {
-  trending: trendingSeeds,
-  workout: workoutSeeds,
-  awarapan: awarapanSeeds,
-  romantic_new: romanticSeeds,
-  classic_old: classicSeeds,
-  lofi: lofiSeeds
-};
-
-const CATEGORIES = ['trending', 'workout', 'awarapan', 'romantic_new', 'classic_old', 'lofi'];
+const CATEGORIES = ['trending', 'workout', 'romantic_new', 'classic_old', 'lofi'];
 
 // Helper to validate 11-char YouTube ID
 function isValidYouTubeId(id) {
@@ -64,7 +50,7 @@ CATEGORIES.forEach(cat => {
     allUsedYtIds.add(ytid);
 
     const artist = cleanArtist(t.artist || 'SurBeat Artist');
-    const album = t.album || (cat === 'awarapan' ? 'Awarapan Vibe' : (cat === 'workout' ? 'Beast Mode' : 'SurBeat Special'));
+    const album = t.album || (cat === 'workout' ? 'Beast Mode' : 'SurBeat Special');
 
     cleanCatalog[cat].push({
       id: `${cat}-${String(cleanCatalog[cat].length + 1).padStart(3, '0')}`,
@@ -143,7 +129,7 @@ const catalogJsContent = `/**
       findTrackByYoutubeId,
       getCategoryTotalCount,
       getCategoryBatch,
-      CATEGORIES: ['trending', 'workout', 'awarapan', 'romantic_new', 'classic_old', 'lofi']
+      CATEGORIES: ['trending', 'workout', 'romantic_new', 'classic_old', 'lofi']
     };
   }
 

@@ -35,7 +35,7 @@ function loadDatabase() {
       const data = fs.readFileSync(DB_PATH, 'utf8');
       const parsed = JSON.parse(data);
       const cleaned = {};
-      for (const cat of ['trending', 'workout', 'awarapan', 'romantic_new', 'classic_old', 'lofi']) {
+      for (const cat of ['trending', 'romantic_new', 'sad', 'workout', 'classic_old', 'lofi']) {
         const rawList = Array.isArray(parsed[cat]) ? parsed[cat] : [];
         cleaned[cat] = rawList.length > 0 ? rawList : (SEED_DATABASE[cat] || []);
       }
@@ -71,16 +71,16 @@ function mapQueryToCategory(query) {
   if (q.includes('workout') || q.includes('gym') || q.includes('dangal') || q.includes('sultan') || q.includes('bicep') || q.includes('squat') || q.includes('running') || q.includes('energy') || q.includes('akhada')) {
     return 'workout';
   }
-  if (q.includes('awarapan') || q.includes('emraan') || q.includes('mustafa zahid') || q.includes('toh phir aao') || q.includes('tera mera rishta') || q.includes('mahiya')) {
-    return 'awarapan';
+  if (q.includes('sad') || q.includes('dard') || q.includes('aashiqui') || q.includes('judai') || q.includes('bewafa') || q.includes('breakup') || q.includes('channa mereya') || q.includes('heartbreak') || q.includes('tadap tadap')) {
+    return 'sad';
   }
-  if (q.includes('romantic') || q.includes('love') || q.includes('arijit') || q.includes('atif') || q.includes('shreya')) {
+  if (q.includes('romantic') || q.includes('love') || q.includes('arijit') || q.includes('atif') || q.includes('shreya') || q.includes('kesariya') || q.includes('apna bana le')) {
     return 'romantic_new';
   }
   if (q.includes('old') || q.includes('classic') || q.includes('90s') || q.includes('retro') || q.includes('kishore') || q.includes('rafi') || q.includes('lata')) {
     return 'classic_old';
   }
-  if (q.includes('lofi') || q.includes('sad') || q.includes('chill') || q.includes('reverb') || q.includes('slowed') || q.includes('chai')) {
+  if (q.includes('lofi') || q.includes('chill') || q.includes('reverb') || q.includes('slowed') || q.includes('chai')) {
     return 'lofi';
   }
   return 'trending';

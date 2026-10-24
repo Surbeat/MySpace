@@ -45,10 +45,17 @@
       "icons": [{ "src": "icons/icon.svg", "sizes": "192x192", "type": "image/svg+xml" }]
     },
     {
-      "name": "Awarapan Classics",
-      "short_name": "Awarapan",
-      "description": "Emraan Hashmi & Mustafa Zahid golden hits",
-      "url": "./index.html?cat=awarapan",
+      "name": "Bollywood Romantics",
+      "short_name": "Romantics",
+      "description": "Bollywood love hits & romantic melodies",
+      "url": "./index.html?cat=romantic_new",
+      "icons": [{ "src": "icons/icon.svg", "sizes": "192x192", "type": "image/svg+xml" }]
+    },
+    {
+      "name": "Dard & Sad Hits",
+      "short_name": "Sad Hits",
+      "description": "Emotional heartbreak & soulful Bollywood sad songs",
+      "url": "./index.html?cat=sad",
       "icons": [{ "src": "icons/icon.svg", "sizes": "192x192", "type": "image/svg+xml" }]
     }
   ]
